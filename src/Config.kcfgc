@@ -1,0 +1,4 @@
+File=ksysguardqml.kcfg
+ClassName=Config
+Mutators=true
+GenerateProperties=true

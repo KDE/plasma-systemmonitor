@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+    <kcfgfile name="ksysguardqmlrc"/>
+    <group name="General">
+        <entry name="width" type="Double">
+            <default>1000.0</default>
+        </entry>
+        <entry name="height" type="Double">
+            <default>700.0</default>
+        </entry>
+        <entry name="maximized" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="lastPage" type="String">
+        </entry>
+        <entry name="sidebarCollapsed" type="Bool">
+            <default>false</default>
+        </entry>
+    </group>
+    <group name="Applications">
+        <entry name="showDetails" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="sortedApplicationColumns" type="StringList">
+            <default>appName,usage,vmPSS,netInbound,netOutbound,ioCharactersActuallyReadRate,ioCharactersActuallyWrittenRate</default>
+        </entry>
+        <entry name="detailsWidth" type="Double">
+            <default>250</default>
+        </entry>
+        <entry name="applicationColumnWidths" type="StringList">
+            <default>0.31,0.10,0.11,0.12,0.12,0.12,0.12</default>
+        </entry>
+        <entry name="applicationSortColumn" type="String">
+            <default>appName</default>
+        </entry>
+        <entry name="applicationSortDirection" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="applicationColumnDisplay" type="String">
+            <!--
+            This setting is actually a hash, but since KConfig does not support
+            that, we serialize it from and to JSON. So the below default should
+            be valid JSON.
+            -->
+            <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","appName":"text","netInbound":"text","netOutbound":"text","usage":"line","vmPSS":"text"}</default>
+        </entry>
+        <entry name="askWhenKillingApplications">
+            <default>true</default>
+        </entry>
+    </group>
+    <group name="Processes">
+        <entry name="viewMode" type="UInt">
+            <default>0</default>
+        </entry>
+        <entry name="userFilterMode" type="UInt">
+            <default>0</default>
+        </entry>
+        <entry name="sortedProcessColumns" type="StringList">
+            <default>name,usage,vmPSS,netInbound,netOutbound,ioCharactersActuallyReadRate,ioCharactersActuallyWrittenRate</default>
+        </entry>
+        <entry name="processColumnWidths" type="StringList">
+            <default>0.25,0.125,0.125,0.125,0.125,0.125,0.125,0.125</default>
+        </entry>
+        <entry name="processSortColumn" type="String">
+            <default>name</default>
+        </entry>
+        <entry name="processSortDirection" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="processColumnDisplay" type="String">
+            <!--
+            This setting is actually a hash, but since KConfig does not support
+            that, we serialize it from and to JSON. So the below default should
+            be valid JSON.
+            -->
+            <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","name":"text","netInbound":"text","netOutbound":"text","usage":"line","vmPSS":"text"}</default>
+        </entry>
+        <entry name="askWhenKillingProcesses" type="Bool">
+            <default>true</default>
+        </entry>
+    </group>
+</kcfg>

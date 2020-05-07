@@ -1,0 +1,4 @@
+*kdev*
+*.qmlc
+*.kate-swp
+.clang-format

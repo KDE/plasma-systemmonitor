@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=KSysGuard (QML)
+GenericName=System Monitor
+Exec=ksysguardqml
+Icon=utilities-system-monitor
+Type=Application
+Categories=Qt;KDE;System;

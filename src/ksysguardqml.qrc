@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>components/OverviewCard.qml</file>
+        <file>components/LineChartCard.qml</file>
+        <file>components/Legend.qml</file>
+        <file>components/StyledGroupBox.qml</file>
+        <file>components/SensorLabel.qml</file>
+        <file>components/UsedTotalDisplay.qml</file>
+        <file>components/NetworkDetails.qml</file>
+        <file>components/ApplicationDetails.qml</file>
+        <file>components/ApplicationInformation.qml</file>
+        <file>components/KillDialog.qml</file>
+
+        <file>components/table/BaseTableView.qml</file>
+        <file>components/table/ApplicationsTableView.qml</file>
+        <file>components/table/ProcessesTableView.qml</file>
+        <file>components/table/BasicCellDelegate.qml</file>
+        <file>components/table/FirstCellDelegate.qml</file>
+        <file>components/table/UserCellDelegate.qml</file>
+        <file>components/table/TableViewHeader.qml</file>
+        <file>components/table/CellBackground.qml</file>
+        <file>components/table/ColumnConfigurationDialog.qml</file>
+        <file>components/table/LineChartCellDelegate.qml</file>
+
+        <file>pages/OverviewPage.qml</file>
+        <file>pages/ProcessTablePage.qml</file>
+        <file>pages/HistoryPage.qml</file>
+        <file>pages/AboutPage.qml</file>
+        <file>pages/ApplicationsTablePage.qml</file>
+        <file>pages/SettingsPage.qml</file>
+    </qresource>
+</RCC>
+
