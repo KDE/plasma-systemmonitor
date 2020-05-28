@@ -2,6 +2,8 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
 
+import Qt.labs.platform 1.1
+
 import org.kde.kirigami 2.12 as Kirigami
 
 import org.kde.ksysguard.faces 1.0 as Faces
@@ -116,12 +118,24 @@ Kirigami.Page {
                 Choices {
                     Layout.fillWidth: true
                     visible: loader.controller.supportsTotalSensors
+
+                    colors: loader.controller.sensorColors
+                    onSelectColor: {
+                        colorDialog.destinationSensor = sensorId
+                        colorDialog.open()
+                    }
                 }
 
                 Label { text: "Sensors" }
 
                 Choices {
                     Layout.fillWidth: true
+
+                    colors: loader.controller.sensorColors
+                    onSelectColor: {
+                        colorDialog.destinationSensor = sensorId
+                        colorDialog.open()
+                    }
                 }
 
                 Label { text: "Text-Only Sensors"; visible: loader.controller.supportsLowPrioritySensors }
@@ -129,10 +143,28 @@ Kirigami.Page {
                 Choices {
                     Layout.fillWidth: true
                     visible: loader.controller.supportsLowPrioritySensors
+
+                    colors: loader.controller.sensorColors
+                    onSelectColor: {
+                        colorDialog.destinationSensor = sensorId
+                        colorDialog.open()
+                    }
                 }
 
                 Item { Layout.fillHeight: true; width: 1 }
             }
+        }
+    }
+
+    ColorDialog {
+        id: colorDialog
+        property string destinationSensor
+
+        currentColor: loader.controller.sensorColors[destinationSensor]
+        onAccepted: {
+            var colors = loader.controller.sensorColors
+            colors[destinationSensor] = color
+            loader.controller.sensorColors = colors
         }
     }
 }

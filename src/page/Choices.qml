@@ -11,6 +11,9 @@ Control {
     id: control
 
     property var selected: []
+    property var colors: {}
+
+    signal selectColor(string sensorId)
 
     background: TextField {
         readOnly: true
@@ -34,37 +37,59 @@ Control {
             AbstractButton {
                 id: label
 
-                padding: Kirigami.Units.smallSpacing
-                rightPadding: Kirigami.Units.iconSizes.small + Kirigami.Units.smallSpacing * 2
-                hoverEnabled: true
-
-                background: Rectangle {
-                    radius: Kirigami.Units.smallSpacing
-                    color: Qt.rgba(
+            delegate: Rectangle {
+                color: Qt.rgba(
                             Kirigami.Theme.highlightColor.r,
                             Kirigami.Theme.highlightColor.g,
                             Kirigami.Theme.highlightColor.b,
-                            label.hovered ? 0.5 : 0.25)
-                    border.color: Kirigami.Theme.highlightColor
-                    border.width: 1
+                            0.25)
+                radius: Kirigami.Units.smallSpacing
+                border.color: Kirigami.Theme.highlightColor
+                border.width: 1
 
-                    Kirigami.Icon {
-                        anchors.right: parent.right
-                        anchors.rightMargin: Kirigami.Units.smallSpacing
-                        anchors.verticalCenter: parent.verticalCenter
-                        width: Kirigami.Units.iconSizes.small
-                        height: Kirigami.Units.iconSizes.small
-                        source: "edit-delete-remove"
+                implicitHeight: layout.implicitHeight + Kirigami.Units.smallSpacing * 2
+                implicitWidth: layout.implicitWidth + Kirigami.Units.smallSpacing * 2
+
+                Sensors.Sensor { id: sensor; sensorId: modelData }
+
+                RowLayout {
+                    id: layout
+
+                    anchors.fill: parent
+                    anchors.margins: Kirigami.Units.smallSpacing
+
+                    ToolButton {
+                        Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
+                        Layout.preferredHeight: Kirigami.Units.iconSizes.smallMedium
+
+                        padding: Kirigami.Units.smallSpacing
+
+                        contentItem: Rectangle {
+                            color: control.colors[sensor.sensorId]
+                        }
+
+                        onClicked: control.selectColor(sensor.sensorId)
                     }
-                }
 
-                contentItem: Label {
-                    text: modelData
-                }
+                    Label {
+                        text: sensor.name
+                    }
 
-                onClicked: {
-                    control.selected.splice(control.selected.indexOf(modelData), 1)
-                    control.selectedChanged()
+                    ToolButton {
+                        icon.name: "edit-delete-remove"
+                        icon.width: Kirigami.Units.iconSizes.small
+                        icon.height: Kirigami.Units.iconSizes.small
+                        Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
+                        Layout.preferredHeight: Kirigami.Units.iconSizes.smallMedium
+
+                        onClicked: {
+                            if (control.selected === undefined || control.selected === null) {
+                                control.selected = []
+                            }
+                            control.selected.splice(control.selected.indexOf(sensor.sensorId), 1)
+                            control.selectedChanged()
+                        }
+                    }
                 }
             }
         }
