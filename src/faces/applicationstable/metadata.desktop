@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Applications Table
+Icon=homerun
+
+Type=Service
+X-KDE-ServiceTypes=KSysguard/SensorFace
+X-KDE-ParentApp=org.kde.plasmashell
+X-KDE-PluginInfo-Author=Arjen Hiemstra
+X-KDE-PluginInfo-Email=ahiemstra@heimr.nl
+X-KDE-PluginInfo-License=LGPLv2+
+X-KDE-PluginInfo-Name=org.kde.ksysguard.applicationstable
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://kde.org

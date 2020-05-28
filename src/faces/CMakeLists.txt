@@ -1,0 +1,1 @@
+kpackage_install_package(applicationstable org.kde.ksysguard.applicationstable sensorfaces ksysguard)
