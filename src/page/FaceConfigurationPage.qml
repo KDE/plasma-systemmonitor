@@ -169,7 +169,7 @@ Kirigami.Page {
         id: colorDialog
         property string destinationSensor
 
-        currentColor: loader.controller.sensorColors[destinationSensor]
+        currentColor: destinationSensor != "" ? loader.controller.sensorColors[destinationSensor] : ""
         onAccepted: {
             var colors = loader.controller.sensorColors
             colors[destinationSensor] = color
