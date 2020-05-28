@@ -68,35 +68,35 @@ Faces.SensorFace {
 
             MenuItem {
                 text: i18n("Suspend (STOP)");
-                onTriggered: processHelper.sendSignalToSelection(Proces.ProcessHelper.StopSignal)
+                onTriggered: processHelper.sendSignalToSelection(Proces.ProcessController.StopSignal)
             }
             MenuItem {
                 text: i18n("Continue (CONT)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.ContinueSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.ContinueSignal)
             }
             MenuItem {
                 text: i18n("Hangup (HUP)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.HangupSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.HangupSignal)
             }
             MenuItem {
                 text: i18n("Interrupt (INT)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.InterruptSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.InterruptSignal)
             }
             MenuItem {
                 text: i18n("Terminate (TERM)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.TerminateSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             }
             MenuItem {
                 text: i18n("Kill (KILL)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.KillSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.KillSignal)
             }
             MenuItem {
                 text: i18n("User 1 (USR1)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.User1Signal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.User1Signal)
             }
             MenuItem {
                 text: i18n("User 2 (USR2)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.User2Signal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.User2Signal)
             }
         }
 //         MenuItem { text: i18n("Show Application Window") }
@@ -105,7 +105,7 @@ Faces.SensorFace {
             icon.name: "process-stop";
             text: i18np("End Process", "End %1 Processes", killDialog.items.length);
             onTriggered: {
-                processHelper.sendSignalToSelection(Process.ProcessHelper.TerminateSignal)
+                processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             }
 
         }
@@ -163,8 +163,8 @@ Faces.SensorFace {
         id: processHelper
 
         property var killSignals: [
-            Process.ProcessHelper.TerminateSignal,
-            Process.ProcessHelper.KillSignal
+            Process.ProcessController.TerminateSignal,
+            Process.ProcessController.KillSignal
         ]
 
         function sendSignalToSelection(sig) {
