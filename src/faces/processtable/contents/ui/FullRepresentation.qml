@@ -36,6 +36,97 @@ Faces.SensorFace {
 
     readonly property var config: controller.faceConfiguration
 
+    primaryActions: [
+        Kirigami.Action {
+            text: i18n("Search")
+            displayComponent: Kirigami.SearchField {
+                onTextEdited: table.nameFilterString = text;
+                onAccepted: table.nameFilterString = text;
+            }
+        },
+
+        Kirigami.Action {
+            icon.name: "process-stop"
+            text: i18n("End Process")
+            onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
+            enabled: table.selection.hasSelection
+        }
+    ]
+
+    secondaryActions: [
+         Kirigami.Action {
+            icon.name: "view-list-details"
+            checkable: true
+            checked: config.viewMode == mode
+            text: i18n("Display as List")
+            displayHint: Kirigami.Action.IconOnly
+            property int mode: 0
+            ActionGroup.group: viewGroup
+        },
+
+        Kirigami.Action {
+            icon.name: "view-list-tree"
+            checkable: true
+            checked: config.viewMode == mode
+            text: i18n("Display as Tree")
+            displayHint: Kirigami.Action.IconOnly
+            property int mode: 1
+            enabled: false
+            ActionGroup.group: viewGroup
+        },
+
+        Kirigami.Action {
+            icon.name: showGroup.checkedAction.icon.name
+            text: i18n("Show: %1", showGroup.checkedAction.text)
+
+            Kirigami.Action {
+                text: i18n("Own Processes")
+                checkable: true
+                checked: config.userFilterMode == mode
+                icon.name: "view-process-own"
+                property int mode: ProcessTableView.ViewMode.Own
+                ActionGroup.group: showGroup
+            }
+
+            Kirigami.Action {
+                text: i18n("User Processes")
+                checkable: true
+                checked: config.userFilterMode == mode
+                icon.name: "view-process-users"
+                property int mode: ProcessTableView.ViewMode.User
+                ActionGroup.group: showGroup
+            }
+
+            Kirigami.Action {
+                text: i18n("System Processes")
+                checkable: true
+                checked: config.userFilterMode == mode
+                icon.name: "view-process-system"
+                property int mode: ProcessTableView.ViewMode.System
+                ActionGroup.group: showGroup
+            }
+
+            Kirigami.Action {
+                text: i18n("All Processes")
+                checkable: true
+                checked: config.userFilterMode == mode
+                icon.name: "view-process-all"
+                property int mode: ProcessTableView.ViewMode.All
+                ActionGroup.group: showGroup
+            }
+        },
+
+        Kirigami.Action {
+            id: configureColumnsAction
+            icon.name: "configure"
+            text: i18n("Configure columns...")
+            onTriggered: columnDialog.open()
+        }
+    ]
+
+    ActionGroup { id: showGroup }
+    ActionGroup { id: viewGroup }
+
     contentItem: ProcessTableView {
         id: table
 
