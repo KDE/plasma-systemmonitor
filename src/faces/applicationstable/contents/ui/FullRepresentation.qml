@@ -286,8 +286,10 @@ Faces.SensorFace {
 
         sortedColumns: root.config.sortedApplicationColumns
 
-        onSortedColumnsChanged: root.config.sortedColumns = sortedColumns
-        onColumnDisplayChanged: root.config.applicationColumnDisplay = JSON.stringify(columnDisplay)
+        onAccepted: {
+            root.config.sortedColumns = sortedColumns
+            root.config.applicationColumnDisplay = JSON.stringify(columnDisplay)
+        }
 
         Component.onCompleted: {
             print(root.config.applicationColumnDisplay)
