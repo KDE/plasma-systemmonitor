@@ -8,7 +8,15 @@
 
 #include <QQmlEngine>
 
+#include "ColumnSortModel.h"
+#include "ColumnDisplayModel.h"
+#include "ComponentCacheProxyModel.h"
+
 void TablePlugin::registerTypes(const char *uri)
 {
     Q_ASSERT(QLatin1String(uri) == QLatin1String("org.kde.ksysguard.table"));
+
+    qmlRegisterType<ColumnSortModel>(uri, 1, 0, "ColumnSortModel");
+    qmlRegisterType<ColumnDisplayModel>(uri, 1, 0, "ColumnDisplayModel");
+    qmlRegisterType<ComponentCacheProxyModel>(uri, 1, 0, "ComponentCacheProxyModel");
 }

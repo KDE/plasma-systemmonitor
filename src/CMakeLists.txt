@@ -6,9 +6,6 @@ set(ksysguardqml_SRCS
     main.cpp
     ToolsModel.cpp
     Configuration.cpp
-    ColumnSortModel.cpp
-    ColumnDisplayModel.cpp
-    ComponentCacheProxyModel.cpp
 )
 
 qt5_add_resources(ksysguardqml_QRC ksysguardqml.qrc)

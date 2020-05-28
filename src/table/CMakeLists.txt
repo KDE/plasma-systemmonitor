@@ -1,6 +1,9 @@
 
 set(table_SRCS
     TablePlugin.cpp
+    ColumnDisplayModel.cpp
+    ColumnSortModel.cpp
+    ComponentCacheProxyModel.cpp
 )
 
 set(table_QML

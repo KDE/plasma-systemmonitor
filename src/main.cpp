@@ -28,9 +28,6 @@
 
 #include "ToolsModel.h"
 #include "Configuration.h"
-#include "ColumnSortModel.h"
-#include "ColumnDisplayModel.h"
-#include "ComponentCacheProxyModel.h"
 
 int main(int argc, char **argv)
 {
@@ -46,9 +43,6 @@ int main(int argc, char **argv)
     qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.ksysguardqml", 1);
     qmlRegisterType<ToolsModel>("org.kde.ksysguardqml", 1, 0, "ToolsModel");
     qmlRegisterType<Configuration>("org.kde.ksysguardqml", 1, 0, "Configuration");
-    qmlRegisterType<ColumnSortModel>("org.kde.ksysguardqml", 1, 0, "ColumnSortModel");
-    qmlRegisterType<ColumnDisplayModel>("org.kde.ksysguardqml", 1, 0, "ColumnDisplayModel");
-    qmlRegisterType<ComponentCacheProxyModel>("org.kde.ksysguardqml", 1, 0, "ComponentCacheProxyModel");
 
     QQmlApplicationEngine engine;
 
