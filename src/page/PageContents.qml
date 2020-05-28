@@ -95,7 +95,13 @@ ColumnLayout {
                 dataObject: modelData.data
             }
 
-            Component.onCompleted: contentItem = loader.controller.fullRepresentation
+            Component.onCompleted: {
+                contentItem = loader.controller.fullRepresentation
+
+                if (root.pageData.actionsFace == modelData.data.face) {
+                    root.actionsFace = loader.controller.fullRepresentation
+                }
+            }
         }
     }
 }
