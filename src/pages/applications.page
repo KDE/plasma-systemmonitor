@@ -1,3 +1,6 @@
+[Face-94920553440704][Appearance]
+chartFace=org.kde.ksysguard.applicationstable
+
 [page]
 icon=homerun
 index=1
@@ -14,5 +17,6 @@ name=column-0
 showBackground=false
 
 [page][row-0][column-0][section-0]
+face=Face-94920553440704
 isSeparator=false
 name=section-0
