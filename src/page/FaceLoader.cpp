@@ -44,14 +44,14 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
 
         auto configGroup = m_dataObject->config()->group(faceConfig);
         qDebug() << configGroup.group("Sensors").readEntry("sensorIds");
-//         m_faceController = new SensorFaceController(configGroup, qmlEngine(this));
+        m_faceController = new KSysGuard::SensorFaceController(configGroup, qmlEngine(this));
         Q_EMIT controllerChanged();
     }
 
     Q_EMIT dataObjectChanged();
 }
 
-SensorFaceController * FaceLoader::controller() const
+KSysGuard::SensorFaceController * FaceLoader::controller() const
 {
     return m_faceController;
 }

@@ -11,14 +11,13 @@
 class PageDataObject;
 class QQuickItem;
 
-// namespace KSysGuard { class SensorFaceController; }
-class SensorFaceController;
+namespace KSysGuard { class SensorFaceController; }
 
 class FaceLoader : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(PageDataObject *dataObject READ dataObject WRITE setDataObject NOTIFY dataObjectChanged)
-    Q_PROPERTY(SensorFaceController *controller READ controller NOTIFY controllerChanged)
+    Q_PROPERTY(KSysGuard::SensorFaceController *controller READ controller NOTIFY controllerChanged)
 
 public:
     FaceLoader(QObject *parent = nullptr);
@@ -27,10 +26,10 @@ public:
     void setDataObject(PageDataObject *newDataObject);
     Q_SIGNAL void dataObjectChanged();
 
-    SensorFaceController *controller() const;
+    KSysGuard::SensorFaceController *controller() const;
     Q_SIGNAL void controllerChanged();
 
 private:
     PageDataObject *m_dataObject = nullptr;
-    SensorFaceController *m_faceController = nullptr;
+    KSysGuard::SensorFaceController *m_faceController = nullptr;
 };
