@@ -2,3 +2,13 @@ module org.kde.ksysguard.table
 plugin TablePlugin
 
 depends org.kde.ksysguard.sensors 1.0
+
+BaseTableView 1.0 BaseTableView.qml
+BasicCellDelegate 1.0 BasicCellDelegate.qml
+CellBackground 1.0 CellBackground.qml
+ColumnConfigurationDialog 1.0 ColumnConfigurationDialog.qml
+FirstCellDelegate 1.0 FirstCellDelegate.qml
+LineChartCellDelegate 1.0 LineChartCellDelegate.qml
+TableViewHeader 1.0 TableViewHeader.qml
+UserCellDelegate 1.0 UserCellDelegate.qml
+KillDialog 1.0 KillDialog.qml

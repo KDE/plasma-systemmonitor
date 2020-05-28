@@ -4,6 +4,15 @@ set(table_SRCS
 )
 
 set(table_QML
+    BaseTableView.qml
+    BasicCellDelegate.qml
+    CellBackground.qml
+    ColumnConfigurationDialog.qml
+    FirstCellDelegate.qml
+    LineChartCellDelegate.qml
+    TableViewHeader.qml
+    UserCellDelegate.qml
+    KillDialog.qml
 )
 
 add_library(TablePlugin SHARED ${table_SRCS})
