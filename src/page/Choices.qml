@@ -34,8 +34,6 @@ Control {
         Repeater {
             model: control.selected
 
-            AbstractButton {
-                id: label
 
             delegate: Rectangle {
                 color: Qt.rgba(
@@ -100,7 +98,10 @@ Control {
 
         y: control.height
         width: control.width + 2
-        implicitHeight: contentItem.implicitHeight
+        implicitHeight: {
+            var yInScene = mapToGlobal(y, 0)
+            Math.min(contentItem.implicitHeight + 2, applicationWindow().height - yInScene.y - Kirigami.Units.gridUnit)
+        }
         topMargin: 6
         bottomMargin: 6
         Kirigami.Theme.colorSet: Kirigami.Theme.View
@@ -108,6 +109,8 @@ Control {
         modal: true
         dim: false
         closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
+
+        padding: 1
 
         contentItem: ListView {
             id: listView
@@ -123,9 +126,9 @@ Control {
             model: DelegateModel {
                 id: delegateModel
 
-                model: Sensors.SensorTreeModel { }
+                model: listView.searchString ? sensorsSearchableModel : treeModel
                 delegate: Kirigami.BasicListItem {
-                    width: listView.width - listView.ScrollBar.vertical.width
+                    width: listView.width
                     text: model.display
                     reserveSpaceForIcon: false
 
@@ -133,7 +136,10 @@ Control {
                         if (model.SensorId.length == 0) {
                             delegateModel.rootIndex = delegateModel.modelIndex(index);
                         } else {
-                            control.selected.push(model.display)
+                            if (control.selected === undefined || control.selected === null) {
+                                control.selected = []
+                            }
+                            control.selected.push(model.SensorId)
                             control.selectedChanged()
                             popup.close()
                         }
@@ -141,41 +147,48 @@ Control {
                 }
             }
 
+            Sensors.SensorTreeModel { id: treeModel }
 
-//             KItemModels.KSortFilterProxyModel {
-//                 id: sensorsSearchableModel
-//                 filterCaseSensitivity: Qt.CaseInsensitive
-//                 filterString: listView.searchString
-//         //         filterString: ""
-//                 sourceModel: KItemModels.KSortFilterProxyModel {
-//         //             filterRole: "SensorId"
-//         //             filterRowCallback: function(row, value) {
-//         //                 return (value && value.length)
-//         //             }
-//                     sourceModel: KItemModels.KDescendantsProxyModel {
-//                         model: Sensors.SensorTreeModel { }
-//                     }
-//                 }
-//             }
+            KItemModels.KSortFilterProxyModel {
+                id: sensorsSearchableModel
+                filterCaseSensitivity: Qt.CaseInsensitive
+                filterString: listView.searchString
+                sourceModel: KItemModels.KSortFilterProxyModel {
+                    filterRowCallback: function(row, parent) {
+                        var sensorId = sourceModel.data(sourceModel.index(row, 0), Sensors.SensorTreeModel.SensorId)
+                        return sensorId.length > 0
+                    }
+                    sourceModel: KItemModels.KDescendantsProxyModel {
+                        model: listView.searchString ? treeModel : null
+                    }
+                }
+            }
 
-// //             delegate: ItemDelegate {
-// //                 width: popup.width - Kirigami.Units.largeSpacing * 2
-// //                 text: model.display
-// // //                 highlighted: mouseArea.pressed ? listView.currentIndex == index : controlRoot.highlightedIndex == index
-// //                 property bool separatorVisible: false
-// //                 Kirigami.Theme.colorSet: Kirigami.Theme.View
-// //                 Kirigami.Theme.inherit: false
-// //             }
-//             currentIndex: controlRoot.highlightedIndex
             highlightRangeMode: ListView.ApplyRange
             highlightMoveDuration: 0
             boundsBehavior: Flickable.StopAtBounds
             ScrollBar.vertical: ScrollBar { }
 
-            header: TextField {
-                width: ListView.view.width - Kirigami.Units.largeSpacing * 2
-                placeholderText: i18n("Search...")
-                onTextEdited: listView.searchString = text
+            header: RowLayout {
+                anchors.left: parent.left
+                anchors.right: parent.right
+
+                ToolButton {
+                    Layout.fillHeight: true
+                    Layout.preferredWidth: height
+                    icon.name: "go-previous"
+                    text: i18nc("@action:button", "Back")
+                    display: Button.IconOnly
+                    visible: delegateModel.rootIndex.valid
+                    onClicked: delegateModel.rootIndex = delegateModel.parentModelIndex()
+                }
+
+                TextField {
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+                    placeholderText: i18n("Search...")
+                    onTextEdited: listView.searchString = text
+                }
             }
         }
 
@@ -187,6 +200,7 @@ Control {
 
             Kirigami.ShadowedRectangle {
                 anchors.fill: parent
+                anchors.margins: 1
 
                 Kirigami.Theme.colorSet: Kirigami.Theme.View
                 Kirigami.Theme.inherit: false
