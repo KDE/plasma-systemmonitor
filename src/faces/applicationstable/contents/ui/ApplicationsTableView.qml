@@ -84,9 +84,9 @@ Table.BaseTableView {
         sourceModel: displayModel
 
         component: Charts.ModelHistorySource {
-            model: KSysGuardQML.ComponentCacheProxyModel.model
-            row: KSysGuardQML.ComponentCacheProxyModel.row
-            column: KSysGuardQML.ComponentCacheProxyModel.column
+            model: Table.ComponentCacheProxyModel.model
+            row: Table.ComponentCacheProxyModel.row
+            column: Table.ComponentCacheProxyModel.column
             roleName: "Value"
             maximumHistory: 10
             interval: 2000
