@@ -130,8 +130,6 @@ Faces.SensorFace {
     contentItem: ProcessTableView {
         id: table
 
-        anchors.fill: parent
-
         viewMode: root.config.userFilterMode
 
         columnWidths: root.config.columnWidths
