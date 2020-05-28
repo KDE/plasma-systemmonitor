@@ -8,14 +8,14 @@ Kirigami.ShadowedRectangle {
     property bool highlight: false
     signal clicked()
 
-    color: Qt.rgba(
-            Kirigami.Theme.highlightColor.r,
-            Kirigami.Theme.highlightColor.g,
-            Kirigami.Theme.highlightColor.b,
-            highlight ? 0.5 : 0.25)
+    property var baseColor: highlight ? Kirigami.Theme.highlightColor : Kirigami.Theme.alternateBackgroundColor
 
-    border.width: highlight ? 2 : 1
-    border.color: Kirigami.Theme.highlightColor
+    color: Qt.rgba(baseColor.r, baseColor.g, baseColor.b, 0.25)
+    Behavior on color { ColorAnimation { duration: Kirigami.Units.shortDuration } }
+
+    border.width: 1
+    border.color: baseColor
+    Behavior on border.color { ColorAnimation { duration: Kirigami.Units.shortDuration } }
 
     radius: Kirigami.Units.smallSpacing
 
