@@ -16,7 +16,6 @@ Container {
     leftPadding: 0
     rightPadding: 0
 
-    contentItem: loader.controller.fullRepresentation
 
     onActiveChanged: {
         if (active) {
@@ -43,4 +42,6 @@ Container {
     FaceLoader {
         id: loader
     }
+
+    Component.onCompleted: contentItem = loader.controller.fullRepresentation
 }
