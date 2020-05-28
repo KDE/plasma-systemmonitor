@@ -5,6 +5,8 @@ import QtQuick.Layouts 1.14
 import org.kde.kirigami 2.12 as Kirigami
 import org.kde.kquickcontrolsaddons 2.0 as Addons
 
+import org.kde.ksysguard.page 1.0
+
 Dialog {
     id: dialog
 
@@ -16,7 +18,7 @@ Dialog {
     property string name: "New Page"
     property string iconName: "ksysguardd"
     property real margin: 2
-
+    property string actionsFace
 
     x: (parent.width / 2) - contentItem.implicitWidth / 2
     y: (parent.height / 2) - contentItem.implicitHeight / 2
@@ -69,6 +71,9 @@ Dialog {
                 ]
 
                 onActivated: dialog.margin = model[index].value
+            }
+            ComboBox {
+                Kirigami.FormData.label: i18n("Use Actions From")
             }
         }
 
