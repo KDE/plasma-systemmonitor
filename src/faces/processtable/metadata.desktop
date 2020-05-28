@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Process Table
+Icon=view-process-system
+
+Type=Service
+X-KDE-ServiceTypes=KSysguard/SensorFace
+X-KDE-PluginInfo-Author=Arjen Hiemstra
+X-KDE-PluginInfo-Email=ahiemstra@heimr.nl
+X-KDE-PluginInfo-License=LGPLv2+
+X-KDE-PluginInfo-Name=org.kde.ksysguard.processtable
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://kde.org
