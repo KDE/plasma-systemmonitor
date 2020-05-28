@@ -51,6 +51,7 @@ ColumnLayout {
 
                         RowLayout {
                             anchors.fill: parent
+                            anchors.margins: model.data.showBackground ? Kirigami.Units.smallSpacing : 0
                             spacing: Kirigami.Units.largeSpacing
 
                             Repeater {
@@ -83,7 +84,10 @@ ColumnLayout {
         id: faceComponent
 
         Control {
-            contentItem: loader.controller.fullRepresentation
+            leftPadding: 0
+            rightPadding: 0
+            topPadding: 0
+            bottomPadding: 0
 
             FaceLoader {
                 id: loader
