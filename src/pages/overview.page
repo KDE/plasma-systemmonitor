@@ -1,3 +1,78 @@
+[Face-94410222150464][Appearance]
+chartFace=org.kde.ksysguard.piechart
+title=Memory
+
+[Face-94410222150464][SensorColors]
+mem/physical/allocated=61,174,233
+
+[Face-94410222150464][Sensors]
+highPrioritySensorIds=["mem/physical/allocated"]
+totalSensors=["mem/physical/allocated"]
+
+[Face-94410238879984][Appearance]
+chartFace=org.kde.ksysguard.textonly
+title=Networks
+
+[Face-94410254040128][Appearance]
+chartFace=org.kde.ksysguard.applicationstable
+
+[Face-94410261307168][Appearance]
+chartFace=org.kde.ksysguard.piechart
+title=Disk
+
+[Face-94410261307168][SensorColors]
+partitions/all/usedspace=61,174,233
+
+[Face-94410261307168][Sensors]
+highPrioritySensorIds=["partitions/all/usedspace"]
+totalSensors=["partitions/all/filllevel"]
+
+[Face-94410266684256][Appearance]
+chartFace=org.kde.ksysguard.piechart
+title=CPU
+
+[Face-94410266684256][SensorColors]
+cpu/system/TotalLoad=61,174,233
+
+[Face-94410266684256][Sensors]
+highPrioritySensorIds=["cpu/system/TotalLoad"]
+totalSensors=["cpu/system/TotalLoad"]
+
+[Face-94410267900240][Appearance]
+chartFace=org.kde.ksysguard.piechart
+
+[Face-94410278989264][Appearance]
+chartFace=org.kde.ksysguard.textonly
+title=System
+
+[Face-94410278989264][SensorColors]
+os/plasma/plasmaVersion=88,233,61
+os/system/hostname=206,61,233
+os/system/name=233,120,61
+os/system/version=233,224,61
+system/hardware/processorNames=61,174,233
+uptime=233,120,61
+
+[Face-94410278989264][Sensors]
+highPrioritySensorIds=["system/hardware/processorNames","os/system/hostname","os/system/name","os/plasma/plasmaVersion"]
+
+[Face-94410280144624][Appearance]
+chartFace=org.kde.ksysguard.textonly
+title=Network Rates
+
+[Face-94410280144624][SensorColors]
+network/all/receivedDataRate=61,174,233
+network/all/sentDataRate=233,120,61
+
+[Face-94410280144624][Sensors]
+highPrioritySensorIds=["network/all/receivedDataRate","network/all/sentDataRate"]
+
+[Face-94410280836144][Appearance]
+chartFace=org.kde.ksysguard.piechart
+
+[Face-94410290191008][Appearance]
+chartFace=org.kde.ksysguard.piechart
+
 [page]
 icon=speedometer
 index=0
@@ -5,16 +80,16 @@ margin=2
 title=Overview
 
 [page][row-0]
-add=false
 isTitle=false
 name=row-0
-title=false
+title=
 
 [page][row-0][column-0]
 name=column-0
 showBackground=true
 
 [page][row-0][column-0][section-0]
+face=Face-94410222150464
 isSeparator=false
 name=section-0
 
@@ -23,6 +98,7 @@ name=column-1
 showBackground=true
 
 [page][row-0][column-1][section-0]
+face=Face-94410261307168
 isSeparator=false
 name=section-0
 
@@ -31,61 +107,64 @@ name=column-2
 showBackground=true
 
 [page][row-0][column-2][section-0]
+face=Face-94410266684256
 isSeparator=false
 name=section-0
 
 [page][row-1]
-add=false
 isTitle=true
 name=row-1
 title=Network & System
 
 [page][row-2]
-add=false
 isTitle=false
 name=row-2
-title=false
+title=
 
 [page][row-2][column-0]
 name=column-0
 showBackground=true
 
 [page][row-2][column-0][section-0]
+face=Face-94410238879984
 isSeparator=false
 name=section-0
 
 [page][row-2][column-0][section-1]
+face=Face-94410280836144
 isSeparator=true
 name=section-1
 
 [page][row-2][column-0][section-2]
+face=Face-94410280144624
 isSeparator=false
 name=section-2
 
 [page][row-2][column-0][section-3]
+face=Face-94410290191008
 isSeparator=true
 name=section-3
 
 [page][row-2][column-0][section-4]
+face=Face-94410278989264
 isSeparator=false
 name=section-4
 
 [page][row-3]
-add=false
 isTitle=true
 name=row-3
 title=Applications
 
 [page][row-4]
-add=false
 isTitle=false
 name=row-4
-title=false
+title=
 
 [page][row-4][column-0]
 name=column-0
 showBackground=true
 
 [page][row-4][column-0][section-0]
+face=Face-94410254040128
 isSeparator=false
 name=section-0
