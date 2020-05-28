@@ -10,6 +10,7 @@ ColumnLayout {
     id: root
 
     property PageDataObject pageData
+    property var actionsFace
 
     anchors.fill: parent
 

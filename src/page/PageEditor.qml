@@ -11,6 +11,7 @@ Column {
 
     property PageDataObject pageData
     property Item activeItem
+    property var actionsFace
 
     anchors.fill: parent
 
