@@ -93,6 +93,8 @@ ColumnLayout {
                 id: loader
                 dataObject: modelData.data
             }
+
+            Component.onCompleted: contentItem = loader.controller.fullRepresentation
         }
     }
 }
