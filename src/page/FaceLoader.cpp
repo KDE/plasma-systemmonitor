@@ -35,7 +35,6 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
 
     if (m_dataObject) {
         auto faceConfig = m_dataObject->value(QStringLiteral("face")).toString();
-        qDebug() << faceConfig;
         if (faceConfig.isEmpty()) {
             faceConfig = QStringLiteral("Face-%1").arg(reinterpret_cast<quintptr>(this));
             m_dataObject->insert(QStringLiteral("face"), faceConfig);
@@ -43,7 +42,6 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
         }
 
         auto configGroup = m_dataObject->config()->group(faceConfig);
-        qDebug() << configGroup.group("Sensors").readEntry("sensorIds");
         m_faceController = new KSysGuard::SensorFaceController(configGroup, qmlEngine(this));
         Q_EMIT controllerChanged();
     }
