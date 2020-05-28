@@ -159,7 +159,7 @@ Table.BaseTableView {
             Table.FirstCellDelegate {
                 iconName: {
                     var index = rowFilter.mapToSource(rowFilter.index(model.row, 0))
-                    index = processModel.index(index.row, processModel.iconColumn)
+                    index = processModel.index(index.row, processModel.nameColumn)
                     return processModel.data(index)
                 }
             }
