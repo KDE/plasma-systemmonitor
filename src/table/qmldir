@@ -1,0 +1,4 @@
+module org.kde.ksysguard.table
+plugin TablePlugin
+
+depends org.kde.ksysguard.sensors 1.0

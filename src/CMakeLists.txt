@@ -1,5 +1,6 @@
 
 add_subdirectory(page)
+add_subdirectory(table)
 
 set(ksysguardqml_SRCS
     main.cpp
