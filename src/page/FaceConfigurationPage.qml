@@ -111,10 +111,11 @@ Kirigami.Page {
                     contentItem: loader.controller.faceConfigUi
                 }
 
-                Label { text: "Total Sensors" }
+                Label { text: "Total Sensors"; visible: loader.controller.supportsTotalSensors }
 
                 Choices {
                     Layout.fillWidth: true
+                    visible: loader.controller.supportsTotalSensors
                 }
 
                 Label { text: "Sensors" }
@@ -123,10 +124,11 @@ Kirigami.Page {
                     Layout.fillWidth: true
                 }
 
-                Label { text: "Text-Only Sensors" }
+                Label { text: "Text-Only Sensors"; visible: loader.controller.supportsLowPrioritySensors }
 
                 Choices {
                     Layout.fillWidth: true
+                    visible: loader.controller.supportsLowPrioritySensors
                 }
 
                 Item { Layout.fillHeight: true; width: 1 }
