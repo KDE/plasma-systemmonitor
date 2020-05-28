@@ -119,6 +119,9 @@ Kirigami.Page {
                     Layout.fillWidth: true
                     visible: loader.controller.supportsTotalSensors
 
+                    selected: loader.controller.totalSensors
+                    onSelectedChanged: loader.controller.totalSensors = selected
+
                     colors: loader.controller.sensorColors
                     onSelectColor: {
                         colorDialog.destinationSensor = sensorId
@@ -130,6 +133,9 @@ Kirigami.Page {
 
                 Choices {
                     Layout.fillWidth: true
+
+                    selected: loader.controller.highPrioritySensorIds
+                    onSelectedChanged: loader.controller.highPrioritySensorIds = selected
 
                     colors: loader.controller.sensorColors
                     onSelectColor: {
@@ -143,6 +149,9 @@ Kirigami.Page {
                 Choices {
                     Layout.fillWidth: true
                     visible: loader.controller.supportsLowPrioritySensors
+
+                    selected: loader.controller.lowPrioritySensors
+                    onSelectedChanged: loader.controller.lowPrioritySensorIds = selected
 
                     colors: loader.controller.sensorColors
                     onSelectColor: {
