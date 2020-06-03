@@ -250,7 +250,6 @@ Kirigami.Page {
             for (var i in table.selectedApplications) {
                 for (var j in table.selectedApplications[i].pids) {
                     var pid = table.selectedApplications[i].pids[j]
-                    print(pid)
                     processHelper.sendSignal(pid, killDialog.signalToSend);
                 }
             }

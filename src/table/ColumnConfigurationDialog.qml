@@ -31,7 +31,6 @@ Dialog {
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
     function setColumnDisplay(display) {
-        print(display)
         sortModel.sortedColumns = sortedColumns
         columnDisplay = display
         displayModel.columnDisplay = display
