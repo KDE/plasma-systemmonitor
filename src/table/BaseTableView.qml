@@ -51,6 +51,9 @@ FocusScope {
 
     onColumnWidthsChanged: tableView.forceLayout()
 
+    Kirigami.Theme.inherit: false
+    Kirigami.Theme.colorSet: Kirigami.Theme.View
+
     TableViewHeader {
         id: heading
 
