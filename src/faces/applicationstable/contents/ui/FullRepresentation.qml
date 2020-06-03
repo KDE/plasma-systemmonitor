@@ -55,10 +55,7 @@ Faces.SensorFace {
                 headerContextMenu.popup(null, position)
             }
 
-            enabledColumns: {
-                print(columnDialog.visibleColumns)
-                return columnDialog.visibleColumns
-            }
+            enabledColumns: columnDialog.visibleColumns
             columnDisplay: columnDialog.columnDisplay
 
             columnWidths: root.config.applicationColumnWidths
@@ -292,7 +289,6 @@ Faces.SensorFace {
         }
 
         Component.onCompleted: {
-            print(root.config.applicationColumnDisplay)
             setColumnDisplay(JSON.parse(root.config.applicationColumnDisplay))
         }
     }
