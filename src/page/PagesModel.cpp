@@ -83,8 +83,7 @@ void PagesModel::componentComplete()
         auto page = new PageDataObject{config, this};
         page->load(*config, QStringLiteral("page"));
 
-        connect(page, &PageDataObject::valueChanged, this, [this, page]() { savePage(page); });
-        connect(page, &PageDataObject::childrenChanged, this, [this, page]() { savePage(page); });
+        connect(page, &PageDataObject::dirtyChanged, this, [this, page]() { savePage(page); });
         connect(page, &PageDataObject::valueChanged, this, [this, page]() {
             auto i = m_pages.indexOf(page);
             Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole});
@@ -109,8 +108,7 @@ PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &
         page->insert(itr.key(), itr.value());
     }
 
-    connect(page, &PageDataObject::valueChanged, this, [this, page]() { savePage(page); });
-    connect(page, &PageDataObject::childrenChanged, this, [this, page]() { savePage(page); });
+    connect(page, &PageDataObject::dirtyChanged, this, [this, page]() { savePage(page); });
     connect(page, &PageDataObject::valueChanged, this, [this, page]() {
         auto i = m_pages.indexOf(page);
         Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole});
