@@ -129,7 +129,7 @@ FocusScope {
                 for (var i = 0; i < columns; i++) {
                     w += columnWidthProvider(i)
                 }
-                return Math.max(w, width)
+                return Math.max(w, scrollView.innerWidth)
             }
         }
     }
