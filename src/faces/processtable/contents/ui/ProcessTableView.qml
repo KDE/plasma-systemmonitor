@@ -26,8 +26,9 @@ Table.BaseTableView {
     property int viewMode: ProcessTableView.ViewMode.Own
     onViewModeChanged: rowFilter.invalidate()
 
-    property var enabledColumns
     property alias columnDisplay: displayModel.columnDisplay
+    property var enabledColumns
+    onEnabledColumnsChanged: processModel.updateEnabledAttributes()
 
     readonly property var selectedProcesses: {
         var result = []
@@ -119,16 +120,14 @@ Table.BaseTableView {
     Process.ProcessDataModel {
         id: processModel
 
-        property int nameColumn: enabledAttributes.indexOf("name")
-        property int pidColumn: enabledAttributes.indexOf("pid")
-        property int iconColumn: enabledAttributes.indexOf("iconName")
-        property int uidColumn: enabledAttributes.indexOf("uid")
-        property int usernameColumn: enabledAttributes.indexOf("username")
+        property int nameColumn
+        property int pidColumn
+        property int uidColumn
+        property int usernameColumn
 
         property var requiredSensors: [
             "name",
             "pid",
-            "iconName",
             "uid",
             "username"
         ]
@@ -136,19 +135,23 @@ Table.BaseTableView {
 
         enabled: view.visible
 
-        enabledAttributes: {
+        function updateEnabledAttributes() {
             var result = [].concat(view.enabledColumns)
             var hidden = []
 
             for (var i of requiredSensors) {
-                if (result.indexOf(i) == -1) {
+                if (result.indexOf(i) == -1 && processModel.availableAttributes.includes(i)) {
                     result.push(i)
                     hidden.push(i)
                 }
             }
 
-            hiddenSensors = hidden
-            return result
+            processModel.nameColumn = result.indexOf("name")
+            processModel.pidColumn = result.indexOf("pid")
+            processModel.uidColumn = result.indexOf("uid")
+            processModel.usernameColumn = result.indexOf("username")
+            processModel.hiddenSensors = hidden
+            processModel.enabledAttributes = result
         }
     }
 
