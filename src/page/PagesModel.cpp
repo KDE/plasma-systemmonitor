@@ -92,7 +92,7 @@ void PagesModel::componentComplete()
         m_pages.append(page);
     }
     std::stable_sort(m_pages.begin(), m_pages.end(), [](PageDataObject *left, PageDataObject *right) {
-        return left->value("index") < right->value("index");
+        return left->value("index").toInt() < right->value("index").toInt();
     });
     endResetModel();
 }
