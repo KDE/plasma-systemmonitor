@@ -49,6 +49,7 @@ PageDataObject::PageDataObject(const KSharedConfig::Ptr& config, QObject* parent
     : QQmlPropertyMap(this, parent), m_config(config)
 {
     m_childrenProperty = QQmlListProperty<PageDataObject>(this, nullptr, &objectCount, &objectAt);
+    connect(this, &PageDataObject::valueChanged, this, &PageDataObject::markDirty);
 }
 
 QQmlListProperty<PageDataObject> PageDataObject::childrenProperty() const
@@ -79,8 +80,13 @@ PageDataObject *PageDataObject::insertChild(int index, const QVariantMap &proper
 
     updateNames(index + 1);
 
-    connect(child, &PageDataObject::valueChanged, this, &PageDataObject::childrenChanged);
-    connect(child, &PageDataObject::childrenChanged, this, &PageDataObject::childrenChanged);
+    connect(child, &PageDataObject::dirtyChanged, this, [this, child]() {
+        if (child->dirty()) {
+            markDirty();
+        }
+    });
+
+    markDirty();
 
     Q_EMIT childInserted(index);
     Q_EMIT childrenChanged();
@@ -102,6 +108,8 @@ void PageDataObject::removeChild(int index)
 
     updateNames(index + 1);
 
+    markDirty();
+
     Q_EMIT childRemoved(index);
     Q_EMIT childrenChanged();
 }
@@ -117,6 +125,8 @@ void PageDataObject::moveChild(int from, int to)
     m_children.insert(to, movingChild);
 
     updateNames(std::max(from - 1, 0));
+
+    markDirty();
 
     Q_EMIT childMoved(from, to);
     Q_EMIT childrenChanged();
@@ -170,11 +180,14 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
         auto object = new PageDataObject{m_config, this};
         object->load(group, groupName);
         m_children.append(object);
-
-        connect(object, &PageDataObject::valueChanged, this, &PageDataObject::childrenChanged);
-        connect(object, &PageDataObject::childrenChanged, this, &PageDataObject::childrenChanged);
+        connect(object, &PageDataObject::dirtyChanged, this, [this, object]() {
+            if (object->dirty()) {
+                markDirty();
+            }
+        });
     }
 
+    markClean();
     Q_EMIT childrenChanged();
     Q_EMIT loaded();
     return true;
@@ -182,6 +195,10 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
 
 bool PageDataObject::save(KConfigBase &config, const QString &groupName, const QStringList &ignoreProperties)
 {
+    if (!m_dirty) {
+        return false;
+    }
+
     auto group = config.group(groupName);
 
     const auto names = keys();
@@ -204,8 +221,34 @@ bool PageDataObject::save(KConfigBase &config, const QString &groupName, const Q
         group.deleteGroup(name);
     }
 
+    markClean();
     Q_EMIT saved();
     return true;
+}
+
+bool PageDataObject::dirty() const
+{
+    return m_dirty;
+}
+
+void PageDataObject::markDirty()
+{
+    if (m_dirty) {
+        return;
+    }
+
+    m_dirty = true;
+    Q_EMIT dirtyChanged();
+}
+
+void PageDataObject::markClean()
+{
+    if (!m_dirty) {
+        return;
+    }
+
+    m_dirty = false;
+    Q_EMIT dirtyChanged();
 }
 
 void PageDataObject::updateNames(int index)

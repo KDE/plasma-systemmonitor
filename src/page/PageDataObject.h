@@ -16,6 +16,7 @@ class PageDataObject : public QQmlPropertyMap
 {
     Q_OBJECT
     Q_PROPERTY(QQmlListProperty<PageDataObject> children READ childrenProperty NOTIFY childrenChanged)
+    Q_PROPERTY(bool dirty READ dirty NOTIFY dirtyChanged)
 
 public:
     explicit PageDataObject(const KSharedConfig::Ptr &config, QObject *parent = nullptr);
@@ -44,12 +45,18 @@ public:
     Q_SIGNAL void childRemoved(int index);
     Q_SIGNAL void childMoved(int from, int to);
 
+    bool dirty() const;
+    Q_INVOKABLE void markDirty();
+    Q_INVOKABLE void markClean();
+    Q_SIGNAL void dirtyChanged();
+
 private:
     void updateNames(int index);
 
     QQmlListProperty<PageDataObject> m_childrenProperty;
     QVector<PageDataObject *> m_children;
     KSharedConfig::Ptr m_config;
+    bool m_dirty = false;
 };
 
 #endif // PAGEDATAOBJECT_H
