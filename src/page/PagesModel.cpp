@@ -123,8 +123,5 @@ PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &
 
 void PagesModel::savePage(PageDataObject* page)
 {
-//     KConfig config(QStringLiteral("pages/") % page->value(QStringLiteral("fileName")).toString(),
-//                     KConfig::SimpleConfig, QStandardPaths::AppDataLocation);
-    qDebug() << page->config()->name();
     page->save(*page->config(), QStringLiteral("page"), {QStringLiteral("fileName")});
 }
