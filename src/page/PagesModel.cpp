@@ -71,14 +71,14 @@ void PagesModel::componentComplete()
         const auto entries = dir.entryList({QStringLiteral("*.page")}, QDir::NoDotAndDotDot | QDir::Files);
         for (auto entry : entries) {
             if (!files.contains(entry)) {
-                files.insert(entry, dir.absoluteFilePath(entry));
+                files.insert(entry, dir.relativeFilePath(entry));
             }
         }
     }
 
     beginResetModel();
     for (auto itr = files.begin(); itr != files.end(); ++itr) {
-        auto config = KSharedConfig::openConfig(itr.value(), KConfig::SimpleConfig, QStandardPaths::AppDataLocation);
+        auto config = KSharedConfig::openConfig(itr.value(), KConfig::CascadeConfig, QStandardPaths::AppDataLocation);
 
         auto page = new PageDataObject{config, this};
         page->load(*config, QStringLiteral("page"));
@@ -99,7 +99,7 @@ void PagesModel::componentComplete()
 
 PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &properties)
 {
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(fileName, KConfig::SimpleConfig, QStandardPaths::AppDataLocation);
+    KSharedConfig::Ptr config = KSharedConfig::openConfig(fileName, KConfig::CascadeConfig, QStandardPaths::AppDataLocation);
 
     auto page = new PageDataObject(config, this);
     page->insert(QStringLiteral("index"), m_pages.size());
