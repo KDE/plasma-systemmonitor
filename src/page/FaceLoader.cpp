@@ -10,6 +10,8 @@
 
 #include "PageDataObject.h"
 
+using namespace KSysGuard;
+
 FaceLoader::FaceLoader(QObject* parent)
     : QObject(parent)
 {
@@ -42,14 +44,21 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
         }
 
         auto configGroup = m_dataObject->config()->group(faceConfig);
-        m_faceController = new KSysGuard::SensorFaceController(configGroup, qmlEngine(this));
+        m_faceController = new SensorFaceController(configGroup, qmlEngine(this));
+        connect(m_faceController, &SensorFaceController::faceIdChanged, m_dataObject, &PageDataObject::markDirty);
+        connect(m_faceController, &SensorFaceController::titleChanged, m_dataObject, &PageDataObject::markDirty);
+        connect(m_faceController, &SensorFaceController::totalSensorsChanged, m_dataObject, &PageDataObject::markDirty);
+        connect(m_faceController, &SensorFaceController::highPrioritySensorIdsChanged, m_dataObject, &PageDataObject::markDirty);
+        connect(m_faceController, &SensorFaceController::lowPrioritySensorIdsChanged, m_dataObject, &PageDataObject::markDirty);
+        connect(m_faceController, &SensorFaceController::sensorColorsChanged, m_dataObject, &PageDataObject::markDirty);
+
         Q_EMIT controllerChanged();
     }
 
     Q_EMIT dataObjectChanged();
 }
 
-KSysGuard::SensorFaceController * FaceLoader::controller() const
+SensorFaceController * FaceLoader::controller() const
 {
     return m_faceController;
 }
