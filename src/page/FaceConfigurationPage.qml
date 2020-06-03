@@ -111,6 +111,15 @@ Kirigami.Page {
 
                 Control {
                     contentItem: loader.controller.faceConfigUi
+
+                    Connections {
+                        target: loader.controller.faceConfigUi
+
+                        function onConfigurationChanged() {
+                            loader.controller.faceConfigUi.saveConfig()
+                            loader.dataObject.markDirty()
+                        }
+                    }
                 }
 
                 Label { text: "Total Sensors"; visible: loader.controller.supportsTotalSensors }
