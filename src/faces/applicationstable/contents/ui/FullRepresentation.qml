@@ -36,6 +36,39 @@ Faces.SensorFace {
 
     readonly property var config: controller.faceConfiguration
 
+    primaryActions: [
+        Kirigami.Action {
+            text: i18n("Search")
+            displayComponent: Kirigami.SearchField {
+                onTextEdited: table.filterString = text;
+                onAccepted: table.filterString = text;
+            }
+        },
+        Kirigami.Action {
+            icon.name: "application-exit"
+            text: i18n("Quit Application")
+            onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.TerminateSignal)
+            enabled: table.selection.hasSelection
+        }
+    ]
+
+    secondaryActions: [
+        Kirigami.Action {
+            id: showDetailsAction
+            icon.name: "documentinfo"
+            text: i18n("Show Details Sidebar")
+            checkable: true
+            checked: root.config.showDetails
+            onToggled: root.config.showDetails = checked
+        },
+        Kirigami.Action {
+            id: configureColumnsAction
+            icon.name: "configure"
+            text: i18n("Configure columns...")
+            onTriggered: columnDialog.open()
+        }
+    ]
+
     contentItem: Item {
         ApplicationsTableView {
             id: table
@@ -190,9 +223,7 @@ Faces.SensorFace {
         id: headerContextMenu
 
         MenuItem {
-//             action: configureColumnsAction
-            text: i18n("Configure Columns...")
-            onTriggered: columnDialog.open()
+            action: configureColumnsAction
         }
     }
 
