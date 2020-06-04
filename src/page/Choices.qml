@@ -91,6 +91,8 @@ Control {
                 }
             }
         }
+
+        Item { width: Kirigami.Units.iconSizes.smallMedium + Kirigami.Units.smallSpacing * 2; height: width }
     }
 
     Popup {
