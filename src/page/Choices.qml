@@ -46,7 +46,8 @@ Control {
                 border.width: 1
 
                 implicitHeight: layout.implicitHeight + Kirigami.Units.smallSpacing * 2
-                implicitWidth: layout.implicitWidth + Kirigami.Units.smallSpacing * 2
+                implicitWidth: Math.min(layout.implicitWidth + Kirigami.Units.smallSpacing * 2,
+                                        control.width - control.leftPadding - control.rightPadding)
 
                 Sensors.Sensor { id: sensor; sensorId: modelData }
 
@@ -70,7 +71,19 @@ Control {
                     }
 
                     Label {
+                        id: label
+
+                        Layout.fillWidth: true
+                        Layout.maximumWidth: contentWidth
+
                         text: sensor.name
+                        elide: Text.ElideRight
+
+                        HoverHandler { id: handler }
+
+                        ToolTip.text: sensor.name
+                        ToolTip.visible: handler.hovered && label.truncated
+                        ToolTip.delay: Kirigami.Units.toolTipDelay
                     }
 
                     ToolButton {
