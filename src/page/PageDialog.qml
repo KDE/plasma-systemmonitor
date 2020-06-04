@@ -42,9 +42,19 @@ Dialog {
             anchors.fill: parent
 
             TextField {
+                id: nameField
+
                 Kirigami.FormData.label: i18n("Name")
                 text: dialog.name
                 onTextEdited: dialog.name = text
+
+                validator: RegularExpressionValidator { regularExpression: /.+/ }
+            }
+            Kirigami.InlineMessage {
+                Layout.fillWidth: true
+                type: Kirigami.MessageType.Error
+                text: i18n("Name cannot be empty.")
+                visible: !nameField.acceptableInput
             }
             Button {
                 Kirigami.FormData.label: i18n("Icon")
@@ -91,6 +101,7 @@ Dialog {
             DialogButtonBox.buttonRole: DialogButtonBox.AcceptRole
             text: dialog.acceptText
             icon.name: dialog.acceptIcon
+            enabled: nameField.acceptableInput
         }
         Button {
             DialogButtonBox.buttonRole: DialogButtonBox.RejectRole
