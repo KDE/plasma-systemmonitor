@@ -78,14 +78,14 @@ Kirigami.ApplicationWindow {
                     Kirigami.PagePoolAction {
                         icon.name: "settings-configure"
                         text: i18n("Configure System Monitor...");
-                        checked: false
+                        checkable: false
                         pagePool: pagePoolObject
                         page: "pages/SettingsPage.qml"
                     },
                     Kirigami.PagePoolAction {
                         icon.name: "help-about-symbolic";
                         text: i18n("About System Monitor");
-                        checked: false
+                        checkable: false
                         pagePool: pagePoolObject
                         page: "pages/AboutPage.qml"
                     },
