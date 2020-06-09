@@ -46,15 +46,14 @@ chartFace=org.kde.ksysguard.textonly
 title=System
 
 [Face-94410278989264][SensorColors]
-os/plasma/plasmaVersion=88,233,61
-os/system/hostname=206,61,233
-os/system/name=233,120,61
-os/system/version=233,224,61
-system/hardware/processorNames=61,174,233
-uptime=233,120,61
+os/plasma/kfVersion=233,224,61
+os/plasma/plasmaVersion=61,233,85
+os/plasma/qtVersion=233,61,105
+os/system/hostname=61,174,233
+os/system/prettyName=155,61,233
 
 [Face-94410278989264][Sensors]
-highPrioritySensorIds=["system/hardware/processorNames","os/system/hostname","os/system/name","os/plasma/plasmaVersion"]
+highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/qtVersion","os/plasma/kfVersion","os/plasma/plasmaVersion"]
 
 [Face-94410280144624][Appearance]
 chartFace=org.kde.ksysguard.textonly
