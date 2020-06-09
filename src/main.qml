@@ -152,7 +152,7 @@ Kirigami.ApplicationWindow {
             var fileName = name.toLowerCase().replace(" ", "_") + ".page";
             var newPage = pagesModel.addPage(fileName, {title: name, icon: iconName, margin: margin})
             var row = newPage.insertChild(0, {name: "row-0", isTitle: false, title: ""})
-            var column = row.insertChild(0, {name: "column-0", showBackground: false})
+            var column = row.insertChild(0, {name: "column-0", showBackground: true})
             column.insertChild(0, {name: "section-0", isSeparator: false})
         }
     }

@@ -80,7 +80,7 @@ Container {
 
                 onSelect: control.select(item)
                 onAddColumn: {
-                    var column = control.rowData.insertChild(index + 1, {"name": "column-" + (index + 1), showBackground: false})
+                    var column = control.rowData.insertChild(index + 1, {"name": "column-" + (index + 1), showBackground: true})
                     column.insertChild(0, {"name": "section-0", isSeparator: false})
                 }
                 onRemove: control.rowData.removeChild(index)
