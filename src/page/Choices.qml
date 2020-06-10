@@ -117,11 +117,7 @@ Control {
     Popup {
         id: popup
 
-        y: control.Kirigami.ScenePosition.y + control.height + height > control.Window.height
-            ? -height
-            : control.height
         width: control.width + 2
-        implicitHeight: Math.min(contentItem.implicitHeight + 2, Kirigami.Units.gridUnit * 20)
         topMargin: 6
         bottomMargin: 6
         Kirigami.Theme.colorSet: Kirigami.Theme.View
@@ -132,84 +128,104 @@ Control {
 
         padding: 1
 
-        contentItem: ScrollView {
-            ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-            ListView {
-                id: listView
+        onOpened: {
+            if (control.Kirigami.ScenePosition.y + control.height + height > control.Window.height) {
+                y = - height;
+            } else {
+                y = control.height
+            }
+            implicitHeight = Math.min(contentItem.implicitHeight + 2, Kirigami.Units.gridUnit * 20)
+        }
+        contentItem: ColumnLayout {
+            spacing: 0
+            RowLayout {
+                Layout.fillWidth: true
+                Layout.minimumHeight: implicitHeight
+                Layout.maximumHeight: implicitHeight
+                Layout.leftMargin: Kirigami.Units.smallSpacing
+                Layout.topMargin: Kirigami.Units.smallSpacing
+                Layout.rightMargin: Kirigami.Units.smallSpacing
+                Layout.bottomMargin: Kirigami.Units.smallSpacing
 
-                // this causes us to load at least one delegate
-                // this is essential in guessing the contentHeight
-                // which is needed to initially resize the popup
-                cacheBuffer: 1
+                ToolButton {
+                    Layout.fillHeight: true
+                    Layout.preferredWidth: height
+                    icon.name: "go-previous"
+                    text: i18nc("@action:button", "Back")
+                    display: Button.IconOnly
+                    visible: delegateModel.rootIndex.valid
+                    onClicked: delegateModel.rootIndex = delegateModel.parentModelIndex()
+                }
 
-                property string searchString
+                TextField {
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+                    placeholderText: i18n("Search...")
+                    onTextEdited: listView.searchString = text
+                }
+            }
+            Kirigami.Separator {
+                Layout.fillWidth: true
+            }
+            ScrollView {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+                ListView {
+                    id: listView
 
-                implicitHeight: contentHeight
-                model: DelegateModel {
-                    id: delegateModel
+                    // this causes us to load at least one delegate
+                    // this is essential in guessing the contentHeight
+                    // which is needed to initially resize the popup
+                    cacheBuffer: 1
 
-                    model: listView.searchString ? sensorsSearchableModel : treeModel
-                    delegate: Kirigami.BasicListItem {
-                        width: listView.width
-                        text: model.display
-                        reserveSpaceForIcon: false
+                    property string searchString
 
-                        onClicked: {
-                            if (model.SensorId.length == 0) {
-                                delegateModel.rootIndex = delegateModel.modelIndex(index);
-                            } else {
-                                if (control.selected === undefined || control.selected === null) {
-                                    control.selected = []
+                    implicitHeight: contentHeight
+                    model: DelegateModel {
+                        id: delegateModel
+
+                        model: listView.searchString ? sensorsSearchableModel : treeModel
+                        delegate: Kirigami.BasicListItem {
+                            width: listView.width
+                            text: model.display
+                            reserveSpaceForIcon: false
+
+                            onClicked: {
+                                if (model.SensorId.length == 0) {
+                                    delegateModel.rootIndex = delegateModel.modelIndex(index);
+                                } else {
+                                    if (control.selected === undefined || control.selected === null) {
+                                        control.selected = []
+                                    }
+                                    control.selected.push(model.SensorId)
+                                    control.selectedChanged()
+                                    popup.close()
                                 }
-                                control.selected.push(model.SensorId)
-                                control.selectedChanged()
-                                popup.close()
                             }
                         }
                     }
-                }
 
-                Sensors.SensorTreeModel { id: treeModel }
+                    Sensors.SensorTreeModel { id: treeModel }
 
-                KItemModels.KSortFilterProxyModel {
-                    id: sensorsSearchableModel
-                    filterCaseSensitivity: Qt.CaseInsensitive
-                    filterString: listView.searchString
-                    sourceModel: KItemModels.KSortFilterProxyModel {
-                        filterRowCallback: function(row, parent) {
-                            var sensorId = sourceModel.data(sourceModel.index(row, 0), Sensors.SensorTreeModel.SensorId)
-                            return sensorId.length > 0
+                    KItemModels.KSortFilterProxyModel {
+                        id: sensorsSearchableModel
+                        filterCaseSensitivity: Qt.CaseInsensitive
+                        filterString: listView.searchString
+                        sourceModel: KItemModels.KSortFilterProxyModel {
+                            filterRowCallback: function(row, parent) {
+                                var sensorId = sourceModel.data(sourceModel.index(row, 0), Sensors.SensorTreeModel.SensorId)
+                                return sensorId.length > 0
+                            }
+                            sourceModel: KItemModels.KDescendantsProxyModel {
+                                model: listView.searchString ? treeModel : null
+                            }
                         }
-                        sourceModel: KItemModels.KDescendantsProxyModel {
-                            model: listView.searchString ? treeModel : null
-                        }
-                    }
-                }
-
-                highlightRangeMode: ListView.ApplyRange
-                highlightMoveDuration: 0
-                boundsBehavior: Flickable.StopAtBounds
-
-                header: RowLayout {
-                    anchors.left: parent.left
-                    anchors.right: parent.right
-
-                    ToolButton {
-                        Layout.fillHeight: true
-                        Layout.preferredWidth: height
-                        icon.name: "go-previous"
-                        text: i18nc("@action:button", "Back")
-                        display: Button.IconOnly
-                        visible: delegateModel.rootIndex.valid
-                        onClicked: delegateModel.rootIndex = delegateModel.parentModelIndex()
                     }
 
-                    TextField {
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
-                        placeholderText: i18n("Search...")
-                        onTextEdited: listView.searchString = text
-                    }
+                    highlightRangeMode: ListView.ApplyRange
+                    highlightMoveDuration: 0
+                    boundsBehavior: Flickable.StopAtBounds
                 }
             }
         }
