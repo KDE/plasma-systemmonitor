@@ -180,7 +180,7 @@ Page {
                 model: KItemModels.KSortFilterProxyModel {
                     id: sortFilter
 
-//                     sourceModel: processModel
+                    sourceModel: processModel
 
                     filterColumnCallback: function(column, parent) {
                         if (column == processModel.enabledAttributes.indexOf("pid")) {

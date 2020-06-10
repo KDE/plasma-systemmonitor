@@ -99,8 +99,7 @@ Table.BaseTableView {
         idRole: "Attribute"
     }
 
-//     Process.ApplicationsDataModel {
-    Process.ProcessDataModel {
+    Process.ApplicationDataModel {
         id: appModel
 
         property int nameColumn: enabledAttributes.indexOf("appName")
@@ -141,9 +140,9 @@ Table.BaseTableView {
             column: 0;
             Table.FirstCellDelegate {
                 iconName: {
-//                     var index = sortFilter.mapToSource(sortFilter.index(model.row, 0))
-//                     index = appModel.index(index.row, appModel.iconColumn)
-//                     return appModel.data(index)
+                    var index = sortFilter.mapToSource(sortFilter.index(model.row, 0))
+                    index = appModel.index(index.row, appModel.iconColumn)
+                    return appModel.data(index)
                     return ""
                 }
             }
