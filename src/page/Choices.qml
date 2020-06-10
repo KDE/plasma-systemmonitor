@@ -1,4 +1,5 @@
 import QtQuick 2.14
+import QtQuick.Window 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
 import QtQml.Models 2.12
@@ -24,6 +25,11 @@ Control {
                 popup.open()
             } else {
                 popup.close()
+            }
+        }
+        onReleased: {
+            if (focus) {
+                popup.open()
             }
         }
     }
@@ -111,12 +117,11 @@ Control {
     Popup {
         id: popup
 
-        y: control.height
+        y: control.Kirigami.ScenePosition.y + control.height + height > control.Window.height
+            ? -height
+            : control.height
         width: control.width + 2
-        implicitHeight: {
-            var yInScene = mapToGlobal(y, 0)
-            Math.min(contentItem.implicitHeight + 2, applicationWindow().height - yInScene.y - Kirigami.Units.gridUnit)
-        }
+        implicitHeight: Math.min(contentItem.implicitHeight + 2, Kirigami.Units.gridUnit * 20)
         topMargin: 6
         bottomMargin: 6
         Kirigami.Theme.colorSet: Kirigami.Theme.View
@@ -127,82 +132,84 @@ Control {
 
         padding: 1
 
-        contentItem: ListView {
-            id: listView
+        contentItem: ScrollView {
+            ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+            ListView {
+                id: listView
 
-            // this causes us to load at least one delegate
-            // this is essential in guessing the contentHeight
-            // which is needed to initially resize the popup
-            cacheBuffer: 1
+                // this causes us to load at least one delegate
+                // this is essential in guessing the contentHeight
+                // which is needed to initially resize the popup
+                cacheBuffer: 1
 
-            property string searchString
+                property string searchString
 
-            implicitHeight: contentHeight
-            model: DelegateModel {
-                id: delegateModel
+                implicitHeight: contentHeight
+                model: DelegateModel {
+                    id: delegateModel
 
-                model: listView.searchString ? sensorsSearchableModel : treeModel
-                delegate: Kirigami.BasicListItem {
-                    width: listView.width
-                    text: model.display
-                    reserveSpaceForIcon: false
+                    model: listView.searchString ? sensorsSearchableModel : treeModel
+                    delegate: Kirigami.BasicListItem {
+                        width: listView.width
+                        text: model.display
+                        reserveSpaceForIcon: false
 
-                    onClicked: {
-                        if (model.SensorId.length == 0) {
-                            delegateModel.rootIndex = delegateModel.modelIndex(index);
-                        } else {
-                            if (control.selected === undefined || control.selected === null) {
-                                control.selected = []
+                        onClicked: {
+                            if (model.SensorId.length == 0) {
+                                delegateModel.rootIndex = delegateModel.modelIndex(index);
+                            } else {
+                                if (control.selected === undefined || control.selected === null) {
+                                    control.selected = []
+                                }
+                                control.selected.push(model.SensorId)
+                                control.selectedChanged()
+                                popup.close()
                             }
-                            control.selected.push(model.SensorId)
-                            control.selectedChanged()
-                            popup.close()
                         }
                     }
                 }
-            }
 
-            Sensors.SensorTreeModel { id: treeModel }
+                Sensors.SensorTreeModel { id: treeModel }
 
-            KItemModels.KSortFilterProxyModel {
-                id: sensorsSearchableModel
-                filterCaseSensitivity: Qt.CaseInsensitive
-                filterString: listView.searchString
-                sourceModel: KItemModels.KSortFilterProxyModel {
-                    filterRowCallback: function(row, parent) {
-                        var sensorId = sourceModel.data(sourceModel.index(row, 0), Sensors.SensorTreeModel.SensorId)
-                        return sensorId.length > 0
-                    }
-                    sourceModel: KItemModels.KDescendantsProxyModel {
-                        model: listView.searchString ? treeModel : null
+                KItemModels.KSortFilterProxyModel {
+                    id: sensorsSearchableModel
+                    filterCaseSensitivity: Qt.CaseInsensitive
+                    filterString: listView.searchString
+                    sourceModel: KItemModels.KSortFilterProxyModel {
+                        filterRowCallback: function(row, parent) {
+                            var sensorId = sourceModel.data(sourceModel.index(row, 0), Sensors.SensorTreeModel.SensorId)
+                            return sensorId.length > 0
+                        }
+                        sourceModel: KItemModels.KDescendantsProxyModel {
+                            model: listView.searchString ? treeModel : null
+                        }
                     }
                 }
-            }
 
-            highlightRangeMode: ListView.ApplyRange
-            highlightMoveDuration: 0
-            boundsBehavior: Flickable.StopAtBounds
-            ScrollBar.vertical: ScrollBar { }
+                highlightRangeMode: ListView.ApplyRange
+                highlightMoveDuration: 0
+                boundsBehavior: Flickable.StopAtBounds
 
-            header: RowLayout {
-                anchors.left: parent.left
-                anchors.right: parent.right
+                header: RowLayout {
+                    anchors.left: parent.left
+                    anchors.right: parent.right
 
-                ToolButton {
-                    Layout.fillHeight: true
-                    Layout.preferredWidth: height
-                    icon.name: "go-previous"
-                    text: i18nc("@action:button", "Back")
-                    display: Button.IconOnly
-                    visible: delegateModel.rootIndex.valid
-                    onClicked: delegateModel.rootIndex = delegateModel.parentModelIndex()
-                }
+                    ToolButton {
+                        Layout.fillHeight: true
+                        Layout.preferredWidth: height
+                        icon.name: "go-previous"
+                        text: i18nc("@action:button", "Back")
+                        display: Button.IconOnly
+                        visible: delegateModel.rootIndex.valid
+                        onClicked: delegateModel.rootIndex = delegateModel.parentModelIndex()
+                    }
 
-                TextField {
-                    Layout.fillWidth: true
-                    Layout.fillHeight: true
-                    placeholderText: i18n("Search...")
-                    onTextEdited: listView.searchString = text
+                    TextField {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                        placeholderText: i18n("Search...")
+                        onTextEdited: listView.searchString = text
+                    }
                 }
             }
         }
