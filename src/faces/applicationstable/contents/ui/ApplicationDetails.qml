@@ -87,7 +87,7 @@ Page {
 
             legendVisible: false
 
-//             yRange { from: 0; to: totalMemorySensor.value; automatic: false }
+            yRange { from: 0; to: totalMemorySensor.value; automatic: false }
             xRange { from: 0; to: 50 }
             unit: totalMemorySensor.unit
 
