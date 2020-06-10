@@ -9,7 +9,7 @@ import org.kde.kirigami 2.12 as Kirigami
 import org.kde.ksysguard.faces 1.0 as Faces
 import org.kde.ksysguard.page 1.0
 
-Kirigami.Page {
+Kirigami.ScrollablePage {
     id: page
 
     property FaceLoader loader
@@ -17,11 +17,6 @@ Kirigami.Page {
     property int activeSection: 0
 
     title: i18n("Configure %1", loader.controller.title)
-
-    leftPadding: 0
-    rightPadding: 0
-    topPadding: 0
-    bottomPadding: 0
 
     Kirigami.ColumnView.fillWidth: false
 
@@ -47,133 +42,6 @@ Kirigami.Page {
         }
     ]
 
-    ScrollView {
-        id: scrollView
-        anchors.fill: parent
-
-        Item {
-            width: scrollView.width - scrollView.leftPadding - scrollView.rightPadding
-            implicitHeight: layout.implicitHeight + Kirigami.Units.largeSpacing * 2
-
-            ColumnLayout {
-                id: layout
-                anchors.fill: parent
-                anchors.margins: Kirigami.Units.largeSpacing
-
-                Label {
-                    Layout.fillWidth: true
-                    text: i18n("Title")
-
-                    CheckBox {
-                        id: showTitleCheckbox
-                        anchors.right: parent.right
-                        anchors.verticalCenter: parent.verticalCenter
-                        text: i18n("Display")
-                        checked: true
-                    }
-                }
-
-
-                TextField {
-                    id: titleField
-                    Kirigami.FormData.label: i18n("Title:")
-
-                    text: page.loader.controller.title
-
-                    Layout.fillWidth: true
-
-                    onTextEdited: page.loader.controller.title = text
-                }
-
-                ComboBox {
-                    id: faceCombo
-
-                    property string faceId: page.loader.controller.faceId
-
-                    model: page.loader.controller.availableFacesModel
-                    textRole: "display"
-                    currentIndex: {
-                        // TODO just make an indexOf invokable on the model?
-                        for (var i = 0; i < count; ++i) {
-                            if (model.pluginId(i) === faceId) {
-                                return i;
-                            }
-                        }
-                        return -1;
-                    }
-                    onActivated: {
-                        page.loader.controller.faceId = model.pluginId(index);
-                    }
-
-                    Kirigami.FormData.label: i18n("Display Style:")
-                    Layout.fillWidth: true
-                }
-
-                Control {
-                    contentItem: loader.controller.faceConfigUi
-
-                    Connections {
-                        target: loader.controller.faceConfigUi
-
-                        function onConfigurationChanged() {
-                            loader.controller.faceConfigUi.saveConfig()
-                            loader.dataObject.markDirty()
-                        }
-                    }
-                }
-
-                Label { text: "Total Sensors"; visible: loader.controller.supportsTotalSensors }
-
-                Choices {
-                    Layout.fillWidth: true
-                    visible: loader.controller.supportsTotalSensors
-
-                    selected: loader.controller.totalSensors
-                    onSelectedChanged: loader.controller.totalSensors = selected
-
-                    colors: loader.controller.sensorColors
-                    onSelectColor: {
-                        colorDialog.destinationSensor = sensorId
-                        colorDialog.open()
-                    }
-                }
-
-                Label { text: "Sensors" }
-
-                Choices {
-                    Layout.fillWidth: true
-
-                    selected: loader.controller.highPrioritySensorIds
-                    onSelectedChanged: loader.controller.highPrioritySensorIds = selected
-
-                    colors: loader.controller.sensorColors
-                    onSelectColor: {
-                        colorDialog.destinationSensor = sensorId
-                        colorDialog.open()
-                    }
-                }
-
-                Label { text: "Text-Only Sensors"; visible: loader.controller.supportsLowPrioritySensors }
-
-                Choices {
-                    Layout.fillWidth: true
-                    visible: loader.controller.supportsLowPrioritySensors
-
-                    selected: loader.controller.lowPrioritySensors
-                    onSelectedChanged: loader.controller.lowPrioritySensorIds = selected
-
-                    colors: loader.controller.sensorColors
-                    onSelectColor: {
-                        colorDialog.destinationSensor = sensorId
-                        colorDialog.open()
-                    }
-                }
-
-                Item { Layout.fillHeight: true; width: 1 }
-            }
-        }
-    }
-
     ColorDialog {
         id: colorDialog
         property string destinationSensor
@@ -184,5 +52,123 @@ Kirigami.Page {
             colors[destinationSensor] = color
             loader.controller.sensorColors = colors
         }
+    }
+
+    ColumnLayout {
+        id: layout
+        // anchors.fill: parent
+        // anchors.margins: Kirigami.Units.largeSpacing
+
+        Label {
+            Layout.fillWidth: true
+            text: i18n("Title")
+
+            CheckBox {
+                id: showTitleCheckbox
+                anchors.right: parent.right
+                anchors.verticalCenter: parent.verticalCenter
+                text: i18n("Display")
+                checked: true
+            }
+        }
+
+
+        TextField {
+            id: titleField
+            Kirigami.FormData.label: i18n("Title:")
+
+            text: page.loader.controller.title
+
+            Layout.fillWidth: true
+
+            onTextEdited: page.loader.controller.title = text
+        }
+
+        ComboBox {
+            id: faceCombo
+
+            property string faceId: page.loader.controller.faceId
+
+            model: page.loader.controller.availableFacesModel
+            textRole: "display"
+            currentIndex: {
+                // TODO just make an indexOf invokable on the model?
+                for (var i = 0; i < count; ++i) {
+                    if (model.pluginId(i) === faceId) {
+                        return i;
+                    }
+                }
+                return -1;
+            }
+            onActivated: {
+                page.loader.controller.faceId = model.pluginId(index);
+            }
+
+            Kirigami.FormData.label: i18n("Display Style:")
+            Layout.fillWidth: true
+        }
+
+        Control {
+            Layout.fillWidth: true
+            contentItem: loader.controller.faceConfigUi
+
+            Connections {
+                target: loader.controller.faceConfigUi
+
+                function onConfigurationChanged() {
+                    loader.controller.faceConfigUi.saveConfig()
+                    loader.dataObject.markDirty()
+                }
+            }
+        }
+
+        Label { text: "Total Sensors"; visible: loader.controller.supportsTotalSensors }
+
+        Choices {
+            Layout.fillWidth: true
+            visible: loader.controller.supportsTotalSensors
+
+            selected: loader.controller.totalSensors
+            onSelectedChanged: loader.controller.totalSensors = selected
+
+            colors: loader.controller.sensorColors
+            onSelectColor: {
+                colorDialog.destinationSensor = sensorId
+                colorDialog.open()
+            }
+        }
+
+        Label { text: "Sensors" }
+
+        Choices {
+            Layout.fillWidth: true
+
+            selected: loader.controller.highPrioritySensorIds
+            onSelectedChanged: loader.controller.highPrioritySensorIds = selected
+
+            colors: loader.controller.sensorColors
+            onSelectColor: {
+                colorDialog.destinationSensor = sensorId
+                colorDialog.open()
+            }
+        }
+
+        Label { text: "Text-Only Sensors"; visible: loader.controller.supportsLowPrioritySensors }
+
+        Choices {
+            Layout.fillWidth: true
+            visible: loader.controller.supportsLowPrioritySensors
+
+            selected: loader.controller.lowPrioritySensors
+            onSelectedChanged: loader.controller.lowPrioritySensorIds = selected
+
+            colors: loader.controller.sensorColors
+            onSelectColor: {
+                colorDialog.destinationSensor = sensorId
+                colorDialog.open()
+            }
+        }
+
+        Item { Layout.fillHeight: true; width: 1 }
     }
 }
