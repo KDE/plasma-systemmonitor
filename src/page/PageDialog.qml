@@ -48,7 +48,7 @@ Dialog {
                 text: dialog.name
                 onTextEdited: dialog.name = text
 
-                validator: RegularExpressionValidator { regularExpression: /.+/ }
+                validator: RegularExpressionValidator { regularExpression: /^[\pL\pN][^\pC/]*/ }
             }
             Kirigami.InlineMessage {
                 Layout.fillWidth: true
