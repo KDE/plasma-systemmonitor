@@ -78,7 +78,7 @@ Column {
             onAddTitle: pageData.insertChild(index + 1, {name: "row-" + (index + 1), isTitle: true, title: "New Title" })
             onAddRow: {
                 var child = pageData.insertChild(index + 1, {name: "row-" + (index + 1), isTitle: false, title: ""})
-                var column = child.insertChild(0, {"name": "column-0", showBackground: false})
+                var column = child.insertChild(0, {"name": "column-0", showBackground: true})
                 column.insertChild(0, {"name": "section-0", isSeparator: false})
             }
             onRemove: pageData.removeChild(index)
