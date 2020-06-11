@@ -117,6 +117,11 @@ Control {
     Popup {
         id: popup
 
+        // Those bindings will be immediately broken on show, but they're needed to not show the popup at a wrong position for an instant
+        y: (control.Kirigami.ScenePosition.y + control.height + height > control.Window.height)
+            ? - height
+            : control.height
+        implicitHeight: Math.min(contentItem.implicitHeight + 2, Kirigami.Units.gridUnit * 20)
         width: control.width + 2
         topMargin: 6
         bottomMargin: 6
@@ -136,6 +141,8 @@ Control {
             }
             implicitHeight = Math.min(contentItem.implicitHeight + 2, Kirigami.Units.gridUnit * 20)
         }
+        onClosed: delegateModel.rootIndex = delegateModel.parentModelIndex()
+
         contentItem: ColumnLayout {
             spacing: 0
             RowLayout {
