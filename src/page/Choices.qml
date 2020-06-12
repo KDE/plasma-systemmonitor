@@ -81,7 +81,8 @@ Control {
 
                         Layout.fillWidth: true
                         // Have to use a separate metrics object as contentWidth will be the width of the elided text unfortunately
-                        Layout.maximumWidth: labelMetrics.boundingRect.width
+                        // FIXME: why +2 is necessary?
+                        Layout.maximumWidth: labelMetrics.boundingRect.width + 2
                         TextMetrics {
                             id: labelMetrics
                             text: sensor.name
