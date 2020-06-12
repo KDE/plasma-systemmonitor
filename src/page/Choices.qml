@@ -56,7 +56,10 @@ Control {
                                         control.width - control.leftPadding - control.rightPadding)
 
                 Sensors.Sensor { id: sensor; sensorId: modelData }
-
+Text {
+    z: 2
+    text: label.contentWidth
+}
                 RowLayout {
                     id: layout
 
@@ -80,7 +83,13 @@ Control {
                         id: label
 
                         Layout.fillWidth: true
-                        Layout.maximumWidth: contentWidth
+                        // Have to use a separate metrics object as contentWidth will be the width of the elided text unfortunately
+                        Layout.maximumWidth: labelMetrics.boundingRect.width
+                        TextMetrics {
+                            id: labelMetrics
+                            text: sensor.name
+                            font: label.font
+                        }
 
                         text: sensor.name
                         elide: Text.ElideRight
