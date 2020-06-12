@@ -56,10 +56,7 @@ Control {
                                         control.width - control.leftPadding - control.rightPadding)
 
                 Sensors.Sensor { id: sensor; sensorId: modelData }
-Text {
-    z: 2
-    text: label.contentWidth
-}
+
                 RowLayout {
                     id: layout
 
