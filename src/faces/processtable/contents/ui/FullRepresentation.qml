@@ -291,21 +291,4 @@ Faces.SensorFace {
             setColumnDisplay(JSON.parse(root.config.columnDisplay))
         }
     }
-
-//     Configuration {
-//         id: config
-//
-//         property int userFilterMode: showGroup.checkedAction.mode
-//         property int viewMode: viewGroup.checkedAction.mode
-//         property alias sortedProcessColumns: columnDialog.sortedColumns
-//         property alias processColumnWidths: table.columnWidths
-//         property alias processSortColumn: table.sortName
-//         property alias processSortDirection: table.sortOrder
-//
-//         property string processColumnDisplay: JSON.stringify(columnDialog.columnDisplay)
-//
-//         property bool askWhenKillingProcesses
-//
-//         onConfigurationLoaded: columnDialog.setColumnDisplay(JSON.parse(config.processColumnDisplay))
-//     }
 }
