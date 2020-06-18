@@ -91,9 +91,12 @@ Faces.SensorFace {
             enabledColumns: columnDialog.visibleColumns
             columnDisplay: columnDialog.columnDisplay
 
-            columnWidths: root.config.applicationColumnWidths
-            sortName: root.config.applicationSortColumn
-            sortOrder: root.config.applicationSortDirection
+            columnWidths: root.config.columnWidths
+            onColumnWidthsChanged: root.config.columnWidths = columnWidths
+            sortName: root.config.sortColumn
+            onSortNameChanged: root.config.sortColumn = sortName
+            sortOrder: root.config.sortDirection
+            onSortOrderChanged: root.config.sortDirection = sortOrder
         }
 
         Kirigami.Separator {
@@ -268,7 +271,7 @@ Faces.SensorFace {
         }
 
         onAccepted: {
-            config.askWhenKillingApplications = !killDialog.doNotAskAgain
+            root.config.askWhenKilling = !killDialog.doNotAskAgain
 
             for (var i in table.selectedApplications) {
                 processHelper.sendSignal(table.selectedApplications[i].pids, killDialog.signalToSend);
@@ -284,7 +287,7 @@ Faces.SensorFace {
                 return
             }
 
-            if (config.askWhenKillingApplications) {
+            if (root.config.askWhenKilling) {
                 killDialog.signalToSend = sig
                 killDialog.open()
                 return
@@ -306,28 +309,15 @@ Faces.SensorFace {
 
         sourceModel: table.sourceModel.attributesModel
 
-        sortedColumns: root.config.sortedApplicationColumns
+        sortedColumns: root.config.sortedColumns
 
         onAccepted: {
             root.config.sortedColumns = sortedColumns
-            root.config.applicationColumnDisplay = JSON.stringify(columnDisplay)
+            root.config.columnDisplay = JSON.stringify(columnDisplay)
         }
 
         Component.onCompleted: {
-            setColumnDisplay(JSON.parse(root.config.applicationColumnDisplay))
+            setColumnDisplay(JSON.parse(root.config.columnDisplay))
         }
     }
-
-//         property alias showDetails: showDetailsAction.checked
-//         property alias detailsWidth: details.width
-//         property alias sortedApplicationColumns: columnDialog.sortedColumns
-//         property alias applicationColumnWidths: table.columnWidths
-//         property alias applicationSortColumn: table.sortName
-//         property alias applicationSortDirection: table.sortOrder
-//
-//         property string applicationColumnDisplay: JSON.stringify(columnDialog.columnDisplay)
-//
-//         property bool askWhenKillingApplications
-//
-//         onConfigurationLoaded: columnDialog.setColumnDisplay(JSON.parse(applicationColumnDisplay))
 }
