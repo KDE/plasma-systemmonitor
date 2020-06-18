@@ -47,7 +47,7 @@ Faces.SensorFace {
         Kirigami.Action {
             icon.name: "application-exit"
             text: i18n("Quit Application")
-            onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.TerminateSignal)
+            onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             enabled: table.selection.hasSelection
         }
     ]
@@ -180,42 +180,42 @@ Faces.SensorFace {
 
             MenuItem {
                 text: i18n("Suspend (STOP)");
-                onTriggered: processHelper.sendSignalToSelection(Proces.ProcessHelper.StopSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.StopSignal)
             }
             MenuItem {
                 text: i18n("Continue (CONT)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.ContinueSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.ContinueSignal)
             }
             MenuItem {
                 text: i18n("Hangup (HUP)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.HangupSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.HangupSignal)
             }
             MenuItem {
                 text: i18n("Interrupt (INT)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.InterruptSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.InterruptSignal)
             }
             MenuItem {
                 text: i18n("Terminate (TERM)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.TerminateSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             }
             MenuItem {
                 text: i18n("Kill (KILL)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.KillSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.KillSignal)
             }
             MenuItem {
                 text: i18n("User 1 (USR1)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.User1Signal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.User1Signal)
             }
             MenuItem {
                 text: i18n("User 2 (USR2)")
-                onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.User2Signal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.User2Signal)
             }
         }
         MenuSeparator { }
         MenuItem {
             icon.name: "application-exit";
             text: i18n("Quit Application");
-            onTriggered: processHelper.sendSignalToSelection(Process.ProcessHelper.TerminateSignal)
+            onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
         }
     }
 
@@ -271,10 +271,7 @@ Faces.SensorFace {
             config.askWhenKillingApplications = !killDialog.doNotAskAgain
 
             for (var i in table.selectedApplications) {
-                for (var j in table.selectedApplications[i].pids) {
-                    var pid = table.selectedApplications[i].pids[j]
-                    processHelper.sendSignal(pid, killDialog.signalToSend);
-                }
+                processHelper.sendSignal(table.selectedApplications[i].pids, killDialog.signalToSend);
             }
         }
     }
@@ -294,10 +291,7 @@ Faces.SensorFace {
             }
 
             for (var i in table.selectedApplications) {
-                for (var j in table.selectedApplications[i].pids) {
-                    var pid = table.selectedApplications[i].pids[j]
-                    sendSignal(pid, sig);
-                }
+                sendSignal(table.selectedApplications[i].pids, sig);
             }
         }
     }
