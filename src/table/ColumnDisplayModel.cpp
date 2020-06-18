@@ -97,15 +97,18 @@ void ColumnDisplayModel::setColumnDisplay(const QVariantMap &newColumnDisplay)
 
 QStringList ColumnDisplayModel::visibleColumnIds() const
 {
-    QStringList result = m_columnDisplay.keys();
-
     QHash<QString, int> sourceRowMapping;
     for (int i = 0; i < rowCount(); ++i) {
         auto id = sourceModel()->data(sourceModel()->index(i, 0), idRoleNumber()).toString();
         sourceRowMapping.insert(id, i);
     }
 
-    std::sort(result.begin(), result.end(), [sourceRowMapping](const QString &first, const QString &second) {
+    QStringList result;
+    std::copy_if(m_columnDisplay.keyBegin(), m_columnDisplay.keyEnd(), std::back_inserter(result), [this](const auto &key) {
+        return m_columnDisplay.value(key) != QStringLiteral("hidden");
+    });
+
+    std::stable_sort(result.begin(), result.end(), [sourceRowMapping](const QString &first, const QString &second) {
         return sourceRowMapping.value(first) < sourceRowMapping.value(second);
     });
 
