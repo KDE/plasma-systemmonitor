@@ -9,22 +9,22 @@
         <entry name="showDetails" type="Bool">
             <default>false</default>
         </entry>
-        <entry name="sortedApplicationColumns" type="StringList">
-            <default>appName,usage,vmPSS,netInbound,netOutbound,ioCharactersActuallyReadRate,ioCharactersActuallyWrittenRate</default>
-        </entry>
         <entry name="detailsWidth" type="Double">
             <default>250</default>
         </entry>
-        <entry name="applicationColumnWidths" type="StringList">
+        <entry name="sortedColumns" type="StringList">
+            <default>appName,usage,vmPSS,netInbound,netOutbound,ioCharactersActuallyReadRate,ioCharactersActuallyWrittenRate</default>
+        </entry>
+        <entry name="columnWidths" type="StringList">
             <default>0.31,0.10,0.11,0.12,0.12,0.12,0.12</default>
         </entry>
-        <entry name="applicationSortColumn" type="String">
+        <entry name="sortColumn" type="String">
             <default>appName</default>
         </entry>
-        <entry name="applicationSortDirection" type="Int">
+        <entry name="sortDirection" type="Int">
             <default>0</default>
         </entry>
-        <entry name="applicationColumnDisplay" type="String">
+        <entry name="columnDisplay" type="String">
             <!--
             This setting is actually a hash, but since KConfig does not support
             that, we serialize it from and to JSON. So the below default should
@@ -32,7 +32,7 @@
             -->
             <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","appName":"text","netInbound":"text","netOutbound":"text","usage":"line","vmPSS":"text"}</default>
         </entry>
-        <entry name="askWhenKillingApplications">
+        <entry name="askWhenKilling">
             <default>true</default>
         </entry>
     </group>
