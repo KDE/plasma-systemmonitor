@@ -57,7 +57,7 @@ Faces.SensorFace {
          Kirigami.Action {
             icon.name: "view-list-details"
             checkable: true
-            checked: config.viewMode == mode
+            checked: root.config.viewMode == mode
             text: i18n("Display as List")
             displayHint: Kirigami.Action.IconOnly
             property int mode: 0
@@ -67,7 +67,7 @@ Faces.SensorFace {
         Kirigami.Action {
             icon.name: "view-list-tree"
             checkable: true
-            checked: config.viewMode == mode
+            checked: root.config.viewMode == mode
             text: i18n("Display as Tree")
             displayHint: Kirigami.Action.IconOnly
             property int mode: 1
@@ -82,7 +82,7 @@ Faces.SensorFace {
             Kirigami.Action {
                 text: i18n("Own Processes")
                 checkable: true
-                checked: config.userFilterMode == mode
+                checked: root.config.userFilterMode == mode
                 icon.name: "view-process-own"
                 property int mode: Table.UserMode.Own
                 ActionGroup.group: showGroup
@@ -91,7 +91,7 @@ Faces.SensorFace {
             Kirigami.Action {
                 text: i18n("User Processes")
                 checkable: true
-                checked: config.userFilterMode == mode
+                checked: root.config.userFilterMode == mode
                 icon.name: "view-process-users"
                 property int mode: Table.UserMode.User
                 ActionGroup.group: showGroup
@@ -100,7 +100,7 @@ Faces.SensorFace {
             Kirigami.Action {
                 text: i18n("System Processes")
                 checkable: true
-                checked: config.userFilterMode == mode
+                checked: root.config.userFilterMode == mode
                 icon.name: "view-process-system"
                 property int mode: Table.UserMode.System
                 ActionGroup.group: showGroup
@@ -109,7 +109,7 @@ Faces.SensorFace {
             Kirigami.Action {
                 text: i18n("All Processes")
                 checkable: true
-                checked: config.userFilterMode == mode
+                checked: root.config.userFilterMode == mode
                 icon.name: "view-process-all"
                 property int mode: Table.UserMode.All
                 ActionGroup.group: showGroup
@@ -131,10 +131,14 @@ Faces.SensorFace {
         id: table
 
         viewMode: root.config.userFilterMode
+        onViewModeChanged: root.config.userFilterMode = viewMode
 
         columnWidths: root.config.columnWidths
+        onColumnWidthsChanged: root.config.columnWidths = columnWidths
         sortName: root.config.sortColumn
+        onSortNameChanged: root.config.sortColumn = sortName
         sortOrder: root.config.sortDirection
+        onSortOrderChanged: root.config.sortDirection = sortOrder
 
         onContextMenuRequested: {
             contextMenu.popup(null, position.x, position.y)
@@ -241,10 +245,10 @@ Faces.SensorFace {
         }
 
         onAccepted: {
-            config.askWhenKillingProcesses = !killDialog.doNotAskAgain
             for (var i of items) {
                 processHelper.sendSignal(i.pid, signalToSend)
             }
+            root.config.askWhenKilling = !killDialog.doNotAskAgain
         }
     }
 
@@ -257,7 +261,7 @@ Faces.SensorFace {
         ]
 
         function sendSignalToSelection(sig) {
-            if (root.config.askWhenKillingProcesses && killSignals.includes(sig)) {
+            if (root.config.askWhenKilling && killSignals.includes(sig)) {
                 killDialog.signalToSend = sig
                 killDialog.open()
             } else {
