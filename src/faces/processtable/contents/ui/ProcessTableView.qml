@@ -13,13 +13,6 @@ import org.kde.ksysguard.table 1.0 as Table
 Table.BaseTableView {
     id: view
 
-    enum ViewMode {
-        Own,
-        User,
-        System,
-        All
-    }
-
     property string nameFilterString
     onNameFilterStringChanged: rowFilter.invalidate()
     property alias processModel: processModel
@@ -66,13 +59,13 @@ Table.BaseTableView {
             var uid = processModel.data(processModel.index(row, processModel.uidColumn))
 
             switch(view.viewMode) {
-                case ProcessTableView.ViewMode.Own:
+                case Table.UserMode.Own:
                     result = loggedInUser.loginName == processModel.data(processModel.index(row, processModel.usernameColumn))
                     break
-                case ProcessTableView.ViewMode.User:
+                case Table.UserMode.User:
                     result = uid >= 1000 && uid < 65534
                     break
-                case ProcessTableView.ViewMode.System:
+                case Table.UserMode.System:
                     result = uid < 1000 || uid >= 65534
                     break
                 default:

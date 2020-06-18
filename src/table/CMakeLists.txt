@@ -16,6 +16,7 @@ set(table_QML
     TableViewHeader.qml
     UserCellDelegate.qml
     KillDialog.qml
+    UserMode.qml
 )
 
 add_library(TablePlugin SHARED ${table_SRCS})
