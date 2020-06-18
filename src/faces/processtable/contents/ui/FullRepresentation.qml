@@ -161,7 +161,7 @@ Faces.SensorFace {
 
             MenuItem {
                 text: i18n("Suspend (STOP)");
-                onTriggered: processHelper.sendSignalToSelection(Proces.ProcessController.StopSignal)
+                onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.StopSignal)
             }
             MenuItem {
                 text: i18n("Continue (CONT)")
@@ -245,10 +245,9 @@ Faces.SensorFace {
         }
 
         onAccepted: {
-            for (var i of items) {
-                processHelper.sendSignal(i.pid, signalToSend)
-            }
             root.config.askWhenKilling = !killDialog.doNotAskAgain
+            var pids = items.map(i => i.pid)
+            processHelper.sendSignal(pids, signalToSend)
         }
     }
 
@@ -265,9 +264,8 @@ Faces.SensorFace {
                 killDialog.signalToSend = sig
                 killDialog.open()
             } else {
-                for (var i of table.selectedProcesses) {
-                    sendSignal(i.pid, sig)
-                }
+                var pids = table.selectedProcesses.map(i => i.pid)
+                sendSignal(pids, sig);
             }
         }
     }
