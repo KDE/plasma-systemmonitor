@@ -124,7 +124,7 @@ Faces.SensorFace {
         }
     ]
 
-    ActionGroup { id: showGroup }
+    ActionGroup { id: showGroup; onTriggered: root.config.userFilterMode = action.mode }
     ActionGroup { id: viewGroup }
 
     contentItem: ProcessTableView {
