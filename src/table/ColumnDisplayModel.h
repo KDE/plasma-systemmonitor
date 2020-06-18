@@ -57,7 +57,6 @@ public:
 
 private:
     int idRoleNumber() const;
-    void sortColumns();
 
     QHash<QString, QString> m_columnDisplay;
 
