@@ -18,6 +18,8 @@ Container {
 
     implicitHeight: heading.height + topPadding + bottomPadding
 
+    alwaysShowBackground: true
+
     Row {
         anchors.fill: parent
         anchors.topMargin: control.topPadding

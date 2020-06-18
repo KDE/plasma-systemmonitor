@@ -9,6 +9,7 @@ Control {
 
     property bool raised: false
     property bool single: true
+    property bool alwaysShowBackground: false
 
     property alias actions: toolbar.actions
 
@@ -39,6 +40,8 @@ Control {
             id: backgroundRectangle
             anchors.fill: parent
             highlight: control.hovered
+            opacity: control.alwaysShowBackground || control.hovered ? 1 : 0
+            Behavior on opacity { NumberAnimation { duration: Kirigami.Units.shortDuration } }
             onClicked: control.select(control)
 
             shadow.size: control.raised ? Kirigami.Units.gridUnit : 0
