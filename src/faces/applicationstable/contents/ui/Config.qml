@@ -1,6 +1,5 @@
 /*
- *   Copyright 2019 Marco Martin <mart@kde.org>
- *   Copyrigth 2019 Kai Uwe Broulik <kde@broulik.de>
+ *   Copyright 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU Library General Public License as
@@ -20,7 +19,7 @@
 
 import QtQuick 2.14
 import QtQuick.Layouts 1.14
-import QtQuick.Controls 2.14 as QQC2
+import QtQuick.Controls 2.14
 
 import org.kde.kirigami 2.8 as Kirigami
 
@@ -31,10 +30,15 @@ Kirigami.FormLayout {
     id: root
 
     property alias cfg_showDetails: showDetailsCheckbox.checked
+    property alias cfg_askWhenKilling: confirmCheckbox.checked
 
-    QQC2.CheckBox {
-        id: showSensorsLegendCheckbox
-        text: i18n("Show Details Panel")
+    CheckBox {
+        id: showDetailsCheckbox
+        text: i18n("Show details panel.")
+    }
+
+    CheckBox {
+        id: confirmCheckbox
+        text: i18n("Confirm when quitting applications.")
     }
 }
-
