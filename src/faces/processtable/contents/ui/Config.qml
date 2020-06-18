@@ -20,14 +20,40 @@
 
 import QtQuick 2.14
 import QtQuick.Layouts 1.14
-import QtQuick.Controls 2.14 as QQC2
+import QtQuick.Controls 2.14
 
-import org.kde.kirigami 2.8 as Kirigami
+import org.kde.kirigami 2.12 as Kirigami
 
 import org.kde.ksysguard.sensors 1.0 as Sensors
 import org.kde.ksysguard.faces 1.0 as Faces
+import org.kde.ksysguard.table 1.0 as Table
 
 Kirigami.FormLayout {
     id: root
-}
 
+    property alias cfg_askWhenKilling: confirmCheckbox.checked
+    property int cfg_userFilterMode
+
+    CheckBox {
+        id: confirmCheckbox
+        text: i18n("Confirm ending processes.")
+    }
+
+    ComboBox {
+        id: showDefaultCombo
+        Kirigami.FormData.label: i18n("By default show:")
+
+        textRole: "key"
+        valueRole: "value"
+
+        onActivated: root.cfg_userFilterMode = currentValue
+        Component.onCompleted: currentIndex = indexOfValue(root.cfg_userFilterMode)
+
+        model: [
+            { key: i18n("Own Processes"), value: Table.UserMode.Own },
+            { key: i18n("User Processes"), value: Table.UserMode.User },
+            { key: i18n("System Processes"), value: Table.UserMode.System },
+            { key: i18n("All Processes"), value: Table.UserMode.All },
+        ]
+    }
+}
