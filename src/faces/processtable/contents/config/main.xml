@@ -32,7 +32,7 @@
             -->
             <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","name":"text","netInbound":"text","netOutbound":"text","usage":"line","vmPSS":"text"}</default>
         </entry>
-        <entry name="askWhenKillingProcesses" type="Bool">
+        <entry name="askWhenKilling" type="Bool">
             <default>true</default>
         </entry>
     </group>
