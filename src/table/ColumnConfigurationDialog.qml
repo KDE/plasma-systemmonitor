@@ -85,7 +85,7 @@ Dialog {
 
                 delegate: Loader {
                     width: columnView.width
-                    height: Kirigami.Units.gridUnit * 2
+                    height: Kirigami.Units.gridUnit * 3
                     property var modelData: model
                     sourceComponent: delegateComponent
                 }
@@ -95,27 +95,27 @@ Dialog {
                     Kirigami.AbstractListItem {
                         id: listItem
                         Kirigami.Theme.colorSet: Kirigami.Theme.View
-                        width: columnView.width
-                        height: Kirigami.Units.gridUnit * 2
                         rightPadding: Kirigami.Units.smallSpacing
                         property int index: modelData ? modelData.row : -1
-                        contentItem: RowLayout {
+                        contentItem: GridLayout {
+                            rows: 2
+                            flow: GridLayout.TopToBottom
                             Kirigami.ListItemDragHandle {
                                 id: handle
                                 Layout.fillHeight: true
+                                Layout.rowSpan: 2
                                 listItem: listItem
                                 listView: columnView
                                 onMoveRequested: sortModel.move(oldIndex, newIndex)
                             }
                             Label {
                                 Layout.preferredWidth: Kirigami.Units.gridUnit * 10
+                                Layout.rowSpan: modelData && modelData.description ? 1 : 2
                                 text: modelData ? modelData.name : ""
-
                             }
                             Label {
                                 id: descriptionLabel
                                 Layout.fillWidth: true
-                                Layout.leftMargin: Kirigami.Units.largeSpacing
                                 elide: Text.ElideRight
                                 maximumLineCount: 1
                                 textFormat: Text.PlainText
@@ -126,6 +126,7 @@ Dialog {
                             ComboBox {
                                 id: showCombo
                                 textRole: "text"
+                                Layout.rowSpan: 2
                                 model: {
                                     var result = [
                                         {text: i18n("Hidden"), value: "hidden"},
