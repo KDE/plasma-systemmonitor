@@ -13,7 +13,7 @@ cpu/cpu6/TotalLoad=88,233,61
 cpu/cpu7/TotalLoad=61,233,163
 
 [Face-94107109903664][Sensors]
-highPrioritySensorIds=["cpu/cpu0/TotalLoad","cpu/cpu1/TotalLoad","cpu/cpu2/TotalLoad","cpu/cpu3/TotalLoad","cpu/cpu4/TotalLoad","cpu/cpu5/TotalLoad","cpu/cpu6/TotalLoad","cpu/cpu7/TotalLoad"]
+highPrioritySensorIds=["cpu/cpu.*/TotalLoad"]
 
 [Face-94107109903664][org.kde.ksysguard.linechart][General]
 lineChartFillOpacity=100
