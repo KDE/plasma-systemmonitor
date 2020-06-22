@@ -82,12 +82,10 @@ Kirigami.ApplicationWindow {
                         pagePool: pagePoolObject
                         page: "pages/SettingsPage.qml"
                     },
-                    Kirigami.PagePoolAction {
+                    Kirigami.Action {
                         icon.name: "help-about-symbolic";
                         text: i18n("About System Monitor");
-                        checkable: false
-                        pagePool: pagePoolObject
-                        page: "pages/AboutPage.qml"
+                        onTriggered: app.pageStack.layers.push("AboutPage.qml")
                     },
                     Kirigami.Action {
                         icon.name: "application-exit-symbolic";
