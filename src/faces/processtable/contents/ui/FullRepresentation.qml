@@ -218,9 +218,6 @@ Faces.SensorFace {
 
         property int signalToSend
 
-        x: root.width * 0.5 - width / 2
-        y: table.headerHeight - Kirigami.Units.largeSpacing
-
         title: i18np("End Process", "End %1 Processes", items.length)
         killButtonText: i18n("End")
         killButtonIcon: "process-stop"
@@ -272,11 +269,6 @@ Faces.SensorFace {
 
     Table.ColumnConfigurationDialog {
         id: columnDialog
-
-        width: root.width * 0.75
-        height: root.height * 0.75
-        x: root.width * 0.125
-        y: table.headerHeight - Kirigami.Units.smallSpacing
 
         sourceModel: table.processModel.attributesModel
 

@@ -18,15 +18,21 @@ Dialog {
 
     title: i18n("Configure Columns")
 
-    modal: true
     standardButtons: Dialog.Ok | Dialog.Cancel
+
+    modal: true
+    parent: Overlay.overlay
+
+    x: parent ? parent.width / 2 - width / 2 : 0
+    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
+    width: parent ? parent.width * 0.75 : 0
+    height: parent ? parent.height * 0.75 : 0
 
     leftPadding: Kirigami.Units.devicePixelRatio
     rightPadding: Kirigami.Units.devicePixelRatio
     bottomPadding: Kirigami.Units.smallSpacing
     topPadding: Kirigami.Units.smallSpacing
     bottomInset: -Kirigami.Units.smallSpacing
-    topInset: Kirigami.Units.smallSpacing
 
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 

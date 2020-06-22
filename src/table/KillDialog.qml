@@ -10,14 +10,17 @@ Dialog {
     property var items: []
     property bool doNotAskAgain: false
 
+    modal: true
+    parent: Overlay.overlay
+
+    x: parent ? parent.width / 2 - width / 2 : 0
+    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
+
     leftPadding: 1 // Allow dialog background border to show
     rightPadding: 1 // Allow dialog background border to show
     bottomPadding: Kirigami.Units.smallSpacing
     topPadding: Kirigami.Units.smallSpacing
     bottomInset: -Kirigami.Units.smallSpacing
-    topInset: Kirigami.Units.smallSpacing
-
-    modal: true
 
     property string killButtonText: "Exterminate"
     property string killButtonIcon: "killbots"

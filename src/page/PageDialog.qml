@@ -10,8 +10,6 @@ import org.kde.ksysguard.page 1.0
 Dialog {
     id: dialog
 
-    modal: true
-
     property string acceptText: i18n("Add")
     property string acceptIcon: "list-add"
 
@@ -20,15 +18,17 @@ Dialog {
     property real margin: 2
     property string actionsFace
 
-    x: (parent.width / 2) - contentItem.implicitWidth / 2
-    y: (parent.height / 2) - contentItem.implicitHeight / 2
+    modal: true
+    parent: Overlay.overlay
+
+    x: parent ? parent.width / 2 - width / 2 : 0
+    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
 
     leftPadding: 1 // Allow dialog background border to show
     rightPadding: 1 // Allow dialog background border to show
     bottomPadding: Kirigami.Units.smallSpacing
     topPadding: Kirigami.Units.smallSpacing
     bottomInset: -Kirigami.Units.smallSpacing
-    topInset: Kirigami.Units.smallSpacing
 
     contentItem: Rectangle {
         Kirigami.Theme.colorSet: Kirigami.Theme.View
