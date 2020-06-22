@@ -2,9 +2,10 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
 
-import Qt.labs.platform 1.1
+import Qt.labs.platform 1.1 as Platform
 
 import org.kde.kirigami 2.12 as Kirigami
+import org.kde.newstuff 1.62 as NewStuff
 
 import org.kde.ksysguard.faces 1.0 as Faces
 import org.kde.ksysguard.page 1.0
@@ -32,6 +33,7 @@ Kirigami.ScrollablePage {
         },
         Kirigami.Action {
             text: i18n("Get new presets...")
+            onTriggered: newPresetDialog.open()
         },
         Kirigami.Action {
             text: i18n("Save Preset...")
@@ -39,10 +41,11 @@ Kirigami.ScrollablePage {
         Kirigami.Action { separator: true },
         Kirigami.Action {
             text: i18n("Get new display styles...")
+            onTriggered: newFaceDialog.open()
         }
     ]
 
-    ColorDialog {
+    Platform.ColorDialog {
         id: colorDialog
         property string destinationSensor
 
@@ -52,6 +55,20 @@ Kirigami.ScrollablePage {
             colors[destinationSensor] = color
             loader.controller.sensorColors = colors
         }
+    }
+
+    NewStuff.Dialog {
+        id: newPresetDialog
+        downloadNewWhat: i18nc("@title", "Presets")
+        configFile: "systemmonitor-presets.knsrc"
+        onChangedEntriesChanged: loader.controller.availablePresetsModel.reload();
+    }
+
+    NewStuff.Dialog {
+        id: newFaceDialog
+        downloadNewWhat: i18nc("@title", "Display Styles")
+        configFile: "systemmonitor-faces.knsrc"
+        onChangedEntriesChanged: loader.controller.availableFacesModel.reload();
     }
 
     ColumnLayout {
