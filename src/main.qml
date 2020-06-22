@@ -75,13 +75,6 @@ Kirigami.ApplicationWindow {
                         text: app.globalDrawer.collapsed ? i18n("Expand Sidebar") : i18n("Collapse Sidebar")
                         onTriggered: app.globalDrawer.collapsed = !app.globalDrawer.collapsed
                     },
-                    Kirigami.PagePoolAction {
-                        icon.name: "settings-configure"
-                        text: i18n("Configure System Monitor...");
-                        checkable: false
-                        pagePool: pagePoolObject
-                        page: "pages/SettingsPage.qml"
-                    },
                     Kirigami.Action {
                         icon.name: "help-about-symbolic";
                         text: i18n("About System Monitor");
