@@ -17,3 +17,4 @@ MoveAction 1.0 MoveAction.qml
 FaceControl 1.0 FaceControl.qml
 FaceConfigurationPage 1.0 FaceConfigurationPage.qml
 Choices 1.0 Choices.qml
+LoadPresetDialog 1.0 LoadPresetDialog.qml

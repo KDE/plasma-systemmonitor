@@ -22,6 +22,7 @@ set(page_QML
     FaceControl.qml
     FaceConfigurationPage.qml
     Choices.qml
+    LoadPresetDialog.qml
 )
 
 add_library(PagePlugin SHARED ${page_SRCS})
