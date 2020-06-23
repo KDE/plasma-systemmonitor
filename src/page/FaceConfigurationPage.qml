@@ -30,6 +30,7 @@ Kirigami.ScrollablePage {
     actions.contextualActions: [
         Kirigami.Action {
             text: i18n("Load Preset...")
+            onTriggered: loadPresetDialog.open()
         },
         Kirigami.Action {
             text: i18n("Get new presets...")
@@ -59,6 +60,22 @@ Kirigami.ScrollablePage {
             var colors = loader.controller.sensorColors
             colors[destinationSensor] = color
             loader.controller.sensorColors = colors
+        }
+    }
+
+    LoadPresetDialog {
+        id: loadPresetDialog
+
+        controller: loader.controller
+
+        onAccepted: {
+            loader.controller.title = selectedTitle;
+            if (selectedFace) {
+                loader.controller.faceId = selectedFace
+            }
+            loader.controller.loadPreset(selectedPreset);
+            message.text = i18n("Loaded preset %1.", selectedTitle);
+            message.visible = true
         }
     }
 
