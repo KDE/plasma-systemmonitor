@@ -36,7 +36,12 @@ Kirigami.ScrollablePage {
             onTriggered: newPresetDialog.open()
         },
         Kirigami.Action {
-            text: i18n("Save Preset...")
+            text: i18n("Save Settings as Preset")
+            onTriggered: {
+                loader.controller.savePreset()
+                message.text = i18n("Saved settings as preset %1.", loader.controller.title)
+                message.visible = true
+            }
         },
         Kirigami.Action { separator: true },
         Kirigami.Action {
@@ -73,8 +78,12 @@ Kirigami.ScrollablePage {
 
     ColumnLayout {
         id: layout
-        // anchors.fill: parent
-        // anchors.margins: Kirigami.Units.largeSpacing
+
+        Kirigami.InlineMessage {
+            id: message
+            Layout.fillWidth: true
+            showCloseButton: true
+        }
 
         Label {
             Layout.fillWidth: true
@@ -88,7 +97,6 @@ Kirigami.ScrollablePage {
                 checked: true
             }
         }
-
 
         TextField {
             id: titleField
