@@ -43,5 +43,8 @@ Container {
         id: loader
     }
 
-    Component.onCompleted: contentItem = loader.controller.fullRepresentation
+    Component.onCompleted: {
+        loader.controller.fullRepresentation.formFactor = Faces.SensorFace.Constrained;
+        contentItem = loader.controller.fullRepresentation;
+    }
 }

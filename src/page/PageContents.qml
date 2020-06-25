@@ -3,7 +3,7 @@ import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
 
 import org.kde.kirigami 2.12 as Kirigami
-
+import org.kde.ksysguard.faces 1.0 as Faces
 import org.kde.ksysguard.page 1.0
 
 ColumnLayout {
@@ -96,6 +96,7 @@ ColumnLayout {
             }
 
             Component.onCompleted: {
+                loader.controller.fullRepresentation.formFactor = Faces.SensorFace.Constrained;
                 contentItem = loader.controller.fullRepresentation
 
                 if (root.pageData.actionsFace == modelData.data.face) {
