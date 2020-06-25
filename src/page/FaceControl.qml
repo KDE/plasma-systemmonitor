@@ -8,6 +8,7 @@ import org.kde.ksysguard.faces 1.0 as Faces
 import org.kde.ksysguard.page 1.0
 
 Container {
+    id: control
 
     property alias dataObject: loader.dataObject
 
@@ -41,6 +42,12 @@ Container {
 
     FaceLoader {
         id: loader
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        z: 99
+        onClicked: control.select(control)
     }
 
     Component.onCompleted: {
