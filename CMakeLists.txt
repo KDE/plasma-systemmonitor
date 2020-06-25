@@ -22,6 +22,10 @@ find_package(KSysGuard REQUIRED)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
+if (${CMAKE_BUILD_TYPE} STREQUAL "Debug")
+    add_definitions(-DQT_QML_DEBUG)
+endif()
+
 add_subdirectory(src)
 
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
