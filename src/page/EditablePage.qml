@@ -22,21 +22,55 @@ Kirigami.Page {
     Kirigami.ColumnView.fillWidth: true
     Kirigami.ColumnView.reservedSpace: edit ? applicationWindow().pageStack.columnView.columnWidth : 0
 
-    readonly property var actionsFace: contentLoader.item ? contentLoader.item.actionsFace : null
+    readonly property var actionsFace: contentLoader.item && contentLoader.item.actionsFace ? contentLoader.item.actionsFace : null
+    onActionsFaceChanged: updateActions()
+    Connections {
+        target: page.actionsFace
+        function onPrimaryActionsChanged() { page.updateActions() }
+        function onSecondaryActionsChanged() { page.updateActions() }
+    }
 
-    actions.main: page.actionsFace && page.actionsFace.primaryActions.length >= 1 ? page.actionsFace.primaryActions[0] : null
-    actions.left: page.actionsFace && page.actionsFace.primaryActions.length >= 2 ? page.actionsFace.primaryActions[1] : null
-    actions.right: page.actionsFace && page.actionsFace.primaryActions.length >= 3 ? page.actionsFace.primaryActions[2] : null
-
-    actions.contextualActions: {
-        var result = []
-        if (page.actionsFace && page.actionsFace.secondaryActions.length > 0) {
-            result = Array.prototype.map.call(page.actionsFace.secondaryActions, i => i)
-            result.push(separator)
+    function updateActions() {
+        if (!actionsFace) {
+            actions.contextualActions = [editAction, configureAction]
+            return
         }
-        result.push(editAction)
-        result.push(configureAction)
-        return result
+
+        let primary = page.actionsFace.primaryActions
+        let secondary = page.actionsFace.secondaryActions
+
+        if (primary.length == 0 && secondary.length == 0) {
+            actions.contextualActions = [editAction, configureAction]
+            return
+        }
+
+        if (primary.length >= 1) {
+            actions.main = primary[0]
+        }
+
+        if (primary.length >= 2) {
+            actions.left = primary[1]
+        }
+
+        if (primary.length >= 3) {
+            actions.right = primary[2]
+        }
+
+        let contextual = []
+
+        if (primary.length >= 4) {
+            contextual = Array.prototype.map.call(primary, i => i).slice(4)
+        }
+
+        if (secondary.length > 0) {
+            contextual.concat(Array.prototype.map.call(secondary, i => i))
+            contextual.push(separator)
+        }
+
+        contextual.push(editAction)
+        contextual.push(configureAction)
+
+        actions.contextualActions = contextual
     }
 
     Kirigami.Action {
