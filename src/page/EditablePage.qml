@@ -104,6 +104,14 @@ Kirigami.Page {
         sourceComponent: page.edit ? pageEditor : pageContents
         asynchronous: true
 
+        onStatusChanged: {
+            if (status == Loader.Loading) {
+                loadOverlay.opacity = 1
+            } else {
+                updateActions()
+                loadOverlay.opacity = 0
+            }
+        }
     }
 
     Component {
@@ -119,6 +127,22 @@ Kirigami.Page {
 
         PageContents {
             pageData: page.pageData
+        }
+    }
+
+    Rectangle {
+        id: loadOverlay
+
+        anchors.fill: parent
+        anchors.margins: -pageData.margin * Kirigami.Units.largeSpacing
+        color: Kirigami.Theme.backgroundColor
+
+        opacity: 1
+        Behavior on opacity { OpacityAnimator { duration: Kirigami.Units.shortDuration } }
+
+        BusyIndicator {
+            anchors.centerIn: parent
+            running: loadOverlay.visible
         }
     }
 
