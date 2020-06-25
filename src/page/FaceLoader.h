@@ -32,4 +32,6 @@ public:
 private:
     PageDataObject *m_dataObject = nullptr;
     KSysGuard::SensorFaceController *m_faceController = nullptr;
+
+    static QHash<QString, KSysGuard::SensorFaceController *> s_faceCache;
 };

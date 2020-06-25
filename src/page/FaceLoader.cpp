@@ -12,6 +12,8 @@
 
 using namespace KSysGuard;
 
+QHash<QString, KSysGuard::SensorFaceController *> FaceLoader::s_faceCache;
+
 FaceLoader::FaceLoader(QObject* parent)
     : QObject(parent)
 {
@@ -43,6 +45,11 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
             Q_EMIT m_dataObject->valueChanged(QStringLiteral("face"), faceConfig);
         }
 
+        if (s_faceCache.contains(faceConfig)) {
+            m_faceController = s_faceCache.value(faceConfig);
+            return;
+        }
+
         auto configGroup = m_dataObject->config()->group(faceConfig);
         m_faceController = new SensorFaceController(configGroup, qmlEngine(this));
         connect(m_faceController, &SensorFaceController::faceIdChanged, m_dataObject, &PageDataObject::markDirty);
@@ -51,6 +58,8 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
         connect(m_faceController, &SensorFaceController::highPrioritySensorIdsChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::lowPrioritySensorIdsChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::sensorColorsChanged, m_dataObject, &PageDataObject::markDirty);
+
+        s_faceCache.insert(faceConfig, m_faceController);
 
         Q_EMIT controllerChanged();
     }
