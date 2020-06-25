@@ -66,14 +66,24 @@ Column {
 
             onSelect: root.activeItem = item
 
-            onAddTitle: pageData.insertChild(index + 1, {name: "row-" + (index + 1), isTitle: true, title: "New Title" })
-            onAddRow: {
-                var child = pageData.insertChild(index + 1, {name: "row-" + (index + 1), isTitle: false, title: ""})
-                var column = child.insertChild(0, {"name": "column-0", showBackground: true})
-                column.insertChild(0, {"name": "section-0", isSeparator: false})
-            }
+            onAddTitle: root.addTitle(index + 1)
+            onAddRow: root.addRow(index + 1)
             onRemove: pageData.removeChild(index)
             onMove: pageData.moveChild(from, to)
+        }
+    }
+
+    function addTitle(index) {
+        pageData.insertChild(index, {name: "row-" + index, isTitle: true, title: "New Title" })
+    }
+
+    function addRow(index) {
+        pageData.insertChild(index, {name: "row-" + index, isTitle: false, title: ""})
+    }
+
+    Component.onCompleted: {
+        if (pageData.children.length == 0) {
+            addRow(0)
         }
     }
 }

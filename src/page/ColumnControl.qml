@@ -80,8 +80,8 @@ Container {
                 index: model.index
 
                 onSelect: control.select(item)
-                onAddSection: control.columnData.insertChild(index + 1, {name: "section-" + (index + 1), isSeparator: false})
-                onAddSeparator: control.columnData.insertChild(index + 1, {name: "section-" + (index + 1), isSeparator: true})
+                onAddSection: control.addSection(index + 1)
+                onAddSeparator: control.addSeparator(index + 1)
                 onRemove: control.columnData.removeChild(index)
                 onMove: control.columnData.moveChild(from, to)
             }
@@ -113,4 +113,18 @@ Container {
             onTriggered: control.columnData.showBackground = !control.columnData.showBackground
         }
     ]
+
+    function addSection(index) {
+        control.columnData.insertChild(index, {name: "section-" + index, isSeparator: false})
+    }
+
+    function addSeparator(index) {
+        control.columnData.insertChild(index, {name: "section-" + index, isSeparator: true})
+    }
+
+    Component.onCompleted: {
+        if (columnData.children.length == 0) {
+            addSection(0)
+        }
+    }
 }

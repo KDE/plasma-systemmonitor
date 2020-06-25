@@ -62,10 +62,7 @@ Container {
                 index: model.index
 
                 onSelect: control.select(item)
-                onAddColumn: {
-                    var column = control.rowData.insertChild(index + 1, {"name": "column-" + (index + 1), showBackground: true})
-                    column.insertChild(0, {"name": "section-0", isSeparator: false})
-                }
+                onAddColumn: control.addColumn(index + 1)
                 onRemove: control.rowData.removeChild(index)
                 onMove: control.rowData.moveChild(from, to)
             }
@@ -97,4 +94,14 @@ Container {
             onTriggered: control.remove()
         }
     ]
+
+    function addColumn(index) {
+        control.rowData.insertChild(index + 1, {"name": "column-" + (index + 1), showBackground: true})
+    }
+
+    Component.onCompleted: {
+        if (rowData.children.length == 0 && !rowData.isTitle) {
+            addColumn(0)
+        }
+    }
 }
