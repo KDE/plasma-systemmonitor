@@ -13,8 +13,6 @@ Column {
     property Item activeItem
     property var actionsFace
 
-    anchors.fill: parent
-
     spacing: Kirigami.Units.largeSpacing
 
     move: Transition {
