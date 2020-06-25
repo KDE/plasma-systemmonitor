@@ -139,7 +139,7 @@ Faces.SensorFace {
             }
         }
 
-        ApplicationDetails {
+        Loader {
             id: details
 
             anchors.top: parent.top
@@ -152,11 +152,7 @@ Faces.SensorFace {
             width: root.config.detailsWidth
             onWidthChanged: root.config.detailsWidth = width
 
-            headerHeight: table.headerHeight
-
-            onClose: root.config.showDetails = false
-
-            applications: table.selectedApplications
+            active: root.config.showDetails
 
             state: root.config.showDetails ? "" : "closed"
 
@@ -168,6 +164,14 @@ Faces.SensorFace {
                 SequentialAnimation {
                     NumberAnimation { properties: "x"; duration: Kirigami.Units.shortDuration }
                     PropertyAction { property: "visible" }
+                }
+            }
+
+            sourceComponent: Component {
+                ApplicationDetails {
+                    headerHeight: table.headerHeight
+                    onClose: root.config.showDetails = false
+                    applications: table.selectedApplications
                 }
             }
         }
