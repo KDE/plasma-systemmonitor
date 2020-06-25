@@ -102,6 +102,8 @@ Kirigami.Page {
         id: contentLoader
         anchors.fill: parent
         sourceComponent: page.edit ? pageEditor : pageContents
+        asynchronous: true
+
     }
 
     Component {
