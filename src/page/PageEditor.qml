@@ -21,31 +21,41 @@ Column {
         NumberAnimation { properties: "x,y"; duration: Kirigami.Units.shortDuration }
     }
 
-    readonly property real titlesHeight: {
-        var height = 0;
-        for (let i = 0; i < repeater.count; ++i) {
+    function relayout() {
+        let itemCount = repeater.count;
+        let titlesHeight = 0;
+        let titlesCount = 0;
+        for (let i = 0; i < itemCount; ++i) {
             let item = repeater.itemAt(i)
-            if (item.rowData.isTitle) {
-                height += item.height
+            if (item && item.rowData.isTitle) {
+                titlesHeight += item.height
+                titlesCount += 1
             }
         }
-        return height
+
+        let rowHeight = (height - titlesHeight - (itemCount - 1) * root.spacing) / (itemCount - titlesCount)
+
+        for (let i = 0; i < itemCount; ++i) {
+            let item = repeater.itemAt(i)
+            if (item && !item.rowData.isTitle) {
+                item.height = rowHeight
+            }
+        }
     }
+
+    onWidthChanged: Qt.callLater(relayout)
+    onHeightChanged: Qt.callLater(relayout)
 
     Repeater {
         id: repeater
         model: PageDataModel { data: root.pageData }
 
+        onItemAdded: Qt.callLater(root.relayout)
+        onItemRemoved: Qt.callLater(root.relayout)
+
         RowControl {
             width: parent.width
-            height: {
-                if (model.data.isTitle) {
-                    return implicitHeight
-                } else {
-                    var titleCount = repeater.model.countObjects({isTitle: true})
-                    return (parent.height - root.titlesHeight - (repeater.count - 1) * root.spacing) / (repeater.count - titleCount)
-                }
-            }
+            onHeightChanged: Qt.callLater(root.relayout)
 
             rowData: model.data
 

@@ -15,17 +15,6 @@ Container {
     signal remove()
     signal move(int from, int to)
 
-    readonly property real separatorsWidth: {
-        var width = 0;
-        for (let i = 0; i < repeater.count; ++i) {
-            let item = repeater.itemAt(i)
-            if (item.sectionData.isSeparator) {
-                width += item.width
-            }
-        }
-        return width
-    }
-
     Kirigami.AbstractCard {
         parent: control.background
         anchors.fill: parent
@@ -35,6 +24,8 @@ Container {
     }
 
     contentItem: Row {
+        id: row
+
         anchors.fill: parent
         anchors.topMargin: control.topPadding
         anchors.bottomMargin: control.bottomPadding
@@ -47,20 +38,41 @@ Container {
             NumberAnimation { properties: "x,y"; duration: Kirigami.Units.shortDuration }
         }
 
+        function relayout() {
+            let itemCount = repeater.count;
+            let separatorsWidth = 0;
+            let separatorsCount = 0;
+            for (let i = 0; i < itemCount; ++i) {
+                let item = repeater.itemAt(i)
+                if (item && item.sectionData.isSeparator) {
+                    separatorsWidth += item.width
+                    separatorsCount += 1
+                }
+            }
+
+            let sectionWidth = (row.width - separatorsWidth - (itemCount - 1) * spacing) / (itemCount - separatorsCount)
+
+            for (let i = 0; i < itemCount; ++i) {
+                let item = repeater.itemAt(i)
+                if (item && !item.sectionData.isSeparator) {
+                    item.width = sectionWidth
+                }
+            }
+        }
+
+        onWidthChanged: Qt.callLater(relayout)
+        onHeightChanged: Qt.callLater(relayout)
+
         Repeater {
             id: repeater
             model: PageDataModel { data: control.columnData }
 
+            onItemAdded: Qt.callLater(row.relayout)
+            onItemRemoved: Qt.callLater(row.relayout)
+
             SectionControl {
                 height: parent.height
-                width: {
-                    if (model.data.isSeparator) {
-                        return implicitWidth
-                    } else {
-                        var sectionCount = repeater.count - repeater.model.countObjects({isSeparator: true})
-                        return (parent.width - control.separatorsWidth - (repeater.count - 1) * parent.spacing) / sectionCount
-                    }
-                }
+                onWidthChanged: Qt.callLater(row.relayout)
 
                 activeItem: control.activeItem
                 single: control.columnData.children.length == 1
