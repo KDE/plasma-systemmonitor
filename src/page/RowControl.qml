@@ -13,8 +13,6 @@ Container {
 
     signal addTitle()
     signal addRow()
-    signal remove()
-    signal move(int from, int to)
 
     implicitHeight: heading.height + topPadding + bottomPadding
 
@@ -69,29 +67,14 @@ Container {
         }
     }
 
-    actions: [
-        Kirigami.Action {
-            icon.name: "list-add"
-            text: i18n("Add")
-
-            Kirigami.Action {
-                text: i18n("Add Title")
-                onTriggered: control.addTitle()
-            }
-            Kirigami.Action {
-                text: i18n("Add Row")
-                onTriggered: control.addRow()
-            }
+    toolbar.addActions: [
+        Action {
+            text: i18nc("@action:button", "Add Title")
+            onTriggered: control.addTitle()
         },
-        MoveAction {
-            target: control
-            onMove: control.move(from, to)
-        },
-        Kirigami.Action {
-            icon.name: "edit-delete"
-            text: i18n("Remove")
-            enabled: !control.single
-            onTriggered: control.remove()
+        Action {
+            text: i18nc("@action:button", "Add Row")
+            onTriggered: control.addRow()
         }
     ]
 

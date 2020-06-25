@@ -13,10 +13,8 @@ Container {
 
     signal addSection()
     signal addSeparator()
-    signal remove()
-    signal move(int from, int to)
 
-    implicitWidth: (active && sectionData.isSeparator ? toolbar.Layout.minimumWidth : 0) + leftPadding + rightPadding
+    implicitWidth: (sectionData.isSeparator ? toolbar.Layout.minimumWidth : 0) + leftPadding + rightPadding
 
     Kirigami.Separator {
         anchors {
@@ -44,27 +42,15 @@ Container {
         onSelect: control.select(item)
     }
 
-    actions: [
-        Kirigami.Action {
-            icon.name: "list-add"
-            text: i18n("Add")
-
-            Kirigami.Action {
-                text: i18n("Add Section")
-                onTriggered: control.addSection()
-            }
-
-            Kirigami.Action {
-                text: i18n("Add Separator")
-                onTriggered: control.addSeparator()
-            }
+    toolbar.addActions: [
+        Action {
+            text: i18n("Add Section")
+            onTriggered: control.addSection()
         },
-        MoveAction { target: control; axis: Qt.XAxis; onMove: control.move(from, to) },
-        Kirigami.Action {
-            icon.name: "edit-delete"
-            text: i18n("Remove")
-            enabled: !control.single
-            onTriggered: control.remove()
+        Action {
+            text: i18n("Add Separator")
+            onTriggered: control.addSeparator()
         }
     ]
+    toolbar.moveAxis: Qt.XAxis
 }

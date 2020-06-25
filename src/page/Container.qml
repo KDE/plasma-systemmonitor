@@ -12,14 +12,15 @@ Item {
     property bool single: true
     property bool alwaysShowBackground: false
 
-    property alias actions: toolbar.actions
-
     property Item activeItem
     readonly property bool active: activeItem == control || activeItem == root
 
     property int index
 
     signal select(Item item)
+    signal remove()
+    signal move(int from, int to)
+
     property alias hovered: control.hovered
     property alias contentItem: control.contentItem
     property alias background: control.background
@@ -28,6 +29,7 @@ Item {
     property alias rightPadding: control.rightPadding
     property alias topPadding: control.topPadding
     property alias bottomPadding: control.bottomPadding
+
     readonly property alias toolbar: toolbar
     z: raised ? 99 : 0
 
@@ -60,7 +62,7 @@ Item {
                 shadow.size: root.raised ? Kirigami.Units.gridUnit : 0
             }
 
-            Kirigami.ActionToolBar {
+            EditorToolBar {
                 id: toolbar
 
                 z: 1
@@ -73,10 +75,16 @@ Item {
                     leftMargin: Kirigami.Units.largeSpacing
                     rightMargin: Kirigami.Units.largeSpacing
                 }
-                flat: false
+
+                single: root.single
+                moveTarget: control
+
                 enabled: opacity >= 1
                 opacity: root.active ? 1 : 0
                 Behavior on opacity { NumberAnimation { duration: Kirigami.Units.shortDuration } }
+
+                onMoved: root.move(from, to)
+                onRemoveClicked: root.remove()
             }
         }
     }

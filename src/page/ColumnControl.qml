@@ -12,8 +12,6 @@ Container {
     property PageDataObject columnData
 
     signal addColumn()
-    signal remove()
-    signal move(int from, int to)
 
     Kirigami.AbstractCard {
         parent: control.background
@@ -88,31 +86,19 @@ Container {
         }
     }
 
-    actions: [
-        Kirigami.Action {
-            icon.name: "list-add"
-            text: i18n("Add")
+    toolbar.addActions: Action {
+        text: i18nc("@action:button", "Add Column")
+        onTriggered: control.addColumn()
+    }
+    toolbar.moveAxis: Qt.XAxis
 
-            Kirigami.Action {
-                text: i18n("Add Column")
-                onTriggered: control.addColumn()
-            }
-        },
-        MoveAction { target: control; axis: Qt.XAxis; onMove: control.move(from, to) },
-        Kirigami.Action {
-            icon.name: "edit-delete"
-            text: i18n("Remove")
-            enabled: !control.single
-            onTriggered: control.remove()
-        },
-        Kirigami.Action {
-            icon.name: "view-visible"
-            text: i18n("Show Background")
-            checkable: true
-            checked: control.columnData.showBackground
-            onTriggered: control.columnData.showBackground = !control.columnData.showBackground
-        }
-    ]
+    toolbar.extraActions: Action {
+        icon.name: "view-visible"
+        text: i18n("Show Background")
+        checkable: true
+        checked: control.columnData.showBackground
+        onTriggered: control.columnData.showBackground = !control.columnData.showBackground
+    }
 
     function addSection(index) {
         control.columnData.insertChild(index, {name: "section-" + index, isSeparator: false})

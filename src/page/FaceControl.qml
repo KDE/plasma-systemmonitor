@@ -17,6 +17,7 @@ Container {
     leftPadding: 0
     rightPadding: 0
 
+    toolbar.visible: false
 
     onActiveChanged: {
         if (active) {
@@ -31,14 +32,6 @@ Container {
             }
         }
     }
-
-//     actions: [
-//         Kirigami.Action {
-//             icon.name: "configure"
-//             text: i18n("Configure...")
-//             onTriggered: applicationWindow().pageStack.push(Qt.resolvedUrl("FaceConfigurationPage.qml"), {"loader": loader})
-//         }
-//     ]
 
     FaceLoader {
         id: loader

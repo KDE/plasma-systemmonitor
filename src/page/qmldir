@@ -13,8 +13,8 @@ RowControl 1.0 RowControl.qml
 SectionControl 1.0 SectionControl.qml
 PageDialog 1.0 PageDialog.qml
 EditablePageAction 1.0 EditablePageAction.qml
-MoveAction 1.0 MoveAction.qml
 FaceControl 1.0 FaceControl.qml
 FaceConfigurationPage 1.0 FaceConfigurationPage.qml
 Choices 1.0 Choices.qml
 LoadPresetDialog 1.0 LoadPresetDialog.qml
+MoveButton 1.0 MoveButton.qml

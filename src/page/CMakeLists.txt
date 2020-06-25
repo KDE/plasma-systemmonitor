@@ -18,11 +18,12 @@ set(page_QML
     SectionControl.qml
     PageDialog.qml
     EditablePageAction.qml
-    MoveAction.qml
     FaceControl.qml
     FaceConfigurationPage.qml
     Choices.qml
     LoadPresetDialog.qml
+    EditorToolBar.qml
+    MoveButton.qml
 )
 
 add_library(PagePlugin SHARED ${page_SRCS})
