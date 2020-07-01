@@ -55,6 +55,14 @@ Button {
                 beforeChild = root.target.parent.childAt(rectInParent.left - 2, y);
                 afterChild = root.target.parent.childAt(rectInParent.right + 2, y);
 
+                if (beforeChild === afterChild) {
+                    if (lastX > x) {
+                        afterChild = null;
+                    } else {
+                        beforeChild = null;
+                    }
+                }
+
                 var mappedLeft = beforeChild ? beforeChild.mapFromItem(root.target.parent, rectInParent.left - 2, y).x : -1;
                 var mappedRight = afterChild ? afterChild.mapFromItem(root.target.parent, rectInParent.right + 2, y).x : -1;
 
@@ -63,12 +71,21 @@ Button {
                 } else if (afterChild && mappedRight > afterChild.width / 2 && mappedRight < afterChild.width) {
                     child = afterChild;
                 }
+
             } else {
                 x = root.target.x + root.target.width / 2
                 y = rectInParent.top
 
                 beforeChild = root.target.parent.childAt(x, rectInParent.top - 2);
                 afterChild = root.target.parent.childAt(x, rectInParent.bottom + 2);
+
+                if (beforeChild === afterChild) {
+                    if (lastY > y) {
+                        afterChild = null;
+                    } else {
+                        beforeChild = null;
+                    }
+                }
 
                 var mappedLeft = beforeChild ? beforeChild.mapFromItem(root.target.parent, x, rectInParent.top - 2).y : -1;
                 var mappedRight = afterChild ? afterChild.mapFromItem(root.target.parent, x, rectInParent.bottom + 2).y : -1;
@@ -84,7 +101,8 @@ Button {
                 ((root.axis == Qt.XAxis &&
                     (lastX < x || child != justMovedLeft) &&
                     (lastX > x || child != justMovedRight))
-                    || (root.axis == Qt.YAxis && (lastY < y || child != justMovedLeft) &&
+                 || (root.axis == Qt.YAxis &&
+                    (lastY < y || child != justMovedLeft) &&
                     (lastY > y || child != justMovedRight)))) {
 
                 if (child == beforeChild) {
@@ -97,6 +115,7 @@ Button {
 
                 root.moved(root.target.index, child.index);
             }
+
             lastX = x
             lastY = y
         }
