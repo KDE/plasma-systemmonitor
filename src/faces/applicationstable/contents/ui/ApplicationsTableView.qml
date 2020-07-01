@@ -120,10 +120,15 @@ Table.BaseTableView {
         enabled: view.visible
 
         enabledAttributes: {
-            var result = [].concat(view.enabledColumns)
-            var hidden = []
+            var result = []
+            for (let i of view.enabledColumns) {
+                if (appModel.availableAttributes.includes(i)) {
+                    result.push(i)
+                }
+            }
 
-            for (var i of requiredAttributes) {
+            var hidden = []
+            for (let i of requiredAttributes) {
                 if (result.indexOf(i) == -1) {
                     result.push(i)
                     hidden.push(i)

@@ -129,10 +129,15 @@ Table.BaseTableView {
         enabled: view.visible
 
         function updateEnabledAttributes() {
-            var result = [].concat(view.enabledColumns)
-            var hidden = []
+            var result = []
+            for (let i of view.enabledColumns) {
+                if (processModel.availableAttributes.includes(i)) {
+                    result.push(i)
+                }
+            }
 
-            for (var i of requiredSensors) {
+            var hidden = []
+            for (let i of requiredSensors) {
                 if (result.indexOf(i) == -1 && processModel.availableAttributes.includes(i)) {
                     result.push(i)
                     hidden.push(i)
