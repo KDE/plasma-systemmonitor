@@ -77,7 +77,7 @@ Item {
                 }
 
                 single: root.single
-                moveTarget: control
+                moveTarget: root
 
                 enabled: opacity >= 1
                 opacity: root.active ? 1 : 0

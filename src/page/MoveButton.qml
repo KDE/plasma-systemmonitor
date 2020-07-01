@@ -119,7 +119,7 @@ Button {
                 root.target.mainControl.parent = root.target
 
                 dropAnimation.start()
-                root.target.parent.forceLayout()
+
                 drag.justMovedLeft = null
                 drag.justMovedRight = null
             }
@@ -136,7 +136,7 @@ Button {
         id: dropAnimation
         NumberAnimation {
             id: dropNumberAnimation
-            target: root.target
+            target: root.target.mainControl
             property: root.axis == Qt.YAxis ? "y" : "x"
             to: 0
             duration: Kirigami.Units.longDuration

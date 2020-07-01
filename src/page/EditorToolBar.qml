@@ -12,8 +12,8 @@ Control {
 
     property bool single: false
 
-    property int moveAxis: Qt.YAxis
-    property Item moveTarget
+    property alias moveAxis: moveButton.axis
+    property alias moveTarget: moveButton.target
 
     signal moved(int from, int to)
     signal removeClicked()
@@ -180,8 +180,8 @@ Control {
                     visible: moveButton.opacity == 0
                     height: visible ? implicitHeight : 0
                     flat: true
-                    axis: control.moveAxis
-                    target: control.moveTarget
+                    axis: moveButton.axis
+                    target: moveButton.target
                     onMoved: control.moved(from, to)
                 }
 
