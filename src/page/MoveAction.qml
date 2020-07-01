@@ -22,20 +22,24 @@ Kirigami.Action {
         DragHandler {
             id: drag
 
-            target: action.target
+            target: action.target.mainControl
 
             xAxis.enabled: action.axis == Qt.XAxis
-            xAxis.minimum: 0
-            xAxis.maximum: action.target.parent.width - action.target.width
+            xAxis.minimum: action.target.parent.Kirigami.ScenePosition.x
+            xAxis.maximum: action.target.parent.Kirigami.ScenePosition.x + action.target.parent.width - action.target.width
 
             yAxis.enabled: action.axis == Qt.YAxis
-            yAxis.minimum: 0
-            yAxis.maximum: action.target.parent.height - action.target.height
+            yAxis.minimum: action.target.parent.Kirigami.ScenePosition.y
+            yAxis.maximum: action.target.parent.Kirigami.ScenePosition.y + action.target.parent.height - action.target.height
 
-            property Item justMoved
+            property Item justMovedLeft
+            property Item justMovedRight
+            property real lastX: -1
+            property real lastY: -1
+
 
             onTranslationChanged: {
-                var pressPositionInTarget = parent.mapToItem(action.target, centroid.pressPosition.x, centroid.pressPosition.y)
+                var pressPositionInTarget = parent.mapToItem(action.target.mainControl, centroid.pressPosition.x, centroid.pressPosition.y)
 
                 var left = centroid.scenePosition.x - pressPositionInTarget.x
                 var top = centroid.scenePosition.y - pressPositionInTarget.y
@@ -44,21 +48,64 @@ Kirigami.Action {
 
                 var x = 0
                 var y = 0
+                var child = null
+                var beforeChild = null
+                var afterChild = null
+
                 if (action.axis == Qt.XAxis) {
-                    x = translation.x < 0 ? rectInParent.left - 2 : rectInParent.right + 2
+                    x = rectInParent.left
                     y = action.target.y + action.target.height / 2
+                    
+                    beforeChild = action.target.parent.childAt(rectInParent.left - 2, y);
+                    afterChild = action.target.parent.childAt(rectInParent.right + 2, y);
+                    
+                    var mappedLeft = beforeChild ? beforeChild.mapFromItem(action.target.parent, rectInParent.left - 2, y).x : -1;
+                    var mappedRight = afterChild ? afterChild.mapFromItem(action.target.parent, rectInParent.right + 2, y).x : -1;
+                    
+                    if (beforeChild && mappedLeft < beforeChild.width / 2 && mappedLeft > 0) {
+                        child = beforeChild;
+
+                    } else if (afterChild && mappedRight > afterChild.width / 2 && mappedRight < afterChild.width) {
+                        child = afterChild;
+                    }
+
                 } else {
                     x = action.target.x + action.target.width / 2
-                    y = translation.y < 0 ? rectInParent.top - 2 : rectInParent.bottom + 2
+                    y = rectInParent.top
+
+                    beforeChild = action.target.parent.childAt(x, rectInParent.top - 2);
+                    afterChild = action.target.parent.childAt(x, rectInParent.bottom + 2);
+                    
+                    var mappedLeft = beforeChild ? beforeChild.mapFromItem(action.target.parent, x, rectInParent.top - 2).y : -1;
+                    var mappedRight = afterChild ? afterChild.mapFromItem(action.target.parent, x, rectInParent.bottom + 2).y : -1;
+                    
+                    if (beforeChild && mappedLeft < beforeChild.height / 2 && mappedLeft > 0) {
+                        child = beforeChild;
+
+                    } else if (afterChild && mappedRight > afterChild.height / 2 && mappedRight < afterChild.width) {
+                        child = afterChild;
+                    }
                 }
 
-                var child = action.target.parent.childAt(x, y)
+                if (child && child != action.target &&
+                    ((action.axis == Qt.XAxis &&
+                     (lastX < x || child != justMovedLeft) &&
+                     (lastX > x || child != justMovedRight))
+                     || (action.axis == Qt.YAxis && (lastY < y || child != justMovedLeft) &&
+                     (lastY > y || child != justMovedRight)))) {
 
-                if (child && child != action.target && child != justMoved) {
-                    var index = child.index
-                    justMoved = child
-                    action.move(action.target.index, index)
+                    if (child == beforeChild) {
+                        justMovedLeft = child;
+                        justMovedRight = null;
+                    } else {
+                        justMovedLeft = null;
+                        justMovedRight = child;
+                    }
+
+                    action.move(action.target.index, child.index);
                 }
+                lastX = x
+                lastY = y
             }
         }
         PointHandler {
@@ -66,12 +113,22 @@ Kirigami.Action {
 
             onActiveChanged: {
                 if (active) {
-                    action.target.raised = true
+                    let pos = action.target.Overlay.overlay.mapFromItem(action.target.mainControl, 0, 0);
+                    action.target.mainControl.parent = action.target.Overlay.overlay;
+                    action.target.mainControl.x = pos.x;
+                    action.target.mainControl.y = pos.y;
+                    action.target.raised = true;
+
                 } else {
-                    dropNumberAnimation.to = action.target.parent.positionFor(action.target.index)
+                    let pos = action.target.mapFromItem(action.target.mainControl, 0, 0);
+                    action.target.mainControl.x = pos.x
+                    action.target.mainControl.y = pos.y
+                    action.target.mainControl.parent = action.target
+
                     dropAnimation.start()
                     action.target.parent.forceLayout()
-                    drag.justMoved = null
+                    drag.justMovedLeft = null
+                    drag.justMovedRight = null
                 }
             }
         }
@@ -85,7 +142,8 @@ Kirigami.Action {
             id: dropAnimation
             NumberAnimation {
                 id: dropNumberAnimation
-                target: action.target
+                target: action.target.mainControl
+                to: 0
                 property: action.axis == Qt.YAxis ? "y" : "x"
                 duration: Kirigami.Units.longDuration
                 easing.type: Easing.InOutQuad

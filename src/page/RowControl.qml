@@ -20,7 +20,7 @@ Container {
 
     alwaysShowBackground: true
 
-    Row {
+    contentItem: Row {
         anchors.fill: parent
         anchors.topMargin: control.topPadding
         anchors.leftMargin: control.leftPadding
@@ -31,25 +31,6 @@ Container {
 
         move: Transition {
             NumberAnimation { properties: "x,y"; duration: Kirigami.Units.shortDuration }
-        }
-
-        function positionFor(index) {
-            if (index < 0 || index >= repeater.count) {
-                return -1
-            }
-
-            if (index == 0) {
-                return 0
-            }
-
-            var position = 0
-            var i = 0
-            for (; i < index; ++i) {
-                position += repeater.itemAt(i).x
-            }
-            position += repeater.itemAt(index - 1).width + spacing
-
-            return position
         }
 
         Kirigami.Heading {

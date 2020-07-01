@@ -32,25 +32,6 @@ Column {
         return height
     }
 
-    function positionFor(index) {
-        if (index < 0 || index >= repeater.count) {
-            return -1
-        }
-
-        if (index == 0) {
-            return 0
-        }
-
-        var position = 0
-        var i = 0
-        for (; i < index; ++i) {
-            position = repeater.itemAt(i).y
-        }
-        position += repeater.itemAt(index - 1).height + spacing
-
-        return position
-    }
-
     Repeater {
         id: repeater
         model: PageDataModel { data: root.pageData }

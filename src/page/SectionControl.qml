@@ -29,7 +29,7 @@ Container {
         visible: modelData.isSeparator
     }
 
-    FaceControl {
+    contentItem: FaceControl {
         anchors {
             fill: parent
             topMargin: parent.topPadding
