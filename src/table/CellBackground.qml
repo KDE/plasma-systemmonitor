@@ -11,12 +11,41 @@ Rectangle {
     property var view
     property int row
     property int column
-    property bool selected: __selection.selectedIndexes && __selection.isSelected(__modelIndex)
+    property bool selected: false
 
     property var __selection: view.selectionModel
     property var __modelIndex: view.model.index(row, column)
 
     color: (row % 2 == 0) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
+
+    // We need to update:
+    // if the selected indexes changes
+    // if our delegate moves
+    // if the model moves and the delegate stays in the same place
+    function updateIsSelected() {
+        selected = __selection.isRowSelected(row)
+    }
+
+    Connections {
+        target: __selection
+        function onSelectionChanged() {
+            updateIsSelected();
+        }
+    }
+
+    onRowChanged: updateIsSelected();
+
+    Connections {
+        target: view.model
+        function onLayoutChanged() {
+            updateIsSelected();
+        }
+    }
+
+    Component.onCompleted: {
+        updateIsSelected();
+    }
+
 
     Rectangle {
         anchors.fill: parent
