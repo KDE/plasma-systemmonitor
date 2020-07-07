@@ -10,7 +10,7 @@ Kirigami.Page {
     id: page
 
     property PageDataObject pageData
-    property alias edit: editAction.checked
+    property bool edit: false
 
     title: pageData.title
 
@@ -31,8 +31,8 @@ Kirigami.Page {
     }
 
     function updateActions() {
-        if (!actionsFace) {
-            actions.contextualActions = [editAction, configureAction]
+        if (!actionsFace || page.edit) {
+            actions.contextualActions = defaultActions
             return
         }
 
@@ -40,7 +40,7 @@ Kirigami.Page {
         let secondary = page.actionsFace.secondaryActions
 
         if (primary.length == 0 && secondary.length == 0) {
-            actions.contextualActions = [editAction, configureAction]
+            actions.contextualActions = defaultActions
             return
         }
 
@@ -67,8 +67,7 @@ Kirigami.Page {
             contextual.push(separator)
         }
 
-        contextual.push(editAction)
-        contextual.push(configureAction)
+        contextual.concat(defaultActions)
 
         actions.contextualActions = contextual
     }
@@ -83,9 +82,11 @@ Kirigami.Page {
 
         text: i18n("Edit Page")
         icon.name: "document-edit"
-        checkable: true
+        visible: !page.edit
 
         displayHint: page.actionsFace ? Kirigami.Action.DisplayHint.AlwaysHide : Kirigami.Action.DisplayHint.NoPreference
+
+        onTriggered: page.edit = !page.edit
     }
     Kirigami.Action {
         id: configureAction
@@ -93,10 +94,30 @@ Kirigami.Page {
         text: i18n("Configure Page...")
         icon.name: "configure"
         visible: page.edit
-        onTriggered: pageDialog.open()
 
-        displayHint: page.actionsFace ? Kirigami.Action.DisplayHint.AlwaysHide : Kirigami.Action.DisplayHint.NoPreference
+        onTriggered: pageDialog.open()
     }
+    Kirigami.Action {
+        id: addRowAction
+
+        text: i18n("Add Row")
+        icon.name: "edit-table-insert-row-under"
+        visible: page.edit
+
+        onTriggered: contentLoader.item.addRow(-1)
+    }
+
+    Kirigami.Action {
+        id: addTitleAction
+        text: i18n("Add Title")
+        icon.name: "insert-text-frame"
+        visible: page.edit
+
+        onTriggered: contentLoader.item.addTitle(-1)
+    }
+
+    readonly property var defaultActions: [editAction, addRowAction, addTitleAction, configureAction]
+    onEditChanged: updateActions()
 
     Loader {
         id: contentLoader
