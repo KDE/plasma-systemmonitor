@@ -86,10 +86,16 @@ Container {
         }
     }
 
-    toolbar.addActions: Action {
-        text: i18nc("@action:button", "Add Column")
-        onTriggered: control.addColumn()
-    }
+    toolbar.addActions: [
+        Action {
+            text: i18nc("@action:button", "Add Section")
+            onTriggered: addSection(control.columnData.children.length)
+        },
+        Action {
+            text: i18nc("@action:button", "Add Separator")
+            onTriggered: addSeparator(control.columnData.children.length)
+        }
+    ]
     toolbar.moveAxis: Qt.XAxis
 
     toolbar.extraActions: Action {

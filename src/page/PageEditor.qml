@@ -64,18 +64,24 @@ Column {
 
             onSelect: root.activeItem = item
 
-            onAddTitle: root.addTitle(index + 1)
-            onAddRow: root.addRow(index + 1)
             onRemove: pageData.removeChild(index)
             onMove: pageData.moveChild(from, to)
         }
     }
 
     function addTitle(index) {
+        if (index < 0) {
+            index = pageData.children.length
+        }
+
         pageData.insertChild(index, {name: "row-" + index, isTitle: true, title: "New Title" })
     }
 
     function addRow(index) {
+        if (index < 0) {
+            index = pageData.children.length
+        }
+
         pageData.insertChild(index, {name: "row-" + index, isTitle: false, title: ""})
     }
 

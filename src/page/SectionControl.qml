@@ -42,15 +42,6 @@ Container {
         onSelect: control.select(item)
     }
 
-    toolbar.addActions: [
-        Action {
-            text: i18n("Add Section")
-            onTriggered: control.addSection()
-        },
-        Action {
-            text: i18n("Add Separator")
-            onTriggered: control.addSeparator()
-        }
-    ]
+    toolbar.addVisible: false
     toolbar.moveAxis: Qt.XAxis
 }

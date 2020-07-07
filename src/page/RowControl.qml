@@ -60,7 +60,6 @@ Container {
                 index: model.index
 
                 onSelect: control.select(item)
-                onAddColumn: control.addColumn(index + 1)
                 onRemove: control.rowData.removeChild(index)
                 onMove: control.rowData.moveChild(from, to)
             }
@@ -68,18 +67,15 @@ Container {
     }
 
     toolbar.addActions: [
-        Action {
-            text: i18nc("@action:button", "Add Title")
-            onTriggered: control.addTitle()
-        },
-        Action {
-            text: i18nc("@action:button", "Add Row")
-            onTriggered: control.addRow()
+        Kirigami.Action {
+            text: i18nc("@action:button", "Add Column")
+            onTriggered: control.addColumn(control.rowData.children.length)
         }
     ]
+    toolbar.addVisible: !control.rowData.isTitle
 
     function addColumn(index) {
-        control.rowData.insertChild(index + 1, {"name": "column-" + (index + 1), showBackground: true})
+        control.rowData.insertChild(index, {"name": "column-" + index, showBackground: true})
     }
 
     Component.onCompleted: {
