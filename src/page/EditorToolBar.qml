@@ -11,6 +11,7 @@ Control {
     property list<Action> extraActions
 
     property bool single: false
+    property bool addVisible: true
 
     property alias moveAxis: moveButton.axis
     property alias moveTarget: moveButton.target
@@ -45,6 +46,8 @@ Control {
                 icon.name: "list-add"
                 checkable: true
                 checked: addMenu.opened
+
+                visible: control.addVisible
 
                 onToggled: {
                     if (checked) {
@@ -171,7 +174,7 @@ Control {
                         var item = overflowMenu.itemAt(0)
                         // Workaround missing API in QQC2 Menu
                         item.icon.name = "list-add"
-                        item.visible = Qt.binding(function () { return addButton.opacity == 0 })
+                        item.visible = Qt.binding(function () { return addButton.opacity == 0 && addButton.visible })
                         item.height = Qt.binding(function () { return item.visible ? item.implicitHeight : 0 } )
                     }
                 }
