@@ -18,6 +18,13 @@ QVariant converted(const QVariant &variant, QMetaType::Type type)
 {
     auto result = variant;
 
+    if (variant.toString().isEmpty()) {
+        // Empty strings should be treated as just that, empty strings.
+        // However, QVariant is a bit over eager to convert empty strings
+        // to bool false. So explicitly ignore them here.
+        return QVariant{};
+    }
+
     if (!result.convert(type)) {
         return QVariant{};
     }
