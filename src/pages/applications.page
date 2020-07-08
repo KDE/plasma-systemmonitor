@@ -3,7 +3,6 @@ chartFace=org.kde.ksysguard.applicationstable
 
 [page]
 icon=homerun
-index=1
 margin=0
 title=Applications
 actionsFace=Face-94920553440704

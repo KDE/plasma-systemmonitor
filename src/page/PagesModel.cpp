@@ -91,10 +91,34 @@ void PagesModel::componentComplete()
 
         m_pages.append(page);
     }
-    std::stable_sort(m_pages.begin(), m_pages.end(), [](PageDataObject *left, PageDataObject *right) {
-        return left->value("index").toInt() < right->value("index").toInt();
-    });
+    sort();
     endResetModel();
+}
+
+void PagesModel::sort(int column, Qt::SortOrder order)
+{
+    Q_UNUSED(column)
+    Q_UNUSED(order)
+
+    if (m_pageOrder.isEmpty()) {
+        return;
+    }
+
+    Q_EMIT layoutAboutToBeChanged({QPersistentModelIndex()}, QAbstractItemModel::VerticalSortHint);
+    auto last = std::stable_partition(m_pages.begin(), m_pages.end(), [this] (PageDataObject *page) {
+        return m_pageOrder.contains(page->config()->name());
+    });
+    std::sort(m_pages.begin(), last, [this] (PageDataObject *left, PageDataObject *right) {
+        return m_pageOrder.indexOf(left->config()->name()) < m_pageOrder.indexOf(right->config()->name());
+    });
+    std::transform(last, m_pages.end(), std::back_inserter(m_pageOrder), [] (PageDataObject *page) {
+        return page->config()->name();
+    });
+    if (last != m_pages.end()) {
+        Q_EMIT pageOrderChanged();
+    }
+    changePersistentIndex(QModelIndex(), QModelIndex());
+    layoutChanged();
 }
 
 PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &properties)
@@ -102,7 +126,6 @@ PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &
     KSharedConfig::Ptr config = KSharedConfig::openConfig(fileName, KConfig::CascadeConfig, QStandardPaths::AppDataLocation);
 
     auto page = new PageDataObject(config, this);
-    page->insert(QStringLiteral("index"), m_pages.size());
 
     for (auto itr = properties.begin(); itr != properties.end(); ++itr) {
         page->insert(itr.key(), itr.value());
@@ -116,6 +139,8 @@ PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &
 
     beginInsertRows(QModelIndex{}, m_pages.size(), m_pages.size());
     m_pages.append(page);
+    m_pageOrder.append(fileName);
+    Q_EMIT pageOrderChanged();
     endInsertRows();
 
     return page;
@@ -125,3 +150,19 @@ void PagesModel::savePage(PageDataObject* page)
 {
     page->save(*page->config(), QStringLiteral("page"), {QStringLiteral("fileName")});
 }
+
+QStringList PagesModel::pageOrder() const
+{
+    return m_pageOrder;
+}
+
+void PagesModel::setPageOrder(const QStringList &pageOrder)
+{
+    if (pageOrder != m_pageOrder) {
+        m_pageOrder = pageOrder;
+        Q_EMIT pageOrderChanged();
+        sort();
+    }
+}
+
+

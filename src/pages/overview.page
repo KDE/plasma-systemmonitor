@@ -74,7 +74,6 @@ chartFace=org.kde.ksysguard.piechart
 
 [page]
 icon=speedometer
-index=0
 margin=2
 title=Overview
 

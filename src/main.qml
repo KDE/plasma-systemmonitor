@@ -153,6 +153,7 @@ Kirigami.ApplicationWindow {
         property alias width: app.width
         property alias height: app.height
         property alias sidebarCollapsed: globalDrawer.collapsed
+        property alias pageOrder: pagesModel.pageOrder
     }
 
     pageStack.columnView.columnWidth: Kirigami.Units.gridUnit * 17

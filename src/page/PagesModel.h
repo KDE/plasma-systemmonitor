@@ -27,18 +27,29 @@ public:
 
     explicit PagesModel(QObject *parent = nullptr);
 
+    Q_PROPERTY(QStringList pageOrder READ pageOrder WRITE setPageOrder NOTIFY pageOrderChanged)
+
     QHash<int, QByteArray> roleNames() const override;
 
     int rowCount(const QModelIndex &parent) const override;
     QVariant data(const QModelIndex &index, int role) const override;
+
+    void sort(int column = 0, Qt::SortOrder order = Qt::AscendingOrder) override;
 
     void classBegin() override;
     void componentComplete() override;
 
     Q_INVOKABLE PageDataObject *addPage(const QString &fileName, const QVariantMap &properties = QVariantMap{});
 
+    QStringList pageOrder() const;
+    void setPageOrder(const QStringList &pageOrder);
+
+Q_SIGNALS:
+    void pageOrderChanged();
+
 private:
     void savePage(PageDataObject *page);
 
     QVector<PageDataObject*> m_pages;
+    QStringList m_pageOrder;
 };
