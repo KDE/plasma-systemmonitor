@@ -25,14 +25,22 @@
 
 #include <QAbstractProxyModel>
 
+#include "PagesModel.h"
+
 class PageSortModel : public QAbstractProxyModel
 {
     Q_OBJECT
 
 public:
 
+    enum Roles {
+        ShouldRemoveFilesRole = PagesModel::FilesWriteableRole + 1
+    };
+    Q_ENUM(Roles)
+
     explicit PageSortModel(QObject* parent = nullptr);
 
+    QHash<int, QByteArray> roleNames() const override;
     QVariant data(const QModelIndex &index, int role) const override;
     bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
 
@@ -51,6 +59,7 @@ public:
 private:
     QVector<int> m_rowMapping;
     QVector<bool> m_hiddenProxy;
+    QVector<bool> m_removeFiles;
 
 };
 

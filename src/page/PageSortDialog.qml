@@ -64,6 +64,8 @@ Dialog {
                         id: listItem
                         //Using directly model.hidden below doesn't work for some reason
                         readonly property bool hidden: model.hidden
+                        readonly property var filesWritable: model.filesWriteable
+                        readonly property bool shouldRemoveFiles: model.shouldRemoveFiles
                         contentItem: RowLayout {
                             Kirigami.ListItemDragHandle {
                                 id: handle
@@ -88,10 +90,86 @@ Dialog {
                                 source: model.icon
                                 opacity: hidden ? 0.3 : 1
                             }
-                            Label {
-                                Layout.fillWidth: true
-                                text: model.title
-                                opacity: hidden ? 0.3 : 1
+                            ColumnLayout {
+                                Layout.alignment: Qt.AlignVCenter
+                                spacing: 0
+                                Label {
+                                    Layout.fillWidth: true
+                                    text: model.title
+                                    opacity: hidden ? 0.3 : 1
+                                }
+                                Label {
+                                    id: subtitle
+                                    Layout.fillWidth: true
+                                    font: Kirigami.Theme.smallFont
+                                    opacity: 0.7
+                                    visible: text.length > 0
+                                }
+                            }
+                            Button {
+                                id: removeButton
+                                onClicked: pageList.model.setData(pageList.model.index(index, 0), !listItem.shouldRemoveFiles, Page.PageSortModel.ShouldRemoveFilesRole)
+                                ToolTip.delay: Kirigami.Units.toolTipDelay
+                                ToolTip.visible: hovered
+                                states: [
+                                    State {
+                                        name: "noChanges"
+                                        extend: "localChanges"
+                                        when: listItem.filesWritable == Page.PagesModel.NotWriteable
+                                        PropertyChanges {
+                                            target: removeButton;
+                                            enabled: false;
+                                        }
+                                    },
+                                    State {
+                                        name: "removeLocalChanges"
+                                        when:  listItem.filesWritable == Page.PagesModel.LocalChanges && listItem.shouldRemoveFiles
+                                        PropertyChanges {
+                                            target: removeButton
+                                            icon.name: "edit-redo"
+                                            ToolTip.text: i18n("Do not reset the page.")
+                                        }
+                                        PropertyChanges {
+                                            target: subtitle
+                                            text: i18n("The page will be reset to its default state.")
+                                        }
+                                    },
+                                    State {
+                                        name: "localChanges"
+                                        when: listItem.filesWritable == Page.PagesModel.LocalChanges
+                                        PropertyChanges {
+                                            target: removeButton
+                                            icon.name: "edit-reset"
+                                            ToolTip.text: i18n("Reset the page to its default state.")
+                                        }
+                                    },
+                                    State {
+                                        name: "remove"
+                                        when: listItem.filesWritable == Page.PagesModel.AllWriteable && listItem.shouldRemoveFiles
+                                        PropertyChanges {
+                                            target: removeButton
+                                            icon.name: "edit-undo"
+                                            ToolTip.text: i18n("Do not remove the page.")
+                                        }
+                                        PropertyChanges {
+                                            target: subtitle
+                                            text: i18n("The page will be removed.")
+                                        }
+                                        PropertyChanges {
+                                            target: listItem
+                                            backgroundColor: Kirigami.Theme.negativeBackgroundColor
+                                        }
+                                    },
+                                    State {
+                                        name: "removeable"
+                                        when: listItem.filesWritable == Page.PagesModel.AllWriteable
+                                        PropertyChanges {
+                                            target: removeButton
+                                            icon.name: "edit-delete"
+                                            ToolTip.text: i18n("Remove the page.")
+                                        }
+                                    }
+                                ]
                             }
                         }
                     }

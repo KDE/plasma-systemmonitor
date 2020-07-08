@@ -24,8 +24,16 @@ public:
         IconRole,
         FileNameRole,
         HiddenRole,
+        FilesWriteableRole
     };
     Q_ENUM(Roles)
+
+    enum FilesWriteableStates {
+        NotWriteable,
+        AllWriteable,
+        LocalChanges
+    };
+    Q_ENUM(FilesWriteableStates)
 
     explicit PagesModel(QObject *parent = nullptr);
 
@@ -43,6 +51,7 @@ public:
     void componentComplete() override;
 
     Q_INVOKABLE PageDataObject *addPage(const QString &fileName, const QVariantMap &properties = QVariantMap{});
+    Q_INVOKABLE void removeLocalPageFiles(const QString &fileName);
 
     QStringList pageOrder() const;
     void setPageOrder(const QStringList &pageOrder);
@@ -60,4 +69,5 @@ private:
     QVector<PageDataObject*> m_pages;
     QStringList m_pageOrder;
     QStringList m_hiddenPages;
+    QHash<QString, FilesWriteableStates> m_writeableCache;
 };

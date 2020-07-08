@@ -28,25 +28,49 @@ PageSortModel::PageSortModel(QObject* parent)
 {
 }
 
+QHash<int, QByteArray> PageSortModel::roleNames() const
+{
+    if (!sourceModel()) {
+        return {};
+    }
+    auto sourceNames = sourceModel()->roleNames();
+    sourceNames.insert(ShouldRemoveFilesRole, "shouldRemoveFiles");
+    return sourceNames;
+}
 QVariant PageSortModel::data(const QModelIndex& index, int role) const
 {
-    if (!index.isValid()) {
+    if (!checkIndex(index, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
         return QVariant();
     }
 
-    if (role == PagesModel::HiddenRole) {
+    switch(role) {
+    case PagesModel::HiddenRole:
         return m_hiddenProxy[mapToSource(index).row()];
+    case ShouldRemoveFilesRole:
+        return m_removeFiles[mapToSource(index).row()];
     }
+
     return QAbstractProxyModel::data(index, role);
 }
 
 bool PageSortModel::setData(const QModelIndex& index, const QVariant& value, int role)
 {
-    if(!index.isValid() || role != PagesModel::HiddenRole) {
+    if(!checkIndex(index, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
         return false;
     }
-    m_hiddenProxy[mapToSource(index).row()] = value.toBool();
-    Q_EMIT dataChanged(index, index, {PagesModel::HiddenRole});
+
+    switch(role){
+    case PagesModel::HiddenRole:
+        m_hiddenProxy[mapToSource(index).row()] = value.toBool();
+        break;
+    case ShouldRemoveFilesRole:
+        m_removeFiles[mapToSource(index).row()] = value.toBool();
+        break;
+    default:
+        return false;
+    }
+
+    Q_EMIT dataChanged(index, index, {role});
     return true;
 }
 
@@ -55,10 +79,12 @@ void PageSortModel::setSourceModel(QAbstractItemModel *newSourceModel)
     beginResetModel();
     m_rowMapping.clear();
     m_hiddenProxy.clear();
+    m_removeFiles.clear();
     if (newSourceModel) {
         for (int i = 0; i < newSourceModel->rowCount(); ++i) {
             m_rowMapping.append(i);
             m_hiddenProxy.append(newSourceModel->index(i, 0).data(PagesModel::HiddenRole).toBool());
+            m_removeFiles.append(false);
         }
     }
     QAbstractProxyModel::setSourceModel(newSourceModel);
@@ -100,7 +126,7 @@ QModelIndex PageSortModel::parent(const QModelIndex &child) const
 
 QModelIndex PageSortModel::mapFromSource(const QModelIndex& sourceIndex) const
 {
-    if (!sourceIndex.isValid()) {
+    if (!checkIndex(sourceIndex, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
         return QModelIndex();
     }
     const int row = m_rowMapping.indexOf(sourceIndex.row());
@@ -109,7 +135,7 @@ QModelIndex PageSortModel::mapFromSource(const QModelIndex& sourceIndex) const
 
 QModelIndex PageSortModel::mapToSource(const QModelIndex& proxyIndex) const
 {
-    if (!proxyIndex.isValid()) {
+    if (!checkIndex(proxyIndex, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
         return QModelIndex();
     }
     return sourceModel()->index(m_rowMapping.at(proxyIndex.row()), proxyIndex.column());
@@ -125,14 +151,21 @@ void PageSortModel::move(int fromRow, int toRow)
 void PageSortModel::applyChangesToSourceModel() const
 {
     auto *pagesModel = static_cast<PagesModel*>(sourceModel());
-    QStringList newOrder, hiddenPages;
+    QStringList newOrder, hiddenPages, toRemove;
     for (int i = 0; i < m_rowMapping.size(); ++i) {
-        QString name = pagesModel->data(pagesModel->index(m_rowMapping[i], 0), PagesModel::FileNameRole).toString();
+        const QModelIndex sourceIndex = pagesModel->index(m_rowMapping[i]);
+        const QString name = sourceIndex.data(PagesModel::FileNameRole).toString();
         newOrder.append(name);
         if (m_hiddenProxy[m_rowMapping[i]]) {
             hiddenPages.append(name);
         }
+        if (m_removeFiles[m_rowMapping[i]]) {
+            toRemove.append(name);
+        }
     }
     pagesModel->setPageOrder(newOrder);
     pagesModel->setHiddenPages(hiddenPages);
+    for (const auto &name : toRemove) {
+        pagesModel->removeLocalPageFiles(name);
+    }
 }

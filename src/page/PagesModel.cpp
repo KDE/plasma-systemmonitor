@@ -27,7 +27,8 @@ QHash<int, QByteArray> PagesModel::roleNames() const
         { DataRole, "data" },
         { IconRole, "icon" },
         { FileNameRole, "fileName"},
-        { HiddenRole, "hidden"}
+        { HiddenRole, "hidden"},
+        { FilesWriteableRole, "filesWriteable"}
     };
     return roles;
 }
@@ -58,6 +59,8 @@ QVariant PagesModel::data(const QModelIndex &index, int role) const
             return data->config()->name();
         case HiddenRole:
             return m_hiddenPages.contains(data->config()->name());
+        case FilesWriteableRole:
+            return m_writeableCache[data->config()->name()];
         default:
             return QVariant{};
     }
@@ -74,10 +77,18 @@ void PagesModel::componentComplete()
     const auto directories = QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
     for (auto directory : directories) {
         QDir dir{directory};
-        const auto entries = dir.entryList({QStringLiteral("*.page")}, QDir::NoDotAndDotDot | QDir::Files);
+        const auto entries = dir.entryInfoList({QStringLiteral("*.page")}, QDir::NoDotAndDotDot | QDir::Files);
         for (auto entry : entries) {
-            if (!files.contains(entry)) {
-                files.insert(entry, dir.relativeFilePath(entry));
+            const FilesWriteableStates entryState = entry.isWritable() ? AllWriteable : NotWriteable;
+            if (!files.contains(entry.fileName())) {
+                files.insert(entry.fileName(), dir.relativeFilePath(entry.fileName()));
+                m_writeableCache.insert(entry.fileName(), entryState);
+            } else {
+                FilesWriteableStates &state = m_writeableCache[entry.fileName()];
+                if ((state == NotWriteable && entryState == AllWriteable) ||
+                    (state == AllWriteable && entryState == NotWriteable)) {
+                    state = LocalChanges;
+                }
             }
         }
     }
@@ -88,11 +99,20 @@ void PagesModel::componentComplete()
 
         auto page = new PageDataObject{config, this};
         page->load(*config, QStringLiteral("page"));
-
-        connect(page, &PageDataObject::dirtyChanged, this, [this, page]() { savePage(page); });
+        connect(page, &PageDataObject::dirtyChanged, this, [this, page]() {
+            savePage(page);
+            if (m_writeableCache[page->config()->name()] == NotWriteable) {
+                m_writeableCache[page->config()->name()] = LocalChanges;
+                auto i = m_pages.indexOf(page);
+                Q_EMIT dataChanged(index(i), index(i), {FilesWriteableRole});
+            }
+        });
         connect(page, &PageDataObject::valueChanged, this, [this, page]() {
             auto i = m_pages.indexOf(page);
-            Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole});
+            if (m_writeableCache[page->config()->name()] == NotWriteable) {
+                m_writeableCache[page->config()->name()] = LocalChanges;
+            }
+            Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole, FilesWriteableRole});
         });
 
         m_pages.append(page);
@@ -136,11 +156,12 @@ PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &
     for (auto itr = properties.begin(); itr != properties.end(); ++itr) {
         page->insert(itr.key(), itr.value());
     }
+    m_writeableCache[fileName] = AllWriteable;
 
     connect(page, &PageDataObject::dirtyChanged, this, [this, page]() { savePage(page); });
     connect(page, &PageDataObject::valueChanged, this, [this, page]() {
         auto i = m_pages.indexOf(page);
-        Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole});
+        Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole, FilesWriteableRole});
     });
 
     beginInsertRows(QModelIndex{}, m_pages.size(), m_pages.size());
@@ -182,5 +203,39 @@ void PagesModel::setHiddenPages(const QStringList &hiddenPages)
         m_hiddenPages = hiddenPages;
         Q_EMIT hiddenPagesChanged();
         Q_EMIT dataChanged(index(0, 0), index(m_pages.count()-1, 0), {HiddenRole});
+    }
+}
+
+void PagesModel::removeLocalPageFiles(const QString &fileName)
+{
+     auto it = std::find_if(m_pages.begin(), m_pages.end(), [&] (PageDataObject *page) {
+        return page->config()->name() == fileName;
+    });
+    if (it == m_pages.end()) {
+        return;
+    }
+    if (m_writeableCache[fileName] == NotWriteable) {
+        return;
+    }
+    PageDataObject * const page = *it;
+    QStringList files = QStandardPaths::locateAll(QStandardPaths::AppDataLocation, page->config()->name(), QStandardPaths::LocateFile);
+    for (const auto file : files) {
+        if (QFileInfo(file).isWritable()) {
+            QFile::remove(file);
+        }
+    }
+    int row = it - m_pages.begin();
+    if (m_writeableCache[fileName] == AllWriteable) {
+        Q_EMIT beginRemoveRows(QModelIndex(), row, row);
+        m_pages.erase(it);
+        m_hiddenPages.removeAll(fileName);
+        m_writeableCache.remove(fileName);
+        Q_EMIT endRemoveRows();
+    } else {
+        page->config()->markAsClean();
+        page->config()->reparseConfiguration();
+        page->load(*page->config(), QStringLiteral("page"));
+        m_writeableCache[fileName] = NotWriteable;
+        Q_EMIT dataChanged(index(row, 0), index(row, 0), {TitleRole, IconRole, DataRole, FilesWriteableRole});
     }
 }
