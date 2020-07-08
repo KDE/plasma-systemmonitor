@@ -59,8 +59,8 @@ public:
     void setFaceLoader(FaceLoader *faceLoader);
 
 private:
-    void updateNames(int index);
     bool isGroupEmpty(const KConfigGroup &group);
+    void updateNames();
 
     QQmlListProperty<PageDataObject> m_childrenProperty;
     QVector<PageDataObject *> m_children;

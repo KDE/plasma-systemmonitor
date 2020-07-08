@@ -87,7 +87,7 @@ PageDataObject *PageDataObject::insertChild(int index, const QVariantMap &proper
     }
     m_children.insert(index, child);
 
-    updateNames(index + 1);
+    updateNames();
 
     connect(child, &PageDataObject::dirtyChanged, this, [this, child]() {
         if (child->dirty()) {
@@ -115,7 +115,7 @@ void PageDataObject::removeChild(int index)
     child->disconnect(this);
     child->deleteLater();
 
-    updateNames(index + 1);
+    updateNames();
 
     markDirty();
 
@@ -133,7 +133,7 @@ void PageDataObject::moveChild(int from, int to)
     m_children.remove(from);
     m_children.insert(to, movingChild);
 
-    updateNames(std::max(from - 1, 0));
+    updateNames();
 
     markDirty();
 
@@ -288,9 +288,9 @@ void PageDataObject::markClean()
     Q_EMIT dirtyChanged();
 }
 
-void PageDataObject::updateNames(int index)
+void PageDataObject::updateNames()
 {
-    for (auto i = index; i < m_children.size(); ++i) {
+    for (auto i = 0; i < m_children.size(); ++i) {
         auto name = m_children.at(i)->value("name").toString();
         name = QStringLiteral("%1-%2").arg(name.left(name.lastIndexOf('-'))).arg(i);
         m_children.at(i)->insert(QStringLiteral("name"), name);
