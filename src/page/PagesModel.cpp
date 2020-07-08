@@ -99,14 +99,15 @@ void PagesModel::componentComplete()
 
         auto page = new PageDataObject{config, this};
         page->load(*config, QStringLiteral("page"));
+
         connect(page, &PageDataObject::dirtyChanged, this, [this, page]() {
-            savePage(page);
             if (m_writeableCache[page->config()->name()] == NotWriteable) {
                 m_writeableCache[page->config()->name()] = LocalChanges;
                 auto i = m_pages.indexOf(page);
                 Q_EMIT dataChanged(index(i), index(i), {FilesWriteableRole});
             }
         });
+
         connect(page, &PageDataObject::valueChanged, this, [this, page]() {
             auto i = m_pages.indexOf(page);
             if (m_writeableCache[page->config()->name()] == NotWriteable) {
@@ -158,7 +159,6 @@ PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &
     }
     m_writeableCache[fileName] = AllWriteable;
 
-    connect(page, &PageDataObject::dirtyChanged, this, [this, page]() { savePage(page); });
     connect(page, &PageDataObject::valueChanged, this, [this, page]() {
         auto i = m_pages.indexOf(page);
         Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole, FilesWriteableRole});
@@ -171,11 +171,6 @@ PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &
     endInsertRows();
 
     return page;
-}
-
-void PagesModel::savePage(PageDataObject* page)
-{
-    page->save(*page->config(), QStringLiteral("page"), {QStringLiteral("fileName")});
 }
 
 QStringList PagesModel::pageOrder() const

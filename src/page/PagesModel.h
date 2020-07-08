@@ -64,8 +64,6 @@ Q_SIGNALS:
     void hiddenPagesChanged();
 
 private:
-    void savePage(PageDataObject *page);
-
     QVector<PageDataObject*> m_pages;
     QStringList m_pageOrder;
     QStringList m_hiddenPages;
