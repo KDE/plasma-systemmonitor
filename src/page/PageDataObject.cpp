@@ -225,7 +225,7 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
 
 bool PageDataObject::save(KConfigBase &config, const QString &groupName, const QStringList &ignoreProperties)
 {
-    if (!m_dirty) {
+    if (!m_dirty && config.hasGroup(groupName)) {
         return false;
     }
 
