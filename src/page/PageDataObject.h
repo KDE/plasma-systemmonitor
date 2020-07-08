@@ -30,6 +30,9 @@ public:
 
     void setValue(const QString &name, const QVariant &value);
 
+    Q_INVOKABLE bool resetPage();
+    Q_INVOKABLE bool savePage();
+
     bool load(const KConfigBase &config, const QString &groupName);
     Q_SIGNAL void loaded();
     bool save(KConfigBase &config, const QString &groupName, const QStringList &ignoreProperties = {QStringLiteral("children")});

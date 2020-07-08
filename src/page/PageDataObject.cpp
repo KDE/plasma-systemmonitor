@@ -153,6 +153,21 @@ KSharedConfig::Ptr PageDataObject::config() const
     return m_config;
 }
 
+bool PageDataObject::resetPage()
+{
+    m_config->reparseConfiguration();
+    return load(*m_config, QStringLiteral("page"));
+}
+
+bool PageDataObject::savePage()
+{
+    auto result = save(*m_config, QStringLiteral("page"));
+    if (result) {
+        return m_config->sync();
+    }
+    return false;
+}
+
 bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
 {
     auto group = config.group(groupName);
