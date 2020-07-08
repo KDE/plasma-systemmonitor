@@ -172,6 +172,11 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
 {
     auto group = config.group(groupName);
 
+    if (!m_children.isEmpty()) {
+        qDeleteAll(m_children);
+        m_children.clear();
+    }
+
     if (isGroupEmpty(group)) {
         return false;
     }
