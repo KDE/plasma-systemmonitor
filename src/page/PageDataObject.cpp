@@ -86,6 +86,7 @@ PageDataObject *PageDataObject::insertChild(int index, const QVariantMap &proper
         child->insert(itr.key(), itr.value());
     }
     m_children.insert(index, child);
+    child->markDirty();
 
     updateNames();
 
