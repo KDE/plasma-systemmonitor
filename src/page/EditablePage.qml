@@ -29,11 +29,11 @@ Kirigami.Page {
     }
 
     readonly property var actionsFace: contentLoader.item && contentLoader.item.actionsFace ? contentLoader.item.actionsFace : null
-    onActionsFaceChanged: updateActions()
+    onActionsFaceChanged: Qt.callLater(updateActions)
     Connections {
         target: page.actionsFace
-        function onPrimaryActionsChanged() { page.updateActions() }
-        function onSecondaryActionsChanged() { page.updateActions() }
+        function onPrimaryActionsChanged() { Qt.callLater(page.updateActions) }
+        function onSecondaryActionsChanged() { Qt.callLater(page.updateActions) }
     }
 
     function updateActions() {
@@ -50,6 +50,10 @@ Kirigami.Page {
         let secondary = page.actionsFace.secondaryActions
 
         if (primary.length == 0 && secondary.length == 0) {
+            if (actions.contextualActions == defaultActions) {
+                return;
+            }
+
             actions.contextualActions = defaultActions
             return
         }
@@ -96,6 +100,26 @@ Kirigami.Page {
         onTriggered: page.edit = !page.edit
     }
     Kirigami.Action {
+        id: saveAction
+        text: i18n("Save Changes")
+        icon.name: "document-save"
+        visible: page.edit
+        onTriggered: {
+            page.edit = false
+            page.pageData.savePage()
+        }
+    }
+    Kirigami.Action {
+        id: discardAction
+        text: i18n("Discard Changes")
+        icon.name: "edit-delete-remove"
+        visible: page.edit
+        onTriggered: {
+            page.edit = false
+            page.pageData.resetPage()
+        }
+    }
+    Kirigami.Action {
         id: configureAction
 
         text: i18n("Configure Page...")
@@ -123,8 +147,7 @@ Kirigami.Page {
         onTriggered: contentLoader.item.addTitle(-1)
     }
 
-    readonly property var defaultActions: [editAction, addRowAction, addTitleAction, configureAction]
-    onEditChanged: updateActions()
+    readonly property var defaultActions: [editAction, saveAction, discardAction, addRowAction, addTitleAction, configureAction]
 
     Loader {
         id: contentLoader
@@ -140,7 +163,7 @@ Kirigami.Page {
                     applicationWindow().pageStack.pop(page)
                 }
             } else {
-                updateActions()
+                Qt.callLater(updateActions)
                 loadOverlay.opacity = 0
             }
         }
