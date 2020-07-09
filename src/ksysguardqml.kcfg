@@ -22,5 +22,7 @@
         <entry name="pageOrder" type="StringList">
             <default>overview.page,applications.page,history.page,processes.page</default>
         </entry>
+        <entry name="hiddenPages" type="StringList">
+        </entry>
     </group>
 </kcfg>

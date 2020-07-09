@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.12
 import QtQuick.Window 2.12
 
 import org.kde.kirigami 2.11 as Kirigami
+import org.kde.kitemmodels 1.0 as KItemModels
 
 import org.kde.ksysguardqml 1.0
 import org.kde.ksysguard.page 1.0 as Page
@@ -118,7 +119,13 @@ Kirigami.ApplicationWindow {
         ]
 
         Instantiator {
-            model: Page.PagesModel { id: pagesModel }
+            model:  KItemModels.KSortFilterProxyModel {
+                sourceModel: Page.PagesModel { id: pagesModel }
+                filterRowCallback: function(row, parent) {
+                    const index = pagesModel.index(row, parent)
+                    return !pagesModel.data(index, Page.PagesModel.HiddenRole)
+                 }
+            }
 
             Page.EditablePageAction {
                 text: model.title
@@ -166,6 +173,7 @@ Kirigami.ApplicationWindow {
         property alias height: app.height
         property alias sidebarCollapsed: globalDrawer.collapsed
         property alias pageOrder: pagesModel.pageOrder
+        property alias hiddenPages: pagesModel.hiddenPages
     }
 
     pageStack.columnView.columnWidth: Kirigami.Units.gridUnit * 17

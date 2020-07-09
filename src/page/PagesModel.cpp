@@ -27,6 +27,7 @@ QHash<int, QByteArray> PagesModel::roleNames() const
         { DataRole, "data" },
         { IconRole, "icon" },
         { FileNameRole, "fileName"},
+        { HiddenRole, "hidden"}
     };
     return roles;
 }
@@ -55,6 +56,8 @@ QVariant PagesModel::data(const QModelIndex &index, int role) const
             return data->value("icon");
         case FileNameRole:
             return data->config()->name();
+        case HiddenRole:
+            return m_hiddenPages.contains(data->config()->name());
         default:
             return QVariant{};
     }
@@ -168,4 +171,16 @@ void PagesModel::setPageOrder(const QStringList &pageOrder)
     }
 }
 
+QStringList PagesModel::hiddenPages() const
+{
+    return m_hiddenPages;
+}
 
+void PagesModel::setHiddenPages(const QStringList &hiddenPages)
+{
+    if (hiddenPages != m_hiddenPages) {
+        m_hiddenPages = hiddenPages;
+        Q_EMIT hiddenPagesChanged();
+        Q_EMIT dataChanged(index(0, 0), index(m_pages.count()-1, 0), {HiddenRole});
+    }
+}

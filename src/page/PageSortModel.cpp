@@ -33,16 +33,32 @@ QVariant PageSortModel::data(const QModelIndex& index, int role) const
     if (!index.isValid()) {
         return QVariant();
     }
+
+    if (role == PagesModel::HiddenRole) {
+        return m_hiddenProxy[mapToSource(index).row()];
+    }
     return QAbstractProxyModel::data(index, role);
+}
+
+bool PageSortModel::setData(const QModelIndex& index, const QVariant& value, int role)
+{
+    if(!index.isValid() || role != PagesModel::HiddenRole) {
+        return false;
+    }
+    m_hiddenProxy[mapToSource(index).row()] = value.toBool();
+    Q_EMIT dataChanged(index, index, {PagesModel::HiddenRole});
+    return true;
 }
 
 void PageSortModel::setSourceModel(QAbstractItemModel *newSourceModel)
 {
     beginResetModel();
     m_rowMapping.clear();
+    m_hiddenProxy.clear();
     if (newSourceModel) {
         for (int i = 0; i < newSourceModel->rowCount(); ++i) {
             m_rowMapping.append(i);
+            m_hiddenProxy.append(newSourceModel->index(i, 0).data(PagesModel::HiddenRole).toBool());
         }
     }
     QAbstractProxyModel::setSourceModel(newSourceModel);
@@ -113,6 +129,10 @@ void PageSortModel::applyChangesToSourceModel() const
     for (int i = 0; i < m_rowMapping.size(); ++i) {
         QString name = pagesModel->data(pagesModel->index(m_rowMapping[i], 0), PagesModel::FileNameRole).toString();
         newOrder.append(name);
+        if (m_hiddenProxy[m_rowMapping[i]]) {
+            hiddenPages.append(name);
+        }
     }
     pagesModel->setPageOrder(newOrder);
+    pagesModel->setHiddenPages(hiddenPages);
 }

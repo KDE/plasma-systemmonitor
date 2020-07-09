@@ -59,6 +59,8 @@ Dialog {
                     id: delegateComponent
                     Kirigami.AbstractListItem {
                         id: listItem
+                        //Using directly model.hidden below doesn't work for some reason
+                        readonly property bool hidden: model.hidden
                         contentItem: RowLayout {
                             Kirigami.ListItemDragHandle {
                                 id: handle
@@ -70,14 +72,23 @@ Dialog {
                                     sortModel.move(oldIndex, newIndex)
                                 }
                             }
+                            CheckBox {
+                                checked: !hidden
+                                onToggled: pageList.model.setData(pageList.model.index(index, 0), !hidden, Page.PagesModel.HiddenRole)
+                                ToolTip.text: hidden ? i18n("Show Page") : i18n("Hide Page")
+                                ToolTip.delay: Kirigami.Units.toolTipDelay
+                                ToolTip.visible: hovered
+                            }
                             Kirigami.Icon {
                                 Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
                                 Layout.preferredHeight: Layout.preferredWidth
                                 source: model.icon
+                                opacity: hidden ? 0.3 : 1
                             }
                             Label {
                                 Layout.fillWidth: true
                                 text: model.title
+                                opacity: hidden ? 0.3 : 1
                             }
                         }
                     }

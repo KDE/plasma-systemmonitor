@@ -34,6 +34,7 @@ public:
     explicit PageSortModel(QObject* parent = nullptr);
 
     QVariant data(const QModelIndex &index, int role) const override;
+    bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
 
     void setSourceModel(QAbstractItemModel* newSourceModel) override;
 
@@ -49,6 +50,7 @@ public:
     Q_INVOKABLE void applyChangesToSourceModel() const;
 private:
     QVector<int> m_rowMapping;
+    QVector<bool> m_hiddenProxy;
 
 };
 
