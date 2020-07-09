@@ -10,6 +10,7 @@
 #include "PageDataObject.h"
 #include "PagesModel.h"
 #include "FaceLoader.h"
+#include "PageSortModel.h"
 
 #include <QQmlEngine>
 
@@ -20,6 +21,7 @@ void PagePlugin::registerTypes(const char *uri)
     qmlRegisterType<PageDataModel>(uri, 1, 0, "PageDataModel");
     qmlRegisterType<PagesModel>(uri, 1, 0, "PagesModel");
     qmlRegisterType<FaceLoader>(uri, 1, 0, "FaceLoader");
+    qmlRegisterType<PageSortModel>(uri, 1, 0, "PageSortModel");
 
     qmlRegisterUncreatableType<PageDataObject>(uri, 1, 0, "PageDataObject", QStringLiteral("Used for data storage"));
 }

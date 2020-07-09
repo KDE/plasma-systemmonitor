@@ -5,6 +5,7 @@ set(page_SRCS
     PagePlugin.cpp
     PagesModel.cpp
     FaceLoader.cpp
+    PageSortModel.cpp
 )
 
 set(page_QML
@@ -24,6 +25,7 @@ set(page_QML
     LoadPresetDialog.qml
     EditorToolBar.qml
     MoveButton.qml
+    PageSortDialog.qml
 )
 
 add_library(PagePlugin SHARED ${page_SRCS})

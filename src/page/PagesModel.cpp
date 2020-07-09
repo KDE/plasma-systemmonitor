@@ -25,7 +25,8 @@ QHash<int, QByteArray> PagesModel::roleNames() const
     static QHash<int, QByteArray> roles {
         { TitleRole, "title" },
         { DataRole, "data" },
-        { IconRole, "icon" }
+        { IconRole, "icon" },
+        { FileNameRole, "fileName"},
     };
     return roles;
 }
@@ -52,6 +53,8 @@ QVariant PagesModel::data(const QModelIndex &index, int role) const
             return QVariant::fromValue(data);
         case IconRole:
             return data->value("icon");
+        case FileNameRole:
+            return data->config()->name();
         default:
             return QVariant{};
     }

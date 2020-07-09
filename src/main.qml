@@ -70,6 +70,11 @@ Kirigami.ApplicationWindow {
                         text: "Tools"
                         icon.name: "tools-symbolic"
                     },
+                      Kirigami.Action {
+                        icon.name: "handle-sort"
+                        text: i18n("Edit pages...")
+                        onTriggered: pageSortDialog.open()
+                    },
                     Kirigami.Action {
                         icon.name: app.globalDrawer.collapsed ? "view-split-left-right" : "view-left-close"
                         text: app.globalDrawer.collapsed ? i18n("Expand Sidebar") : i18n("Collapse Sidebar")
@@ -129,7 +134,8 @@ Kirigami.ApplicationWindow {
             }
             onObjectRemoved: {
                 var actions = Array.prototype.map.call(globalDrawer.actions, i => i)
-                actions.splice(index, 1)
+                var actionIndex = actions.indexOf(object)
+                actions.splice(actionIndex, 1)
                 globalDrawer.actions = actions
             }
         }
@@ -146,6 +152,12 @@ Kirigami.ApplicationWindow {
             var column = row.insertChild(0, {name: "column-0", showBackground: true})
             column.insertChild(0, {name: "section-0", isSeparator: false})
         }
+    }
+
+    Page.PageSortDialog {
+        id: pageSortDialog
+        title: i18n("Edit Pages")
+        model: pagesModel
     }
 
     Configuration {
