@@ -16,7 +16,7 @@ include(ECMInstallIcons)
 include(FeatureSummary)
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Quick Widgets DBus)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS I18n Config Declarative Service GlobalAccel KIO)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS I18n Config Declarative Service GlobalAccel KIO DBusAddons)
 find_package(KSysGuard REQUIRED)
 
 set(CMAKE_CXX_STANDARD 14)

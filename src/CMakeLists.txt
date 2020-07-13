@@ -26,6 +26,7 @@ target_link_libraries(ksysguardqml
     KF5::Service
     KF5::KIOGui
     KF5::GlobalAccel
+    KF5::DBusAddons
 )
 
 install(TARGETS ksysguardqml DESTINATION ${KDE_INSTALL_BINDIR})

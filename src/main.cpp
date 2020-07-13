@@ -23,8 +23,10 @@
 #include <QQmlApplicationEngine>
 #include <QCommandLineParser>
 #include <QQmlContext>
+#include <QWindow>
 
 #include <KDeclarative/KDeclarative>
+#include <KDBusService>
 
 #include "ToolsModel.h"
 #include "Configuration.h"
@@ -34,6 +36,8 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
     app.setApplicationName(QStringLiteral("ksysguardqml"));
     app.setDesktopFileName(QStringLiteral("org.kde.ksysguardqml"));
+
+    KDBusService service(KDBusService::Unique);
 
     QCommandLineParser parser;
     parser.addOption({QStringLiteral("page"), QStringLiteral("The page to show."), QStringLiteral("page")});
@@ -52,6 +56,14 @@ int main(int argc, char **argv)
 
     engine.rootContext()->setContextProperty("__context__initialPage", parser.value(QStringLiteral("page")));
     engine.load(QStringLiteral(":/main.qml"));
+
+    QObject::connect(&service, &KDBusService::activateRequested, &engine, []() {
+            if (!qApp->topLevelWindows().isEmpty()) {
+                QWindow *win = qApp->topLevelWindows().first();
+                win->raise();
+                win->requestActivate();
+            }
+    });
 
     return app.exec();
 }
