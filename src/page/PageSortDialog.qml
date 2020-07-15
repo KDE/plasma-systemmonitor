@@ -127,11 +127,11 @@ Dialog {
                                         PropertyChanges {
                                             target: removeButton
                                             icon.name: "edit-redo"
-                                            ToolTip.text: i18n("Do not reset the page.")
+                                            ToolTip.text: i18n("Do not reset the page")
                                         }
                                         PropertyChanges {
                                             target: subtitle
-                                            text: i18n("The page will be reset to its default state.")
+                                            text: i18n("The page will be reset to its default state")
                                         }
                                     },
                                     State {
@@ -140,7 +140,7 @@ Dialog {
                                         PropertyChanges {
                                             target: removeButton
                                             icon.name: "edit-reset"
-                                            ToolTip.text: i18n("Reset the page to its default state.")
+                                            ToolTip.text: i18n("Reset the page to its default state")
                                         }
                                     },
                                     State {
@@ -149,11 +149,11 @@ Dialog {
                                         PropertyChanges {
                                             target: removeButton
                                             icon.name: "edit-undo"
-                                            ToolTip.text: i18n("Do not remove the page.")
+                                            ToolTip.text: i18n("Do not remove this page")
                                         }
                                         PropertyChanges {
                                             target: subtitle
-                                            text: i18n("The page will be removed.")
+                                            text: i18n("The page will be removed")
                                         }
                                         PropertyChanges {
                                             target: listItem
@@ -166,7 +166,7 @@ Dialog {
                                         PropertyChanges {
                                             target: removeButton
                                             icon.name: "edit-delete"
-                                            ToolTip.text: i18n("Remove the page.")
+                                            ToolTip.text: i18n("Remove this page")
                                         }
                                     }
                                 ]
