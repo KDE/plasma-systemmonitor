@@ -81,6 +81,7 @@ Control {
                 onMoved: control.moved(from, to)
             }
 
+
             Button {
                 id: removeButton
 
@@ -179,7 +180,7 @@ Control {
                 MoveButton {
                     visible: moveButton.opacity == 0
                     height: visible ? implicitHeight : 0
-                    flat: true
+//                     flat: true
                     axis: moveButton.axis
                     target: moveButton.target
                     onMoved: control.moved(from, to)

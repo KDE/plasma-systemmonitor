@@ -8,7 +8,7 @@ import org.kde.ksysguard.page 1.0
 
 Container {
     id: control
-
+    moveAxis: Qt.XAxis
     property PageDataObject columnData
 
     signal addColumn()
@@ -90,7 +90,6 @@ Container {
         text: i18nc("@action:button", "Add Column")
         onTriggered: control.addColumn()
     }
-    toolbar.moveAxis: Qt.XAxis
 
     toolbar.extraActions: Action {
         icon.name: "view-visible"

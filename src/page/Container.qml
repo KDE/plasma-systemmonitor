@@ -31,6 +31,7 @@ Item {
     property alias bottomPadding: control.bottomPadding
 
     readonly property alias toolbar: toolbar
+    property alias moveAxis: dragHandler.axis
     z: raised ? 99 : 0
 
     Control {
@@ -78,6 +79,7 @@ Item {
 
                 single: root.single
                 moveTarget: root
+                moveAxis: root.moveAxis
 
                 enabled: opacity >= 1
                 opacity: root.active ? 1 : 0
@@ -87,5 +89,10 @@ Item {
                 onRemoveClicked: root.remove()
             }
         }
+    }
+    ContainerDragHandler {
+        id: dragHandler
+        target: root
+        onMoved: root.move(from, to)
     }
 }

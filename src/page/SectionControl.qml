@@ -8,7 +8,7 @@ import org.kde.ksysguard.page 1.0
 
 Container {
     id: control
-
+    moveAxis: Qt.XAxis
     property PageDataObject sectionData
 
     signal addSection()
@@ -52,5 +52,4 @@ Container {
             onTriggered: control.addSeparator()
         }
     ]
-    toolbar.moveAxis: Qt.XAxis
 }

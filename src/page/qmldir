@@ -19,3 +19,4 @@ Choices 1.0 Choices.qml
 LoadPresetDialog 1.0 LoadPresetDialog.qml
 MoveButton 1.0 MoveButton.qml
 PageSortDialog 1.0 PageSortDialog.qml
+ContainerDragHandler 1.0 ContainerDragHandler.qml
