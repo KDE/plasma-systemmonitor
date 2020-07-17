@@ -127,6 +127,10 @@ Kirigami.Page {
         onStatusChanged: {
             if (status == Loader.Loading) {
                 loadOverlay.opacity = 1
+                if (!edit) {
+                    // Pop any pages that might have been opened during editing
+                    applicationWindow().pageStack.pop(page)
+                }
             } else {
                 updateActions()
                 loadOverlay.opacity = 0
