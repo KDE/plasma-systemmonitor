@@ -63,13 +63,11 @@ Kirigami.Page {
         }
 
         if (secondary.length > 0) {
-            contextual.concat(Array.prototype.map.call(secondary, i => i))
+            contextual = contextual.concat(Array.prototype.map.call(secondary, i => i))
             contextual.push(separator)
         }
 
-        contextual.concat(defaultActions)
-
-        actions.contextualActions = contextual
+        actions.contextualActions = contextual.concat(defaultActions)
     }
 
     Kirigami.Action {
