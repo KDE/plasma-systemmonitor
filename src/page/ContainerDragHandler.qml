@@ -17,9 +17,9 @@ Item  {
     anchors.fill: target
     DragHandler {
         id: drag
-
+        enabled: !root.target.single
         target: root.target.mainControl
-
+        grabPermissions: PointerHandler.TakeOverForbidden	
         xAxis.enabled: root.axis == Qt.XAxis
         xAxis.minimum: root.target.parent.Kirigami.ScenePosition.x
         xAxis.maximum: root.target.parent.Kirigami.ScenePosition.x + root.target.parent.width - root.target.width
@@ -34,10 +34,11 @@ Item  {
         property real lastY: -1
 
         onTranslationChanged: {
-            console.log("got grab" + root.target + " " + target)
             if (root.target.single) {
+                console.log("is signle" + root.target + " " + target)
                 return
             }
+            console.log("got grab" + root.target + " " + target)
             var pressPositionInTarget = parent.mapToItem(root.target.mainControl, centroid.pressPosition.x, centroid.pressPosition.y)
 
             var left = centroid.scenePosition.x - pressPositionInTarget.x
@@ -125,8 +126,11 @@ Item  {
     }
     PointHandler {
         id: point
-
+        enabled: !root.target.single
         onActiveChanged: {
+            if (root.target.single) {
+                return
+            }
             if (active) {
                 let pos = root.target.Overlay.overlay.mapFromItem(root.target.mainControl, 0, 0);
                 root.target.mainControl.parent = root.target.Overlay.overlay;
