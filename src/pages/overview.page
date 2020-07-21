@@ -9,6 +9,9 @@ mem/physical/allocated=61,174,233
 highPrioritySensorIds=["mem/physical/allocated"]
 totalSensors=["mem/physical/allocated"]
 
+[Face-94410222150464][org.kde.ksysguard.piechart][General]
+showLegend=false
+
 [Face-94410238879984][Appearance]
 chartFace=org.kde.ksysguard.textonly
 title=Networks
@@ -27,6 +30,9 @@ partitions/all/usedspace=61,174,233
 highPrioritySensorIds=["partitions/all/usedspace"]
 totalSensors=["partitions/all/filllevel"]
 
+[Face-94410261307168][org.kde.ksysguard.piechart][General]
+showLegend=false
+
 [Face-94410266684256][Appearance]
 chartFace=org.kde.ksysguard.piechart
 title=CPU
@@ -37,6 +43,9 @@ cpu/system/TotalLoad=61,174,233
 [Face-94410266684256][Sensors]
 highPrioritySensorIds=["cpu/system/TotalLoad"]
 totalSensors=["cpu/system/TotalLoad"]
+
+[Face-94410266684256][org.kde.ksysguard.piechart][General]
+showLegend=false
 
 [Face-94410267900240][Appearance]
 chartFace=org.kde.ksysguard.piechart
