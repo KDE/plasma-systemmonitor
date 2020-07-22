@@ -133,12 +133,17 @@ Dialog {
                                         {text: i18n("Text Only"), value: "text"},
                                     ]
 
-                                    if (modelData && modelData.unit
-                                        && modelData.unit != Formatter.Units.UnitInvalid
-                                        && modelData.unit != Formatter.Units.UnitNone) {
-                                        result.push({text: i18n("Line Chart"), value: "line"})
+                                    if (modelData && modelData.unit) {
+                                        if (modelData.unit != Formatter.Units.UnitInvalid
+                                            && modelData.unit != Formatter.Units.UnitNone) {
+                                            result.push({text: i18n("Line Chart"), value: "line"})
+                                        }
+                                        if (modelData.unit == Formatter.Units.UnitPercent
+                                            && modelData.maximum != 100) {
+                                            result.push({text: i18n("Text Only (Scaled to 100%)"), value: "textScaled"})
+                                            result.push({text: i18n("Line Chart (Scaled to 100%)"), value: "lineScaled"})
+                                        }
                                     }
-
                                     return result
                                 }
 

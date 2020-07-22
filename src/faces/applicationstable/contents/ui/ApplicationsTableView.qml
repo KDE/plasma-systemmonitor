@@ -6,6 +6,7 @@ import Qt.labs.qmlmodels 1.0
 import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.quickcharts 1.0 as Charts
 
+import org.kde.ksysguard.formatter 1.0 as Formatter
 import org.kde.ksysguard.process 1.0 as Process
 import org.kde.ksysguard.table 1.0 as Table
 
@@ -141,6 +142,7 @@ Table.BaseTableView {
     }
 
     delegate: DelegateChooser {
+        role: "displayStyle"
         DelegateChoice {
             column: 0;
             Table.FirstCellDelegate {
@@ -157,6 +159,21 @@ Table.BaseTableView {
             Table.LineChartCellDelegate {
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
                 maximum: sortFilter.data(sortFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+            }
+        }
+        DelegateChoice {
+            roleValue: "lineScaled"
+            Table.LineChartCellDelegate {
+                valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
+                maximum: rowFilter.data(rowFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
+            }
+
+        }
+        DelegateChoice {
+            roleValue: "textScaled"
+            Table.BasicCellDelegate {
+                text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
             }
         }
         DelegateChoice { Table.BasicCellDelegate { } }

@@ -7,6 +7,7 @@ import org.kde.kcoreaddons 1.0 as KCoreAddons
 import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.quickcharts 1.0 as Charts
 
+import org.kde.ksysguard.formatter 1.0 as Formatter
 import org.kde.ksysguard.process 1.0 as Process
 import org.kde.ksysguard.table 1.0 as Table
 
@@ -171,9 +172,24 @@ Table.BaseTableView {
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
                 maximum: rowFilter.data(rowFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
             }
-        }
-        DelegateChoice { Table.BasicCellDelegate { } }
-    }
 
+        }
+        DelegateChoice {
+            roleValue: "lineScaled"
+            Table.LineChartCellDelegate {
+                valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
+                maximum: rowFilter.data(rowFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
+            }
+
+        }
+        DelegateChoice {
+            roleValue: "textScaled"
+            Table.BasicCellDelegate {
+                text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
+            }
+        }
+        DelegateChoice { Table.BasicCellDelegate{} }
+    }
     KCoreAddons.KUser { id: loggedInUser }
 }

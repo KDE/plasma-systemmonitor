@@ -30,7 +30,7 @@
             that, we serialize it from and to JSON. So the below default should
             be valid JSON.
             -->
-            <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","appName":"text","netInbound":"text","netOutbound":"text","usage":"line","vmPSS":"text"}</default>
+            <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","appName":"text","netInbound":"text","netOutbound":"text","usage":"lineScaled","vmPSS":"text"}</default>
         </entry>
         <entry name="askWhenKilling">
             <default>true</default>
