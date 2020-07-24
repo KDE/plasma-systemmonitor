@@ -18,9 +18,9 @@ highPrioritySensorIds=["cpu/cpu.*/TotalLoad"]
 [Face-94107109903664][org.kde.ksysguard.linechart][General]
 lineChartFillOpacity=100
 lineChartStacked=true
-rangeAutoY=false
+rangeAutoY=true
 rangeToX=100
-rangeToY=800
+
 [Face-94107115022400][Appearance]
 chartFace=org.kde.ksysguard.linechart
 title=
