@@ -3,6 +3,7 @@ import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
 
 import org.kde.kirigami 2.12 as Kirigami
+import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.kquickcontrolsaddons 2.0 as Addons
 
 import org.kde.ksysguard.page 1.0
@@ -16,7 +17,8 @@ Dialog {
     property string name: "New Page"
     property string iconName: "ksysguardd"
     property real margin: 2
-    property string actionsFace
+    property string actionsFace: "dummy" //Can't leave it empty, otherwise it doesn't update when it's initially set to an empty string
+    property alias pageData: facesModel.pageData
 
     modal: true
     parent: Overlay.overlay
@@ -29,6 +31,14 @@ Dialog {
     bottomPadding: Kirigami.Units.smallSpacing
     topPadding: Kirigami.Units.smallSpacing
     bottomInset: -Kirigami.Units.smallSpacing
+
+    onAccepted: {
+        actionsFace = actionsCombobox.currentValue
+    }
+
+    onClosed: {
+        actionsFace = "dummy" //see above
+    }
 
     contentItem: Rectangle {
         Kirigami.Theme.colorSet: Kirigami.Theme.View
@@ -83,7 +93,23 @@ Dialog {
                 onActivated: dialog.margin = model[index].value
             }
             ComboBox {
+                id: actionsCombobox
                 Kirigami.FormData.label: i18n("Use Actions From")
+                visible: count > 1
+                textRole: "display"
+                valueRole: "id"
+                currentIndex:indexOfValue(dialog.actionsFace)
+                model:  KItemModels.KSortFilterProxyModel {
+                    sourceModel: FacesModel {id: facesModel}
+                    filterRowCallback: function(row, parent) {
+                        // No face option
+                        if (row == facesModel.rowCount() - 1) {
+                            return true
+                        }
+                        const face = facesModel.faceAtIndex(row)
+                        return face.primaryActions.length != 0 && face.secondaryActions.length != 0
+                    }
+                }
             }
         }
 

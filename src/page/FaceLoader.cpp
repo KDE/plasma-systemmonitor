@@ -38,6 +38,9 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
     m_dataObject = newDataObject;
 
     if (m_dataObject) {
+
+        m_dataObject->setFaceLoader(this);
+
         auto faceConfig = m_dataObject->value(QStringLiteral("face")).toString();
         if (faceConfig.isEmpty()) {
             faceConfig = QStringLiteral("Face-%1").arg(reinterpret_cast<quintptr>(this));

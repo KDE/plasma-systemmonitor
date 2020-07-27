@@ -180,16 +180,17 @@ Kirigami.Page {
 
     PageDialog {
         id: pageDialog
-        title: i18n("Configure Page \"%1\"", pageData.title)
+        title: i18n("Configure Page \"%1\"", page.pageData.title)
 
         acceptText: i18n("Save")
         acceptIcon: "document-save"
 
         onAboutToShow: {
-            name = pageData.title
-            iconName = pageData.icon
-            margin = pageData.margin
-            actionsFace = pageData.actionsFace
+            name = page.pageData.title
+            iconName = page.pageData.icon
+            margin = page.pageData.margin
+            pageData = page.pageData
+            actionsFace = page.pageData.actionsFace ? page.pageData.actionsFace : ""
         }
 
         onAccepted: {

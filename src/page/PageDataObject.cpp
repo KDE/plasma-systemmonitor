@@ -12,6 +12,8 @@
 #include <KConfig>
 #include <KConfigGroup>
 
+#include "FaceLoader.h"
+
 QVariant converted(const QVariant &variant, QMetaType::Type type)
 {
     auto result = variant;
@@ -258,4 +260,14 @@ void PageDataObject::updateNames(int index)
         name = QStringLiteral("%1-%2").arg(name.left(name.lastIndexOf('-'))).arg(i);
         m_children.at(i)->insert(QStringLiteral("name"), name);
     }
+}
+
+FaceLoader* PageDataObject::faceLoader()
+{
+    return m_faceLoader;
+}
+
+void PageDataObject::setFaceLoader(FaceLoader* faceLoader)
+{
+    m_faceLoader = faceLoader;
 }

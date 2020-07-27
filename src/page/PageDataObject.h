@@ -12,6 +12,8 @@
 
 #include <KSharedConfig>
 
+class FaceLoader;
+
 class PageDataObject : public QQmlPropertyMap
 {
     Q_OBJECT
@@ -50,6 +52,9 @@ public:
     Q_INVOKABLE void markClean();
     Q_SIGNAL void dirtyChanged();
 
+    FaceLoader *faceLoader();
+    void setFaceLoader(FaceLoader *faceLoader);
+
 private:
     void updateNames(int index);
 
@@ -57,6 +62,7 @@ private:
     QVector<PageDataObject *> m_children;
     KSharedConfig::Ptr m_config;
     bool m_dirty = false;
+    FaceLoader *m_faceLoader = nullptr;
 };
 
 #endif // PAGEDATAOBJECT_H
