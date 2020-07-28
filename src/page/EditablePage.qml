@@ -31,6 +31,10 @@ Kirigami.Page {
     }
 
     function updateActions() {
+        actions.main = null
+        actions.left = null
+        actions.right = null
+
         if (!actionsFace || page.edit) {
             actions.contextualActions = defaultActions
             return
