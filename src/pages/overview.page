@@ -2,9 +2,6 @@
 chartFace=org.kde.ksysguard.piechart
 title=Memory
 
-[Face-94410222150464][SensorColors]
-mem/physical/allocated=61,174,233
-
 [Face-94410222150464][Sensors]
 highPrioritySensorIds=["mem/physical/allocated"]
 totalSensors=["mem/physical/allocated"]
@@ -16,15 +13,19 @@ showLegend=false
 chartFace=org.kde.ksysguard.textonly
 title=Networks
 
+[Face-94410238879984][Sensors]
+highPrioritySensorIds=["network/(?!all).*/ipv4address","network/(?!all).*/ipv6address"]
+totalSensors=["network/(?!all).*/network"]
+
+[Face-94410238879984][org.kde.ksysguard.textonly][General]
+groupByTotal=true
+
 [Face-94410254040128][Appearance]
 chartFace=org.kde.ksysguard.applicationstable
 
 [Face-94410261307168][Appearance]
 chartFace=org.kde.ksysguard.piechart
 title=Disk
-
-[Face-94410261307168][SensorColors]
-partitions/all/usedspace=61,174,233
 
 [Face-94410261307168][Sensors]
 highPrioritySensorIds=["partitions/all/usedspace"]
@@ -36,9 +37,6 @@ showLegend=false
 [Face-94410266684256][Appearance]
 chartFace=org.kde.ksysguard.piechart
 title=CPU
-
-[Face-94410266684256][SensorColors]
-cpu/system/TotalLoad=61,174,233
 
 [Face-94410266684256][Sensors]
 highPrioritySensorIds=["cpu/system/TotalLoad"]
@@ -54,13 +52,6 @@ chartFace=org.kde.ksysguard.piechart
 chartFace=org.kde.ksysguard.textonly
 title=System
 
-[Face-94410278989264][SensorColors]
-os/plasma/kfVersion=233,224,61
-os/plasma/plasmaVersion=61,233,85
-os/plasma/qtVersion=233,61,105
-os/system/hostname=61,174,233
-os/system/prettyName=155,61,233
-
 [Face-94410278989264][Sensors]
 highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/qtVersion","os/plasma/kfVersion","os/plasma/plasmaVersion"]
 
@@ -68,12 +59,12 @@ highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/qt
 chartFace=org.kde.ksysguard.textonly
 title=Network Rates
 
-[Face-94410280144624][SensorColors]
-network/all/receivedDataRate=61,174,233
-network/all/sentDataRate=233,120,61
-
 [Face-94410280144624][Sensors]
-highPrioritySensorIds=["network/all/receivedDataRate","network/all/sentDataRate"]
+highPrioritySensorIds=["network/(?!all).*/download","network/(?!all).*/upload"]
+totalSensors=["network/(?!all).*/network"]
+
+[Face-94410280144624][org.kde.ksysguard.textonly][General]
+groupByTotal=true
 
 [Face-94410280836144][Appearance]
 chartFace=org.kde.ksysguard.piechart
