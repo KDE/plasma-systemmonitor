@@ -2,16 +2,6 @@
 chartFace=org.kde.ksysguard.linechart
 title=
 
-[Face-94107109903664][SensorColors]
-cpu/cpu0/TotalLoad=61,174,233
-cpu/cpu1/TotalLoad=77,61,233
-cpu/cpu2/TotalLoad=206,61,233
-cpu/cpu3/TotalLoad=233,61,131
-cpu/cpu4/TotalLoad=233,120,61
-cpu/cpu5/TotalLoad=217,233,61
-cpu/cpu6/TotalLoad=88,233,61
-cpu/cpu7/TotalLoad=61,233,163
-
 [Face-94107109903664][Sensors]
 highPrioritySensorIds=["cpu/cpu.*/TotalLoad"]
 
@@ -25,10 +15,6 @@ rangeToX=100
 chartFace=org.kde.ksysguard.linechart
 title=
 
-[Face-94107115022400][SensorColors]
-mem/physical/allocated=61,174,233
-mem/swap/used=233,120,61
-
 [Face-94107115022400][Sensors]
 highPrioritySensorIds=["mem/physical/allocated","mem/swap/used"]
 
@@ -40,12 +26,8 @@ rangeToX=100
 chartFace=org.kde.ksysguard.linechart
 title=
 
-[Face-94107150101264][SensorColors]
-network/all/receivedDataRate=61,174,233
-network/all/sentDataRate=233,120,61
-
 [Face-94107150101264][Sensors]
-highPrioritySensorIds=["network/all/receivedDataRate","network/all/sentDataRate"]
+highPrioritySensorIds=["network/all/download","network/all/upload"]
 
 [Face-94107150101264][org.kde.ksysguard.linechart][General]
 lineChartFillOpacity=100
