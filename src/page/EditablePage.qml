@@ -22,6 +22,12 @@ Kirigami.Page {
     Kirigami.ColumnView.fillWidth: true
     Kirigami.ColumnView.reservedSpace: edit ? applicationWindow().pageStack.columnView.columnWidth : 0
 
+    Binding {
+        target: globalToolBarItem
+        property: "enabled"
+        value: contentLoader.status != Loader.Loading
+    }
+
     readonly property var actionsFace: contentLoader.item && contentLoader.item.actionsFace ? contentLoader.item.actionsFace : null
     onActionsFaceChanged: updateActions()
     Connections {
