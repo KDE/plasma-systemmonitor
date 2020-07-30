@@ -51,18 +51,6 @@ Kirigami.ScrollablePage {
         }
     ]
 
-    Platform.ColorDialog {
-        id: colorDialog
-        property string destinationSensor
-
-        currentColor: destinationSensor != "" ? loader.controller.sensorColors[destinationSensor] : ""
-        onAccepted: {
-            var colors = loader.controller.sensorColors
-            colors[destinationSensor] = color
-            loader.controller.sensorColors = colors
-        }
-    }
-
     LoadPresetDialog {
         id: loadPresetDialog
 
@@ -164,53 +152,19 @@ Kirigami.ScrollablePage {
             }
         }
 
-        Label { text: "Total Sensors"; visible: loader.controller.supportsTotalSensors }
-
-        Choices {
+        Control {
             Layout.fillWidth: true
-            visible: loader.controller.supportsTotalSensors
+            contentItem: loader.controller.sensorsConfigUi
 
-            selected: loader.controller.totalSensors
-            onSelectedChanged: loader.controller.totalSensors = selected
+            Connections {
+                target: loader.controller.sensorsConfigUi
 
-            colors: loader.controller.sensorColors
-            onSelectColor: {
-                colorDialog.destinationSensor = sensorId
-                colorDialog.open()
+                function onConfigurationChanged() {
+                    loader.controller.faceConfigUi.saveConfig()
+                    loader.dataObject.markDirty()
+                }
             }
         }
-
-        Label { text: "Sensors" }
-
-        Choices {
-            Layout.fillWidth: true
-
-            selected: loader.controller.highPrioritySensorIds
-            onSelectedChanged: loader.controller.highPrioritySensorIds = selected
-
-            colors: loader.controller.sensorColors
-            onSelectColor: {
-                colorDialog.destinationSensor = sensorId
-                colorDialog.open()
-            }
-        }
-
-        Label { text: "Text-Only Sensors"; visible: loader.controller.supportsLowPrioritySensors }
-
-        Choices {
-            Layout.fillWidth: true
-            visible: loader.controller.supportsLowPrioritySensors
-
-            selected: loader.controller.lowPrioritySensors
-            onSelectedChanged: loader.controller.lowPrioritySensorIds = selected
-
-            colors: loader.controller.sensorColors
-            onSelectColor: {
-                colorDialog.destinationSensor = sensorId
-                colorDialog.open()
-            }
-        }
-
         Item { Layout.fillHeight: true; width: 1 }
     }
 }

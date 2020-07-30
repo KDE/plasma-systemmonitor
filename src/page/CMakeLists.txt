@@ -21,7 +21,6 @@ set(page_QML
     EditablePageAction.qml
     FaceControl.qml
     FaceConfigurationPage.qml
-    Choices.qml
     LoadPresetDialog.qml
     EditorToolBar.qml
     MoveButton.qml
