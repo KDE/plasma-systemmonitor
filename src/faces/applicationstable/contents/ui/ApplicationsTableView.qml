@@ -165,7 +165,7 @@ Table.BaseTableView {
             roleValue: "lineScaled"
             Table.LineChartCellDelegate {
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
-                maximum: rowFilter.data(rowFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                maximum: sortFilter.data(sortFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
             }
 
