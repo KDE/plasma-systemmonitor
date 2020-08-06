@@ -157,6 +157,10 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
 {
     auto group = config.group(groupName);
 
+    if (isGroupEmpty(group)) {
+        return false;
+    }
+
     const auto entries = group.entryMap();
     for (auto itr = entries.begin(); itr != entries.end(); ++itr) {
         auto variant = QVariant::fromValue(itr.value());
@@ -180,13 +184,17 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
     groups.sort();
     for (auto groupName : qAsConst(groups)) {
         auto object = new PageDataObject{m_config, this};
-        object->load(group, groupName);
-        m_children.append(object);
-        connect(object, &PageDataObject::dirtyChanged, this, [this, object]() {
-            if (object->dirty()) {
-                markDirty();
-            }
-        });
+        if (object->load(group, groupName)) {
+            m_children.append(object);
+            connect(object, &PageDataObject::dirtyChanged, this, [this, object]() {
+                if (object->dirty()) {
+                    markDirty();
+                }
+            });
+        } else {
+            delete object;
+        }
+
     }
 
     markClean();
@@ -270,4 +278,24 @@ FaceLoader* PageDataObject::faceLoader()
 void PageDataObject::setFaceLoader(FaceLoader* faceLoader)
 {
     m_faceLoader = faceLoader;
+}
+
+bool PageDataObject::isGroupEmpty(const KConfigGroup &group)
+{
+    if (group.entryMap().size() != 0) {
+        return false;
+    }
+
+    if (group.groupList().size() == 0) {
+        return true;
+    }
+
+    const auto groups = group.groupList();
+    for (auto subGroup : groups) {
+        if (!isGroupEmpty(group.group(subGroup))) {
+            return false;
+        }
+    }
+
+    return true;
 }

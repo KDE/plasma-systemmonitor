@@ -57,6 +57,7 @@ public:
 
 private:
     void updateNames(int index);
+    bool isGroupEmpty(const KConfigGroup &group);
 
     QQmlListProperty<PageDataObject> m_childrenProperty;
     QVector<PageDataObject *> m_children;
