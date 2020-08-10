@@ -1,6 +1,6 @@
 /*
  *   Copyright 2019 Marco Martin <mart@kde.org>
- *   Copyrigth 2019 Kai Uwe Broulik <kde@broulik.de>
+ *   Copyright 2019 Kai Uwe Broulik <kde@broulik.de>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU Library General Public License as
