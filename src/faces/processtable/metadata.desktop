@@ -1,5 +1,11 @@
 [Desktop Entry]
 Name=Process Table
+Name[ca]=Taula de processos
+Name[ca@valencia]=Taula de processos
+Name[pt]=Tabela de Processos
+Name[sv]=Processtabell
+Name[uk]=Таблиця процесів
+Name[x-test]=xxProcess Tablexx
 Icon=view-process-system
 
 Type=Service
