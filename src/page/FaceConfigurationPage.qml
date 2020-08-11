@@ -160,7 +160,7 @@ Kirigami.ScrollablePage {
                 target: loader.controller.sensorsConfigUi
 
                 function onConfigurationChanged() {
-                    loader.controller.faceConfigUi.saveConfig()
+                    loader.controller.sensorsConfigUi.saveConfig()
                     loader.dataObject.markDirty()
                 }
             }
