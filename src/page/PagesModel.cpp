@@ -100,20 +100,12 @@ void PagesModel::componentComplete()
         auto page = new PageDataObject{config, this};
         page->load(*config, QStringLiteral("page"));
 
-        connect(page, &PageDataObject::dirtyChanged, this, [this, page]() {
+        connect(page, &PageDataObject::saved, this, [this, page]() {
             if (m_writeableCache[page->config()->name()] == NotWriteable) {
                 m_writeableCache[page->config()->name()] = LocalChanges;
                 auto i = m_pages.indexOf(page);
                 Q_EMIT dataChanged(index(i), index(i), {FilesWriteableRole});
             }
-        });
-
-        connect(page, &PageDataObject::valueChanged, this, [this, page]() {
-            auto i = m_pages.indexOf(page);
-            if (m_writeableCache[page->config()->name()] == NotWriteable) {
-                m_writeableCache[page->config()->name()] = LocalChanges;
-            }
-            Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole, FilesWriteableRole});
         });
 
         m_pages.append(page);
