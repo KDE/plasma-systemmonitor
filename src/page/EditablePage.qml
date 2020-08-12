@@ -94,6 +94,7 @@ Kirigami.Page {
 
         text: i18n("Edit Page")
         icon.name: "document-edit"
+        visible: !page.edit
 
         displayHint: page.actionsFace ? Kirigami.Action.DisplayHint.AlwaysHide : Kirigami.Action.DisplayHint.NoPreference
 
