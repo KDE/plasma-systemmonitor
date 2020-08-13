@@ -31,8 +31,7 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
     }
 
     if (m_faceController) {
-        m_faceController->deleteLater();
-        m_faceController = nullptr;
+        m_faceController->disconnect(m_dataObject);
     }
 
     m_dataObject = newDataObject;
@@ -50,11 +49,13 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
 
         if (s_faceCache.contains(faceConfig)) {
             m_faceController = s_faceCache.value(faceConfig);
-            return;
+        } else {
+            auto configGroup = m_dataObject->config()->group(faceConfig);
+            m_faceController = new SensorFaceController(configGroup, qmlEngine(this));
+            m_faceController->setShouldSync(false);
+            s_faceCache.insert(faceConfig, m_faceController);
         }
 
-        auto configGroup = m_dataObject->config()->group(faceConfig);
-        m_faceController = new SensorFaceController(configGroup, qmlEngine(this));
         connect(m_faceController, &SensorFaceController::faceIdChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::titleChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::totalSensorsChanged, m_dataObject, &PageDataObject::markDirty);
@@ -62,9 +63,12 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
         connect(m_faceController, &SensorFaceController::lowPrioritySensorIdsChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::sensorColorsChanged, m_dataObject, &PageDataObject::markDirty);
 
-        s_faceCache.insert(faceConfig, m_faceController);
-
         Q_EMIT controllerChanged();
+    }
+
+    if (m_oldController) {
+        delete m_oldController;
+        m_oldController = nullptr;
     }
 
     Q_EMIT dataObjectChanged();
@@ -73,4 +77,19 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
 SensorFaceController * FaceLoader::controller() const
 {
     return m_faceController;
+}
+
+void FaceLoader::reset()
+{
+    auto faceConfig = m_dataObject->value(QStringLiteral("face")).toString();
+    if (s_faceCache.contains(faceConfig)) {
+        s_faceCache.remove(faceConfig);
+    }
+
+    // Deleting the controller here, even when using deleteLater will trigger a
+    // crash in the QML runtime because it still has references to the object
+    // that do not get cleared. So instead, only delete it once we have a new
+    // face controller.
+    m_oldController = m_faceController;
+    m_faceController = nullptr;
 }

@@ -29,9 +29,12 @@ public:
     KSysGuard::SensorFaceController *controller() const;
     Q_SIGNAL void controllerChanged();
 
+    void reset();
+
 private:
     PageDataObject *m_dataObject = nullptr;
     KSysGuard::SensorFaceController *m_faceController = nullptr;
+    KSysGuard::SensorFaceController *m_oldController = nullptr;
 
     static QHash<QString, KSysGuard::SensorFaceController *> s_faceCache;
 };

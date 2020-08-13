@@ -271,6 +271,10 @@ void PageDataObject::reset()
 {
     markClean();
 
+    if (m_faceLoader) {
+        m_faceLoader->reset();
+    }
+
     for (auto child : qAsConst(m_children)) {
         child->reset();
     }
