@@ -1,4 +1,4 @@
-File=ksysguardqml.kcfg
+File=systemmonitor.kcfg
 ClassName=Config
 Mutators=true
 GenerateProperties=true

@@ -6,7 +6,7 @@ import QtQuick.Window 2.12
 import org.kde.kirigami 2.11 as Kirigami
 import org.kde.kitemmodels 1.0 as KItemModels
 
-import org.kde.ksysguardqml 1.0
+import org.kde.systemmonitor 1.0
 import org.kde.ksysguard.page 1.0 as Page
 
 Kirigami.ApplicationWindow {

@@ -34,8 +34,8 @@
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
-    app.setApplicationName(QStringLiteral("ksysguardqml"));
-    app.setDesktopFileName(QStringLiteral("org.kde.ksysguardqml"));
+    app.setApplicationName(QStringLiteral("plasma-systemmonitor"));
+    app.setDesktopFileName(QStringLiteral("org.kde.systemmonitor"));
 
     KDBusService service(KDBusService::Unique);
 
@@ -44,9 +44,9 @@ int main(int argc, char **argv)
     parser.addHelpOption();
     parser.process(app);
 
-    qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.ksysguardqml", 1);
-    qmlRegisterType<ToolsModel>("org.kde.ksysguardqml", 1, 0, "ToolsModel");
-    qmlRegisterType<Configuration>("org.kde.ksysguardqml", 1, 0, "Configuration");
+    qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.systemmonitor", 1);
+    qmlRegisterType<ToolsModel>("org.kde.systemmonitor", 1, 0, "ToolsModel");
+    qmlRegisterType<Configuration>("org.kde.systemmonitor", 1, 0, "Configuration");
 
     QQmlApplicationEngine engine;
 

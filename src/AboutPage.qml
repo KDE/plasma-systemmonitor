@@ -12,7 +12,7 @@ Kirigami.AboutPage {
         "homepage": "https://kde.org",
         "version": "2.19.08",
         "copyrightStatement" : "© 2018-2019 KSysGuard Development Team",
-        "desktopFileName" : "org.kde.ksysguardqml",
+        "desktopFileName" : "org.kde.systemmonitor",
         "otherText": "",
         "authors": [
             {

@@ -3,20 +3,20 @@ add_subdirectory(page)
 add_subdirectory(table)
 add_subdirectory(faces)
 
-set(ksysguardqml_SRCS
+set(plasma-systemmonitor_SRCS
     main.cpp
     ToolsModel.cpp
     Configuration.cpp
 )
 
-qt5_add_resources(ksysguardqml_QRC ksysguardqml.qrc)
+qt5_add_resources(plasma-systemmonitor_QRC systemmonitor.qrc)
 
-kconfig_add_kcfg_files(ksysguardqml_SRCS GENERATE_MOC Config.kcfgc)
+kconfig_add_kcfg_files(plasma-systemmonitor_SRCS GENERATE_MOC Config.kcfgc)
 
 add_definitions(-DQT_NO_KEYWORDS)
 
-add_executable(ksysguardqml ${ksysguardqml_SRCS} ${ksysguardqml_QRC})
-target_link_libraries(ksysguardqml
+add_executable(plasma-systemmonitor ${plasma-systemmonitor_SRCS} ${plasma-systemmonitor_QRC})
+target_link_libraries(plasma-systemmonitor
     Qt5::Quick
     Qt5::Widgets
     Qt5::DBus
@@ -29,14 +29,14 @@ target_link_libraries(ksysguardqml
     KF5::DBusAddons
 )
 
-install(TARGETS ksysguardqml DESTINATION ${KDE_INSTALL_BINDIR})
-install(PROGRAMS org.kde.ksysguardqml.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
-install(FILES ksysguardqml.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
+install(TARGETS plasma-systemmonitor DESTINATION ${KDE_INSTALL_BINDIR})
+install(PROGRAMS org.kde.systemmonitor.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
+install(FILES systemmonitor.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 
 install(FILES
     pages/applications.page
     pages/history.page
     pages/overview.page
     pages/processes.page
-    DESTINATION ${KDE_INSTALL_DATADIR}/ksysguardqml
+    DESTINATION ${KDE_INSTALL_DATADIR}/systemmonitor
 )

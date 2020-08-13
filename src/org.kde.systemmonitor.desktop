@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=KSysGuard (QML)
+Name=System Monitor
 Name[ca]=KSysGuard (QML)
 Name[ca@valencia]=KSysGuard (QML)
 Name[es]=KSysGuard (QML)
@@ -19,7 +19,7 @@ GenericName[pt]=Monitor do Sistema
 GenericName[sv]=Systemövervakare
 GenericName[uk]=Нагляд за системою
 GenericName[x-test]=xxSystem Monitorxx
-Exec=ksysguardqml
+Exec=plasma-systemmonitor
 Icon=utilities-system-monitor
 Type=Application
 Categories=Qt;KDE;System;
