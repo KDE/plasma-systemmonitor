@@ -54,7 +54,16 @@ QVariant FacesModel::data(const QModelIndex& index, int role) const
 
 QQuickItem *FacesModel::faceAtIndex(int row) const
 {
-    return row == m_faceLoaders.count() ? nullptr : m_faceLoaders[row]->controller()->fullRepresentation();
+    if (row == m_faceLoaders.count()) {
+        return nullptr;
+    }
+
+    auto loader = m_faceLoaders.at(row);
+    if (loader->controller()) {
+        return loader->controller()->fullRepresentation();
+    }
+
+    return nullptr;
 }
 
 PageDataObject *FacesModel::pageData() const
