@@ -163,6 +163,9 @@ KSharedConfig::Ptr PageDataObject::config() const
 
 bool PageDataObject::resetPage()
 {
+    reset();
+
+    m_config->markAsClean();
     m_config->reparseConfiguration();
     return load(*m_config, QStringLiteral("page"));
 }
@@ -262,6 +265,15 @@ bool PageDataObject::save(KConfigBase &config, const QString &groupName, const Q
     markClean();
     Q_EMIT saved();
     return true;
+}
+
+void PageDataObject::reset()
+{
+    markClean();
+
+    for (auto child : qAsConst(m_children)) {
+        child->reset();
+    }
 }
 
 bool PageDataObject::dirty() const

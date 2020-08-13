@@ -38,6 +38,8 @@ public:
     bool save(KConfigBase &config, const QString &groupName, const QStringList &ignoreProperties = {QStringLiteral("children")});
     Q_SIGNAL void saved();
 
+    void reset();
+
     Q_INVOKABLE PageDataObject *insertChild(int index, const QVariantMap &properties);
     Q_INVOKABLE void removeChild(int index);
     Q_INVOKABLE void moveChild(int from, int to);
