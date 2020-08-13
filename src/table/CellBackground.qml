@@ -23,7 +23,7 @@ Rectangle {
     // if our delegate moves
     // if the model moves and the delegate stays in the same place
     function updateIsSelected() {
-        selected = __selection.isRowSelected(row, __modelIndex.parent)
+        selected = __selection.isSelected(view.model.index(row, column))
     }
 
     Connections {
