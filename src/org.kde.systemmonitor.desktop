@@ -1,14 +1,5 @@
 [Desktop Entry]
 Name=System Monitor
-Name[ca]=KSysGuard (QML)
-Name[ca@valencia]=KSysGuard (QML)
-Name[es]=KSysGuard (QML)
-Name[fr]=KSysGuard (QML)
-Name[nl]=KSysGuard (QML)
-Name[pt]=KSysGuard (QML)
-Name[sv]=KDE:s systemövervakare (QML)
-Name[uk]=KSysGuard (QML)
-Name[x-test]=xxKSysGuard (QML)xx
 GenericName=System Monitor
 GenericName[ca]=Monitor del sistema
 GenericName[ca@valencia]=Monitor del sistema
