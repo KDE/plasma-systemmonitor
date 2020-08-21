@@ -1,4 +1,3 @@
-
 add_subdirectory(page)
 add_subdirectory(table)
 add_subdirectory(faces)
@@ -38,5 +37,5 @@ install(FILES
     pages/history.page
     pages/overview.page
     pages/processes.page
-    DESTINATION ${KDE_INSTALL_DATADIR}/systemmonitor
+    DESTINATION ${KDE_INSTALL_DATADIR}/plasma-systemmonitor
 )
