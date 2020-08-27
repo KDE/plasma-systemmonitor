@@ -59,13 +59,27 @@ Table.BaseTableView {
 
     columnWidths: [200, 100, 100, 100, 100]
 
-    model: KItemModels.KSortFilterProxyModel {
+    model: Table.ComponentCacheProxyModel {
+        id: cacheModel
+        sourceModel: sortFilter
+
+        component: Charts.ModelHistorySource {
+            model: Table.ComponentCacheProxyModel.model
+            row: Table.ComponentCacheProxyModel.row
+            column: Table.ComponentCacheProxyModel.column
+            roleName: "Value"
+            maximumHistory: 10
+            interval: 2000
+        }
+    }
+
+    KItemModels.KSortFilterProxyModel {
         id: sortFilter
 
-        sourceModel: cacheModel
+        sourceModel: displayModel
 
         filterColumnCallback: function(column, parent) {
-            // Note: This assumes cacheModel column == appModel column
+            // Note: This assumes displayModel column == appModel column
             // This may not always hold, but we get incorrect results if we try to
             // map to source indices when the model is empty.
             var sensorId = appModel.enabledAttributes[column]
@@ -78,20 +92,6 @@ Table.BaseTableView {
         filterKeyColumn: appModel.nameColumn
         filterCaseSensitivity: Qt.CaseInsensitive
         sortRole: "Value"
-    }
-
-    Table.ComponentCacheProxyModel {
-        id: cacheModel
-        sourceModel: displayModel
-
-        component: Charts.ModelHistorySource {
-            model: Table.ComponentCacheProxyModel.model
-            row: Table.ComponentCacheProxyModel.row
-            column: Table.ComponentCacheProxyModel.column
-            roleName: "Value"
-            maximumHistory: 10
-            interval: 2000
-        }
     }
 
     Table.ColumnDisplayModel {

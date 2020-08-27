@@ -49,17 +49,9 @@ Table.BaseTableView {
 
     idRole: "Attribute"
 
-    model: Table.ProcessSortFilterModel {
-        id: rowFilter
-        sourceModel: cacheModel
-        uidColumn: processModel.uidColumn
-        nameColumn: processModel.nameColumn
-        hiddenAttributes: processModel.hiddenSensors
-    }
-
-    Table.ComponentCacheProxyModel {
+    model: Table.ComponentCacheProxyModel {
         id: cacheModel
-        sourceModel: displayModel
+        sourceModel: rowFilter
 
         component: Charts.ModelHistorySource {
             model: Table.ComponentCacheProxyModel.model
@@ -69,6 +61,18 @@ Table.BaseTableView {
             maximumHistory: 10
             interval: 2000
         }
+
+        function sort(column, order) {
+            rowFilter.sort(column, order)
+        }
+    }
+
+    Table.ProcessSortFilterModel {
+        id: rowFilter
+        sourceModel: displayModel
+        uidColumn: processModel.uidColumn
+        nameColumn: processModel.nameColumn
+        hiddenAttributes: processModel.hiddenSensors
     }
 
     Table.ColumnDisplayModel {
