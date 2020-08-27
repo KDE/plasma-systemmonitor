@@ -14,8 +14,7 @@ import org.kde.ksysguard.table 1.0 as Table
 Table.BaseTableView {
     id: view
 
-    property string nameFilterString
-    onNameFilterStringChanged: rowFilter.invalidate()
+    property alias nameFilterString: rowFilter.filterString
     property alias processModel: processModel
     property int viewMode: ProcessTableView.ViewMode.Own
     onViewModeChanged: rowFilter.invalidate()
@@ -50,45 +49,12 @@ Table.BaseTableView {
 
     idRole: "Attribute"
 
-    model: KItemModels.KSortFilterProxyModel {
+    model: Table.ProcessSortFilterModel {
         id: rowFilter
-
         sourceModel: cacheModel
-
-        filterRowCallback: function(row, role) {
-            var result = true
-            var uid = processModel.data(processModel.index(row, processModel.uidColumn))
-
-            switch(view.viewMode) {
-                case Table.UserMode.Own:
-                    result = loggedInUser.loginName == processModel.data(processModel.index(row, processModel.usernameColumn))
-                    break
-                case Table.UserMode.User:
-                    result = uid >= 1000 && uid < 65534
-                    break
-                case Table.UserMode.System:
-                    result = uid < 1000 || uid >= 65534
-                    break
-                default:
-                    break
-            }
-
-            if (result && view.nameFilterString != "") {
-                result = processModel.data(processModel.index(row, processModel.nameColumn)).includes(view.nameFilterString)
-            }
-
-            return result
-        }
-
-        filterColumnCallback: function(column, role) {
-            var sensorId = processModel.enabledAttributes[column]
-            if (processModel.hiddenSensors.indexOf(sensorId) != -1) {
-                return false
-            }
-            return true
-        }
-
-        sortRole: "Value"
+        uidColumn: processModel.uidColumn
+        nameColumn: processModel.nameColumn
+        hiddenAttributes: processModel.hiddenSensors
     }
 
     Table.ComponentCacheProxyModel {
@@ -191,5 +157,4 @@ Table.BaseTableView {
         }
         DelegateChoice { Table.BasicCellDelegate{} }
     }
-    KCoreAddons.KUser { id: loggedInUser }
 }
