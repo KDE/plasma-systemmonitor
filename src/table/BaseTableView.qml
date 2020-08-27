@@ -33,6 +33,7 @@ FocusScope {
 
     signal contextMenuRequested(var index, point position)
     signal headerContextMenuRequested(int column, point position)
+    signal sort(int column, int order)
 
     clip: true
 
@@ -61,17 +62,7 @@ FocusScope {
 
         width: tableView.contentWidth + scrollView.rightPadding
 
-        onSort: {
-            if (tableView.model) {
-                var model = tableView.model
-                if (model.hasOwnProperty("sort")) {
-                    model.sort(sortColumn, sortOrder)
-                } else if (model.hasOwnProperty("sortColumn")) {
-                    model.sortColumn = sortColumn
-                    model.sortOrder = sortOrder
-                }
-            }
-        }
+        onSort: root.sort(column, order)
 
         onResize: root.setColumnWidth(column, width)
 

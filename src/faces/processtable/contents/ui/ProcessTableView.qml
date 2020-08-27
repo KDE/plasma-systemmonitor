@@ -49,6 +49,8 @@ Table.BaseTableView {
 
     idRole: "Attribute"
 
+    onSort: rowFilter.sort(column, order)
+
     model: Table.ComponentCacheProxyModel {
         id: cacheModel
         sourceModel: rowFilter
@@ -60,10 +62,6 @@ Table.BaseTableView {
             roleName: "Value"
             maximumHistory: 10
             interval: 2000
-        }
-
-        function sort(column, order) {
-            rowFilter.sort(column, order)
         }
     }
 

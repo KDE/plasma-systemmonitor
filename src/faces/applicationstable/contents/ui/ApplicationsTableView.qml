@@ -59,6 +59,11 @@ Table.BaseTableView {
 
     columnWidths: [200, 100, 100, 100, 100]
 
+    onSort: {
+        sortFilter.sortColumn = column
+        sortFilter.sortOrder = order
+    }
+
     model: Table.ComponentCacheProxyModel {
         id: cacheModel
         sourceModel: sortFilter
