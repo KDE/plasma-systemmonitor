@@ -28,7 +28,7 @@ QtObject {
 
     property var connection: Connections {
         target: model
-        function onDataChanged() { info.update() }
+        function onDataChanged() { if (info) { info.update() } }
     }
 
     function update() {
