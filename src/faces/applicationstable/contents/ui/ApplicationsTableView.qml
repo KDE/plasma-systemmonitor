@@ -29,7 +29,7 @@ Table.BaseTableView {
             }
             rows[i.row] = true
 
-            var index = sortFilter.mapToSource(i)
+            var index = sortFilter.mapToSource(cacheModel.mapToSource(i))
             var item = applicationInformation.createObject()
             item.index = index
             item.update()

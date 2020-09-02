@@ -34,7 +34,7 @@ Table.BaseTableView {
 
             rows[i.row] = true
 
-            var index = rowFilter.mapToSource(i)
+            var index = rowFilter.mapToSource(cacheModel.mapToSource(i))
             var item = {}
 
             item.name = processModel.data(processModel.index(index.row, processModel.nameColumn), Process.ProcessDataModel.ValueRole)
