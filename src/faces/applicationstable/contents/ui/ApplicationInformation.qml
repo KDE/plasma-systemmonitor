@@ -24,7 +24,7 @@ QtObject {
 
     property string iconName
 
-    property var pids
+    property var pids: []
 
     property var connection: Connections {
         target: model
@@ -46,5 +46,8 @@ QtObject {
         iconName = "" + model.data(model.index(index.row, sensorColumns["iconName"]), role)
 
         pids = model.data(model.index(index.row, 0), pidsRole)
+        if (!pids) {
+            pids = []
+        }
     }
 }
