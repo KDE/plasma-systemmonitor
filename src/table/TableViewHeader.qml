@@ -3,6 +3,7 @@ import QtQuick.Controls 2.2
 import QtQml.Models 2.12
 
 import org.kde.kirigami 2.2 as Kirigami
+import org.kde.ksysguard.formatter 1.0 as Formatter
 
 import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.qqc2desktopstyle.private 1.0 as StylePrivate
@@ -97,7 +98,7 @@ Item {
                         } else {
                             heading.sortColumn = model.row;
                             heading.sortName = headerItem.columnId
-                            heading.sortOrder = Qt.AscendingOrder;
+                            heading.sortOrder = model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder;
                         }
 
                         heading.sort(heading.sortColumn, heading.sortOrder)
