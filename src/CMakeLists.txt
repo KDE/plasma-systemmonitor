@@ -29,7 +29,7 @@ target_link_libraries(plasma-systemmonitor
 )
 
 install(TARGETS plasma-systemmonitor DESTINATION ${KDE_INSTALL_BINDIR})
-install(PROGRAMS org.kde.systemmonitor.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
+install(PROGRAMS org.kde.plasma-systemmonitor.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
 install(FILES systemmonitor.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 
 install(FILES
