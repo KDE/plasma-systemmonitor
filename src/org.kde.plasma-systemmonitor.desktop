@@ -2,6 +2,7 @@
 Name=System Monitor
 Name[ca]=Monitor del sistema
 Name[ca@valencia]=Monitor del sistema
+Name[cs]=Monitor systému
 Name[es]=Monitor del sistema
 Name[eu]=Sistemaren begiralea
 Name[fi]=Järjestelmänvalvonta
@@ -17,6 +18,7 @@ Name[x-test]=xxSystem Monitorxx
 GenericName=System Monitor
 GenericName[ca]=Monitor del sistema
 GenericName[ca@valencia]=Monitor del sistema
+GenericName[cs]=Monitor systému
 GenericName[es]=Monitor del sistema
 GenericName[eu]=Sistemaren begiralea
 GenericName[fi]=Järjestelmänvalvonta
