@@ -14,8 +14,6 @@ class ProcessSortFilterModel : public QSortFilterProxyModel
 {
     Q_OBJECT
     Q_PROPERTY(QString filterString READ filterString WRITE setFilterString NOTIFY filterStringChanged)
-    Q_PROPERTY(int uidColumn READ uidColumn WRITE setUidColumn NOTIFY uidColumnChanged)
-    Q_PROPERTY(int nameColumn READ nameColumn WRITE setNameColumn NOTIFY nameColumnChanged)
     Q_PROPERTY(QStringList hiddenAttributes READ hiddenAttributes WRITE setHiddenAttributes NOTIFY hiddenAttributesChanged)
 
 public:
@@ -29,6 +27,7 @@ public:
 
     ProcessSortFilterModel(QObject *parent = nullptr);
 
+    void setSourceModel(QAbstractItemModel *newSourceModel) override;
     bool filterAcceptsRow(int sourceRow, const QModelIndex& sourceParent) const override;
     bool filterAcceptsColumn(int sourceColumn, const QModelIndex& sourceParent) const override;
 
@@ -36,13 +35,7 @@ public:
     void setFilterString(const QString &newFilterString);
     Q_SIGNAL void filterStringChanged();
 
-    int uidColumn() const;
-    void setUidColumn(int newUidColumn);
-    Q_SIGNAL void uidColumnChanged();
 
-    int nameColumn() const;
-    void setNameColumn(int newNameColumn);
-    Q_SIGNAL void nameColumnChanged();
 
     QStringList hiddenAttributes() const;
     void setHiddenAttributes(const QStringList &newHiddenAttributes);
@@ -51,10 +44,11 @@ public:
     Q_INVOKABLE void sort(int column, Qt::SortOrder order) override;
 
 private:
+    void findColumns();
+
     QString m_filterString;
-    int m_uidColumn = -1;
-    int m_nameColumn = -1;
     ViewMode m_viewMode = ViewOwn;
-    KUser m_currentUser;
     QStringList m_hiddenAttributes;
+    int m_uidColumn = -1;
+    KUser m_currentUser;
 };

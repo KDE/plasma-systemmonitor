@@ -23,6 +23,27 @@ ProcessSortFilterModel::ProcessSortFilterModel(QObject* parent)
     setFilterCaseSensitivity(Qt::CaseInsensitive);
 }
 
+void ProcessSortFilterModel::setSourceModel(QAbstractItemModel* newSourceModel)
+{
+    auto oldSourceModel = sourceModel();
+
+    if (newSourceModel == oldSourceModel) {
+        return;
+    }
+
+    if (oldSourceModel) {
+        oldSourceModel->disconnect(this);
+    }
+
+    QSortFilterProxyModel::setSourceModel(newSourceModel);
+    if (newSourceModel) {
+        connect(newSourceModel, &QAbstractItemModel::modelReset, this, &ProcessSortFilterModel::findColumns);
+        connect(newSourceModel, &QAbstractItemModel::columnsInserted, this, &ProcessSortFilterModel::findColumns);
+        connect(newSourceModel, &QAbstractItemModel::columnsRemoved, this, &ProcessSortFilterModel::findColumns);
+        connect(newSourceModel, &QAbstractItemModel::columnsMoved, this, &ProcessSortFilterModel::findColumns);
+    }
+}
+
 bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex& sourceParent) const
 {
     auto result = true;
@@ -80,37 +101,6 @@ void ProcessSortFilterModel::setFilterString(const QString & newFilterString)
     Q_EMIT filterStringChanged();
 }
 
-int ProcessSortFilterModel::uidColumn() const
-{
-    return m_uidColumn;
-}
-
-void ProcessSortFilterModel::setUidColumn(int newUidColumn)
-{
-    if (newUidColumn == m_uidColumn) {
-        return;
-    }
-
-    m_uidColumn = newUidColumn;
-    invalidateFilter();
-    Q_EMIT uidColumnChanged();
-}
-
-int ProcessSortFilterModel::nameColumn() const
-{
-    return filterKeyColumn();
-}
-
-void ProcessSortFilterModel::setNameColumn(int newNameColumn)
-{
-    if (newNameColumn == filterKeyColumn()) {
-        return;
-    }
-
-    setFilterKeyColumn(newNameColumn);
-    Q_EMIT nameColumnChanged();
-}
-
 QStringList ProcessSortFilterModel::hiddenAttributes() const
 {
     return m_hiddenAttributes;
@@ -130,4 +120,23 @@ void ProcessSortFilterModel::setHiddenAttributes(const QStringList &newHiddenAtt
 void ProcessSortFilterModel::sort(int column, Qt::SortOrder order)
 {
     QSortFilterProxyModel::sort(column, order);
+}
+
+void ProcessSortFilterModel::findColumns()
+{
+    m_uidColumn = -1;
+    setFilterKeyColumn(-1);
+
+    auto source = sourceModel();
+
+    for (auto column = 0; column < source->columnCount(); ++column) {
+        auto attribute = source->headerData(column, Qt::Horizontal, ProcessDataModel::Attribute).toString();
+        if (attribute == QStringLiteral("uid")) {
+            m_uidColumn = column;
+        } else if (attribute == QStringLiteral("name")) {
+            setFilterKeyColumn(column);
+        }
+    }
+
+    invalidate();
 }

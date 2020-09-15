@@ -68,8 +68,6 @@ Table.BaseTableView {
     Table.ProcessSortFilterModel {
         id: rowFilter
         sourceModel: displayModel
-        uidColumn: processModel.uidColumn
-        nameColumn: processModel.nameColumn
         hiddenAttributes: processModel.hiddenSensors
     }
 
