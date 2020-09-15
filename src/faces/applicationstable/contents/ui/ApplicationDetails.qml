@@ -62,8 +62,6 @@ Page {
             Layout.fillHeight: false
             Layout.preferredHeight: Kirigami.Units.gridUnit * 3
 
-            legendVisible: false
-
             yRange { from: 0; to: 100; automatic: false }
             xRange { from: 0; to: 50 }
             unit: Formatter.Units.UnitPercent
@@ -84,8 +82,6 @@ Page {
         LineChartCard {
             Layout.fillHeight: false
             Layout.preferredHeight: Kirigami.Units.gridUnit * 3
-
-            legendVisible: false
 
             yRange { from: 0; to: totalMemorySensor.value; automatic: false }
             xRange { from: 0; to: 50 }
@@ -110,7 +106,6 @@ Page {
             Layout.fillHeight: false
             Layout.preferredHeight: Kirigami.Units.gridUnit * 3
 
-            legendVisible: false
             xRange { from: 0; to: 50 }
             unit: Formatter.Units.UnitKiloByteRate
 
@@ -136,7 +131,6 @@ Page {
             Layout.fillHeight: false
             Layout.preferredHeight: Kirigami.Units.gridUnit * 3
 
-            legendVisible: false
             xRange { from: 0; to: 50 }
             unit: Formatter.Units.UnitKiloByteRate
 
@@ -156,7 +150,6 @@ Page {
             ]
         }
 
-//         Label { text: i18n("Threads: %1", processTable.rows) }
         Label { text: i18n("Processes: %1", processTable.rows) }
 
         Rectangle {
