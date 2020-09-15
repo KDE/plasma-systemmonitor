@@ -74,7 +74,7 @@ Page {
                     id: cpuHistory
                     value: root.firstApplication ? root.firstApplication.cpu : 0
                     maximumHistory: 50
-                    interval: 500
+                    interval: 2000
                 }
             ]
         }
@@ -97,7 +97,7 @@ Page {
                     id: memoryHistory
                     value: root.firstApplication ? root.firstApplication.memory : 0
                     maximumHistory: 50
-                    interval: 500
+                    interval: 2000
                 }
             ]
 
@@ -119,13 +119,13 @@ Page {
                     id: netInboundHistory
                     value: root.firstApplication ? root.firstApplication.netInbound : 0;
                     maximumHistory: 50
-                    interval: 500
+                    interval: 2000
                 },
                 Charts.ValueHistorySource {
                     id: netOutboundHistory
                     value: root.firstApplication ? root.firstApplication.netOutbound : 0;
                     maximumHistory: 50
-                    interval: 500
+                    interval: 2000
                 }
             ]
         }
@@ -145,13 +145,13 @@ Page {
                     id: diskReadHistory
                     value: root.firstApplication ? root.firstApplication.diskRead : 0;
                     maximumHistory: 50
-                    interval: 500
+                    interval: 2000
                 },
                 Charts.ValueHistorySource {
                     id: diskWriteHistory
                     value: root.firstApplication ? root.firstApplication.diskWrite : 0;
                     maximumHistory: 50
-                    interval: 500
+                    interval: 2000
                 }
             ]
         }
