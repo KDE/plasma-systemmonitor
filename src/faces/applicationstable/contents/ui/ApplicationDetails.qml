@@ -2,6 +2,8 @@ import QtQuick 2.12
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
 
+import Qt.labs.qmlmodels 1.0
+
 import org.kde.kirigami 2.4 as Kirigami
 
 import org.kde.kitemmodels 1.0 as KItemModels
@@ -70,11 +72,13 @@ Page {
             valueSources: [
                 Charts.ValueHistorySource {
                     id: cpuHistory
-                    value: root.firstApplication ? root.firstApplication.cpu : 0
                     maximumHistory: 50
                     interval: 2000
+                    value: root.firstApplication ? root.firstApplication.cpu / cpuCountSensor.value : 0
                 }
             ]
+
+            Sensors.Sensor { id: cpuCountSensor; sensorId: "system/cores/cores" }
         }
         Label {
             text: i18n("Memory")
@@ -192,7 +196,16 @@ Page {
                     ]
                 }
 
-                delegate: Table.BasicCellDelegate { }
+                delegate: DelegateChooser {
+                    role: "Attribute"
+                    DelegateChoice {
+                        roleValue: "usage"
+                        Table.BasicCellDelegate {
+                            text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
+                        }
+                    }
+                    DelegateChoice { Table.BasicCellDelegate { } }
+                }
             }
 
             Kirigami.Separator { anchors.bottom: processTable.top; width: parent.width }
