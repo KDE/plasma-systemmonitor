@@ -68,6 +68,11 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex& 
         }
     }
 
+    if (!m_filterPids.isEmpty()) {
+        auto pid = source->data(source->index(sourceRow, m_pidColumn, sourceParent), ProcessDataModel::Value);
+        result = m_filterPids.contains(pid);
+    }
+
     if (result) {
         result = QSortFilterProxyModel::filterAcceptsRow(sourceRow, sourceParent);
     }
@@ -135,6 +140,22 @@ void ProcessSortFilterModel::setHiddenAttributes(const QStringList &newHiddenAtt
     Q_EMIT hiddenAttributesChanged();
 }
 
+QVariantList ProcessSortFilterModel::filterPids() const
+{
+    return m_filterPids;
+}
+
+void ProcessSortFilterModel::setFilterPids(const QVariantList &newFilterPids)
+{
+    if (newFilterPids == m_filterPids) {
+        return;
+    }
+
+    m_filterPids = newFilterPids;
+    invalidateFilter();
+    Q_EMIT filterPidsChanged();
+}
+
 void ProcessSortFilterModel::sort(int column, Qt::SortOrder order)
 {
     QSortFilterProxyModel::sort(column, order);
@@ -143,6 +164,7 @@ void ProcessSortFilterModel::sort(int column, Qt::SortOrder order)
 void ProcessSortFilterModel::findColumns()
 {
     m_uidColumn = -1;
+    m_pidColumn = -1;
     setFilterKeyColumn(-1);
 
     auto source = sourceModel();
@@ -151,6 +173,8 @@ void ProcessSortFilterModel::findColumns()
         auto attribute = source->headerData(column, Qt::Horizontal, ProcessDataModel::Attribute).toString();
         if (attribute == QStringLiteral("uid")) {
             m_uidColumn = column;
+        } else if (attribute == QStringLiteral("pid")) {
+            m_pidColumn = column;
         } else if (attribute == QStringLiteral("name")) {
             setFilterKeyColumn(column);
         }
