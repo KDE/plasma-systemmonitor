@@ -16,8 +16,7 @@ Table.BaseTableView {
 
     property alias nameFilterString: rowFilter.filterString
     property alias processModel: processModel
-    property int viewMode: ProcessTableView.ViewMode.Own
-    onViewModeChanged: rowFilter.invalidate()
+    property alias viewMode: rowFilter.viewMode
 
     property alias columnDisplay: displayModel.columnDisplay
     property var enabledColumns

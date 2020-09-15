@@ -14,6 +14,7 @@ class ProcessSortFilterModel : public QSortFilterProxyModel
 {
     Q_OBJECT
     Q_PROPERTY(QString filterString READ filterString WRITE setFilterString NOTIFY filterStringChanged)
+    Q_PROPERTY(ViewMode viewMode READ viewMode WRITE setViewMode NOTIFY viewModeChanged)
     Q_PROPERTY(QStringList hiddenAttributes READ hiddenAttributes WRITE setHiddenAttributes NOTIFY hiddenAttributesChanged)
 
 public:
@@ -35,7 +36,9 @@ public:
     void setFilterString(const QString &newFilterString);
     Q_SIGNAL void filterStringChanged();
 
-
+    ViewMode viewMode() const;
+    void setViewMode(ViewMode newViewMode);
+    Q_SIGNAL void viewModeChanged();
 
     QStringList hiddenAttributes() const;
     void setHiddenAttributes(const QStringList &newHiddenAttributes);

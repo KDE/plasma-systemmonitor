@@ -50,20 +50,22 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex& 
 
     auto source = sourceModel();
 
-    auto uid = source->data(source->index(sourceRow, m_uidColumn, sourceParent), ProcessDataModel::Value).toUInt();
+    if (m_viewMode != ViewAll) {
+        auto uid = source->data(source->index(sourceRow, m_uidColumn, sourceParent), ProcessDataModel::Value).toUInt();
 
-    switch (m_viewMode) {
-        case ViewOwn:
-            result = m_currentUser.userId().nativeId() == uid;
-            break;
-        case ViewUser:
-            result = uid >= 1000 && uid < 65534;
-            break;
-        case ViewSystem:
-            result = uid < 1000 || uid >= 65534;
-            break;
-        case ViewAll:
-            break;
+        switch (m_viewMode) {
+            case ViewOwn:
+                result = m_currentUser.userId().nativeId() == uid;
+                break;
+            case ViewUser:
+                result = uid >= 1000 && uid < 65534;
+                break;
+            case ViewSystem:
+                result = uid < 1000 || uid >= 65534;
+                break;
+            default:
+                break;
+        }
     }
 
     if (result) {
@@ -99,6 +101,22 @@ void ProcessSortFilterModel::setFilterString(const QString & newFilterString)
     m_filterString = newFilterString;
     setFilterWildcard(m_filterString);
     Q_EMIT filterStringChanged();
+}
+
+ProcessSortFilterModel::ViewMode ProcessSortFilterModel::viewMode() const
+{
+    return m_viewMode;
+}
+
+void ProcessSortFilterModel::setViewMode(ViewMode newViewMode)
+{
+    if (newViewMode == m_viewMode) {
+        return;
+    }
+
+    m_viewMode = newViewMode;
+    invalidateFilter();
+    Q_EMIT viewModeChanged();
 }
 
 QStringList ProcessSortFilterModel::hiddenAttributes() const
