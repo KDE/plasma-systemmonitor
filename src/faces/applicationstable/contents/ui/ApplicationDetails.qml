@@ -177,30 +177,13 @@ Page {
                 sortName: "name"
                 idRole: Process.ProcessDataModel.Attribute
 
-                model: KItemModels.KSortFilterProxyModel {
+                onSort: sortFilter.sort(column, order)
+
+                model: Table.ProcessSortFilterModel {
                     id: sortFilter
-
                     sourceModel: processModel
-
-                    filterColumnCallback: function(column, parent) {
-                        if (column == processModel.enabledAttributes.indexOf("pid")) {
-                            return false
-                        }
-                        return true
-                    }
-
-                    filterRowCallback: function(row, parent) {
-                        var index = processModel.index(row, processModel.enabledAttributes.indexOf("pid"))
-                        var pid = processModel.data(index, Process.ProcessDataModel.Value)
-                        if (root.firstApplication) {
-                            for (var i in root.firstApplication.pids) {
-                                if (root.firstApplication.pids[i] == pid) {
-                                    return true
-                                }
-                            }
-                        }
-                        return false
-                    }
+                    hiddenAttributes: ["pid"]
+                    filterPids: root.firstApplication ? root.firstApplication.pids : []
                 }
 
                 Process.ProcessDataModel {
