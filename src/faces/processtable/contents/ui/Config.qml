@@ -50,10 +50,10 @@ Kirigami.FormLayout {
         Component.onCompleted: currentIndex = indexOfValue(root.cfg_userFilterMode)
 
         model: [
-            { key: i18n("Own Processes"), value: Table.UserMode.Own },
-            { key: i18n("User Processes"), value: Table.UserMode.User },
-            { key: i18n("System Processes"), value: Table.UserMode.System },
-            { key: i18n("All Processes"), value: Table.UserMode.All },
+            { key: i18n("Own Processes"), value: Table.ProcessSortFilterModel.ViewOwn },
+            { key: i18n("User Processes"), value: Table.ProcessSortFilterModel.ViewUser },
+            { key: i18n("System Processes"), value: Table.ProcessSortFilterModel.ViewSystem },
+            { key: i18n("All Processes"), value: Table.ProcessSortFilterModel.ViewAll },
         ]
     }
 }

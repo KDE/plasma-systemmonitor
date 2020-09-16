@@ -12,4 +12,3 @@ LineChartCellDelegate 1.0 LineChartCellDelegate.qml
 TableViewHeader 1.0 TableViewHeader.qml
 UserCellDelegate 1.0 UserCellDelegate.qml
 KillDialog 1.0 KillDialog.qml
-UserMode 1.0 UserMode.qml

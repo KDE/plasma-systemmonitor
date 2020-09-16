@@ -84,7 +84,7 @@ Faces.SensorFace {
                 checkable: true
                 checked: root.config.userFilterMode == mode
                 icon.name: "view-process-own"
-                property int mode: Table.UserMode.Own
+                property int mode: Table.ProcessSortFilterModel.ViewOwn
                 ActionGroup.group: showGroup
             }
 
@@ -93,7 +93,7 @@ Faces.SensorFace {
                 checkable: true
                 checked: root.config.userFilterMode == mode
                 icon.name: "view-process-users"
-                property int mode: Table.UserMode.User
+                property int mode: Table.ProcessSortFilterModel.ViewUser
                 ActionGroup.group: showGroup
             }
 
@@ -102,7 +102,7 @@ Faces.SensorFace {
                 checkable: true
                 checked: root.config.userFilterMode == mode
                 icon.name: "view-process-system"
-                property int mode: Table.UserMode.System
+                property int mode: Table.ProcessSortFilterModel.ViewSystem
                 ActionGroup.group: showGroup
             }
 
@@ -111,7 +111,7 @@ Faces.SensorFace {
                 checkable: true
                 checked: root.config.userFilterMode == mode
                 icon.name: "view-process-all"
-                property int mode: Table.UserMode.All
+                property int mode: Table.ProcessSortFilterModel.ViewAll
                 ActionGroup.group: showGroup
             }
         },
