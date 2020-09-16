@@ -10,7 +10,7 @@ set(plasma-systemmonitor_SRCS
 
 qt5_add_resources(plasma-systemmonitor_QRC systemmonitor.qrc)
 
-kconfig_add_kcfg_files(plasma-systemmonitor_SRCS GENERATE_MOC Config.kcfgc)
+kconfig_add_kcfg_files(plasma-systemmonitor_SRCS GENERATE_MOC systemmonitor.kcfgc)
 
 add_definitions(-DQT_NO_KEYWORDS)
 
