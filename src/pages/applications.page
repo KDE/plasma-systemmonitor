@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
+# SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+
 [Face-94920553440704][Appearance]
 chartFace=org.kde.ksysguard.applicationstable
 
