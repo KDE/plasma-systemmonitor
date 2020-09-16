@@ -23,7 +23,7 @@ Kirigami.AboutPage {
         "authors": [
             {
                 "name": "Arjen Hiemstra",
-                "task": "Coding",
+                "task": "Development",
                 "emailAddress": "ahiemstra@heimr.nl"
             },
             {
@@ -33,6 +33,22 @@ Kirigami.AboutPage {
             {
                 "name": "Nate Graham",
                 "task": "Design and QA"
+            },
+            {
+                "name": "David Redondo",
+                "task": "Development"
+            },
+            {
+                "name": "Noah Davis",
+                "task": "Design and QA"
+            },
+            {
+                "name": "Marco Martin",
+                "task": "Development"
+            },
+            {
+                "name": "David Edmundson",
+                "task": "Development"
             }
         ]
     }
