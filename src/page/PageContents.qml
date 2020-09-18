@@ -33,7 +33,7 @@ ColumnLayout {
             Kirigami.Heading {
                 id: title
                 level: 2
-                text: model.data.title
+                text: model.data.title ? model.data.title : ""
                 visible: model.data.isTitle
             }
 
