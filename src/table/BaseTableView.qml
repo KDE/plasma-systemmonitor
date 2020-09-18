@@ -75,9 +75,7 @@ FocusScope {
         onContextMenuRequested: root.headerContextMenuRequested(column, position)
 
         Component.onCompleted: {
-            if (tableView.model && "sort" in tableView.model) {
-                Qt.callLater(tableView.model.sort, sortColumn, sortOrder);
-            }
+            Qt.callLater(root.sort, sortColumn, sortOrder)
         }
     }
 
