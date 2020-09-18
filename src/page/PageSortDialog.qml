@@ -86,7 +86,8 @@ Dialog {
                             CheckBox {
                                 checked: !hidden
                                 onToggled: pageList.model.setData(pageList.model.index(index, 0), !hidden, Page.PagesModel.HiddenRole)
-                                ToolTip.text: hidden ? i18n("Show Page") : i18n("Hide Page")
+                                ToolTip.text: hidden ? i18nc("@info:tooltip", "Show Page")
+                                                     : i18nc("@info:tooltip", "Hide Page")
                                 ToolTip.delay: Kirigami.Units.toolTipDelay
                                 ToolTip.visible: hovered
                             }
@@ -133,11 +134,11 @@ Dialog {
                                         PropertyChanges {
                                             target: removeButton
                                             icon.name: "edit-redo"
-                                            ToolTip.text: i18n("Do not reset the page")
+                                            ToolTip.text: i18nc("@info:tooltip", "Do not reset the page")
                                         }
                                         PropertyChanges {
                                             target: subtitle
-                                            text: i18n("The page will be reset to its default state")
+                                            text: i18nc("@item:intable", "The page will be reset to its default state")
                                         }
                                     },
                                     State {
@@ -146,7 +147,7 @@ Dialog {
                                         PropertyChanges {
                                             target: removeButton
                                             icon.name: "edit-reset"
-                                            ToolTip.text: i18n("Reset the page to its default state")
+                                            ToolTip.text: i18nc("@info:tooltip", "Reset the page to its default state")
                                         }
                                     },
                                     State {
@@ -155,11 +156,11 @@ Dialog {
                                         PropertyChanges {
                                             target: removeButton
                                             icon.name: "edit-undo"
-                                            ToolTip.text: i18n("Do not remove this page")
+                                            ToolTip.text: i18nc("@info:tooltip", "Do not remove this page")
                                         }
                                         PropertyChanges {
                                             target: subtitle
-                                            text: i18n("The page will be removed")
+                                            text: i18nc("@item:intable", "The page will be removed")
                                         }
                                         PropertyChanges {
                                             target: listItem
@@ -172,7 +173,7 @@ Dialog {
                                         PropertyChanges {
                                             target: removeButton
                                             icon.name: "edit-delete"
-                                            ToolTip.text: i18n("Remove this page")
+                                            ToolTip.text: i18nc("@info:tooltip", "Remove this page")
                                         }
                                     }
                                 ]

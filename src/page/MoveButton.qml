@@ -19,7 +19,7 @@ ToolButton {
 
     signal moved(int from, int to)
 
-    text: i18nc("@action:button", "Move")
+    text: i18nc("@action", "Move")
     icon.name: "transform-move"
     flat: false
 

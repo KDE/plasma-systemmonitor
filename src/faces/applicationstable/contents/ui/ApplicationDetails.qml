@@ -40,7 +40,7 @@ Page {
         Kirigami.Theme.inherit: false
         Kirigami.Theme.colorSet: Kirigami.Theme.Window
 
-        Label { text: i18n("Details") }
+        Label { text: i18nc("@title:window", "Details") }
 
         ToolButton {
             anchors.right: parent.right
@@ -63,7 +63,7 @@ Page {
         }
 
         Label {
-            text: i18n("CPU")
+            text: i18nc("@title:group", "CPU")
         }
 
         LineChartCard {
@@ -87,7 +87,7 @@ Page {
             Sensors.Sensor { id: cpuCountSensor; sensorId: "system/cores/cores" }
         }
         Label {
-            text: i18n("Memory")
+            text: i18nc("@title:group", "Memory")
         }
         LineChartCard {
             Layout.fillHeight: false
@@ -110,7 +110,7 @@ Page {
             Sensors.Sensor { id: totalMemorySensor; sensorId: "mem/physical/total" }
         }
         Label {
-            text: i18n("Network")
+            text: i18nc("@title:group", "Network")
         }
         LineChartCard {
             Layout.fillHeight: false
@@ -135,7 +135,7 @@ Page {
             ]
         }
         Label {
-            text: i18n("Disk")
+            text: i18nc("@title:group", "Disk")
         }
         LineChartCard {
             Layout.fillHeight: false
@@ -160,7 +160,7 @@ Page {
             ]
         }
 
-        Label { text: i18n("Processes: %1", processTable.rows) }
+        Label { text: i18np("@title:group", "Processes: %1", processTable.rows) }
 
         Rectangle {
             Layout.fillWidth: true
@@ -221,7 +221,7 @@ Page {
     Label {
         anchors.fill: parent
         anchors.margins: Kirigami.Units.largeSpacing
-        text: i18n("Select an application to see its details.")
+        text: i18nc("@info:placeholder", "Select an application to see its details.")
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         wrapMode: Text.WordWrap

@@ -21,11 +21,11 @@ Kirigami.FormLayout {
 
     CheckBox {
         id: showDetailsCheckbox
-        text: i18n("Show details panel.")
+        text: i18nc("@option:check", "Show details panel.")
     }
 
     CheckBox {
         id: confirmCheckbox
-        text: i18n("Confirm when quitting applications.")
+        text: i18nc("@option:check", "Confirm when quitting applications.")
     }
 }

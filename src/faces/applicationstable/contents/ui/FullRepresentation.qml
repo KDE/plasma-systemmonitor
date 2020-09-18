@@ -25,7 +25,7 @@ Faces.SensorFace {
 
     primaryActions: [
         Kirigami.Action {
-            text: i18n("Search")
+            text: i18nc("@action", "Search")
             displayComponent: Kirigami.SearchField {
                 onTextEdited: table.filterString = text;
                 onAccepted: table.filterString = text;
@@ -33,7 +33,7 @@ Faces.SensorFace {
         },
         Kirigami.Action {
             icon.name: "application-exit"
-            text: i18n("Quit Application")
+            text: i18nc("@action", "Quit Application")
             onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             enabled: table.selection.hasSelection
         }
@@ -43,7 +43,7 @@ Faces.SensorFace {
         Kirigami.Action {
             id: showDetailsAction
             icon.name: "documentinfo"
-            text: i18n("Show Details Sidebar")
+            text: i18nc("@action", "Show Details Sidebar")
             checkable: true
             checked: root.config.showDetails
             onToggled: root.config.showDetails = checked
@@ -51,7 +51,7 @@ Faces.SensorFace {
         Kirigami.Action {
             id: configureColumnsAction
             icon.name: "configure"
-            text: i18n("Configure columns...")
+            text: i18nc("@action", "Configure columns...")
             onTriggered: columnDialog.open()
         }
     ]
@@ -167,48 +167,48 @@ Faces.SensorFace {
     Menu {
         id: contextMenu
 
-        MenuItem { text: i18n("Set priority..."); enabled: false }
+        MenuItem { text: i18nc("@action:inmenu", "Set priority..."); enabled: false }
 
         Menu {
-            title: i18n("Send Signal")
+            title: i18nc("@action:inmenu", "Send Signal")
 
             MenuItem {
-                text: i18n("Suspend (STOP)");
+               text: i18nc("@action:inmenu Send Signal", "Suspend (STOP)");
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.StopSignal)
             }
             MenuItem {
-                text: i18n("Continue (CONT)")
+                text: i18nc("@action:inmenu Send Signal", "Continue (CONT)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.ContinueSignal)
             }
             MenuItem {
-                text: i18n("Hangup (HUP)")
+                text: i18nc("@action:inmenu Send Signal", "Hangup (HUP)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.HangupSignal)
             }
             MenuItem {
-                text: i18n("Interrupt (INT)")
+                text: i18nc("@action:inmenu Send Signal", "Interrupt (INT)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.InterruptSignal)
             }
             MenuItem {
-                text: i18n("Terminate (TERM)")
+                text: i18nc("@action:inmenu Send Signal", "Terminate (TERM)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             }
             MenuItem {
-                text: i18n("Kill (KILL)")
+                text: i18nc("@action:inmenu Send Signal", "Kill (KILL)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.KillSignal)
             }
             MenuItem {
-                text: i18n("User 1 (USR1)")
+                text: i18nc("@action:inmenu Send Signal", "User 1 (USR1)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.User1Signal)
             }
             MenuItem {
-                text: i18n("User 2 (USR2)")
+                text: i18nc("@action:inmenu Send Signal", "User 2 (USR2)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.User2Signal)
             }
         }
         MenuSeparator { }
         MenuItem {
             icon.name: "application-exit";
-            text: i18n("Quit Application");
+            text: i18ncp("@action:inmenu", "Quit Application", "Quit %1 Applications", killDialog.items.length);
             onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
         }
     }
@@ -226,8 +226,8 @@ Faces.SensorFace {
 
         property int signalToSend
 
-        title: i18np("Quit Application", "Quit %1 Applications", items.length)
-        killButtonText: i18n("Quit")
+        title: i18ncp("@title:window", "Quit Application", "Quit %1 Applications", items.length)
+        killButtonText: i18nc("@action:button", "Quit")
         killButtonIcon: "application-exit"
         questionText: i18np("Are you sure you want to quit this application?\nAny unsaved work may be lost.",
                             "Are you sure you want to quit these %1 applications?\nAny unsaved work may be lost.", items.length)
@@ -248,7 +248,7 @@ Faces.SensorFace {
                     Label { Layout.fillWidth: true; text: modelData.name; elide: Text.ElideRight }
                     Label {
                         Layout.fillWidth: true
-                        text: i18np("1 Process", "%1 Processes", modelData.pids.length)
+                        text: i18ncp("@item:intable", "%1 Process", "%1 Processes", modelData.pids.length)
                         color: Kirigami.Theme.disabledTextColor
                         elide: Text.ElideRight
                     }

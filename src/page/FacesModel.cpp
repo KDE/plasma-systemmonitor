@@ -44,7 +44,7 @@ QVariant FacesModel::data(const QModelIndex& index, int role) const
     switch (role) {
     case Qt::DisplayRole:
         if (index.row() == m_faceLoaders.count()) {
-            return i18n("No Chart");
+            return i18nc("@info:placeholder", "No Chart");
         } else {
             return m_faceLoaders[index.row()]->controller()->title();
         }

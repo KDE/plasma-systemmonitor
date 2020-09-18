@@ -74,7 +74,7 @@ Dialog {
     footer: DialogButtonBox {
         CheckBox {
             implicitWidth: contentItem.implicitWidth + Kirigami.Units.smallSpacing * 2
-            contentItem: Label { leftPadding: Kirigami.Units.gridUnit; text: i18n("Do not ask again") }
+            contentItem: Label { leftPadding: Kirigami.Units.gridUnit; text: i18nc("@option:check", "Do not ask again") }
             DialogButtonBox.buttonRole: DialogButtonBox.ActionRole
 
             onToggled: dialog.doNotAskAgain = checked
@@ -99,7 +99,7 @@ Dialog {
                 anchors.rightMargin: Kirigami.Units.largeSpacing
                 //Workaround for QTBUG-81796
                 Kirigami.Icon { source: "dialog-cancel"; width: Kirigami.Units.iconSizes.smallMedium; height: width }
-                Label { text: i18n("Cancel") }
+                Label { text: i18nc("@action:button", "Cancel") }
             }
             DialogButtonBox.buttonRole: DialogButtonBox.RejectRole
         }

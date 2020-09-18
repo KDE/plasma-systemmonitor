@@ -23,36 +23,36 @@ Kirigami.ScrollablePage {
 
     property int activeSection: 0
 
-    title: i18n("Configure %1", loader.controller.title)
+    title: i18nc("@title:window %1 is face name", "Configure %1", loader.controller.title)
 
     Kirigami.ColumnView.fillWidth: false
 
     actions.main: Kirigami.Action {
         icon.name: "dialog-close"
-        text: i18n("Close")
+        text: i18nc("@action", "Close")
         onTriggered: applicationWindow().pageStack.pop()
     }
 
     actions.contextualActions: [
         Kirigami.Action {
-            text: i18n("Load Preset...")
+            text: i18nc("@action", "Load Preset...")
             onTriggered: loadPresetDialog.open()
         },
         Kirigami.Action {
-            text: i18n("Get new presets...")
+            text: i18nc("@action", "Get new presets...")
             onTriggered: newPresetDialog.open()
         },
         Kirigami.Action {
-            text: i18n("Save Settings as Preset")
+            text: i18nc("@action", "Save Settings as Preset")
             onTriggered: {
                 loader.controller.savePreset()
-                message.text = i18n("Saved settings as preset %1.", loader.controller.title)
+                message.text = i18nc("@info:status %1 is preset name", "Saved settings as preset %1.", loader.controller.title)
                 message.visible = true
             }
         },
         Kirigami.Action { separator: true },
         Kirigami.Action {
-            text: i18n("Get new display styles...")
+            text: i18nc("@action", "Get new display styles...")
             onTriggered: newFaceDialog.open()
         }
     ]
@@ -68,21 +68,21 @@ Kirigami.ScrollablePage {
                 loader.controller.faceId = selectedFace
             }
             loader.controller.loadPreset(selectedPreset);
-            message.text = i18n("Loaded preset %1.", selectedTitle);
+            message.text = i18nc("@info:status %1 is preset name", "Loaded preset %1.", selectedTitle);
             message.visible = true
         }
     }
 
     NewStuff.Dialog {
         id: newPresetDialog
-        downloadNewWhat: i18nc("@title", "Presets")
+        downloadNewWhat: i18nc("@title:window", "Presets")
         configFile: "systemmonitor-presets.knsrc"
         onChangedEntriesChanged: loader.controller.availablePresetsModel.reload();
     }
 
     NewStuff.Dialog {
         id: newFaceDialog
-        downloadNewWhat: i18nc("@title", "Display Styles")
+        downloadNewWhat: i18nc("@title:window", "Display Styles")
         configFile: "systemmonitor-faces.knsrc"
         onChangedEntriesChanged: loader.controller.availableFacesModel.reload();
     }
@@ -98,20 +98,19 @@ Kirigami.ScrollablePage {
 
         Label {
             Layout.fillWidth: true
-            text: i18n("Title")
+            text: i18nc("@label:textbox", "Title")
 
             CheckBox {
                 id: showTitleCheckbox
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
-                text: i18n("Display")
+                text: i18nc("@option:check", "Display")
                 checked: true
             }
         }
 
         TextField {
             id: titleField
-            Kirigami.FormData.label: i18n("Title:")
 
             text: page.loader.controller.title
 
@@ -140,7 +139,6 @@ Kirigami.ScrollablePage {
                 page.loader.controller.faceId = model.pluginId(index);
             }
 
-            Kirigami.FormData.label: i18n("Display Style:")
             Layout.fillWidth: true
         }
 

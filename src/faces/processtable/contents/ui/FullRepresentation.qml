@@ -25,7 +25,7 @@ Faces.SensorFace {
 
     primaryActions: [
         Kirigami.Action {
-            text: i18n("Search")
+            text: i18nc("@action", "Search")
             displayComponent: Kirigami.SearchField {
                 onTextEdited: table.nameFilterString = text;
                 onAccepted: table.nameFilterString = text;
@@ -34,7 +34,7 @@ Faces.SensorFace {
 
         Kirigami.Action {
             icon.name: "process-stop"
-            text: i18n("End Process")
+            text: i18nc("@action", "End Process")
             onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             enabled: table.selection.hasSelection
         }
@@ -45,7 +45,7 @@ Faces.SensorFace {
             icon.name: "view-list-details"
             checkable: true
             checked: root.config.viewMode == mode
-            text: i18n("Display as List")
+            text: i18nc("@action", "Display as List")
             displayHint: Kirigami.Action.IconOnly
             property int mode: 0
             ActionGroup.group: viewGroup
@@ -55,7 +55,7 @@ Faces.SensorFace {
             icon.name: "view-list-tree"
             checkable: true
             checked: root.config.viewMode == mode
-            text: i18n("Display as Tree")
+            text: i18nc("@action", "Display as Tree")
             displayHint: Kirigami.Action.IconOnly
             property int mode: 1
             enabled: false
@@ -64,10 +64,10 @@ Faces.SensorFace {
 
         Kirigami.Action {
             icon.name: showGroup.checkedAction.icon.name
-            text: i18n("Show: %1", showGroup.checkedAction.text)
+            text: i18nc("@action %1 is view type", "Show: %1", showGroup.checkedAction.text)
 
             Kirigami.Action {
-                text: i18n("Own Processes")
+                text: i18nc("@item:inmenu", "Own Processes")
                 checkable: true
                 checked: root.config.userFilterMode == mode
                 icon.name: "view-process-own"
@@ -76,7 +76,7 @@ Faces.SensorFace {
             }
 
             Kirigami.Action {
-                text: i18n("User Processes")
+                text: i18nc("@item:inmenu", "User Processes")
                 checkable: true
                 checked: root.config.userFilterMode == mode
                 icon.name: "view-process-users"
@@ -85,7 +85,7 @@ Faces.SensorFace {
             }
 
             Kirigami.Action {
-                text: i18n("System Processes")
+                text: i18nc("@item:inmenu", "System Processes")
                 checkable: true
                 checked: root.config.userFilterMode == mode
                 icon.name: "view-process-system"
@@ -94,7 +94,7 @@ Faces.SensorFace {
             }
 
             Kirigami.Action {
-                text: i18n("All Processes")
+                text: i18nc("@item:inmenu", "All Processes")
                 checkable: true
                 checked: root.config.userFilterMode == mode
                 icon.name: "view-process-all"
@@ -106,7 +106,7 @@ Faces.SensorFace {
         Kirigami.Action {
             id: configureColumnsAction
             icon.name: "configure"
-            text: i18n("Configure columns...")
+            text: i18nc("@action", "Configure columns...")
             onTriggered: columnDialog.open()
         }
     ]
@@ -144,46 +144,46 @@ Faces.SensorFace {
 
 //         MenuItem { text: i18n("Set priority...") }
         Menu {
-            title: i18n("Send Signal")
+            title: i18nc("@action:inmenu", "Send Signal")
 
             MenuItem {
-                text: i18n("Suspend (STOP)");
+                text: i18nc("@action:inmenu Send Signal", "Suspend (STOP)");
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.StopSignal)
             }
             MenuItem {
-                text: i18n("Continue (CONT)")
+                text: i18nc("@action:inmenu Send Signal", "Continue (CONT)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.ContinueSignal)
             }
             MenuItem {
-                text: i18n("Hangup (HUP)")
+                text: i18nc("@action:inmenu Send Signal", "Hangup (HUP)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.HangupSignal)
             }
             MenuItem {
-                text: i18n("Interrupt (INT)")
+                text: i18nc("@action:inmenu Send Signal", "Interrupt (INT)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.InterruptSignal)
             }
             MenuItem {
-                text: i18n("Terminate (TERM)")
+                text: i18nc("@action:inmenu  Send Signal", "Terminate (TERM)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             }
             MenuItem {
-                text: i18n("Kill (KILL)")
+                text: i18nc("@action:inmenu Send Signal", "Kill (KILL)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.KillSignal)
             }
             MenuItem {
-                text: i18n("User 1 (USR1)")
+                text: i18nc("@action:inmenu Send Signal", "User 1 (USR1)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.User1Signal)
             }
             MenuItem {
-                text: i18n("User 2 (USR2)")
+                text: i18nc("@action:inmenu  Send Signal", "User 2 (USR2)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.User2Signal)
             }
         }
-//         MenuItem { text: i18n("Show Application Window") }
+//         MenuItem { text: i18nc("@action:inmenu", "Show Application Window") }
         MenuSeparator { }
         MenuItem {
             icon.name: "process-stop";
-            text: i18np("End Process", "End %1 Processes", killDialog.items.length);
+            text: i18ncp("@action:inmenu", "End Process", "End %1 Processes", killDialog.items.length);
             onTriggered: {
                 processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             }
@@ -195,7 +195,7 @@ Faces.SensorFace {
         id: headerContextMenu
 
         MenuItem {
-            text: i18n("Configure Columns...")
+            text: i18nc("@action:inmenu", "Configure Columns...")
             onClicked: columnDialog.open()
         }
     }
@@ -205,8 +205,8 @@ Faces.SensorFace {
 
         property int signalToSend
 
-        title: i18np("End Process", "End %1 Processes", items.length)
-        killButtonText: i18n("End")
+        title: i18ncp("@title:window", "End Process", "End %1 Processes", items.length)
+        killButtonText: i18nc("@action:button", "End")
         killButtonIcon: "process-stop"
         questionText: i18np("Are you sure you want to end this process?\nAny unsaved work may be lost.",
                             "Are you sure you want to end these %1 processes?\nAny unsaved work may be lost.", items.length)
@@ -219,7 +219,7 @@ Faces.SensorFace {
                 Label { text: modelData.name; width: parent.width; elide: Text.ElideRight }
                 Label {
                     width: parent.width
-                    text: i18n("Process ID %1, owned by %2", modelData.pid, modelData.username)
+                    text: i18nc("@item:intable %1 is process id, %2 is user name", "Process ID %1, owned by %2", modelData.pid, modelData.username)
                     color: Kirigami.Theme.disabledTextColor
                     elide: Text.ElideRight
                 }

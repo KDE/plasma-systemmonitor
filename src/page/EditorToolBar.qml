@@ -50,7 +50,7 @@ Kirigami.ActionToolBar {
     Kirigami.Action {
         id: removeAction
         enabled: !control.single
-        text: i18nc("@action:button", "Remove")
+        text: i18nc("@action", "Remove")
         icon.name: "edit-delete"
         onTriggered: control.removeClicked()
     }

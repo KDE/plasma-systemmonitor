@@ -17,10 +17,10 @@ import org.kde.ksysguard.page 1.0
 Dialog {
     id: dialog
 
-    property string acceptText: i18n("Add")
+    property string acceptText: i18nc("@action:button", "Add")
     property string acceptIcon: "list-add"
 
-    property string name: "New Page"
+    property string name: i18nc("@info:placeholder", "New Page")
     property string iconName: "ksysguardd"
     property real margin: 2
     property string actionsFace: "dummy" //Can't leave it empty, otherwise it doesn't update when it's initially set to an empty string
@@ -60,7 +60,7 @@ Dialog {
             TextField {
                 id: nameField
 
-                Kirigami.FormData.label: i18n("Name")
+                Kirigami.FormData.label: i18nc("@label:textbox", "Name")
                 text: dialog.name
                 onTextEdited: dialog.name = text
 
@@ -69,16 +69,16 @@ Dialog {
             Kirigami.InlineMessage {
                 Layout.fillWidth: true
                 type: Kirigami.MessageType.Error
-                text: i18n("Name cannot be empty.")
+                text: i18nc("@info:status", "Name cannot be empty.")
                 visible: !nameField.acceptableInput
             }
             Button {
-                Kirigami.FormData.label: i18n("Icon")
+                Kirigami.FormData.label: i18nc("@label:textbox", "Icon")
                 icon.name: dialog.iconName
                 onClicked: iconDialog.open()
             }
             ComboBox {
-                Kirigami.FormData.label: i18n("Page Margins")
+                Kirigami.FormData.label: i18nc("@label:listbox", "Page Margins")
 
                 textRole: "key"
 
@@ -91,16 +91,16 @@ Dialog {
                 }
 
                 model: [
-                    { value: 0, key: i18n("None") },
-                    { value: 1, key: i18n("Small") },
-                    { value: 2, key: i18n("Large") }
+                    { value: 0, key: i18nc("@item:inlistbox", "None") },
+                    { value: 1, key: i18nc("@item:inlistbox", "Small") },
+                    { value: 2, key: i18nc("@item:inlistbox", "Large") }
                 ]
 
                 onActivated: dialog.margin = model[index].value
             }
             ComboBox {
                 id: actionsCombobox
-                Kirigami.FormData.label: i18n("Use Actions From")
+                Kirigami.FormData.label: i18nc("@label:listbox", "Use Actions From")
                 visible: count > 1
                 textRole: "display"
                 valueRole: "id"
@@ -137,7 +137,7 @@ Dialog {
         }
         Button {
             DialogButtonBox.buttonRole: DialogButtonBox.RejectRole
-            text: "Cancel"
+            text: i18nc("@action:button", "Cancel")
             icon.name: "dialog-cancel"
         }
     }

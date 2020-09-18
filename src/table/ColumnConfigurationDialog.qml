@@ -22,7 +22,7 @@ Dialog {
     property var sortedColumns: []
     property var columnDisplay: {"name": "text"}
 
-    title: i18n("Configure Columns")
+    title: i18nc("@window:title", "Configure Columns")
 
     standardButtons: Dialog.Ok | Dialog.Cancel
 
@@ -135,19 +135,19 @@ Dialog {
                                 Layout.rowSpan: 2
                                 model: {
                                     var result = [
-                                        {text: i18n("Hidden"), value: "hidden"},
-                                        {text: i18n("Text Only"), value: "text"},
+                                        {text: i18nc("@item:inlistbox", "Hidden"), value: "hidden"},
+                                        {text: i18nc("@item:inlistbox", "Text Only"), value: "text"},
                                     ]
 
                                     if (modelData && modelData.unit) {
                                         if (modelData.unit != Formatter.Units.UnitInvalid
                                             && modelData.unit != Formatter.Units.UnitNone) {
-                                            result.push({text: i18n("Line Chart"), value: "line"})
+                                            result.push({text: i18nc("@item:inlistbox", "Line Chart"), value: "line"})
                                         }
                                         if (modelData.unit == Formatter.Units.UnitPercent
                                             && modelData.maximum != 100) {
-                                            result.push({text: i18n("Text Only (Scaled to 100%)"), value: "textScaled"})
-                                            result.push({text: i18n("Line Chart (Scaled to 100%)"), value: "lineScaled"})
+                                            result.push({text: i18nc("@item:inlistbox", "Text Only (Scaled to 100%)"), value: "textScaled"})
+                                            result.push({text: i18nc("@item:inlistbox", "Line Chart (Scaled to 100%)"), value: "lineScaled"})
                                         }
                                     }
                                     return result

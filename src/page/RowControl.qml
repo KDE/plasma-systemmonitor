@@ -74,7 +74,7 @@ Container {
 
     toolbar.addActions: [
         Kirigami.Action {
-            text: i18nc("@action:button", "Add Column")
+            text: i18nc("@action", "Add Column")
             onTriggered: control.addColumn(control.rowData.children.length)
         }
     ]

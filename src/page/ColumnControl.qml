@@ -94,11 +94,11 @@ Container {
 
     toolbar.addActions: [
         Action {
-            text: i18nc("@action:button", "Add Section")
+            text: i18nc("@action", "Add Section")
             onTriggered: addSection(control.columnData.children.length)
         },
         Action {
-            text: i18nc("@action:button", "Add Separator")
+            text: i18nc("@action", "Add Separator")
             onTriggered: addSeparator(control.columnData.children.length)
         }
     ]
@@ -106,7 +106,7 @@ Container {
 
     toolbar.extraActions: Action {
         icon.name: "view-visible"
-        text: i18n("Show Background")
+        text: i18nc("@action", "Show Background")
         checkable: true
         checked: control.columnData.showBackground
         onTriggered: control.columnData.showBackground = !control.columnData.showBackground

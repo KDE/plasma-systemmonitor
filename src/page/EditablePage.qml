@@ -98,7 +98,7 @@ Kirigami.Page {
     Kirigami.Action {
         id: editAction
 
-        text: i18n("Edit Page")
+        text: i18nc("@action", "Edit Page")
         icon.name: "document-edit"
         visible: !page.edit
 
@@ -108,7 +108,7 @@ Kirigami.Page {
     }
     Kirigami.Action {
         id: saveAction
-        text: i18n("Save Changes")
+        text: i18nc("@action", "Save Changes")
         icon.name: "document-save"
         visible: page.edit
         onTriggered: {
@@ -118,7 +118,7 @@ Kirigami.Page {
     }
     Kirigami.Action {
         id: discardAction
-        text: i18n("Discard Changes")
+        text: i18nc("@action", "Discard Changes")
         icon.name: "edit-delete-remove"
         visible: page.edit
         onTriggered: {
@@ -129,7 +129,7 @@ Kirigami.Page {
     Kirigami.Action {
         id: configureAction
 
-        text: i18n("Configure Page...")
+        text: i18nc("@action", "Configure Page...")
         icon.name: "configure"
         visible: page.edit
 
@@ -138,7 +138,7 @@ Kirigami.Page {
     Kirigami.Action {
         id: addRowAction
 
-        text: i18n("Add Row")
+        text: i18nc("@action", "Add Row")
         icon.name: "edit-table-insert-row-under"
         visible: page.edit
 
@@ -147,7 +147,7 @@ Kirigami.Page {
 
     Kirigami.Action {
         id: addTitleAction
-        text: i18n("Add Title")
+        text: i18nc("@action", "Add Title")
         icon.name: "insert-text-frame"
         visible: page.edit
 
@@ -210,9 +210,9 @@ Kirigami.Page {
 
     PageDialog {
         id: pageDialog
-        title: i18n("Configure Page \"%1\"", page.pageData.title)
+        title: i18nc("@title:window %1 is page title", "Configure Page \"%1\"", page.pageData.title)
 
-        acceptText: i18n("Save")
+        acceptText: i18nc("@action:button", "Save")
         acceptIcon: "document-save"
 
         onAboutToShow: {

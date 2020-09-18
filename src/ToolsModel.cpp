@@ -120,7 +120,7 @@ void ToolsModel::addFromService(const QString& serviceName)
     if (service) {
         Entry entry;
         entry.id = serviceName;
-        entry.name = i18n("Launch %1", service->name());
+        entry.name = i18nc("@action:inmenu %1 is application name", "Launch %1", service->name());
         entry.icon = service->icon();
         entry.service = service;
         m_entries << entry;

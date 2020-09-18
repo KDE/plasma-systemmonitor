@@ -74,27 +74,27 @@ Kirigami.ApplicationWindow {
                 actions: [
                     Kirigami.Action {
                         id: toolsAction
-                        text: "Tools"
+                        text: i18nc("@action", "Tools")
                         icon.name: "tools-symbolic"
                     },
-                      Kirigami.Action {
+                    Kirigami.Action {
                         icon.name: "handle-sort"
-                        text: i18n("Edit pages...")
+                        text: i18nc("@action", "Edit pages...")
                         onTriggered: pageSortDialog.open()
                     },
                     Kirigami.Action {
                         icon.name: app.globalDrawer.collapsed ? "view-split-left-right" : "view-left-close"
-                        text: app.globalDrawer.collapsed ? i18n("Expand Sidebar") : i18n("Collapse Sidebar")
+                        text: app.globalDrawer.collapsed ? i18nc("@action", "Expand Sidebar") : i18nc("@action", "Collapse Sidebar")
                         onTriggered: app.globalDrawer.collapsed = !app.globalDrawer.collapsed
                     },
                     Kirigami.Action {
                         icon.name: "help-about-symbolic";
-                        text: i18n("About System Monitor");
+                        text: i18nc("@action", "About System Monitor");
                         onTriggered: app.pageStack.layers.push("AboutPage.qml")
                     },
                     Kirigami.Action {
                         icon.name: "application-exit-symbolic";
-                        text: i18n("Quit")
+                        text: i18nc("@action", "Quit")
                         shortcut: "Ctrl+Q"
                         onTriggered: Qt.quit()
                     }
@@ -118,7 +118,7 @@ Kirigami.ApplicationWindow {
 
         actions: [
             Kirigami.Action {
-                text: "Add new page"
+                text: i18nc("@action", "Add new page")
                 icon.name: "list-add"
                 onTriggered: pageDialog.open()
             }
@@ -156,7 +156,7 @@ Kirigami.ApplicationWindow {
 
     Page.PageDialog {
         id: pageDialog
-        title: i18n("Add New Page")
+        title: i18nc("@window:title", "Add New Page")
 
         onAccepted: {
             var fileName = name.toLowerCase().replace(" ", "_") + ".page";
@@ -169,7 +169,7 @@ Kirigami.ApplicationWindow {
 
     Page.PageSortDialog {
         id: pageSortDialog
-        title: i18n("Edit Pages")
+        title: i18nc("@window:title", "Edit Pages")
         model: pagesModel
     }
 

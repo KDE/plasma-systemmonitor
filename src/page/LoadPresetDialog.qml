@@ -91,7 +91,7 @@ Dialog {
         }
         Button {
             DialogButtonBox.buttonRole: DialogButtonBox.RejectRole
-            text: "Cancel"
+            text: i18nc("@action:button", "Cancel")
             icon.name: "dialog-cancel"
         }
     }
