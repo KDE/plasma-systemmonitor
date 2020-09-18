@@ -7,7 +7,7 @@ Files: CMakeLists.txt */CMakeLists.txt
 Copyright: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
 License: CC0-1.0
 
-Files: */Messages.sh
+Files: Messages.sh */Messages.sh
 Copyright: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
 License: CC0-1.0
 
