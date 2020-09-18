@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+SPDX-FileCopyrightText: 2020 Arjen Hiemstra
+SPDX-License-Identifier: CC0-1.0
+-->
+<component type="desktop-application">
+  <id>org.kde.plasma-systemmonitor</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL</project_license>
+  <name>Plasma System Monitor</name>
+  <summary>An application for monitoring system resources.</summary>
+  <description>
+    <p>Plasma System Monitor provides an interface for monitoring system sensors, process information and other system resources.</p>
+  </description>
+  <categories>
+    <category>System</category>
+  </categories>
+  <url type="homepage">https://invent.kde.org/plasma/plasma-systemmonitor</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=plasma-systemmonitor</url>
+  <url type="donation">https://www.kde.org/community/donations</url>
+  <launchable type="desktop-id">org.kde.plasma-systemmonitor.desktop</launchable>
+  <provides>
+    <binary>plasma-systemmonitor</binary>
+  </provides>
+  <project_group>KDE</project_group>
+  <releases>
+  </releases>
+</component>
