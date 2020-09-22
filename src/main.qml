@@ -56,8 +56,6 @@ Kirigami.ApplicationWindow {
         header: ToolBar {
             Layout.fillWidth: true
             Layout.preferredHeight: app.pageStack.globalToolBar.preferredHeight
-            Kirigami.Theme.inherit: false
-            Kirigami.Theme.colorSet: Kirigami.Theme.Window
 
             leftPadding: globalDrawer.collapsed ? 0 : Kirigami.Units.smallSpacing
             rightPadding: globalDrawer.collapsed ? Kirigami.Units.smallSpacing / 2 : Kirigami.Units.smallSpacing
