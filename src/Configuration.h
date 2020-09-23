@@ -13,7 +13,7 @@
 #include <QQmlParserStatus>
 #include <QTimer>
 
-#include "Config.h"
+#include "systemmonitor.h"
 
 /**
  * Wraps Config in an API similar to Qt.labs.settings
@@ -39,7 +39,7 @@ public:
 
 private:
     std::unique_ptr<QTimer> m_saveTimer;
-    static Config *m_config;
+    static SystemMonitorConfiguration *m_config;
 };
 
 #endif // CONFIGWRITER_H

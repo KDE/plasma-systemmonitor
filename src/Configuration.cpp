@@ -9,21 +9,19 @@
 #include <QDebug>
 #include <QMetaProperty>
 
-#include "Config.h"
-
-Config *Configuration::m_config = nullptr;
+SystemMonitorConfiguration *Configuration::m_config = nullptr;
 
 Configuration::Configuration(QObject* parent)
     : QObject(parent)
 {
     if (!m_config) {
-        m_config = new Config();
+        m_config = new SystemMonitorConfiguration();
     }
 
     m_saveTimer = std::make_unique<QTimer>();
     m_saveTimer->setInterval(500);
     m_saveTimer->setSingleShot(true);
-    connect(m_saveTimer.get(), &QTimer::timeout, m_config, &Config::save);
+    connect(m_saveTimer.get(), &QTimer::timeout, m_config, &SystemMonitorConfiguration::save);
 }
 
 void Configuration::propertyChanged()
