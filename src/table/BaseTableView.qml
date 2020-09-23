@@ -126,6 +126,8 @@ FocusScope {
                 }
                 return Math.max(w, scrollView.innerWidth)
             }
+            // FIXME: because of the delay populating the model, TableView seems to not calculate a proper contentHeight automatically
+            contentHeight : root.rowHeight * rows
         }
     }
 }

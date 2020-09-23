@@ -5,6 +5,7 @@
  */
 
 import QtQuick 2.12
+import QtQuick.Layouts 1.4
 import QtQuick.Controls 2.12
 
 import Qt.labs.qmlmodels 1.0
@@ -23,6 +24,7 @@ Table.BaseTableView {
     property alias nameFilterString: rowFilter.filterString
     property alias processModel: processModel
     property alias viewMode: rowFilter.viewMode
+    property bool flatList
 
     property alias columnDisplay: displayModel.columnDisplay
     property var enabledColumns
@@ -39,7 +41,8 @@ Table.BaseTableView {
 
             rows[i.row] = true
 
-            var index = rowFilter.mapToSource(cacheModel.mapToSource(i))
+            var index = rowFilter.mapToSource(descendantsModel.mapToSource(cacheModel.mapToSource(i)))
+
             var item = {}
 
             item.name = processModel.data(processModel.index(index.row, processModel.nameColumn), Process.ProcessDataModel.ValueRole)
@@ -58,7 +61,7 @@ Table.BaseTableView {
 
     model: Table.ComponentCacheProxyModel {
         id: cacheModel
-        sourceModel: rowFilter
+        sourceModel: descendantsModel
 
         component: Charts.ModelHistorySource {
             model: Table.ComponentCacheProxyModel.model
@@ -68,6 +71,12 @@ Table.BaseTableView {
             maximumHistory: 10
             interval: 2000
         }
+    }
+
+    KItemModels.KDescendantsProxyModel {
+        id: descendantsModel
+        sourceModel: rowFilter
+        expandsByDefault: true
     }
 
     Table.ProcessSortFilterModel {
@@ -85,6 +94,7 @@ Table.BaseTableView {
     Process.ProcessDataModel {
         id: processModel
 
+        flatList: view.flatList
         property int nameColumn
         property int pidColumn
         property int uidColumn
@@ -130,10 +140,15 @@ Table.BaseTableView {
         DelegateChoice {
             column: 0;
             Table.FirstCellDelegate {
+                id: delegate
+                treeDecorationVisible: !view.flatList
                 iconName: {
-                    var index = rowFilter.mapToSource(rowFilter.index(model.row, 0))
-                    index = processModel.index(index.row, processModel.nameColumn)
-                    return processModel.data(index)
+                    var index = cacheModel.mapToSource(cacheModel.index(model.row, 0))
+                    index = descendantsModel.mapToSource(index);
+                    index = rowFilter.mapToSource(index);
+                    index = displayModel.mapToSource(index);
+                    index = processModel.index(index.row, processModel.nameColumn, index.parent);
+                    return processModel.data(index);
                 }
             }
         }
@@ -141,7 +156,7 @@ Table.BaseTableView {
             roleValue: "line"
             Table.LineChartCellDelegate {
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
-                maximum: rowFilter.data(rowFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                maximum: descendantsModel.data(descendantsModel.index(model.row, model.column), Process.ProcessDataModel.Maximum)
             }
 
         }
@@ -149,7 +164,7 @@ Table.BaseTableView {
             roleValue: "lineScaled"
             Table.LineChartCellDelegate {
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
-                maximum: rowFilter.data(rowFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                maximum: descendantsModel.data(descendantsModel.index(model.row, model.column), Process.ProcessDataModel.Maximum)
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
             }
 

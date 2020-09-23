@@ -141,11 +141,10 @@ Item {
                         anchors.right = parent.right
                     }
                 }
-
                 Component.onCompleted: {
                     if (heading.sortColumn == -1 && headerItem.columnId == heading.sortName) {
                         heading.sortColumn = model.row
-                        heading.sort(model.row, heading.sortOrder)
+                        Qt.callLater(() => heading.sort(model.row, heading.sortOrder))
                     }
                 }
             }

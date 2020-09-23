@@ -41,25 +41,36 @@ Faces.SensorFace {
     ]
 
     secondaryActions: [
+        // Note: can't use ActionGroup there because of https://bugreports.qt.io/browse/QTBUG-86860
          Kirigami.Action {
+            id: listAction
             icon.name: "view-list-details"
             checkable: true
-            checked: root.config.viewMode == mode
+            checked: root.config.viewMode === mode
             text: i18nc("@action", "Display as List")
+
             displayHint: Kirigami.Action.IconOnly
             property int mode: 0
-            ActionGroup.group: viewGroup
+            onTriggered: {
+                root.config.viewMode = mode
+                checked = true;
+                treeAction.checked = false;
+            }
         },
 
         Kirigami.Action {
+            id: treeAction
             icon.name: "view-list-tree"
             checkable: true
-            checked: root.config.viewMode == mode
+            checked: root.config.viewMode === mode
             text: i18nc("@action", "Display as Tree")
             displayHint: Kirigami.Action.IconOnly
             property int mode: 1
-            enabled: false
-            ActionGroup.group: viewGroup
+            onTriggered: {
+                root.config.viewMode = mode;
+                checked = true;
+                listAction.checked = false;
+            }
         },
 
         Kirigami.Action {
@@ -112,11 +123,11 @@ Faces.SensorFace {
     ]
 
     ActionGroup { id: showGroup; onTriggered: root.config.userFilterMode = action.mode }
-    ActionGroup { id: viewGroup }
 
     contentItem: ProcessTableView {
         id: table
 
+        flatList: root.config.viewMode === 0
         viewMode: root.config.userFilterMode
         onViewModeChanged: root.config.userFilterMode = viewMode
 
