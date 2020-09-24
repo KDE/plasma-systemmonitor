@@ -160,7 +160,7 @@ Page {
             ]
         }
 
-        Label { text: i18np("@title:group", "Processes: %1", processTable.rows) }
+        Label { text: i18nc("@title:group", "Processes: %1", processTable.rows) }
 
         Rectangle {
             Layout.fillWidth: true
