@@ -27,6 +27,7 @@ Control {
     contentItem: RowLayout {
         RowLayout {
             id: treeDecoration
+            visible: false
             Layout.topMargin: -delegate.topPadding
             Layout.bottomMargin: -delegate.bottomPadding
             Repeater {
