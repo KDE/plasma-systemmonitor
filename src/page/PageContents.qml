@@ -110,6 +110,28 @@ ColumnLayout {
                     root.actionsFace = loader.controller.fullRepresentation
                 }
             }
+            TapHandler {
+                acceptedButtons: Qt.RightButton
+                enabled: WidgetExporter.plasmashellAvailable
+                onTapped: {
+                    const point = parent.mapToItem(contextMenu.parent, eventPoint.position)
+                    contextMenu.x = point.x
+                    contextMenu.y = point.y
+                    contextMenu.loader = loader
+                    contextMenu.open()
+                }
+            }
+        }
+    }
+    Menu {
+        id: contextMenu
+        property QtObject loader
+        MenuItem {
+            icon.name: "document-export"
+            text: i18nc("@action", "Add Chart as Desktop Widget")
+            onTriggered: {
+                WidgetExporter.exportAsWidget(contextMenu.loader)
+            }
         }
     }
 }

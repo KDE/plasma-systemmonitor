@@ -53,6 +53,14 @@ Kirigami.ScrollablePage {
                 message.visible = true
             }
         },
+        Kirigami.Action {
+            text: i18nc("@action", "Add Chart as Desktop Widget")
+            icon.name: "document-export"
+            enabled: WidgetExporter.plasmashellAvailable
+            onTriggered: {
+                WidgetExporter.exportAsWidget(loader)
+            }
+        },
         Kirigami.Action { separator: true },
         Kirigami.Action {
             text: i18nc("@action", "Get new display styles...")

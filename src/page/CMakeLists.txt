@@ -7,6 +7,7 @@ set(page_SRCS
     FaceLoader.cpp
     PageSortModel.cpp
     FacesModel.cpp
+    WidgetExporter.cpp
 )
 
 set(page_QML
@@ -29,7 +30,7 @@ set(page_QML
 )
 
 add_library(PagePlugin SHARED ${page_SRCS})
-target_link_libraries(PagePlugin Qt5::Quick KF5::ConfigCore KF5::I18n KF5::NewStuff KSysGuard::Sensors KSysGuard::SensorFaces)
+target_link_libraries(PagePlugin Qt5::DBus Qt5::Quick KF5::ConfigCore KF5::I18n KF5::NewStuff KSysGuard::Sensors KSysGuard::SensorFaces)
 
 install(TARGETS PagePlugin DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/page)
 install(FILES qmldir ${page_QML} DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/page)

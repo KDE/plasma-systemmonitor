@@ -12,6 +12,7 @@
 #include "FaceLoader.h"
 #include "PageSortModel.h"
 #include "FacesModel.h"
+#include "WidgetExporter.h"
 
 #include <QQmlEngine>
 
@@ -24,6 +25,9 @@ void PagePlugin::registerTypes(const char *uri)
     qmlRegisterType<FaceLoader>(uri, 1, 0, "FaceLoader");
     qmlRegisterType<PageSortModel>(uri, 1, 0, "PageSortModel");
     qmlRegisterType<FacesModel>(uri, 1, 0, "FacesModel");
+    qmlRegisterSingletonType<WidgetExporter>(uri, 1, 0, "WidgetExporter", [](QQmlEngine*, QJSEngine*) {
+        return new WidgetExporter();
+    });
 
     qmlRegisterUncreatableType<PageDataObject>(uri, 1, 0, "PageDataObject", QStringLiteral("Used for data storage"));
 }
