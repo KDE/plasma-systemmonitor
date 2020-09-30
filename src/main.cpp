@@ -23,6 +23,7 @@ class CommandLineArguments : public QObject
     Q_OBJECT
     Q_PROPERTY(QString pageId MEMBER m_pageId CONSTANT)
     Q_PROPERTY(QString pageName MEMBER m_pageName CONSTANT)
+    Q_PROPERTY(QVariant aboutData READ aboutData CONSTANT)
 
 public:
     CommandLineArguments(QCommandLineParser &parser)
@@ -34,6 +35,11 @@ public:
         if (m_pageId.isEmpty() && m_pageName.isEmpty()) {
             m_pageId = QStringLiteral("overview.page");
         }
+    }
+
+    QVariant aboutData() const
+    {
+        return QVariant::fromValue(KAboutData::applicationData());
     }
 
 private:
