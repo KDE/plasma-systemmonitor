@@ -11,7 +11,7 @@ Files: Messages.sh */Messages.sh
 Copyright: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
 License: CC0-1.0
 
-Files: */*.desktop
+Files: *.desktop */*.desktop
 Copyright: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
 License: CC0-1.0
 
