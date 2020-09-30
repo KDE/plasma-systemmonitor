@@ -27,20 +27,6 @@ Kirigami.ApplicationWindow {
         id: pagePoolObject
     }
 
-    Component.onCompleted: {
-        var page = "Overview"
-        if (__context__initialPage != "") {
-            page = __context__initialPage
-        }
-
-        for (var i in globalDrawer.actions) {
-            var action = globalDrawer.actions[i]
-            if (action.pageData && action.pageData.title == page) {
-                action.trigger()
-                return
-            }
-        }
-    }
 
     globalDrawer: Kirigami.GlobalDrawer {
         id: globalDrawer
@@ -136,6 +122,14 @@ Kirigami.ApplicationWindow {
                 icon.name: model.icon
                 pagePool: pagePoolObject
                 pageData: model.data
+
+                Component.onCompleted: {
+                    if (CommandLineArguments.pageId && model.fileName == CommandLineArguments.pageId) {
+                        trigger()
+                    } else if (CommandLineArguments.pageName && model.title == CommandLineArguments.pageName) {
+                        trigger()
+                    }
+                }
             }
 
             onObjectAdded: {
@@ -143,6 +137,7 @@ Kirigami.ApplicationWindow {
                 actions.splice(index, 0, object)
                 globalDrawer.actions = actions
             }
+
             onObjectRemoved: {
                 var actions = Array.prototype.map.call(globalDrawer.actions, i => i)
                 var actionIndex = actions.indexOf(object)

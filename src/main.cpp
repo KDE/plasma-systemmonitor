@@ -18,6 +18,29 @@
 #include "ToolsModel.h"
 #include "Configuration.h"
 
+class CommandLineArguments : public QObject
+{
+    Q_OBJECT
+    Q_PROPERTY(QString pageId MEMBER m_pageId CONSTANT)
+    Q_PROPERTY(QString pageName MEMBER m_pageName CONSTANT)
+
+public:
+    CommandLineArguments(QCommandLineParser &parser)
+        : QObject()
+    {
+        m_pageId = parser.value("page-id");
+        m_pageName = parser.value("page-name");
+
+        if (m_pageId.isEmpty() && m_pageName.isEmpty()) {
+            m_pageId = QStringLiteral("overview.page");
+        }
+    }
+
+private:
+    QString m_pageId;
+    QString m_pageName;
+};
+
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
@@ -57,14 +80,18 @@ int main(int argc, char **argv)
     KDBusService service(KDBusService::Unique);
 
     QCommandLineParser parser;
-    parser.addOption({QStringLiteral("page"), QStringLiteral("The page to show."), QStringLiteral("page")});
     aboutData.setupCommandLine(&parser);
+    parser.addOption({QStringLiteral("page-id"), QStringLiteral("Start with the specified page ID shown"), QStringLiteral("page-id")});
+    parser.addOption({QStringLiteral("page-name"), QStringLiteral("Start with the specified page name shown"), QStringLiteral("page-name")});
     parser.process(app);
     aboutData.processCommandLine(&parser);
 
     qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.systemmonitor", 1);
     qmlRegisterType<ToolsModel>("org.kde.systemmonitor", 1, 0, "ToolsModel");
     qmlRegisterType<Configuration>("org.kde.systemmonitor", 1, 0, "Configuration");
+    qmlRegisterSingletonType<CommandLineArguments>("org.kde.systemmonitor", 1, 0, "CommandLineArguments", [&parser](QQmlEngine*, QJSEngine*) {
+        return new CommandLineArguments{parser};
+    });
 
     QQmlApplicationEngine engine;
 
@@ -72,7 +99,6 @@ int main(int argc, char **argv)
     kdeclarative.setDeclarativeEngine(&engine);
     kdeclarative.setupContext();
 
-    engine.rootContext()->setContextProperty("__context__initialPage", parser.value(QStringLiteral("page")));
     engine.load(QStringLiteral(":/main.qml"));
 
     QObject::connect(&service, &KDBusService::activateRequested, &engine, []() {
@@ -85,3 +111,5 @@ int main(int argc, char **argv)
 
     return app.exec();
 }
+
+#include "main.moc"
