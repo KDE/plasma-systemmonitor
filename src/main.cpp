@@ -76,11 +76,11 @@ int main(int argc, char **argv)
     engine.load(QStringLiteral(":/main.qml"));
 
     QObject::connect(&service, &KDBusService::activateRequested, &engine, []() {
-            if (!qApp->topLevelWindows().isEmpty()) {
-                QWindow *win = qApp->topLevelWindows().first();
-                win->raise();
-                win->requestActivate();
-            }
+        if (!qApp->topLevelWindows().isEmpty()) {
+            QWindow *win = qApp->topLevelWindows().first();
+            win->raise();
+            win->requestActivate();
+        }
     });
 
     return app.exec();
