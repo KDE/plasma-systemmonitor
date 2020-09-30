@@ -11,6 +11,8 @@ import QtQuick.Window 2.12
 
 import org.kde.kirigami 2.11 as Kirigami
 import org.kde.kitemmodels 1.0 as KItemModels
+import org.kde.newstuff 1.62 as NewStuff
+
 
 import org.kde.systemmonitor 1.0
 import org.kde.ksysguard.page 1.0 as Page
@@ -70,6 +72,11 @@ Kirigami.ApplicationWindow {
                         icon.name: app.globalDrawer.collapsed ? "view-split-left-right" : "view-left-close"
                         text: app.globalDrawer.collapsed ? i18nc("@action", "Expand Sidebar") : i18nc("@action", "Collapse Sidebar")
                         onTriggered: app.globalDrawer.collapsed = !app.globalDrawer.collapsed
+                    },
+                    Kirigami.Action {
+                        icon.name: "get-hot-new-stuff"
+                        text: i18nc("@action:inmenu", "Get New Pages...")
+                        onTriggered: getNewPageDialog.open()
                     },
                     Kirigami.Action {
                         icon.name: "help-about-symbolic";
@@ -164,6 +171,20 @@ Kirigami.ApplicationWindow {
         id: pageSortDialog
         title: i18nc("@window:title", "Edit Pages")
         model: pagesModel
+    }
+
+
+    NewStuff.Dialog {
+        id: getNewPageDialog
+        configFile: "plasma-systemmonitor.knsrc"
+        // I have a weird bug on my machine where getNewPageDialog.changedEntries is not an alias
+        // engine.changedEntries but for the engine itself, so I directly use the property of the engine
+        Connections {
+            target: getNewPageDialog.engine
+            function onChangedEntriesChanged() {
+                pagesModel.ghnsEntriesChanged(getNewPageDialog.engine.changedEntries)
+            }
+        }
     }
 
     Configuration {

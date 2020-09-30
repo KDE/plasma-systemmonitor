@@ -12,6 +12,7 @@
 
 #include <KConfig>
 #include <KConfigGroup>
+#include <KNSCore/EntryWrapper>
 
 #include "PageDataObject.h"
 
@@ -145,6 +146,7 @@ PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &
     KSharedConfig::Ptr config = KSharedConfig::openConfig(fileName, KConfig::CascadeConfig, QStandardPaths::AppDataLocation);
 
     auto page = new PageDataObject(config, this);
+    page->load(*config, QStringLiteral("page"));
 
     for (auto itr = properties.begin(); itr != properties.end(); ++itr) {
         page->insert(itr.key(), itr.value());
@@ -226,3 +228,24 @@ void PagesModel::removeLocalPageFiles(const QString &fileName)
         Q_EMIT dataChanged(index(row, 0), index(row, 0), {TitleRole, IconRole, DataRole, FilesWriteableRole});
     }
 }
+
+void PagesModel::ghnsEntriesChanged(const QQmlListReference& changedEntries)
+{
+    for (int i = 0; i < changedEntries.count(); ++i) {
+        KNSCore::EntryInternal entry = static_cast<KNSCore::EntryWrapper*>(changedEntries.at(i))->entry();
+        if (entry.status() == KNS3::Entry::Installed) {
+            for (const auto &file : entry.installedFiles()) {
+                if (file.endsWith(".page")) {
+                    addPage(file);
+                }
+            }
+        } else if(entry.status() == KNS3::Entry::Deleted) {
+            for (const auto &file : entry.uninstalledFiles()) {
+                if (file.endsWith(".page")) {
+                    removeLocalPageFiles(file);
+                }
+            }
+        }
+    }
+}
+

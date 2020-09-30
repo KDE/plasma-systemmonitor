@@ -18,3 +18,4 @@ FaceConfigurationPage 1.0 FaceConfigurationPage.qml
 LoadPresetDialog 1.0 LoadPresetDialog.qml
 MoveButton 1.0 MoveButton.qml
 PageSortDialog 1.0 PageSortDialog.qml
+GetNewPageDialog 1.0 GetNewPageDialog.qml

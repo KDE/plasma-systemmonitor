@@ -10,6 +10,8 @@
 #include <QAbstractListModel>
 #include <QQmlParserStatus>
 
+class QQmlListReference;
+
 class PageDataObject;
 
 class PagesModel : public QAbstractListModel, public QQmlParserStatus
@@ -52,6 +54,7 @@ public:
 
     Q_INVOKABLE PageDataObject *addPage(const QString &fileName, const QVariantMap &properties = QVariantMap{});
     Q_INVOKABLE void removeLocalPageFiles(const QString &fileName);
+    Q_INVOKABLE void ghnsEntriesChanged(const QQmlListReference &changedEntries);
 
     QStringList pageOrder() const;
     void setPageOrder(const QStringList &pageOrder);
