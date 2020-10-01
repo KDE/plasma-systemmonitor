@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: plasma-systemmonitor
 Upstream-Contact: Arjen Hiemstra <ahiemstra@heimr.nl>
 Source: http://invent.kde.org/plasma/plasma-systemmonitor
