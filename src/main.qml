@@ -127,6 +127,7 @@ Kirigami.ApplicationWindow {
             Page.EditablePageAction {
                 text: model.title
                 icon.name: model.icon
+                fileName: model.fileName
                 pagePool: pagePoolObject
                 pageData: model.data
 
@@ -164,6 +165,10 @@ Kirigami.ApplicationWindow {
             var row = newPage.insertChild(0, {name: "row-0", isTitle: false, title: ""})
             var column = row.insertChild(0, {name: "column-0", showBackground: true})
             column.insertChild(0, {name: "section-0", isSeparator: false})
+
+            const pageAction = Array.prototype.find.call(globalDrawer.actions, action => action.fileName == fileName)
+            pageAction.trigger()
+            app.pageStack.currentItem.edit = true
         }
     }
 
