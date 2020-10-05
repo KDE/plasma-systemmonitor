@@ -15,6 +15,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="es">Monitor del sistema de Plasma</name>
   <name xml:lang="eu">Plasmaren sistema-begiralea</name>
   <name xml:lang="it">Monitor di sistema di Plasma</name>
+  <name xml:lang="ko">Plasma 시스템 모니터</name>
   <name xml:lang="nl">Plasma systeemmonitor</name>
   <name xml:lang="pt">Monitor do Sistema do Plasma</name>
   <name xml:lang="ro">Monitor de sistem Plasma</name>
@@ -30,6 +31,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="es">Aplicación para monitorizar recursos del sistema.</summary>
   <summary xml:lang="eu">Sistemaren baliabideak gainbegiratzen dituen aplikazio bat.</summary>
   <summary xml:lang="it">Un'applicazione per il monitoraggio delle risorse di sistema.</summary>
+  <summary xml:lang="ko">시스템 자원을 관찰하는 프로그램입니다.</summary>
   <summary xml:lang="nl">Een toepassing voor het monitoren van systeembronnen.</summary>
   <summary xml:lang="pt">Uma aplicação para monitorizar os recursos do sistema.</summary>
   <summary xml:lang="ro">Aplicație pentru monitorizarea resurselor sistemului.</summary>
@@ -45,6 +47,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="es">El monitor del sistema de Plasma proporciona una interfaz para monitorizar los sensores el sistema, información de procesos y otros recursos del sistema.</p>
     <p xml:lang="eu">Plasmaren sistema-begiraleak sistemaren sentsoreak, prozesuei buruzko informazioa eta sistemaren beste baliabide batzuk gainbegiratzeko interfaze bat eskaintzen du.</p>
     <p xml:lang="it">Monitor di sistema di Plasma fornisce un'interfaccia per il monitoraggio dei sensori di sistema, informazioni sui processi e altre risorse di sistema.</p>
+    <p xml:lang="ko">Plasma 시스템 모니터는 시스템 센서, 프로세스 정보, 기타 시스템 자원을 관찰할 수 있습니다.</p>
     <p xml:lang="nl">Plasma systeemmonitor biedt een interface voor het monitoren van systeembronnen, procesinformatie en andere systeembronnen.</p>
     <p xml:lang="pt">O Monitor do Sistema do Plasma oferece uma interface para monitorizar os sensores do sistema, a informação dos processos e os outros recursos do sistema.</p>
     <p xml:lang="ro">Monitorul de sistem Plasma oferă o interfață pentru monitorizarea senzorilor sistemului, a informației despre procese și altor resurse ale sistemului.</p>
