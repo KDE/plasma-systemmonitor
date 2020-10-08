@@ -28,6 +28,7 @@ Dialog {
 
     modal: true
     parent: Overlay.overlay
+    focus: true
 
     x: parent ? parent.width / 2 - width / 2 : 0
     y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
@@ -40,6 +41,16 @@ Dialog {
 
     onAccepted: {
         actionsFace = actionsCombobox.currentValue
+    }
+
+    onOpened: {
+        // Reset focus to the name field.
+        // When opening the dialog multiple times, the focus object remains the
+        // last focussed item, which is usually one of the buttons. Since the
+        // first things we generally want to do in this dialog is edit the
+        // title, we reset the focus to the name field when the dialog is
+        // opened.
+        nameField.focus = true
     }
 
     onClosed: {
@@ -63,6 +74,8 @@ Dialog {
                 Kirigami.FormData.label: i18nc("@label:textbox", "Name")
                 text: dialog.name
                 onTextEdited: dialog.name = text
+
+                focus: true
 
                 validator: RegularExpressionValidator { regularExpression: /^[\pL\pN][^\pC/]*/ }
             }
