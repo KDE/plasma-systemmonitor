@@ -14,7 +14,7 @@ import org.kde.ksysguard.formatter 1.0 as Formatter
 import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.qqc2desktopstyle.private 1.0 as StylePrivate
 
-Item {
+FocusScope {
     id: heading
 
     x: -view.contentX
@@ -49,8 +49,32 @@ Item {
         }
     }
 
+    activeFocusOnTab: true
+
+    function focusNext(delta) {
+        var newIndex = headerRow.currentIndex
+        var item = undefined
+        while (item === undefined || item instanceof Repeater) {
+            newIndex = newIndex + delta
+
+            if (newIndex < 0) {
+                newIndex = headerRow.children.length - 1
+            }
+            if (newIndex >= headerRow.children.length) {
+                newIndex = 0
+            }
+
+            item = headerRow.children[newIndex]
+        }
+
+        item.focus = true
+        headerRow.currentIndex = newIndex
+    }
+
     Row {
         id: headerRow
+
+        property int currentIndex: 0
 
         Repeater {
             id: repeater
@@ -78,13 +102,47 @@ Item {
                 elementType: "header"
                 activeControl: heading.sortName == columnId ? (heading.sortOrder == Qt.AscendingOrder ? "down" : "up") : ""
                 raised: false
-                sunken: mouse.pressed
+                sunken: mouse.pressed || activeFocus
                 text: model.display != undefined ? model.display : ""
                 hover: mouse.containsMouse
+
+                focus: true
 
                 properties: {
                     "headerpos": headerPosition,
                     "textalignment": Text.AlignHCenter
+                }
+
+                Keys.onPressed: {
+                    switch (event.key) {
+                        case Qt.Key_Space:
+                        case Qt.Key_Enter:
+                        case Qt.Key_Return:
+                            sort()
+                            break;
+                        case Qt.Key_Menu:
+                            heading.contextMenuRequested(model.row, mapToGlobal(headerItem.x, headerItem.y + headerItem.height))
+                            break
+                        case Qt.Key_Left:
+                            heading.focusNext(-1)
+                            break
+                        case Qt.Key_Right:
+                            heading.focusNext(1)
+                            break
+                        default:
+                            break;
+                    }
+                }
+
+                function sort() {
+                    if (heading.sortName == headerItem.columnId) {
+                        heading.sortOrder = heading.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder;
+                    } else {
+                        heading.sortColumn = model.row;
+                        heading.sortName = headerItem.columnId
+                        heading.sortOrder = model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder;
+                    }
+                    heading.sort(heading.sortColumn, heading.sortOrder)
                 }
 
                 MouseArea {
@@ -99,15 +157,7 @@ Item {
                             return
                         }
 
-                        if (heading.sortName == headerItem.columnId) {
-                            heading.sortOrder = heading.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder;
-                        } else {
-                            heading.sortColumn = model.row;
-                            heading.sortName = headerItem.columnId
-                            heading.sortOrder = model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder;
-                        }
-
-                        heading.sort(heading.sortColumn, heading.sortOrder)
+                        headerItem.sort()
                     }
                 }
                 MouseArea {
