@@ -31,7 +31,7 @@ Control {
             Layout.topMargin: -delegate.topPadding
             Layout.bottomMargin: -delegate.bottomPadding
             Repeater {
-                model: kDescendantLevel-1
+                model: treeDecoration.visible ? kDescendantLevel - 1 : 0
                 delegate: StylePrivate.StyleItem {
                     Layout.preferredWidth: controlRoot.width//Kirigami.Units.gridUnit
                     Layout.fillHeight: true
@@ -49,7 +49,7 @@ Control {
                 Layout.preferredWidth: background.pixelMetric("treeviewindentation")
                 visible: true
                 Layout.fillHeight: true
-                enabled: model.kDescendantExpandable
+                enabled: treeDecoration.visible && model.kDescendantExpandable
                 text: model.kDescendantExpanded ? "-" : "+"
                 onClicked: descendantsModel.toggleChildren(index)
                 background: StylePrivate.StyleItem {
@@ -57,11 +57,11 @@ Control {
                     control: controlRoot
                     hover: controlRoot.hovered
                     elementType: "itembranchindicator"
-                    on: model.kDescendantExpanded
+                    on: treeDecoration.visible && model.kDescendantExpanded
                     properties: {
                         "isItem": true,
                         "hasChildren": model.kDescendantExpandable,
-                        "hasSibling": model.kDescendantHasSiblings[model.kDescendantHasSiblings.length - 1]
+                        "hasSibling": treeDecoration.visible && model.kDescendantHasSiblings[model.kDescendantHasSiblings.length - 1]
                     }
                 }
             }
