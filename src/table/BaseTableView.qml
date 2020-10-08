@@ -101,9 +101,53 @@ FocusScope {
 
             onWidthChanged: forceLayout()
 
+            activeFocusOnTab: true
+
             clip: true
-            focus: true
             boundsBehavior: Flickable.StopAtBounds
+
+            Keys.onPressed: {
+                switch (event.key) {
+                    case Qt.Key_Up:
+                        selectRelative(-1)
+                        if (!atYBeginning) {
+                            contentY -= root.rowHeight
+                            returnToBounds()
+                        }
+                        event.accepted = true
+                        break
+                    case Qt.Key_Down:
+                        selectRelative(1)
+                        if (!atYEnd) {
+                            contentY += root.rowHeight
+                            returnToBounds()
+                        }
+                        event.accepted = true
+                        break
+                    case Qt.Key_Menu:
+                        contextMenuRequested(selectionModel.currentIndex, mapToGlobal(0, 0))
+                    default:
+                        break;
+                }
+            }
+
+            onActiveFocusChanged: {
+                if (activeFocus && !selectionModel.hasSelection) {
+                    selectionModel.setCurrentIndex(model.index(0, 0), ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
+                }
+            }
+
+            function selectRelative(delta) {
+                var nextRow = selectionModel.currentIndex.row + delta
+                if (nextRow < 0) {
+                    nextRow = 0
+                }
+                if (nextRow >= rows) {
+                    nextRow = rows - 1
+                }
+                var index = model.index(nextRow, selectionModel.currentIndex.column)
+                selectionModel.setCurrentIndex(index, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
+            }
 
             columnWidthProvider: function(index) {
                 var width = root.columnWidths[index]
