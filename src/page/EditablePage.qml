@@ -84,15 +84,9 @@ Kirigami.Page {
 
         if (secondary.length > 0) {
             contextual = contextual.concat(Array.prototype.map.call(secondary, i => i))
-            contextual.push(separator)
         }
 
         actions.contextualActions = contextual.concat(defaultActions)
-    }
-
-    Kirigami.Action {
-        id: separator
-        separator: true
     }
 
     Kirigami.Action {
