@@ -80,7 +80,7 @@ Column {
             index = pageData.children.length
         }
 
-        pageData.insertChild(index, {name: "row-" + index, isTitle: true, title: "New Title" })
+        pageData.insertChild(index, {name: "row-" + index, isTitle: true, title: i18n("New Title") })
     }
 
     function addRow(index) {
