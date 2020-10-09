@@ -35,7 +35,7 @@ Table.BaseTableView {
             }
             rows[i.row] = true
 
-            var index = sortFilter.mapToSource(cacheModel.mapToSource(i))
+            var index = sortFilter.mapToSource(i)
             var item = applicationInformation.createObject()
             item.index = index
             result.push(item)
@@ -69,24 +69,10 @@ Table.BaseTableView {
         sortFilter.sortOrder = order
     }
 
-    model: Table.ComponentCacheProxyModel {
-        id: cacheModel
-        sourceModel: sortFilter
-
-        component: Charts.ModelHistorySource {
-            model: Table.ComponentCacheProxyModel.model
-            row: Table.ComponentCacheProxyModel.row
-            column: Table.ComponentCacheProxyModel.column
-            roleName: "Value"
-            maximumHistory: 10
-            interval: 2000
-        }
-    }
-
-    KItemModels.KSortFilterProxyModel {
+    model: KItemModels.KSortFilterProxyModel {
         id: sortFilter
 
-        sourceModel: displayModel
+        sourceModel: cacheModel
 
         filterColumnCallback: function(column, parent) {
             // Note: This assumes displayModel column == appModel column
@@ -102,6 +88,20 @@ Table.BaseTableView {
         filterKeyColumn: appModel.nameColumn
         filterCaseSensitivity: Qt.CaseInsensitive
         sortRole: "Value"
+    }
+
+    Table.ComponentCacheProxyModel {
+        id: cacheModel
+        sourceModel: displayModel
+
+        component: Charts.ModelHistorySource {
+            model: Table.ComponentCacheProxyModel.model
+            row: Table.ComponentCacheProxyModel.row
+            column: Table.ComponentCacheProxyModel.column
+            roleName: "Value"
+            maximumHistory: 10
+            interval: 2000
+        }
     }
 
     Table.ColumnDisplayModel {

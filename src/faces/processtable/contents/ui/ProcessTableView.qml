@@ -41,7 +41,7 @@ Table.BaseTableView {
 
             rows[i.row] = true
 
-            var index = rowFilter.mapToSource(descendantsModel.mapToSource(cacheModel.mapToSource(i)))
+            var index = rowFilter.mapToSource(descendantsModel.mapToSource(i))
 
             var item = {}
 
@@ -59,9 +59,21 @@ Table.BaseTableView {
 
     onSort: rowFilter.sort(column, order)
 
-    model: Table.ComponentCacheProxyModel {
+    model: KItemModels.KDescendantsProxyModel {
+        id: descendantsModel
+        sourceModel: rowFilter
+        expandsByDefault: true
+    }
+
+    Table.ProcessSortFilterModel {
+        id: rowFilter
+        sourceModel: cacheModel
+        hiddenAttributes: processModel.hiddenSensors
+    }
+
+    Table.ComponentCacheProxyModel {
         id: cacheModel
-        sourceModel: descendantsModel
+        sourceModel: displayModel
 
         component: Charts.ModelHistorySource {
             model: Table.ComponentCacheProxyModel.model
@@ -71,18 +83,6 @@ Table.BaseTableView {
             maximumHistory: 10
             interval: 2000
         }
-    }
-
-    KItemModels.KDescendantsProxyModel {
-        id: descendantsModel
-        sourceModel: rowFilter
-        expandsByDefault: true
-    }
-
-    Table.ProcessSortFilterModel {
-        id: rowFilter
-        sourceModel: displayModel
-        hiddenAttributes: processModel.hiddenSensors
     }
 
     Table.ColumnDisplayModel {
@@ -143,9 +143,9 @@ Table.BaseTableView {
                 id: delegate
                 treeDecorationVisible: !view.flatList
                 iconName: {
-                    var index = cacheModel.mapToSource(cacheModel.index(model.row, 0))
-                    index = descendantsModel.mapToSource(index);
+                    var index = descendantsModel.mapToSource(descedantsModel.index(model.row, 0))
                     index = rowFilter.mapToSource(index);
+                    index = cacheModel.mapToSource(index);
                     index = displayModel.mapToSource(index);
                     index = processModel.index(index.row, processModel.nameColumn, index.parent);
                     return processModel.data(index);
