@@ -104,7 +104,7 @@ Kirigami.ScrollablePage {
                 id: showTitleCheckbox
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
-                text: i18nc("@option:check", "Display")
+                text: i18nc("@option:check", "Show Title")
                 checked: page.loader.controller.showTitle
                 onToggled: page.loader.controller.showTitle = checked
             }
