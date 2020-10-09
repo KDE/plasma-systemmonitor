@@ -120,6 +120,11 @@ Kirigami.ScrollablePage {
             onTextEdited: page.loader.controller.title = text
         }
 
+        Label {
+            Layout.fillWidth: true
+            text: i18nc("@label:textbox", "Display Style")
+        }
+
         ComboBox {
             id: faceCombo
 
