@@ -49,8 +49,17 @@ Container {
         onClicked: control.select(control)
     }
 
-    Component.onCompleted: {
+    Component.onCompleted: updateContentItem()
+
+    Connections {
+        target: loader.controller
+        function onFaceIdChanged() {
+            control.updateContentItem()
+        }
+    }
+
+    function updateContentItem() {
         loader.controller.fullRepresentation.formFactor = Faces.SensorFace.Constrained;
-        contentItem = loader.controller.fullRepresentation;
+        control.contentItem = loader.controller.fullRepresentation;
     }
 }
