@@ -16,6 +16,7 @@ Dialog {
     property alias model : sortModel.sourceModel
 
     modal: true
+    focus: true
     standardButtons: Dialog.Ok | Dialog.Cancel
 
     width: parent ? parent.width * 0.75 : 0
@@ -72,6 +73,9 @@ Dialog {
                         readonly property bool hidden: model.hidden
                         readonly property var filesWritable: model.filesWriteable
                         readonly property bool shouldRemoveFiles: model.shouldRemoveFiles
+
+                        activeFocusOnTab: false
+
                         contentItem: RowLayout {
                             Kirigami.ListItemDragHandle {
                                 id: handle
