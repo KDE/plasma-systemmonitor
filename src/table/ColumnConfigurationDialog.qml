@@ -28,6 +28,7 @@ Dialog {
 
     modal: true
     parent: Overlay.overlay
+    focus: true
 
     x: parent ? parent.width / 2 - width / 2 : 0
     y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
@@ -103,6 +104,7 @@ Dialog {
                         Kirigami.Theme.colorSet: Kirigami.Theme.View
                         rightPadding: Kirigami.Units.smallSpacing
                         property int index: modelData ? modelData.row : -1
+                        activeFocusOnTab: false
                         contentItem: GridLayout {
                             rows: 2
                             flow: GridLayout.TopToBottom
