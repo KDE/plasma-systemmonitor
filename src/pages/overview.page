@@ -24,8 +24,8 @@ Title[uk]=Пам'ять
 Title[x-test]=xxMemoryxx
 
 [Face-94410222150464][Sensors]
-highPrioritySensorIds=["mem/physical/allocated"]
-totalSensors=["mem/physical/allocated"]
+highPrioritySensorIds=["memory/physical/used"]
+totalSensors=["memory/physical/used"]
 
 [Face-94410222150464][org.kde.ksysguard.piechart][General]
 showLegend=false
@@ -85,8 +85,8 @@ Title[uk]=Диск
 Title[x-test]=xxDiskxx
 
 [Face-94410261307168][Sensors]
-highPrioritySensorIds=["partitions/all/usedspace"]
-totalSensors=["partitions/all/filllevel"]
+highPrioritySensorIds=["disk/all/used"]
+totalSensors=["disk/all/usedPercent"]
 
 [Face-94410261307168][org.kde.ksysguard.piechart][General]
 showLegend=false
@@ -114,8 +114,8 @@ Title[uk]=Процесор
 Title[x-test]=xxCPUxx
 
 [Face-94410266684256][Sensors]
-highPrioritySensorIds=["cpu/system/TotalLoad"]
-totalSensors=["cpu/system/TotalLoad"]
+highPrioritySensorIds=["cpu/all/usage"]
+totalSensors=["cpu/all/usage"]
 
 [Face-94410266684256][org.kde.ksysguard.piechart][General]
 showLegend=false
