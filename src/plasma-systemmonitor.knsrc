@@ -1,10 +1,13 @@
 [KNewStuff3]
 Name=Pages
 Name[ca]=Pàgines
+Name[ca@valencia]=Pàgines
+Name[en_GB]=Pages
 Name[es]=Páginas
 Name[eu]=Orriak
 Name[nl]=Pagina's
 Name[pt]=Páginas
+Name[sl]=Strani
 Name[sv]=Sidor
 Name[uk]=Сторінки
 Name[x-test]=xxPagesxx
