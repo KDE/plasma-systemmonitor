@@ -36,14 +36,17 @@ Kirigami.ScrollablePage {
     actions.contextualActions: [
         Kirigami.Action {
             text: i18nc("@action", "Load Preset...")
+            icon.name: "document-new-from-template"
             onTriggered: loadPresetDialog.open()
         },
         Kirigami.Action {
             text: i18nc("@action", "Get new presets...")
+            icon.name: "get-hot-new-stuff"
             onTriggered: newPresetDialog.open()
         },
         Kirigami.Action {
             text: i18nc("@action", "Save Settings as Preset")
+            icon.name: "document-save-as-template"
             onTriggered: {
                 loader.controller.savePreset()
                 message.text = i18nc("@info:status %1 is preset name", "Saved settings as preset %1.", loader.controller.title)
@@ -53,6 +56,7 @@ Kirigami.ScrollablePage {
         Kirigami.Action { separator: true },
         Kirigami.Action {
             text: i18nc("@action", "Get new display styles...")
+            icon.name: "get-hot-new-stuff"
             onTriggered: newFaceDialog.open()
         }
     ]
