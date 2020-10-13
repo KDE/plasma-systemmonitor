@@ -62,6 +62,10 @@ void PageDataModel::setDataObject(PageDataObject * newDataObject)
             }
             endMoveRows();
         });
+        connect(m_data, &PageDataObject::loaded, this, [this] {
+            beginResetModel();
+            endResetModel();
+        });
     }
 
     Q_EMIT dataObjectChanged();

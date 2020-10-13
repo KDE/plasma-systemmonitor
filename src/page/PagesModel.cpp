@@ -141,10 +141,16 @@ void PagesModel::sort(int column, Qt::SortOrder order)
     layoutChanged();
 }
 
-PageDataObject *PagesModel::addPage(const QString& fileName, const QVariantMap &properties)
+PageDataObject *PagesModel::addPage(const QString& baseName, const QVariantMap &properties)
 {
-    KSharedConfig::Ptr config = KSharedConfig::openConfig(fileName, KConfig::CascadeConfig, QStandardPaths::AppDataLocation);
+    int counter = 0;
+    const QString extension = QStringLiteral(".page");
+    QString fileName = baseName + extension;
+    while (m_writeableCache.contains(fileName)) {
+        fileName = baseName + QString::number(++counter) + extension;
+    }
 
+    KSharedConfig::Ptr config = KSharedConfig::openConfig(fileName, KConfig::CascadeConfig, QStandardPaths::AppDataLocation);
     auto page = new PageDataObject(config, this);
     page->load(*config, QStringLiteral("page"));
 
@@ -197,7 +203,7 @@ void PagesModel::setHiddenPages(const QStringList &hiddenPages)
 
 void PagesModel::removeLocalPageFiles(const QString &fileName)
 {
-     auto it = std::find_if(m_pages.begin(), m_pages.end(), [&] (PageDataObject *page) {
+    auto it = std::find_if(m_pages.begin(), m_pages.end(), [&] (PageDataObject *page) {
         return page->config()->name() == fileName;
     });
     if (it == m_pages.end()) {
@@ -221,9 +227,7 @@ void PagesModel::removeLocalPageFiles(const QString &fileName)
         m_writeableCache.remove(fileName);
         Q_EMIT endRemoveRows();
     } else {
-        page->config()->markAsClean();
-        page->config()->reparseConfiguration();
-        page->load(*page->config(), QStringLiteral("page"));
+        page->resetPage();
         m_writeableCache[fileName] = NotWriteable;
         Q_EMIT dataChanged(index(row, 0), index(row, 0), {TitleRole, IconRole, DataRole, FilesWriteableRole});
     }
@@ -235,14 +239,28 @@ void PagesModel::ghnsEntriesChanged(const QQmlListReference& changedEntries)
         KNSCore::EntryInternal entry = static_cast<KNSCore::EntryWrapper*>(changedEntries.at(i))->entry();
         if (entry.status() == KNS3::Entry::Installed) {
             for (const auto &file : entry.installedFiles()) {
-                if (file.endsWith(".page")) {
-                    addPage(file);
+                const QString fileName = QUrl::fromLocalFile(file).fileName();
+                if (fileName.endsWith(".page")) {
+                    auto it = std::find_if(m_pages.begin(), m_pages.end(), [&] (PageDataObject *page) {
+                        return page->config()->name() == fileName;
+                    });
+                    if (it != m_pages.end()) {
+                        // User selected to overwrite the existing file in the kns dialog
+                        (*it)->resetPage();
+                        if (m_writeableCache[fileName] == NotWriteable) {
+                            m_writeableCache[fileName] = LocalChanges;
+                        }
+                    }
+                    else {
+                        addPage(fileName.chopped(strlen(".page")))->config()->name();
+                    }
                 }
             }
         } else if(entry.status() == KNS3::Entry::Deleted) {
             for (const auto &file : entry.uninstalledFiles()) {
-                if (file.endsWith(".page")) {
-                    removeLocalPageFiles(file);
+                const QString fileName = QUrl::fromLocalFile(file).fileName();
+                if (fileName.endsWith(".page")) {
+                    removeLocalPageFiles(fileName);
                 }
             }
         }

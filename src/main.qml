@@ -160,7 +160,7 @@ Kirigami.ApplicationWindow {
         title: i18nc("@window:title", "Add New Page")
 
         onAccepted: {
-            var fileName = name.toLowerCase().replace(" ", "_") + ".page";
+            var fileName = name.toLowerCase().replace(" ", "_");
             var newPage = pagesModel.addPage(fileName, {title: name, icon: iconName, margin: margin})
             var row = newPage.insertChild(0, {name: "row-0", isTitle: false, title: ""})
             var column = row.insertChild(0, {name: "column-0", showBackground: true})
