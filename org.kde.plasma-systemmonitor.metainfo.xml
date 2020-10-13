@@ -23,6 +23,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="ro">Monitor de sistem Plasma</name>
   <name xml:lang="sk">Plasma System Monitor</name>
   <name xml:lang="sl">Plasma System Monitor</name>
+  <name xml:lang="sv">Plasma systemövervakare</name>
   <name xml:lang="uk">Системний монітор Плазми</name>
   <name xml:lang="x-test">xxPlasma System Monitorxx</name>
   <summary>An application for monitoring system resources.</summary>
@@ -40,6 +41,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="pt">Uma aplicação para monitorizar os recursos do sistema.</summary>
   <summary xml:lang="ro">Aplicație pentru monitorizarea resurselor sistemului.</summary>
   <summary xml:lang="sl">Aplikacija za spremljanje sistemskih virov.</summary>
+  <summary xml:lang="sv">Ett program för att övervaka systemresurser.</summary>
   <summary xml:lang="uk">Програма для стеження за використанням ресурсів системи.</summary>
   <summary xml:lang="x-test">xxAn application for monitoring system resources.xx</summary>
   <description>
@@ -58,6 +60,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="pt">O Monitor do Sistema do Plasma oferece uma interface para monitorizar os sensores do sistema, a informação dos processos e os outros recursos do sistema.</p>
     <p xml:lang="ro">Monitorul de sistem Plasma oferă o interfață pentru monitorizarea senzorilor sistemului, a informației despre procese și altor resurse ale sistemului.</p>
     <p xml:lang="sl">Plasma System Monitor nudi vmesnik za nadzor sistemskih senzorjev, obdeluje informacije in druge sistemske vire.</p>
+    <p xml:lang="sv">Plasma systemövervakare tillhandahåller ett gränssnitt för att övervaka systemsensorer, processinformation och andra systemresurser.</p>
     <p xml:lang="uk">«Системний монітор Плазми» є інтерфейсом для спостереження за даними датчиків системи, відомостями щодо процесів та інших ресурсів системи.</p>
     <p xml:lang="x-test">xxPlasma System Monitor provides an interface for monitoring system sensors, process information and other system resources.xx</p>
   </description>
