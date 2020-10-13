@@ -23,6 +23,7 @@ Dialog {
 
     modal: true
     parent: Overlay.overlay
+    focus: true
 
     x: parent ? parent.width / 2 - width / 2 : 0
     y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
