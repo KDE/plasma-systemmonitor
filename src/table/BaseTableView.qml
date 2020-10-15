@@ -157,7 +157,7 @@ FocusScope {
                     width = width
                 }
 
-                width = Math.max(width * scrollView.innerWidth, root.minimumColumnWidth)
+                width = Math.max(Math.floor(width * scrollView.innerWidth), root.minimumColumnWidth)
                 return width
             }
 
