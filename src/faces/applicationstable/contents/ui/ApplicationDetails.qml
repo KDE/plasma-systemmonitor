@@ -40,7 +40,10 @@ Page {
         Kirigami.Theme.inherit: false
         Kirigami.Theme.colorSet: Kirigami.Theme.Window
 
-        Label { text: i18nc("@title:window", "Details") }
+        Label {
+            anchors.left: parent.left
+            text: i18nc("@title:window", "Details")
+        }
 
         ToolButton {
             anchors.right: parent.right

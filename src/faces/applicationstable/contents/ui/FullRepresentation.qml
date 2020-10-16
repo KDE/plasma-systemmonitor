@@ -117,7 +117,7 @@ Faces.SensorFace {
                 onPressed: startX = mouse.x
 
                 onPositionChanged: {
-                    var change = mouse.x - startX
+                    var change = LayoutMirroring.enabled ? startX - mouse.x : mouse.x - startX
                     var newWidth = details.width - change
                     if (newWidth > details.minimumWidth && newWidth < details.maximumWidth) {
                         details.width += -change
@@ -131,8 +131,8 @@ Faces.SensorFace {
 
             anchors.top: parent.top
             anchors.bottom: parent.bottom
+            anchors.right: parent.right
 
-            x: parent.width - width
             property real minimumWidth: 150
             property real maximumWidth: root.width * 0.75
 
@@ -145,7 +145,7 @@ Faces.SensorFace {
 
             states: State {
                 name: "closed"
-                PropertyChanges { target: details; x: parent.width; visible: false; enabled: false }
+                PropertyChanges { target: details; anchors.rightMargin: -width ; visible: false; enabled: false }
             }
             transitions: Transition {
                 SequentialAnimation {
