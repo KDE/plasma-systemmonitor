@@ -31,6 +31,7 @@ ColumnLayout {
             Layout.preferredHeight: model.data.isTitle ? title.height : 0
 
             Kirigami.Heading {
+                anchors.left: parent.left
                 id: title
                 level: 2
                 text: model.data.title ? model.data.title : ""
