@@ -155,7 +155,7 @@ Table.BaseTableView {
                 id: delegate
                 treeDecorationVisible: !view.flatList
                 iconName: {
-                    var index = descendantsModel.mapToSource(descedantsModel.index(model.row, 0))
+                    var index = descendantsModel.mapToSource(descendantsModel.index(model.row, 0))
                     index = rowFilter.mapToSource(index);
                     index = cacheModel.mapToSource(index);
                     index = displayModel.mapToSource(index);
