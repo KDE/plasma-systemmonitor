@@ -26,6 +26,8 @@ Table.BaseTableView {
     property alias viewMode: rowFilter.viewMode
     property bool flatList
 
+    readonly property bool treeModeSupported: processModel.hasOwnProperty("flatList")
+
     property alias columnDisplay: displayModel.columnDisplay
     property var enabledColumns
     onEnabledColumnsChanged: processModel.updateEnabledAttributes()

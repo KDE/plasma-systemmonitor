@@ -47,6 +47,7 @@ Faces.SensorFace {
             icon.name: "view-list-details"
             checkable: true
             checked: root.config.viewMode === mode
+            visible: table.treeModeSupported
             text: i18nc("@action", "Display as List")
 
             displayHint: Kirigami.Action.IconOnly
@@ -63,6 +64,7 @@ Faces.SensorFace {
             icon.name: "view-list-tree"
             checkable: true
             checked: root.config.viewMode === mode
+            visible: table.treeModeSupported
             text: i18nc("@action", "Display as Tree")
             displayHint: Kirigami.Action.IconOnly
             property int mode: 1
