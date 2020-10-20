@@ -69,10 +69,12 @@ Dialog {
                     id: delegateComponent
                     Kirigami.AbstractListItem {
                         id: listItem
+                        readonly property string title: model ? model.title : ""
+                        readonly property string icon: model ? model.icon : ""
                         //Using directly model.hidden below doesn't work for some reason
-                        readonly property bool hidden: model.hidden
-                        readonly property var filesWritable: model.filesWriteable
-                        readonly property bool shouldRemoveFiles: model.shouldRemoveFiles
+                        readonly property bool hidden: model ? model.hidden : false
+                        readonly property var filesWritable: model ? model.filesWriteable : false
+                        readonly property bool shouldRemoveFiles: model ? model.shouldRemoveFiles : false
 
                         activeFocusOnTab: false
 
@@ -88,26 +90,26 @@ Dialog {
                                 }
                             }
                             CheckBox {
-                                checked: !hidden
-                                onToggled: pageList.model.setData(pageList.model.index(index, 0), !hidden, Page.PagesModel.HiddenRole)
-                                ToolTip.text: hidden ? i18nc("@info:tooltip", "Show Page")
-                                                     : i18nc("@info:tooltip", "Hide Page")
+                                checked: !listItem.hidden
+                                onToggled: pageList.model.setData(pageList.model.index(index, 0), !listItem.hidden, Page.PagesModel.HiddenRole)
+                                ToolTip.text: listItem.hidden ? i18nc("@info:tooltip", "Show Page")
+                                                              : i18nc("@info:tooltip", "Hide Page")
                                 ToolTip.delay: Kirigami.Units.toolTipDelay
                                 ToolTip.visible: hovered
                             }
                             Kirigami.Icon {
                                 Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
                                 Layout.preferredHeight: Layout.preferredWidth
-                                source: model.icon
-                                opacity: hidden ? 0.3 : 1
+                                source: listItem.icon
+                                opacity: listItem.hidden ? 0.3 : 1
                             }
                             ColumnLayout {
                                 Layout.alignment: Qt.AlignVCenter
                                 spacing: 0
                                 Label {
                                     Layout.fillWidth: true
-                                    text: model.title
-                                    opacity: hidden ? 0.3 : 1
+                                    text: listItem.title
+                                    opacity: listItem.hidden ? 0.3 : 1
                                 }
                                 Label {
                                     id: subtitle
