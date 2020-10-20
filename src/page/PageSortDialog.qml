@@ -62,7 +62,6 @@ Dialog {
                     id: sortModel
                 }
                 delegate: Kirigami.DelegateRecycler {
-                    width: pageList.width
                     sourceComponent: delegateComponent
                 }
                 Component {
@@ -75,6 +74,8 @@ Dialog {
                         readonly property bool hidden: model ? model.hidden : false
                         readonly property var filesWritable: model ? model.filesWriteable : false
                         readonly property bool shouldRemoveFiles: model ? model.shouldRemoveFiles : false
+
+                        width: pageList.width
 
                         activeFocusOnTab: false
 
