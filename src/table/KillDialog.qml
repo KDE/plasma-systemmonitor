@@ -4,17 +4,22 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-import QtQuick 2.12
-import QtQuick.Controls 2.12
-import QtQuick.Layouts 1.12
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.15
 
 import org.kde.kirigami 2.8 as Kirigami
 
 Dialog {
     id: dialog
 
+    required property string killButtonText
+    required property string killButtonIcon
+    required property string questionText
+
     property var items: []
     property bool doNotAskAgain: false
+    property alias delegate: list.delegate
 
     modal: true
     parent: Overlay.overlay
@@ -28,12 +33,6 @@ Dialog {
     bottomPadding: Kirigami.Units.smallSpacing
     topPadding: Kirigami.Units.smallSpacing
     bottomInset: -Kirigami.Units.smallSpacing
-
-    property string killButtonText: "Exterminate"
-    property string killButtonIcon: "killbots"
-    property string questionText: "Ex-ter-mi-nate"
-
-    property alias delegate: list.delegate
 
     contentItem: Rectangle {
         Kirigami.Theme.colorSet: Kirigami.Theme.View
