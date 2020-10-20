@@ -9,6 +9,7 @@
 #include <QCommandLineParser>
 #include <QQmlContext>
 #include <QWindow>
+#include <QLoggingCategory>
 
 #include <KDeclarative/KDeclarative>
 #include <KDBusService>
@@ -17,6 +18,21 @@
 
 #include "ToolsModel.h"
 #include "Configuration.h"
+
+static QLoggingCategory::CategoryFilter oldCategoryFilter;
+
+// Qt 5.14 introduces a new syntax for connections
+// framework code can't port away due to needing Qt5.12
+// this filters out the warnings
+// Remove this once we depend on Qt5.15 in frameworks
+void filterConnectionSyntaxWarning(QLoggingCategory *category)
+{
+    if (qstrcmp(category->categoryName(), "qt.qml.connections") == 0) {
+        category->setEnabled(QtWarningMsg, false);
+    } else if (oldCategoryFilter) {
+        oldCategoryFilter(category);
+    }
+}
 
 class CommandLineArguments : public QObject
 {
@@ -52,6 +68,8 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("utilities-system-monitor")));
+
+    oldCategoryFilter = QLoggingCategory::installFilter(filterConnectionSyntaxWarning);
 
     KLocalizedString::setApplicationDomain("plasma-systemmonitor");
 
