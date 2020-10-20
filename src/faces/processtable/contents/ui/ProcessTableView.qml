@@ -91,10 +91,20 @@ Table.BaseTableView {
         idRole: "Attribute"
     }
 
+    // Temporary workaround to be able to run against Plasma 5.20,
+    // which lacks the "flatList" property on ProcessDataModel. If
+    // we assign it directly, the face will fail to load because
+    // the property is missing. However, when using a Binding here
+    // it will only produce a runtime warning.
+    Binding {
+        target: processModel
+        property: "flatList"
+        value: view.flatList
+    }
+
     Process.ProcessDataModel {
         id: processModel
 
-        flatList: view.flatList
         property int nameColumn
         property int pidColumn
         property int uidColumn
