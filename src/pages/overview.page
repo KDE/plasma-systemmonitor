@@ -3,7 +3,7 @@
 
 [Face-94410222150464][Appearance]
 chartFace=org.kde.ksysguard.piechart
-title=Memory
+Title=Memory
 
 [Face-94410222150464][Sensors]
 highPrioritySensorIds=["mem/physical/allocated"]
@@ -14,7 +14,7 @@ showLegend=false
 
 [Face-94410238879984][Appearance]
 chartFace=org.kde.ksysguard.textonly
-title=Networks
+Title=Networks
 
 [Face-94410238879984][Sensors]
 highPrioritySensorIds=["network/(?!all).*/ipv4address","network/(?!all).*/ipv6address"]
@@ -28,7 +28,7 @@ chartFace=org.kde.ksysguard.applicationstable
 
 [Face-94410261307168][Appearance]
 chartFace=org.kde.ksysguard.piechart
-title=Disk
+Title=Disk
 
 [Face-94410261307168][Sensors]
 highPrioritySensorIds=["partitions/all/usedspace"]
@@ -39,7 +39,7 @@ showLegend=false
 
 [Face-94410266684256][Appearance]
 chartFace=org.kde.ksysguard.piechart
-title=CPU
+Title=CPU
 
 [Face-94410266684256][Sensors]
 highPrioritySensorIds=["cpu/system/TotalLoad"]
@@ -53,14 +53,14 @@ chartFace=org.kde.ksysguard.piechart
 
 [Face-94410278989264][Appearance]
 chartFace=org.kde.ksysguard.textonly
-title=System
+Title=System
 
 [Face-94410278989264][Sensors]
 highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/qtVersion","os/plasma/kfVersion","os/plasma/plasmaVersion"]
 
 [Face-94410280144624][Appearance]
 chartFace=org.kde.ksysguard.textonly
-title=Network Rates
+Title=Network Rates
 
 [Face-94410280144624][Sensors]
 highPrioritySensorIds=["network/(?!all).*/download","network/(?!all).*/upload"]
@@ -78,12 +78,12 @@ chartFace=org.kde.ksysguard.piechart
 [page]
 icon=speedometer
 margin=2
-title=Overview
+Title=Overview
 
 [page][row-0]
 isTitle=false
 name=row-0
-title=
+Title=
 
 [page][row-0][column-0]
 name=column-0
@@ -115,12 +115,12 @@ name=section-0
 [page][row-1]
 isTitle=true
 name=row-1
-title=Network & System
+Title=Network & System
 
 [page][row-2]
 isTitle=false
 name=row-2
-title=
+Title=
 
 [page][row-2][column-0]
 name=column-0
@@ -154,12 +154,12 @@ name=section-4
 [page][row-3]
 isTitle=true
 name=row-3
-title=Applications
+Title=Applications
 
 [page][row-4]
 isTitle=false
 name=row-4
-title=
+Title=
 
 [page][row-4][column-0]
 name=column-0

@@ -83,7 +83,11 @@ PageDataObject *PageDataObject::insertChild(int index, const QVariantMap &proper
 
     auto child = new PageDataObject(m_config, this);
     for (auto itr = properties.begin(); itr != properties.end(); ++itr) {
-        child->insert(itr.key(), itr.value());
+        QString key = itr.key();
+        if (key == QLatin1String("Title")) {
+            key = QStringLiteral("title");
+        }
+        child->insert(key, itr.value());
     }
     m_children.insert(index, child);
     child->markDirty();
@@ -205,7 +209,14 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
         for (auto type : types) {
             auto value = converted(variant, type);
             if (value.isValid()) {
-                insert(itr.key(), value);
+                // We want titles translatable
+                // While most config keys are lowerCase, KDE's translation system only deals with UpperCamelCase
+                // We abstract in this class to keep the rest of plasma-systemmonitor code consistent
+                QString key = itr.key();
+                if (key == QLatin1String("Title")) {
+                    key = QStringLiteral("title");
+                }
+                insert(key, value);
                 break;
             }
         }
@@ -247,7 +258,11 @@ bool PageDataObject::save(KConfigBase &config, const QString &groupName, const Q
         if (ignoreProperties.contains(name)) {
             continue;
         } else {
-            group.writeEntry(name, value(name));
+            QString key = name;
+            if (name == "title") {
+                key = "Title";
+            }
+            group.writeEntry(key, value(name));
         }
     }
 

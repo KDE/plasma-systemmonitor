@@ -3,7 +3,7 @@
 
 [Face-94107109903664][Appearance]
 chartFace=org.kde.ksysguard.linechart
-title=
+Title=
 
 [Face-94107109903664][Sensors]
 highPrioritySensorIds=["cpu/cpu.*/TotalLoad"]
@@ -16,7 +16,7 @@ rangeToX=100
 
 [Face-94107115022400][Appearance]
 chartFace=org.kde.ksysguard.linechart
-title=
+Title=
 
 [Face-94107115022400][Sensors]
 highPrioritySensorIds=["mem/physical/allocated","mem/swap/used"]
@@ -27,7 +27,7 @@ rangeToX=100
 
 [Face-94107150101264][Appearance]
 chartFace=org.kde.ksysguard.linechart
-title=
+Title=
 
 [Face-94107150101264][Sensors]
 highPrioritySensorIds=["network/all/download","network/all/upload"]
@@ -39,17 +39,17 @@ rangeToX=100
 [page]
 icon=office-chart-line
 margin=2
-title=History
+Title=History
 
 [page][row-0]
 isTitle=true
 name=row-0
-title=CPU
+Title=CPU
 
 [page][row-1]
 isTitle=false
 name=row-1
-title=false
+Title=false
 
 [page][row-1][column-0]
 name=column-0
@@ -63,12 +63,12 @@ name=section-0
 [page][row-2]
 isTitle=true
 name=row-2
-title=Memory
+Title=Memory
 
 [page][row-3]
 isTitle=false
 name=row-3
-title=false
+Title=false
 
 [page][row-3][column-0]
 name=column-0
@@ -82,12 +82,12 @@ name=section-0
 [page][row-4]
 isTitle=true
 name=row-4
-title=Network
+Title=Network
 
 [page][row-5]
 isTitle=false
 name=row-5
-title=false
+Title=false
 
 [page][row-5][column-0]
 name=column-0

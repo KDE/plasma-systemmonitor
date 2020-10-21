@@ -7,13 +7,13 @@ chartFace=org.kde.ksysguard.applicationstable
 [page]
 icon=homerun
 margin=0
-title=Applications
+Title=Applications
 actionsFace=Face-94920553440704
 
 [page][row-0]
 isTitle=false
 name=row-0
-title=
+Title=
 
 [page][row-0][column-0]
 name=column-0
