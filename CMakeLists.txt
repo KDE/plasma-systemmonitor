@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(systemmonitor VERSION 5.19.0)
 
-set(QT_MIN_VERSION "5.14.0")
+set(QT_MIN_VERSION "5.15.0")
 set(KF5_MIN_VERSION "5.66.0")
 
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
