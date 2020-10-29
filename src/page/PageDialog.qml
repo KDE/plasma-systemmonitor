@@ -71,7 +71,7 @@ Dialog {
             TextField {
                 id: nameField
 
-                Kirigami.FormData.label: i18nc("@label:textbox", "Name")
+                Kirigami.FormData.label: i18nc("@label:textbox", "Name:")
                 text: dialog.name
                 onTextEdited: dialog.name = text
 
@@ -86,12 +86,12 @@ Dialog {
                 visible: !nameField.acceptableInput
             }
             Button {
-                Kirigami.FormData.label: i18nc("@label:textbox", "Icon")
+                Kirigami.FormData.label: i18nc("@label:textbox", "Icon:")
                 icon.name: dialog.iconName
                 onClicked: iconDialog.open()
             }
             ComboBox {
-                Kirigami.FormData.label: i18nc("@label:listbox", "Page Margins")
+                Kirigami.FormData.label: i18nc("@label:listbox", "Page Margins:")
 
                 textRole: "key"
 
@@ -113,7 +113,7 @@ Dialog {
             }
             ComboBox {
                 id: actionsCombobox
-                Kirigami.FormData.label: i18nc("@label:listbox", "Use Actions From")
+                Kirigami.FormData.label: i18nc("@label:listbox", "Use Actions From:")
                 visible: count > 1
                 textRole: "display"
                 valueRole: "id"
