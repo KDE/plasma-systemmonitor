@@ -61,6 +61,8 @@ Table.BaseTableView {
 
     onSort: rowFilter.sort(column, order)
 
+    headerModel: rowFilter
+
     model: KItemModels.KDescendantsProxyModel {
         id: descendantsModel
         sourceModel: rowFilter
