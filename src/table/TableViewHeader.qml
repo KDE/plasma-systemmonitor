@@ -28,6 +28,8 @@ FocusScope {
     property string idRole: "Attribute"
     property string sortName
 
+    property alias sourceModel: headerModel.sourceModel
+
     signal sort(int column, int order)
     signal resize(int column, real width)
     signal contextMenuRequested(int column, point position)
@@ -80,6 +82,7 @@ FocusScope {
             id: repeater
 
             model: KItemModels.KColumnHeadersModel {
+                id: headerModel
                 sourceModel: heading.view.model
             }
 

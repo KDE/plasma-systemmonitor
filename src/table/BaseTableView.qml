@@ -16,6 +16,8 @@ FocusScope {
     property alias model: tableView.model
     property alias delegate: tableView.delegate
 
+    property alias headerModel: heading.sourceModel
+
     property alias sortColumn: heading.sortColumn
     property alias sortOrder: heading.sortOrder
     property alias sortName: heading.sortName
