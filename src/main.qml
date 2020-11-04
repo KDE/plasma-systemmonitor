@@ -82,14 +82,9 @@ Kirigami.ApplicationWindow {
                         icon.name: "help-about-symbolic";
                         text: i18nc("@action", "About System Monitor");
                         onTriggered: app.pageStack.layers.push("AboutPage.qml")
-                    },
-                    Kirigami.Action {
-                        icon.name: "application-exit-symbolic";
-                        text: i18nc("@action", "Quit")
-                        shortcut: "Ctrl+Q"
-                        onTriggered: Qt.quit()
                     }
                 ]
+                Component.onCompleted: actions.push(app.quitAction)
             }
 
             Instantiator {
