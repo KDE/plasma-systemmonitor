@@ -23,8 +23,8 @@ FacesModel::FacesModel(QObject *parent)
 
 QHash<int, QByteArray> FacesModel::roleNames() const
 {
-    return QAbstractListModel::roleNames().unite(
-            {{IdRole, "id"}});
+    return {{Qt::DisplayRole, "display"},
+            {IdRole, "id"}};
 }
 
 int FacesModel::rowCount(const QModelIndex& parent) const

@@ -119,9 +119,7 @@ int main(int argc, char **argv)
 
     QQmlApplicationEngine engine;
 
-    KDeclarative::KDeclarative kdeclarative;
-    kdeclarative.setDeclarativeEngine(&engine);
-    kdeclarative.setupContext();
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
     engine.load(QStringLiteral(":/main.qml"));
 
