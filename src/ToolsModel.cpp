@@ -34,7 +34,6 @@ ToolsModel::ToolsModel(QObject* parent)
     entry.id = QStringLiteral("krunner");
     entry.name = i18nc("@action:inmenu", "Run Command");
     entry.icon = QStringLiteral("system-run");
-    entry.service = KService::serviceByDesktopName(QStringLiteral("krunner"));
     const auto runCommandShortcutList = KGlobalAccel::self()->globalShortcut(QStringLiteral("krunner.desktop"), QStringLiteral("_launch"));
     if (!runCommandShortcutList.isEmpty()) {
         entry.shortcut = runCommandShortcutList.first().toString();
@@ -111,6 +110,10 @@ void ToolsModel::trigger(const QString& id)
 
     if (itr->id == QStringLiteral("killWindow") && m_kwinInterface->isValid()) {
         m_kwinInterface->asyncCall(QStringLiteral("killWindow"));
+    } else if (itr->id == QLatin1String("krunner")) {
+        auto call = QDBusMessage::createMethodCall(QStringLiteral("org.kde.krunner"), QStringLiteral("/App"),
+            QStringLiteral("org.kde.krunner.App"), QStringLiteral("display"));
+        QDBusConnection::sessionBus().asyncCall(call);
     }
 }
 
