@@ -163,6 +163,11 @@ Kirigami.ScrollablePage {
         Control {
             Layout.preferredWidth: page.width - page.leftPadding - page.rightPadding
 
+            leftPadding: 0
+            rightPadding: 0
+            topPadding: 0
+            bottomPadding: 0
+
             contentItem: loader.controller.faceConfigUi
 
             Connections {
@@ -177,6 +182,10 @@ Kirigami.ScrollablePage {
 
         Control {
             Layout.fillWidth: true
+            leftPadding: 0
+            rightPadding: 0
+            topPadding: 0
+            bottomPadding: 0
             contentItem: loader.controller.sensorsConfigUi
 
             Connections {
