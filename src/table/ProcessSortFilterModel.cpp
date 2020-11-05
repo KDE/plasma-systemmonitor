@@ -193,5 +193,5 @@ void ProcessSortFilterModel::findColumns()
         }
     }
 
-    invalidate();
+    invalidateFilter();
 }
