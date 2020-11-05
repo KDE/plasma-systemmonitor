@@ -84,18 +84,6 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex& 
         result = QSortFilterProxyModel::filterAcceptsRow(sourceRow, sourceParent);
     }
 
-    // We are recursive, if a descendant is accepted, also the ancestors are
-    if (!result) {
-        const QModelIndex index = sourceModel()->index(sourceRow, 0, sourceParent);
-        const int count = sourceModel()->rowCount(index);
-
-        for (int i = 0; i < count; ++i) {
-            if (filterAcceptsRow(i, index)) {
-                return true;
-            }
-        }
-    }
-
     return result;
 }
 
