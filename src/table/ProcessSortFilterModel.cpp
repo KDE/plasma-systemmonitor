@@ -42,6 +42,7 @@ void ProcessSortFilterModel::setSourceModel(QAbstractItemModel* newSourceModel)
         connect(newSourceModel, &QAbstractItemModel::columnsInserted, this, &ProcessSortFilterModel::findColumns);
         connect(newSourceModel, &QAbstractItemModel::columnsRemoved, this, &ProcessSortFilterModel::findColumns);
         connect(newSourceModel, &QAbstractItemModel::columnsMoved, this, &ProcessSortFilterModel::findColumns);
+        findColumns();
     }
 }
 
