@@ -161,7 +161,8 @@ Kirigami.ScrollablePage {
         }
 
         Control {
-            Layout.fillWidth: true
+            Layout.preferredWidth: page.width - page.leftPadding - page.rightPadding
+
             contentItem: loader.controller.faceConfigUi
 
             Connections {
