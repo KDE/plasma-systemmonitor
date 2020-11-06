@@ -40,16 +40,37 @@ rangeToX=100
 icon=office-chart-line
 margin=2
 Title=History
+Title[ca]=Historial
+Title[es]=Historial
+Title[nl]=Geschiedenis
+Title[pt]=Histórico
+Title[sv]=Historik
+Title[uk]=Журнал
+Title[x-test]=xxHistoryxx
 
 [page][row-0]
 isTitle=true
 name=row-0
 Title=CPU
+Title[ca]=CPU
+Title[es]=CPU
+Title[nl]=CPU
+Title[pt]=CPU
+Title[sv]=Processor
+Title[uk]=Процесор
+Title[x-test]=xxCPUxx
 
 [page][row-1]
 isTitle=false
 name=row-1
 Title=false
+Title[ca]=fals
+Title[es]=falso
+Title[nl]=onwaar
+Title[pt]=falso
+Title[sv]=falskt
+Title[uk]=false
+Title[x-test]=xxfalsexx
 
 [page][row-1][column-0]
 name=column-0
@@ -64,11 +85,25 @@ name=section-0
 isTitle=true
 name=row-2
 Title=Memory
+Title[ca]=Memòria
+Title[es]=Memoria
+Title[nl]=Geheugen
+Title[pt]=Memória
+Title[sv]=Minne
+Title[uk]=Пам'ять
+Title[x-test]=xxMemoryxx
 
 [page][row-3]
 isTitle=false
 name=row-3
 Title=false
+Title[ca]=fals
+Title[es]=falso
+Title[nl]=onwaar
+Title[pt]=falso
+Title[sv]=falskt
+Title[uk]=false
+Title[x-test]=xxfalsexx
 
 [page][row-3][column-0]
 name=column-0
@@ -83,11 +118,25 @@ name=section-0
 isTitle=true
 name=row-4
 Title=Network
+Title[ca]=Xarxa
+Title[es]=Red
+Title[nl]=Netwerk
+Title[pt]=Rede
+Title[sv]=Nätverk
+Title[uk]=Мережа
+Title[x-test]=xxNetworkxx
 
 [page][row-5]
 isTitle=false
 name=row-5
 Title=false
+Title[ca]=fals
+Title[es]=falso
+Title[nl]=onwaar
+Title[pt]=falso
+Title[sv]=falskt
+Title[uk]=false
+Title[x-test]=xxfalsexx
 
 [page][row-5][column-0]
 name=column-0

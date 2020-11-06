@@ -8,6 +8,13 @@ chartFace=org.kde.ksysguard.applicationstable
 icon=homerun
 margin=0
 Title=Applications
+Title[ca]=Aplicacions
+Title[es]=Aplicaciones
+Title[nl]=Toepassingen
+Title[pt]=Aplicações
+Title[sv]=Program
+Title[uk]=Програми
+Title[x-test]=xxApplicationsxx
 actionsFace=Face-94920553440704
 
 [page][row-0]

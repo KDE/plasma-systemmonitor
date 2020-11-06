@@ -4,6 +4,13 @@
 [Face-94410222150464][Appearance]
 chartFace=org.kde.ksysguard.piechart
 Title=Memory
+Title[ca]=Memòria
+Title[es]=Memoria
+Title[nl]=Geheugen
+Title[pt]=Memória
+Title[sv]=Minne
+Title[uk]=Пам'ять
+Title[x-test]=xxMemoryxx
 
 [Face-94410222150464][Sensors]
 highPrioritySensorIds=["mem/physical/allocated"]
@@ -15,6 +22,13 @@ showLegend=false
 [Face-94410238879984][Appearance]
 chartFace=org.kde.ksysguard.textonly
 Title=Networks
+Title[ca]=Xarxes
+Title[es]=Redes
+Title[nl]=Netwerken
+Title[pt]=Redes
+Title[sv]=Nätverk
+Title[uk]=Мережі
+Title[x-test]=xxNetworksxx
 
 [Face-94410238879984][Sensors]
 highPrioritySensorIds=["network/(?!all).*/ipv4address","network/(?!all).*/ipv6address"]
@@ -29,6 +43,13 @@ chartFace=org.kde.ksysguard.applicationstable
 [Face-94410261307168][Appearance]
 chartFace=org.kde.ksysguard.piechart
 Title=Disk
+Title[ca]=Disc
+Title[es]=Disco
+Title[nl]=Schijf
+Title[pt]=Disco
+Title[sv]=Disk
+Title[uk]=Диск
+Title[x-test]=xxDiskxx
 
 [Face-94410261307168][Sensors]
 highPrioritySensorIds=["partitions/all/usedspace"]
@@ -40,6 +61,13 @@ showLegend=false
 [Face-94410266684256][Appearance]
 chartFace=org.kde.ksysguard.piechart
 Title=CPU
+Title[ca]=CPU
+Title[es]=CPU
+Title[nl]=CPU
+Title[pt]=CPU
+Title[sv]=Processor
+Title[uk]=Процесор
+Title[x-test]=xxCPUxx
 
 [Face-94410266684256][Sensors]
 highPrioritySensorIds=["cpu/system/TotalLoad"]
@@ -54,6 +82,13 @@ chartFace=org.kde.ksysguard.piechart
 [Face-94410278989264][Appearance]
 chartFace=org.kde.ksysguard.textonly
 Title=System
+Title[ca]=Sistema
+Title[es]=Sistema
+Title[nl]=Systeem
+Title[pt]=Sistema
+Title[sv]=System
+Title[uk]=Система
+Title[x-test]=xxSystemxx
 
 [Face-94410278989264][Sensors]
 highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/qtVersion","os/plasma/kfVersion","os/plasma/plasmaVersion"]
@@ -61,6 +96,13 @@ highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/qt
 [Face-94410280144624][Appearance]
 chartFace=org.kde.ksysguard.textonly
 Title=Network Rates
+Title[ca]=Velocitats de la xarxa
+Title[es]=Velocidades de la red
+Title[nl]=Netwerksnelheden
+Title[pt]=Taxas de Rede
+Title[sv]=Nätverkshastigheter
+Title[uk]=Швидкості у мережі
+Title[x-test]=xxNetwork Ratesxx
 
 [Face-94410280144624][Sensors]
 highPrioritySensorIds=["network/(?!all).*/download","network/(?!all).*/upload"]
@@ -79,6 +121,13 @@ chartFace=org.kde.ksysguard.piechart
 icon=speedometer
 margin=2
 Title=Overview
+Title[ca]=Vista general
+Title[es]=Resumen
+Title[nl]=Overzicht
+Title[pt]=Visão Geral
+Title[sv]=Översikt
+Title[uk]=Огляд
+Title[x-test]=xxOverviewxx
 
 [page][row-0]
 isTitle=false
@@ -116,6 +165,13 @@ name=section-0
 isTitle=true
 name=row-1
 Title=Network & System
+Title[ca]=Xarxa i sistema
+Title[es]=Red y sistema
+Title[nl]=Netwerk & systeem
+Title[pt]=Rede & Sistema
+Title[sv]=Nätverk och system
+Title[uk]=Мережа і система
+Title[x-test]=xxNetwork & Systemxx
 
 [page][row-2]
 isTitle=false
@@ -155,6 +211,13 @@ name=section-4
 isTitle=true
 name=row-3
 Title=Applications
+Title[ca]=Aplicacions
+Title[es]=Aplicaciones
+Title[nl]=Toepassingen
+Title[pt]=Aplicações
+Title[sv]=Program
+Title[uk]=Програми
+Title[x-test]=xxApplicationsxx
 
 [page][row-4]
 isTitle=false
