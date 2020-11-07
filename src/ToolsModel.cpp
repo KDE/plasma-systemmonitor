@@ -30,21 +30,10 @@ ToolsModel::ToolsModel(QObject* parent)
     addFromService(QStringLiteral("org.kde.kmag"));
     addFromService(QStringLiteral("htop"));
 
-    auto entry = Entry{};
-    entry.id = QStringLiteral("krunner");
-    entry.name = i18nc("@action:inmenu", "Run Command");
-    entry.icon = QStringLiteral("system-run");
-    entry.service = KService::serviceByDesktopName(QStringLiteral("krunner"));
-    const auto runCommandShortcutList = KGlobalAccel::self()->globalShortcut(QStringLiteral("krunner.desktop"), QStringLiteral("_launch"));
-    if (!runCommandShortcutList.isEmpty()) {
-        entry.shortcut = runCommandShortcutList.first().toString();
-    }
-    m_entries << entry;
-
     m_kwinInterface = new QDBusInterface{QStringLiteral("org.kde.KWin"), QStringLiteral("/KWin"), QStringLiteral("org.kde.KWin"), QDBusConnection::sessionBus(), this};
 
     if (m_kwinInterface->isValid()) {
-        entry = Entry{};
+        auto entry = Entry{};
         entry.id = QStringLiteral("killWindow");
         entry.icon = "document-close";
         entry.name = i18nc("@action:inmenu", "Kill a Window");
