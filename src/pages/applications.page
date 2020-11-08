@@ -8,6 +8,7 @@ chartFace=org.kde.ksysguard.applicationstable
 icon=homerun
 margin=0
 Title=Applications
+Title[az]=Tətbiqlər
 Title[ca]=Aplicacions
 Title[en_GB]=Applications
 Title[es]=Aplicaciones

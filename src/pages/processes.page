@@ -8,6 +8,7 @@ chartFace=org.kde.ksysguard.processtable
 icon=view-process-system
 margin=0
 Title=Processes
+Title[az]=Proseslər
 Title[ca]=Processos
 Title[en_GB]=Processes
 Title[es]=Procesos

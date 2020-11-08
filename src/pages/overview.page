@@ -4,6 +4,7 @@
 [Face-94410222150464][Appearance]
 chartFace=org.kde.ksysguard.piechart
 Title=Memory
+Title[az]=Yaddaş
 Title[ca]=Memòria
 Title[en_GB]=Memory
 Title[es]=Memoria
@@ -27,6 +28,7 @@ showLegend=false
 [Face-94410238879984][Appearance]
 chartFace=org.kde.ksysguard.textonly
 Title=Networks
+Title[az]=Şəbəkələr
 Title[ca]=Xarxes
 Title[en_GB]=Networks
 Title[es]=Redes
@@ -53,6 +55,7 @@ chartFace=org.kde.ksysguard.applicationstable
 [Face-94410261307168][Appearance]
 chartFace=org.kde.ksysguard.piechart
 Title=Disk
+Title[az]=Disk
 Title[ca]=Disc
 Title[en_GB]=Disk
 Title[es]=Disco
@@ -76,6 +79,7 @@ showLegend=false
 [Face-94410266684256][Appearance]
 chartFace=org.kde.ksysguard.piechart
 Title=CPU
+Title[az]=CPU
 Title[ca]=CPU
 Title[en_GB]=CPU
 Title[es]=CPU
@@ -102,6 +106,7 @@ chartFace=org.kde.ksysguard.piechart
 [Face-94410278989264][Appearance]
 chartFace=org.kde.ksysguard.textonly
 Title=System
+Title[az]=Sistem
 Title[ca]=Sistema
 Title[en_GB]=System
 Title[es]=Sistema
@@ -121,6 +126,7 @@ highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/qt
 [Face-94410280144624][Appearance]
 chartFace=org.kde.ksysguard.textonly
 Title=Network Rates
+Title[az]=Şəbəkə Sürəti
 Title[ca]=Velocitats de la xarxa
 Title[en_GB]=Network Rates
 Title[es]=Velocidades de la red
@@ -151,6 +157,7 @@ chartFace=org.kde.ksysguard.piechart
 icon=speedometer
 margin=2
 Title=Overview
+Title[az]=Ümumi Baxış
 Title[ca]=Vista general
 Title[en_GB]=Overview
 Title[es]=Resumen
@@ -200,6 +207,7 @@ name=section-0
 isTitle=true
 name=row-1
 Title=Network & System
+Title[az]=Şəbəkə və Sistem
 Title[ca]=Xarxa i sistema
 Title[en_GB]=Network & System
 Title[es]=Red y sistema
@@ -251,6 +259,7 @@ name=section-4
 isTitle=true
 name=row-3
 Title=Applications
+Title[az]=Tətbiqlər
 Title[ca]=Aplicacions
 Title[en_GB]=Applications
 Title[es]=Aplicaciones
