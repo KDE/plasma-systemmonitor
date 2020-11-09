@@ -6,6 +6,8 @@
 
 #include "PageDataObject.h"
 
+#include <array>
+
 #include <QDebug>
 #include <QRegularExpression>
 
