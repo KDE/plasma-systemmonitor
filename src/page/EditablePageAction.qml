@@ -17,7 +17,7 @@ Kirigami.PagePoolAction {
 
     property PageDataObject pageData
 
-    page: Qt.resolvedUrl("EditablePage.qml") + "?page=" + pageData.title
+    page: Qt.resolvedUrl("EditablePage.qml") + "?page=" + pageData.fileName
 
     initialProperties: {
         "pageData": action.pageData
