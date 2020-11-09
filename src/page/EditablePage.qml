@@ -194,6 +194,7 @@ Kirigami.Page {
         color: Kirigami.Theme.backgroundColor
 
         opacity: 1
+        visible: opacity > 0
         Behavior on opacity { OpacityAnimator { duration: Kirigami.Units.shortDuration } }
 
         BusyIndicator {
