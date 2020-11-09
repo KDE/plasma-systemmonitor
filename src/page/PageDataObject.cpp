@@ -358,3 +358,8 @@ bool PageDataObject::isGroupEmpty(const KConfigGroup &group)
 
     return true;
 }
+
+QString PageDataObject::fileName() const
+{
+    return m_config->name();
+}

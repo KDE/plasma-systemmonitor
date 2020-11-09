@@ -19,6 +19,7 @@ class PageDataObject : public QQmlPropertyMap
     Q_OBJECT
     Q_PROPERTY(QQmlListProperty<PageDataObject> children READ childrenProperty NOTIFY childrenChanged)
     Q_PROPERTY(bool dirty READ dirty NOTIFY dirtyChanged)
+    Q_PROPERTY(QString fileName READ fileName CONSTANT)
 
 public:
     explicit PageDataObject(const KSharedConfig::Ptr &config, QObject *parent = nullptr);
@@ -59,6 +60,8 @@ public:
 
     FaceLoader *faceLoader();
     void setFaceLoader(FaceLoader *faceLoader);
+
+    QString fileName() const;
 
 private:
     bool isGroupEmpty(const KConfigGroup &group);

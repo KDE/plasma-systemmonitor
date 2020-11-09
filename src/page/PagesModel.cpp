@@ -57,11 +57,11 @@ QVariant PagesModel::data(const QModelIndex &index, int role) const
         case IconRole:
             return data->value("icon");
         case FileNameRole:
-            return data->config()->name();
+            return data->fileName();
         case HiddenRole:
-            return m_hiddenPages.contains(data->config()->name());
+            return m_hiddenPages.contains(data->fileName());
         case FilesWriteableRole:
-            return m_writeableCache[data->config()->name()];
+            return m_writeableCache[data->fileName()];
         default:
             return QVariant{};
     }
@@ -102,8 +102,8 @@ void PagesModel::componentComplete()
         page->load(*config, QStringLiteral("page"));
 
         connect(page, &PageDataObject::saved, this, [this, page]() {
-            if (m_writeableCache[page->config()->name()] == NotWriteable) {
-                m_writeableCache[page->config()->name()] = LocalChanges;
+            if (m_writeableCache[page->fileName()] == NotWriteable) {
+                m_writeableCache[page->fileName()] = LocalChanges;
                 auto i = m_pages.indexOf(page);
                 Q_EMIT dataChanged(index(i), index(i), {FilesWriteableRole});
             }
@@ -126,13 +126,13 @@ void PagesModel::sort(int column, Qt::SortOrder order)
 
     Q_EMIT layoutAboutToBeChanged({QPersistentModelIndex()}, QAbstractItemModel::VerticalSortHint);
     auto last = std::stable_partition(m_pages.begin(), m_pages.end(), [this] (PageDataObject *page) {
-        return m_pageOrder.contains(page->config()->name());
+        return m_pageOrder.contains(page->fileName());
     });
     std::sort(m_pages.begin(), last, [this] (PageDataObject *left, PageDataObject *right) {
-        return m_pageOrder.indexOf(left->config()->name()) < m_pageOrder.indexOf(right->config()->name());
+        return m_pageOrder.indexOf(left->fileName()) < m_pageOrder.indexOf(right->fileName());
     });
     std::transform(last, m_pages.end(), std::back_inserter(m_pageOrder), [] (PageDataObject *page) {
-        return page->config()->name();
+        return page->fileName();
     });
     if (last != m_pages.end()) {
         Q_EMIT pageOrderChanged();
@@ -204,7 +204,7 @@ void PagesModel::setHiddenPages(const QStringList &hiddenPages)
 void PagesModel::removeLocalPageFiles(const QString &fileName)
 {
     auto it = std::find_if(m_pages.begin(), m_pages.end(), [&] (PageDataObject *page) {
-        return page->config()->name() == fileName;
+        return page->fileName() == fileName;
     });
     if (it == m_pages.end()) {
         return;
@@ -213,7 +213,7 @@ void PagesModel::removeLocalPageFiles(const QString &fileName)
         return;
     }
     PageDataObject * const page = *it;
-    QStringList files = QStandardPaths::locateAll(QStandardPaths::AppDataLocation, page->config()->name(), QStandardPaths::LocateFile);
+    QStringList files = QStandardPaths::locateAll(QStandardPaths::AppDataLocation, page->fileName(), QStandardPaths::LocateFile);
     for (const auto file : files) {
         if (QFileInfo(file).isWritable()) {
             QFile::remove(file);
@@ -242,7 +242,7 @@ void PagesModel::ghnsEntriesChanged(const QQmlListReference& changedEntries)
                 const QString fileName = QUrl::fromLocalFile(file).fileName();
                 if (fileName.endsWith(".page")) {
                     auto it = std::find_if(m_pages.begin(), m_pages.end(), [&] (PageDataObject *page) {
-                        return page->config()->name() == fileName;
+                        return page->fileName() == fileName;
                     });
                     if (it != m_pages.end()) {
                         // User selected to overwrite the existing file in the kns dialog
@@ -252,7 +252,7 @@ void PagesModel::ghnsEntriesChanged(const QQmlListReference& changedEntries)
                         }
                     }
                     else {
-                        addPage(fileName.chopped(strlen(".page")))->config()->name();
+                        addPage(fileName.chopped(strlen(".page")));
                     }
                 }
             }
