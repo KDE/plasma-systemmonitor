@@ -16,11 +16,21 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 include(ECMInstallIcons)
+include(ECMQMLModules)
 include(FeatureSummary)
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Quick Widgets DBus)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS I18n Config Declarative Service GlobalAccel KIO DBusAddons NewStuff)
 find_package(KSysGuard REQUIRED)
+find_package(Qt5QuickControls2  ${QT_MIN_VERSION})
+set_package_properties(Qt5QuickControls2 PROPERTIES
+    TYPE RUNTIME
+)
+find_package(KF5Kirigami2  ${KF5_MIN_VERSION})
+set_package_properties(KF5Kirigami2 PROPERTIES
+    TYPE RUNTIME
+)
+ecm_find_qmlmodule(Qt.labs.qmlmodels 1.0)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
