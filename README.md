@@ -15,7 +15,7 @@ Requirements
 
 plasma-systemmonitor requires ksysguard 5.20, libksysguard 5.20, Qt 5.15 (with
 at least QtQuick, QtQuick Controls and the Qt.labs.qmlmodels plugin) and
-Kirigami 5.73.
+Kirigami 5.74.
 
 <!--
 SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
