@@ -15,6 +15,7 @@ kconfig_add_kcfg_files(plasma-systemmonitor_SRCS GENERATE_MOC systemmonitor.kcfg
 add_definitions(-DQT_NO_KEYWORDS)
 
 add_executable(plasma-systemmonitor ${plasma-systemmonitor_SRCS} ${plasma-systemmonitor_QRC})
+target_compile_definitions(plasma-systemmonitor PRIVATE PROJECT_VERSION="${PROJECT_VERSION}")
 target_link_libraries(plasma-systemmonitor
     Qt5::Quick
     Qt5::Widgets

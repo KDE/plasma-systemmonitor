@@ -76,7 +76,7 @@ int main(int argc, char **argv)
     KAboutData aboutData{
         /* componentName */ "plasma-systemmonitor",
         /* displayName */ i18n("System Monitor"),
-        /* version */ "1.0",
+        /* version */ PROJECT_VERSION,
         /* shortDescription */ i18n("An application for monitoring system resources"),
         /* licenseType */ KAboutLicense::GPL,
         /* copyrightStatement */ i18n("© 2020 Plasma Development Team"),

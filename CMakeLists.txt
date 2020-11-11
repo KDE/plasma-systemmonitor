@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(systemmonitor VERSION 5.19.0)
+project(systemmonitor)
+
+set(PROJECT_VERSION "5.20.80")
+set(PROJECT_VERSION_MAJOR 5)
 
 set(QT_MIN_VERSION "5.15.0")
 set(KF5_MIN_VERSION "5.66.0")
