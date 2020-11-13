@@ -36,7 +36,7 @@ ToolsModel::ToolsModel(QObject* parent)
         auto entry = Entry{};
         entry.id = QStringLiteral("killWindow");
         entry.icon = "document-close";
-        entry.name = i18nc("@action:inmenu", "Kill a Window");
+        entry.name = i18nc("@action:inmenu", "Kill a Window...");
         const auto killWindowShortcutList = KGlobalAccel::self()->globalShortcut(QStringLiteral("kwin"), QStringLiteral("Kill Window"));
         if (!killWindowShortcutList.isEmpty()) {
             entry.shortcut = killWindowShortcutList.first().toString();
