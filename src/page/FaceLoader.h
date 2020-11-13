@@ -7,6 +7,7 @@
 #pragma once
 
 #include <QObject>
+#include <QPointer>
 
 class PageDataObject;
 class QQuickItem;
@@ -21,6 +22,7 @@ class FaceLoader : public QObject
 
 public:
     FaceLoader(QObject *parent = nullptr);
+    ~FaceLoader() override;
 
     PageDataObject *dataObject() const;
     void setDataObject(PageDataObject *newDataObject);
@@ -32,7 +34,7 @@ public:
     void reset();
 
 private:
-    PageDataObject *m_dataObject = nullptr;
+    QPointer<PageDataObject> m_dataObject = nullptr;
     KSysGuard::SensorFaceController *m_faceController = nullptr;
     KSysGuard::SensorFaceController *m_oldController = nullptr;
 

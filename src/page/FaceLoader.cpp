@@ -19,6 +19,13 @@ FaceLoader::FaceLoader(QObject* parent)
 {
 }
 
+FaceLoader::~FaceLoader()
+{
+    if (m_dataObject) {
+        m_dataObject->setFaceLoader(nullptr);
+    }
+}
+
 PageDataObject * FaceLoader::dataObject() const
 {
     return m_dataObject;
@@ -32,6 +39,10 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
 
     if (m_faceController) {
         m_faceController->disconnect(m_dataObject);
+    }
+
+    if (m_dataObject) {
+        m_dataObject->setFaceLoader(nullptr);
     }
 
     m_dataObject = newDataObject;
