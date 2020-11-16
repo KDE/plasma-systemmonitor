@@ -102,7 +102,7 @@ Kirigami.ApplicationWindow {
 
         actions: [
             Kirigami.Action {
-                text: i18nc("@action", "Add new page")
+                text: i18nc("@action", "Add New Page...")
                 icon.name: "list-add"
                 onTriggered: pageDialog.open()
             }
