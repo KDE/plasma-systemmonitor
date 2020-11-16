@@ -65,7 +65,7 @@ Kirigami.ApplicationWindow {
                     },
                     Kirigami.Action {
                         icon.name: "handle-sort"
-                        text: i18nc("@action", "Edit pages...")
+                        text: i18nc("@action", "Edit or Remove pages...")
                         onTriggered: pageSortDialog.open()
                     },
                     Kirigami.Action {
