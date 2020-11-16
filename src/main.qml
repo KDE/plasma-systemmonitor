@@ -62,16 +62,19 @@ Kirigami.ApplicationWindow {
                         icon.name: "tools-symbolic"
                     },
                     Kirigami.Action {
+                        id: editPagesAction
                         icon.name: "handle-sort"
                         text: i18nc("@action", "Edit or Remove pages...")
                         onTriggered: pageSortDialog.open()
                     },
                     Kirigami.Action {
+                        id: ghnsAction
                         icon.name: "get-hot-new-stuff"
                         text: i18nc("@action:inmenu", "Get New Pages...")
                         onTriggered: getNewPageDialog.open()
                     },
                     Kirigami.Action {
+                        id: collapseAction
                         icon.name: app.globalDrawer.collapsed ? "view-split-left-right" : "view-left-close"
                         text: app.globalDrawer.collapsed ? i18nc("@action", "Expand Sidebar") : i18nc("@action", "Collapse Sidebar")
                         onTriggered: app.globalDrawer.collapsed = !app.globalDrawer.collapsed
@@ -140,6 +143,21 @@ Kirigami.ApplicationWindow {
                 globalDrawer.actions = actions
             }
         }
+
+        contentData: [
+            TapHandler {
+                acceptedButtons: Qt.RightButton
+                onTapped: globalContextMenu.popup(eventPoint.scenePosition.x, eventPoint.scenePosition.y, globalDrawer)
+            },
+            Menu {
+                id: globalContextMenu
+                modal: true
+
+                MenuItem { action: editPagesAction }
+                MenuItem { action: ghnsAction }
+                MenuItem { action: collapseAction }
+            }
+        ]
     }
 
     Page.PageDialog {
