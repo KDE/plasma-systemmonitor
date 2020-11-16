@@ -18,7 +18,7 @@ Container {
 
     property alias dataObject: loader.dataObject
 
-    topPadding: control.active ? toolbar.height + Kirigami.Units.smallSpacing * 2 : 0
+    topPadding: 0
     bottomPadding: 0
     leftPadding: 0
     rightPadding: 0
