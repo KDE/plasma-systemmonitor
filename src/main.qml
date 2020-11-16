@@ -67,14 +67,14 @@ Kirigami.ApplicationWindow {
                         onTriggered: pageSortDialog.open()
                     },
                     Kirigami.Action {
-                        icon.name: app.globalDrawer.collapsed ? "view-split-left-right" : "view-left-close"
-                        text: app.globalDrawer.collapsed ? i18nc("@action", "Expand Sidebar") : i18nc("@action", "Collapse Sidebar")
-                        onTriggered: app.globalDrawer.collapsed = !app.globalDrawer.collapsed
-                    },
-                    Kirigami.Action {
                         icon.name: "get-hot-new-stuff"
                         text: i18nc("@action:inmenu", "Get New Pages...")
                         onTriggered: getNewPageDialog.open()
+                    },
+                    Kirigami.Action {
+                        icon.name: app.globalDrawer.collapsed ? "view-split-left-right" : "view-left-close"
+                        text: app.globalDrawer.collapsed ? i18nc("@action", "Expand Sidebar") : i18nc("@action", "Collapse Sidebar")
+                        onTriggered: app.globalDrawer.collapsed = !app.globalDrawer.collapsed
                     },
                     Kirigami.Action {
                         icon.name: "help-about-symbolic";
