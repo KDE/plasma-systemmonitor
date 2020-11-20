@@ -30,6 +30,7 @@ public:
     Q_SIGNAL void controllerChanged();
 
     void reset();
+    void save();
 
 private:
     PageDataObject *m_dataObject = nullptr;

@@ -278,6 +278,9 @@ bool PageDataObject::save(KConfigBase &config, const QString &groupName, const Q
     for (auto name : qAsConst(groupNames)) {
         group.deleteGroup(name);
     }
+    if (m_faceLoader) {
+        m_faceLoader->save();
+    }
 
     markClean();
     Q_EMIT saved();

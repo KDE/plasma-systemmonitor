@@ -8,6 +8,8 @@
 
 #include <faces/SensorFaceController.h>
 
+#include <KDeclarative/ConfigPropertyMap>
+
 #include "PageDataObject.h"
 
 using namespace KSysGuard;
@@ -92,4 +94,15 @@ void FaceLoader::reset()
     // face controller.
     m_oldController = m_faceController;
     m_faceController = nullptr;
+}
+
+void FaceLoader::save()
+{
+    // force a sync of the property map
+    auto config = m_faceController->faceConfiguration();
+    config->setAutosave(true);
+    for (const auto &key : config->keys()) {
+        Q_EMIT config->valueChanged(key, config->value(key));
+    }
+    config->setAutosave(false);
 }
