@@ -12,7 +12,7 @@ import org.kde.kirigami 2.12 as Kirigami
 
 import org.kde.ksysguard.page 1.0
 
-Kirigami.Page {
+Kirigami.ScrollablePage {
     id: page
 
     property PageDataObject pageData
@@ -33,6 +33,8 @@ Kirigami.Page {
         property: "enabled"
         value: contentLoader.status != Loader.Loading
     }
+
+    readonly property real heightForContent: height - topPadding - bottomPadding - globalToolBarItem.height
 
     readonly property var actionsFace: contentLoader.item && contentLoader.item.actionsFace ? contentLoader.item.actionsFace : null
     onActionsFaceChanged: Qt.callLater(updateActions)
@@ -150,26 +152,6 @@ Kirigami.Page {
 
     readonly property var defaultActions: [editAction, saveAction, discardAction, addRowAction, addTitleAction, configureAction]
 
-    Loader {
-        id: contentLoader
-        anchors.fill: parent
-        sourceComponent: page.edit ? pageEditor : pageContents
-        asynchronous: true
-
-        onStatusChanged: {
-            if (status == Loader.Loading) {
-                loadOverlay.opacity = 1
-                if (!edit) {
-                    // Pop any pages that might have been opened during editing
-                    applicationWindow().pageStack.pop(page)
-                }
-            } else {
-                Qt.callLater(updateActions)
-                loadOverlay.opacity = 0
-            }
-        }
-    }
-
     Component {
         id: pageEditor
 
@@ -183,23 +165,6 @@ Kirigami.Page {
 
         PageContents {
             pageData: page.pageData
-        }
-    }
-
-    Rectangle {
-        id: loadOverlay
-
-        anchors.fill: parent
-        anchors.margins: -pageData.margin * Kirigami.Units.largeSpacing
-        color: Kirigami.Theme.backgroundColor
-
-        opacity: 1
-        visible: opacity > 0
-        Behavior on opacity { OpacityAnimator { duration: Kirigami.Units.shortDuration } }
-
-        BusyIndicator {
-            anchors.centerIn: parent
-            running: loadOverlay.visible
         }
     }
 
@@ -223,6 +188,50 @@ Kirigami.Page {
             pageData.icon = iconName
             pageData.margin = margin
             pageData.actionsFace = actionsFace
+        }
+    }
+
+    Rectangle {
+        id: loadOverlay
+
+        parent: page.overlay
+        anchors.fill: parent
+        anchors.margins: -pageData.margin * Kirigami.Units.largeSpacing
+        color: Kirigami.Theme.backgroundColor
+
+        opacity: 1
+        visible: opacity > 0
+        Behavior on opacity { OpacityAnimator { duration: Kirigami.Units.shortDuration } }
+
+        BusyIndicator {
+            anchors.centerIn: parent
+            running: loadOverlay.visible
+        }
+    }
+
+    Loader {
+        id: contentLoader
+
+        width: page.width
+        height: item ? Math.max(item.Layout.minimumHeight, page.heightForContent) : page.heightForContent
+
+        onHeightChanged: print("loader height", height)
+
+        sourceComponent: page.edit ? pageEditor : pageContents
+        asynchronous: true
+
+        onStatusChanged: {
+            if (status == Loader.Loading) {
+                loadOverlay.opacity = 1
+                if (!edit) {
+                    // Pop any pages that might have been opened during editing
+                    applicationWindow().pageStack.pop(page)
+                }
+            } else {
+                Qt.callLater(updateActions)
+                page.flickable.returnToBounds()
+                loadOverlay.opacity = 0
+            }
         }
     }
 }
