@@ -57,6 +57,8 @@ Faces.SensorFace {
     ]
 
     contentItem: Item {
+        Layout.minimumHeight: table.Layout.minimumHeight
+
         ApplicationsTableView {
             id: table
 
