@@ -18,9 +18,24 @@ ColumnLayout {
     property PageDataObject pageData
     property var actionsFace
 
-    anchors.fill: parent
 
     spacing: Kirigami.Units.largeSpacing
+
+    readonly property real minimumRowHeight: {
+        // If we just use the minimumHeight of a row for the row's minimum height
+        // we end up with differently sized rows since some rows will be able to
+        // be sized smaller than others. To avoid this, we determine the maximum
+        // minimumHeight of all rows and use that value as minimumHeight for all
+        // rows.
+        let result = 0;
+        for (let i in children) {
+            let child = children[i]
+            if (child.hasOwnProperty("minimumContentHeight")) {
+                result = Math.max(result, child.minimumContentHeight)
+            }
+        }
+        return result;
+    }
 
     Repeater {
         model: PageDataModel { data: root.pageData }
@@ -29,6 +44,9 @@ ColumnLayout {
             Layout.fillWidth: true
             Layout.fillHeight: !model.data.isTitle
             Layout.preferredHeight: model.data.isTitle ? title.height : 0
+            Layout.minimumHeight: model.data.isTitle ? title.height : root.minimumRowHeight
+
+            readonly property real minimumContentHeight: model.data.isTitle ? title.height : rowContents.Layout.minimumHeight
 
             Kirigami.Heading {
                 anchors.left: parent.left
@@ -39,6 +57,8 @@ ColumnLayout {
             }
 
             GridLayout {
+                id: rowContents
+
                 anchors.fill: parent
                 visible: !model.data.isTitle
 
@@ -51,6 +71,7 @@ ColumnLayout {
                     Item {
                         Layout.fillWidth: true
                         Layout.fillHeight: true
+                        Layout.minimumHeight: columnContents.Layout.minimumHeight
 
                         Kirigami.AbstractCard {
                             anchors.fill: parent
@@ -58,6 +79,8 @@ ColumnLayout {
                         }
 
                         RowLayout {
+                            id: columnContents
+
                             anchors.fill: parent
                             anchors.margins: model.data.showBackground ? Kirigami.Units.smallSpacing : 0
                             spacing: Kirigami.Units.largeSpacing
@@ -69,6 +92,7 @@ ColumnLayout {
                                     Layout.fillHeight: true
                                     Layout.fillWidth: model.data.isSeparator ? false : true
                                     Layout.preferredWidth: model.data.isSeparator ? Kirigami.Units.devicePixelRatio : 0
+                                    Layout.minimumHeight: item ? item.Layout.minimumHeight : 0
 
                                     property var modelData: model
 
@@ -96,6 +120,8 @@ ColumnLayout {
             rightPadding: 0
             topPadding: 0
             bottomPadding: 0
+
+            Layout.minimumHeight: contentItem ? contentItem.Layout.minimumHeight : 0
 
             FaceLoader {
                 id: loader
