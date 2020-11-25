@@ -23,6 +23,9 @@ Container {
     leftPadding: 0
     rightPadding: 0
 
+    minimumContentHeight: contentItem ? contentItem.Layout.minimumHeight : 0
+    minimumHeight: minimumContentHeight + topPadding + bottomPadding
+
     toolbar.visible: false
 
     onActiveChanged: {

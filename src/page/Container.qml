@@ -37,6 +37,19 @@ Item {
     property alias bottomPadding: control.bottomPadding
 
     readonly property alias toolbar: toolbar
+
+    // We distinguish between two different minimum heights: the minimum height
+    // of the contents and the minimum height of the entire item. The content
+    // height should match the minimum height of the innermost item, usually
+    // this will be a face. The maximum of the content heights is then used for
+    // all rows to ensure rows have the same height. The minimum height is used
+    // for the actual layouting and includes space for things like the toolbar.
+
+    property real minimumContentHeight: contentItem && contentItem.hasOwnProperty("minimumContentHeight") ?
+                                            contentItem.minimumContentHeight : 0
+    property real minimumHeight: contentItem && contentItem.hasOwnProperty("minimumHeight") ?
+                                            contentItem.minimumHeight + topPadding + bottomPadding : 0
+
     z: raised ? 99 : 0
 
     Control {

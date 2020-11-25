@@ -46,11 +46,19 @@ Container {
             let itemCount = repeater.count;
             let separatorsWidth = 0;
             let separatorsCount = 0;
+            let minimumContentHeight = 0;
+            let minimumHeight = 0;
+
             for (let i = 0; i < itemCount; ++i) {
                 let item = repeater.itemAt(i)
-                if (item && item.sectionData.isSeparator) {
-                    separatorsWidth += item.width
-                    separatorsCount += 1
+                if (item) {
+                    if (item.sectionData.isSeparator) {
+                        separatorsWidth += item.width
+                        separatorsCount += 1
+                    } else {
+                        minimumContentHeight = Math.max(minimumContentHeight, item.minimumContentHeight)
+                        minimumHeight = Math.max(minimumHeight, item.minimumHeight)
+                    }
                 }
             }
 
@@ -62,6 +70,9 @@ Container {
                     item.width = sectionWidth
                 }
             }
+
+            control.minimumContentHeight = minimumContentHeight
+            control.minimumHeight = minimumHeight + control.topPadding + control.bottomPadding
         }
 
         onWidthChanged: Qt.callLater(relayout)
@@ -77,6 +88,9 @@ Container {
             SectionControl {
                 height: parent.height
                 onWidthChanged: Qt.callLater(row.relayout)
+
+                onMinimumContentHeightChanged: Qt.callLater(row.relayout)
+                onMinimumHeightChanged: Qt.callLater(row.relayout)
 
                 activeItem: control.activeItem
                 single: control.columnData.children.length == 1
