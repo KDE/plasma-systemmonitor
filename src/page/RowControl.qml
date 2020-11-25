@@ -16,6 +16,7 @@ Container {
     id: control
 
     property PageDataObject rowData
+    property Page page
 
     implicitHeight: heading.height + topPadding + bottomPadding
 
@@ -106,6 +107,7 @@ Container {
         }
     ]
     toolbar.addVisible: !control.rowData.isTitle
+    toolbar.page: page
 
     function addColumn(index) {
         control.rowData.insertChild(index, {"name": "column-" + index, showBackground: true})

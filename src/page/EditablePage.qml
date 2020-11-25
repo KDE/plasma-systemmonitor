@@ -91,6 +91,32 @@ Kirigami.ScrollablePage {
         actions.contextualActions = contextual.concat(defaultActions)
     }
 
+    // Scroll the contents of the page based on the position of a rect (in scene
+    // coordinates). If any part of the rect is above the visible area, contents
+    // will be scrolled down. If any part of the rect is below the visible area,
+    // contents will be scrolled up instead. This mimics dragging behaviour of
+    // file managers and similar things.
+    function scrollContents(rect) {
+        let visibleRect = page.flickable.mapToItem(null, Qt.rect(page.flickable.x, page.flickable.y, page.flickable.width, page.flickable.height - page.bottomPadding))
+
+        let minY = rect.y
+        let maxY = rect.y + rect.height
+
+        let visibleTop = visibleRect.y
+        let visibleBottom = visibleRect.y + visibleRect.height
+
+        if (minY >= visibleTop && maxY <= visibleBottom) {
+            return
+        }
+
+        if (maxY > visibleBottom && !page.flickable.atYEnd) {
+            page.flickable.contentY += (maxY - visibleBottom)
+        } else if (minY < visibleTop && !page.flickable.atYBeginning) {
+            page.flickable.contentY += (minY - visibleTop)
+        }
+        page.flickable.returnToBounds()
+    }
+
     Kirigami.Action {
         id: editAction
 
@@ -156,6 +182,7 @@ Kirigami.ScrollablePage {
         id: pageEditor
 
         PageEditor {
+            parentPage: page
             pageData: page.pageData
         }
     }

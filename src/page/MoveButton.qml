@@ -16,6 +16,7 @@ ToolButton {
 
     property int axis: Qt.YAxis
     property Item target
+    property Page page
 
     signal moved(int from, int to)
 
@@ -102,6 +103,11 @@ ToolButton {
                 } else if (afterChild && mappedRight > afterChild.height / 2 && mappedRight < afterChild.width) {
                     child = afterChild;
                 }
+            }
+
+            if (root.page) {
+                var sceneRect = root.target.mainControl.mapToItem(null, Qt.rect(0, 0, root.target.mainControl.width, root.target.mainControl.height))
+                root.page.ensureVisible(sceneRect)
             }
 
             if (child && child != root.target &&

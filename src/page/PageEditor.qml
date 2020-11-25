@@ -15,6 +15,7 @@ import org.kde.ksysguard.page 1.0
 Column {
     id: root
 
+    property Page parentPage
     property PageDataObject pageData
     property Item activeItem
     property var actionsFace
@@ -89,6 +90,8 @@ Column {
             single: root.pageData.children.length == 1
 
             index: model.index
+
+            page: root.parentPage
 
             onSelect: root.activeItem = item
 

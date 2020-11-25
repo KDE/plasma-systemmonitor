@@ -22,6 +22,8 @@ Kirigami.ActionToolBar {
     property int moveAxis: Qt.YAxis
     property Item moveTarget
 
+    property Page page
+
     signal moved(int from, int to)
     signal removeClicked()
 
@@ -44,6 +46,7 @@ Kirigami.ActionToolBar {
             target: control.moveTarget
             onMoved: control.moved(from, to)
             enabled: !control.single
+            page: control.page
         }
     }
 
