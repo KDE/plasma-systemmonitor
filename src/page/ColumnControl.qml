@@ -17,8 +17,6 @@ Container {
 
     property PageDataObject columnData
 
-    signal addColumn()
-
     Kirigami.AbstractCard {
         parent: control.background
         anchors.fill: parent

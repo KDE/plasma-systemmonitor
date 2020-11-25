@@ -17,9 +17,6 @@ Container {
 
     property PageDataObject rowData
 
-    signal addTitle()
-    signal addRow()
-
     implicitHeight: heading.height + topPadding + bottomPadding
 
     alwaysShowBackground: true

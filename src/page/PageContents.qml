@@ -49,8 +49,8 @@ ColumnLayout {
             readonly property real minimumContentHeight: model.data.isTitle ? title.height : rowContents.Layout.minimumHeight
 
             Kirigami.Heading {
-                anchors.left: parent.left
                 id: title
+                anchors.left: parent.left
                 level: 2
                 text: model.data.title ? model.data.title : ""
                 visible: model.data.isTitle

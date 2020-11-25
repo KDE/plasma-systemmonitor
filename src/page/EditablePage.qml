@@ -215,8 +215,6 @@ Kirigami.ScrollablePage {
         width: page.width
         height: item ? Math.max(item.Layout.minimumHeight, page.heightForContent) : page.heightForContent
 
-        onHeightChanged: print("loader height", height)
-
         sourceComponent: page.edit ? pageEditor : pageContents
         asynchronous: true
 
