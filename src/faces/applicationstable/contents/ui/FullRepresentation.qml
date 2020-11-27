@@ -294,6 +294,8 @@ Faces.SensorFace {
 
         sortedColumns: root.config.sortedColumns
 
+        fixedColumns: ["name"]
+
         onAccepted: {
             root.config.sortedColumns = sortedColumns
             root.config.columnDisplay = JSON.stringify(columnDisplay)

@@ -20,6 +20,7 @@ Dialog {
     property alias sourceModel: sortModel.sourceModel
     property var visibleColumns: []
     property var sortedColumns: []
+    property var fixedColumns: []
     property var columnDisplay: {"name": "text"}
 
     title: i18ndc("plasma-systemmonitor", "@window:title", "Configure Columns")
@@ -51,13 +52,13 @@ Dialog {
     }
 
     onAccepted: {
-        sortedColumns = sortModel.sortedColumns
-        visibleColumns = displayModel.visibleColumnIds
+        sortedColumns = fixedColumns.concat(sortModel.sortedColumns)
+        visibleColumns = fixedColumns.concat(displayModel.visibleColumnIds)
         columnDisplay = displayModel.columnDisplay
     }
 
     onAboutToShow: {
-        sortModel.sortedColumns = sortedColumns
+        sortModel.sortedColumns = sortedColumns.filter(id => fixedColumns.indexOf(id) == -1)
         displayModel.columnDisplay = columnDisplay
     }
 
