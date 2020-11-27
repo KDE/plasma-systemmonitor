@@ -108,7 +108,14 @@ void PagesModel::componentComplete()
                 Q_EMIT dataChanged(index(i), index(i), {FilesWriteableRole});
             }
         });
-
+        connect(page, &PageDataObject::valueChanged, this, [this, page] {
+            auto i = m_pages.indexOf(page);
+            Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole});
+        });
+        connect(page, &PageDataObject::loaded, this, [this, page] {
+            auto i = m_pages.indexOf(page);
+            Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole});
+        });
         m_pages.append(page);
     }
     sort();
@@ -169,6 +176,11 @@ PageDataObject *PagesModel::addPage(const QString& baseName, const QVariantMap &
     m_pageOrder.append(fileName);
     Q_EMIT pageOrderChanged();
     endInsertRows();
+
+    connect(page, &PageDataObject::loaded, this, [this, page] {
+        auto i = m_pages.indexOf(page);
+        Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole});
+    });
 
     return page;
 }
