@@ -7,6 +7,8 @@
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QCommandLineParser>
+#include <QDBusConnection>
+#include <QDBusConnectionInterface>
 #include <QQmlContext>
 #include <QWindow>
 #include <QLoggingCategory>
@@ -130,7 +132,7 @@ int main(int argc, char **argv)
             win->requestActivate();
         }
     });
-
+    QDBusConnection::sessionBus().interface()->startService(QStringLiteral("org.kde.ksystemstats"));
     return app.exec();
 }
 
