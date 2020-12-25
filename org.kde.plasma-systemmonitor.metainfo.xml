@@ -23,6 +23,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="ko">Plasma 시스템 모니터</name>
   <name xml:lang="nl">Plasma systeemmonitor</name>
   <name xml:lang="nn">Plasma systemovervaking</name>
+  <name xml:lang="pl">Monitor systemu Plazmy</name>
   <name xml:lang="pt">Monitor do Sistema do Plasma</name>
   <name xml:lang="pt-BR">Monitor do sistema Plasma</name>
   <name xml:lang="ro">Monitor de sistem Plasma</name>
@@ -47,6 +48,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ko">시스템 자원을 관찰하는 프로그램입니다.</summary>
   <summary xml:lang="nl">Een toepassing voor het monitoren van systeembronnen.</summary>
   <summary xml:lang="nn">Program for overvaking av systemressursar.</summary>
+  <summary xml:lang="pl">Aplikacja do monitorowania zasobów systemu.</summary>
   <summary xml:lang="pt">Uma aplicação para monitorizar os recursos do sistema.</summary>
   <summary xml:lang="pt-BR">Um aplicativo para monitorar os recursos do sistema.</summary>
   <summary xml:lang="ro">Aplicație pentru monitorizarea resurselor sistemului.</summary>
@@ -72,6 +74,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="ko">Plasma 시스템 모니터는 시스템 센서, 프로세스 정보, 기타 시스템 자원을 관찰할 수 있습니다.</p>
     <p xml:lang="nl">Plasma systeemmonitor biedt een interface voor het monitoren van systeembronnen, procesinformatie en andere systeembronnen.</p>
     <p xml:lang="nn">Plasma system­overvaking er ei grafisk brukarflate for overvaking av system­sensorar, prosess­informasjon og andre system­ressursar.</p>
+    <p xml:lang="pl">Monitor systemu Plazmy zapewnia interfejs do monitorowania mierników systemowych, danych o procesach oraz innych zasobach systemu.</p>
     <p xml:lang="pt">O Monitor do Sistema do Plasma oferece uma interface para monitorizar os sensores do sistema, a informação dos processos e os outros recursos do sistema.</p>
     <p xml:lang="pt-BR">O monitor do sistema Plasma fornece a você uma interface para o monitoramento de sensores do sistema, informações dos processos e outros recursos do sistema.</p>
     <p xml:lang="ro">Monitorul de sistem Plasma oferă o interfață pentru monitorizarea senzorilor sistemului, a informației despre procese și altor resurse ale sistemului.</p>
