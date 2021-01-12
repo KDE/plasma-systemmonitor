@@ -94,13 +94,17 @@ Table.BaseTableView {
         id: cacheModel
         sourceModel: displayModel
 
-        component: Charts.ModelHistorySource {
-            model: Table.ComponentCacheProxyModel.model
-            row: Table.ComponentCacheProxyModel.row
-            column: Table.ComponentCacheProxyModel.column
-            roleName: "Value"
+        component: Charts.HistoryProxySource {
+            id: history
+            source: Charts.ModelSource {
+                model: history.Table.ComponentCacheProxyModel.model
+                column: history.Table.ComponentCacheProxyModel.column
+                roleName: "Value"
+            }
+            item: Table.ComponentCacheProxyModel.row
             maximumHistory: 10
             interval: 2000
+            fillMode: Charts.HistoryProxySource.FillFromEnd
         }
     }
 
