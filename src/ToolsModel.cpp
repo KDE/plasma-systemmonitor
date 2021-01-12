@@ -6,8 +6,8 @@
 
 #include "ToolsModel.h"
 
-#include <QDBusInterface>
 #include <QDBusConnection>
+#include <QDBusConnectionInterface>
 #include <QDBusPendingCall>
 
 #include <QDebug>
@@ -30,9 +30,7 @@ ToolsModel::ToolsModel(QObject* parent)
     addFromService(QStringLiteral("org.kde.kmag"));
     addFromService(QStringLiteral("htop"));
 
-    m_kwinInterface = new QDBusInterface{QStringLiteral("org.kde.KWin"), QStringLiteral("/KWin"), QStringLiteral("org.kde.KWin"), QDBusConnection::sessionBus(), this};
-
-    if (m_kwinInterface->isValid()) {
+    if (QDBusConnection::sessionBus().interface()->isServiceRegistered(QStringLiteral("org.kde.KWin"))) {
         auto entry = Entry{};
         entry.id = QStringLiteral("killWindow");
         entry.icon = "document-close";
@@ -98,8 +96,9 @@ void ToolsModel::trigger(const QString& id)
         job->start();
     }
 
-    if (itr->id == QStringLiteral("killWindow") && m_kwinInterface->isValid()) {
-        m_kwinInterface->asyncCall(QStringLiteral("killWindow"));
+    if (itr->id == QStringLiteral("killWindow")) {
+        auto message = QDBusMessage::createMethodCall(QStringLiteral("org.kde.KWin"), QStringLiteral("/KWin"), QStringLiteral("org.kde.KWin"), QStringLiteral("killWindow"));
+        QDBusConnection::sessionBus().asyncCall(message);
     }
 }
 
