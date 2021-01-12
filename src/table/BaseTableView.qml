@@ -84,6 +84,83 @@ FocusScope {
         }
     }
 
+
+    MouseArea {
+        id: tableViewMouseArea
+        z: 1000
+
+        property Item delegateUnderMouse: null
+
+        onDelegateUnderMouseChanged: function() {
+            ToolTip.hide();
+
+            if (delegateUnderMouse) {
+                var currentIndex = delegateUnderMouse.background.__modelIndex;
+                tableView.selectionModel.setCurrentIndex(currentIndex, ItemSelectionModel.NoUpdate);
+            } else {
+                tableView.selectionModel.clearCurrentIndex()
+            }
+
+            if (delegateUnderMouse && delegateUnderMouse.truncated){
+                tooltipTimer.restart()
+            } else {
+                tooltipTimer.stop()
+            }
+        }
+
+        hoverEnabled: true
+        anchors.fill: scrollView
+
+        onExited: delegateUnderMouse = null
+
+        onPositionChanged: function(mouse) {
+            var viewportPos = tableView.contentItem.mapFromItem(scrollView, mouse.x, mouse.y)
+            delegateUnderMouse = tableView.contentItem.childAt(viewportPos.x, viewportPos.y)
+        }
+
+        acceptedButtons: Qt.LeftButton | Qt.RightButton
+
+        onClicked: {
+            var viewportPos = tableView.contentItem.mapFromItem(scrollView, mouse.x, mouse.y)
+            delegateUnderMouse = tableView.contentItem.childAt(viewportPos.x, viewportPos.y)
+
+            if (!delegateUnderMouse) {
+                return;
+            }
+
+            var currentIndex = delegateUnderMouse.background.__modelIndex;
+
+            if (tableView.selectionModel.isSelected(currentIndex) && mouse.button == Qt.RightButton) {
+                tableView.contextMenuRequested(currentIndex, mapToGlobal(mouse.x, mouse.y))
+                return;
+            }
+
+            if (mouse.modifiers & Qt.ShiftModifier) {
+                //TODO: Implement range selection
+                tableView.selectionModel.select(currentIndex, ItemSelectionModel.Toggle | ItemSelectionModel.Rows)
+            } else if (mouse.modifiers & Qt.ControlModifier) {
+                tableView.selectionModel.select(currentIndex, ItemSelectionModel.Toggle | ItemSelectionModel.Rows)
+            } else {
+                tableView.selectionModel.select(currentIndex, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
+            }
+
+            if (mouse.button == Qt.RightButton) {
+                tableView.contextMenuRequested(currentIndex, mapToGlobal(mouse.x, mouse.y))
+            }
+        }
+
+        Timer {
+            id: tooltipTimer
+            interval: Kirigami.Units.toolTipDelay
+            onTriggered: function() {
+                var pos = tableViewMouseArea.delegateUnderMouse.mapToItem(tableView, 0, 0)
+                tableViewMouseArea.ToolTip.toolTip.x = pos.x;
+                tableViewMouseArea.ToolTip.toolTip.y = pos.y - tableViewMouseArea.delegateUnderMouse.height;
+                tableViewMouseArea.ToolTip.show(tableViewMouseArea.delegateUnderMouse.text)
+            }
+        }
+    }
+
     ScrollView {
         id: scrollView
         anchors.fill: parent

@@ -17,6 +17,7 @@ Control {
 
     property string iconName
     property string text: model.display != undefined ? model.display : ""
+    property alias truncated: label.truncated
     property real iconSize: Kirigami.Units.iconSizes.small
     property alias treeDecorationVisible: treeDecoration.visible
 
@@ -89,7 +90,4 @@ Control {
     }
 
     hoverEnabled: true
-    ToolTip.text: delegate.text
-    ToolTip.delay: Kirigami.Units.toolTipDelay
-    ToolTip.visible: delegate.hovered && label.truncated
 }
