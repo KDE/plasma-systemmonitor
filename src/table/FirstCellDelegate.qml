@@ -10,7 +10,6 @@ import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
 
 import org.kde.kirigami 2.2 as Kirigami
-import org.kde.qqc2desktopstyle.private 1.0 as StylePrivate
 
 Control {
     id: delegate
@@ -19,55 +18,15 @@ Control {
     property string text: model.display != undefined ? model.display : ""
     property alias truncated: label.truncated
     property real iconSize: Kirigami.Units.iconSizes.small
-    property alias treeDecorationVisible: treeDecoration.visible
+    property bool treeDecorationVisible: false
 
     Kirigami.Theme.colorSet: background.selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
 
     background: CellBackground { view: delegate.TableView.view; row: model.row; column: model.column }
 
     contentItem: RowLayout {
-        RowLayout {
-            id: treeDecoration
-            visible: false
-            Layout.topMargin: -delegate.topPadding
-            Layout.bottomMargin: -delegate.bottomPadding
-            Repeater {
-                model: treeDecoration.visible ? kDescendantLevel - 1 : 0
-                delegate: StylePrivate.StyleItem {
-                    Layout.preferredWidth: controlRoot.width//Kirigami.Units.gridUnit
-                    Layout.fillHeight: true
-                    visible: true
-                    control: controlRoot
-                    elementType: "itembranchindicator"
-                    properties: {
-                        "isItem": false,
-                        "hasSibling": kDescendantHasSiblings[modelData]
-                    }
-                }
-            }
-            Button {
-                id: controlRoot
-                Layout.preferredWidth: background.pixelMetric("treeviewindentation")
-                visible: true
-                Layout.fillHeight: true
-                enabled: treeDecoration.visible && model.kDescendantExpandable
-                text: model.kDescendantExpanded ? "-" : "+"
-                onClicked: descendantsModel.toggleChildren(index)
-                background: StylePrivate.StyleItem {
-                    id: styleitem
-                    control: controlRoot
-                    hover: controlRoot.hovered
-                    elementType: "itembranchindicator"
-                    on: treeDecoration.visible && model.kDescendantExpanded
-                    properties: {
-                        "isItem": true,
-                        "hasChildren": model.kDescendantExpandable,
-                        "hasSibling": treeDecoration.visible && model.kDescendantHasSiblings[model.kDescendantHasSiblings.length - 1]
-                    }
-                }
-            }
-        }
-
+        id: row
+        property Item treeDecoration
         Kirigami.Icon {
             id:blah
             Layout.preferredWidth: delegate.iconName != "" ? delegate.iconSize : 0
@@ -75,7 +34,6 @@ Control {
             source: delegate.iconName
             fallback: ""
         }
-
         Label {
             id: label
 
@@ -90,4 +48,38 @@ Control {
     }
 
     hoverEnabled: true
+
+    onTreeDecorationVisibleChanged: {
+        if (treeDecorationVisible) {
+            var component = Qt.createComponent("TreeDecoration.qml")
+            if (component.status == Component.Ready) {
+                var incubator = component.incubateObject(null, {
+                    hasSiblings: Qt.binding(() => model.kDescendantHasSiblings),
+                    level: Qt.binding(() => model.kDescendantLevel),
+                    expandable: Qt.binding(() => model.kDescendantExpandable),
+                    expanded: Qt.binding(() => model.kDescendantExpanded)
+                })
+                var finishCreation = () => {
+                    row.treeDecoration = incubator.object
+                    row.treeDecoration.clicked.connect(() => descendantsModel.toggleChildren(index))
+                    var children = Array.from(row.children)
+                    children.unshift(row.treeDecoration)
+                    row.children = children
+                }
+                if (incubator.status == Component.Ready) {
+                    finishCreation()
+                } else {
+                    incubator.onStatusChanged = (status) => {
+                        if (status == Component.Ready) {
+                            finishCreation()
+                        }
+                    }
+                }
+            }
+        } else {
+            if (row.treeDecoration) {
+                row.treeDecoration.destroy()
+            }
+        }
+    }
 }
