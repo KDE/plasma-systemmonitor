@@ -132,7 +132,9 @@ int main(int argc, char **argv)
             win->requestActivate();
         }
     });
-    QDBusConnection::sessionBus().interface()->startService(QStringLiteral("org.kde.ksystemstats"));
+    // QDBusConnectionInterface::StartService is blocking so we do it manually
+    const auto busInterface = QDBusConnection::sessionBus().interface();
+    busInterface->asyncCall(QStringLiteral("StartServiceByName"), QStringLiteral("org.kde.ksystemstats"), 0u);
     return app.exec();
 }
 
