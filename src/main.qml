@@ -185,16 +185,31 @@ Kirigami.ApplicationWindow {
     }
 
 
-    NewStuff.Dialog {
+    Loader {
         id: getNewPageDialog
-        configFile: "plasma-systemmonitor.knsrc"
-        // I have a weird bug on my machine where getNewPageDialog.changedEntries is not an alias
-        // engine.changedEntries but for the engine itself, so I directly use the property of the engine
-        Connections {
-            target: getNewPageDialog.engine
-            function onChangedEntriesChanged() {
-                pagesModel.ghnsEntriesChanged(getNewPageDialog.engine.changedEntries)
+
+        function open() {
+            if (item) {
+                item.open()
+            } else {
+                active = true;
             }
+        }
+
+        active: false
+        asynchronous: true
+
+        sourceComponent: NewStuff.Dialog {
+            configFile: "plasma-systemmonitor.knsrc"
+            // I have a weird bug on my machine where getNewPageDialog.changedEntries is not an alias
+            // engine.changedEntries but for the engine itself, so I directly use the property of the engine
+            Connections {
+                target: getNewPageDialog.engine
+                function onChangedEntriesChanged() {
+                    pagesModel.ghnsEntriesChanged(getNewPageDialog.engine.changedEntries)
+                }
+            }
+            visible: true
         }
     }
 
