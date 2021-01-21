@@ -17,7 +17,7 @@ import org.kde.qqc2desktopstyle.private 1.0 as StylePrivate
 FocusScope {
     id: heading
 
-    x: -view.contentX
+    x: LayoutMirroring.enabled ? view.contentWidth - view.width - view.contentX : -view.contentX
     width: view.contentWidth
     height: heightHelper.height
 
@@ -47,7 +47,7 @@ FocusScope {
         raised: false
         sunken: false
         properties: {
-            "headerpos": "end"
+            "headerpos": LayoutMirroring.enabled ? "beginning" : "end"
         }
     }
 
@@ -80,7 +80,8 @@ FocusScope {
 
     Row {
         id: headerRow
-
+        anchors.left: parent.left
+        anchors.leftMargin: LayoutMirroring.enabled ? view.contentWidth - width : 0
         property int currentIndex: 0
 
         Repeater {
@@ -93,8 +94,8 @@ FocusScope {
 
             delegate: StylePrivate.StyleItem {
                 id: headerItem
-
-                width: heading.view.columnWidthProvider(model.row)
+                // FIXME Need to reverse the index order until TableView correctly supports it itself, see QTBUG-90547
+                width: heading.view.columnWidthProvider(LayoutMirroring.enabled ? repeater.count - model.row - 1 : model.row)
                 height: heightHelper.height
                 enabled: width > 0
 
@@ -102,8 +103,10 @@ FocusScope {
                     if (repeater.count === 1) {
                         return "only";
                     }
-
-                    return "beginning";
+                    if (index == 0) {
+                        return LayoutMirroring.enabled ? "end" : "beginning"
+                    }
+                    return "middle"
                 }
 
                 property string columnId: model[heading.idRole] !== undefined ? model[heading.idRole] : ""

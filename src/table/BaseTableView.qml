@@ -10,11 +10,12 @@ import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
 
 import org.kde.kirigami 2.2 as Kirigami
+import org.kde.ksysguard.table 1.0 as Table
 
 FocusScope {
     id: root
 
-    property alias model: tableView.model
+    property var model
     property alias delegate: tableView.delegate
 
     property alias headerModel: heading.sourceModel
@@ -71,8 +72,7 @@ FocusScope {
 
         view: tableView
 
-        width: tableView.contentWidth + scrollView.rightPadding
-
+        width: scrollView.width
         onSort: root.sort(column, order)
 
         onResize: root.setColumnWidth(column, width)
@@ -166,13 +166,13 @@ FocusScope {
         anchors.fill: parent
         anchors.topMargin: heading.height
 
-        property real innerWidth: width - rightPadding
+        property real innerWidth: LayoutMirroring.enabled ? width - leftPadding : width - rightPadding
 
         background: Rectangle { color: Kirigami.Theme.backgroundColor; Kirigami.Theme.colorSet: Kirigami.Theme.View }
 
         TableView {
             id: tableView
-
+            anchors.left: parent.left
             property ItemSelectionModel selectionModel: ItemSelectionModel {
                 id: selectionModel
                 model: tableView.model
@@ -182,6 +182,15 @@ FocusScope {
             onContextMenuRequested: root.contextMenuRequested(index, position)
 
             onWidthChanged: forceLayout()
+
+            // FIXME Until Tableview correctly reverses its columns, see QTBUG-90547
+            model: root.model
+            Binding on model {
+                when: scrollView.LayoutMirroring.enabled
+                value: Table.ReverseColumnsProxyModel {
+                    sourceModel: root.model
+                }
+            }
 
             activeFocusOnTab: true
 
@@ -232,13 +241,17 @@ FocusScope {
             }
 
             columnWidthProvider: function(index) {
-                var width = root.columnWidths[index]
+                // FIXME Until Tableview correctly reverses its columns, see QTBUG-90547
+                if (scrollView.LayoutMirroring.enabled) {
+                    var width = root.columnWidths[root.columnWidths.length - index - 1]
+                } else {
+                    var width = root.columnWidths[index]
+                }
                 if (width === undefined || width === null) {
                     width = root.defaultColumnWidth
                 } else {
                     width = width
                 }
-
                 width = Math.max(Math.floor(width * scrollView.innerWidth), root.minimumColumnWidth)
                 return width
             }
