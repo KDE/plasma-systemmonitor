@@ -20,7 +20,7 @@ class PageDataModel : public QAbstractListModel
 
 public:
     enum Roles {
-        DataRole = Qt::UserRole + 1
+        DataRole = Qt::UserRole + 1,
     };
     Q_ENUM(Roles)
 

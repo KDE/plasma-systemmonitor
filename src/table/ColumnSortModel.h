@@ -22,7 +22,7 @@ class ColumnSortModel : public QIdentityProxyModel
 
 public:
     enum Roles {
-        VisibleRole = Qt::UserRole + 99
+        VisibleRole = Qt::UserRole + 99,
     };
 
     explicit ColumnSortModel(QObject* parent = nullptr);

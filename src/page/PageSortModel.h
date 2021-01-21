@@ -19,7 +19,7 @@ class PageSortModel : public QAbstractProxyModel
 public:
 
     enum Roles {
-        ShouldRemoveFilesRole = PagesModel::FilesWriteableRole + 1
+        ShouldRemoveFilesRole = PagesModel::FilesWriteableRole + 1,
     };
     Q_ENUM(Roles)
 

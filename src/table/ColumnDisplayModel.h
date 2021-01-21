@@ -18,7 +18,7 @@ class ColumnDisplayModel : public QIdentityProxyModel
 
 public:
     enum Roles {
-        DisplayStyleRole = Qt::UserRole + 99
+        DisplayStyleRole = Qt::UserRole + 99,
     };
 
     explicit ColumnDisplayModel(QObject* parent = nullptr);

@@ -23,7 +23,7 @@ public:
         ViewOwn,
         ViewUser,
         ViewSystem,
-        ViewAll
+        ViewAll,
     };
     Q_ENUM(ViewMode)
 

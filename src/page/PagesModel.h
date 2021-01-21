@@ -26,14 +26,14 @@ public:
         IconRole,
         FileNameRole,
         HiddenRole,
-        FilesWriteableRole
+        FilesWriteableRole,
     };
     Q_ENUM(Roles)
 
     enum FilesWriteableStates {
         NotWriteable,
         AllWriteable,
-        LocalChanges
+        LocalChanges,
     };
     Q_ENUM(FilesWriteableStates)
 

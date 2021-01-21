@@ -20,7 +20,7 @@ class FacesModel : public QAbstractListModel {
     Q_PROPERTY(PageDataObject *pageData READ pageData WRITE setPageData NOTIFY pageDataChanged)
 
     enum Roles {
-        IdRole = Qt::UserRole
+        IdRole = Qt::UserRole,
     };
 
 public:
