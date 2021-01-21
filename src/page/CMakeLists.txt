@@ -27,6 +27,7 @@ set(page_QML
     EditorToolBar.qml
     MoveButton.qml
     PageSortDialog.qml
+    DialogLoader.qml
 )
 
 add_library(PagePlugin SHARED ${page_SRCS})

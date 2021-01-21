@@ -27,7 +27,6 @@ Kirigami.ApplicationWindow {
         id: pagePoolObject
     }
 
-
     globalDrawer: Kirigami.GlobalDrawer {
         id: globalDrawer
 
@@ -160,44 +159,41 @@ Kirigami.ApplicationWindow {
         ]
     }
 
-    Page.PageDialog {
+    Page.DialogLoader {
         id: pageDialog
-        title: i18nc("@window:title", "Add New Page")
 
-        onAccepted: {
-            var fileName = name.toLowerCase().replace(" ", "_");
-            var newPage = pagesModel.addPage(fileName, {title: name, icon: iconName, margin: margin})
-            var row = newPage.insertChild(0, {name: "row-0", isTitle: false, title: ""})
-            var column = row.insertChild(0, {name: "column-0", showBackground: true})
-            column.insertChild(0, {name: "section-0", isSeparator: false})
-            newPage.savePage()
+        sourceComponent: Page.PageDialog {
+            title: i18nc("@window:title", "Add New Page")
 
-            const pageAction = Array.from(globalDrawer.actions).find(action => action.pageData.fileName == newPage.fileName)
-            pageAction.trigger()
-            app.pageStack.currentItem.edit = true
-        }
-    }
+            visible: true
 
-    Page.PageSortDialog {
-        id: pageSortDialog
-        title: i18nc("@window:title", "Edit Pages")
-        model: pagesModel
-    }
+            onAccepted: {
+                var fileName = name.toLowerCase().replace(" ", "_");
+                var newPage = pagesModel.addPage(fileName, {title: name, icon: iconName, margin: margin})
+                var row = newPage.insertChild(0, {name: "row-0", isTitle: false, title: ""})
+                var column = row.insertChild(0, {name: "column-0", showBackground: true})
+                column.insertChild(0, {name: "section-0", isSeparator: false})
+                newPage.savePage()
 
-
-    Loader {
-        id: getNewPageDialog
-
-        function open() {
-            if (item) {
-                item.open()
-            } else {
-                active = true;
+                const pageAction = Array.from(globalDrawer.actions).find(action => action.pageData.fileName == newPage.fileName)
+                pageAction.trigger()
+                app.pageStack.currentItem.edit = true
             }
         }
+    }
 
-        active: false
-        asynchronous: true
+    Page.DialogLoader {
+        id: pageSortDialog
+
+        sourceComponent: Page.PageSortDialog {
+            title: i18nc("@window:title", "Edit Pages")
+            model: pagesModel
+            visible: true
+        }
+    }
+
+    Page.DialogLoader {
+        id: getNewPageDialog
 
         sourceComponent: NewStuff.Dialog {
             configFile: "plasma-systemmonitor.knsrc"

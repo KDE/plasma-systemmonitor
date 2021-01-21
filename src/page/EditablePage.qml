@@ -195,26 +195,28 @@ Kirigami.ScrollablePage {
         }
     }
 
-    PageDialog {
+    DialogLoader {
         id: pageDialog
-        title: i18nc("@title:window %1 is page title", "Configure Page \"%1\"", page.pageData.title)
+        sourceComponent: PageDialog {
+            title: i18nc("@title:window %1 is page title", "Configure Page \"%1\"", page.pageData.title)
 
-        acceptText: i18nc("@action:button", "Save")
-        acceptIcon: "document-save"
+            acceptText: i18nc("@action:button", "Save")
+            acceptIcon: "document-save"
 
-        onAboutToShow: {
-            name = page.pageData.title
-            iconName = page.pageData.icon
-            margin = page.pageData.margin
-            pageData = page.pageData
-            actionsFace = page.pageData.actionsFace ? page.pageData.actionsFace : ""
-        }
+            onAboutToShow: {
+                name = page.pageData.title
+                iconName = page.pageData.icon
+                margin = page.pageData.margin
+                pageData = page.pageData
+                actionsFace = page.pageData.actionsFace ? page.pageData.actionsFace : ""
+            }
 
-        onAccepted: {
-            pageData.title = name
-            pageData.icon = iconName
-            pageData.margin = margin
-            pageData.actionsFace = actionsFace
+            onAccepted: {
+                pageData.title = name
+                pageData.icon = iconName
+                pageData.margin = margin
+                pageData.actionsFace = actionsFace
+            }
         }
     }
 

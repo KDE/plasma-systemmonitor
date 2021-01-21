@@ -69,34 +69,41 @@ Kirigami.ScrollablePage {
         }
     ]
 
-    LoadPresetDialog {
+    DialogLoader {
         id: loadPresetDialog
+        sourceComponent: LoadPresetDialog {
 
-        controller: loader.controller
+            controller: loader.controller
 
-        onAccepted: {
-            loader.controller.title = selectedTitle;
-            if (selectedFace) {
-                loader.controller.faceId = selectedFace
+            onAccepted: {
+                loader.controller.title = selectedTitle;
+                if (selectedFace) {
+                    loader.controller.faceId = selectedFace
+                }
+                loader.controller.loadPreset(selectedPreset);
+                message.text = i18nc("@info:status %1 is preset name", "Loaded preset %1.", selectedTitle);
+                message.visible = true
             }
-            loader.controller.loadPreset(selectedPreset);
-            message.text = i18nc("@info:status %1 is preset name", "Loaded preset %1.", selectedTitle);
-            message.visible = true
         }
     }
 
-    NewStuff.Dialog {
+    DialogLoader {
         id: newPresetDialog
-        downloadNewWhat: i18nc("@title:window", "Presets")
-        configFile: "systemmonitor-presets.knsrc"
-        onChangedEntriesChanged: loader.controller.availablePresetsModel.reload();
+        sourceComponent: NewStuff.Dialog {
+            downloadNewWhat: i18nc("@title:window", "Presets")
+            configFile: "systemmonitor-presets.knsrc"
+            onChangedEntriesChanged: loader.controller.availablePresetsModel.reload();
+        }
     }
 
-    NewStuff.Dialog {
+    DialogLoader {
         id: newFaceDialog
-        downloadNewWhat: i18nc("@title:window", "Display Styles")
-        configFile: "systemmonitor-faces.knsrc"
-        onChangedEntriesChanged: loader.controller.availableFacesModel.reload();
+        sourceComponent: NewStuff.Dialog {
+            id: newFaceDialog
+            downloadNewWhat: i18nc("@title:window", "Display Styles")
+            configFile: "systemmonitor-faces.knsrc"
+            onChangedEntriesChanged: loader.controller.availableFacesModel.reload();
+        }
     }
 
     ColumnLayout {
