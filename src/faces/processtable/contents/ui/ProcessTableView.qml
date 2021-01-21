@@ -156,7 +156,7 @@ Table.BaseTableView {
     delegate: DelegateChooser {
         role: "displayStyle"
         DelegateChoice {
-            column: 0;
+            column: view.LayoutMirroring.enabled ? view.model.columnCount() - 1 : 0
             Table.FirstCellDelegate {
                 id: delegate
                 treeDecorationVisible: !view.flatList

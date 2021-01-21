@@ -4,6 +4,7 @@ set(table_SRCS
     ColumnSortModel.cpp
     ComponentCacheProxyModel.cpp
     ProcessSortFilterModel.cpp
+    ReverseColumnsProxyModel.cpp
 )
 
 set(table_QML
@@ -20,7 +21,7 @@ set(table_QML
 )
 
 add_library(TablePlugin SHARED ${table_SRCS})
-target_link_libraries(TablePlugin Qt5::Quick KSysGuard::Sensors KSysGuard::ProcessCore KF5::CoreAddons)
+target_link_libraries(TablePlugin Qt5::Quick KSysGuard::Sensors KSysGuard::ProcessCore KF5::CoreAddons KF5::ItemModels)
 
 install(TARGETS TablePlugin DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/table)
 install(FILES qmldir ${table_QML} DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/table)

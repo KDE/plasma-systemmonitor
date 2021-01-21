@@ -69,6 +69,8 @@ Table.BaseTableView {
         sortFilter.sortOrder = order
     }
 
+    headerModel: sortFilter
+
     model: KItemModels.KSortFilterProxyModel {
         id: sortFilter
 
@@ -158,7 +160,7 @@ Table.BaseTableView {
     delegate: DelegateChooser {
         role: "displayStyle"
         DelegateChoice {
-            column: 0;
+            column: view.LayoutMirroring.enabled ? view.model.columnCount() - 1 : 0
             Table.FirstCellDelegate {
                 iconName: {
                     var index = sortFilter.mapToSource(sortFilter.index(model.row, 0))

@@ -12,6 +12,7 @@
 #include "ColumnSortModel.h"
 #include "ComponentCacheProxyModel.h"
 #include "ProcessSortFilterModel.h"
+#include "ReverseColumnsProxyModel.h"
 
 void TablePlugin::registerTypes(const char *uri)
 {
@@ -21,4 +22,5 @@ void TablePlugin::registerTypes(const char *uri)
     qmlRegisterType<ColumnDisplayModel>(uri, 1, 0, "ColumnDisplayModel");
     qmlRegisterType<ComponentCacheProxyModel>(uri, 1, 0, "ComponentCacheProxyModel");
     qmlRegisterType<ProcessSortFilterModel>(uri, 1, 0, "ProcessSortFilterModel");
+    qmlRegisterType<ReverseColumnsProxyModel>(uri, 1, 0, "ReverseColumnsProxyModel");
 }
