@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
- * 
+ *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
@@ -14,7 +14,7 @@ using namespace KSysGuard;
 
 QHash<QString, KSysGuard::SensorFaceController *> FaceLoader::s_faceCache;
 
-FaceLoader::FaceLoader(QObject* parent)
+FaceLoader::FaceLoader(QObject *parent)
     : QObject(parent)
 {
 }
@@ -26,12 +26,12 @@ FaceLoader::~FaceLoader()
     }
 }
 
-PageDataObject * FaceLoader::dataObject() const
+PageDataObject *FaceLoader::dataObject() const
 {
     return m_dataObject;
 }
 
-void FaceLoader::setDataObject(PageDataObject * newDataObject)
+void FaceLoader::setDataObject(PageDataObject *newDataObject)
 {
     if (newDataObject == m_dataObject) {
         return;
@@ -48,7 +48,6 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
     m_dataObject = newDataObject;
 
     if (m_dataObject) {
-
         m_dataObject->setFaceLoader(this);
 
         auto faceConfig = m_dataObject->value(QStringLiteral("face")).toString();
@@ -85,7 +84,7 @@ void FaceLoader::setDataObject(PageDataObject * newDataObject)
     Q_EMIT dataObjectChanged();
 }
 
-SensorFaceController * FaceLoader::controller() const
+SensorFaceController *FaceLoader::controller() const
 {
     return m_faceController;
 }

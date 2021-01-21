@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2019 Arjen Hiemstra <ahiemstra@heimr.nl>
- * 
+ *
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
@@ -11,7 +11,7 @@
 
 SystemMonitorConfiguration *Configuration::m_config = nullptr;
 
-Configuration::Configuration(QObject* parent)
+Configuration::Configuration(QObject *parent)
     : QObject(parent)
 {
     if (!m_config) {

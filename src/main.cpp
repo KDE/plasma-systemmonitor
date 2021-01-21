@@ -5,21 +5,21 @@
  */
 
 #include <QApplication>
-#include <QQmlApplicationEngine>
 #include <QCommandLineParser>
 #include <QDBusConnection>
 #include <QDBusConnectionInterface>
+#include <QLoggingCategory>
+#include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QWindow>
-#include <QLoggingCategory>
 
-#include <KDeclarative/KDeclarative>
-#include <KDBusService>
-#include <KLocalizedString>
 #include <KAboutData>
+#include <KDBusService>
+#include <KDeclarative/KDeclarative>
+#include <KLocalizedString>
 
-#include "ToolsModel.h"
 #include "Configuration.h"
+#include "ToolsModel.h"
 
 static QLoggingCategory::CategoryFilter oldCategoryFilter;
 
@@ -75,16 +75,14 @@ int main(int argc, char **argv)
 
     KLocalizedString::setApplicationDomain("plasma-systemmonitor");
 
-    KAboutData aboutData{
-        /* componentName */ "plasma-systemmonitor",
-        /* displayName */ i18n("System Monitor"),
-        /* version */ PROJECT_VERSION,
-        /* shortDescription */ i18n("An application for monitoring system resources"),
-        /* licenseType */ KAboutLicense::GPL,
-        /* copyrightStatement */ i18n("© 2020 Plasma Development Team"),
-        /* otherText */ QString{},
-        /* homePageAddress */ QString{}
-    };
+    KAboutData aboutData{/* componentName */ "plasma-systemmonitor",
+                         /* displayName */ i18n("System Monitor"),
+                         /* version */ PROJECT_VERSION,
+                         /* shortDescription */ i18n("An application for monitoring system resources"),
+                         /* licenseType */ KAboutLicense::GPL,
+                         /* copyrightStatement */ i18n("© 2020 Plasma Development Team"),
+                         /* otherText */ QString{},
+                         /* homePageAddress */ QString{}};
     aboutData.setDesktopFileName(QStringLiteral("org.kde.plasma-systemmonitor"));
     aboutData.setProgramLogo(app.windowIcon());
 
@@ -96,10 +94,7 @@ int main(int argc, char **argv)
     aboutData.addAuthor(i18n("Marco Martin"), i18n("Development"), QString{});
     aboutData.addAuthor(i18n("David Edmundson"), i18n("Development"), QString{});
 
-    aboutData.setTranslator(
-        i18ndc(nullptr, "NAME OF TRANSLATORS", "Your names"),
-        i18ndc(nullptr, "EMAIL OF TRANSLATORS", "Your emails")
-    );
+    aboutData.setTranslator(i18ndc(nullptr, "NAME OF TRANSLATORS", "Your names"), i18ndc(nullptr, "EMAIL OF TRANSLATORS", "Your emails"));
 
     KAboutData::setApplicationData(aboutData);
 
@@ -115,7 +110,7 @@ int main(int argc, char **argv)
     qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.systemmonitor", 1);
     qmlRegisterType<ToolsModel>("org.kde.systemmonitor", 1, 0, "ToolsModel");
     qmlRegisterType<Configuration>("org.kde.systemmonitor", 1, 0, "Configuration");
-    qmlRegisterSingletonType<CommandLineArguments>("org.kde.systemmonitor", 1, 0, "CommandLineArguments", [&parser](QQmlEngine*, QJSEngine*) {
+    qmlRegisterSingletonType<CommandLineArguments>("org.kde.systemmonitor", 1, 0, "CommandLineArguments", [&parser](QQmlEngine *, QJSEngine *) {
         return new CommandLineArguments{parser};
     });
 

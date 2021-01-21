@@ -6,15 +6,15 @@
 
 #include "FacesModel.h"
 
-#include <QQuickItem>
 #include <QQmlListProperty>
+#include <QQuickItem>
 
 #include <KLocalizedString>
 
 #include <ksysguard/faces/SensorFaceController.h>
 
-#include "PageDataObject.h"
 #include "FaceLoader.h"
+#include "PageDataObject.h"
 
 FacesModel::FacesModel(QObject *parent)
     : QAbstractListModel(parent)
@@ -23,11 +23,10 @@ FacesModel::FacesModel(QObject *parent)
 
 QHash<int, QByteArray> FacesModel::roleNames() const
 {
-    return {{Qt::DisplayRole, "display"},
-            {IdRole, "id"}};
+    return {{Qt::DisplayRole, "display"}, {IdRole, "id"}};
 }
 
-int FacesModel::rowCount(const QModelIndex& parent) const
+int FacesModel::rowCount(const QModelIndex &parent) const
 {
     if (parent.isValid()) {
         return 0;
@@ -35,7 +34,7 @@ int FacesModel::rowCount(const QModelIndex& parent) const
     return m_faceLoaders.size() + 1;
 }
 
-QVariant FacesModel::data(const QModelIndex& index, int role) const
+QVariant FacesModel::data(const QModelIndex &index, int role) const
 {
     if (!checkIndex(index, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
         return QVariant();
@@ -49,7 +48,7 @@ QVariant FacesModel::data(const QModelIndex& index, int role) const
             return m_faceLoaders[index.row()]->controller()->title();
         }
     case IdRole:
-        if(index.row() == m_faceLoaders.count()) {
+        if (index.row() == m_faceLoaders.count()) {
             return "";
         } else {
             return m_faceLoaders[index.row()]->dataObject()->value(QStringLiteral("face")).toString();

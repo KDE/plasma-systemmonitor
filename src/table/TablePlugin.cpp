@@ -8,8 +8,8 @@
 
 #include <QQmlEngine>
 
-#include "ColumnSortModel.h"
 #include "ColumnDisplayModel.h"
+#include "ColumnSortModel.h"
 #include "ComponentCacheProxyModel.h"
 #include "ProcessSortFilterModel.h"
 

@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
- * 
+ *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
@@ -12,7 +12,7 @@
 
 using namespace KSysGuard;
 
-ProcessSortFilterModel::ProcessSortFilterModel(QObject* parent)
+ProcessSortFilterModel::ProcessSortFilterModel(QObject *parent)
     : QSortFilterProxyModel(parent)
 {
     setSortRole(ProcessDataModel::Value);
@@ -24,7 +24,7 @@ ProcessSortFilterModel::ProcessSortFilterModel(QObject* parent)
     setRecursiveFilteringEnabled(true);
 }
 
-void ProcessSortFilterModel::setSourceModel(QAbstractItemModel* newSourceModel)
+void ProcessSortFilterModel::setSourceModel(QAbstractItemModel *newSourceModel)
 {
     auto oldSourceModel = sourceModel();
 
@@ -46,7 +46,7 @@ void ProcessSortFilterModel::setSourceModel(QAbstractItemModel* newSourceModel)
     }
 }
 
-bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex& sourceParent) const
+bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
     // not handled a reset yet, we'll invalidate at the end of modelReset anyway
     if (m_uidColumn == -1) {
@@ -61,17 +61,17 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex& 
         auto uid = source->data(source->index(sourceRow, m_uidColumn, sourceParent), ProcessDataModel::Value).toUInt();
 
         switch (m_viewMode) {
-            case ViewOwn:
-                result = m_currentUser.userId().nativeId() == uid;
-                break;
-            case ViewUser:
-                result = uid >= 1000 && uid < 65534;
-                break;
-            case ViewSystem:
-                result = uid < 1000 || uid >= 65534;
-                break;
-            default:
-                break;
+        case ViewOwn:
+            result = m_currentUser.userId().nativeId() == uid;
+            break;
+        case ViewUser:
+            result = uid >= 1000 && uid < 65534;
+            break;
+        case ViewSystem:
+            result = uid < 1000 || uid >= 65534;
+            break;
+        default:
+            break;
         }
     }
 
@@ -87,7 +87,7 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex& 
     return result;
 }
 
-bool ProcessSortFilterModel::filterAcceptsColumn(int sourceColumn, const QModelIndex& sourceParent) const
+bool ProcessSortFilterModel::filterAcceptsColumn(int sourceColumn, const QModelIndex &sourceParent) const
 {
     Q_UNUSED(sourceParent)
 
@@ -104,7 +104,7 @@ QString ProcessSortFilterModel::filterString() const
     return m_filterString;
 }
 
-void ProcessSortFilterModel::setFilterString(const QString & newFilterString)
+void ProcessSortFilterModel::setFilterString(const QString &newFilterString)
 {
     if (newFilterString == m_filterString) {
         return;

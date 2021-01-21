@@ -21,12 +21,12 @@ public:
         DisplayStyleRole = Qt::UserRole + 99,
     };
 
-    explicit ColumnDisplayModel(QObject* parent = nullptr);
+    explicit ColumnDisplayModel(QObject *parent = nullptr);
 
     void setSourceModel(QAbstractItemModel *newSourceModel) override;
 
     QHash<int, QByteArray> roleNames() const override;
-    QVariant data(const QModelIndex & index, int role) const override;
+    QVariant data(const QModelIndex &index, int role) const override;
 
     Q_INVOKABLE void setDisplay(int column, const QString &display);
 

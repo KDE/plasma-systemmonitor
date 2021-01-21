@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
- * 
+ *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
@@ -30,8 +30,8 @@ public:
     ProcessSortFilterModel(QObject *parent = nullptr);
 
     void setSourceModel(QAbstractItemModel *newSourceModel) override;
-    bool filterAcceptsRow(int sourceRow, const QModelIndex& sourceParent) const override;
-    bool filterAcceptsColumn(int sourceColumn, const QModelIndex& sourceParent) const override;
+    bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;
+    bool filterAcceptsColumn(int sourceColumn, const QModelIndex &sourceParent) const override;
 
     QString filterString() const;
     void setFilterString(const QString &newFilterString);

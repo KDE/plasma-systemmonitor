@@ -8,12 +8,12 @@
 
 #include <QDebug>
 
-ColumnSortModel::ColumnSortModel(QObject* parent)
+ColumnSortModel::ColumnSortModel(QObject *parent)
     : QIdentityProxyModel(parent)
 {
 }
 
-QVariant ColumnSortModel::data(const QModelIndex& index, int role) const
+QVariant ColumnSortModel::data(const QModelIndex &index, int role) const
 {
     return QIdentityProxyModel::data(mapToSource(index), role);
 }
@@ -30,7 +30,7 @@ void ColumnSortModel::setSourceModel(QAbstractItemModel *newSourceModel)
     QIdentityProxyModel::setSourceModel(newSourceModel);
 }
 
-QModelIndex ColumnSortModel::mapFromSource(const QModelIndex& sourceIndex) const
+QModelIndex ColumnSortModel::mapFromSource(const QModelIndex &sourceIndex) const
 {
     if (!sourceIndex.isValid()) {
         return QModelIndex();
@@ -39,7 +39,7 @@ QModelIndex ColumnSortModel::mapFromSource(const QModelIndex& sourceIndex) const
     return createIndex(m_rowMapping.indexOf(sourceIndex.row()), sourceIndex.column());
 }
 
-QModelIndex ColumnSortModel::mapToSource(const QModelIndex& proxyIndex) const
+QModelIndex ColumnSortModel::mapToSource(const QModelIndex &proxyIndex) const
 {
     if (!proxyIndex.isValid()) {
         return QModelIndex();
@@ -66,7 +66,7 @@ QStringList ColumnSortModel::sortedColumns() const
     return result;
 }
 
-void ColumnSortModel::setSortedColumns(const QStringList & newSortedColumns)
+void ColumnSortModel::setSortedColumns(const QStringList &newSortedColumns)
 {
     auto source = sourceModel();
     QHash<QString, int> sourceRowMapping;
@@ -98,7 +98,7 @@ QString ColumnSortModel::idRole() const
     return m_idRole;
 }
 
-void ColumnSortModel::setIdRole(const QString & newIdRole)
+void ColumnSortModel::setIdRole(const QString &newIdRole)
 {
     if (newIdRole == m_idRole) {
         return;

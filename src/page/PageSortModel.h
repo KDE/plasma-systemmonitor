@@ -17,21 +17,20 @@ class PageSortModel : public QAbstractProxyModel
     Q_OBJECT
 
 public:
-
     enum Roles {
         ShouldRemoveFilesRole = PagesModel::FilesWriteableRole + 1,
     };
     Q_ENUM(Roles)
 
-    explicit PageSortModel(QObject* parent = nullptr);
+    explicit PageSortModel(QObject *parent = nullptr);
 
     QHash<int, QByteArray> roleNames() const override;
     QVariant data(const QModelIndex &index, int role) const override;
     bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
 
-    void setSourceModel(QAbstractItemModel* newSourceModel) override;
+    void setSourceModel(QAbstractItemModel *newSourceModel) override;
 
-    QModelIndex index(int row, int column, const QModelIndex &parent ) const override;
+    QModelIndex index(int row, int column, const QModelIndex &parent) const override;
     QModelIndex parent(const QModelIndex &child) const override;
     QModelIndex mapFromSource(const QModelIndex &sourceIndex) const override;
     QModelIndex mapToSource(const QModelIndex &proxyIndex) const override;
@@ -41,11 +40,11 @@ public:
     Q_INVOKABLE void move(int fromRow, int toRow);
 
     Q_INVOKABLE void applyChangesToSourceModel() const;
+
 private:
     QVector<int> m_rowMapping;
     QVector<bool> m_hiddenProxy;
     QVector<bool> m_removeFiles;
-
 };
 
 #endif

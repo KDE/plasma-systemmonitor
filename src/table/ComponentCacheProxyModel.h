@@ -16,7 +16,7 @@
 class ComponentCacheAttached : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QAbstractItemModel * model MEMBER m_model CONSTANT)
+    Q_PROPERTY(QAbstractItemModel *model MEMBER m_model CONSTANT)
     Q_PROPERTY(int row MEMBER m_row CONSTANT)
     Q_PROPERTY(int column MEMBER m_column CONSTANT)
 
@@ -53,12 +53,12 @@ public:
     };
     Q_ENUM(Roles)
 
-    explicit ComponentCacheProxyModel(QObject* parent = nullptr);
+    explicit ComponentCacheProxyModel(QObject *parent = nullptr);
     ~ComponentCacheProxyModel() override;
 
     QHash<int, QByteArray> roleNames() const override;
-    QVariant data(const QModelIndex& proxyIndex, int role) const override;
-    void setSourceModel(QAbstractItemModel* sourceModel) override;
+    QVariant data(const QModelIndex &proxyIndex, int role) const override;
+    void setSourceModel(QAbstractItemModel *sourceModel) override;
 
     QQmlComponent *component() const;
     void setComponent(QQmlComponent *newComponent);

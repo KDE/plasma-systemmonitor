@@ -11,7 +11,6 @@
 ComponentCacheAttached::ComponentCacheAttached(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 ComponentCacheProxyModel::ComponentCacheProxyModel(QObject *parent)
@@ -49,7 +48,7 @@ QVariant ComponentCacheProxyModel::data(const QModelIndex &proxyIndex, int role)
     return QIdentityProxyModel::data(proxyIndex, role);
 }
 
-void ComponentCacheProxyModel::setSourceModel(QAbstractItemModel* newSourceModel)
+void ComponentCacheProxyModel::setSourceModel(QAbstractItemModel *newSourceModel)
 {
     if (sourceModel()) {
         sourceModel()->disconnect(this);
@@ -117,13 +116,13 @@ void ComponentCacheProxyModel::createPendingInstance()
 
         auto instance = m_component->beginCreate(context);
         instance->setParent(this);
-        auto attached = static_cast<ComponentCacheAttached*>(qmlAttachedPropertiesObject<ComponentCacheProxyModel>(instance));
+        auto attached = static_cast<ComponentCacheAttached *>(qmlAttachedPropertiesObject<ComponentCacheProxyModel>(instance));
         attached->m_model = this;
         attached->m_row = index.row();
         attached->m_column = index.column();
         m_component->completeCreate();
 
         m_instances.insert(index, instance);
-        Q_EMIT dataChanged(index, index, { CachedComponentRole });
+        Q_EMIT dataChanged(index, index, {CachedComponentRole});
     }
 }

@@ -1,14 +1,14 @@
 /*
  * SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
- * 
+ *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
 #include "PagesModel.h"
 
-#include <QStandardPaths>
-#include <QDir>
 #include <QDebug>
+#include <QDir>
+#include <QStandardPaths>
 
 #include <KConfig>
 #include <KConfigGroup>
@@ -16,21 +16,19 @@
 
 #include "PageDataObject.h"
 
-PagesModel::PagesModel(QObject* parent)
+PagesModel::PagesModel(QObject *parent)
     : QAbstractListModel(parent)
 {
 }
 
 QHash<int, QByteArray> PagesModel::roleNames() const
 {
-    static QHash<int, QByteArray> roles {
-        { TitleRole, "title" },
-        { DataRole, "data" },
-        { IconRole, "icon" },
-        { FileNameRole, "fileName"},
-        { HiddenRole, "hidden"},
-        { FilesWriteableRole, "filesWriteable"}
-    };
+    static QHash<int, QByteArray> roles{{TitleRole, "title"},
+                                        {DataRole, "data"},
+                                        {IconRole, "icon"},
+                                        {FileNameRole, "fileName"},
+                                        {HiddenRole, "hidden"},
+                                        {FilesWriteableRole, "filesWriteable"}};
     return roles;
 }
 
@@ -50,20 +48,20 @@ QVariant PagesModel::data(const QModelIndex &index, int role) const
 
     auto data = m_pages.at(index.row());
     switch (role) {
-        case TitleRole:
-            return data->value("title");
-        case DataRole:
-            return QVariant::fromValue(data);
-        case IconRole:
-            return data->value("icon");
-        case FileNameRole:
-            return data->fileName();
-        case HiddenRole:
-            return m_hiddenPages.contains(data->fileName());
-        case FilesWriteableRole:
-            return m_writeableCache[data->fileName()];
-        default:
-            return QVariant{};
+    case TitleRole:
+        return data->value("title");
+    case DataRole:
+        return QVariant::fromValue(data);
+    case IconRole:
+        return data->value("icon");
+    case FileNameRole:
+        return data->fileName();
+    case HiddenRole:
+        return m_hiddenPages.contains(data->fileName());
+    case FilesWriteableRole:
+        return m_writeableCache[data->fileName()];
+    default:
+        return QVariant{};
     }
 }
 
@@ -86,8 +84,7 @@ void PagesModel::componentComplete()
                 m_writeableCache.insert(entry.fileName(), entryState);
             } else {
                 FilesWriteableStates &state = m_writeableCache[entry.fileName()];
-                if ((state == NotWriteable && entryState == AllWriteable) ||
-                    (state == AllWriteable && entryState == NotWriteable)) {
+                if ((state == NotWriteable && entryState == AllWriteable) || (state == AllWriteable && entryState == NotWriteable)) {
                     state = LocalChanges;
                 }
             }
@@ -132,13 +129,13 @@ void PagesModel::sort(int column, Qt::SortOrder order)
     }
 
     Q_EMIT layoutAboutToBeChanged({QPersistentModelIndex()}, QAbstractItemModel::VerticalSortHint);
-    auto last = std::stable_partition(m_pages.begin(), m_pages.end(), [this] (PageDataObject *page) {
+    auto last = std::stable_partition(m_pages.begin(), m_pages.end(), [this](PageDataObject *page) {
         return m_pageOrder.contains(page->fileName());
     });
-    std::sort(m_pages.begin(), last, [this] (PageDataObject *left, PageDataObject *right) {
+    std::sort(m_pages.begin(), last, [this](PageDataObject *left, PageDataObject *right) {
         return m_pageOrder.indexOf(left->fileName()) < m_pageOrder.indexOf(right->fileName());
     });
-    std::transform(last, m_pages.end(), std::back_inserter(m_pageOrder), [] (PageDataObject *page) {
+    std::transform(last, m_pages.end(), std::back_inserter(m_pageOrder), [](PageDataObject *page) {
         return page->fileName();
     });
     if (last != m_pages.end()) {
@@ -148,7 +145,7 @@ void PagesModel::sort(int column, Qt::SortOrder order)
     layoutChanged();
 }
 
-PageDataObject *PagesModel::addPage(const QString& baseName, const QVariantMap &properties)
+PageDataObject *PagesModel::addPage(const QString &baseName, const QVariantMap &properties)
 {
     int counter = 0;
     const QString extension = QStringLiteral(".page");
@@ -209,13 +206,13 @@ void PagesModel::setHiddenPages(const QStringList &hiddenPages)
     if (hiddenPages != m_hiddenPages) {
         m_hiddenPages = hiddenPages;
         Q_EMIT hiddenPagesChanged();
-        Q_EMIT dataChanged(index(0, 0), index(m_pages.count()-1, 0), {HiddenRole});
+        Q_EMIT dataChanged(index(0, 0), index(m_pages.count() - 1, 0), {HiddenRole});
     }
 }
 
 void PagesModel::removeLocalPageFiles(const QString &fileName)
 {
-    auto it = std::find_if(m_pages.begin(), m_pages.end(), [&] (PageDataObject *page) {
+    auto it = std::find_if(m_pages.begin(), m_pages.end(), [&](PageDataObject *page) {
         return page->fileName() == fileName;
     });
     if (it == m_pages.end()) {
@@ -224,7 +221,7 @@ void PagesModel::removeLocalPageFiles(const QString &fileName)
     if (m_writeableCache[fileName] == NotWriteable) {
         return;
     }
-    PageDataObject * const page = *it;
+    PageDataObject *const page = *it;
     QStringList files = QStandardPaths::locateAll(QStandardPaths::AppDataLocation, page->fileName(), QStandardPaths::LocateFile);
     for (const auto file : files) {
         if (QFileInfo(file).isWritable()) {
@@ -245,15 +242,15 @@ void PagesModel::removeLocalPageFiles(const QString &fileName)
     }
 }
 
-void PagesModel::ghnsEntriesChanged(const QQmlListReference& changedEntries)
+void PagesModel::ghnsEntriesChanged(const QQmlListReference &changedEntries)
 {
     for (int i = 0; i < changedEntries.count(); ++i) {
-        KNSCore::EntryInternal entry = static_cast<KNSCore::EntryWrapper*>(changedEntries.at(i))->entry();
+        KNSCore::EntryInternal entry = static_cast<KNSCore::EntryWrapper *>(changedEntries.at(i))->entry();
         if (entry.status() == KNS3::Entry::Installed) {
             for (const auto &file : entry.installedFiles()) {
                 const QString fileName = QUrl::fromLocalFile(file).fileName();
                 if (fileName.endsWith(".page")) {
-                    auto it = std::find_if(m_pages.begin(), m_pages.end(), [&] (PageDataObject *page) {
+                    auto it = std::find_if(m_pages.begin(), m_pages.end(), [&](PageDataObject *page) {
                         return page->fileName() == fileName;
                     });
                     if (it != m_pages.end()) {
@@ -262,13 +259,12 @@ void PagesModel::ghnsEntriesChanged(const QQmlListReference& changedEntries)
                         if (m_writeableCache[fileName] == NotWriteable) {
                             m_writeableCache[fileName] = LocalChanges;
                         }
-                    }
-                    else {
+                    } else {
                         addPage(fileName.chopped(strlen(".page")));
                     }
                 }
             }
-        } else if(entry.status() == KNS3::Entry::Deleted) {
+        } else if (entry.status() == KNS3::Entry::Deleted) {
             for (const auto &file : entry.uninstalledFiles()) {
                 const QString fileName = QUrl::fromLocalFile(file).fileName();
                 if (fileName.endsWith(".page")) {
@@ -278,4 +274,3 @@ void PagesModel::ghnsEntriesChanged(const QQmlListReference& changedEntries)
         }
     }
 }
-

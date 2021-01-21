@@ -13,16 +13,16 @@
 #include <QDebug>
 
 // #include <KRun>
-#include <KLocalizedString>
 #include <KGlobalAccel>
 #include <KIO/ApplicationLauncherJob>
 #include <KIO/CommandLauncherJob>
+#include <KLocalizedString>
 
-ToolsModel::ToolsModel(QObject* parent)
+ToolsModel::ToolsModel(QObject *parent)
     : QAbstractListModel(parent)
 {
     addFromService(QStringLiteral("org.kde.konsole"));
-//     addFromService(QStringLiteral("org.kde.ksysguard"));
+    //     addFromService(QStringLiteral("org.kde.ksysguard"));
     addFromService(QStringLiteral("org.kde.ksystemlog"));
     addFromService(QStringLiteral("org.kde.kinfocenter"));
     addFromService(QStringLiteral("org.kde.filelight"));
@@ -45,16 +45,15 @@ ToolsModel::ToolsModel(QObject* parent)
 
 QHash<int, QByteArray> ToolsModel::roleNames() const
 {
-    static QHash<int, QByteArray> names = {
-        { IdRole, "id" },
-        { NameRole, "name" },
-        { IconRole, "icon" },
-        { ShortcutRole, "shortcut" }
-    };
+    static QHash<int, QByteArray> names = {//
+                                           {IdRole, "id"},
+                                           {NameRole, "name"},
+                                           {IconRole, "icon"},
+                                           {ShortcutRole, "shortcut"}};
     return names;
 }
 
-int ToolsModel::rowCount(const QModelIndex& parent) const
+int ToolsModel::rowCount(const QModelIndex &parent) const
 {
     if (parent.isValid()) {
         return 0;
@@ -63,7 +62,7 @@ int ToolsModel::rowCount(const QModelIndex& parent) const
     return m_entries.count();
 }
 
-QVariant ToolsModel::data(const QModelIndex& index, int role) const
+QVariant ToolsModel::data(const QModelIndex &index, int role) const
 {
     if (!checkIndex(index, CheckIndexOption::IndexIsValid | CheckIndexOption::DoNotUseParent)) {
         return QVariant{};
@@ -71,22 +70,24 @@ QVariant ToolsModel::data(const QModelIndex& index, int role) const
 
     auto entry = m_entries.at(index.row());
     switch (role) {
-        case IdRole:
-            return entry.id;
-        case NameRole:
-            return entry.name;
-        case IconRole:
-            return entry.icon;
-        case ShortcutRole:
-            return entry.shortcut;
+    case IdRole:
+        return entry.id;
+    case NameRole:
+        return entry.name;
+    case IconRole:
+        return entry.icon;
+    case ShortcutRole:
+        return entry.shortcut;
     }
 
     return QVariant{};
 }
 
-void ToolsModel::trigger(const QString& id)
+void ToolsModel::trigger(const QString &id)
 {
-    auto itr = std::find_if(m_entries.cbegin(), m_entries.cend(), [id](const Entry &entry) { return entry.id == id; });
+    auto itr = std::find_if(m_entries.cbegin(), m_entries.cend(), [id](const Entry &entry) {
+        return entry.id == id;
+    });
     if (itr == m_entries.cend()) {
         return;
     }
@@ -97,12 +98,15 @@ void ToolsModel::trigger(const QString& id)
     }
 
     if (itr->id == QStringLiteral("killWindow")) {
-        auto message = QDBusMessage::createMethodCall(QStringLiteral("org.kde.KWin"), QStringLiteral("/KWin"), QStringLiteral("org.kde.KWin"), QStringLiteral("killWindow"));
+        auto message = QDBusMessage::createMethodCall(QStringLiteral("org.kde.KWin"),
+                                                      QStringLiteral("/KWin"),
+                                                      QStringLiteral("org.kde.KWin"),
+                                                      QStringLiteral("killWindow"));
         QDBusConnection::sessionBus().asyncCall(message);
     }
 }
 
-void ToolsModel::addFromService(const QString& serviceName)
+void ToolsModel::addFromService(const QString &serviceName)
 {
     auto service = KService::serviceByDesktopName(serviceName);
     if (service) {

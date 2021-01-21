@@ -14,8 +14,8 @@ class QQuickItem;
 class FaceLoader;
 class PageDataObject;
 
-class FacesModel : public QAbstractListModel {
-
+class FacesModel : public QAbstractListModel
+{
     Q_OBJECT
     Q_PROPERTY(PageDataObject *pageData READ pageData WRITE setPageData NOTIFY pageDataChanged)
 
@@ -42,7 +42,7 @@ private:
     void findFaceLoaders(PageDataObject *pageData);
 
     PageDataObject *m_pageData;
-    QVector<FaceLoader*> m_faceLoaders;
+    QVector<FaceLoader *> m_faceLoaders;
 };
 
 #endif

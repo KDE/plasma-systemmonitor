@@ -13,10 +13,10 @@
 class ColumnSortModel : public QIdentityProxyModel
 {
     Q_OBJECT
-//     Q_PROPERTY(QStringList excludedColumns READ excludedColumns WRITE setExcludedColumns NOTIFY excludedColumnsChanged)
-//     Q_PROPERTY(QStringList visibleColumns READ visibleColumns WRITE setVisibleColumns NOTIFY visibleColumnsChanged)
-//     Q_PROPERTY(QList<int> columnWeights READ columnWeights WRITE setColumnWeights NOTIFY columnWeightsChanged)
-//     Q_PROPERTY(QString columnIdRole READ columnIdRole WRITE setColumnIdRole NOTIFY columnIdRoleChanged)
+    //     Q_PROPERTY(QStringList excludedColumns READ excludedColumns WRITE setExcludedColumns NOTIFY excludedColumnsChanged)
+    //     Q_PROPERTY(QStringList visibleColumns READ visibleColumns WRITE setVisibleColumns NOTIFY visibleColumnsChanged)
+    //     Q_PROPERTY(QList<int> columnWeights READ columnWeights WRITE setColumnWeights NOTIFY columnWeightsChanged)
+    //     Q_PROPERTY(QString columnIdRole READ columnIdRole WRITE setColumnIdRole NOTIFY columnIdRoleChanged)
     Q_PROPERTY(QStringList sortedColumns READ sortedColumns WRITE setSortedColumns NOTIFY sortedColumnsChanged)
     Q_PROPERTY(QString idRole READ idRole WRITE setIdRole NOTIFY idRoleChanged)
 
@@ -25,14 +25,14 @@ public:
         VisibleRole = Qt::UserRole + 99,
     };
 
-    explicit ColumnSortModel(QObject* parent = nullptr);
+    explicit ColumnSortModel(QObject *parent = nullptr);
 
     QVariant data(const QModelIndex &index, int role) const override;
 
-    void setSourceModel(QAbstractItemModel* newSourceModel) override;
+    void setSourceModel(QAbstractItemModel *newSourceModel) override;
 
-    QModelIndex mapFromSource(const QModelIndex & sourceIndex) const override;
-    QModelIndex mapToSource(const QModelIndex & proxyIndex) const override;
+    QModelIndex mapFromSource(const QModelIndex &sourceIndex) const override;
+    QModelIndex mapToSource(const QModelIndex &proxyIndex) const override;
 
     Q_INVOKABLE void move(int fromRow, int toRow);
 

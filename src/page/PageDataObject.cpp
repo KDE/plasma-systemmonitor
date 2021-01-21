@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
- * 
+ *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
@@ -48,16 +48,17 @@ QVariant converted(const QVariant &variant, QMetaType::Type type)
 
 int objectCount(QQmlListProperty<PageDataObject> *list)
 {
-    return static_cast<PageDataObject*>(list->object)->children().count();
+    return static_cast<PageDataObject *>(list->object)->children().count();
 }
 
 PageDataObject *objectAt(QQmlListProperty<PageDataObject> *list, int index)
 {
-    return static_cast<PageDataObject*>(list->object)->children().at(index);
+    return static_cast<PageDataObject *>(list->object)->children().at(index);
 }
 
-PageDataObject::PageDataObject(const KSharedConfig::Ptr& config, QObject* parent)
-    : QQmlPropertyMap(this, parent), m_config(config)
+PageDataObject::PageDataObject(const KSharedConfig::Ptr &config, QObject *parent)
+    : QQmlPropertyMap(this, parent)
+    , m_config(config)
 {
     m_childrenProperty = QQmlListProperty<PageDataObject>(this, nullptr, &objectCount, &objectAt);
     connect(this, &PageDataObject::valueChanged, this, &PageDataObject::markDirty);
@@ -238,7 +239,6 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
         } else {
             delete object;
         }
-
     }
 
     markClean();
@@ -331,12 +331,12 @@ void PageDataObject::updateNames()
     }
 }
 
-FaceLoader* PageDataObject::faceLoader()
+FaceLoader *PageDataObject::faceLoader()
 {
     return m_faceLoader;
 }
 
-void PageDataObject::setFaceLoader(FaceLoader* faceLoader)
+void PageDataObject::setFaceLoader(FaceLoader *faceLoader)
 {
     m_faceLoader = faceLoader;
 }

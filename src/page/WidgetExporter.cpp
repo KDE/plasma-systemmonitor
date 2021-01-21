@@ -9,8 +9,8 @@
 #include "FaceLoader.h"
 #include "PageDataObject.h"
 
-#include <KSharedConfig>
 #include <KConfigGroup>
+#include <KSharedConfig>
 
 #include <QDBusConnection>
 #include <QDBusConnectionInterface>
@@ -22,8 +22,7 @@ WidgetExporter::WidgetExporter(QObject *parent)
     : QObject(parent)
 {
     m_plasmashellAvailable = QDBusConnection::sessionBus().interface()->isServiceRegistered(plasmashellService);
-    auto serviceWatcher = new QDBusServiceWatcher(plasmashellService, QDBusConnection::sessionBus(),
-        QDBusServiceWatcher::WatchForOwnerChange, this);
+    auto serviceWatcher = new QDBusServiceWatcher(plasmashellService, QDBusConnection::sessionBus(), QDBusServiceWatcher::WatchForOwnerChange, this);
     connect(serviceWatcher, &QDBusServiceWatcher::serviceRegistered, this, [this] {
         m_plasmashellAvailable = true;
         Q_EMIT plasmashellAvailableChanged();
@@ -36,7 +35,6 @@ WidgetExporter::WidgetExporter(QObject *parent)
 
 void WidgetExporter::exportAsWidget(FaceLoader *loader) const
 {
-
     const PageDataObject *data = loader->dataObject();
     const QString group = data->value(QStringLiteral("face")).toString();
     const KConfigGroup configGroup = data->config()->group(group);
@@ -48,11 +46,12 @@ void WidgetExporter::exportAsWidget(FaceLoader *loader) const
     script += configEntriesScript(configGroup);
     script += QStringLiteral("w.reloadConfig\n");
 
-    auto call = QDBusMessage::createMethodCall(plasmashellService, QStringLiteral("/PlasmaShell"),
-        QStringLiteral("org.kde.PlasmaShell"), QStringLiteral("evaluateScript"));
+    auto call = QDBusMessage::createMethodCall(plasmashellService,
+                                               QStringLiteral("/PlasmaShell"),
+                                               QStringLiteral("org.kde.PlasmaShell"),
+                                               QStringLiteral("evaluateScript"));
     call.setArguments({script});
     QDBusConnection::sessionBus().asyncCall(call);
-
 }
 
 QString WidgetExporter::configEntriesScript(const KConfigGroup &group, const QStringList &path) const
@@ -64,8 +63,7 @@ QString WidgetExporter::configEntriesScript(const KConfigGroup &group, const QSt
     for (const auto &groupName : group.groupList()) {
         QStringList groupPath = path;
         groupPath.append(QStringLiteral("'%1'").arg(groupName));
-        script += configEntriesScript(group.group(groupName),  groupPath);
+        script += configEntriesScript(group.group(groupName), groupPath);
     }
     return script;
 }
-

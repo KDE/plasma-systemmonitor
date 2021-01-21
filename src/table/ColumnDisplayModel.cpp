@@ -8,12 +8,12 @@
 
 #include <QDebug>
 
-ColumnDisplayModel::ColumnDisplayModel(QObject* parent)
+ColumnDisplayModel::ColumnDisplayModel(QObject *parent)
     : QIdentityProxyModel(parent)
 {
 }
 
-void ColumnDisplayModel::setSourceModel(QAbstractItemModel* newSourceModel)
+void ColumnDisplayModel::setSourceModel(QAbstractItemModel *newSourceModel)
 {
     m_idRoleNumber = -1;
     QIdentityProxyModel::setSourceModel(newSourceModel);
@@ -26,7 +26,7 @@ QHash<int, QByteArray> ColumnDisplayModel::roleNames() const
     return roles;
 }
 
-QVariant ColumnDisplayModel::data(const QModelIndex& index, int role) const
+QVariant ColumnDisplayModel::data(const QModelIndex &index, int role) const
 {
     if (role == DisplayStyleRole && sourceModel()) {
         auto id = sourceModel()->data(mapToSource(index), idRoleNumber()).toString();
@@ -105,7 +105,7 @@ QString ColumnDisplayModel::idRole() const
     return m_idRole;
 }
 
-void ColumnDisplayModel::setIdRole(const QString & newIdRole)
+void ColumnDisplayModel::setIdRole(const QString &newIdRole)
 {
     if (newIdRole == m_idRole) {
         return;

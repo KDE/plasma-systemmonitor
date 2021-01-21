@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
- * 
+ *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
@@ -13,25 +13,25 @@
 
 #include "PageDataObject.h"
 
-PageDataModel::PageDataModel(QObject* parent)
+PageDataModel::PageDataModel(QObject *parent)
     : QAbstractListModel(parent)
 {
 }
 
 QHash<int, QByteArray> PageDataModel::roleNames() const
 {
-    static QHash<int, QByteArray> roles {
-        { DataRole, "data" },
+    static QHash<int, QByteArray> roles{
+        {DataRole, "data"},
     };
     return roles;
 }
 
-PageDataObject * PageDataModel::dataObject() const
+PageDataObject *PageDataModel::dataObject() const
 {
     return m_data;
 }
 
-void PageDataModel::setDataObject(PageDataObject * newDataObject)
+void PageDataModel::setDataObject(PageDataObject *newDataObject)
 {
     if (newDataObject == m_data) {
         return;
@@ -71,7 +71,6 @@ void PageDataModel::setDataObject(PageDataObject * newDataObject)
     Q_EMIT dataObjectChanged();
 }
 
-
 int PageDataModel::rowCount(const QModelIndex &parent) const
 {
     if (parent.isValid() || !m_data) {
@@ -93,14 +92,14 @@ QVariant PageDataModel::data(const QModelIndex &index, int role) const
     }
 
     switch (role) {
-        case DataRole:
-            return QVariant::fromValue(data);
-        default:
-            return QVariant{};
+    case DataRole:
+        return QVariant::fromValue(data);
+    default:
+        return QVariant{};
     }
 }
 
-int PageDataModel::countObjects(const QVariantMap& properties)
+int PageDataModel::countObjects(const QVariantMap &properties)
 {
     if (!m_data) {
         return 0;

@@ -1,14 +1,14 @@
 /*
  * SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
- * 
+ *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
 #pragma once
 
-#include <memory>
 #include <QAbstractListModel>
 #include <QQmlParserStatus>
+#include <memory>
 
 class QQmlListReference;
 
@@ -67,7 +67,7 @@ Q_SIGNALS:
     void hiddenPagesChanged();
 
 private:
-    QVector<PageDataObject*> m_pages;
+    QVector<PageDataObject *> m_pages;
     QStringList m_pageOrder;
     QStringList m_hiddenPages;
     QHash<QString, FilesWriteableStates> m_writeableCache;

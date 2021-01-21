@@ -21,6 +21,7 @@ public:
     Q_INVOKABLE void exportAsWidget(FaceLoader *loader) const;
 Q_SIGNALS:
     void plasmashellAvailableChanged();
+
 private:
     bool m_plasmashellAvailable;
     QString configEntriesScript(const KConfigGroup &group, const QStringList &path = {}) const;

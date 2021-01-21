@@ -8,7 +8,7 @@
 #include "PageSortModel.h"
 #include "PagesModel.h"
 
-PageSortModel::PageSortModel(QObject* parent)
+PageSortModel::PageSortModel(QObject *parent)
     : QAbstractProxyModel(parent)
 {
 }
@@ -22,13 +22,13 @@ QHash<int, QByteArray> PageSortModel::roleNames() const
     sourceNames.insert(ShouldRemoveFilesRole, "shouldRemoveFiles");
     return sourceNames;
 }
-QVariant PageSortModel::data(const QModelIndex& index, int role) const
+QVariant PageSortModel::data(const QModelIndex &index, int role) const
 {
     if (!checkIndex(index, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
         return QVariant();
     }
 
-    switch(role) {
+    switch (role) {
     case PagesModel::HiddenRole:
         return m_hiddenProxy[mapToSource(index).row()];
     case ShouldRemoveFilesRole:
@@ -38,13 +38,13 @@ QVariant PageSortModel::data(const QModelIndex& index, int role) const
     return QAbstractProxyModel::data(index, role);
 }
 
-bool PageSortModel::setData(const QModelIndex& index, const QVariant& value, int role)
+bool PageSortModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
-    if(!checkIndex(index, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
+    if (!checkIndex(index, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
         return false;
     }
 
-    switch(role){
+    switch (role) {
     case PagesModel::HiddenRole:
         m_hiddenProxy[mapToSource(index).row()] = value.toBool();
         break;
@@ -76,8 +76,7 @@ void PageSortModel::setSourceModel(QAbstractItemModel *newSourceModel)
     endResetModel();
 }
 
-
-int PageSortModel::rowCount (const QModelIndex &parent) const
+int PageSortModel::rowCount(const QModelIndex &parent) const
 {
     if (parent.isValid()) {
         return 0;
@@ -85,7 +84,7 @@ int PageSortModel::rowCount (const QModelIndex &parent) const
     return m_rowMapping.size();
 }
 
-int PageSortModel::columnCount(const QModelIndex& parent) const
+int PageSortModel::columnCount(const QModelIndex &parent) const
 {
     if (parent.isValid()) {
         return 0;
@@ -109,7 +108,7 @@ QModelIndex PageSortModel::parent(const QModelIndex &child) const
     return QModelIndex();
 }
 
-QModelIndex PageSortModel::mapFromSource(const QModelIndex& sourceIndex) const
+QModelIndex PageSortModel::mapFromSource(const QModelIndex &sourceIndex) const
 {
     if (!checkIndex(sourceIndex, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
         return QModelIndex();
@@ -118,7 +117,7 @@ QModelIndex PageSortModel::mapFromSource(const QModelIndex& sourceIndex) const
     return row != -1 ? createIndex(row, sourceIndex.column()) : QModelIndex();
 }
 
-QModelIndex PageSortModel::mapToSource(const QModelIndex& proxyIndex) const
+QModelIndex PageSortModel::mapToSource(const QModelIndex &proxyIndex) const
 {
     if (!checkIndex(proxyIndex, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
         return QModelIndex();
@@ -135,7 +134,7 @@ void PageSortModel::move(int fromRow, int toRow)
 
 void PageSortModel::applyChangesToSourceModel() const
 {
-    auto *pagesModel = static_cast<PagesModel*>(sourceModel());
+    auto *pagesModel = static_cast<PagesModel *>(sourceModel());
     QStringList newOrder, hiddenPages, toRemove;
     for (int i = 0; i < m_rowMapping.size(); ++i) {
         const QModelIndex sourceIndex = pagesModel->index(m_rowMapping[i]);
