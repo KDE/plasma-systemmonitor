@@ -171,21 +171,21 @@ FocusScope {
                 }
                 MouseArea {
                     id: dragHandle
+                    property real mouseDownX
+                    property bool dragging: false
                     anchors {
-                        right: parent.right
                         top: parent.top
                         bottom: parent.bottom
+                        left: LayoutMirroring.enabled && !dragging ? parent.left : undefined
+                        right: !LayoutMirroring.enabled && !dragging ? parent.right : undefined
                     }
                     drag.target: dragHandle
                     drag.axis: Drag.XAxis
                     cursorShape: enabled ? Qt.SplitHCursor : undefined
                     width: Kirigami.Units.smallSpacing * 2
-                    property real mouseDownX
-                    property bool dragging: false
                     onPressed: {
                         dragging = true
                         mouseDownX = x
-                        anchors.right = undefined
                     }
                     onXChanged: {
                         if (!dragging) {
@@ -197,7 +197,6 @@ FocusScope {
                     }
                     onReleased: {
                         dragging = false
-                        anchors.right = parent.right
                     }
                 }
                 Component.onCompleted: {
