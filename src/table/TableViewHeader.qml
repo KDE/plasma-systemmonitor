@@ -19,7 +19,7 @@ FocusScope {
 
     x: -view.contentX
     width: view.contentWidth
-    height: headerRow.height
+    height: heightHelper.height
 
     property TableView view
     property int sortColumn: -1
@@ -49,6 +49,11 @@ FocusScope {
         properties: {
             "headerpos": "end"
         }
+    }
+
+    Kirigami.BasicListItem {
+        id: heightHelper
+        text: "Placeholder"
     }
 
     activeFocusOnTab: true
@@ -90,6 +95,7 @@ FocusScope {
                 id: headerItem
 
                 width: heading.view.columnWidthProvider(model.row)
+                height: heightHelper.height
                 enabled: width > 0
 
                 property string headerPosition: {
