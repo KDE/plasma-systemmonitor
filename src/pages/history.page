@@ -12,7 +12,6 @@ highPrioritySensorIds=["cpu/cpu.*/usage"]
 lineChartFillOpacity=100
 lineChartStacked=true
 rangeAutoY=true
-rangeToX=100
 
 [Face-94107115022400][Appearance]
 chartFace=org.kde.ksysguard.linechart
@@ -23,7 +22,6 @@ highPrioritySensorIds=["memory/physical/used","memory/swap/used"]
 
 [Face-94107115022400][org.kde.ksysguard.linechart][General]
 lineChartFillOpacity=100
-rangeToX=100
 
 [Face-94107150101264][Appearance]
 chartFace=org.kde.ksysguard.linechart
@@ -34,7 +32,6 @@ highPrioritySensorIds=["network/all/download","network/all/upload"]
 
 [Face-94107150101264][org.kde.ksysguard.linechart][General]
 lineChartFillOpacity=100
-rangeToX=100
 
 [page]
 icon=office-chart-line
