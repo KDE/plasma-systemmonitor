@@ -33,7 +33,11 @@ Page {
 
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
-    background: Rectangle { color: Kirigami.Theme.backgroundColor }
+    background: Rectangle {
+        Kirigami.Theme.inherit: false
+        Kirigami.Theme.colorSet: Kirigami.Theme.View
+        color: Kirigami.Theme.backgroundColor
+    }
 
     header: ToolBar {
         implicitHeight: root.headerHeight
