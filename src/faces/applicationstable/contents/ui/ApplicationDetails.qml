@@ -83,11 +83,13 @@ Page {
 
             colorSource: Charts.SingleValueSource { value: Kirigami.Theme.negativeTextColor }
             valueSources: [
-                Charts.ValueHistorySource {
+                Charts.HistoryProxySource {
                     id: cpuHistory
+                    source: Charts.SingleValueSource {
+                        value: root.firstApplication ? root.firstApplication.cpu / cpuCountSensor.value : 0
+                    }
                     maximumHistory: 50
                     interval: 2000
-                    value: root.firstApplication ? root.firstApplication.cpu / cpuCountSensor.value : 0
                 }
             ]
 
@@ -106,9 +108,12 @@ Page {
 
             colorSource: Charts.SingleValueSource { value: Kirigami.Theme.positiveTextColor }
             valueSources: [
-                Charts.ValueHistorySource {
+                Charts.HistoryProxySource {
                     id: memoryHistory
-                    value: root.firstApplication ? root.firstApplication.memory : 0
+                    source: Charts.SingleValueSource {
+                        // ProcessDataModel memory is in KiB but our y range is in B so convert memory correctly.
+                        value: root.firstApplication ? root.firstApplication.memory * 1024 : 0
+                    }
                     maximumHistory: 50
                     interval: 2000
                 }
@@ -127,15 +132,15 @@ Page {
             unit: Formatter.Units.UnitKiloByteRate
 
             valueSources: [
-                Charts.ValueHistorySource {
+                Charts.HistoryProxySource {
                     id: netInboundHistory
-                    value: root.firstApplication ? root.firstApplication.netInbound : 0;
+                    source: Charts.SingleValueSource { value: root.firstApplication ? root.firstApplication.netInbound : 0; }
                     maximumHistory: 50
                     interval: 2000
                 },
-                Charts.ValueHistorySource {
+                Charts.HistoryProxySource {
                     id: netOutboundHistory
-                    value: root.firstApplication ? root.firstApplication.netOutbound : 0;
+                    source: Charts.SingleValueSource { value: root.firstApplication ? root.firstApplication.netOutbound : 0; }
                     maximumHistory: 50
                     interval: 2000
                 }
