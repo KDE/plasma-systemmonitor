@@ -49,7 +49,7 @@ void ProcessSortFilterModel::setSourceModel(QAbstractItemModel *newSourceModel)
 bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
     // not handled a reset yet, we'll invalidate at the end of modelReset anyway
-    if (m_uidColumn == -1) {
+    if (m_uidColumn == -1 && m_pidColumn == -1 && filterKeyColumn() == -1) {
         return false;
     }
 
