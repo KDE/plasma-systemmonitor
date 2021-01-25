@@ -102,7 +102,7 @@ Page {
             Layout.fillHeight: false
             Layout.preferredHeight: Kirigami.Units.gridUnit * 3
 
-            yRange { from: 0; to: totalMemorySensor.value; automatic: false }
+            yRange { from: 0; to: totalMemorySensor.value ? totalMemorySensor.value : 0; automatic: false }
             xRange { from: 0; to: 50 }
             unit: totalMemorySensor.unit
 
@@ -119,7 +119,7 @@ Page {
                 }
             ]
 
-            Sensors.Sensor { id: totalMemorySensor; sensorId: "mem/physical/total" }
+            Sensors.Sensor { id: totalMemorySensor; sensorId: "memory/physical/total" }
         }
         Label {
             text: i18nc("@title:group", "Network")
