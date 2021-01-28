@@ -18,6 +18,8 @@ Loader {
         }
     }
 
+    onLoaded: item.open()
+
     active: false
     asynchronous: true
 }
