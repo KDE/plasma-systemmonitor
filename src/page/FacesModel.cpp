@@ -82,7 +82,9 @@ void FacesModel::setPageData(PageDataObject *pageData)
         return;
     }
     beginResetModel();
-    disconnect(m_pageData, &PageDataObject::dirtyChanged, this, nullptr);
+    if (m_pageData) {
+        disconnect(m_pageData, &PageDataObject::dirtyChanged, this, nullptr);
+    }
     m_faceLoaders.clear();
     m_pageData = pageData;
     Q_EMIT pageDataChanged();

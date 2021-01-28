@@ -55,6 +55,7 @@ Dialog {
 
     onClosed: {
         actionsFace = "dummy" //see above
+        pageData = null
     }
 
     contentItem: Rectangle {
