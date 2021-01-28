@@ -24,6 +24,7 @@ Name[sl]=Strani
 Name[sv]=Sidor
 Name[uk]=Сторінки
 Name[x-test]=xxPagesxx
+Name[zh_CN]=页面
 ProvidersUrl=https://autoconfig.kde.org/ocs/providers.xml
 Categories=System Monitor Pages
 XdgTargetDir=plasma-systemmonitor

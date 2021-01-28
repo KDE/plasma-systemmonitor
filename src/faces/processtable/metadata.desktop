@@ -27,6 +27,7 @@ Name[sl]=Tabela procesov
 Name[sv]=Processtabell
 Name[uk]=Таблиця процесів
 Name[x-test]=xxProcess Tablexx
+Name[zh_CN]=进程列表
 Icon=view-process-system
 
 Type=Service
