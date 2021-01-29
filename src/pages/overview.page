@@ -27,6 +27,7 @@ Title[sl]=Pomnilnik
 Title[sv]=Minne
 Title[uk]=Пам'ять
 Title[x-test]=xxMemoryxx
+Title[zh_CN]=内存
 
 [Face-94410222150464][Sensors]
 highPrioritySensorIds=["memory/physical/used"]
@@ -61,6 +62,7 @@ Title[sl]=Omrežja
 Title[sv]=Nätverk
 Title[uk]=Мережі
 Title[x-test]=xxNetworksxx
+Title[zh_CN]=网络
 
 [Face-94410238879984][Sensors]
 highPrioritySensorIds=["network/(?!all).*/ipv4address","network/(?!all).*/ipv6address"]
@@ -98,6 +100,7 @@ Title[sl]=Disk
 Title[sv]=Disk
 Title[uk]=Диск
 Title[x-test]=xxDiskxx
+Title[zh_CN]=存储
 
 [Face-94410261307168][Sensors]
 highPrioritySensorIds=["disk/all/used"]
@@ -132,6 +135,7 @@ Title[sl]=CPE
 Title[sv]=Processor
 Title[uk]=Процесор
 Title[x-test]=xxCPUxx
+Title[zh_CN]=CPU
 
 [Face-94410266684256][Sensors]
 highPrioritySensorIds=["cpu/all/usage"]
@@ -169,6 +173,7 @@ Title[sl]=Sistem
 Title[sv]=System
 Title[uk]=Система
 Title[x-test]=xxSystemxx
+Title[zh_CN]=系统
 
 [Face-94410278989264][Sensors]
 highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/qtVersion","os/plasma/kfVersion","os/plasma/plasmaVersion"]
@@ -199,6 +204,7 @@ Title[sl]=Hitrosti omrežja
 Title[sv]=Nätverkshastigheter
 Title[uk]=Швидкості у мережі
 Title[x-test]=xxNetwork Ratesxx
+Title[zh_CN]=网络传输率
 
 [Face-94410280144624][Sensors]
 highPrioritySensorIds=["network/(?!all).*/download","network/(?!all).*/upload"]
@@ -240,6 +246,7 @@ Title[sl]=Pregled
 Title[sv]=Översikt
 Title[uk]=Огляд
 Title[x-test]=xxOverviewxx
+Title[zh_CN]=系统概览
 
 [page][row-0]
 isTitle=false
@@ -300,6 +307,7 @@ Title[sl]=Omrežje in sistem
 Title[sv]=Nätverk och system
 Title[uk]=Мережа і система
 Title[x-test]=xxNetwork & Systemxx
+Title[zh_CN]=网络和系统
 
 [page][row-2]
 isTitle=false
@@ -362,6 +370,7 @@ Title[sl]=Aplikacije
 Title[sv]=Program
 Title[uk]=Програми
 Title[x-test]=xxApplicationsxx
+Title[zh_CN]=应用程序
 
 [page][row-4]
 isTitle=false
