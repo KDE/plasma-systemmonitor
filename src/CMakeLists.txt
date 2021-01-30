@@ -17,9 +17,9 @@ add_definitions(-DQT_NO_KEYWORDS)
 add_executable(plasma-systemmonitor ${plasma-systemmonitor_SRCS} ${plasma-systemmonitor_QRC})
 target_compile_definitions(plasma-systemmonitor PRIVATE PROJECT_VERSION="${PROJECT_VERSION}")
 target_link_libraries(plasma-systemmonitor
-    Qt5::Quick
-    Qt5::Widgets
-    Qt5::DBus
+    Qt::Quick
+    Qt::Widgets
+    Qt::DBus
     KF5::I18n
     KF5::ConfigGui
     KF5::Declarative
