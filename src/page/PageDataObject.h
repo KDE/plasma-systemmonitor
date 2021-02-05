@@ -33,6 +33,7 @@ public:
 
     Q_INVOKABLE bool resetPage();
     Q_INVOKABLE bool savePage();
+    Q_INVOKABLE void saveAs(const QUrl &destination);
 
     bool load(const KConfigBase &config, const QString &groupName);
     Q_SIGNAL void loaded();

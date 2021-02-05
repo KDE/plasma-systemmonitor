@@ -6,6 +6,7 @@
 
 import QtQuick 2.12
 import QtQuick.Controls 2.12
+import QtQuick.Dialogs 1.3
 import QtQuick.Layouts 1.12
 import QtQuick.Window 2.12
 
@@ -65,6 +66,13 @@ Kirigami.ApplicationWindow {
                         icon.name: "handle-sort"
                         text: i18nc("@action", "Edit or Remove pages...")
                         onTriggered: pageSortDialog.open()
+                    },
+                     Kirigami.Action {
+                        id: exportAction
+                        text: i18nc("@action", "Export Current Page...")
+                        icon.name: "document-export"
+                        enabled: !app.pageStack.currentItem.edit
+                        onTriggered: exportDialog.open()
                     },
                     Kirigami.Action {
                         id: ghnsAction
@@ -207,6 +215,18 @@ Kirigami.ApplicationWindow {
                 }
             }
             visible: true
+        }
+    }
+
+     Page.DialogLoader {
+        id: exportDialog
+        sourceComponent: FileDialog {
+            selectExisting: false
+            folder: shortcuts.home
+            title: i18nc("@title:window %1 is the name of the page that is being exported", "Export %1", app.pageStack.currentItem.title)
+            defaultSuffix: "page"
+            nameFilters: [i18nc("Name filter in file dialog", "System Monitor page (*.page)")]
+            onAccepted: page.saveAs(fileUrl)
         }
     }
 

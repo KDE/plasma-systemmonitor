@@ -10,6 +10,7 @@
 
 #include <QDebug>
 #include <QRegularExpression>
+#include <QUrl>
 
 #include <KConfig>
 #include <KConfigGroup>
@@ -184,6 +185,13 @@ bool PageDataObject::savePage()
         return m_config->sync();
     }
     return false;
+}
+
+void PageDataObject::saveAs(const QUrl &destination)
+{
+    auto copiedPage = m_config->copyTo(destination.toLocalFile());
+    // KConfig passes the ownership of the returned config to us, the destructor of it will write it to the disk
+    delete copiedPage;
 }
 
 bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
