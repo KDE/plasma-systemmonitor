@@ -53,6 +53,7 @@ public:
     void componentComplete() override;
 
     Q_INVOKABLE PageDataObject *addPage(const QString &fileName, const QVariantMap &properties = QVariantMap{});
+    Q_INVOKABLE PageDataObject *importPage(const QUrl &file);
     Q_INVOKABLE void removeLocalPageFiles(const QString &fileName);
     Q_INVOKABLE void ghnsEntriesChanged(const QQmlListReference &changedEntries);
 

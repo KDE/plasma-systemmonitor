@@ -210,6 +210,20 @@ void PagesModel::setHiddenPages(const QStringList &hiddenPages)
     }
 }
 
+PageDataObject *PagesModel::importPage(const QUrl &file)
+{
+    const QString fileName = file.fileName();
+    if (!fileName.endsWith(QLatin1String(".page"))) {
+        return nullptr;
+    }
+    // Let addPage first figure out the file name to avoid duplicates and then reload the page after we placed the file
+    auto page = addPage(fileName);
+    const auto destination = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + QChar('/') + page->fileName();
+    QFile::copy(file.toLocalFile(), destination);
+    page->resetPage();
+    return page;
+}
+
 void PagesModel::removeLocalPageFiles(const QString &fileName)
 {
     auto it = std::find_if(m_pages.begin(), m_pages.end(), [&](PageDataObject *page) {

@@ -75,6 +75,11 @@ Kirigami.ApplicationWindow {
                         onTriggered: exportDialog.open()
                     },
                     Kirigami.Action {
+                        icon.name: "document-import"
+                        text: i18nc("@action", "Import Page...")
+                        onTriggered: importDialog.open()
+                    },
+                    Kirigami.Action {
                         id: ghnsAction
                         icon.name: "get-hot-new-stuff"
                         text: i18nc("@action:inmenu", "Get New Pages...")
@@ -227,6 +232,24 @@ Kirigami.ApplicationWindow {
             defaultSuffix: "page"
             nameFilters: [i18nc("Name filter in file dialog", "System Monitor page (*.page)")]
             onAccepted: page.saveAs(fileUrl)
+        }
+    }
+    Page.DialogLoader {
+        id: importDialog
+        sourceComponent: FileDialog {
+            selectExisting: true
+            folder: shortcuts.home
+            title: i18nc("@title:window", "Import Page")
+            defaultSuffix: "page"
+            nameFilters: [i18nc("Name filter in file dialog", "System Monitor page (*.page)")]
+            onAccepted: {
+                const newPage = pagesModel.importPage(fileUrl)
+                if (!newPage) {
+                    return;
+                }
+                const pageAction = Array.from(globalDrawer.actions).find(action => action.pageData.fileName == newPage.fileName)
+                pageAction.trigger()
+            }
         }
     }
 
