@@ -107,6 +107,7 @@ SPDX-License-Identifier: CC0-1.0
     <binary>plasma-systemmonitor</binary>
   </provides>
   <project_group>KDE</project_group>
-  <releases><release version="5.21.0" date="2021-02-16"/>
+  <releases>
+    <release version="5.21.0" date="2021-02-16"/>
   </releases>
 </component>
