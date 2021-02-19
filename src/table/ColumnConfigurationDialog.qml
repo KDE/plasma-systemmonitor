@@ -59,7 +59,10 @@ Dialog {
 
     onAboutToShow: {
         sortModel.sortedColumns = sortedColumns.filter(id => fixedColumns.indexOf(id) == -1)
-        displayModel.columnDisplay = columnDisplay
+        let tempDisplay = columnDisplay
+        fixedColumns.forEach(column => delete tempDisplay[column])
+        displayModel.columnDisplay = tempDisplay
+
     }
 
     Rectangle {
