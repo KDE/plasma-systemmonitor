@@ -196,13 +196,14 @@ Kirigami.ApplicationWindow {
         id: getNewPageDialog
 
         sourceComponent: NewStuff.Dialog {
+            id: downloadDialog
             configFile: "plasma-systemmonitor.knsrc"
             // I have a weird bug on my machine where getNewPageDialog.changedEntries is not an alias
             // engine.changedEntries but for the engine itself, so I directly use the property of the engine
             Connections {
-                target: getNewPageDialog.engine
+                target: downloadDialog.engine
                 function onChangedEntriesChanged() {
-                    pagesModel.ghnsEntriesChanged(getNewPageDialog.engine.changedEntries)
+                    pagesModel.ghnsEntriesChanged(downloadDialog.engine.changedEntries)
                 }
             }
             visible: true
