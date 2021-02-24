@@ -28,6 +28,7 @@ Faces.SensorFace {
             icon.name: "search"
             text: i18nc("@action", "Search")
             displayComponent: Kirigami.SearchField {
+                text: table.nameFilterString
                 onTextEdited: table.nameFilterString = text;
                 onAccepted: table.nameFilterString = text;
             }
