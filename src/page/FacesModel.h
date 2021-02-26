@@ -41,7 +41,7 @@ Q_SIGNALS:
 private:
     void findFaceLoaders(PageDataObject *pageData);
 
-    PageDataObject *m_pageData;
+    PageDataObject *m_pageData = nullptr;
     QVector<FaceLoader *> m_faceLoaders;
 };
 
