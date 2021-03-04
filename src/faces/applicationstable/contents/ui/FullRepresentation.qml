@@ -237,26 +237,11 @@ Faces.SensorFace {
 
         items: table.selectedApplications
 
-        delegate: Kirigami.AbstractListItem {
-            leftPadding: Kirigami.Units.gridUnit
-            contentItem: RowLayout {
-                spacing: Kirigami.Units.largeSpacing
-                Kirigami.Icon {
-                    Layout.preferredWidth: Kirigami.Units.iconSizes.large;
-                    Layout.preferredHeight: width;
-                    source: modelData.iconName
-                }
-                ColumnLayout {
-                    id: detailsColumn
-                    Label { Layout.fillWidth: true; text: modelData.name; elide: Text.ElideRight }
-                    Label {
-                        Layout.fillWidth: true
-                        text: i18ncp("@item:intable", "%1 Process", "%1 Processes", modelData.pids.length)
-                        color: Kirigami.Theme.disabledTextColor
-                        elide: Text.ElideRight
-                    }
-                }
-            }
+        delegate: Kirigami.BasicListItem {
+            icon: modelData.iconName
+            iconSize:  Kirigami.Units.iconSizes.large
+            label: modelData.name
+            subtitle: i18ncp("@item:intable", "%1 Process", "%1 Processes", modelData.pids.length)
             highlighted: false
             hoverEnabled: false
         }

@@ -227,17 +227,9 @@ Faces.SensorFace {
 
         items: table.selectedProcesses
 
-        delegate: Kirigami.AbstractListItem {
-            leftPadding: Kirigami.Units.gridUnit
-            contentItem: Column {
-                Label { text: modelData.name; width: parent.width; elide: Text.ElideRight }
-                Label {
-                    width: parent.width
-                    text: i18nc("@item:intable %1 is process id, %2 is user name", "Process ID %1, owned by %2", modelData.pid, modelData.username)
-                    color: Kirigami.Theme.disabledTextColor
-                    elide: Text.ElideRight
-                }
-            }
+        delegate: Kirigami.BasicListItem {
+            label: modelData.name
+            subtitle: i18nc("@item:intable %1 is process id, %2 is user name", "Process ID %1, owned by %2", modelData.pid, modelData.username)
             highlighted: false
             hoverEnabled: false
         }
