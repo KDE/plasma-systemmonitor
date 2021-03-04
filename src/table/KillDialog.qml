@@ -53,7 +53,9 @@ Dialog {
                 header: Label {
                     id: questionLabel
                     padding: Kirigami.Units.gridUnit
+                    width: parent.width
                     text: dialog.questionText
+                    wrapMode: Text.Wrap
                 }
 
                 model: dialog.items
@@ -72,11 +74,22 @@ Dialog {
     }
 
     footer: DialogButtonBox {
+        id: buttonBox
+        contentWidth: availableWidth
+        contentItem: RowLayout {
+            Repeater {
+                model: buttonBox.contentModel
+            }
+        }
         CheckBox {
-            implicitWidth: contentItem.implicitWidth + Kirigami.Units.smallSpacing * 2
-            contentItem: Label { leftPadding: Kirigami.Units.gridUnit; text: i18ndc("plasma-systemmonitor", "@option:check", "Do not ask again") }
+            implicitHeight: contentItem.implicitHeight
+            Layout.fillWidth: true
+            contentItem: Label {
+                leftPadding: Kirigami.Units.gridUnit + Kirigami.Units.smallSpacing;
+                text: i18ndc("plasma-systemmonitor", "@option:check", "Do not ask again");
+                wrapMode: Text.WordWrap
+            }
             DialogButtonBox.buttonRole: DialogButtonBox.ActionRole
-
             onToggled: dialog.doNotAskAgain = checked
         }
         Button {
@@ -86,7 +99,7 @@ Dialog {
                 anchors.leftMargin: Kirigami.Units.largeSpacing
                 anchors.rightMargin: Kirigami.Units.largeSpacing
                 //Workaround for QTBUG-81796
-                Kirigami.Icon { source: dialog.killButtonIcon; width: Kirigami.Units.iconSizes.smallMedium; height: width }
+                Kirigami.Icon { source: dialog.killButtonIcon; Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium}
                 Label { text: dialog.killButtonText }
             }
             DialogButtonBox.buttonRole: DialogButtonBox.AcceptRole
@@ -98,7 +111,7 @@ Dialog {
                 anchors.leftMargin: Kirigami.Units.largeSpacing
                 anchors.rightMargin: Kirigami.Units.largeSpacing
                 //Workaround for QTBUG-81796
-                Kirigami.Icon { source: "dialog-cancel"; width: Kirigami.Units.iconSizes.smallMedium; height: width }
+                Kirigami.Icon { source: "dialog-cancel"; Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium}
                 Label { text: i18ndc("plasma-systemmonitor", "@action:button", "Cancel") }
             }
             DialogButtonBox.buttonRole: DialogButtonBox.RejectRole
