@@ -165,8 +165,6 @@ Kirigami.ApplicationWindow {
         sourceComponent: Page.PageDialog {
             title: i18nc("@window:title", "Add New Page")
 
-            visible: true
-
             onAccepted: {
                 var fileName = name.toLowerCase().replace(" ", "_");
                 var newPage = pagesModel.addPage(fileName, {title: name, icon: iconName, margin: margin})
@@ -188,7 +186,6 @@ Kirigami.ApplicationWindow {
         sourceComponent: Page.PageSortDialog {
             title: i18nc("@window:title", "Edit Pages")
             model: pagesModel
-            visible: true
         }
     }
 
@@ -206,7 +203,6 @@ Kirigami.ApplicationWindow {
                     pagesModel.ghnsEntriesChanged(downloadDialog.engine.changedEntries)
                 }
             }
-            visible: true
         }
     }
 
