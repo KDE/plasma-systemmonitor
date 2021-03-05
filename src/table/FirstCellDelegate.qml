@@ -23,6 +23,11 @@ Control {
     Kirigami.Theme.colorSet: background.selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
     Kirigami.Theme.inherit: false
 
+    topPadding: 0
+    bottomPadding: 0
+    rightPadding: 0
+    leftPadding: Kirigami.Units.largeSpacing
+
     background: CellBackground { view: delegate.TableView.view; row: model.row; column: model.column }
 
     contentItem: RowLayout {
