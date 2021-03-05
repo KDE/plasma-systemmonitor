@@ -21,6 +21,7 @@ Control {
     property alias valueSources: chart.valueSources
 
     Kirigami.Theme.colorSet: background.selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
+    Kirigami.Theme.inherit: false
 
     property int _row: model.row
     property int _column: model.column

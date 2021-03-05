@@ -18,6 +18,7 @@ Label {
     text: model.display != undefined ? model.display : ""
 
     Kirigami.Theme.colorSet: background.selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
+    Kirigami.Theme.inherit: false
 
     maximumLineCount: 1
     elide: Text.ElideRight
