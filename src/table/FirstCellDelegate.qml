@@ -20,6 +20,7 @@ Control {
     property bool treeDecorationVisible: false
 
     Kirigami.Theme.colorSet: background.selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
+    Kirigami.Theme.inherit: false
 
     background: CellBackground { view: delegate.TableView.view; row: model.row; column: model.column }
 
