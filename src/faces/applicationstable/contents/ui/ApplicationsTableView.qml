@@ -9,6 +9,7 @@ import QtQuick.Controls 2.12
 
 import Qt.labs.qmlmodels 1.0
 
+import org.kde.kirigami 2.12 as Kirigami
 import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.quickcharts 1.0 as Charts
 
@@ -18,6 +19,14 @@ import org.kde.ksysguard.table 1.0 as Table
 
 Table.BaseTableView {
     id: view
+
+    Kirigami.PlaceholderMessage {
+        visible: !appModel.available
+        anchors.fill: parent
+        anchors.margins: Kirigami.Units.largeSpacing
+        icon.name: "action-unavailable-symbolic"
+        text: i18nc("Warning message shown on runtime error", "Applications view is unsupported on your system");
+    }
 
     property var enabledColumns: []
     property alias columnDisplay: displayModel.columnDisplay
@@ -154,6 +163,12 @@ Table.BaseTableView {
 
             hiddenAttributes = hidden
             return result;
+        }
+
+        Component.onCompleted: {
+            if (!available) {
+                console.error("Implementation matching https://systemd.io/DESKTOP_ENVIRONMENTS/ was not found. ApplicationsView will not be available")
+            }
         }
     }
 
