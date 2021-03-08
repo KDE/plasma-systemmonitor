@@ -107,7 +107,7 @@ ToolButton {
 
             if (root.page) {
                 var sceneRect = root.target.mainControl.mapToItem(null, Qt.rect(0, 0, root.target.mainControl.width, root.target.mainControl.height))
-                root.page.ensureVisible(sceneRect)
+                root.page.scrollContents(sceneRect)
             }
 
             if (child && child != root.target &&
