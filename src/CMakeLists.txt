@@ -27,6 +27,7 @@ target_link_libraries(plasma-systemmonitor
     KF5::KIOGui
     KF5::GlobalAccel
     KF5::DBusAddons
+    KF5::QuickAddons
 )
 
 install(TARGETS plasma-systemmonitor DESTINATION ${KDE_INSTALL_BINDIR})

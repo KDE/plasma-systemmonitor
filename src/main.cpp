@@ -17,6 +17,7 @@
 #include <KDBusService>
 #include <KDeclarative/KDeclarative>
 #include <KLocalizedString>
+#include <KQuickAddons/QtQuickSettings>
 
 #include "Configuration.h"
 #include "ToolsModel.h"
@@ -114,10 +115,10 @@ int main(int argc, char **argv)
         return new CommandLineArguments{parser};
     });
 
+    KQuickAddons::QtQuickSettings::init();
+
     QQmlApplicationEngine engine;
-
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-
     engine.load(QStringLiteral(":/main.qml"));
 
     QObject::connect(&service, &KDBusService::activateRequested, &engine, []() {

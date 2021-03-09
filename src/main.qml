@@ -24,6 +24,8 @@ Kirigami.ApplicationWindow {
 
     title: (pageStack.currentItem ? pageStack.currentItem.title + " - " : "") + i18n("System Monitor")
 
+    header: contentItem.GraphicsInfo.api == GraphicsInfo.Software ? degradedWarning.createObject(app) : null
+
     Kirigami.PagePool {
         id: pagePoolObject
     }
@@ -256,6 +258,19 @@ Kirigami.ApplicationWindow {
         property alias sidebarCollapsed: globalDrawer.collapsed
         property alias pageOrder: pagesModel.pageOrder
         property alias hiddenPages: pagesModel.hiddenPages
+    }
+
+    Component {
+        id: degradedWarning
+
+        ToolBar {
+            Kirigami.InlineMessage {
+                anchors.fill: parent
+                visible: true
+                type: Kirigami.MessageType.Warning
+                text: i18n("System Monitor is running in degraded mode. This means that certain things may not display or display incorrectly. Please check your setup.")
+            }
+        }
     }
 
     pageStack.columnView.columnWidth: Kirigami.Units.gridUnit * 17
