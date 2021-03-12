@@ -82,7 +82,6 @@ Dialog {
             }
         }
         CheckBox {
-            implicitHeight: contentItem.implicitHeight
             Layout.fillWidth: true
             contentItem: Label {
                 leftPadding: Kirigami.Units.gridUnit + Kirigami.Units.smallSpacing;
