@@ -109,19 +109,25 @@ FocusScope {
         }
 
         hoverEnabled: true
-        anchors.fill: scrollView
+
+        // effectively anchors.fill: scrollView.contentItem
+        // but Flickable cannot have multiple children
+        x: scrollView.contentItem.x
+        y: scrollView.contentItem.y + heading.height
+        width: scrollView.contentItem.width
+        height: scrollView.contentItem.height
 
         onExited: delegateUnderMouse = null
 
         onPositionChanged: function(mouse) {
-            var viewportPos = tableView.contentItem.mapFromItem(scrollView, mouse.x, mouse.y)
+            var viewportPos = tableView.contentItem.mapFromItem(tableViewMouseArea, mouse.x, mouse.y)
             delegateUnderMouse = tableView.contentItem.childAt(viewportPos.x, viewportPos.y)
         }
 
         acceptedButtons: Qt.LeftButton | Qt.RightButton
 
         onClicked: {
-            var viewportPos = tableView.contentItem.mapFromItem(scrollView, mouse.x, mouse.y)
+            var viewportPos = tableView.contentItem.mapFromItem(tableViewMouseArea, mouse.x, mouse.y)
             delegateUnderMouse = tableView.contentItem.childAt(viewportPos.x, viewportPos.y)
 
             if (!delegateUnderMouse) {
