@@ -168,7 +168,7 @@ Kirigami.ScrollablePage {
         }
 
         Control {
-            Layout.preferredWidth: page.width - page.leftPadding - page.rightPadding
+            Layout.fillWidth: true
 
             leftPadding: 0
             rightPadding: 0
