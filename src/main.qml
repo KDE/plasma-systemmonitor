@@ -215,5 +215,5 @@ Kirigami.ApplicationWindow {
         property alias hiddenPages: pagesModel.hiddenPages
     }
 
-    pageStack.columnView.columnWidth: Kirigami.Units.gridUnit * 17
+    pageStack.columnView.columnWidth: Kirigami.Units.gridUnit * 19
 }
