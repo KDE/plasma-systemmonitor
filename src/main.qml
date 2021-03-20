@@ -268,7 +268,7 @@ Kirigami.ApplicationWindow {
                 anchors.fill: parent
                 visible: true
                 type: Kirigami.MessageType.Warning
-                text: i18n("System Monitor is running in degraded mode. This means that certain things may not display or display incorrectly. Please check your setup.")
+                text: i18n("System Monitor has fallen back to software rendering because hardware acceleration is not available, and visual glitches may appear. Please check your graphics drivers.")
             }
         }
     }
