@@ -13,8 +13,6 @@ QtObject {
     property var index
     onIndexChanged: info.update()
 
-    property bool valid: model != null && index != null
-
     property var sensorColumns
     property int role
     property int pidsRole
@@ -38,7 +36,7 @@ QtObject {
     }
 
     function update() {
-        if (!valid) {
+        if ( model == null || index == null) {
             return
         }
 
