@@ -13,6 +13,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="ca-valencia">Monitor del sistema del Plasma</name>
   <name xml:lang="cs">Monitor systému Plasma</name>
   <name xml:lang="da">Plasma Systemovervågning</name>
+  <name xml:lang="de">Plasma-Systemmonitor</name>
   <name xml:lang="en-GB">Plasma System Monitor</name>
   <name xml:lang="es">Monitor del sistema de Plasma</name>
   <name xml:lang="et">Plasma süsteemi jälgija</name>
@@ -42,6 +43,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ca">Una aplicació per a controlar els recursos del sistema.</summary>
   <summary xml:lang="ca-valencia">Una aplicació per a controlar els recursos del sistema.</summary>
   <summary xml:lang="da">Et program til at overvåge systemressourcer.</summary>
+  <summary xml:lang="de">Eine Anwendung zum Überwachen der Systemressourcen.</summary>
   <summary xml:lang="en-GB">An application for monitoring system resources.</summary>
   <summary xml:lang="es">Aplicación para monitorizar recursos del sistema.</summary>
   <summary xml:lang="et">Rakendus süsteemi ressursside jälgimiseks.</summary>
