@@ -50,10 +50,6 @@ public:
     {
         m_pageId = parser.value("page-id");
         m_pageName = parser.value("page-name");
-
-        if (m_pageId.isEmpty() && m_pageName.isEmpty()) {
-            m_pageId = QStringLiteral("overview.page");
-        }
     }
 
     QVariant aboutData() const

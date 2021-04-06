@@ -145,11 +145,18 @@ Kirigami.ApplicationWindow {
                 pagePool: pagePoolObject
                 pageData: model.data
                 visible: !model.hidden
+                onTriggered: {
+                    config.lastVisitedPage = model.fileName
+                }
 
                 Component.onCompleted: {
                     if (CommandLineArguments.pageId && model.fileName == CommandLineArguments.pageId) {
                         trigger()
                     } else if (CommandLineArguments.pageName && model.title == CommandLineArguments.pageName) {
+                        trigger()
+                    } else if (config.startPage == model.fileName) {
+                        trigger()
+                    } else if (config.startPage == "" && config.lastVisitedPage == model.fileName) {
                         trigger()
                     }
                 }
@@ -212,6 +219,10 @@ Kirigami.ApplicationWindow {
         sourceComponent: Page.PageSortDialog {
             title: i18nc("@window:title", "Edit Pages")
             model: pagesModel
+            startPage: config.startPage
+            onAccepted: {
+                config.startPage = startPage
+            }
         }
     }
 
@@ -252,6 +263,8 @@ Kirigami.ApplicationWindow {
         property alias sidebarCollapsed: globalDrawer.collapsed
         property alias pageOrder: pagesModel.pageOrder
         property alias hiddenPages: pagesModel.hiddenPages
+        property string startPage
+        property string lastVisitedPage
     }
 
     Component {

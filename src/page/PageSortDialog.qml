@@ -9,11 +9,14 @@ import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
 
 import org.kde.kirigami 2.12 as Kirigami
+import org.kde.kitemmodels 1.0 as KItemModels
+
 
 import org.kde.ksysguard.page 1.0 as Page
 
 Dialog {
     property alias model : sortModel.sourceModel
+    property string startPage
 
     modal: true
     focus: true
@@ -33,10 +36,12 @@ Dialog {
 
     onAboutToShow: {
         sortModel.sourceModel = model
+        startPageBox.currentIndex = startPageBox.indexOfValue(startPage)
     }
 
     onAccepted: {
         sortModel.applyChangesToSourceModel()
+        startPage = startPageBox.currentValue
     }
 
     Kirigami.Theme.colorSet: Kirigami.Theme.View
@@ -191,5 +196,65 @@ Dialog {
             }
         }
         Kirigami.Separator { Layout.fillWidth: true; }
+    }
+    footer: DialogButtonBox {
+        // Use an AbstractButton so the button box includes it
+        AbstractButton {
+            implicitWidth: childrenRect.width
+            DialogButtonBox.buttonRole: DialogButtonBox.ActionRole
+            RowLayout {
+                Label {
+                    text: i18nc("@label:listbox", "Start with:")
+                }
+                ComboBox {
+                    id: startPageBox
+                    textRole: "title"
+                    valueRole: "fileName"
+                    model: createModel()
+
+                    function createModel() {
+                        var result = [{fileName: "", title: i18n("Last Visited Page"), icon: "clock"}];
+                        for (var i = 0; i < sortModel.rowCount(); ++i) {
+                            const index = sortModel.index(i, 0)
+                            if (sortModel.data(index, Page.PagesModel.HiddenRole)) {
+                                continue
+                            }
+                            if (sortModel.data(index, Page.PageSortModel.ShouldRemoveFilesRole)
+                                && sortModel.data(index, Page.PagesModel.FilesWriteableRole) == Page.PagesModel.AllWriteable) {
+                                continue
+                            }
+                            result.push({fileName: sortModel.data(index, Page.PagesModel.FileNameRole),
+                                         title: sortModel.data(index, Page.PagesModel.TitleRole),
+                                         icon: sortModel.data(index, Page.PagesModel.IconRole)})
+                        }
+                        return result
+                    }
+
+                    Connections {
+                        target: sortModel
+                        function onDataChanged() { startPageBox.model = startPageBox.createModel() }
+                        function onRowsMoved() { startPageBox.model = startPageBox.createModel() }
+                    }
+
+                    delegate: ItemDelegate {
+                        width: parent.width
+                        highlighted: startPageBox.highlightedIndex == index
+                        contentItem: RowLayout {
+                            Kirigami.Icon {
+                                color: highlighted ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
+                                source: modelData.icon
+                                Layout.preferredHeight: Kirigami.Units.iconSizes.small
+                                Layout.preferredWidth: Kirigami.Units.iconSizes.small
+                            }
+                            Label {
+                                text: modelData.title
+                                color: highlighted ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
+                                Layout.fillWidth: true
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -28,5 +28,9 @@ SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted
         </entry>
         <entry name="hiddenPages" type="StringList">
         </entry>
+        <entry name="startPage" type="String">
+            <default>overview.page</default>
+        </entry>
+        <entry name="lastVisitedPage" type="String"/>
     </group>
 </kcfg>
