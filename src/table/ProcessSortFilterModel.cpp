@@ -57,7 +57,7 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &
 
     auto source = sourceModel();
 
-    if (m_viewMode != ViewAll) {
+    if (m_viewMode != ViewAll && m_uidColumn != -1) {
         auto uid = source->data(source->index(sourceRow, m_uidColumn, sourceParent), ProcessDataModel::Value).toUInt();
 
         switch (m_viewMode) {
