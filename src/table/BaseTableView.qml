@@ -95,7 +95,7 @@ FocusScope {
             ToolTip.hide();
 
             if (delegateUnderMouse) {
-                var currentIndex = delegateUnderMouse.background.__modelIndex;
+                var currentIndex = tableView.model.index(delegateUnderMouse.background.row, delegateUnderMouse.background.column)
                 tableView.selectionModel.setCurrentIndex(currentIndex, ItemSelectionModel.NoUpdate);
             } else {
                 tableView.selectionModel.clearCurrentIndex()
@@ -134,7 +134,7 @@ FocusScope {
                 return;
             }
 
-            var currentIndex = delegateUnderMouse.background.__modelIndex;
+            var currentIndex = tableView.model.index(delegateUnderMouse.background.row, delegateUnderMouse.background.column)
 
             if (tableView.selectionModel.isSelected(currentIndex) && mouse.button == Qt.RightButton) {
                 tableView.contextMenuRequested(currentIndex, mapToGlobal(mouse.x, mouse.y))

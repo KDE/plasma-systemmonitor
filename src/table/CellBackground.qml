@@ -20,7 +20,6 @@ Rectangle {
     property bool selected: false
 
     property var __selection: view.selectionModel
-    property var __modelIndex: view.model.index(row, column)
 
     color: (row % 2 == 0) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
 
@@ -57,6 +56,6 @@ Rectangle {
         color: Kirigami.Theme.backgroundColor
         Kirigami.Theme.inherit: false
         Kirigami.Theme.colorSet: Kirigami.Theme.Selection
-        opacity: selected ? 1 : (root.__selection.currentIndex.row == root.__modelIndex.row ? 0.3 : 0)
+        opacity: selected ? 1 : (root.__selection.currentIndex.row == root.row ? 0.3 : 0)
     }
 }
