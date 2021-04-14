@@ -75,15 +75,14 @@ Dialog {
 
     footer: DialogButtonBox {
         id: buttonBox
+
         contentWidth: availableWidth
-        contentItem: RowLayout {
-            Repeater {
-                model: buttonBox.contentModel
-            }
-        }
+
         CheckBox {
-            Layout.fillWidth: true
+            width: buttonBox.width - acceptButton.width - cancelButton.width - buttonBox.spacing * 2 - buttonBox.leftPadding - buttonBox.rightPadding
+            anchors.verticalCenter: parent.verticalCenter
             contentItem: Label {
+                anchors.verticalCenter: parent.verticalCenter
                 leftPadding: Kirigami.Units.gridUnit + Kirigami.Units.smallSpacing;
                 text: i18ndc("plasma-systemmonitor", "@option:check", "Do not ask again");
                 wrapMode: Text.WordWrap
@@ -92,27 +91,15 @@ Dialog {
             onToggled: dialog.doNotAskAgain = checked
         }
         Button {
-            implicitWidth: contentItem.implicitWidth + Kirigami.Units.largeSpacing * 2
-            contentItem: RowLayout {
-                anchors.fill: parent
-                anchors.leftMargin: Kirigami.Units.largeSpacing
-                anchors.rightMargin: Kirigami.Units.largeSpacing
-                //Workaround for QTBUG-81796
-                Kirigami.Icon { source: dialog.killButtonIcon; Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium}
-                Label { text: dialog.killButtonText }
-            }
+            id: acceptButton
+            icon.name: dialog.killButtonIcon
+            text: dialog.killButtonText
             DialogButtonBox.buttonRole: DialogButtonBox.AcceptRole
         }
         Button {
-            implicitWidth: contentItem.implicitWidth + Kirigami.Units.largeSpacing * 2
-            contentItem: RowLayout {
-                anchors.fill: parent
-                anchors.leftMargin: Kirigami.Units.largeSpacing
-                anchors.rightMargin: Kirigami.Units.largeSpacing
-                //Workaround for QTBUG-81796
-                Kirigami.Icon { source: "dialog-cancel"; Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium}
-                Label { text: i18ndc("plasma-systemmonitor", "@action:button", "Cancel") }
-            }
+            id: cancelButton
+            icon.name: "dialog-cancel"
+            text: i18ndc("plasma-systemmonitor", "@action:button", "Cancel")
             DialogButtonBox.buttonRole: DialogButtonBox.RejectRole
         }
     }
