@@ -24,6 +24,10 @@ FaceLoader::~FaceLoader()
     if (m_dataObject) {
         m_dataObject->setFaceLoader(nullptr);
     }
+
+    if (m_oldController) {
+        m_oldController->deleteLater();
+    }
 }
 
 PageDataObject *FaceLoader::dataObject() const
