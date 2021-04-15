@@ -206,9 +206,8 @@ Kirigami.ApplicationWindow {
             model: pagesModel
         }
     }
-    }
 
-     Page.DialogLoader {
+    Page.DialogLoader {
         id: exportDialog
         sourceComponent: FileDialog {
             selectExisting: false
