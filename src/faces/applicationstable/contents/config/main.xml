@@ -14,7 +14,7 @@ SPDX-License-Identifier: LGPL-2.0-or-later
             <default>false</default>
         </entry>
         <entry name="detailsWidth" type="Double">
-            <default>250</default>
+            <default>350</default>
         </entry>
         <entry name="sortedColumns" type="StringList">
             <default>appName,usage,vmPSS,netInbound,netOutbound,ioCharactersActuallyReadRate,ioCharactersActuallyWrittenRate</default>
