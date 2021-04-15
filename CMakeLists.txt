@@ -6,7 +6,7 @@ set(PROJECT_VERSION "5.21.80")
 set(PROJECT_VERSION_MAJOR 5)
 
 set(QT_MIN_VERSION "5.15.0")
-set(KF5_MIN_VERSION "5.78")
+set(KF5_MIN_VERSION "5.81")
 
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -23,7 +23,7 @@ if(ECM_VERSION VERSION_GREATER_EQUAL 5.79)
 endif()
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Quick Widgets DBus)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS I18n Config Declarative Service GlobalAccel KIO DBusAddons NewStuff ItemModels)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS I18n Config Declarative Service GlobalAccel KIO DBusAddons NewStuffQuick ItemModels)
 find_package(KSysGuard ${PROJECT_VERSION} REQUIRED)
 find_package(Qt5QuickControls2  ${QT_MIN_VERSION})
 set_package_properties(Qt5QuickControls2 PROPERTIES

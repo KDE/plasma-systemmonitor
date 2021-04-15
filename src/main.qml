@@ -11,7 +11,7 @@ import QtQuick.Layouts 1.12
 import QtQuick.Window 2.12
 
 import org.kde.kirigami 2.11 as Kirigami
-import org.kde.newstuff 1.62 as NewStuff
+import org.kde.newstuff 1.81 as NewStuff
 
 import org.kde.systemmonitor 1.0
 import org.kde.ksysguard.page 1.0 as Page
@@ -81,11 +81,14 @@ Kirigami.ApplicationWindow {
                         text: i18nc("@action", "Import Page...")
                         onTriggered: importDialog.open()
                     },
-                    Kirigami.Action {
+                    NewStuff.Action {
                         id: ghnsAction
-                        icon.name: "get-hot-new-stuff"
                         text: i18nc("@action:inmenu", "Get New Pages...")
-                        onTriggered: getNewPageDialog.open()
+                        configFile: "plasma-systemmonitor.knsrc"
+                        pageStack: app.pageStack
+                        function onChangedEntriesChanged() {
+                            pagesModel.ghnsEntriesChanged(downloadDialog.engine.changedEntries)
+                        }
                     },
                     Kirigami.Action {
                         id: collapseAction
@@ -203,22 +206,6 @@ Kirigami.ApplicationWindow {
             model: pagesModel
         }
     }
-
-    Page.DialogLoader {
-        id: getNewPageDialog
-
-        sourceComponent: NewStuff.Dialog {
-            id: downloadDialog
-            configFile: "plasma-systemmonitor.knsrc"
-            // I have a weird bug on my machine where getNewPageDialog.changedEntries is not an alias
-            // engine.changedEntries but for the engine itself, so I directly use the property of the engine
-            Connections {
-                target: downloadDialog.engine
-                function onChangedEntriesChanged() {
-                    pagesModel.ghnsEntriesChanged(downloadDialog.engine.changedEntries)
-                }
-            }
-        }
     }
 
      Page.DialogLoader {

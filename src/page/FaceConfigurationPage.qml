@@ -11,7 +11,7 @@ import QtQuick.Layouts 1.14
 import Qt.labs.platform 1.1 as Platform
 
 import org.kde.kirigami 2.12 as Kirigami
-import org.kde.newstuff 1.62 as NewStuff
+import org.kde.newstuff 1.81 as NewStuff
 
 import org.kde.ksysguard.faces 1.0 as Faces
 import org.kde.ksysguard.page 1.0
@@ -39,10 +39,11 @@ Kirigami.ScrollablePage {
             icon.name: "document-new-from-template"
             onTriggered: loadPresetDialog.open()
         },
-        Kirigami.Action {
+        NewStuff.Action {
             text: i18nc("@action", "Get new presets...")
-            icon.name: "get-hot-new-stuff"
-            onTriggered: newPresetDialog.open()
+            configFile: "systemmonitor-presets.knsrc"
+            pageStack: applicationWindow().pageStack
+            onChangedEntriesChanged: loader.controller.availablePresetsModel.reload();
         },
         Kirigami.Action {
             text: i18nc("@action", "Save Settings as Preset")
@@ -62,10 +63,11 @@ Kirigami.ScrollablePage {
             }
         },
         Kirigami.Action { separator: true },
-        Kirigami.Action {
+        NewStuff.Action {
             text: i18nc("@action", "Get new display styles...")
-            icon.name: "get-hot-new-stuff"
-            onTriggered: newFaceDialog.open()
+            configFile: "systemmonitor-faces.knsrc"
+            pageStack: applicationWindow().pageStack
+            onChangedEntriesChanged: loader.controller.availableFacesModel.reload();
         }
     ]
 
@@ -84,25 +86,6 @@ Kirigami.ScrollablePage {
                 message.text = i18nc("@info:status %1 is preset name", "Loaded preset %1.", selectedTitle);
                 message.visible = true
             }
-        }
-    }
-
-    DialogLoader {
-        id: newPresetDialog
-        sourceComponent: NewStuff.Dialog {
-            downloadNewWhat: i18nc("@title:window", "Presets")
-            configFile: "systemmonitor-presets.knsrc"
-            onChangedEntriesChanged: loader.controller.availablePresetsModel.reload();
-        }
-    }
-
-    DialogLoader {
-        id: newFaceDialog
-        sourceComponent: NewStuff.Dialog {
-            id: newFaceDialog
-            downloadNewWhat: i18nc("@title:window", "Display Styles")
-            configFile: "systemmonitor-faces.knsrc"
-            onChangedEntriesChanged: loader.controller.availableFacesModel.reload();
         }
     }
 
