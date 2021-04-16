@@ -31,6 +31,7 @@ Faces.SensorFace {
                 text: table.nameFilterString
                 onTextEdited: table.nameFilterString = text;
                 onAccepted: table.nameFilterString = text;
+                Component.onCompleted: forceActiveFocus()
             }
         },
 

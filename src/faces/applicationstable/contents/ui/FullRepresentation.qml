@@ -31,6 +31,7 @@ Faces.SensorFace {
                 text: table.filterString
                 onTextEdited: table.filterString = text;
                 onAccepted: table.filterString = text;
+                Component.onCompleted: forceActiveFocus()
             }
         },
         Kirigami.Action {
