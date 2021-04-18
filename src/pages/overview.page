@@ -196,7 +196,7 @@ Title[x-test]=xxSystemxx
 Title[zh_CN]=系统
 
 [Face-94410278989264][Sensors]
-highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/qtVersion","os/plasma/kfVersion","os/plasma/plasmaVersion"]
+highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/plasmaVersion","os/plasma/kfVersion","os/plasma/qtVersion"]
 
 [Face-94410280144624][Appearance]
 chartFace=org.kde.ksysguard.textonly
