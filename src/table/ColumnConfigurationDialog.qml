@@ -48,7 +48,7 @@ Dialog {
         sortModel.sortedColumns = sortedColumns
         columnDisplay = display
         displayModel.columnDisplay = display
-        visibleColumns = displayModel.visibleColumnIds
+        visibleColumns = fixedColumns.concat(displayModel.visibleColumnIds)
     }
 
     onAccepted: {
