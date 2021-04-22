@@ -97,6 +97,7 @@ int main(int argc, char **argv)
 
     aboutData.setTranslator(i18ndc(nullptr, "NAME OF TRANSLATORS", "Your names"), i18ndc(nullptr, "EMAIL OF TRANSLATORS", "Your emails"));
 
+    aboutData.setBugAddress("https://bugs.kde.org/enter_bug.cgi?product=plasma-systemmonitor");
     KAboutData::setApplicationData(aboutData);
 
     KDBusService service(KDBusService::Unique);

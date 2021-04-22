@@ -97,6 +97,14 @@ Kirigami.ApplicationWindow {
                         onTriggered: app.globalDrawer.collapsed = !app.globalDrawer.collapsed
                     },
                     Kirigami.Action {
+                        separator: true
+                    },
+                    Kirigami.Action {
+                        icon.name: "tools-report-bug";
+                        text: i18nc("@action", "Report Bug...");
+                        onTriggered: Qt.openUrlExternally(CommandLineArguments.aboutData.bugAddress);
+                    },
+                    Kirigami.Action {
                         icon.name: "help-about-symbolic";
                         text: i18nc("@action", "About System Monitor");
                         onTriggered: app.pageStack.layers.push("AboutPage.qml")
