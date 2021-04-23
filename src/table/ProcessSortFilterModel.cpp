@@ -172,7 +172,7 @@ void ProcessSortFilterModel::findColumns()
 {
     m_uidColumn = -1;
     m_pidColumn = -1;
-    setFilterKeyColumn(-1);
+    int nameColumn = -1;
 
     auto source = sourceModel();
 
@@ -183,9 +183,8 @@ void ProcessSortFilterModel::findColumns()
         } else if (attribute == QStringLiteral("pid")) {
             m_pidColumn = column;
         } else if (attribute == QStringLiteral("name")) {
-            setFilterKeyColumn(column);
+            nameColumn = column;
         }
     }
-
-    invalidateFilter();
+    setFilterKeyColumn(nameColumn);
 }
