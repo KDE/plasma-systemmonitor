@@ -77,7 +77,9 @@ void ColumnDisplayModel::setColumnDisplay(const QVariantMap &newColumnDisplay)
 
     m_columnDisplay = display;
     Q_EMIT columnDisplayChanged();
-    Q_EMIT dataChanged(index(0, 0), index(rowCount() - 1, columnCount() - 1));
+    if (sourceModel()) {
+        Q_EMIT dataChanged(index(0, 0), index(rowCount() - 1, columnCount() - 1));
+    }
 }
 
 QStringList ColumnDisplayModel::visibleColumnIds() const
