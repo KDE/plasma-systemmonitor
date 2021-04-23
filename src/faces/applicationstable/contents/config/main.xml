@@ -23,10 +23,10 @@ SPDX-License-Identifier: LGPL-2.0-or-later
             <default>0.31,0.10,0.11,0.12,0.12,0.12,0.12</default>
         </entry>
         <entry name="sortColumn" type="String">
-            <default>appName</default>
+            <default>vmPSS</default>
         </entry>
         <entry name="sortDirection" type="Int">
-            <default>0</default>
+            <default>1</default>
         </entry>
         <entry name="columnDisplay" type="String">
             <!--
