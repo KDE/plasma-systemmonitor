@@ -134,6 +134,8 @@ FocusScope {
                 return;
             }
 
+            tableView.forceActiveFocus(Qt.MouseFocusReason)
+
             var currentIndex = tableView.model.index(delegateUnderMouse.background.row, delegateUnderMouse.background.column)
 
             if (tableView.selectionModel.isSelected(currentIndex) && mouse.button == Qt.RightButton) {
