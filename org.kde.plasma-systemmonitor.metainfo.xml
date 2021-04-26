@@ -27,6 +27,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="lt">Plasma sistemos prižiūryklė</name>
   <name xml:lang="nl">Plasma systeemmonitor</name>
   <name xml:lang="nn">Plasma systemovervaking</name>
+  <name xml:lang="pa">ਪਲਾਜ਼ਮਾ ਸਿਸਟਮ ਮਾਨੀਟਰ</name>
   <name xml:lang="pl">Monitor systemowy Plazmy</name>
   <name xml:lang="pt">Monitor do Sistema do Plasma</name>
   <name xml:lang="pt-BR">Monitor do sistema Plasma</name>
@@ -57,6 +58,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="lt">Sistemos išteklių stebėjimo programa.</summary>
   <summary xml:lang="nl">Een toepassing voor het monitoren van systeembronnen.</summary>
   <summary xml:lang="nn">Program for overvaking av systemressursar.</summary>
+  <summary xml:lang="pa">ਸਿਸਟਮ ਸਰੋਤਾਂ ਦੀ ਨਿਗਰਾਨੀ ਲਈ ਐਪਲੀਕੇਸ਼ਨ ਹੈ।</summary>
   <summary xml:lang="pl">Aplikacja do monitorowania zasobów systemu.</summary>
   <summary xml:lang="pt">Uma aplicação para monitorizar os recursos do sistema.</summary>
   <summary xml:lang="pt-BR">Um aplicativo para monitorar os recursos do sistema.</summary>
@@ -87,6 +89,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="lt">Plasma sistemos prižiūryklė pateikia sąsają, skirtą stebėti sistemos jutiklius, procesų informaciją bei kitus sistemos išteklius.</p>
     <p xml:lang="nl">Plasma systeemmonitor biedt een interface voor het monitoren van systeembronnen, procesinformatie en andere systeembronnen.</p>
     <p xml:lang="nn">Plasma system­overvaking er ei grafisk brukarflate for overvaking av system­sensorar, prosess­informasjon og andre system­ressursar.</p>
+    <p xml:lang="pa">ਪਲਾਜ਼ਮਾ ਸਿਸਟਮ ਮਾਨੀਟਰ ਸਿਸਟਮ ਸੈਂਸਰਾਂ, ਪਰੋਸੈਸ ਜਾਣਕਾਰੀ ਅਤੇ ਹੋਰ ਸਿਸਟਮ ਸਰੋਤਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਰਨ ਲਈ ਇੰਟਰਫੇਸ ਦਿੰਦਾ ਹੈ।</p>
     <p xml:lang="pl">Monitor systemowy Plazmy zapewnia interfejs do monitorowania mierników systemowych, danych o procesach oraz innych zasobach systemu.</p>
     <p xml:lang="pt">O Monitor do Sistema do Plasma oferece uma interface para monitorizar os sensores do sistema, a informação dos processos e os outros recursos do sistema.</p>
     <p xml:lang="pt-BR">O monitor do sistema Plasma fornece a você uma interface para o monitoramento de sensores do sistema, informações dos processos e outros recursos do sistema.</p>
