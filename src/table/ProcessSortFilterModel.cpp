@@ -84,6 +84,11 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &
         result = QSortFilterProxyModel::filterAcceptsRow(sourceRow, sourceParent);
     }
 
+    // Show regardless if an ancestor matches, this is kinda the inverse of recursiveFilteringEnabled
+    if (!result && sourceParent.parent().isValid()) {
+        result = filterAcceptsRow(sourceParent.row(), sourceParent.parent());
+    }
+
     return result;
 }
 
