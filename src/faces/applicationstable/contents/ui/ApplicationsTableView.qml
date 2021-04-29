@@ -32,7 +32,7 @@ Table.BaseTableView {
     property alias columnDisplay: displayModel.columnDisplay
     property alias sourceModel: appModel
 
-    property alias filterString: sortFilter.filterString
+    property alias filterString: filterProxy.filterString
 
     property var selectedApplications: {
         var result = []
@@ -44,7 +44,7 @@ Table.BaseTableView {
             }
             rows[i.row] = true
 
-            var index = sortFilter.mapToSource(i)
+            var index = sortColumnFilter.mapToSource(i)
             var item = applicationInformation.createObject()
             item.index = index
             result.push(item)
@@ -74,16 +74,16 @@ Table.BaseTableView {
     columnWidths: [200, 100, 100, 100, 100]
 
     onSort: {
-        sortFilter.sortColumn = column
-        sortFilter.sortOrder = order
+        sortColumnFilter.sortColumn = column
+        sortColumnFilter.sortOrder = order
     }
 
-    headerModel: sortFilter
+    headerModel: sortColumnFilter
 
     model: KItemModels.KSortFilterProxyModel {
-        id: sortFilter
+        id: sortColumnFilter
 
-        sourceModel: cacheModel
+        sourceModel: filterProxy
 
         filterColumnCallback: function(column, parent) {
             // Note: This assumes displayModel column == appModel column
@@ -96,9 +96,14 @@ Table.BaseTableView {
             return true
         }
 
+        sortRole: "Value"
+    }
+
+    Table.ProcessSortFilterModel {
+        id: filterProxy
+        sourceModel: cacheModel
         filterKeyColumn: appModel.nameColumn
         filterCaseSensitivity: Qt.CaseInsensitive
-        sortRole: "Value"
     }
 
     Table.ComponentCacheProxyModel {
@@ -178,7 +183,8 @@ Table.BaseTableView {
             column: view.LayoutMirroring.enabled ? view.model.columnCount() - 1 : 0
             Table.FirstCellDelegate {
                 iconName: {
-                    var index = sortFilter.mapToSource(sortFilter.index(model.row, 0))
+                    var index = sortColumnFilter.mapToSource(sortColumnFilter.index(model.row, 0));
+                    index = filterProxy.mapToSource(filterProxy.index(index.row, 0));
                     index = appModel.index(index.row, appModel.iconColumn)
                     return appModel.data(index)
                     return ""
@@ -189,14 +195,14 @@ Table.BaseTableView {
             roleValue: "line"
             Table.LineChartCellDelegate {
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
-                maximum: sortFilter.data(sortFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                maximum: sortColumnFilter.data(sortColumnFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
             }
         }
         DelegateChoice {
             roleValue: "lineScaled"
             Table.LineChartCellDelegate {
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
-                maximum: sortFilter.data(sortFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                maximum: sortColumnFilter.data(sortColumnFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
             }
 
