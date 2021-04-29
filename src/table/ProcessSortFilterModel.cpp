@@ -53,9 +53,17 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &
         return false;
     }
 
-    auto result = true;
 
     auto source = sourceModel();
+
+    // Show regardless if an ancestor matches, this is kinda the inverse of recursiveFilteringEnabled
+    if (sourceParent.parent().isValid()) {
+        if (filterAcceptsRow(sourceParent.row(), sourceParent.parent())) {
+            return true;
+        }
+    }
+
+    bool result = true;
 
     if (m_viewMode != ViewAll && m_uidColumn != -1) {
         auto uid = source->data(source->index(sourceRow, m_uidColumn, sourceParent), ProcessDataModel::Value).toUInt();
@@ -80,16 +88,27 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &
         result = m_filterPids.contains(pid);
     }
 
-    if (result) {
-        result = QSortFilterProxyModel::filterAcceptsRow(sourceRow, sourceParent);
+    if (!result) {
+        return false;
     }
 
-    // Show regardless if an ancestor matches, this is kinda the inverse of recursiveFilteringEnabled
-    if (!result && sourceParent.parent().isValid()) {
-        result = filterAcceptsRow(sourceParent.row(), sourceParent.parent());
+    if (filterString().isEmpty()) {
+        return true;
     }
 
-    return result;
+    const QString name = source->data(source->index(sourceRow, 0, sourceParent), filterRole()).toString();
+
+    const QString filter = filterString();
+
+    const QVector<QStringRef> splitFilterStrings = filter.splitRef(QLatin1Char(','), Qt::SkipEmptyParts);
+
+    for (const QStringRef string : splitFilterStrings) {
+        if (name.contains(string.trimmed(), Qt::CaseInsensitive)) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 bool ProcessSortFilterModel::filterAcceptsColumn(int sourceColumn, const QModelIndex &sourceParent) const
