@@ -6,3 +6,4 @@
 .clangd
 .idea
 /cmake-build*
+.cache
