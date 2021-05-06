@@ -82,7 +82,7 @@ ColumnLayout {
                             id: columnContents
 
                             anchors.fill: parent
-                            anchors.margins: model.data.showBackground ? Kirigami.Units.smallSpacing : 0
+                            anchors.margins: model.data.showBackground ? Kirigami.Units.largeSpacing : 0
                             spacing: Kirigami.Units.largeSpacing
 
                             Repeater {
