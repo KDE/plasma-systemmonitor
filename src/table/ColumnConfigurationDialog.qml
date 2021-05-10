@@ -45,24 +45,30 @@ Dialog {
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
     function setColumnDisplay(display) {
-        sortModel.sortedColumns = sortedColumns
         columnDisplay = display
-        displayModel.columnDisplay = display
-        visibleColumns = fixedColumns.concat(displayModel.visibleColumnIds)
+        prepare()
+        apply()
     }
 
     onAccepted: {
-        sortedColumns = fixedColumns.concat(sortModel.sortedColumns)
-        visibleColumns = fixedColumns.concat(displayModel.visibleColumnIds)
-        columnDisplay = displayModel.columnDisplay
+        apply()
     }
 
     onAboutToShow: {
+        prepare()
+    }
+
+    function prepare() {
         sortModel.sortedColumns = sortedColumns.filter(id => fixedColumns.indexOf(id) == -1)
         let tempDisplay = columnDisplay
         fixedColumns.forEach(column => delete tempDisplay[column])
         displayModel.columnDisplay = tempDisplay
+    }
 
+    function apply() {
+        sortedColumns = fixedColumns.concat(sortModel.sortedColumns)
+        visibleColumns = fixedColumns.concat(displayModel.visibleColumnIds)
+        columnDisplay = displayModel.columnDisplay
     }
 
     Rectangle {
