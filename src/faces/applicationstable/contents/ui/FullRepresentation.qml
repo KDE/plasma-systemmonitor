@@ -67,7 +67,7 @@ Faces.SensorFace {
 
             anchors {
                 left: parent.left
-                right: splitter.left
+                right: splitter.right
                 top: parent.top
                 bottom: parent.bottom
             }
