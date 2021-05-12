@@ -131,6 +131,7 @@ Title[zh_CN]=否
 [page][row-1][column-0]
 name=column-0
 showBackground=true
+noMargins=false
 
 [page][row-1][column-0][section-0]
 face=Face-94107109903664
@@ -207,6 +208,7 @@ Title[zh_CN]=否
 [page][row-3][column-0]
 name=column-0
 showBackground=true
+noMargins=false
 
 [page][row-3][column-0][section-0]
 face=Face-94107115022400
@@ -283,6 +285,7 @@ Title[zh_CN]=否
 [page][row-5][column-0]
 name=column-0
 showBackground=true
+noMargins=false
 
 [page][row-5][column-0][section-0]
 face=Face-94107150101264

@@ -8,6 +8,8 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
 
+import QtGraphicalEffects 1.0
+
 import org.kde.kirigami 2.12 as Kirigami
 import org.kde.ksysguard.faces 1.0 as Faces
 import org.kde.ksysguard.page 1.0
@@ -82,8 +84,18 @@ ColumnLayout {
                             id: columnContents
 
                             anchors.fill: parent
-                            anchors.margins: model.data.showBackground ? Kirigami.Units.largeSpacing : 0
+                            anchors.margins: !model.data.showBackground ? 0 : (model.data.noMargins ? 1 : Kirigami.Units.largeSpacing)
+
                             spacing: Kirigami.Units.largeSpacing
+
+                            layer.enabled: model.data.showBackground && model.data.noMargins
+                            layer.effect: OpacityMask {
+                                maskSource: Kirigami.ShadowedRectangle {
+                                    width: columnContents.width
+                                    height: columnContents.height
+                                    radius: Kirigami.Units.smallSpacing
+                                }
+                            }
 
                             Repeater {
                                 model: PageDataModel { data: model.data }

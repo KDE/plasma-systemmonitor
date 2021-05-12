@@ -116,13 +116,23 @@ Container {
     ]
     toolbar.moveAxis: Qt.XAxis
 
-    toolbar.extraActions: Action {
-        icon.name: "view-visible"
-        text: i18nc("@action", "Show Background")
-        checkable: true
-        checked: control.columnData.showBackground
-        onTriggered: control.columnData.showBackground = !control.columnData.showBackground
-    }
+    toolbar.extraActions: [
+        Action {
+            icon.name: "view-visible"
+            text: i18nc("@action", "Show Background")
+            checkable: true
+            checked: control.columnData.showBackground
+            onTriggered: control.columnData.showBackground = !control.columnData.showBackground
+        },
+        Action {
+            icon.name: "trim-margins"
+            text: i18nc("@action", "Remove Background Margins")
+            enabled: control.columnData.showBackground
+            checkable: true
+            checked: control.columnData.noMargins
+            onTriggered: control.columnData.noMargins = !control.columnData.noMargins
+        }
+    ]
 
     function addSection(index) {
         control.columnData.insertChild(index, {name: "section-" + index, isSeparator: false})

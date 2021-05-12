@@ -47,6 +47,7 @@ Title=
 [page][row-0][column-0]
 name=column-0
 showBackground=false
+noMargins=false
 
 [page][row-0][column-0][section-0]
 face=Face-94920553440704
