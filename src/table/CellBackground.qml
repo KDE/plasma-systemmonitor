@@ -21,7 +21,9 @@ Rectangle {
 
     property var __selection: view.selectionModel
 
-    color: (row % 2 == 0) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
+    color: (row % 2 == 0 || selected) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
+    Kirigami.Theme.inherit: false
+    Kirigami.Theme.colorSet: selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
 
     // We need to update:
     // if the selected indexes changes
@@ -57,7 +59,8 @@ Rectangle {
         color: Kirigami.Theme.backgroundColor
         Kirigami.Theme.inherit: false
         Kirigami.Theme.colorSet: Kirigami.Theme.Selection
-        opacity: selected ? 1 : (root.__selection.currentIndex.row == root.row ? 0.3 : 0)
+        opacity: 0.3
+        visible: root.__selection.currentIndex.row == root.row
     }
 
     MouseArea {
