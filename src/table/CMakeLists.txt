@@ -8,9 +8,9 @@ set(table_SRCS
 )
 
 set(table_QML
+    BaseCellDelegate.qml
     BaseTableView.qml
     BasicCellDelegate.qml
-    CellBackground.qml
     ColumnConfigurationDialog.qml
     FirstCellDelegate.qml
     LineChartCellDelegate.qml
