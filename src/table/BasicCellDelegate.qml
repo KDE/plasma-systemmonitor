@@ -25,4 +25,15 @@ Label {
     horizontalAlignment: Text.AlignHCenter
 
     background: CellBackground { view: delegate.TableView.view; row: model.row; column: model.column }
+
+    MouseArea {
+        id: mouse
+        anchors.fill: parent
+        hoverEnabled: true
+        acceptedButtons: Qt.NoButton
+
+        ToolTip.text: delegate.text
+        ToolTip.delay: Kirigami.Units.toolTipDelay
+        ToolTip.visible: mouse.containsMouse && delegate.truncated
+    }
 }

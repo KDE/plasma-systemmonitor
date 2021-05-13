@@ -53,6 +53,7 @@ Rectangle {
         updateIsSelected();
     }
 
+
     Rectangle {
         anchors.fill: parent
         color: Kirigami.Theme.backgroundColor
@@ -60,5 +61,53 @@ Rectangle {
         Kirigami.Theme.colorSet: Kirigami.Theme.Selection
         opacity: 0.3
         visible: root.__selection.currentIndex.row == root.row
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        hoverEnabled: true
+
+        acceptedButtons: Qt.LeftButton | Qt.RightButton
+
+        onEntered: {
+            var modelIndex = view.model.index(row, column);
+            root.__selection.setCurrentIndex(modelIndex, ItemSelectionModel.NoUpdate)
+        }
+        onExited: Qt.callLater(maybeClearCurrent)
+
+        onClicked: {
+            var modelIndex = view.model.index(row, column);
+            if (root.__selection.isSelected(modelIndex) && mouse.button == Qt.RightButton) {
+                view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
+                return
+            }
+
+            if (mouse.modifiers & Qt.ShiftModifier) {
+                //TODO: Implement range selection
+                root.__selection.select(modelIndex, ItemSelectionModel.Toggle | ItemSelectionModel.Rows)
+            } else if (mouse.modifiers & Qt.ControlModifier) {
+                root.__selection.select(modelIndex, ItemSelectionModel.Toggle | ItemSelectionModel.Rows)
+            } else {
+                root.__selection.select(modelIndex, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
+            }
+
+            if (mouse.button == Qt.RightButton) {
+                view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
+            }
+        }
+
+        function maybeClearCurrent() {
+            var modelIndex = view.model.index(row, column);
+
+            // We (ab)use currentIndex to indicate the currently hovered row. This means
+            // we shouldn't just clear the current index when the mouse leaves this item
+            // since it may just be hovering a different table cell. However, if the mouse
+            // exited but the currentIndex is still the current cell, then we can be fairly
+            // sure the mouse is no longer over a table cell and we can safely clear the
+            // current index.
+            if (__selection.currentIndex == modelIndex) {
+                __selection.clearCurrentIndex()
+            }
+        }
     }
 }
