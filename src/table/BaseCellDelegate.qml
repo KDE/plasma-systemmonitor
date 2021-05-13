@@ -10,28 +10,31 @@ import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
 
 import org.kde.kirigami 2.2 as Kirigami
+import org.kde.ksysguard.table 1.0 as Table
 
-Rectangle {
+Control
+{
     id: root
 
-    property var view
-    property int row
-    property int column
+    property int row: model.row
+    property int column: model.column
     property bool selected: false
 
-    property var __selection: view.selectionModel
-
-    color: (row % 2 == 0 || selected) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
-    Kirigami.Theme.inherit: false
-    Kirigami.Theme.colorSet: selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
+    readonly property bool rowHovered: root.__selection.currentIndex.row == row
+    readonly property var __selection: TableView.view.selectionModel
 
     // We need to update:
     // if the selected indexes changes
     // if our delegate moves
     // if the model moves and the delegate stays in the same place
     function updateIsSelected() {
-        selected = __selection.isSelected(view.model.index(row, column))
+        selected = __selection.isSelected(root.TableView.view.model.index(row, column))
     }
+
+    leftPadding: 0
+    rightPadding: 0
+    topPadding: 0
+    bottomPadding: 0
 
     Connections {
         target: __selection
@@ -43,7 +46,7 @@ Rectangle {
     onRowChanged: updateIsSelected();
 
     Connections {
-        target: view.model
+        target: root.TableView.view.model
         function onLayoutChanged() {
             updateIsSelected();
         }
@@ -53,15 +56,23 @@ Rectangle {
         updateIsSelected();
     }
 
+    Kirigami.Theme.colorSet: selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
+    Kirigami.Theme.inherit: false
 
-    Rectangle {
-        anchors.fill: parent
-        color: Kirigami.Theme.backgroundColor
-        Kirigami.Theme.inherit: false
-        Kirigami.Theme.colorSet: Kirigami.Theme.Selection
-        opacity: 0.3
-        visible: root.__selection.currentIndex.row == root.row
+    background: Rectangle {
+        color: (row % 2 == 0 || selected) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
+
+        Rectangle {
+            anchors.fill: parent
+            Kirigami.Theme.inherit: false
+            Kirigami.Theme.colorSet: Kirigami.Theme.Selection
+            color: Kirigami.Theme.backgroundColor
+            opacity: 0.3
+            visible: root.rowHovered
+        }
     }
+
+    hoverEnabled: true
 
     MouseArea {
         anchors.fill: parent
@@ -70,15 +81,16 @@ Rectangle {
         acceptedButtons: Qt.LeftButton | Qt.RightButton
 
         onEntered: {
-            var modelIndex = view.model.index(row, column);
+            var modelIndex = root.TableView.view.model.index(row, column);
             root.__selection.setCurrentIndex(modelIndex, ItemSelectionModel.NoUpdate)
         }
         onExited: Qt.callLater(maybeClearCurrent)
 
         onClicked: {
-            var modelIndex = view.model.index(row, column);
+            var modelIndex = root.TableView.view.model.index(row, column);
+            root.TableView.view.forceActiveFocus(Qt.ClickFocus)
             if (root.__selection.isSelected(modelIndex) && mouse.button == Qt.RightButton) {
-                view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
+                root.TableView.view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
                 return
             }
 
@@ -92,12 +104,12 @@ Rectangle {
             }
 
             if (mouse.button == Qt.RightButton) {
-                view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
+                root.TableView.view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
             }
         }
 
         function maybeClearCurrent() {
-            var modelIndex = view.model.index(row, column);
+            var modelIndex = root.TableView.view.model.index(row, column);
 
             // We (ab)use currentIndex to indicate the currently hovered row. This means
             // we shouldn't just clear the current index when the mouse leaves this item

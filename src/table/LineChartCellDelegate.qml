@@ -12,21 +12,15 @@ import QtQml.Models 2.12
 import org.kde.kirigami 2.2 as Kirigami
 import org.kde.quickcharts 1.0 as Charts
 
-Control {
+BaseCellDelegate {
     id: delegate
 
     property string text: model.display != undefined ? model.display : ""
     property real maximum: 100
     property alias valueSources: chart.valueSources
 
-    Kirigami.Theme.colorSet: background.selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
-    Kirigami.Theme.inherit: false
-
     property int _row: model.row
     property int _column: model.column
-
-    background: CellBackground { view: delegate.TableView.view; row: _row; column: _column }
-
 
     contentItem: Item {
         anchors.fill: parent
@@ -68,7 +62,6 @@ Control {
         }
     }
 
-    hoverEnabled: true
     ToolTip.text: delegate.text
     ToolTip.delay: Kirigami.Units.toolTipDelay
     ToolTip.visible: delegate.hovered && label.truncated
