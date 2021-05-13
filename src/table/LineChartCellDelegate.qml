@@ -16,7 +16,6 @@ Control {
     id: delegate
 
     property string text: model.display != undefined ? model.display : ""
-    property alias truncated: label.truncated
     property real maximum: 100
     property alias valueSources: chart.valueSources
 
