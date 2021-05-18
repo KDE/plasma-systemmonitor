@@ -153,6 +153,13 @@ Faces.SensorFace {
 
         enabledColumns: columnDialog.visibleColumns
         columnDisplay: columnDialog.columnDisplay
+
+        Keys.onPressed: {
+            if (event.matches(StandardKey.Delete)) {
+                processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal);
+                event.accepted = true;
+            }
+        }
     }
 
     Menu {

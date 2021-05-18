@@ -89,6 +89,13 @@ Faces.SensorFace {
             onSortNameChanged: root.config.sortColumn = sortName
             sortOrder: root.config.sortDirection
             onSortOrderChanged: root.config.sortDirection = sortOrder
+
+            Keys.onPressed: {
+                if (event.matches(StandardKey.Delete)) {
+                    processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal);
+                    event.accepted = true;
+                }
+            }
         }
 
         Kirigami.Separator {
