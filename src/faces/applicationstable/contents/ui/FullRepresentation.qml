@@ -260,12 +260,17 @@ Faces.SensorFace {
     Process.ProcessController {
         id: processHelper
 
+        readonly property var killSignals: [
+            Process.ProcessController.TerminateSignal,
+            Process.ProcessController.KillSignal
+        ]
+
         function sendSignalToSelection(sig) {
             if (table.selectedApplications.length == 0) {
                 return
             }
 
-            if (root.config.askWhenKilling) {
+            if (root.config.askWhenKilling && killSignals.includes(sig)) {
                 killDialog.signalToSend = sig
                 killDialog.open()
                 return
