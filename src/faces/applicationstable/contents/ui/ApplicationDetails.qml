@@ -192,8 +192,6 @@ Page {
 
                 columnWidths: [0.5, 0.25, 0.25]
                 sortName: "name"
-                idRole: Process.ProcessDataModel.Attribute
-
                 onSort: sortFilter.sort(column, order)
 
                 model: Table.ProcessSortFilterModel {
