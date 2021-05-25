@@ -66,24 +66,24 @@ Kirigami.ApplicationWindow {
                     Kirigami.Action {
                         id: editPagesAction
                         icon.name: "handle-sort"
-                        text: i18nc("@action", "Edit or Remove pages...")
+                        text: i18nc("@action", "Edit or Remove pages…")
                         onTriggered: pageSortDialog.open()
                     },
                      Kirigami.Action {
                         id: exportAction
-                        text: i18nc("@action", "Export Current Page...")
+                        text: i18nc("@action", "Export Current Page…")
                         icon.name: "document-export"
                         enabled: !app.pageStack.currentItem.edit
                         onTriggered: exportDialog.open()
                     },
                     Kirigami.Action {
                         icon.name: "document-import"
-                        text: i18nc("@action", "Import Page...")
+                        text: i18nc("@action", "Import Page…")
                         onTriggered: importDialog.open()
                     },
                     NewStuff.Action {
                         id: ghnsAction
-                        text: i18nc("@action:inmenu", "Get New Pages...")
+                        text: i18nc("@action:inmenu", "Get New Pages…")
                         configFile: "plasma-systemmonitor.knsrc"
                         pageStack: app.pageStack
                         function onChangedEntriesChanged() {
@@ -101,7 +101,7 @@ Kirigami.ApplicationWindow {
                     },
                     Kirigami.Action {
                         icon.name: "tools-report-bug";
-                        text: i18nc("@action", "Report Bug...");
+                        text: i18nc("@action", "Report Bug…");
                         onTriggered: Qt.openUrlExternally(CommandLineArguments.aboutData.bugAddress);
                     },
                     Kirigami.Action {
@@ -130,7 +130,7 @@ Kirigami.ApplicationWindow {
 
         actions: [
             Kirigami.Action {
-                text: i18nc("@action", "Add New Page...")
+                text: i18nc("@action", "Add New Page…")
                 icon.name: "list-add"
                 onTriggered: pageDialog.open()
             }

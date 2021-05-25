@@ -151,7 +151,7 @@ Kirigami.ScrollablePage {
     Kirigami.Action {
         id: configureAction
 
-        text: i18nc("@action", "Configure Page...")
+        text: i18nc("@action", "Configure Page…")
         icon.name: "configure"
         visible: page.edit
 

@@ -35,12 +35,12 @@ Kirigami.ScrollablePage {
 
     actions.contextualActions: [
         Kirigami.Action {
-            text: i18nc("@action", "Load Preset...")
+            text: i18nc("@action", "Load Preset…")
             icon.name: "document-new-from-template"
             onTriggered: loadPresetDialog.open()
         },
         NewStuff.Action {
-            text: i18nc("@action", "Get new presets...")
+            text: i18nc("@action", "Get new presets…")
             configFile: "systemmonitor-presets.knsrc"
             pageStack: applicationWindow().pageStack
             onChangedEntriesChanged: loader.controller.availablePresetsModel.reload();
@@ -64,7 +64,7 @@ Kirigami.ScrollablePage {
         },
         Kirigami.Action { separator: true },
         NewStuff.Action {
-            text: i18nc("@action", "Get new display styles...")
+            text: i18nc("@action", "Get new display styles…")
             configFile: "systemmonitor-faces.knsrc"
             pageStack: applicationWindow().pageStack
             onChangedEntriesChanged: loader.controller.availableFacesModel.reload();

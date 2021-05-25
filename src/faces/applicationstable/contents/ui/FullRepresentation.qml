@@ -54,7 +54,7 @@ Faces.SensorFace {
         Kirigami.Action {
             id: configureColumnsAction
             icon.name: "configure"
-            text: i18nc("@action", "Configure columns...")
+            text: i18nc("@action", "Configure columns…")
             onTriggered: columnDialog.open()
         }
     ]
@@ -179,7 +179,7 @@ Faces.SensorFace {
     Menu {
         id: contextMenu
 
-        MenuItem { text: i18nc("@action:inmenu", "Set priority..."); enabled: false }
+        MenuItem { text: i18nc("@action:inmenu", "Set priority…"); enabled: false }
 
         Menu {
             title: i18nc("@action:inmenu", "Send Signal")
