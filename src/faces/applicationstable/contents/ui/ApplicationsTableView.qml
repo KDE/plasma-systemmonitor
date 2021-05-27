@@ -209,10 +209,10 @@ Table.BaseTableView {
         }
         DelegateChoice {
             roleValue: "textScaled"
-            Table.BasicCellDelegate {
+            Table.TextCellDelegate {
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
             }
         }
-        DelegateChoice { Table.BasicCellDelegate { } }
+        DelegateChoice { Table.TextCellDelegate { } }
     }
 }
