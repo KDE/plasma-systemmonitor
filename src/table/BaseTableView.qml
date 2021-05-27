@@ -79,9 +79,6 @@ FocusScope {
 
         onContextMenuRequested: root.headerContextMenuRequested(column, position)
 
-        Component.onCompleted: {
-            Qt.callLater(root.sort, sortColumn, sortOrder)
-        }
     }
 
 

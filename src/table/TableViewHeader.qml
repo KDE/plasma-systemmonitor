@@ -130,7 +130,7 @@ FocusScope {
                         case Qt.Key_Space:
                         case Qt.Key_Enter:
                         case Qt.Key_Return:
-                            sort()
+                            toggleSort()
                             break;
                         case Qt.Key_Menu:
                             heading.contextMenuRequested(model.row, mapToGlobal(headerItem.x, headerItem.y + headerItem.height))
@@ -146,14 +146,18 @@ FocusScope {
                     }
                 }
 
-                function sort() {
+                function toggleSort() {
                     if (heading.sortName == headerItem.columnId) {
-                        heading.sortOrder = heading.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder;
+                        sort(heading.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder);
                     } else {
-                        heading.sortColumn = model.row;
-                        heading.sortName = headerItem.columnId
-                        heading.sortOrder = model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder;
+                        sort(model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder);
                     }
+                }
+
+                function sort(sortOrder) {
+                    heading.sortColumn = model.row;
+                    heading.sortName = headerItem.columnId
+                    heading.sortOrder = sortOrder
                     heading.sort(heading.sortColumn, heading.sortOrder)
                 }
 
@@ -169,7 +173,7 @@ FocusScope {
                             return
                         }
 
-                        headerItem.sort()
+                        headerItem.toggleSort()
                     }
                 }
                 MouseArea {
@@ -204,8 +208,7 @@ FocusScope {
                 }
                 Component.onCompleted: {
                     if (heading.sortColumn == -1 && headerItem.columnId == heading.sortName) {
-                        heading.sortColumn = model.row
-                        Qt.callLater(() => heading.sort(model.row, heading.sortOrder))
+                        Qt.callLater(() => headerItem.sort(heading.sortOrder));
                     }
                 }
             }
