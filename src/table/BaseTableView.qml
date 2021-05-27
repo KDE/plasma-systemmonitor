@@ -126,7 +126,7 @@ FocusScope {
                             returnToBounds()
                         }
                         event.accepted = true
-                        break
+                        return;
                     case Qt.Key_Down:
                         selectRelative(1)
                         if (!atYEnd) {
@@ -134,17 +134,22 @@ FocusScope {
                             returnToBounds()
                         }
                         event.accepted = true
-                        break
+                        return;
                     case Qt.Key_Menu:
                         contextMenuRequested(selectionModel.currentIndex, mapToGlobal(0, 0))
+                        return;
                     default:
                         break;
+                }
+                if (event.matches(StandardKey.SelectAll)) {
+                    selectionModel.select(model.index(0, 0), ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Columns);
+                    return;
                 }
             }
 
             onActiveFocusChanged: {
                 if (activeFocus && !selectionModel.hasSelection) {
-                    selectionModel.setCurrentIndex(model.index(0, 0), ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
+                    selectionModel.setCurrentIndex(model.index(0, 0), ItemSelectionModel.ClearAndSelect)
                 }
             }
 

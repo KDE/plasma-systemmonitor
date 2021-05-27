@@ -28,7 +28,7 @@ Control
     // if our delegate moves
     // if the model moves and the delegate stays in the same place
     function updateIsSelected() {
-        selected = __selection.isSelected(root.TableView.view.model.index(row, column))
+        selected = __selection.rowIntersectsSelection(row)
     }
 
     leftPadding: 0
