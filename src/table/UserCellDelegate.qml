@@ -9,7 +9,7 @@ import QtQuick.Controls 2.2
 
 import org.kde.kirigami 2.2 as Kirigami
 
-BasicCellDelegate {
+TextCellDelegate {
     id: delegate
 
     property int uidColumn

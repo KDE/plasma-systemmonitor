@@ -10,7 +10,7 @@ set(table_SRCS
 set(table_QML
     BaseCellDelegate.qml
     BaseTableView.qml
-    BasicCellDelegate.qml
+    TextCellDelegate.qml
     ColumnConfigurationDialog.qml
     FirstCellDelegate.qml
     LineChartCellDelegate.qml
