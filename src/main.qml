@@ -86,8 +86,8 @@ Kirigami.ApplicationWindow {
                         text: i18nc("@action:inmenu", "Get New Pages…")
                         configFile: "plasma-systemmonitor.knsrc"
                         pageStack: app.pageStack
-                        function onChangedEntriesChanged() {
-                            pagesModel.ghnsEntriesChanged(downloadDialog.engine.changedEntries)
+                        onChangedEntriesChanged: {
+                            pagesModel.ghnsEntriesChanged(engine.changedEntries)
                         }
                     },
                     Kirigami.Action {
