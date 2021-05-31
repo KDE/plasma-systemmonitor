@@ -84,12 +84,12 @@ int main(int argc, char **argv)
     aboutData.setProgramLogo(app.windowIcon());
 
     aboutData.addAuthor(i18n("Arjen Hiemstra"), i18n("Development"), QStringLiteral("ahiemstra@heimr.nl"));
-    aboutData.addAuthor(i18n("Uri Herrera"), i18n("Design"), QString{});
-    aboutData.addAuthor(i18n("Nate Graham"), i18n("Design and Quality Assurance"), QString{});
-    aboutData.addAuthor(i18n("David Redondo"), i18n("Development"), QString{});
-    aboutData.addAuthor(i18n("Noah Davis"), i18n("Design and Quality Assurance"), QString{});
-    aboutData.addAuthor(i18n("Marco Martin"), i18n("Development"), QString{});
-    aboutData.addAuthor(i18n("David Edmundson"), i18n("Development"), QString{});
+    aboutData.addAuthor(i18n("Uri Herrera"), i18n("Design"), QStringLiteral("uri_herrera@nxos.org"));
+    aboutData.addAuthor(i18n("Nate Graham"), i18n("Design and Quality Assurance"), QStringLiteral("nate@kde.org"));
+    aboutData.addAuthor(i18n("David Redondo"), i18n("Development"), QStringLiteral("kde@david-redondo.de"));
+    aboutData.addAuthor(i18n("Noah Davis"), i18n("Design and Quality Assurance"), QStringLiteral("noahadvs@gmail.com"));
+    aboutData.addAuthor(i18n("Marco Martin"), i18n("Development"), QStringLiteral("notmart@gmail.com"));
+    aboutData.addAuthor(i18n("David Edmundson"), i18n("Development"), QStringLiteral("david@davidedmundson.co.uk"));
 
     aboutData.setTranslator(i18ndc(nullptr, "NAME OF TRANSLATORS", "Your names"), i18ndc(nullptr, "EMAIL OF TRANSLATORS", "Your emails"));
 
