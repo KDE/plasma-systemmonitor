@@ -25,7 +25,7 @@ Dialog {
     width: parent ? parent.width * 0.75 : 0
     height: parent ? parent.height * 0.75 : 0
 
-    x: parent ? parent.width / 2 - width / 2 : 0
+    x: parent ? Math.round(parent.width / 2 - width / 2) : 0
     y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
 
     leftPadding: Kirigami.Units.devicePixelRatio
