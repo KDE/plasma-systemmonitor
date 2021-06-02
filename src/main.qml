@@ -224,6 +224,15 @@ Kirigami.ApplicationWindow {
             startPage: config.startPage
             onAccepted: {
                 config.startPage = startPage
+                const currentPage = pageStack.currentItem.pageData.fileName
+                const indices = pagesModel.match(pagesModel.index(0, 0), Page.PagesModel.FileNameRole, currentPage, 1,  Qt.MatchExactly)
+                if (indices.length == 0 || pagesModel.data(indices[0], Page.PagesModel.HiddenRole)) {
+                    if (config.lastVisitedPage == currentPage) {
+                        config.lastVisitedPage = "overview.page"
+                    }
+                    const startPage = config.startPage || config.lastVisitedPage
+                    Array.prototype.find.call(globalDrawer.actions, action => action.pageData.fileName == startPage).trigger()
+                }
             }
         }
     }
