@@ -232,8 +232,13 @@ Dialog {
 
                     Connections {
                         target: sortModel
-                        function onDataChanged() { startPageBox.model = startPageBox.createModel() }
-                        function onRowsMoved() { startPageBox.model = startPageBox.createModel() }
+                        function onDataChanged() { refreshModel() }
+                        function onRowsMoved() { refreshModel() }
+                        function refreshModel() {
+                            const value = startPageBox.currentValue
+                            startPageBox.model = startPageBox.createModel()
+                            startPageBox.currentIndex = startPageBox.indexOfValue(value)
+                        }
                     }
 
                     delegate: ItemDelegate {
