@@ -157,15 +157,15 @@ Page {
             unit: Formatter.Units.UnitByteRate
 
             valueSources: [
-                Charts.ValueHistorySource {
+                Charts.HistoryProxySource {
                     id: diskReadHistory
-                    value: root.firstApplication ? root.firstApplication.diskRead : 0;
+                    source: Charts.SingleValueSource { value: root.firstApplication ? root.firstApplication.diskRead : 0; }
                     maximumHistory: 50
                     interval: 2000
                 },
-                Charts.ValueHistorySource {
+                Charts.HistoryProxySource {
                     id: diskWriteHistory
-                    value: root.firstApplication ? root.firstApplication.diskWrite : 0;
+                    source: Charts.SingleValueSource { value: root.firstApplication ? root.firstApplication.diskWrite : 0; }
                     maximumHistory: 50
                     interval: 2000
                 }
