@@ -129,7 +129,7 @@ Page {
             Layout.preferredHeight: Kirigami.Units.gridUnit * 3
 
             xRange { from: 0; to: 50 }
-            unit: Formatter.Units.UnitKiloByteRate
+            unit: Formatter.Units.UnitByteRate
 
             valueSources: [
                 Charts.HistoryProxySource {
@@ -154,7 +154,7 @@ Page {
             Layout.preferredHeight: Kirigami.Units.gridUnit * 3
 
             xRange { from: 0; to: 50 }
-            unit: Formatter.Units.UnitKiloByteRate
+            unit: Formatter.Units.UnitByteRate
 
             valueSources: [
                 Charts.ValueHistorySource {
