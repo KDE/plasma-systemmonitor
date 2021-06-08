@@ -42,7 +42,7 @@ Kirigami.ScrollablePage {
         NewStuff.Action {
             text: i18nc("@action", "Get new presets…")
             configFile: "systemmonitor-presets.knsrc"
-            pageStack: applicationWindow().pageStack
+            pageStack: applicationWindow().pageStack.layers
             onChangedEntriesChanged: loader.controller.availablePresetsModel.reload();
         },
         Kirigami.Action {
@@ -66,7 +66,7 @@ Kirigami.ScrollablePage {
         NewStuff.Action {
             text: i18nc("@action", "Get new display styles…")
             configFile: "systemmonitor-faces.knsrc"
-            pageStack: applicationWindow().pageStack
+            pageStack: applicationWindow().pageStack.layers
             onChangedEntriesChanged: loader.controller.availableFacesModel.reload();
         }
     ]
