@@ -236,8 +236,8 @@ void PagesModel::removeLocalPageFiles(const QString &fileName)
         return;
     }
     PageDataObject *const page = *it;
-    QStringList files = QStandardPaths::locateAll(QStandardPaths::AppDataLocation, page->fileName(), QStandardPaths::LocateFile);
-    for (const auto file : files) {
+    const QStringList files = QStandardPaths::locateAll(QStandardPaths::AppDataLocation, page->fileName(), QStandardPaths::LocateFile);
+    for (const auto &file : files) {
         if (QFileInfo(file).isWritable()) {
             QFile::remove(file);
         }
