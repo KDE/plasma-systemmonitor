@@ -149,6 +149,10 @@ Kirigami.ApplicationWindow {
                 visible: !model.hidden
                 onTriggered: {
                     config.lastVisitedPage = model.fileName
+
+                    if (app.pageStack.layers.depth > 0) {
+                        app.pageStack.layers.clear()
+                    }
                 }
 
                 Component.onCompleted: {
