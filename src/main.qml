@@ -86,8 +86,10 @@ Kirigami.ApplicationWindow {
                         text: i18nc("@action:inmenu", "Get New Pages…")
                         configFile: "plasma-systemmonitor.knsrc"
                         pageStack: app.pageStack.layers
-                        onChangedEntriesChanged: {
-                            pagesModel.ghnsEntriesChanged(engine.changedEntries)
+                        onEntryEvent: {
+                            if (event == NewStuff.Engine.StatusChangedEvent) {
+                                pagesModel.ghnsEntryStatusChanged(entry)
+                            }
                         }
                     },
                     Kirigami.Action {

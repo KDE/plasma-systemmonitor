@@ -259,31 +259,42 @@ void PagesModel::removeLocalPageFiles(const QString &fileName)
 void PagesModel::ghnsEntriesChanged(const QQmlListReference &changedEntries)
 {
     for (int i = 0; i < changedEntries.count(); ++i) {
-        KNSCore::EntryInternal entry = static_cast<KNSCore::EntryWrapper *>(changedEntries.at(i))->entry();
-        if (entry.status() == KNS3::Entry::Installed) {
-            for (const auto &file : entry.installedFiles()) {
-                const QString fileName = QUrl::fromLocalFile(file).fileName();
-                if (fileName.endsWith(".page")) {
-                    auto it = std::find_if(m_pages.begin(), m_pages.end(), [&](PageDataObject *page) {
-                        return page->fileName() == fileName;
-                    });
-                    if (it != m_pages.end()) {
-                        // User selected to overwrite the existing file in the kns dialog
-                        (*it)->resetPage();
-                        if (m_writeableCache[fileName] == NotWriteable) {
-                            m_writeableCache[fileName] = LocalChanges;
-                        }
-                    } else {
-                        addPage(fileName.chopped(strlen(".page")));
+        ghnsEntryStatusChanged(changedEntries.at(i));
+    }
+}
+
+void PagesModel::ghnsEntryStatusChanged(QObject *entry)
+{
+    const auto wrapper = qobject_cast<KNSCore::EntryWrapper *>(entry);
+    if (!wrapper) {
+        return;
+    }
+
+    if (wrapper->entry().status() == KNS3::Entry::Installed) {
+        const auto files = wrapper->entry().installedFiles();
+        for (const auto &file : files) {
+            const QString fileName = QUrl::fromLocalFile(file).fileName();
+            if (fileName.endsWith(".page")) {
+                auto it = std::find_if(m_pages.begin(), m_pages.end(), [&](PageDataObject *page) {
+                    return page->fileName() == fileName;
+                });
+                if (it != m_pages.end()) {
+                    // User selected to overwrite the existing file in the kns dialog
+                    (*it)->resetPage();
+                    if (m_writeableCache[fileName] == NotWriteable) {
+                        m_writeableCache[fileName] = LocalChanges;
                     }
+                } else {
+                    addPage(fileName.chopped(strlen(".page")));
                 }
             }
-        } else if (entry.status() == KNS3::Entry::Deleted) {
-            for (const auto &file : entry.uninstalledFiles()) {
-                const QString fileName = QUrl::fromLocalFile(file).fileName();
-                if (fileName.endsWith(".page")) {
-                    removeLocalPageFiles(fileName);
-                }
+        }
+    } else if (wrapper->entry().status() == KNS3::Entry::Deleted) {
+        const auto files = wrapper->entry().uninstalledFiles();
+        for (const auto &file : files) {
+            const QString fileName = QUrl::fromLocalFile(file).fileName();
+            if (fileName.endsWith(".page")) {
+                removeLocalPageFiles(fileName);
             }
         }
     }

@@ -56,6 +56,7 @@ public:
     Q_INVOKABLE PageDataObject *importPage(const QUrl &file);
     Q_INVOKABLE void removeLocalPageFiles(const QString &fileName);
     Q_INVOKABLE void ghnsEntriesChanged(const QQmlListReference &changedEntries);
+    Q_INVOKABLE void ghnsEntryStatusChanged(QObject *entry);
 
     QStringList pageOrder() const;
     void setPageOrder(const QStringList &pageOrder);
