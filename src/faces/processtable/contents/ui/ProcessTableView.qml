@@ -47,9 +47,9 @@ Table.BaseTableView {
 
             var item = {}
 
-            item.name = processModel.data(processModel.index(index.row, processModel.nameColumn), Process.ProcessDataModel.ValueRole)
-            item.pid = processModel.data(processModel.index(index.row, processModel.pidColumn), Process.ProcessDataModel.ValueRole)
-            item.username = processModel.data(processModel.index(index.row, processModel.usernameColumn), Process.ProcessDataModel.ValueRole)
+            item.name = processModel.data(processModel.index(index.row, processModel.nameColumn, index.parent), Process.ProcessDataModel.ValueRole)
+            item.pid = processModel.data(processModel.index(index.row, processModel.pidColumn, index.parent), Process.ProcessDataModel.ValueRole)
+            item.username = processModel.data(processModel.index(index.row, processModel.usernameColumn, index.parent), Process.ProcessDataModel.ValueRole)
 
             result.push(item)
         }
