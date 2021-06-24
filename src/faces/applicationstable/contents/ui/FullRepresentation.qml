@@ -94,6 +94,9 @@ Faces.SensorFace {
                 if (event.matches(StandardKey.Delete)) {
                     processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal);
                     event.accepted = true;
+                } else if ((event.modifiers & Qt.ShiftModifier) && (event.key == Qt.Key_Delete)) {
+                    processHelper.sendSignalToSelection(Process.ProcessController.KillSignal);
+                    event.accept = true;
                 }
             }
         }
