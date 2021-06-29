@@ -45,6 +45,7 @@ showLegend=false
 [Face-94410238879984][Appearance]
 chartFace=org.kde.ksysguard.textonly
 Title=Networks
+Title[ar]=الشّبكات
 Title[az]=Şəbəkələr
 Title[ca]=Xarxes
 Title[ca@valencia]=Xarxes
