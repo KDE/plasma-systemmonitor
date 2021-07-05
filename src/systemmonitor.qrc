@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>GlobalMenu.qml</file>
         <file>AboutPage.qml</file>
     </qresource>
 </RCC>

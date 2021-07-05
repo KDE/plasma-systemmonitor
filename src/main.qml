@@ -26,6 +26,11 @@ Kirigami.ApplicationWindow {
 
     header: contentItem.GraphicsInfo.api == GraphicsInfo.Software ? degradedWarning.createObject(app) : null
 
+    Loader {
+        active: !Kirigami.Settings.isMobile
+        source: Qt.resolvedUrl("qrc:/GlobalMenu.qml")
+    }
+
     Kirigami.PagePool {
         id: pagePoolObject
     }
