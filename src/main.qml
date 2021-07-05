@@ -110,6 +110,7 @@ Kirigami.ApplicationWindow {
                         icon.name: "help-about-symbolic";
                         text: i18nc("@action", "About System Monitor");
                         onTriggered: app.pageStack.layers.push("AboutPage.qml")
+                        enabled: app.pageStack.layers.depth <= 1
                     }
                 ]
                 Component.onCompleted: actions.push(app.quitAction)
