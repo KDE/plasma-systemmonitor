@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=System Monitor
+Name[ar]=مرقاب النظام
 Name[az]=Sistem İzləyici
 Name[ca]=Monitor del sistema
 Name[ca@valencia]=Monitor del sistema
@@ -32,6 +33,7 @@ Name[uk]=Нагляд за системою
 Name[x-test]=xxSystem Monitorxx
 Name[zh_CN]=系统监视器
 GenericName=System Monitor
+GenericName[ar]=مراقب النظام
 GenericName[az]=Sistem İzləyici
 GenericName[ca]=Monitor del sistema
 GenericName[ca@valencia]=Monitor del sistema
