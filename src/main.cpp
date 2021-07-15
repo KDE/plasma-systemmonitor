@@ -11,6 +11,7 @@
 #include <QLoggingCategory>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QSessionManager>
 #include <QWindow>
 
 #include <KAboutData>
@@ -62,6 +63,32 @@ private:
     QString m_pageName;
 };
 
+class SessionManager : public QObject
+{
+    Q_OBJECT
+public:
+    SessionManager(QObject *parent);
+
+private:
+    QString m_pageId;
+};
+
+SessionManager::SessionManager(QObject *parent)
+    : QObject(parent)
+{
+    connect(qApp, &QGuiApplication::saveStateRequest, this, [this](QSessionManager &manager) {
+        QString lastPageId = Configuration::globalConfig()->lastPage();
+        if (lastPageId.isEmpty()) {
+            return;
+        }
+        QStringList args;
+        args << qApp->applicationName();
+        args << QStringLiteral("--page-id") << lastPageId;
+        args << QStringLiteral("-session") << manager.sessionId();
+        manager.setRestartCommand(args);
+    });
+}
+
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
@@ -111,6 +138,7 @@ int main(int argc, char **argv)
     qmlRegisterSingletonType<CommandLineArguments>("org.kde.systemmonitor", 1, 0, "CommandLineArguments", [&parser](QQmlEngine *, QJSEngine *) {
         return new CommandLineArguments{parser};
     });
+    auto sessionManager = new SessionManager(&app);
 
     KQuickAddons::QtQuickSettings::init();
 

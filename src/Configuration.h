@@ -37,9 +37,10 @@ public:
     void classBegin() override;
     void componentComplete() override;
 
+    static SystemMonitorConfiguration *globalConfig();
+
 private:
     std::unique_ptr<QTimer> m_saveTimer;
-    static SystemMonitorConfiguration *m_config;
 };
 
 #endif // CONFIGWRITER_H
