@@ -93,7 +93,7 @@ Page {
                 }
             ]
 
-            Sensors.Sensor { id: cpuCountSensor; sensorId: "system/cores/cores" }
+            Sensors.Sensor { id: cpuCountSensor; sensorId: "cpu/all/coreCount" }
         }
         Label {
             text: i18nc("@title:group", "Memory")
