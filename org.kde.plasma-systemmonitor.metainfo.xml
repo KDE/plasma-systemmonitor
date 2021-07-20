@@ -23,6 +23,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="fr">Moniteur de surveillance de Plasma</name>
   <name xml:lang="hu">Plasma rendszermonitor</name>
   <name xml:lang="ia">Monitor de systema de Plasma</name>
+  <name xml:lang="id">Plasma System Monitor</name>
   <name xml:lang="it">Monitor di sistema di Plasma</name>
   <name xml:lang="ko">Plasma 시스템 모니터</name>
   <name xml:lang="lt">Plasma sistemos prižiūryklė</name>
@@ -55,6 +56,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="fr">Une application pour surveiller les ressources du système.</summary>
   <summary xml:lang="hu">Alkalmazás a rendszer erőforrásainak monitorozásához.</summary>
   <summary xml:lang="ia">Un application per supervider ressources de systema.</summary>
+  <summary xml:lang="id">Sebuah aplikasi untuk memantau sumberdaya sistem.</summary>
   <summary xml:lang="it">Un'applicazione per il monitoraggio delle risorse di sistema.</summary>
   <summary xml:lang="ko">시스템 자원을 관찰하는 프로그램입니다.</summary>
   <summary xml:lang="lt">Sistemos išteklių stebėjimo programa.</summary>
@@ -88,6 +90,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="fr">Le moniteur de surveillance de Plasma fournit une interface la surveillance des senseurs du système, le traitement des informations et des autres ressources du système.</p>
     <p xml:lang="hu">A Plasma rendszermonitor felületet nyújt a rendszer szenzorainak, folyamatinformációinak és más rendszererőforrások monitorozásához.</p>
     <p xml:lang="ia">Plasma System Monitor (Monitor o supervision de systema de Plasma) provide un interfacie per supervider sensores de systema, information de processo e altere ressources de systema.</p>
+    <p xml:lang="id">Plasma System Monitor menyediakan sebuah antarmuka untuk memantau sensor-sensor sistem, informasi proses dan sumberdaya sistem lainnya.</p>
     <p xml:lang="it">Monitor di sistema di Plasma fornisce un'interfaccia per il monitoraggio dei sensori di sistema, informazioni sui processi e altre risorse di sistema.</p>
     <p xml:lang="ko">Plasma 시스템 모니터는 시스템 센서, 프로세스 정보, 기타 시스템 자원을 관찰할 수 있습니다.</p>
     <p xml:lang="lt">Plasma sistemos prižiūryklė pateikia sąsają, skirtą stebėti sistemos jutiklius, procesų informaciją bei kitus sistemos išteklius.</p>
