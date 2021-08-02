@@ -10,7 +10,7 @@ import QtQuick.Layouts 1.2
 
 import Qt.labs.qmlmodels 1.0
 
-import org.kde.kirigami 2.4 as Kirigami
+import org.kde.kirigami 2.15 as Kirigami
 
 import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.quickcharts 1.0 as Charts
@@ -230,13 +230,10 @@ Page {
         }
     }
 
-    Label {
+    Kirigami.PlaceholderMessage {
         anchors.fill: parent
-        anchors.margins: Kirigami.Units.largeSpacing
-        text: i18nc("@info:placeholder", "Select an application to see its details.")
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
-        wrapMode: Text.WordWrap
+        anchors.margins: Kirigami.Units.largeSpacing * 2
+        text: i18nc("@info:placeholder", "Select an application to see its details")
         visible: root.firstApplication == null
     }
 
