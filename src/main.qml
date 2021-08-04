@@ -249,7 +249,7 @@ Kirigami.ApplicationWindow {
             title: i18nc("@title:window %1 is the name of the page that is being exported", "Export %1", app.pageStack.currentItem.title)
             defaultSuffix: "page"
             nameFilters: [i18nc("Name filter in file dialog", "System Monitor page (*.page)")]
-            onAccepted: page.saveAs(fileUrl)
+            onAccepted: app.pageStack.currentItem.pageData.saveAs(fileUrl)
         }
     }
     Page.DialogLoader {
