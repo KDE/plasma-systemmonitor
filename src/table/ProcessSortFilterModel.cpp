@@ -102,7 +102,7 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &
 
     const QVector<QStringRef> splitFilterStrings = filter.splitRef(QLatin1Char(','), Qt::SkipEmptyParts);
 
-    for (const QStringRef string : splitFilterStrings) {
+    for (const QStringRef &string : splitFilterStrings) {
         if (name.contains(string.trimmed(), Qt::CaseInsensitive)) {
             return true;
         }
