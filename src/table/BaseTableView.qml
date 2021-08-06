@@ -135,6 +135,38 @@ FocusScope {
                         }
                         event.accepted = true
                         return;
+                    case Qt.Key_PageUp:
+                        if (!atYBeginning) {
+                            if ((contentY - (tableView.height - root.rowHeight)) < 0) {
+                                contentY = 0
+                            } else {
+                                contentY -= tableView.height - root.rowHeight // subtracting root.rowHeight so the last row still visible
+                            }
+                            returnToBounds()
+                        }
+                        return;
+                    case Qt.Key_PageDown:
+                        if (!atYEnd) {
+                            if ((contentY + (tableView.height - root.rowHeight)) > contentHeight - height) {
+                                contentY = contentHeight - height
+                            } else {
+                                contentY += tableView.height - root.rowHeight // subtracting root.rowHeight so the last row still visible
+                            }
+                            returnToBounds()
+                        }
+                        return;
+                    case Qt.Key_Home:
+                        if (!atYBeginning) {
+                            contentY = 0
+                            returnToBounds()
+                        }
+                        return;
+                    case Qt.Key_End:
+                        if (!atYEnd) {
+                            contentY = contentHeight - height
+                            returnToBounds()
+                        }
+                        return;
                     case Qt.Key_Menu:
                         contextMenuRequested(selectionModel.currentIndex, mapToGlobal(0, 0))
                         return;
