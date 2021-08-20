@@ -111,6 +111,9 @@ void ComponentCacheProxyModel::createPendingInstance()
 
     while (!m_pendingInstances.isEmpty()) {
         auto index = m_pendingInstances.takeFirst();
+        if (!index.isValid()) {
+            continue;
+        }
 
         auto context = qmlContext(this);
 

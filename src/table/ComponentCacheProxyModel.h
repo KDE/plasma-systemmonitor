@@ -77,9 +77,9 @@ private:
     void createPendingInstance();
 
     QQmlComponent *m_component = nullptr;
-    QHash<QModelIndex, QObject *> m_instances;
+    QHash<QPersistentModelIndex, QObject *> m_instances;
 
-    mutable QVector<QModelIndex> m_pendingInstances;
+    mutable QVector<QPersistentModelIndex> m_pendingInstances;
 };
 
 QML_DECLARE_TYPEINFO(ComponentCacheProxyModel, QML_HAS_ATTACHED_PROPERTIES)
