@@ -97,6 +97,7 @@ FocusScope {
                 id: selectionModel
                 model: tableView.model
             }
+            property int hoveredRow: -1
             property int sortColumn: root.sortColumn
             signal contextMenuRequested(var index, point position)
             onContextMenuRequested: root.contextMenuRequested(index, position)

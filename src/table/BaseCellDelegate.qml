@@ -20,7 +20,8 @@ Control
     property int column: model.column
     property bool selected: false
 
-    readonly property bool rowHovered: root.__selection.currentIndex.row == row
+    readonly property bool rowHovered: root.TableView.view.hoveredRow == row
+
     readonly property var __selection: TableView.view.selectionModel
 
     // We need to update:
@@ -81,14 +82,19 @@ Control
         acceptedButtons: Qt.LeftButton | Qt.RightButton
 
         onEntered: {
-            var modelIndex = root.TableView.view.model.index(row, column);
-            root.__selection.setCurrentIndex(modelIndex, ItemSelectionModel.NoUpdate)
+            root.TableView.view.hoveredRow = row
         }
-        onExited: Qt.callLater(maybeClearCurrent)
+        onExited: {
+            root.TableView.view.hoveredRow = -1
+        }
 
         onClicked: {
             var modelIndex = root.TableView.view.model.index(row, column);
             root.TableView.view.forceActiveFocus(Qt.ClickFocus)
+
+            // latest clicks sets current index
+            root.__selection.setCurrentIndex(modelIndex, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
+
             if (root.__selection.isSelected(modelIndex) && mouse.button == Qt.RightButton) {
                 root.TableView.view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
                 return
@@ -105,20 +111,6 @@ Control
 
             if (mouse.button == Qt.RightButton) {
                 root.TableView.view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
-            }
-        }
-
-        function maybeClearCurrent() {
-            var modelIndex = root.TableView.view.model.index(row, column);
-
-            // We (ab)use currentIndex to indicate the currently hovered row. This means
-            // we shouldn't just clear the current index when the mouse leaves this item
-            // since it may just be hovering a different table cell. However, if the mouse
-            // exited but the currentIndex is still the current cell, then we can be fairly
-            // sure the mouse is no longer over a table cell and we can safely clear the
-            // current index.
-            if (__selection.currentIndex == modelIndex) {
-                __selection.clearCurrentIndex()
             }
         }
     }
