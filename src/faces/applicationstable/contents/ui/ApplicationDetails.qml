@@ -191,7 +191,7 @@ Page {
                 anchors.fill: parent
 
                 columnWidths: [0.5, 0.25, 0.25]
-                sortName: controller.faceConfiguration.sortColumn
+                sortName: processModel.enabledAttributes.includes(controller.faceConfiguration.sortColumn) ? controller.faceConfiguration.sortColumn : "vmPSS"
                 sortOrder: controller.faceConfiguration.sortDirection
                 onSort: sortFilter.sort(column, order)
 
