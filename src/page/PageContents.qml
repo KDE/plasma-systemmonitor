@@ -20,23 +20,49 @@ ColumnLayout {
     property PageDataObject pageData
     property var actionsFace
 
+    spacing: rowSpacing // From parent Loader
 
-    spacing: Kirigami.Units.largeSpacing
+    readonly property real balancedRowHeight: {
+        let reservedSpace = 0;
+        let minimumSpace = 0;
+        let balancedCount = 0;
+        let maximumCount = 0;
 
-    readonly property real minimumRowHeight: {
-        // If we just use the minimumHeight of a row for the row's minimum height
-        // we end up with differently sized rows since some rows will be able to
-        // be sized smaller than others. To avoid this, we determine the maximum
-        // minimumHeight of all rows and use that value as minimumHeight for all
-        // rows.
-        let result = 0;
         for (let i in children) {
             let child = children[i]
-            if (child.hasOwnProperty("minimumContentHeight")) {
-                result = Math.max(result, child.minimumContentHeight)
+            if (!child.hasOwnProperty("heightMode") || !child.hasOwnProperty("minimumContentHeight")) {
+                continue
+            }
+
+            switch(child.heightMode) {
+                case "minimum":
+                    reservedSpace += child.minimumContentHeight
+                    break;
+                case "balanced":
+                    minimumSpace = Math.max(child.minimumContentHeight, minimumSpace)
+                    balancedCount += 1
+                    break;
+                case "maximum":
+                    maximumCount += 1
+                    break;
             }
         }
-        return result;
+
+        // If there's nothing to balance, we can ignore the rest.
+        if (balancedCount == 0) {
+            return 0
+        }
+
+        // If there's any rows that are set to "maximum", use the largest
+        // minimum size for balanced rows.
+        if (maximumCount > 0) {
+            return minimumSpace
+        }
+
+        // Note that "availableHeight" here comes from the parent loader and
+        // represents the available size of the content area of the page.
+        let balancedHeight = (availableHeight - reservedSpace - root.spacing * (children.length - 1)) / balancedCount
+        return Math.max(balancedHeight, minimumSpace)
     }
 
     Repeater {
@@ -44,11 +70,50 @@ ColumnLayout {
 
         Item {
             Layout.fillWidth: true
-            Layout.fillHeight: !model.data.isTitle
-            Layout.preferredHeight: model.data.isTitle ? title.height : 0
-            Layout.minimumHeight: model.data.isTitle ? title.height : root.minimumRowHeight
+            Layout.fillHeight: heightMode != "minimum"
+            Layout.preferredHeight: 0
+            Layout.minimumHeight: {
+                if (heightMode == "minimum") {
+                    return minimumContentHeight
+                }
 
-            readonly property real minimumContentHeight: model.data.isTitle ? title.height : rowContents.Layout.minimumHeight
+                if (heightMode == "balanced") {
+                    return root.balancedRowHeight
+                }
+
+                return -1
+            }
+            Layout.maximumHeight: {
+                if (heightMode == "minimum") {
+                    return minimumContentHeight
+                }
+
+                if (heightMode == "balanced") {
+                    return root.balancedRowHeight
+                }
+
+                return -1
+            }
+
+            readonly property real minimumContentHeight: {
+                if (model.data.isTitle) {
+                    return title.height
+                }
+
+                return rowContents.Layout.minimumHeight
+            }
+
+            readonly property string heightMode: {
+                if (model.data.heightMode) {
+                    return model.data.heightMode
+                }
+
+                if (model.data.isTitle) {
+                    return "minimum"
+                }
+
+                return "balanced"
+            }
 
             Kirigami.Heading {
                 id: title
@@ -73,7 +138,7 @@ ColumnLayout {
                     Item {
                         Layout.fillWidth: true
                         Layout.fillHeight: true
-                        Layout.minimumHeight: columnContents.Layout.minimumHeight
+                        Layout.minimumHeight: columnContents.Layout.minimumHeight + columnContents.anchors.topMargin + columnContents.anchors.bottomMargin
 
                         Kirigami.AbstractCard {
                             anchors.fill: parent
@@ -84,7 +149,7 @@ ColumnLayout {
                             id: columnContents
 
                             anchors.fill: parent
-                            anchors.margins: !model.data.showBackground ? 0 : (model.data.noMargins ? 1 : Kirigami.Units.largeSpacing)
+                            anchors.margins: model.data.noMargins ? 0 : Kirigami.Units.largeSpacing
 
                             spacing: Kirigami.Units.largeSpacing
 

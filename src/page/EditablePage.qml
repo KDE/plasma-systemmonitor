@@ -244,6 +244,9 @@ Kirigami.ScrollablePage {
         width: page.width
         height: item ? Math.max(item.Layout.minimumHeight, page.heightForContent) : page.heightForContent
 
+        property real availableHeight: page.heightForContent
+        property real rowSpacing: page.pageData.margin * Kirigami.Units.smallSpacing
+
         sourceComponent: page.edit ? pageEditor : pageContents
         asynchronous: true
 

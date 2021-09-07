@@ -67,6 +67,7 @@ Title[zh_CN]=历史记录
 [page][row-0]
 isTitle=true
 name=row-0
+heightMode=minimum
 Title=CPU
 Title[ar]=المعالج
 Title[az]=CPU
@@ -104,6 +105,7 @@ Title[zh_CN]=CPU
 [page][row-1]
 isTitle=false
 name=row-1
+heightMode=balanced
 Title=false
 Title[ar]=خاطئ
 Title[az]=yalnış
@@ -150,6 +152,7 @@ name=section-0
 [page][row-2]
 isTitle=true
 name=row-2
+heightMode=minimum
 Title=Memory
 Title[ar]=الذاكرة
 Title[az]=Yaddaş
@@ -187,6 +190,7 @@ Title[zh_CN]=内存
 [page][row-3]
 isTitle=false
 name=row-3
+heightMode=balanced
 Title=false
 Title[ar]=خاطئ
 Title[az]=yalnış
@@ -233,6 +237,7 @@ name=section-0
 [page][row-4]
 isTitle=true
 name=row-4
+heightMode=minimum
 Title=Network
 Title[ar]=الشبكة
 Title[az]=Şəbəkə
@@ -270,6 +275,7 @@ Title[zh_CN]=网络
 [page][row-5]
 isTitle=false
 name=row-5
+heightMode=balanced
 Title=false
 Title[ar]=خاطئ
 Title[az]=yalnış

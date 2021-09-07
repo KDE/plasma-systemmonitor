@@ -46,6 +46,7 @@ actionsFace=Face-94920553440704
 isTitle=false
 name=row-0
 Title=
+heightMode=balanced
 
 [page][row-0][column-0]
 name=column-0

@@ -307,6 +307,7 @@ Title[zh_CN]=系统概览
 isTitle=false
 name=row-0
 Title=
+heightMode=balanced
 
 [page][row-0][column-0]
 name=column-0
@@ -341,6 +342,7 @@ name=section-0
 [page][row-1]
 isTitle=true
 name=row-1
+heightMode=minimum
 Title=Network & System
 Title[ar]=الشبكة و النظام
 Title[az]=Şəbəkə və Sistem
@@ -378,6 +380,7 @@ Title[zh_CN]=网络和系统
 [page][row-2]
 isTitle=false
 name=row-2
+heightMode=balanced
 Title=
 
 [page][row-2][column-0]
@@ -413,6 +416,7 @@ name=section-4
 [page][row-3]
 isTitle=true
 name=row-3
+heightMode=minimum
 Title=Applications
 Title[ar]=التّطبيقات
 Title[az]=Tətbiqlər
@@ -450,6 +454,7 @@ Title[zh_CN]=应用程序
 [page][row-4]
 isTitle=false
 name=row-4
+heightMode=balanced
 Title=
 
 [page][row-4][column-0]

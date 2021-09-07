@@ -20,48 +20,73 @@ Column {
     property Item activeItem
     property var actionsFace
 
-    spacing: Kirigami.Units.largeSpacing
+    spacing: rowSpacing // From parent loader
 
     move: Transition {
         NumberAnimation { properties: "x,y"; duration: Kirigami.Units.shortDuration }
     }
 
     function relayout() {
-        let itemCount = repeater.count;
-        let titlesHeight = 0;
-        let titlesCount = 0;
-        let minimumContentHeight = 0;
+        let reservedHeight = 0;
         let minimumHeight = 0;
+        let balancedCount = 0;
+        let maximumCount = 0;
 
-        for (let i = 0; i < itemCount; ++i) {
-            let item = repeater.itemAt(i)
-            if (item) {
-                if (item.rowData.isTitle) {
-                    titlesHeight += item.height
-                    titlesCount += 1
-                } else {
-                    minimumContentHeight = Math.max(minimumContentHeight, item.minimumContentHeight)
-                    minimumHeight = Math.max(minimumHeight, item.minimumHeight)
-                }
+        for (let i = 0; i < repeater.count; ++i) {
+            let child = repeater.itemAt(i)
+            if (!child || !child.hasOwnProperty("heightMode")) {
+                // Apparently not a RowControl, ignore it.
+                continue;
+            }
+
+            switch(child.heightMode) {
+                case "minimum":
+                    reservedHeight += child.minimumHeight
+                    break;
+                case "balanced":
+                    minimumHeight = Math.max(child.minimumHeight, minimumHeight)
+                    balancedCount += 1
+                    break;
+                case "maximum":
+                    maximumCount += 1
+                    break;
             }
         }
 
-        let rowHeight = (height - titlesHeight - (itemCount - 1) * root.spacing) / (itemCount - titlesCount)
+        let layoutHeight = availableHeight - reservedHeight - root.spacing * (repeater.count - 1)
 
-        let minimumTotalHeight = 0;
+        let balancedHeight = balancedCount > 0 ? layoutHeight / balancedCount : 0
+        let maximumHeight = maximumCount > 0 ? (layoutHeight - minimumHeight * balancedCount) / maximumCount : 0
 
-        for (let i = 0; i < itemCount; ++i) {
-            let item = repeater.itemAt(i)
-            if (item) {
-                minimumTotalHeight += root.spacing
-                if (item.rowData.isTitle) {
-                    minimumTotalHeight += item.height
-                } else {
-                    let correctedMinimumHeight = Math.max(item.minimumHeight, (item.minimumHeight - item.minimumContentHeight) + minimumContentHeight)
-                    item.height = Math.max(rowHeight, correctedMinimumHeight)
-                    minimumTotalHeight += correctedMinimumHeight
-                }
+        let minimumTotalHeight = 0
+
+        for (let i = 0; i < repeater.count; ++i) {
+            let child = repeater.itemAt(i)
+            if (!child || !child.hasOwnProperty("heightMode")) {
+                continue;
             }
+
+            minimumTotalHeight += root.spacing;
+
+            switch (child.heightMode) {
+                case "minimum":
+                    child.height = child.minimumHeight
+                    break
+                case "balanced":
+                    if (maximumCount > 0) {
+                        child.height = child.minimumHeight
+                    } else {
+                        child.height = Math.max(minimumHeight, balancedHeight)
+                    }
+                    break
+                case "maximum":
+                    // The last "balanced" here is to make sure if the user
+                    // selects "maximum" it is visually distinct from "balanced".
+                    child.height = Math.max(child.minimumHeight, maximumHeight, balancedHeight * 1.25)
+                    break
+            }
+
+            minimumTotalHeight += child.height
         }
 
         Layout.minimumHeight = minimumTotalHeight
@@ -83,6 +108,7 @@ Column {
             onHeightChanged: Qt.callLater(root.relayout)
             onMinimumContentHeightChanged: Qt.callLater(root.relayout)
             onMinimumHeightChanged: Qt.callLater(root.relayout)
+            onHeightModeChanged: Qt.callLater(root.relayout)
 
             rowData: model.data
 
@@ -105,7 +131,12 @@ Column {
             index = pageData.children.length
         }
 
-        pageData.insertChild(index, {name: "row-" + index, isTitle: true, title: i18n("New Title") })
+        pageData.insertChild(index, {
+            name: "row-" + index,
+            isTitle: true,
+            title: i18n("New Title"),
+            heightMode: "minimum"
+        })
     }
 
     function addRow(index) {
@@ -113,7 +144,12 @@ Column {
             index = pageData.children.length
         }
 
-        pageData.insertChild(index, {name: "row-" + index, isTitle: false, title: ""})
+        pageData.insertChild(index, {
+            name: "row-" + index,
+            isTitle: false,
+            title: "",
+            heightMode: "balanced"
+        })
     }
 
     Component.onCompleted: {
