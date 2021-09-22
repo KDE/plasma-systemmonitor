@@ -22,7 +22,7 @@ Kirigami.ApplicationWindow {
     minimumWidth: 700
     minimumHeight: 550
 
-    title: (pageStack.currentItem ? pageStack.currentItem.title + " - " : "") + i18n("System Monitor")
+    title: pageStack.currentItem.title
 
     header: contentItem.GraphicsInfo.api == GraphicsInfo.Software ? degradedWarning.createObject(app) : null
 
