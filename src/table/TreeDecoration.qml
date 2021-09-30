@@ -22,7 +22,7 @@ RowLayout {
     Repeater {
         model: root.level - 1
         delegate: StylePrivate.StyleItem {
-            Layout.preferredWidth: controlRoot.width//Kirigami.Units.gridUnit
+            Layout.preferredWidth: controlRoot.Layout.preferredWidth
             Layout.fillHeight: true
             visible: true
             control: controlRoot
