@@ -45,6 +45,7 @@ endif()
 add_subdirectory(src)
 
 install(PROGRAMS org.kde.plasma-systemmonitor.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
+install(FILES kcm_external_plasma-systemmonitor.desktop DESTINATION ${SERVICES_INSTALL_DIR})
 
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})

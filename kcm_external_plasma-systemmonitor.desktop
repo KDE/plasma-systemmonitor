@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2021 Harald Sitter <sitter@kde.org>
+[Desktop Entry]
+Type=Service
+TryExec=plasma-systemmonitor
+Exec=plasma-systemmonitor
+Icon=utilities-system-monitor
+Categories=Qt;KDE;X-KDE-information;
+X-KDE-Weight=1
+X-KDE-ServiceTypes=InfoCenterExternalApp
+X-KDE-KInfoCenter-Category=basic_information
+X-KDE-ParentApp=kinfocenter
+
+Name=System Monitor
+
+X-KDE-Keywords=Memory,RAM,cpu,disk,gpu,network
