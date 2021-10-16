@@ -150,50 +150,48 @@ Kirigami.ScrollablePage {
             Layout.fillWidth: true
         }
 
-        RowLayout {
-            Label {
-                Layout.fillWidth: true
-                text: i18nc("@label", "Minimum time between updates:")
-            }
+        Label {
+            Layout.fillWidth: true
+            text: i18nc("@label", "Minimum time between updates:")
+        }
 
-            SpinBox {
-                id: updateRateLimitSpinBox
+        SpinBox {
+            id: updateRateLimitSpinBox
 
-                Layout.minimumWidth: Kirigami.Units.gridUnit * 5.5;
+            Layout.fillWidth: true
 
-                from: 0
-                to: 600000
-                stepSize: 500
-                editable: true
+            from: 0
+            to: 600000
+            stepSize: 500
+            editable: true
 
-                value: page.loader.controller.updateRateLimit
+            value: page.loader.controller.updateRateLimit
 
-                textFromValue: function(value, locale) {
-                    if (value <= 0) {
-                        return i18n("No Limit");
+            textFromValue: function(value, locale) {
+                if (value <= 0) {
+                    return i18n("No Limit");
+                } else {
+                    var seconds = value / 1000;
+                    if (seconds == 1) { // Manual plural handling because i18ndp doesn't handle floats :(
+                        return i18n("1 second");
                     } else {
-                        var seconds = value / 1000;
-                        if (seconds == 1) { // Manual plural handling because i18ndp doesn't handle floats :(
-                            return i18n("1 second");
-                        } else {
-                            return i18n("%1 seconds", seconds);
-                        }
+                        return i18n("%1 seconds", seconds);
                     }
                 }
-                valueFromText: function(value, locale) {
-                    // Don't use fromLocaleString here since it will error out on extra
-                    // characters like the (potentially translated) seconds that gets
-                    // added above. Instead parseInt ignores non-numeric characters.
-                    var v = parseInt(value)
-                    if (isNaN(v)) {
-                        return 0;
-                    } else {
-                        return v * 1000;
-                    }
-                }
-
-                onValueModified: page.loader.controller.updateRateLimit = value
             }
+            valueFromText: function(value, locale) {
+                // Don't use fromLocaleString here since it will error out on extra
+                // characters like the (potentially translated) seconds that gets
+                // added above. Instead parseInt ignores non-numeric characters.
+                var v = parseInt(value)
+                if (isNaN(v)) {
+                    return 0;
+                } else {
+                    return v * 1000;
+                }
+            }
+
+            onValueModified: page.loader.controller.updateRateLimit = value
         }
 
         Control {
