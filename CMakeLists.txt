@@ -21,10 +21,17 @@ include(ECMQMLModules)
 include(FeatureSummary)
 include(KDEGitCommitHooks)
 
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Quick Widgets DBus)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS I18n Config Declarative Service GlobalAccel KIO DBusAddons NewStuffQuick ItemModels)
 find_package(KSysGuard ${PROJECT_VERSION} REQUIRED)
+find_package(KSystemStats)
+set_package_properties(KSystemStats PROPERTIES
+    TYPE RUNTIME
+    PURPOSE "Daemon providing system statistics"
+    URL https://invent.kde.org/plasma/ksystemstats
+)
 find_package(Qt5QuickControls2  ${QT_MIN_VERSION})
 set_package_properties(Qt5QuickControls2 PROPERTIES
     TYPE RUNTIME
