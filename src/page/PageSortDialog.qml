@@ -28,8 +28,8 @@ Dialog {
     x: parent ? Math.round(parent.width / 2 - width / 2) : 0
     y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
 
-    leftPadding: Kirigami.Units.devicePixelRatio
-    rightPadding: Kirigami.Units.devicePixelRatio
+    leftPadding: 1
+    rightPadding: 1
     bottomPadding: Kirigami.Units.smallSpacing
     topPadding: Kirigami.Units.smallSpacing
     bottomInset: -Kirigami.Units.smallSpacing

@@ -168,7 +168,7 @@ ColumnLayout {
                                 Loader {
                                     Layout.fillHeight: true
                                     Layout.fillWidth: model.data.isSeparator ? false : true
-                                    Layout.preferredWidth: model.data.isSeparator ? Kirigami.Units.devicePixelRatio : 0
+                                    Layout.preferredWidth: model.data.isSeparator ? 1 : 0
                                     Layout.minimumHeight: item ? item.Layout.minimumHeight : 0
 
                                     property var modelData: model

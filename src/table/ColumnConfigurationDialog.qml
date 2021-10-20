@@ -36,8 +36,8 @@ Dialog {
     width: parent ? parent.width * 0.75 : 0
     height: parent ? parent.height * 0.75 : 0
 
-    leftPadding: Kirigami.Units.devicePixelRatio
-    rightPadding: Kirigami.Units.devicePixelRatio
+    leftPadding: 1
+    rightPadding: 1
     bottomPadding: Kirigami.Units.smallSpacing
     topPadding: Kirigami.Units.smallSpacing
     bottomInset: -Kirigami.Units.smallSpacing
