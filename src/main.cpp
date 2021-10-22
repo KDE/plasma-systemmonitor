@@ -144,7 +144,7 @@ int main(int argc, char **argv)
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    engine.load(QStringLiteral(":/main.qml"));
+    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
     QObject::connect(&service, &KDBusService::activateRequested, &engine, []() {
         if (!qApp->topLevelWindows().isEmpty()) {
