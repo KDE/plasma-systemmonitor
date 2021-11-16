@@ -195,7 +195,6 @@ Kirigami.ApplicationWindow {
             },
             Menu {
                 id: globalContextMenu
-                modal: true
 
                 MenuItem { action: editPagesAction }
                 MenuItem { action: ghnsAction }
