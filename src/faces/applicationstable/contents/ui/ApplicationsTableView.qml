@@ -32,7 +32,7 @@ Table.BaseTableView {
     property alias columnDisplay: displayModel.columnDisplay
     property alias sourceModel: appModel
 
-    property alias filterString: filterProxy.filterString
+    property alias filterString: sortColumnFilter.filterString
 
     property var selectedApplications: {
         var result = []
@@ -83,8 +83,9 @@ Table.BaseTableView {
     model: KItemModels.KSortFilterProxyModel {
         id: sortColumnFilter
 
-        sourceModel: filterProxy
-
+        sourceModel: cacheModel
+        filterKeyColumn: appModel.nameColumn
+        filterCaseSensitivity: Qt.CaseInsensitive
         filterColumnCallback: function(column, parent) {
             // Note: This assumes displayModel column == appModel column
             // This may not always hold, but we get incorrect results if we try to
@@ -97,13 +98,6 @@ Table.BaseTableView {
         }
 
         sortRole: "Value"
-    }
-
-    Table.ProcessSortFilterModel {
-        id: filterProxy
-        sourceModel: cacheModel
-        filterKeyColumn: appModel.nameColumn
-        filterCaseSensitivity: Qt.CaseInsensitive
     }
 
     Table.ComponentCacheProxyModel {
@@ -184,7 +178,6 @@ Table.BaseTableView {
             Table.FirstCellDelegate {
                 iconName: {
                     var index = sortColumnFilter.mapToSource(sortColumnFilter.index(model.row, 0));
-                    index = filterProxy.mapToSource(filterProxy.index(index.row, 0));
                     index = appModel.index(index.row, appModel.iconColumn)
                     return appModel.data(index)
                     return ""
