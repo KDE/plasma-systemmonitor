@@ -96,6 +96,14 @@ Table.BaseTableView {
             }
             return true
         }
+        filterRowCallback: function(row, parent) {
+            if (filterString.length == 0) {
+                return true
+            }
+            const name = sourceModel.data(sourceModel.index(row, filterKeyColumn, parent), filterRole).toLowerCase()
+            const parts = filterString.toLowerCase().split(",").map(s => s.trim()).filter(s => s.length > 0)
+            return parts.some(part => name.includes(part))
+        }
 
         sortRole: "Value"
     }
