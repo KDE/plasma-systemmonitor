@@ -67,7 +67,7 @@ class SessionManager : public QObject
 {
     Q_OBJECT
 public:
-    SessionManager(QObject *parent);
+    explicit SessionManager(QObject *parent);
 
 private:
     QString m_pageId;

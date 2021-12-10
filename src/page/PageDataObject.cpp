@@ -235,7 +235,7 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
 
     auto groups = group.groupList();
     groups.sort();
-    for (auto groupName : qAsConst(groups)) {
+    for (const auto &groupName : qAsConst(groups)) {
         auto object = new PageDataObject{m_config, this};
         if (object->load(group, groupName)) {
             m_children.append(object);
