@@ -49,6 +49,8 @@ ecm_find_qmlmodule(Qt.labs.qmlmodels 1.0)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f02)
+add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055800)
 
 if ("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
     add_definitions(-DQT_QML_DEBUG)
