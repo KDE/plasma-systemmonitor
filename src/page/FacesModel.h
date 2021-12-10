@@ -24,7 +24,7 @@ class FacesModel : public QAbstractListModel
     };
 
 public:
-    FacesModel(QObject *parent = nullptr);
+    explicit FacesModel(QObject *parent = nullptr);
 
     Q_INVOKABLE QQuickItem *faceAtIndex(int row) const;
 

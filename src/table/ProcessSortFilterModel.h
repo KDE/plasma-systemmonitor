@@ -27,7 +27,7 @@ public:
     };
     Q_ENUM(ViewMode)
 
-    ProcessSortFilterModel(QObject *parent = nullptr);
+    explicit ProcessSortFilterModel(QObject *parent = nullptr);
 
     void setSourceModel(QAbstractItemModel *newSourceModel) override;
     bool filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const override;

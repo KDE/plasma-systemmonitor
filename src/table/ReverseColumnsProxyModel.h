@@ -15,7 +15,7 @@
 class ReverseColumnsProxyModel : public KRearrangeColumnsProxyModel
 {
 public:
-    ReverseColumnsProxyModel(QObject *parent = nullptr);
+    explicit ReverseColumnsProxyModel(QObject *parent = nullptr);
     void setSourceModel(QAbstractItemModel *sourceModel) override;
 
 private:

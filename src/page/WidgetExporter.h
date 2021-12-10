@@ -16,7 +16,7 @@ class WidgetExporter : public QObject
     Q_OBJECT
     Q_PROPERTY(bool plasmashellAvailable MEMBER m_plasmashellAvailable NOTIFY plasmashellAvailableChanged)
 public:
-    WidgetExporter(QObject *parent = nullptr);
+    explicit WidgetExporter(QObject *parent = nullptr);
 
     Q_INVOKABLE void exportAsWidget(FaceLoader *loader) const;
 Q_SIGNALS:

@@ -24,7 +24,7 @@ class FaceLoader : public QObject
     Q_PROPERTY(KSysGuard::SensorFaceController *controller READ controller NOTIFY controllerChanged)
 
 public:
-    FaceLoader(QObject *parent = nullptr);
+    explicit FaceLoader(QObject *parent = nullptr);
     ~FaceLoader() override;
 
     PageDataObject *dataObject() const;
