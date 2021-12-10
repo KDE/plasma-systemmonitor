@@ -48,7 +48,6 @@ private:
         KService::Ptr service;
     };
     QVector<Entry> m_entries;
-    QDBusInterface *m_kwinInterface;
 };
 
 #endif // TOOLSMODEL_H
