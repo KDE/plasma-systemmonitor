@@ -8,6 +8,9 @@
 
 #include <QDebug>
 #include <QMetaProperty>
+#include <chrono>
+
+using namespace std::chrono_literals;
 
 Q_GLOBAL_STATIC(SystemMonitorConfiguration, s_config)
 
@@ -20,7 +23,7 @@ Configuration::Configuration(QObject *parent)
     : QObject(parent)
 {
     m_saveTimer = std::make_unique<QTimer>();
-    m_saveTimer->setInterval(500);
+    m_saveTimer->setInterval(500ms);
     m_saveTimer->setSingleShot(true);
     connect(m_saveTimer.get(), &QTimer::timeout, globalConfig(), &SystemMonitorConfiguration::save);
 }

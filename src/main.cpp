@@ -99,7 +99,7 @@ int main(int argc, char **argv)
 
     KLocalizedString::setApplicationDomain("plasma-systemmonitor");
 
-    KAboutData aboutData{/* componentName */ "plasma-systemmonitor",
+    KAboutData aboutData{/* componentName */ QStringLiteral("plasma-systemmonitor"),
                          /* displayName */ i18n("System Monitor"),
                          /* version */ PROJECT_VERSION,
                          /* shortDescription */ i18n("An application for monitoring system resources"),

@@ -33,7 +33,7 @@ ToolsModel::ToolsModel(QObject *parent)
     if (QDBusConnection::sessionBus().interface()->isServiceRegistered(QStringLiteral("org.kde.KWin"))) {
         auto entry = Entry{};
         entry.id = QStringLiteral("killWindow");
-        entry.icon = QLatin1String("document-close");
+        entry.icon = QStringLiteral("document-close");
         entry.name = i18nc("@action:inmenu", "Kill a Window…");
         const auto killWindowShortcutList = KGlobalAccel::self()->globalShortcut(QStringLiteral("kwin"), QStringLiteral("Kill Window"));
         if (!killWindowShortcutList.isEmpty()) {

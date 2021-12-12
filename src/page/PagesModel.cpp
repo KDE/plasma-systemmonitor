@@ -49,11 +49,11 @@ QVariant PagesModel::data(const QModelIndex &index, int role) const
     auto data = m_pages.at(index.row());
     switch (role) {
     case TitleRole:
-        return data->value("title");
+        return data->value(QStringLiteral("title"));
     case DataRole:
         return QVariant::fromValue(data);
     case IconRole:
-        return data->value("icon");
+        return data->value(QStringLiteral("icon"));
     case FileNameRole:
         return data->fileName();
     case HiddenRole:
@@ -74,10 +74,10 @@ void PagesModel::componentComplete()
     QHash<QString, QString> files;
 
     const auto directories = QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
-    for (auto directory : directories) {
+    for (const auto &directory : directories) {
         QDir dir{directory};
         const auto entries = dir.entryInfoList({QStringLiteral("*.page")}, QDir::NoDotAndDotDot | QDir::Files);
-        for (auto entry : entries) {
+        for (const auto &entry : entries) {
             const FilesWriteableStates entryState = entry.isWritable() ? AllWriteable : NotWriteable;
             if (!files.contains(entry.fileName())) {
                 files.insert(entry.fileName(), dir.relativeFilePath(entry.fileName()));
@@ -142,7 +142,7 @@ void PagesModel::sort(int column, Qt::SortOrder order)
         Q_EMIT pageOrderChanged();
     }
     changePersistentIndex(QModelIndex(), QModelIndex());
-    layoutChanged();
+    Q_EMIT layoutChanged();
 }
 
 PageDataObject *PagesModel::addPage(const QString &baseName, const QVariantMap &properties)
@@ -244,11 +244,11 @@ void PagesModel::removeLocalPageFiles(const QString &fileName)
     }
     int row = it - m_pages.begin();
     if (m_writeableCache[fileName] == AllWriteable) {
-        Q_EMIT beginRemoveRows(QModelIndex(), row, row);
+        beginRemoveRows(QModelIndex(), row, row);
         m_pages.erase(it);
         m_hiddenPages.removeAll(fileName);
         m_writeableCache.remove(fileName);
-        Q_EMIT endRemoveRows();
+        endRemoveRows();
     } else {
         page->resetPage();
         m_writeableCache[fileName] = NotWriteable;
@@ -274,7 +274,7 @@ void PagesModel::ghnsEntryStatusChanged(QObject *entry)
         const auto files = wrapper->entry().installedFiles();
         for (const auto &file : files) {
             const QString fileName = QUrl::fromLocalFile(file).fileName();
-            if (fileName.endsWith(".page")) {
+            if (fileName.endsWith(QLatin1String(".page"))) {
                 auto it = std::find_if(m_pages.begin(), m_pages.end(), [&](PageDataObject *page) {
                     return page->fileName() == fileName;
                 });
@@ -293,7 +293,7 @@ void PagesModel::ghnsEntryStatusChanged(QObject *entry)
         const auto files = wrapper->entry().uninstalledFiles();
         for (const auto &file : files) {
             const QString fileName = QUrl::fromLocalFile(file).fileName();
-            if (fileName.endsWith(".page")) {
+            if (fileName.endsWith(QLatin1String(".page"))) {
                 removeLocalPageFiles(fileName);
             }
         }

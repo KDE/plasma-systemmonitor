@@ -77,7 +77,7 @@ void ColumnSortModel::setSortedColumns(const QStringList &newSortedColumns)
 
     beginResetModel();
     m_rowMapping.clear();
-    for (auto id : newSortedColumns) {
+    for (const auto &id : newSortedColumns) {
         auto row = sourceRowMapping.value(id, -1);
         if (row != -1) {
             m_rowMapping.append(row);
