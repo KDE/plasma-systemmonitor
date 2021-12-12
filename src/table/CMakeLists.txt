@@ -1,10 +1,16 @@
 set(table_SRCS
-    TablePlugin.cpp
     ColumnDisplayModel.cpp
+    ColumnDisplayModel.h
     ColumnSortModel.cpp
+    ColumnSortModel.h
     ComponentCacheProxyModel.cpp
+    ComponentCacheProxyModel.h
     ProcessSortFilterModel.cpp
+    ProcessSortFilterModel.h
     ReverseColumnsProxyModel.cpp
+    ReverseColumnsProxyModel.h
+    TablePlugin.cpp
+    TablePlugin.h
 )
 
 set(table_QML

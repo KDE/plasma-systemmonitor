@@ -1,13 +1,21 @@
 
 set(page_SRCS
-    PageDataModel.cpp
-    PageDataObject.cpp
-    PagePlugin.cpp
-    PagesModel.cpp
     FaceLoader.cpp
-    PageSortModel.cpp
+    FaceLoader.h
     FacesModel.cpp
+    FacesModel.h
+    PageDataModel.cpp
+    PageDataModel.h
+    PageDataObject.cpp
+    PageDataObject.h
+    PagePlugin.cpp
+    PagePlugin.h
+    PagesModel.cpp
+    PagesModel.h
+    PageSortModel.cpp
+    PageSortModel.h
     WidgetExporter.cpp
+    WidgetExporter.h
 )
 
 set(page_QML

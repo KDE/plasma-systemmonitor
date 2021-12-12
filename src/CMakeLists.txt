@@ -5,7 +5,9 @@ add_subdirectory(faces)
 set(plasma-systemmonitor_SRCS
     main.cpp
     ToolsModel.cpp
+    ToolsModel.h
     Configuration.cpp
+    Configuration.h
 )
 
 qt5_add_resources(plasma-systemmonitor_QRC systemmonitor.qrc)
