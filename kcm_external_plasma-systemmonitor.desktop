@@ -48,6 +48,7 @@ Name[x-test]=xxSystem Monitorxx
 Name[zh_CN]=系统监视器
 
 X-KDE-Keywords=Memory,RAM,cpu,disk,gpu,network
+X-KDE-Keywords[ar]=ذاكرة,رام,قرص,شبكة
 X-KDE-Keywords[az]=Yaddaş,RAM,MP,disk,şəbəkə
 X-KDE-Keywords[ca]=memòria,RAM,cpu,disc,gpu,xarxa
 X-KDE-Keywords[ca@valencia]=memòria,RAM,cpu,disc,gpu,xarxa
