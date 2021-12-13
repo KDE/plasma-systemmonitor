@@ -60,7 +60,7 @@ QStringList ColumnSortModel::sortedColumns() const
 {
     QStringList result;
     auto source = sourceModel();
-    for (auto sourceRow : qAsConst(m_rowMapping)) {
+    for (auto sourceRow : std::as_const(m_rowMapping)) {
         result.append(source->data(source->index(sourceRow, 0), idRoleNumber()).toString());
     }
     return result;

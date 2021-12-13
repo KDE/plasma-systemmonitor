@@ -235,7 +235,7 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
 
     auto groups = group.groupList();
     groups.sort();
-    for (const auto &groupName : qAsConst(groups)) {
+    for (const auto &groupName : std::as_const(groups)) {
         auto object = new PageDataObject{m_config, this};
         if (object->load(group, groupName)) {
             m_children.append(object);
@@ -264,26 +264,26 @@ bool PageDataObject::save(KConfigBase &config, const QString &groupName, const Q
     auto group = config.group(groupName);
 
     const auto names = keys();
-    for (auto name : names) {
+    for (const auto &name : names) {
         if (ignoreProperties.contains(name)) {
             continue;
         } else {
             QString key = name;
-            if (name == "title") {
-                key = "Title";
+            if (name == QLatin1String("title")) {
+                key = QStringLiteral("Title");
             }
             group.writeEntry(key, value(name));
         }
     }
 
     auto groupNames = group.groupList();
-    for (auto child : qAsConst(m_children)) {
+    for (auto child : std::as_const(m_children)) {
         auto name = child->value(QStringLiteral("name")).toString();
         groupNames.removeOne(name);
         child->save(group, name);
     }
 
-    for (auto name : qAsConst(groupNames)) {
+    for (const auto &name : std::as_const(groupNames)) {
         group.deleteGroup(name);
     }
 
@@ -300,7 +300,7 @@ void PageDataObject::reset()
         m_faceLoader->reset();
     }
 
-    for (auto child : qAsConst(m_children)) {
+    for (auto child : std::as_const(m_children)) {
         child->reset();
     }
 }
@@ -333,7 +333,7 @@ void PageDataObject::markClean()
 void PageDataObject::updateNames()
 {
     for (auto i = 0; i < m_children.size(); ++i) {
-        auto name = m_children.at(i)->value("name").toString();
+        auto name = m_children.at(i)->value(QStringLiteral("name")).toString();
         name = QStringLiteral("%1-%2").arg(name.left(name.lastIndexOf('-'))).arg(i);
         m_children.at(i)->insert(QStringLiteral("name"), name);
     }
@@ -360,7 +360,7 @@ bool PageDataObject::isGroupEmpty(const KConfigGroup &group)
     }
 
     const auto groups = group.groupList();
-    for (auto subGroup : groups) {
+    for (const auto &subGroup : groups) {
         if (!isGroupEmpty(group.group(subGroup))) {
             return false;
         }
