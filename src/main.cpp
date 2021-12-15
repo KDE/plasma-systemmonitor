@@ -98,6 +98,9 @@ int main(int argc, char **argv)
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    if (Configuration::globalConfig()->maximized()) {
+        engine.setInitialProperties({{"visibility", QWindow::Maximized}});
+    }
     engine.loadFromModule("org.kde.systemmonitor", "Main");
 
     QObject::connect(&service, &KDBusService::activateRequested, &engine, []() {

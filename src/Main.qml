@@ -5,6 +5,7 @@
  */
 
 import QtCore
+import QtQml
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Dialogs
@@ -296,6 +297,15 @@ Kirigami.ApplicationWindow {
         property alias hiddenPages: pagesModel.hiddenPages
         property string startPage
         property string lastVisitedPage
+        property bool maximized
+        Binding on maximized {
+            when: app.visibility != Window.Hidden
+            // This is delayed otherwise it still writes to the config property even though when is false
+            delayed: true
+            value: app.visibility == Window.Maximized
+            restoreMode: Binding.RestoreNone
+        }
+
     }
 
     Component {
