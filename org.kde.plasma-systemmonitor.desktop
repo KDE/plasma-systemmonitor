@@ -73,3 +73,4 @@ Exec=plasma-systemmonitor
 Icon=utilities-system-monitor
 Type=Application
 Categories=Qt;KDE;System;
+SingleMainWindow=true
