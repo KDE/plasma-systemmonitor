@@ -52,7 +52,7 @@ heightMode=balanced
 [page][row-0][column-0]
 name=column-0
 showBackground=false
-noMargins=false
+noMargins=true
 
 [page][row-0][column-0][section-0]
 face=Face-94051759765872
