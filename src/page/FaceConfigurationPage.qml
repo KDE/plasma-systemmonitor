@@ -194,15 +194,17 @@ Kirigami.ScrollablePage {
             onValueModified: page.loader.controller.updateRateLimit = value
         }
 
-        Control {
+        Item {
             Layout.fillWidth: true
+            implicitHeight: children.length > 0 ? children[0].implicitHeight : 0
 
-            leftPadding: 0
-            rightPadding: 0
-            topPadding: 0
-            bottomPadding: 0
+            children: loader.controller.faceConfigUi
 
-            contentItem: loader.controller.faceConfigUi
+            onWidthChanged: {
+                if (children.length > 0) {
+                    children[0].width = width
+                }
+            }
 
             Connections {
                 target: loader.controller.faceConfigUi
@@ -214,13 +216,17 @@ Kirigami.ScrollablePage {
             }
         }
 
-        Control {
+        Item {
             Layout.fillWidth: true
-            leftPadding: 0
-            rightPadding: 0
-            topPadding: 0
-            bottomPadding: 0
-            contentItem: loader.controller.sensorsConfigUi
+            implicitHeight: children.length > 0 ? children[0].implicitHeight : 0
+
+            children: loader.controller.sensorsConfigUi
+
+            onWidthChanged: {
+                if (children.length > 0) {
+                    children[0].width = width
+                }
+            }
 
             Connections {
                 target: loader.controller.sensorsConfigUi
@@ -231,6 +237,7 @@ Kirigami.ScrollablePage {
                 }
             }
         }
+
         Item { Layout.fillHeight: true; width: 1 }
     }
 }
