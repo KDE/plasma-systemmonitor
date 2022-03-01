@@ -6,10 +6,6 @@
 
 #include "FaceLoader.h"
 
-#include <faces/SensorFaceController.h>
-
-#include "PageDataObject.h"
-
 using namespace KSysGuard;
 
 QHash<QString, KSysGuard::SensorFaceController *> FaceLoader::s_faceCache;

@@ -6,16 +6,12 @@
 
 #pragma once
 
+#include "PageDataObject.h"
 #include <QObject>
 #include <QPointer>
-
-class PageDataObject;
+#include <faces/SensorFaceController.h>
 class QQuickItem;
 
-namespace KSysGuard
-{
-class SensorFaceController;
-}
 
 class FaceLoader : public QObject
 {

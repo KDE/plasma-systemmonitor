@@ -8,7 +8,7 @@
 
 #include <QSortFilterProxyModel>
 
-#include <KCoreAddons/KUser>
+#include <KUser>
 
 class ProcessSortFilterModel : public QSortFilterProxyModel
 {
