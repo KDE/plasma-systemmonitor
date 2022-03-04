@@ -37,8 +37,8 @@ set_package_properties(KSystemStats PROPERTIES
     PURPOSE "Daemon providing system statistics"
     URL https://invent.kde.org/plasma/ksystemstats
 )
-find_package(Qt5QuickControls2  ${QT_MIN_VERSION})
-set_package_properties(Qt5QuickControls2 PROPERTIES
+find_package(Qt${QT_MAJOR_VERSION}QuickControls2  ${QT_MIN_VERSION})
+set_package_properties(Qt${QT_MAJOR_VERSION}QuickControls2 PROPERTIES
     TYPE RUNTIME
 )
 find_package(KF5Kirigami2  ${KF5_MIN_VERSION})
