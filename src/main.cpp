@@ -18,7 +18,6 @@
 #include <KDBusService>
 #include <KDeclarative/KDeclarative>
 #include <KLocalizedString>
-#include <KQuickAddons/QtQuickSettings>
 
 #include "Configuration.h"
 #include "ToolsModel.h"
@@ -141,8 +140,6 @@ int main(int argc, char **argv)
         return new CommandLineArguments{parser};
     });
     auto sessionManager = new SessionManager(&app);
-
-    KQuickAddons::QtQuickSettings::init();
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
