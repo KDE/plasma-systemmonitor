@@ -6,7 +6,6 @@
  */
 
 #include "PageSortModel.h"
-#include "PagesModel.h"
 
 PageSortModel::PageSortModel(QObject *parent)
     : QAbstractProxyModel(parent)
