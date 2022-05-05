@@ -17,6 +17,12 @@ Container {
 
     property PageDataObject columnData
 
+    function replaceSensors(replacement) {
+        for (let i = 0; i < repeater.count; ++i) {
+            repeater.itemAt(i).replaceSensors(replacement)
+        }
+    }
+
     Kirigami.AbstractCard {
         parent: control.background
         anchors.fill: parent
@@ -100,6 +106,7 @@ Container {
                 onAddSeparator: control.addSeparator(index + 1)
                 onRemove: control.columnData.removeChild(index)
                 onMove: control.columnData.moveChild(from, to)
+
                 onMissingSensorsChanged: control.missingSensorsChanged(id, title, sensors)
             }
         }

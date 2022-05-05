@@ -18,6 +18,23 @@ Container {
 
     property alias dataObject: loader.dataObject
 
+    function replaceSensors(replacement) {
+        let changed = false
+
+        for (let entry of replacement) {
+            if (entry.face != dataObject.face) {
+                continue
+            }
+
+            loader.controller.replaceSensors(entry.sensor, entry.replacement)
+            changed = true
+        }
+
+        if (changed) {
+            loader.controller.reloadConfig()
+        }
+    }
+
     topPadding: 0
     bottomPadding: 0
     leftPadding: 0

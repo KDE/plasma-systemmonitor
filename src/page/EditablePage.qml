@@ -222,6 +222,18 @@ Kirigami.ScrollablePage {
         }
     }
 
+    DialogLoader {
+        id: missingSensorsDialog
+
+        sourceComponent: MissingSensorsDialog {
+            missingSensors: contentLoader.item ? contentLoader.item.missingSensors : []
+
+            onSensorReplacementChanged: {
+                contentLoader.item.replaceSensors(sensorReplacement)
+            }
+        }
+    }
+
     Rectangle {
         id: loadOverlay
 
@@ -263,6 +275,14 @@ Kirigami.ScrollablePage {
                 Qt.callLater(updateActions)
                 page.flickable.returnToBounds()
                 loadOverlay.opacity = 0
+            }
+        }
+
+        Connections {
+            target: contentLoader.item
+
+            function onShowMissingSensors() {
+                missingSensorsDialog.open()
             }
         }
     }

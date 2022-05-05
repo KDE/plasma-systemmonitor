@@ -20,6 +20,10 @@ Container {
     signal addSection()
     signal addSeparator()
 
+    function replaceSensors(replacement) {
+        contentItem.replaceSensors(replacement)
+    }
+
     implicitWidth: (sectionData.isSeparator ? toolbar.Layout.minimumWidth : 0) + leftPadding + rightPadding
 
     Kirigami.Separator {

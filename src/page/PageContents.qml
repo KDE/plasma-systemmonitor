@@ -21,6 +21,29 @@ ColumnLayout {
     property var actionsFace
     property var missingSensors: []
 
+    property var faceMapping: new Object()
+
+    signal showMissingSensors()
+
+    function replaceSensors(replacement) {
+        if (!replacement) {
+            return
+        }
+
+        missingSensors = []
+
+        let modifiedControllers = []
+
+        for (let entry of replacement) {
+            let controller = faceMapping[entry.face].controller
+            controller.replaceSensors(entry.sensor,  entry.replacement)
+            modifiedControllers.push(controller)
+        }
+
+        for (let c of modifiedControllers) {
+            c.reloadConfig()
+        }
+    }
 
     spacing: rowSpacing // From parent Loader
 
@@ -76,6 +99,11 @@ ColumnLayout {
         type: Kirigami.MessageType.Error
         text: i18n("This page is missing some sensors and will not display correctly.");
 
+        actions: Kirigami.Action {
+            icon.name: "document-edit"
+            text: i18nc("@action:button", "Fix…")
+            onTriggered: root.showMissingSensors()
+        }
     }
 
     Repeater {
@@ -234,6 +262,10 @@ ColumnLayout {
                         })
                     }
                     root.missingSensorsChanged()
+                }
+
+                Component.onCompleted: {
+                    root.faceMapping[modelData.data.face] = loader
                 }
             }
 

@@ -21,6 +21,8 @@ Column {
     property var actionsFace
 
     property var missingSensors: []
+    signal showMissingSensors()
+
     spacing: rowSpacing // From parent loader
 
     move: Transition {
@@ -104,6 +106,18 @@ Column {
         missingSensorsChanged()
     }
 
+    function replaceSensors(replacement) {
+        if (!replacement) {
+            return
+        }
+
+        missingSensors = []
+
+        for (let i = 0; i < repeater.count; ++i) {
+            repeater.itemAt(i).replaceSensors(replacement)
+        }
+    }
+
     onWidthChanged: Qt.callLater(relayout)
     onHeightChanged: Qt.callLater(relayout)
 
@@ -116,6 +130,11 @@ Column {
         type: Kirigami.MessageType.Error
         text: i18n("This page is missing some sensors and will not display correctly.");
 
+        actions: Kirigami.Action {
+            icon.name: "document-edit"
+            text: i18nc("@action:button", "Fix…")
+            onTriggered: root.showMissingSensors()
+        }
     }
 
     Repeater {
@@ -146,6 +165,7 @@ Column {
 
             onRemove: pageData.removeChild(index)
             onMove: pageData.moveChild(from, to)
+
             onMissingSensorsChanged: root.updateMissingSensors(id, title, sensors)
         }
     }

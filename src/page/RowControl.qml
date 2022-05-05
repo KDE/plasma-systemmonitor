@@ -56,6 +56,12 @@ Container {
         minimumHeight = minHeight + control.topPadding + control.bottomPadding
     }
 
+    function replaceSensors(replacement) {
+        for (let i = 0; i < repeater.count; ++i) {
+            repeater.itemAt(i).replaceSensors(replacement)
+        }
+    }
+
     onTopPaddingChanged: Qt.callLater(updateMinimumHeight)
     onBottomPaddingChanged: Qt.callLater(updateMinimumHeight)
 
@@ -111,6 +117,7 @@ Container {
                 onSelect: control.select(item)
                 onRemove: control.rowData.removeChild(index)
                 onMove: control.rowData.moveChild(from, to)
+
                 onMissingSensorsChanged: control.missingSensorsChanged(id, title, sensors)
             }
         }
