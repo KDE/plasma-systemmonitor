@@ -209,6 +209,7 @@ Kirigami.ScrollablePage {
                 margin = page.pageData.margin
                 pageData = page.pageData
                 actionsFace = page.pageData.actionsFace ? page.pageData.actionsFace : ""
+                loadType = page.pageData.loadType ? page.pageData.loadType : "ondemand"
             }
 
             onAccepted: {
@@ -216,6 +217,7 @@ Kirigami.ScrollablePage {
                 pageData.icon = iconName
                 pageData.margin = margin
                 pageData.actionsFace = actionsFace
+                pageData.loadType = loadType
             }
         }
     }
@@ -253,7 +255,7 @@ Kirigami.ScrollablePage {
         onStatusChanged: {
             if (status == Loader.Loading) {
                 loadOverlay.opacity = 1
-                if (!edit) {
+                if (!edit && applicationWindow().pageStack.columnView.containsItem(page)) {
                     // Pop any pages that might have been opened during editing
                     applicationWindow().pageStack.pop(page)
                 }

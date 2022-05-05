@@ -22,4 +22,10 @@ Kirigami.PagePoolAction {
     initialProperties: {
         "pageData": action.pageData
     }
+
+    Component.onCompleted: {
+        if (pageData.loadType == "onstart") {
+            pagePool.loadPageWithProperties(page, initialProperties)
+        }
+    }
 }

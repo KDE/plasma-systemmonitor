@@ -26,6 +26,8 @@ Dialog {
     property string actionsFace: "dummy" //Can't leave it empty, otherwise it doesn't update when it's initially set to an empty string
     property alias pageData: facesModel.pageData
 
+    property string loadType: "ondemand"
+
     modal: true
     parent: Overlay.overlay
     focus: true
@@ -130,6 +132,26 @@ Dialog {
                         return face.primaryActions.length != 0 && face.secondaryActions.length != 0
                     }
                 }
+            }
+            ComboBox {
+                Kirigami.FormData.label: i18nc("@label:listbox", "Load this page:")
+
+                textRole: "key"
+
+                currentIndex: {
+                    for (var i in model) {
+                        if (model[i].value == dialog.loadType) {
+                            return i
+                        }
+                    }
+                }
+
+                model: [
+                    { value: "ondemand", key: i18nc("@item:inlistbox", "When needed") },
+                    { value: "onstart", key: i18nc("@item:inlistbox", "During application startup") }
+                ]
+
+                onActivated: dialog.loadType = model[index].value
             }
         }
 
