@@ -36,6 +36,7 @@ set(page_QML
     MoveButton.qml
     PageSortDialog.qml
     DialogLoader.qml
+    MissingSensorsDialog.qml
 )
 
 add_library(PagePlugin SHARED ${page_SRCS})

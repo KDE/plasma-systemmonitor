@@ -20,3 +20,4 @@ MoveButton 1.0 MoveButton.qml
 PageSortDialog 1.0 PageSortDialog.qml
 GetNewPageDialog 1.0 GetNewPageDialog.qml
 DialogLoader 1.0 DialogLoader.qml
+MissingSensorsDialog 1.0 MissingSensorsDialog.qml
