@@ -59,10 +59,18 @@ Container {
         function onFaceIdChanged() {
             control.updateContentItem()
         }
+
+        function onMissingSensorsChanged() {
+            control.missingSensorsChanged(dataObject.face, controller.title, loader.controller.missingSensors)
+        }
     }
 
     function updateContentItem() {
         loader.controller.fullRepresentation.formFactor = Faces.SensorFace.Constrained;
         control.contentItem = loader.controller.fullRepresentation;
+
+        if (loader.controller.missingSensors.length > 0) {
+            control.missingSensorsChanged(dataObject.face, loader.controller.title, loader.controller.missingSensors)
+        }
     }
 }

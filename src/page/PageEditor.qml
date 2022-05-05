@@ -20,6 +20,7 @@ Column {
     property Item activeItem
     property var actionsFace
 
+    property var missingSensors: []
     spacing: rowSpacing // From parent loader
 
     move: Transition {
@@ -27,7 +28,7 @@ Column {
     }
 
     function relayout() {
-        let reservedHeight = 0;
+        let reservedHeight = missingMessage.visible ? missingMessage.height : 0;
         let minimumHeight = 0;
         let balancedCount = 0;
         let maximumCount = 0;
@@ -92,8 +93,30 @@ Column {
         Layout.minimumHeight = minimumTotalHeight
     }
 
+    function updateMissingSensors(id, title, sensors) {
+        for (let sensor of sensors) {
+            missingSensors.push({
+                "face": id,
+                "title": title,
+                "sensor": sensor
+            })
+        }
+        missingSensorsChanged()
+    }
+
     onWidthChanged: Qt.callLater(relayout)
     onHeightChanged: Qt.callLater(relayout)
+
+    Kirigami.InlineMessage {
+        id: missingMessage
+
+        width: parent.width
+
+        visible: root.missingSensors.length > 0
+        type: Kirigami.MessageType.Error
+        text: i18n("This page is missing some sensors and will not display correctly.");
+
+    }
 
     Repeater {
         id: repeater
@@ -123,6 +146,7 @@ Column {
 
             onRemove: pageData.removeChild(index)
             onMove: pageData.moveChild(from, to)
+            onMissingSensorsChanged: root.updateMissingSensors(id, title, sensors)
         }
     }
 

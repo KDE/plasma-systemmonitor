@@ -46,6 +46,8 @@ Container {
         dataObject: control.sectionData
 
         onSelect: control.select(item)
+
+        onMissingSensorsChanged: control.missingSensorsChanged(id, title, sensors)
     }
 
     toolbar.addVisible: false

@@ -19,6 +19,8 @@ ColumnLayout {
 
     property PageDataObject pageData
     property var actionsFace
+    property var missingSensors: []
+
 
     spacing: rowSpacing // From parent Loader
 
@@ -63,6 +65,17 @@ ColumnLayout {
         // represents the available size of the content area of the page.
         let balancedHeight = (availableHeight - reservedSpace - root.spacing * (children.length - 1)) / balancedCount
         return Math.max(balancedHeight, minimumSpace)
+    }
+
+    Kirigami.InlineMessage {
+        id: missingMessage
+
+        Layout.fillWidth: true
+
+        visible: root.missingSensors.length > 0
+        type: Kirigami.MessageType.Error
+        text: i18n("This page is missing some sensors and will not display correctly.");
+
     }
 
     Repeater {
@@ -203,6 +216,25 @@ ColumnLayout {
             FaceLoader {
                 id: loader
                 dataObject: modelData.data
+
+                Component.onCompleted: {
+                    root.faceMapping[modelData.data.face] = loader
+                }
+            }
+
+            Connections {
+                target: loader.controller
+
+                function onMissingSensorsChanged() {
+                    for (let i of missingSensors) {
+                        root.missingSensors.push({
+                            "face": modelData.data.face,
+                            "title": loader.controller.title,
+                            "sensor": i
+                        })
+                    }
+                    root.missingSensorsChanged()
+                }
             }
 
             Component.onCompleted: {

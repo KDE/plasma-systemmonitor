@@ -27,6 +27,8 @@ Item {
     signal remove()
     signal move(int from, int to)
 
+    signal missingSensorsChanged(string id, string title, var sensors)
+
     property alias hovered: control.hovered
     property alias contentItem: control.contentItem
     property alias background: control.background

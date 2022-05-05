@@ -111,6 +111,7 @@ Container {
                 onSelect: control.select(item)
                 onRemove: control.rowData.removeChild(index)
                 onMove: control.rowData.moveChild(from, to)
+                onMissingSensorsChanged: control.missingSensorsChanged(id, title, sensors)
             }
         }
     }
