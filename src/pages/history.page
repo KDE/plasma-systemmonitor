@@ -30,6 +30,7 @@ highPrioritySensorIds=["network/all/download","network/all/upload"]
 [page]
 icon=office-chart-line
 margin=2
+loadType=onstart
 Title=History
 Title[ar]=التّأريخ
 Title[az]=Tarixçə
