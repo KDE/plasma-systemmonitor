@@ -51,6 +51,7 @@ Table.BaseTableView {
             item.name = processModel.data(processModel.index(index.row, processModel.nameColumn, index.parent), Process.ProcessDataModel.AdditionalRoles.Value)
             item.pid = processModel.data(processModel.index(index.row, processModel.pidColumn, index.parent), Process.ProcessDataModel.AdditionalRoles.Value)
             item.username = processModel.data(processModel.index(index.row, processModel.usernameColumn, index.parent), Process.ProcessDataModel.AdditionalRoles.Value)
+            item.status = processModel.data(processModel.index(index.row, processModel.statusColumn, index.parent), Process.ProcessDataModel.AdditionalRoles.Value)
 
             result.push(item)
         }
@@ -111,12 +112,14 @@ Table.BaseTableView {
         property int pidColumn
         property int uidColumn
         property int usernameColumn
+        property int statusColumn
 
         property var requiredSensors: [
             "name",
             "pid",
             "uid",
-            "username"
+            "username",
+            "status"
         ]
         property var hiddenSensors: []
 
@@ -142,6 +145,7 @@ Table.BaseTableView {
             processModel.pidColumn = result.indexOf("pid")
             processModel.uidColumn = result.indexOf("uid")
             processModel.usernameColumn = result.indexOf("username")
+            processModel.statusColumn = result.indexOf("status")
             processModel.hiddenSensors = hidden
             processModel.enabledAttributes = result
         }

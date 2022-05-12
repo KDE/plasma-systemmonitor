@@ -295,6 +295,16 @@ Faces.SensorFace {
         }
 
         MenuSeparator { }
+
+        MenuItem {
+            icon.name: "media-playback-start"
+            text: i18nc("@action:inmenu", "Resume Stopped Process")
+            visible: table.selectedProcesses.some(process => process.status === Process.ProcessStatus.Stopped)
+            onTriggered: {
+                processHelper.sendSignalToSelection(Process.Signal.ContinueSignal)
+            }
+        }
+
         MenuItem {
             icon.name: "process-stop";
             text: i18ncp("@action:inmenu", "End Process", "End %1 Processes", killDialog.items.length);
