@@ -18,6 +18,7 @@
 #include <KDBusService>
 #include <KDeclarative/KDeclarative>
 #include <KLocalizedString>
+#include <KWindowSystem>
 
 #include "Configuration.h"
 #include "ToolsModel.h"
@@ -148,8 +149,8 @@ int main(int argc, char **argv)
     QObject::connect(&service, &KDBusService::activateRequested, &engine, []() {
         if (!qApp->topLevelWindows().isEmpty()) {
             QWindow *win = qApp->topLevelWindows().first();
-            win->raise();
-            win->requestActivate();
+            KWindowSystem::updateStartupId(win);
+            KWindowSystem::activateWindow(win);
         }
     });
     // QDBusConnectionInterface::StartService is blocking so we do it manually
