@@ -208,8 +208,19 @@ Faces.SensorFace {
 //         MenuItem { text: i18nc("@action:inmenu", "Show Application Window") }
         MenuSeparator { }
         MenuItem {
+            icon.name: "media-playback-start"
+            text: i18nc("@action:inmenu", "Resume Stopped Process")
+            onTriggered: {
+                processHelper.sendSignalToSelection(Process.ProcessController.ContinueSignal)
+            }
+        }
+
+        MenuItem {
             icon.name: "process-stop";
             text: i18ncp("@action:inmenu", "End Process", "End %1 Processes", killDialog.items.length);
+            // FIXME Make it only shown for stopped processes without hardcoding weird strings or numbers :/
+            visible: table.selectedProcesses.somethingsomething
+
             onTriggered: {
                 processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             }
