@@ -44,7 +44,7 @@ Labs.MenuBar {
             configFile: "plasma-systemmonitor.knsrc"
             pageStack: app.pageStack.layers
             onEntryEvent: {
-                if (event == NewStuff.Engine.StatusChangedEvent) {
+                if (event === NewStuff.Engine.StatusChangedEvent) {
                     pagesModel.ghnsEntryStatusChanged(entry)
                 }
             }

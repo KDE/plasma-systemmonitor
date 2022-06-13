@@ -24,7 +24,7 @@ Kirigami.ApplicationWindow {
 
     title: pageStack.currentItem.title
 
-    header: contentItem.GraphicsInfo.api == GraphicsInfo.Software ? degradedWarning.createObject(app) : null
+    header: contentItem.GraphicsInfo.api === GraphicsInfo.Software ? degradedWarning.createObject(app) : null
 
     Loader {
         active: !Kirigami.Settings.isMobile
@@ -92,7 +92,7 @@ Kirigami.ApplicationWindow {
                         configFile: "plasma-systemmonitor.knsrc"
                         pageStack: app.pageStack.layers
                         onEntryEvent: {
-                            if (event == NewStuff.Engine.StatusChangedEvent) {
+                            if (event === NewStuff.Engine.StatusChangedEvent) {
                                 pagesModel.ghnsEntryStatusChanged(entry)
                             }
                         }
