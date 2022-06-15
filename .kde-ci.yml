@@ -19,3 +19,5 @@ Dependencies:
     'frameworks/kservice': '@latest'
     'frameworks/kwindowsystem': '@latest'
     'plasma/libksysguard': '@same'
+Options:
+  require-passing-tests-on: [ 'Linux', 'FreeBSD']
