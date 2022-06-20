@@ -36,6 +36,7 @@ Name[tr]=Süreç Tablosu
 Name[uk]=Таблиця процесів
 Name[x-test]=xxProcess Tablexx
 Name[zh_CN]=进程列表
+Name[zh_TW]=行程表格
 Icon=view-process-system
 
 Type=Service

@@ -39,6 +39,7 @@ Title[tr]=Bellek
 Title[uk]=Пам'ять
 Title[x-test]=xxMemoryxx
 Title[zh_CN]=内存
+Title[zh_TW]=記憶體
 
 [Face-94410222150464][Sensors]
 highPrioritySensorIds=["memory/physical/used"]
@@ -85,6 +86,7 @@ Title[tr]=Ağlar
 Title[uk]=Мережі
 Title[x-test]=xxNetworksxx
 Title[zh_CN]=网络
+Title[zh_TW]=網路
 
 [Face-94410238879984][Sensors]
 highPrioritySensorIds=["network/(?!all).*/ipv4address","network/(?!all).*/ipv6address"]
@@ -134,6 +136,7 @@ Title[tr]=Disk
 Title[uk]=Диск
 Title[x-test]=xxDiskxx
 Title[zh_CN]=存储
+Title[zh_TW]=硬碟
 
 [Face-94410261307168][Sensors]
 highPrioritySensorIds=["disk/all/used"]
@@ -180,6 +183,7 @@ Title[tr]=CPU
 Title[uk]=Процесор
 Title[x-test]=xxCPUxx
 Title[zh_CN]=CPU
+Title[zh_TW]=CPU
 
 [Face-94410266684256][Sensors]
 highPrioritySensorIds=["cpu/all/usage"]
@@ -229,6 +233,7 @@ Title[tr]=Sistem
 Title[uk]=Система
 Title[x-test]=xxSystemxx
 Title[zh_CN]=系统
+Title[zh_TW]=系統
 
 [Face-94410278989264][Sensors]
 highPrioritySensorIds=["os/system/hostname","os/system/prettyName","os/plasma/plasmaVersion","os/plasma/kfVersion","os/plasma/qtVersion"]
@@ -270,6 +275,7 @@ Title[tr]=Ağ Oranları
 Title[uk]=Швидкості у мережі
 Title[x-test]=xxNetwork Ratesxx
 Title[zh_CN]=网络传输率
+Title[zh_TW]=網路使用量
 
 [Face-94410280144624][Sensors]
 highPrioritySensorIds=["network/(?!all).*/download","network/(?!all).*/upload"]
@@ -323,6 +329,7 @@ Title[tr]=Genel Görünüm
 Title[uk]=Огляд
 Title[x-test]=xxOverviewxx
 Title[zh_CN]=系统概览
+Title[zh_TW]=總覽
 
 [page][row-0]
 isTitle=false
@@ -400,6 +407,7 @@ Title[tr]=Ağ ve Sistem
 Title[uk]=Мережа і система
 Title[x-test]=xxNetwork & Systemxx
 Title[zh_CN]=网络和系统
+Title[zh_TW]=網路與系統
 
 [page][row-2]
 isTitle=false
@@ -477,6 +485,7 @@ Title[tr]=Uygulamalar
 Title[uk]=Програми
 Title[x-test]=xxApplicationsxx
 Title[zh_CN]=应用程序
+Title[zh_TW]=應用程式
 
 [page][row-4]
 isTitle=false
