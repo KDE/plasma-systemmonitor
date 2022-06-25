@@ -17,7 +17,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 include(ECMInstallIcons)
-include(ECMQMLModules)
+include(ECMFindQmlModule)
 include(FeatureSummary)
 include(KDEGitCommitHooks)
 
