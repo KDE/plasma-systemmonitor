@@ -81,4 +81,5 @@ Exec=plasma-systemmonitor
 Icon=utilities-system-monitor
 Type=Application
 Categories=Qt;KDE;System;
+Keywords=task;manager;process;cpu;memory;
 SingleMainWindow=true
