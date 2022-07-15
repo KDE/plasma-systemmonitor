@@ -39,7 +39,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="sk">Plasma Monitorovanie systému</name>
   <name xml:lang="sl">Plasma System Monitor</name>
   <name xml:lang="sv">Plasma systemövervakare</name>
-  <name xml:lang="ta">பிளாஸ்மா கணினி கண்காணிப்பு செயலி</name>
+  <name xml:lang="ta">பிளாஸ்மா கணினி கண்காணிப்பி</name>
   <name xml:lang="tr">Plasma Sistem Monitörü</name>
   <name xml:lang="uk">Системний монітор Плазми</name>
   <name xml:lang="x-test">xxPlasma System Monitorxx</name>
@@ -76,6 +76,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="sk">Aplikácia na sledovanie systémových zdrojov.</summary>
   <summary xml:lang="sl">Aplikacija za spremljanje sistemskih virov.</summary>
   <summary xml:lang="sv">Ett program för att övervaka systemresurser.</summary>
+  <summary xml:lang="ta">கணினியை கண்காணிக்க உதவும் செயலி.</summary>
   <summary xml:lang="tr">Sistem özkaynaklarını izlemek için bir uygulama.</summary>
   <summary xml:lang="uk">Програма для стеження за використанням ресурсів системи.</summary>
   <summary xml:lang="x-test">xxAn application for monitoring system resources.xx</summary>
@@ -113,6 +114,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="sk">Plasma Monitorovanie systému poskytuje rozhranie na monitorovanie systémových senzorov, informácie o procesoch a ďalších systémových prostriedkoch.</p>
     <p xml:lang="sl">Plasma System Monitor nudi vmesnik za nadzor sistemskih senzorjev, obdeluje informacije in druge sistemske vire.</p>
     <p xml:lang="sv">Plasma systemövervakare tillhandahåller ett gränssnitt för att övervaka systemsensorer, processinformation och andra systemresurser.</p>
+    <p xml:lang="ta">கணினி உணரிகள், பணி விவரங்கள், மற்றும் கணினியின் வசதிகளை கண்காணிக்க உதவும் இடைமுகப்பை பிளாஸ்மா கணினிக் கண்காணிப்பி வழங்கும்.</p>
     <p xml:lang="tr">Plasma Sistem Monitörü; sistem sensörlerini, süreç bilgisini ve diğer sistem özkaynaklarını izlemek için bir arayüz sağlar.</p>
     <p xml:lang="uk">«Системний монітор Плазми» є інтерфейсом для спостереження за даними датчиків системи, відомостями щодо процесів та інших ресурсів системи.</p>
     <p xml:lang="x-test">xxPlasma System Monitor provides an interface for monitoring system sensors, process information and other system resources.xx</p>
