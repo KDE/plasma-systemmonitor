@@ -82,6 +82,7 @@ Icon=utilities-system-monitor
 Type=Application
 Categories=Qt;KDE;System;
 Keywords=task;manager;process;cpu;memory;
+Keywords[bg]=задачи;диспечер;процес;cpu;памет;
 Keywords[ca]=tasca;gestor;procés;cpu;memòria;
 Keywords[ca@valencia]=tasca;gestor;procés;cpu;memòria;
 Keywords[es]=tarea;gestor;proceso;cpu;memoria;
