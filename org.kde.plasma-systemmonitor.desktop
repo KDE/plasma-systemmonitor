@@ -86,6 +86,7 @@ Keywords[az]=task;manager;process;cpu;memory;tapşırıq;menecer;yaddaş;
 Keywords[bg]=задачи;диспечер;процес;cpu;памет;
 Keywords[ca]=tasca;gestor;procés;cpu;memòria;
 Keywords[ca@valencia]=tasca;gestor;procés;cpu;memòria;
+Keywords[de]=prozess,prozessor,speicher
 Keywords[en_GB]=task;manager;process;cpu;memory;
 Keywords[es]=tarea;gestor;proceso;cpu;memoria;
 Keywords[fr]=tâche ; gestionnaire ; processus ; processeur ; mémoire ;
