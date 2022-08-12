@@ -2,6 +2,7 @@
 Name=System Monitor
 Name[ar]=مرقاب النظام
 Name[az]=Sistem İzləyici
+Name[bg]=Наблюдение на системата
 Name[ca]=Monitor del sistema
 Name[ca@valencia]=Monitor del sistema
 Name[cs]=Monitor systému
@@ -37,6 +38,7 @@ Name[zh_CN]=系统监视器
 GenericName=System Monitor
 GenericName[ar]=مراقب النظام
 GenericName[az]=Sistem İzləyici
+GenericName[bg]=Наблюдение на системата
 GenericName[ca]=Monitor del sistema
 GenericName[ca@valencia]=Monitor del sistema
 GenericName[cs]=Monitor systému
