@@ -100,6 +100,7 @@ Keywords[nn]=oppgåve;handsamar;prosess;cpu;prosessor;minne;
 Keywords[pl]=zadanie;menadżer;menedżer;zarządzanie;proces;cpu;pamięć;
 Keywords[pt]=tarefa;gestor;processo;CPU;memória;
 Keywords[pt_BR]=tarefa;gerenciador;processo;cpu;memória;
+Keywords[ro]=sarcină;gestionar;proces;procesor;memorie;
 Keywords[ru]=task;manager;process;cpu;memory;задача;управление;процесс,ЦП,память
 Keywords[sl]=naloga;opravilo;skrbnik;upravitelj;proces;cpe;procesor;pomnilnik;
 Keywords[sv]=uppgift;hantering;process;processor;minne;
