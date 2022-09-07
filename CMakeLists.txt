@@ -59,6 +59,7 @@ endif()
 add_subdirectory(src)
 
 install(PROGRAMS org.kde.plasma-systemmonitor.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
+install(FILES org.kde.plasma-systemmonitor.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install(FILES kcm_external_plasma-systemmonitor.desktop DESTINATION ${KDE_INSTALL_DATADIR}/plasma/kinfocenter/externalmodules)
 
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
