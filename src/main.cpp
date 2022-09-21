@@ -12,6 +12,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QSessionManager>
+#include <QSurfaceFormat>
 #include <QWindow>
 
 #include <KAboutData>
@@ -91,6 +92,10 @@ SessionManager::SessionManager(QObject *parent)
 
 int main(int argc, char **argv)
 {
+    auto format = QSurfaceFormat::defaultFormat();
+    format.setOption(QSurfaceFormat::ResetNotification);
+    QSurfaceFormat::setDefaultFormat(format);
+
     QApplication app(argc, argv);
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
