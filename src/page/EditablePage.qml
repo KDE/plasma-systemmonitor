@@ -195,44 +195,45 @@ Kirigami.ScrollablePage {
         }
     }
 
-    DialogLoader {
-        id: pageDialog
-        sourceComponent: PageDialog {
-            title: i18nc("@title:window %1 is page title", "Configure Page \"%1\"", page.pageData.title)
+    data: [
+        DialogLoader {
+            id: pageDialog
+            sourceComponent: PageDialog {
+                title: i18nc("@title:window %1 is page title", "Configure Page \"%1\"", page.pageData.title)
 
-            acceptText: i18nc("@action:button", "Save")
-            acceptIcon: "document-save"
+                acceptText: i18nc("@action:button", "Save")
+                acceptIcon: "document-save"
 
-            onAboutToShow: {
-                name = page.pageData.title
-                iconName = page.pageData.icon
-                margin = page.pageData.margin
-                pageData = page.pageData
-                actionsFace = page.pageData.actionsFace ? page.pageData.actionsFace : ""
-                loadType = page.pageData.loadType ? page.pageData.loadType : "ondemand"
+                onAboutToShow: {
+                    name = page.pageData.title
+                    iconName = page.pageData.icon
+                    margin = page.pageData.margin
+                    pageData = page.pageData
+                    actionsFace = page.pageData.actionsFace ? page.pageData.actionsFace : ""
+                    loadType = page.pageData.loadType ? page.pageData.loadType : "ondemand"
+                }
+
+                onAccepted: {
+                    pageData.title = name
+                    pageData.icon = iconName
+                    pageData.margin = margin
+                    pageData.actionsFace = actionsFace
+                    pageData.loadType = loadType
+                }
             }
+        },
+        DialogLoader {
+            id: missingSensorsDialog
 
-            onAccepted: {
-                pageData.title = name
-                pageData.icon = iconName
-                pageData.margin = margin
-                pageData.actionsFace = actionsFace
-                pageData.loadType = loadType
+            sourceComponent: MissingSensorsDialog {
+                missingSensors: contentLoader.item ? contentLoader.item.missingSensors : []
+
+                onSensorReplacementChanged: {
+                    contentLoader.item.replaceSensors(sensorReplacement)
+                }
             }
         }
-    }
-
-    DialogLoader {
-        id: missingSensorsDialog
-
-        sourceComponent: MissingSensorsDialog {
-            missingSensors: contentLoader.item ? contentLoader.item.missingSensors : []
-
-            onSensorReplacementChanged: {
-                contentLoader.item.replaceSensors(sensorReplacement)
-            }
-        }
-    }
+    ]
 
     Rectangle {
         id: loadOverlay
