@@ -1,0 +1,211 @@
+# Translation of ksysguard_face_org.kde.ksysguard.applicationstable to Norwegian Nynorsk
+#
+# Karl Ove Hufthammer <karl@huftis.org>, 2020.
+# Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-systemmonitor\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"PO-Revision-Date: 2022-01-23 13:50+0100\n"
+"Last-Translator: Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail."
+"com>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.12.1\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:49
+#, kde-format
+msgctxt "@title:window"
+msgid "Details"
+msgstr "Detaljar"
+
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:73
+#, kde-format
+msgctxt "@title:group"
+msgid "CPU"
+msgstr "Prosessor"
+
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:99
+#, kde-format
+msgctxt "@title:group"
+msgid "Memory"
+msgstr "Minne"
+
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:125
+#, kde-format
+msgctxt "@title:group"
+msgid "Network"
+msgstr "Nettverk"
+
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:150
+#, kde-format
+msgctxt "@title:group"
+msgid "Disk"
+msgstr "Disk"
+
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:176
+#, kde-format
+msgctxt "@title:group"
+msgid "Processes: %1"
+msgstr "Prosessar: %1"
+
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:237
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Select an application to see its details"
+msgstr "Trykk på eit program for å sjå detaljar"
+
+#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:28
+#, kde-format
+msgctxt "Warning message shown on runtime error"
+msgid "Applications view is unsupported on your system"
+msgstr "Dette systemet støttar ikkje vising av programoversikt"
+
+#: src/faces/applicationstable/contents/ui/Config.qml:24
+#, kde-format
+msgctxt "@option:check"
+msgid "Show details panel"
+msgstr "Vis detaljpanel"
+
+#: src/faces/applicationstable/contents/ui/Config.qml:29
+#, kde-format
+msgctxt "@option:check"
+msgid "Confirm when quitting applications"
+msgstr "Stadfest av avslutting av program"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:29
+#, kde-format
+msgctxt "@action"
+msgid "Search"
+msgstr "Søk"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:39
+#, kde-format
+msgctxt "@action"
+msgid "Quit Application"
+msgstr "Avslutt program"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:49
+#, kde-format
+msgctxt "@action"
+msgid "Show Details Sidebar"
+msgstr "Vis detalj­sidestolpe"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:57
+#, kde-format
+msgctxt "@action"
+msgid "Configure columns…"
+msgstr "Set opp kolonnar …"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:185
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Set priority…"
+msgstr "Vel prioritet …"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:188
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Send Signal"
+msgstr "Send signal"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:191
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Suspend (STOP)"
+msgstr "Set på pause (STOP)"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:195
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Continue (CONT)"
+msgstr "Hald fram (CONT)"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:199
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Hangup (HUP)"
+msgstr "Legg på (HUP)"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Interrupt (INT)"
+msgstr "Avbryt (INT)"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Terminate (TERM)"
+msgstr "Avslutt (TERM)"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:211
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Kill (KILL)"
+msgstr "Tvangs­avslutt (KILL)"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:215
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "User 1 (USR1)"
+msgstr "Brukar 1 (USR1)"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:219
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "User 2 (USR2)"
+msgstr "Brukar 2 (USR2)"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:226
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Quit Application"
+msgid_plural "Quit %1 Applications"
+msgstr[0] "Avslutt program"
+msgstr[1] "Avslutt %1 program"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
+#, kde-format
+msgctxt "@title:window"
+msgid "Quit Application"
+msgid_plural "Quit %1 Applications"
+msgstr[0] "Avslutt program"
+msgstr[1] "Avslutt %1 program"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
+#, kde-format
+msgctxt "@action:button"
+msgid "Quit"
+msgstr "Avslutt"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
+#, kde-format
+msgid ""
+"Are you sure you want to quit this application?\n"
+"Any unsaved work may be lost."
+msgid_plural ""
+"Are you sure you want to quit these %1 applications?\n"
+"Any unsaved work may be lost."
+msgstr[0] ""
+"Er du sikker på at du vil avslutta programmet?\n"
+"Arbeid som ikkje er lagra, kan gå tapt."
+msgstr[1] ""
+"Er du sikker på at du vil avslutta desse %1 programma?\n"
+"Arbeid som ikkje er lagra, kan gå tapt."
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
+#, kde-format
+msgctxt "@item:intable"
+msgid "%1 Process"
+msgid_plural "%1 Processes"
+msgstr[0] "%1 prosess"
+msgstr[1] "%1 prosessar"

@@ -1,0 +1,221 @@
+# Translation of ksysguard_face_org.kde.ksysguard.processtable to Norwegian Nynorsk
+#
+# Karl Ove Hufthammer <karl@huftis.org>, 2020.
+# Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-systemmonitor\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-06-26 00:19+0000\n"
+"PO-Revision-Date: 2022-01-23 13:48+0100\n"
+"Last-Translator: Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail."
+"com>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.12.1\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: src/faces/processtable/contents/ui/Config.qml:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Confirm ending processes."
+msgstr "Stadfest avslutting av prosessar."
+
+#: src/faces/processtable/contents/ui/Config.qml:31
+#, kde-format
+msgctxt "@label:listbox"
+msgid "By default show:"
+msgstr "Vis som standard:"
+
+#: src/faces/processtable/contents/ui/Config.qml:40
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Own Processes"
+msgstr "Eigne prosessar"
+
+#: src/faces/processtable/contents/ui/Config.qml:41
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "User Processes"
+msgstr "Brukar­prosessar"
+
+#: src/faces/processtable/contents/ui/Config.qml:42
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "System Processes"
+msgstr "System­prosessar"
+
+#: src/faces/processtable/contents/ui/Config.qml:43
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "All Processes"
+msgstr "Alle prosessar"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:29
+#, kde-format
+msgctxt "@action"
+msgid "Search"
+msgstr "Søk"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:40
+#, kde-format
+msgctxt "@action"
+msgid "End Process"
+msgstr "Avslutt prosessen"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:54
+#, kde-format
+msgctxt "@action"
+msgid "Display as List"
+msgstr "Vis som liste"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:71
+#, kde-format
+msgctxt "@action"
+msgid "Display as Tree"
+msgstr "Vis som tre"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:83
+#, kde-format
+msgctxt "@action %1 is view type"
+msgid "Show: %1"
+msgstr "Vis: %1"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:86
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "Own Processes"
+msgstr "Eigne prosessar"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:95
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "User Processes"
+msgstr "Brukar­prosessar"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:104
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "System Processes"
+msgstr "System­prosessar"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:113
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "All Processes"
+msgstr "Alle prosessar"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:125
+#, kde-format
+msgctxt "@action"
+msgid "Configure columns…"
+msgstr "Set opp kolonnar …"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:173
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Send Signal"
+msgstr "Send signal"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:176
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Suspend (STOP)"
+msgstr "Set på pause (STOP)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:180
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Continue (CONT)"
+msgstr "Hald fram (CONT)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:184
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Hangup (HUP)"
+msgstr "Legg på (HUP)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:188
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Interrupt (INT)"
+msgstr "Avbryt (INT)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:192
+#, kde-format
+msgctxt "@action:inmenu  Send Signal"
+msgid "Terminate (TERM)"
+msgstr "Avslutt (TERM)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:196
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Kill (KILL)"
+msgstr "Tvangs­avslutt (KILL)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:200
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "User 1 (USR1)"
+msgstr "Brukar 1 (USR1)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:204
+#, kde-format
+msgctxt "@action:inmenu  Send Signal"
+msgid "User 2 (USR2)"
+msgstr "Brukar 2 (USR2)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:212
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "Avslutt prosessen"
+msgstr[1] "Avslutt dei %1 prosessane"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:224
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Configure Columns…"
+msgstr "Set opp kolonnar …"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:234
+#, kde-format
+msgctxt "@title:window"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "Avslutt prosessen"
+msgstr[1] "Avslutt dei %1 prosessane"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
+#, kde-format
+msgctxt "@action:button"
+msgid "End"
+msgstr "Slutt"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:237
+#, kde-format
+msgid ""
+"Are you sure you want to end this process?\n"
+"Any unsaved work may be lost."
+msgid_plural ""
+"Are you sure you want to end these %1 processes?\n"
+"Any unsaved work may be lost."
+msgstr[0] ""
+"Er du sikker på at du vil avslutta prosessen?\n"
+"Arbeid som ikkje er lagra, kan gå tapt."
+msgstr[1] ""
+"Er du sikker på at du vil avslutta desse %1 prosessane?\n"
+"Arbeid som ikkje er lagra, kan gå tapt."
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:244
+#, kde-format
+msgctxt "@item:intable %1 is process id, %2 is user name"
+msgid "Process ID %1, owned by %2"
+msgstr "Prosess-ID %1, eigd av %2"

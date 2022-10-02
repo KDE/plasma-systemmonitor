@@ -1,0 +1,750 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-systemmonitor package.
+#
+# Emir SARI <emir_sari@icloud.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-systemmonitor\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:48+0000\n"
+"PO-Revision-Date: 2022-06-16 10:54+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 22.04.1\n"
+
+#: src/GlobalMenu.qml:15
+#, kde-format
+msgctxt "@menu"
+msgid "File"
+msgstr "Dosya"
+
+#: src/GlobalMenu.qml:18
+#, kde-format
+msgctxt "@menu-action"
+msgid "Add New Page…"
+msgstr "Yeni Sayfa Ekle…"
+
+#: src/GlobalMenu.qml:24
+#, kde-format
+msgctxt "@menu-action"
+msgid "Import Page…"
+msgstr "Sayfayı İçe Aktar…"
+
+#: src/GlobalMenu.qml:30
+#, kde-format
+msgctxt "@menu-action"
+msgid "Export Current Page…"
+msgstr "Geçerli Sayfayı Dışa Aktar…"
+
+#: src/GlobalMenu.qml:37
+#, kde-format
+msgctxt "@menu-action"
+msgid "Get New Pages…"
+msgstr "Yeni Sayfalar Al…"
+
+#: src/GlobalMenu.qml:54
+#, kde-format
+msgctxt "@menu-action"
+msgid "Quit"
+msgstr "Çık"
+
+#: src/GlobalMenu.qml:62
+#, kde-format
+msgctxt "@menu"
+msgid "View"
+msgstr "Görünüm"
+
+#: src/GlobalMenu.qml:65
+#, kde-format
+msgctxt "@menu-action"
+msgid "Expand Sidebar"
+msgstr "Kenar Çubuğunu Genişlet"
+
+#: src/GlobalMenu.qml:65
+#, kde-format
+msgctxt "@menu-action"
+msgid "Collapse Sidebar"
+msgstr "Kenar Çubuğunu Çökert"
+
+#: src/GlobalMenu.qml:72
+#, kde-format
+msgctxt "@menu"
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: src/GlobalMenu.qml:75
+#, kde-format
+msgctxt "@menu-action"
+msgid "Edit or Remove pages…"
+msgstr "Sayfaları Düzenle veya Kaldır…"
+
+#: src/GlobalMenu.qml:82
+#, kde-format
+msgctxt "@menu"
+msgid "Help"
+msgstr "Yardım"
+
+#: src/GlobalMenu.qml:85
+#, kde-format
+msgctxt "@menu-action"
+msgid "Report Bug…"
+msgstr "Hata Bildir…"
+
+#: src/GlobalMenu.qml:91
+#, kde-format
+msgctxt "@menu-action"
+msgid "About System Monitor"
+msgstr "Sistem Monitörü Hakkında"
+
+#: src/main.cpp:110
+#, kde-format
+msgid "System Monitor"
+msgstr "Sistem Monitörü"
+
+#: src/main.cpp:112
+#, kde-format
+msgid "An application for monitoring system resources"
+msgstr "Sistem özkaynaklarını izlemek için bir uygulama"
+
+#: src/main.cpp:114
+#, kde-format
+msgid "© 2020 Plasma Development Team"
+msgstr "© Plasma Geliştirme Takımı"
+
+#: src/main.cpp:120
+#, kde-format
+msgid "Arjen Hiemstra"
+msgstr "Arjen Hiemstra"
+
+#: src/main.cpp:120 src/main.cpp:123 src/main.cpp:125 src/main.cpp:126
+#, kde-format
+msgid "Development"
+msgstr "Geliştirme"
+
+#: src/main.cpp:121
+#, kde-format
+msgid "Uri Herrera"
+msgstr "Uri Herrera"
+
+#: src/main.cpp:121
+#, kde-format
+msgid "Design"
+msgstr "Tasarım"
+
+#: src/main.cpp:122
+#, kde-format
+msgid "Nate Graham"
+msgstr "Nate Graham"
+
+#: src/main.cpp:122 src/main.cpp:124
+#, kde-format
+msgid "Design and Quality Assurance"
+msgstr "Tasarım ve Kalite Denetim"
+
+#: src/main.cpp:123
+#, kde-format
+msgid "David Redondo"
+msgstr "David Redondo"
+
+#: src/main.cpp:124
+#, kde-format
+msgid "Noah Davis"
+msgstr "Noah Davis"
+
+#: src/main.cpp:125
+#, kde-format
+msgid "Marco Martin"
+msgstr "Marco Martin"
+
+#: src/main.cpp:126
+#, kde-format
+msgid "David Edmundson"
+msgstr "David Edmundson"
+
+#: src/main.cpp:128
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Emir SARI"
+
+#: src/main.cpp:128
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "emir_sari@icloud.com"
+
+#: src/main.qml:68
+#, kde-format
+msgctxt "@action"
+msgid "Tools"
+msgstr "Araçlar"
+
+#: src/main.qml:74
+#, kde-format
+msgctxt "@action"
+msgid "Edit or Remove pages…"
+msgstr "Sayfaları Düzenle veya Kaldır…"
+
+#: src/main.qml:79
+#, kde-format
+msgctxt "@action"
+msgid "Export Current Page…"
+msgstr "Geçerli Sayfayı Dışa Aktar…"
+
+#: src/main.qml:86
+#, kde-format
+msgctxt "@action"
+msgid "Import Page…"
+msgstr "Sayfayı İçe Aktar…"
+
+#: src/main.qml:91
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Get New Pages…"
+msgstr "Yeni Sayfalar Al…"
+
+#: src/main.qml:103
+#, kde-format
+msgctxt "@action"
+msgid "Expand Sidebar"
+msgstr "Kenar Çubuğunu Genişlet"
+
+#: src/main.qml:103
+#, kde-format
+msgctxt "@action"
+msgid "Collapse Sidebar"
+msgstr "Kenar Çubuğunu Çökert"
+
+#: src/main.qml:111
+#, kde-format
+msgctxt "@action"
+msgid "Report Bug…"
+msgstr "Hata Bildir…"
+
+#: src/main.qml:116
+#, kde-format
+msgctxt "@action"
+msgid "About System Monitor"
+msgstr "Sistem Monitörü Hakkında"
+
+#: src/main.qml:141
+#, kde-format
+msgctxt "@action"
+msgid "Add New Page…"
+msgstr "Yeni Sayfa Ekle…"
+
+#: src/main.qml:210
+#, kde-format
+msgctxt "@window:title"
+msgid "Add New Page"
+msgstr "Yeni Sayfa Ekle"
+
+#: src/main.qml:231
+#, kde-format
+msgctxt "@window:title"
+msgid "Edit Pages"
+msgstr "Sayfaları Düzenle"
+
+#: src/main.qml:254
+#, kde-format
+msgctxt "@title:window %1 is the name of the page that is being exported"
+msgid "Export %1"
+msgstr "Dışa Aktar: %1"
+
+#: src/main.qml:256 src/main.qml:267
+#, kde-format
+msgctxt "Name filter in file dialog"
+msgid "System Monitor page (*.page)"
+msgstr "Sistem Monitörü sayfası (*.page)"
+
+#: src/main.qml:265
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Page"
+msgstr "Sayfayı İçe Aktar"
+
+#: src/main.qml:298
+#, kde-format
+msgid ""
+"System Monitor has fallen back to software rendering because hardware "
+"acceleration is not available, and visual glitches may appear. Please check "
+"your graphics drivers."
+msgstr ""
+"Sistem Monitörü, donanım ivmelendirmesi kullanılabilir olmadığından yazılım "
+"dokumasına geri dönüş yaptı. Bu nedenle görsel bozukluklar görünebilir. "
+"Lütfen grafik sürücülerinizi denetleyin."
+
+#: src/page/ColumnControl.qml:117
+#, kde-format
+msgctxt "@action"
+msgid "Add Section"
+msgstr "Bölüm Ekle"
+
+#: src/page/ColumnControl.qml:121
+#, kde-format
+msgctxt "@action"
+msgid "Add Separator"
+msgstr "Ayırıcı Ekle"
+
+#: src/page/ColumnControl.qml:130
+#, kde-format
+msgctxt "@action"
+msgid "Show Background"
+msgstr "Arka Planı Göster"
+
+#: src/page/ColumnControl.qml:137
+#, kde-format
+msgctxt "@action"
+msgid "Remove Background Margins"
+msgstr "Arka Plan Kenar Boşluklarını Kaldır"
+
+#: src/page/EditablePage.qml:123
+#, kde-format
+msgctxt "@action"
+msgid "Edit Page"
+msgstr "Sayfayı Düzenle"
+
+#: src/page/EditablePage.qml:133
+#, kde-format
+msgctxt "@action"
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
+#: src/page/EditablePage.qml:143
+#, kde-format
+msgctxt "@action"
+msgid "Discard Changes"
+msgstr "Değişiklikleri At"
+
+#: src/page/EditablePage.qml:154
+#, kde-format
+msgctxt "@action"
+msgid "Configure Page…"
+msgstr "Sayfayı Yapılandır…"
+
+#: src/page/EditablePage.qml:163
+#, kde-format
+msgctxt "@action"
+msgid "Add Row"
+msgstr "Satır Ekle"
+
+#: src/page/EditablePage.qml:172
+#, kde-format
+msgctxt "@action"
+msgid "Add Title"
+msgstr "Başlık Ekle"
+
+#: src/page/EditablePage.qml:202
+#, kde-format
+msgctxt "@title:window %1 is page title"
+msgid "Configure Page \"%1\""
+msgstr "\"%1\" Sayfasını Yapılandır"
+
+#: src/page/EditablePage.qml:204 src/page/MissingSensorsDialog.qml:123
+#, kde-format
+msgctxt "@action:button"
+msgid "Save"
+msgstr "Kaydet"
+
+#: src/page/EditorToolBar.qml:36
+#, kde-format
+msgctxt "@action"
+msgid "Add"
+msgstr "Ekle"
+
+#: src/page/EditorToolBar.qml:56
+#, kde-format
+msgctxt "@action"
+msgid "Remove"
+msgstr "Kaldır"
+
+#: src/page/FaceConfigurationPage.qml:26
+#, kde-format
+msgctxt "@title:window %1 is face name"
+msgid "Configure %1"
+msgstr "Yapılandır: %1"
+
+#: src/page/FaceConfigurationPage.qml:32
+#, kde-format
+msgctxt "@action"
+msgid "Close"
+msgstr "Kapat"
+
+#: src/page/FaceConfigurationPage.qml:38
+#, kde-format
+msgctxt "@action"
+msgid "Load Preset…"
+msgstr "Önayar Yükle…"
+
+#: src/page/FaceConfigurationPage.qml:43
+#, kde-format
+msgctxt "@action"
+msgid "Get new presets…"
+msgstr "Yeni önayarlar al…"
+
+#: src/page/FaceConfigurationPage.qml:49
+#, kde-format
+msgctxt "@action"
+msgid "Save Settings as Preset"
+msgstr "Ayarları Önayar olarak Kaydet"
+
+#: src/page/FaceConfigurationPage.qml:53
+#, kde-format
+msgctxt "@info:status %1 is preset name"
+msgid "Saved settings as preset %1."
+msgstr "Ayarlar, %1 önayarı olarak kaydedildi"
+
+#: src/page/FaceConfigurationPage.qml:58 src/page/PageContents.qml:298
+#, kde-format
+msgctxt "@action"
+msgid "Add Chart as Desktop Widget"
+msgstr "Masaüstü Araç Takımı Olarak Grafik Ekle"
+
+#: src/page/FaceConfigurationPage.qml:67
+#, kde-format
+msgctxt "@action"
+msgid "Get new display styles…"
+msgstr "Yeni görüntüleme biçemleri al…"
+
+#: src/page/FaceConfigurationPage.qml:86
+#, kde-format
+msgctxt "@info:status %1 is preset name"
+msgid "Loaded preset %1."
+msgstr "%1 önayarı yüklendi."
+
+#: src/page/FaceConfigurationPage.qml:103
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Title"
+msgstr "Başlık"
+
+#: src/page/FaceConfigurationPage.qml:109
+#, kde-format
+msgctxt "@option:check"
+msgid "Show Title"
+msgstr "Başlığı Göster"
+
+#: src/page/FaceConfigurationPage.qml:127
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Display Style"
+msgstr "Görüntüleme Biçemi"
+
+#: src/page/FaceConfigurationPage.qml:155
+#, kde-format
+msgctxt "@label"
+msgid "Minimum time between updates:"
+msgstr "Güncellemeler arasındaki en az süre:"
+
+#: src/page/FaceConfigurationPage.qml:172
+#, kde-format
+msgid "No Limit"
+msgstr "Limitsiz"
+
+#. i18ndp doesn't handle floats :(
+#: src/page/FaceConfigurationPage.qml:176
+#, kde-format
+msgid "1 second"
+msgstr "1 saniye"
+
+#: src/page/FaceConfigurationPage.qml:178
+#, kde-format
+msgid "%1 seconds"
+msgstr "%1 saniye"
+
+#: src/page/FacesModel.cpp:46
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Chart"
+msgstr "Grafik Yok"
+
+#: src/page/LoadPresetDialog.qml:22
+#, kde-format
+msgctxt "@title:window"
+msgid "Load Preset"
+msgstr "Önayar yükle"
+
+#: src/page/LoadPresetDialog.qml:89
+#, kde-format
+msgctxt "@action:button"
+msgid "Load"
+msgstr "Yükle"
+
+#: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
+#: src/page/PageDialog.qml:176 src/table/KillDialog.qml:102
+#, kde-format
+msgctxt "@action:button"
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/page/MissingSensorsDialog.qml:35
+#, kde-format
+msgctxt "@title"
+msgid "Replace Missing Sensors"
+msgstr "Eksik Sensörleri Değiştir"
+
+#: src/page/MoveButton.qml:23
+#, kde-format
+msgctxt "@action"
+msgid "Move"
+msgstr "Taşı"
+
+#: src/page/PageContents.qml:100 src/page/PageEditor.qml:131
+#, kde-format
+msgid "This page is missing some sensors and will not display correctly."
+msgstr "Bu sayfada bazı sensörler eksik ve düzgün görüntülenemeyecek."
+
+#: src/page/PageContents.qml:104 src/page/PageEditor.qml:135
+#, kde-format
+msgctxt "@action:button"
+msgid "Fix…"
+msgstr "Düzelt"
+
+#: src/page/PageDialog.qml:20
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Ekle"
+
+#: src/page/PageDialog.qml:23
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "New Page"
+msgstr "Yeni Sayfa"
+
+#: src/page/PageDialog.qml:77
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Name:"
+msgstr "Ad:"
+
+#: src/page/PageDialog.qml:88
+#, kde-format
+msgctxt "@info:status"
+msgid "Name cannot be empty."
+msgstr "Ad boş olamaz."
+
+#: src/page/PageDialog.qml:92
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Icon:"
+msgstr "Simge:"
+
+#: src/page/PageDialog.qml:97
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Page Margins:"
+msgstr "Sayfa Kenar Boşlukları:"
+
+#: src/page/PageDialog.qml:110
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "None"
+msgstr "Hiçbiri"
+
+#: src/page/PageDialog.qml:111
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Small"
+msgstr "Küçük"
+
+#: src/page/PageDialog.qml:112
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Large"
+msgstr "Büyük"
+
+#: src/page/PageDialog.qml:119
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Use Actions From:"
+msgstr "Eylemleri Şuradan Kullan:"
+
+#: src/page/PageDialog.qml:137
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Load this page:"
+msgstr "Bu sayfayı yükle:"
+
+#: src/page/PageDialog.qml:150
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "When needed"
+msgstr "Gerektiğinde"
+
+#: src/page/PageDialog.qml:151
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "During application startup"
+msgstr "Uygulama başlangıcında"
+
+#: src/page/PageEditor.qml:181
+#, kde-format
+msgid "New Title"
+msgstr "Yeni Başlık"
+
+#: src/page/PageSortDialog.qml:101
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show Page"
+msgstr "Sayfayı Göster"
+
+#: src/page/PageSortDialog.qml:102
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Hide Page"
+msgstr "Sayfayı Gizle"
+
+#: src/page/PageSortDialog.qml:149
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Do not reset the page"
+msgstr "Sayfayı sıfırlama"
+
+#: src/page/PageSortDialog.qml:153
+#, kde-format
+msgctxt "@item:intable"
+msgid "The page will be reset to its default state"
+msgstr "Sayfa, öntanımlı durumuna sıfırlanacak"
+
+#: src/page/PageSortDialog.qml:162
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Reset the page to its default state"
+msgstr "Sayfayı öntanımlı durumuna sıfırla"
+
+#: src/page/PageSortDialog.qml:171
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Do not remove this page"
+msgstr "Bu sayfayı kaldırma"
+
+#: src/page/PageSortDialog.qml:175
+#, kde-format
+msgctxt "@item:intable"
+msgid "The page will be removed"
+msgstr "Bu sayfa kaldırılacak"
+
+#: src/page/PageSortDialog.qml:188
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove this page"
+msgstr "Bu sayfayı kaldır"
+
+#: src/page/PageSortDialog.qml:207
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Start with:"
+msgstr "Şununla başla:"
+
+#: src/page/PageSortDialog.qml:216
+#, kde-format
+msgid "Last Visited Page"
+msgstr "Son Ziyaret Edilen Sayfa"
+
+#: src/page/RowControl.qml:128
+#, kde-format
+msgctxt "@action"
+msgid "Add Column"
+msgstr "Sütun Ekle"
+
+#: src/page/RowControl.qml:137
+#, kde-format
+msgctxt "@action"
+msgid "Height"
+msgstr "Yükseklik"
+
+#: src/page/RowControl.qml:141
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Balanced"
+msgstr "Dengeli"
+
+#: src/page/RowControl.qml:142
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Try and use the same height across different rows."
+msgstr "Aynı yüksekliği satırlar arasında dene ve kullan."
+
+#: src/page/RowControl.qml:150
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Minimum"
+msgstr "En az"
+
+#: src/page/RowControl.qml:151
+#, kde-format
+msgctxt "@info:tooltop"
+msgid "Use the minimum amount of height needed to display contents correctly."
+msgstr "İçeriği düzgünce görüntülemek için gerekli en az yüksekliği kullan."
+
+#: src/page/RowControl.qml:159
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Maximum"
+msgstr "En fazla"
+
+#: src/page/RowControl.qml:160
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Try to use as much height as possible."
+msgstr "Olabildiğince fazla yükseklik kullanmayı dene."
+
+#: src/table/ColumnConfigurationDialog.qml:26
+#, kde-format
+msgctxt "@window:title"
+msgid "Configure Columns"
+msgstr "Sütunları Yapılandır"
+
+#: src/table/ColumnConfigurationDialog.qml:150
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Hidden"
+msgstr "Gizli"
+
+#: src/table/ColumnConfigurationDialog.qml:151
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Text Only"
+msgstr "Yalnızca Metin"
+
+#: src/table/ColumnConfigurationDialog.qml:157
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Line Chart"
+msgstr "Satır Grafiği"
+
+#: src/table/ColumnConfigurationDialog.qml:161
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Text Only (Scaled to 100%)"
+msgstr "Yalnızca Metin (%​100 Ölçekli)"
+
+#: src/table/ColumnConfigurationDialog.qml:162
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Line Chart (Scaled to 100%)"
+msgstr "Satır Grafiği (%​100 Ölçekli)"
+
+#: src/table/KillDialog.qml:87
+#, kde-format
+msgctxt "@option:check"
+msgid "Do not ask again"
+msgstr "Bir daha sorma"
+
+#: src/ToolsModel.cpp:37
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Kill a Window…"
+msgstr "Bir Pencereyi Öldür…"
+
+#: src/ToolsModel.cpp:115
+#, kde-format
+msgctxt "@action:inmenu %1 is application name"
+msgid "Launch %1"
+msgstr "Çalıştır: %1"

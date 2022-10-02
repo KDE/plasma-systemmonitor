@@ -1,0 +1,216 @@
+# Tomohiro Hyakutake <tomhioo@outlook.jp>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-systemmonitor\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-06-26 00:19+0000\n"
+"PO-Revision-Date: 2021-09-24 22:01+0900\n"
+"Last-Translator: Tomohiro Hyakutake <tomhioo@outlook.jp>\n"
+"Language-Team: Japanese <kde-i18n-doc@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 21.08.1\n"
+
+#: src/faces/processtable/contents/ui/Config.qml:26
+#, kde-format
+msgctxt "@option:check"
+msgid "Confirm ending processes."
+msgstr ""
+
+#: src/faces/processtable/contents/ui/Config.qml:31
+#, kde-format
+msgctxt "@label:listbox"
+msgid "By default show:"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/Config.qml:40
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Own Processes"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/Config.qml:41
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "User Processes"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/Config.qml:42
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "System Processes"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/Config.qml:43
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "All Processes"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:29
+#, kde-format
+msgctxt "@action"
+msgid "Search"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:40
+#, kde-format
+msgctxt "@action"
+msgid "End Process"
+msgstr "プロセスを終了"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:54
+#, kde-format
+msgctxt "@action"
+msgid "Display as List"
+msgstr "リストとして表示"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:71
+#, kde-format
+msgctxt "@action"
+msgid "Display as Tree"
+msgstr "ツリーとして表示"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:83
+#, kde-format
+msgctxt "@action %1 is view type"
+msgid "Show: %1"
+msgstr "表示する種類: %1"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:86
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "Own Processes"
+msgstr "所有プロセス"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:95
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "User Processes"
+msgstr "ユーザプロセス"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:104
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "System Processes"
+msgstr "システムプロセス"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:113
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "All Processes"
+msgstr "すべてのプロセス"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:125
+#, kde-format
+msgctxt "@action"
+msgid "Configure columns…"
+msgstr "カラムの設定…"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:173
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Send Signal"
+msgstr "シグナルを送る"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:176
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Suspend (STOP)"
+msgstr "一時停止 (STOP)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:180
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Continue (CONT)"
+msgstr "再開 (CONT)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:184
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Hangup (HUP)"
+msgstr "ハングアップ (HUP)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:188
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Interrupt (INT)"
+msgstr "割り込み (INT)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:192
+#, kde-format
+msgctxt "@action:inmenu  Send Signal"
+msgid "Terminate (TERM)"
+msgstr "終了 (TERM)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:196
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Kill (KILL)"
+msgstr "強制終了 (KILL)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:200
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "User 1 (USR1)"
+msgstr "ユーザ 1 (USR1)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:204
+#, kde-format
+msgctxt "@action:inmenu  Send Signal"
+msgid "User 2 (USR2)"
+msgstr "ユーザ 2 (USR2)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:212
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "プロセスを終了"
+msgstr[1] "%1 個のプロセスを終了"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:224
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Configure Columns…"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:234
+#, kde-format
+msgctxt "@title:window"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "プロセスを終了"
+msgstr[1] "%1 個のプロセスを終了"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
+#, kde-format
+msgctxt "@action:button"
+msgid "End"
+msgstr "終了"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:237
+#, kde-format
+msgid ""
+"Are you sure you want to end this process?\n"
+"Any unsaved work may be lost."
+msgid_plural ""
+"Are you sure you want to end these %1 processes?\n"
+"Any unsaved work may be lost."
+msgstr[0] ""
+"本当にこのプロセスを終了しますか？\n"
+"保存されていない作業は失われます。"
+msgstr[1] ""
+"本当にこれら %1 個のプロセスを終了しますか？\n"
+"保存されていない作業は失われます。"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:244
+#, kde-format
+msgctxt "@item:intable %1 is process id, %2 is user name"
+msgid "Process ID %1, owned by %2"
+msgstr "プロセス ID %1, 実行ユーザ %2"
