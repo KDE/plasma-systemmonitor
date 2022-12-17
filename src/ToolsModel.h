@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
-#ifndef TOOLSMODEL_H
-#define TOOLSMODEL_H
+#pragma once
 
 #include <QAbstractListModel>
 #include <QQmlParserStatus>
@@ -49,5 +48,3 @@ private:
     };
     QVector<Entry> m_entries;
 };
-
-#endif // TOOLSMODEL_H

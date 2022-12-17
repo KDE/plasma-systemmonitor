@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-#ifndef FACESMODEL_H
-#define FACESMODEL_H
+#pragma once
 
 #include <QAbstractListModel>
 
@@ -44,5 +43,3 @@ private:
     PageDataObject *m_pageData = nullptr;
     QVector<FaceLoader *> m_faceLoaders;
 };
-
-#endif

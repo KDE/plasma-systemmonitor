@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-#ifndef COLUMNSORTMODEL_H
-#define COLUMNSORTMODEL_H
+#pragma once
 
 #include <QIdentityProxyModel>
 //#include <QVariantList>
@@ -51,5 +50,3 @@ private:
     QString m_idRole = QStringLiteral("id");
     mutable int m_idRoleNumber = -1;
 };
-
-#endif // COLUMNSORTMODEL_H

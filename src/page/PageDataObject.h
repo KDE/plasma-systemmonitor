@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-#ifndef PAGEDATAOBJECT_H
-#define PAGEDATAOBJECT_H
+#pragma once
 
 #include <QQmlListProperty>
 #include <QQmlPropertyMap>
@@ -74,5 +73,3 @@ private:
     bool m_dirty = false;
     FaceLoader *m_faceLoader = nullptr;
 };
-
-#endif // PAGEDATAOBJECT_H

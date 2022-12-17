@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-#ifndef COMPONENTCACHEPROXYMODEL_H
-#define COMPONENTCACHEPROXYMODEL_H
+#pragma once
 
 #include <QIdentityProxyModel>
 #include <QQmlComponent>
@@ -83,5 +82,3 @@ private:
 };
 
 QML_DECLARE_TYPEINFO(ComponentCacheProxyModel, QML_HAS_ATTACHED_PROPERTIES)
-
-#endif // COMPONENTCACHEPROXYMODEL_H

@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-#ifndef COLUMNDISPLAYMODEL_H
-#define COLUMNDISPLAYMODEL_H
+#pragma once
 
 #include <QIdentityProxyModel>
 
@@ -48,5 +47,3 @@ private:
     QString m_idRole = QStringLiteral("id");
     mutable int m_idRoleNumber = -1;
 };
-
-#endif // COLUMNDISPLAYMODEL_H

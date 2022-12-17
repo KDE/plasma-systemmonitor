@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
-#ifndef CONFIGWRITER_H
-#define CONFIGWRITER_H
+#pragma once
 
 #include <memory>
 
@@ -42,5 +41,3 @@ public:
 private:
     std::unique_ptr<QTimer> m_saveTimer;
 };
-
-#endif // CONFIGWRITER_H
