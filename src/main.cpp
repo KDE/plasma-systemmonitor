@@ -49,9 +49,9 @@ class CommandLineArguments : public QObject
 public:
     CommandLineArguments(QCommandLineParser &parser)
         : QObject()
+        , m_pageId(parser.value(QStringLiteral("page-id")))
+        , m_pageName(parser.value(QStringLiteral("page-name")))
     {
-        m_pageId = parser.value(QStringLiteral("page-id"));
-        m_pageName = parser.value(QStringLiteral("page-name"));
     }
 
     QVariant aboutData() const

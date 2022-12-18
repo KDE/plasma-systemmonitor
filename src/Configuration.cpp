@@ -21,8 +21,8 @@ SystemMonitorConfiguration *Configuration::globalConfig()
 
 Configuration::Configuration(QObject *parent)
     : QObject(parent)
+    , m_saveTimer(std::make_unique<QTimer>())
 {
-    m_saveTimer = std::make_unique<QTimer>();
     m_saveTimer->setInterval(500ms);
     m_saveTimer->setSingleShot(true);
     connect(m_saveTimer.get(), &QTimer::timeout, globalConfig(), &SystemMonitorConfiguration::save);
