@@ -74,6 +74,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="uk">Програма для стеження за використанням ресурсів системи</summary>
   <summary xml:lang="x-test">xxAn application for monitoring system resourcesxx</summary>
   <summary xml:lang="zh-CN">系统资源监控程序</summary>
+  <summary xml:lang="zh-TW">一個監控系統資源的應用程式</summary>
   <description>
     <p>Plasma System Monitor provides an interface for monitoring system sensors, process information and other system resources.</p>
     <p xml:lang="ar">يوفر مراقب النظام بلازما واجهة لرصد مستشعرات النظام ومعلومات المعالجة وموارد النظام الأخرى.</p>
