@@ -116,4 +116,5 @@ Keywords[tr]=görev;yönetici;süreç;işlemci;cpu;bellek;
 Keywords[uk]=task;manager;process;cpu;memory;завдання;керування;процес;процесор;пам'ять;
 Keywords[x-test]=xxtaskxx;xxmanagerxx;xxprocessxx;xxcpuxx;xxmemoryxx;
 Keywords[zh_CN]=task;manager;process;cpu;memory;任务;管理;管理器;进程;处理器;内存;占用;使用率;
+Keywords[zh_TW]=task;manager;process;cpu;memory;行程;記憶體;工作管理;
 SingleMainWindow=true
