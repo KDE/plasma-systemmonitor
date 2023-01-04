@@ -19,8 +19,8 @@ import org.kde.ksysguard.page 1.0 as Page
 Kirigami.ApplicationWindow {
     id: app
 
-    minimumWidth: 700
-    minimumHeight: 550
+    minimumWidth: Kirigami.Units.gridUnit * 38
+    minimumHeight: Kirigami.Units.gridUnit* 30
 
     title: pageStack.currentItem.title
 

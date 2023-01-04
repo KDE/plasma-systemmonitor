@@ -148,7 +148,7 @@ Faces.SensorFace {
             anchors.bottom: parent.bottom
             anchors.right: parent.right
 
-            property real minimumWidth: 150
+            property real minimumWidth: Kirigami.Units.gridUnit * 8
             property real maximumWidth: root.width * 0.75
 
             width: root.config.detailsWidth
