@@ -242,7 +242,7 @@ Faces.SensorFace {
         property int signalToSend
 
         title: i18ncp("@title:window", "Quit Application", "Quit %1 Applications", items.length)
-        killButtonText: i18nc("@action:button", "Quit")
+        killButtonText: i18ncp("@action:button", "Quit Application", "Quit Applications", items.length)
         killButtonIcon: "application-exit"
         questionText: i18np("Are you sure you want to quit this application?\nAny unsaved work may be lost.",
                             "Are you sure you want to quit these %1 applications?\nAny unsaved work may be lost.", items.length)

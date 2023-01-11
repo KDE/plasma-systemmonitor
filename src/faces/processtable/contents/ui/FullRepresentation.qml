@@ -232,7 +232,7 @@ Faces.SensorFace {
         property int signalToSend
 
         title: i18ncp("@title:window", "End Process", "End %1 Processes", items.length)
-        killButtonText: i18nc("@action:button", "End")
+        killButtonText: i18ncp("@action:button", "End Process", "End Processes", items.length)
         killButtonIcon: "process-stop"
         questionText: i18np("Are you sure you want to end this process?\nAny unsaved work may be lost.",
                             "Are you sure you want to end these %1 processes?\nAny unsaved work may be lost.", items.length)
