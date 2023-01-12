@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2022-09-05 12:24+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -184,10 +184,16 @@ msgstr[2] "Выйти из %1 приложений"
 msgstr[3] "Выйти из приложения"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Выйти"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Выйти из приложения"
+msgstr[1] "Выйти из приложения"
+msgstr[2] "Выйти из приложения"
+msgstr[3] "Выйти из приложения"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -219,3 +225,7 @@ msgstr[0] "%1 процесс"
 msgstr[1] "%1 процесса"
 msgstr[2] "%1 процессов"
 msgstr[3] "один процесс"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Выйти"

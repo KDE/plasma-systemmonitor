@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2020-10-15 23:15+0200\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish\n"
@@ -187,10 +187,14 @@ msgstr[0] "Afslut program"
 msgstr[1] "Afslut %1 programmer"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Afslut"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Afslut program"
+msgstr[1] "Afslut program"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -214,3 +218,7 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 proces"
 msgstr[1] "%1 processer"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Afslut"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2022-04-09 19:24+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -179,10 +179,15 @@ msgstr[1] "Ukončiť %1 aplikácie"
 msgstr[2] "Ukončiť %1 aplikácií"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Ukončiť"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Ukončiť aplikáciu"
+msgstr[1] "Ukončiť aplikáciu"
+msgstr[2] "Ukončiť aplikáciu"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -210,3 +215,7 @@ msgid_plural "%1 Processes"
 msgstr[0] "%1 proces"
 msgstr[1] "%1 procesy"
 msgstr[2] "%1 procesov"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Ukončiť"

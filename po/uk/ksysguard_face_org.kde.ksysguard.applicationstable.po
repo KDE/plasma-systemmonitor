@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2021-12-09 10:18+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -185,10 +185,16 @@ msgstr[2] "Вийти з %1 програм"
 msgstr[3] "Вийти з %1 програми"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Вийти"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Вийти з програми"
+msgstr[1] "Вийти з програми"
+msgstr[2] "Вийти з програми"
+msgstr[3] "Вийти з програми"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -220,3 +226,7 @@ msgstr[0] "%1 процес"
 msgstr[1] "%1 процеси"
 msgstr[2] "%1 процесів"
 msgstr[3] "1 процес"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Вийти"

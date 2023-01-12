@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-26 00:19+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2021-06-15 23:33+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -196,10 +196,16 @@ msgstr[2] "Užbaigti %1 procesų"
 msgstr[3] "Užbaigti %1 procesą"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "End Process"
 msgctxt "@action:button"
-msgid "End"
-msgstr "Užbaigti"
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "Užbaigti procesą"
+msgstr[1] "Užbaigti procesą"
+msgstr[2] "Užbaigti procesą"
+msgstr[3] "Užbaigti procesą"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format
@@ -227,3 +233,7 @@ msgstr[3] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "Proceso ID %1, priklauso naudotojui %2"
+
+#~ msgctxt "@action:button"
+#~ msgid "End"
+#~ msgstr "Užbaigti"

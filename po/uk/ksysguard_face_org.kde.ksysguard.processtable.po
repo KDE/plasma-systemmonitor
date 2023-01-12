@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.processtable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-26 00:19+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2021-05-26 09:00+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -197,10 +197,16 @@ msgstr[2] "Завершення %1 процесів"
 msgstr[3] "Завершення процесу"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "End Process"
 msgctxt "@action:button"
-msgid "End"
-msgstr "Завершити"
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "Завершити процес"
+msgstr[1] "Завершити процес"
+msgstr[2] "Завершити процес"
+msgstr[3] "Завершити процес"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format
@@ -228,3 +234,7 @@ msgstr[3] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "Ідентифікатор процесу %1, власник — %2"
+
+#~ msgctxt "@action:button"
+#~ msgid "End"
+#~ msgstr "Завершити"

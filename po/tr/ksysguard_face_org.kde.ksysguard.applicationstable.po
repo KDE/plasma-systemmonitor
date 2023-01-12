@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2022-02-27 13:41+0100\n"
 "Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -178,10 +178,14 @@ msgstr[0] "Uygulamadan Çık"
 msgstr[1] "%1 Uygulamadan Çık"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Çık"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Uygulamadan Çık"
+msgstr[1] "Uygulamadan Çık"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -205,3 +209,7 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 Süreç"
 msgstr[1] "%1 Süreç"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Çık"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-26 00:19+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2021-07-05 22:35+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -199,10 +199,18 @@ msgstr[4] "أنهِ %1 عملية"
 msgstr[5] "أنهِ %1 عملية"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "End Process"
 msgctxt "@action:button"
-msgid "End"
-msgstr "أنهِ"
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "أنهِ العملية"
+msgstr[1] "أنهِ العملية"
+msgstr[2] "أنهِ العملية"
+msgstr[3] "أنهِ العملية"
+msgstr[4] "أنهِ العملية"
+msgstr[5] "أنهِ العملية"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format
@@ -236,3 +244,7 @@ msgstr[5] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "العملية رقم %1, مملوكة لـ %2"
+
+#~ msgctxt "@action:button"
+#~ msgid "End"
+#~ msgstr "أنهِ"

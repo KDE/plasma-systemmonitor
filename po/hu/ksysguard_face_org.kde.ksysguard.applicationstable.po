@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2021-12-09 08:02+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -179,10 +179,14 @@ msgstr[0] "Kilépés az alkalmazásból"
 msgstr[1] "Kilépés %1 alkalmazásból"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Kilépés"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Kilépés az alkalmazásból"
+msgstr[1] "Kilépés az alkalmazásból"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -206,3 +210,7 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 folyamat"
 msgstr[1] "%1 folyamat"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Kilépés"

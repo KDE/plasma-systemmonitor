@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2022-03-16 08:14+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -178,10 +178,14 @@ msgstr[0] "Berhentikan Aplikasi"
 msgstr[1] "Berhentikan %1 Aplikasi"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Berhenti"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Berhentikan Aplikasi"
+msgstr[1] "Berhentikan Aplikasi"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -205,3 +209,7 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 Proses"
 msgstr[1] "%1 Pemrosesan"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Berhenti"

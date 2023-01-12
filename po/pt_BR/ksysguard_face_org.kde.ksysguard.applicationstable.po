@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2021-12-09 10:14-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -178,10 +178,14 @@ msgstr[0] "Sair do aplicativo"
 msgstr[1] "Sair de %1 aplicativos"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Sair"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Sair do aplicativo"
+msgstr[1] "Sair do aplicativo"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -205,3 +209,7 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 processo"
 msgstr[1] "%1 processos"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Sair"

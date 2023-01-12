@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2022-02-04 16:38+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian\n"
@@ -181,10 +181,15 @@ msgstr[1] "Închide %1 aplicații"
 msgstr[2] "Închide %1 de aplicații"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Termină"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Închide aplicația"
+msgstr[1] "Închide aplicația"
+msgstr[2] "Închide aplicația"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -212,3 +217,7 @@ msgid_plural "%1 Processes"
 msgstr[0] "1 proces"
 msgstr[1] "%1 procese"
 msgstr[2] "%1 de procese"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Termină"

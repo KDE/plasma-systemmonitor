@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2021-12-12 15:55+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -184,10 +184,16 @@ msgstr[2] "Baigti %1 programų darbą"
 msgstr[3] "Baigti %1 programos darbą"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "Baigti darbą"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "Baigti programos darbą"
+msgstr[1] "Baigti programos darbą"
+msgstr[2] "Baigti programos darbą"
+msgstr[3] "Baigti programos darbą"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -219,3 +225,7 @@ msgstr[0] "%1 procesas"
 msgstr[1] "%1 procesai"
 msgstr[2] "%1 procesų"
 msgstr[3] "%1 procesas"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "Baigti darbą"

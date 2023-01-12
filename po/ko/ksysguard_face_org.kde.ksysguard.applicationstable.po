@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-09 00:44+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2022-02-20 21:11+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -176,10 +176,13 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "프로그램 %1개 끝내기"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Quit Application"
 msgctxt "@action:button"
-msgid "Quit"
-msgstr "끝내기"
+msgid "Quit Application"
+msgid_plural "Quit Applications"
+msgstr[0] "프로그램 끝내기"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -199,3 +202,7 @@ msgctxt "@item:intable"
 msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "프로세스 %1개"
+
+#~ msgctxt "@action:button"
+#~ msgid "Quit"
+#~ msgstr "끝내기"
