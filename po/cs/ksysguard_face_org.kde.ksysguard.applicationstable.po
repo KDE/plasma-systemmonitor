@@ -180,15 +180,13 @@ msgstr[1] "Ukončit %1 aplikace"
 msgstr[2] "Ukončit %1 aplikací"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Quit Application"
+#, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
-msgstr[0] "Ukončit aplikaci"
-msgstr[1] "Ukončit aplikaci"
-msgstr[2] "Ukončit aplikaci"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -216,7 +214,3 @@ msgid_plural "%1 Processes"
 msgstr[0] "%1 proces"
 msgstr[1] "%1 procesy"
 msgstr[2] "%1 procesů"
-
-#~ msgctxt "@action:button"
-#~ msgid "Quit"
-#~ msgstr "Ukončit"

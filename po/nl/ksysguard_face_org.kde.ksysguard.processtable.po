@@ -1,21 +1,21 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2020, 2021.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2020, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2021-05-26 14:45+0200\n"
+"PO-Revision-Date: 2023-01-12 11:01+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.04.1\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:26
 #, kde-format
@@ -190,14 +190,12 @@ msgstr[0] "Proces beëindigen"
 msgstr[1] "%1 processen beëindigen"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "End Process"
+#, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
 msgstr[0] "Proces beëindigen"
-msgstr[1] "Proces beëindigen"
+msgstr[1] "Processen beëindigen"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format

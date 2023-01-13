@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Kishore G <kishore96@gmail.com>, 2022.
+# Kishore G <kishore96@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2022-05-12 21:34+0530\n"
+"PO-Revision-Date: 2023-01-12 21:29+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.04.0\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:26
 #, kde-format
@@ -190,14 +190,12 @@ msgstr[0] "பணியை நிறுத்துவது"
 msgstr[1] "%1 பணிகளை நிறுத்துவது"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "End Process"
+#, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
 msgstr[0] "பணியை நிறுத்து"
-msgstr[1] "பணியை நிறுத்து"
+msgstr[1] "பணிகளை நிறுத்து"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format

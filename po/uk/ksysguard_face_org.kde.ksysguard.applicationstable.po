@@ -3,14 +3,14 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2021-12-09 10:18+0200\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"PO-Revision-Date: 2023-01-12 09:12+0200\n"
+"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -185,15 +185,13 @@ msgstr[2] "Вийти з %1 програм"
 msgstr[3] "Вийти з %1 програми"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Quit Application"
+#, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
-msgstr[0] "Вийти з програми"
-msgstr[1] "Вийти з програми"
-msgstr[2] "Вийти з програми"
+msgstr[0] "Вийти з програм"
+msgstr[1] "Вийти з програм"
+msgstr[2] "Вийти з програм"
 msgstr[3] "Вийти з програми"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247

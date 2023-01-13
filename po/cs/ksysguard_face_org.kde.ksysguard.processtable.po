@@ -192,15 +192,13 @@ msgstr[1] "Ukončit %1 procesy"
 msgstr[2] "Ukončit %1 procesů"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "End Process"
+#, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
-msgstr[0] "Ukončit proces"
-msgstr[1] "Ukončit proces"
-msgstr[2] "Ukončit proces"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format
@@ -218,7 +216,3 @@ msgstr[1] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr ""
-
-#~ msgctxt "@action:button"
-#~ msgid "End"
-#~ msgstr "End"

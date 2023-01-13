@@ -1,15 +1,15 @@
 # Translation of ksysguard_face_org.kde.ksysguard.applicationstable.po to Catalan (Valencian)
-# Copyright (C) 2020-2021 This_file_is_part_of_KDE
+# Copyright (C) 2020-2023 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021.
+# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2021-12-09 13:10+0100\n"
+"PO-Revision-Date: 2023-01-12 16:11+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -181,14 +181,12 @@ msgstr[0] "Ix de l'aplicació"
 msgstr[1] "Ix de les %1 aplicacions"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Quit Application"
+#, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
 msgstr[0] "Ix de l'aplicació"
-msgstr[1] "Ix de l'aplicació"
+msgstr[1] "Ix de les aplicacions"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -212,7 +210,3 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 procés"
 msgstr[1] "%1 processos"
-
-#~ msgctxt "@action:button"
-#~ msgid "Quit"
-#~ msgstr "Ix"

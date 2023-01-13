@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-26 00:19+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2022-01-23 13:48+0100\n"
 "Last-Translator: Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail."
 "com>\n"
@@ -196,8 +196,10 @@ msgstr[1] "Avslutt dei %1 prosessane"
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
 #, kde-format
 msgctxt "@action:button"
-msgid "End"
-msgstr "Slutt"
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] ""
+msgstr[1] ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format

@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2020, 2021.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2020, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2021-12-09 10:59+0100\n"
+"PO-Revision-Date: 2023-01-12 11:01+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.08.3\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:49
 #, kde-format
@@ -178,14 +178,12 @@ msgstr[0] "Toepassing afsluiten"
 msgstr[1] "%1 toepassingen afsluiten"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Quit Application"
+#, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
 msgstr[0] "Toepassing afsluiten"
-msgstr[1] "Toepassing afsluiten"
+msgstr[1] "Toepassingen afsluiten"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format

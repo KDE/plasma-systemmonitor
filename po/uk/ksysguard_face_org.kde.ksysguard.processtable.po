@@ -3,14 +3,14 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.processtable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2021-05-26 09:00+0300\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"PO-Revision-Date: 2023-01-12 09:12+0200\n"
+"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -197,15 +197,13 @@ msgstr[2] "Завершення %1 процесів"
 msgstr[3] "Завершення процесу"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "End Process"
+#, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
-msgstr[0] "Завершити процес"
-msgstr[1] "Завершити процес"
-msgstr[2] "Завершити процес"
+msgstr[0] "Завершити процеси"
+msgstr[1] "Завершити процеси"
+msgstr[2] "Завершити процеси"
 msgstr[3] "Завершити процес"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
