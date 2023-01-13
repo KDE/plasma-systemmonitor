@@ -67,6 +67,7 @@ Table.BaseTableView {
         }
         role: Process.ProcessDataModel.Value
         pidsRole: Process.ProcessDataModel.PIDs
+        cpuMode: displayModel.data(displayModel.index(0, appModel.enabledAttributes.indexOf("usage")), Table.ColumnDisplayModel.DisplayStyleRole)
     }
 
     idRole: "Attribute"

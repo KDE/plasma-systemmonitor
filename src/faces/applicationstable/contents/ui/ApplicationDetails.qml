@@ -77,7 +77,22 @@ Page {
             Layout.fillHeight: false
             Layout.preferredHeight: Kirigami.Units.gridUnit * 3
 
-            yRange { from: 0; to: 100; automatic: false }
+            yRange {
+                from: 0;
+                to: {
+                    if (!root.firstApplication) {
+                        return 100
+                    }
+
+                    let mode = root.firstApplication.cpuMode
+                    if (mode === "lineScaled" || mode === "textScaled") {
+                        return 100
+                    } else {
+                        return 100 * cpuCountSensor.value
+                    }
+                }
+                automatic: false
+            }
             xRange { from: 0; to: 50 }
             unit: Formatter.Units.UnitPercent
 
@@ -86,7 +101,18 @@ Page {
                 Charts.HistoryProxySource {
                     id: cpuHistory
                     source: Charts.SingleValueSource {
-                        value: root.firstApplication ? root.firstApplication.cpu / cpuCountSensor.value : 0
+                        value: {
+                            if (!root.firstApplication) {
+                                return
+                            }
+
+                            let mode = root.firstApplication.cpuMode
+                            if (mode === "lineScaled" || mode === "textScaled") {
+                                return root.firstApplication.cpu / cpuCountSensor.value
+                            } else {
+                                return root.firstApplication.cpu
+                            }
+                        }
                     }
                     maximumHistory: 50
                     interval: 2000

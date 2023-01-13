@@ -26,6 +26,8 @@ QtObject {
     property real diskRead
     property real diskWrite
 
+    property string cpuMode
+
     property string iconName
 
     property var pids: []

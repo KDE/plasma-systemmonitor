@@ -19,6 +19,7 @@ public:
     enum Roles {
         DisplayStyleRole = Qt::UserRole + 99,
     };
+    Q_ENUM(Roles)
 
     explicit ColumnDisplayModel(QObject *parent = nullptr);
 
