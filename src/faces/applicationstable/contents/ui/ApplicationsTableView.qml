@@ -107,6 +107,8 @@ Table.BaseTableView {
         }
 
         sortRole: "Value"
+
+        onLayoutChanged: view.onModelLayoutChanged()
     }
 
     Table.ComponentCacheProxyModel {
