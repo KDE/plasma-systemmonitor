@@ -93,7 +93,7 @@ Control
             root.TableView.view.forceActiveFocus(Qt.ClickFocus)
 
             // latest clicks sets current index
-            root.__selection.setCurrentIndex(modelIndex, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
+            root.__selection.setCurrentIndex(modelIndex, ItemSelectionModel.Current | ItemSelectionModel.Rows)
 
             if (root.__selection.isSelected(modelIndex) && mouse.button == Qt.RightButton) {
                 root.TableView.view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
