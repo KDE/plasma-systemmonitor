@@ -62,6 +62,17 @@ FocusScope {
         columnWidthsChanged();
     }
 
+    // This is a workaround for a small memory leak in QQmlPropertyCache.
+    // When using Connection {} in combination with
+    // QAbstractItemModel::layoutChanged() from within QML,
+    // QQmlPropertyCache::createArgumentsObject() will leak. As a workaround, we
+    // can put a proxy signal in between that is used instead and the leak won't
+    // happen.
+    // TODO KF6: Remove this as the bug doesn't exist in Qt 6.
+    function onModelLayoutChanged() {
+        tableView.modelLayoutHasChanged()
+    }
+
     onColumnWidthsChanged: tableView.forceLayout()
 
     Kirigami.Theme.inherit: false
@@ -99,6 +110,9 @@ FocusScope {
             }
             property int hoveredRow: -1
             property int sortColumn: root.sortColumn
+
+            signal modelLayoutHasChanged()
+
             signal contextMenuRequested(var index, point position)
             onContextMenuRequested: root.contextMenuRequested(index, position)
 

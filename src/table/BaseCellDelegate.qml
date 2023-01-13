@@ -47,8 +47,8 @@ Control
     onRowChanged: updateIsSelected();
 
     Connections {
-        target: root.TableView.view.model
-        function onLayoutChanged() {
+        target: root.TableView.view
+        function onModelLayoutHasChanged() {
             updateIsSelected();
         }
     }
