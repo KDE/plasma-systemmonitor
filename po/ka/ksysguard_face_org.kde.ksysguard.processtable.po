@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2022-09-27 04:35+0200\n"
+"PO-Revision-Date: 2023-01-13 07:02+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:26
 #, kde-format
@@ -70,7 +70,7 @@ msgstr "პროცესის დასრულება"
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
-msgstr "სიად ჩვენებ"
+msgstr "სიად ჩვენება"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:71
 #, kde-format
@@ -191,14 +191,12 @@ msgstr[0] "პროცესის დასრულება"
 msgstr[1] "%1 პროცესის დასრულება"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "End Process"
+#, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
 msgstr[0] "პროცესის დასრულება"
-msgstr[1] "პროცესის დასრულება"
+msgstr[1] "პროცესების დასრულება"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format

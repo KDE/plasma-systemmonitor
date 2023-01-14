@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-12 00:57+0000\n"
+"POT-Creation-Date: 2023-01-14 00:58+0000\n"
 "PO-Revision-Date: 2023-01-12 09:12+0200\n"
 "Last-Translator: Fracture dept <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -32,31 +32,31 @@ msgctxt "@title:group"
 msgid "CPU"
 msgstr "Процесор"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:99
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:125
 #, kde-format
 msgctxt "@title:group"
 msgid "Memory"
 msgstr "Пам'ять"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:125
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:151
 #, kde-format
 msgctxt "@title:group"
 msgid "Network"
 msgstr "Мережа"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:150
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:176
 #, kde-format
 msgctxt "@title:group"
 msgid "Disk"
 msgstr "Диск"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:176
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:202
 #, kde-format
 msgctxt "@title:group"
 msgid "Processes: %1"
 msgstr "Процеси: %1"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:237
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:263
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select an application to see its details"

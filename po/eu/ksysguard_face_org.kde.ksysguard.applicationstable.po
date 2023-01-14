@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-12 00:57+0000\n"
+"POT-Creation-Date: 2023-01-14 00:58+0000\n"
 "PO-Revision-Date: 2023-01-12 21:29+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -32,31 +32,31 @@ msgctxt "@title:group"
 msgid "CPU"
 msgstr "PUZ"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:99
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:125
 #, kde-format
 msgctxt "@title:group"
 msgid "Memory"
 msgstr "Memoria"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:125
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:151
 #, kde-format
 msgctxt "@title:group"
 msgid "Network"
 msgstr "Sarea"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:150
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:176
 #, kde-format
 msgctxt "@title:group"
 msgid "Disk"
 msgstr "Diskoa"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:176
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:202
 #, kde-format
 msgctxt "@title:group"
 msgid "Processes: %1"
 msgstr "Prozesuak: %1"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:237
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:263
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select an application to see its details"

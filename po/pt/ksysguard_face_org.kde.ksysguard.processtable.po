@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2021-06-08 18:54+0100\n"
+"PO-Revision-Date: 2023-01-13 01:23+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -186,14 +186,12 @@ msgstr[0] "Terminar o Processo"
 msgstr[1] "Terminar os %1 Processos"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "End Process"
+#, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
 msgstr[0] "Terminar o Processo"
-msgstr[1] "Terminar o Processo"
+msgstr[1] "Terminar os Processos"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format
@@ -215,7 +213,3 @@ msgstr[1] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "ID do processo %1 com o dono %2"
-
-#~ msgctxt "@action:button"
-#~ msgid "End"
-#~ msgstr "Fim"
