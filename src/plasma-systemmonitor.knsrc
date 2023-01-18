@@ -45,3 +45,4 @@ Name[zh_TW]=頁面
 ProvidersUrl=https://autoconfig.kde.org/ocs/providers.xml
 Categories=System Monitor Pages
 XdgTargetDir=plasma-systemmonitor
+RemoveDeadEntries=true
