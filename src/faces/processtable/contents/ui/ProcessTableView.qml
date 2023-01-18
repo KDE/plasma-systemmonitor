@@ -166,7 +166,7 @@ Table.BaseTableView {
                     index = cacheModel.mapToSource(index);
                     index = displayModel.mapToSource(index);
                     index = processModel.index(index.row, processModel.nameColumn, index.parent);
-                    return processModel.data(index);
+                    return processModel.data(index).split(" ")[0].toLowerCase();
                 }
             }
         }
