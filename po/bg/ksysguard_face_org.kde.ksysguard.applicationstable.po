@@ -207,7 +207,3 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 процес"
 msgstr[1] "%1 процеси"
-
-#~ msgctxt "@action:button"
-#~ msgid "Quit"
-#~ msgstr "Изход"
