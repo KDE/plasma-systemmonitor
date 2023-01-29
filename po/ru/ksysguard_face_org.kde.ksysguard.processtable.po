@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021, 2022.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2022-09-20 13:29+0300\n"
+"PO-Revision-Date: 2023-01-28 10:46+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -195,15 +195,13 @@ msgstr[2] "Завершение %1 процессов"
 msgstr[3] "Завершение процесса"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "End Process"
+#, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
-msgstr[0] "Завершить процесс"
-msgstr[1] "Завершить процесс"
-msgstr[2] "Завершить процесс"
+msgstr[0] "Завершить процессы"
+msgstr[1] "Завершить процессы"
+msgstr[2] "Завершить процессы"
 msgstr[3] "Завершить процесс"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
