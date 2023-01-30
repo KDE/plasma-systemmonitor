@@ -10,6 +10,7 @@ SPDX-License-Identifier: CC0-1.0
   <name>Plasma System Monitor</name>
   <name xml:lang="ar">مراقب النظام بلازما</name>
   <name xml:lang="az">Plasma sistem izləyicisi</name>
+  <name xml:lang="be">Сістэмны назіральнік Plasma</name>
   <name xml:lang="bg">Наблюдение на системата на Plasma</name>
   <name xml:lang="ca">Monitor del sistema del Plasma</name>
   <name xml:lang="ca-valencia">Monitor del sistema de Plasma</name>
@@ -49,6 +50,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary>An application for monitoring system resources</summary>
   <summary xml:lang="ar">تطبيق لرصد موارد النظام</summary>
   <summary xml:lang="az">Sistem resurslarını izləmək üçün tətbiq</summary>
+  <summary xml:lang="be">Праграма для назірання за выкарыстаннем сістэмных рэсурсаў</summary>
   <summary xml:lang="bg">Приложение за наблюдение на системните ресурси.</summary>
   <summary xml:lang="ca">Una aplicació per a controlar els recursos del sistema</summary>
   <summary xml:lang="ca-valencia">Una aplicació per a controlar els recursos del sistema</summary>
@@ -83,6 +85,7 @@ SPDX-License-Identifier: CC0-1.0
     <p>Plasma System Monitor provides an interface for monitoring system sensors, process information and other system resources.</p>
     <p xml:lang="ar">يوفر مراقب النظام بلازما واجهة لرصد مستشعرات النظام ومعلومات المعالجة وموارد النظام الأخرى.</p>
     <p xml:lang="az">Plasma sistem izləyicisi sistem sensorlarını izləyən, proseslər və sistem resursları haqqında məlumatları göstərən interfeysi təqdim edir.</p>
+    <p xml:lang="be">Сістэмны назіральнік Plasma забяспечвае інтэрфейсам для назірання за сістэмнымі датчыкамі, працэсамі і іншымі рэсурсамі сістэмы.</p>
     <p xml:lang="bg">Наблюдение на системата на Plasma предоставя интерфейс за следене на системни сензори, информация за процеси и други ресурси.</p>
     <p xml:lang="ca">El Monitor del sistema del Plasma proporciona una interfície per controlar els sensors del sistema, la informació dels processos i altres recursos del sistema.</p>
     <p xml:lang="ca-valencia">El Monitor del sistema de Plasma proporciona una interfície per a controlar els sensors del sistema, la informació dels processos i altres recursos del sistema.</p>
