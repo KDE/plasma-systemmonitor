@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-14 00:58+0000\n"
-"PO-Revision-Date: 2023-01-12 10:32\n"
+"PO-Revision-Date: 2023-02-07 11:06\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,9 +14,9 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/plasma-systemmonitor/ksysguard_face_org."
+"X-Crowdin-File: /kf5-stable/messages/plasma-systemmonitor/ksysguard_face_org."
 "kde.ksysguard.applicationstable.pot\n"
-"X-Crowdin-File-ID: 24460\n"
+"X-Crowdin-File-ID: 24934\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:49
 #, kde-format
@@ -177,9 +177,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "退出 %1 个应用程序"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Quit Application"
+#, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
@@ -201,7 +199,3 @@ msgctxt "@item:intable"
 msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 个进程"
-
-#~ msgctxt "@action:button"
-#~ msgid "Quit"
-#~ msgstr "退出"
