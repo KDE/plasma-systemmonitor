@@ -1,21 +1,21 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Kheyyam Gojayev <xxmn77@gmail.com>, 2020, 2021.
+# Kheyyam Gojayev <xxmn77@gmail.com>, 2020, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2021-05-28 19:45+0400\n"
-"Last-Translator: Kheyyam Gojayev <xxmn77@gmail.com>\n"
+"PO-Revision-Date: 2023-02-18 20:47+0400\n"
+"Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.04.1\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:26
 #, kde-format
@@ -190,14 +190,12 @@ msgstr[0] "Prosesi Sonlandırmaq"
 msgstr[1] "%1 prosesi sonlandırmaq"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:235
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "End Process"
+#, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
-msgstr[0] "Prosesi Sonlandırmaq"
-msgstr[1] "Prosesi Sonlandırmaq"
+msgstr[0] "Prosesi sonlandır"
+msgstr[1] "Prosesləri sonlandır"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format
