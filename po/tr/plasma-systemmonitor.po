@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-29 00:48+0000\n"
-"PO-Revision-Date: 2023-02-04 20:29+0300\n"
+"PO-Revision-Date: 2023-02-26 14:28+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -33,7 +33,7 @@ msgstr "Yeni Sayfa Ekle…"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "Sayfayı İçe Aktar…"
+msgstr "Sayfa İçe Aktar…"
 
 #: src/GlobalMenu.qml:30
 #, kde-format
@@ -200,7 +200,7 @@ msgstr "Geçerli Sayfayı Dışa Aktar…"
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "Sayfayı İçe Aktar…"
+msgstr "Sayfa İçe Aktar…"
 
 #: src/main.qml:91
 #, kde-format
@@ -266,7 +266,7 @@ msgstr "Sistem Monitörü sayfası (*.page)"
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
-msgstr "Sayfayı İçe Aktar"
+msgstr "Sayfa İçe Aktar"
 
 #: src/main.qml:298
 #, kde-format
