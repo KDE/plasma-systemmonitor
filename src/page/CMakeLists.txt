@@ -40,7 +40,7 @@ set(page_QML
 )
 
 add_library(PagePlugin SHARED ${page_SRCS})
-target_link_libraries(PagePlugin Qt::DBus Qt::Quick KF5::ConfigCore KF5::I18n KF5::NewStuffCore KSysGuard::Sensors KSysGuard::SensorFaces)
+target_link_libraries(PagePlugin Qt::DBus Qt::Quick KF6::ConfigCore KF6::I18n KF6::NewStuffCore KSysGuard::Sensors KSysGuard::SensorFaces)
 
 install(TARGETS PagePlugin DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/page)
 install(FILES qmldir ${page_QML} DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/page)

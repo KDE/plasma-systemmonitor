@@ -6,10 +6,10 @@ set(PROJECT_VERSION "5.27.80")
 set(PROJECT_VERSION_MAJOR 5)
 
 set(QT_MIN_VERSION "6.4.0")
-set(KF5_MIN_VERSION "5.240.0")
+set(KF6_MIN_VERSION "5.240.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
-find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
@@ -25,7 +25,7 @@ include(ECMDeprecationSettings)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS Quick Widgets DBus)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS I18n Config Declarative Service GlobalAccel KIO DBusAddons NewStuffQuick ItemModels WindowSystem)
+find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS I18n Config Declarative Service GlobalAccel KIO DBusAddons NewStuffQuick ItemModels WindowSystem Package)
 find_package(KSysGuard ${PROJECT_VERSION})
 set_package_properties(KSysGuard PROPERTIES
     TYPE REQUIRED
@@ -42,8 +42,8 @@ find_package(Qt${QT_MAJOR_VERSION}QuickControls2  ${QT_MIN_VERSION})
 set_package_properties(Qt${QT_MAJOR_VERSION}QuickControls2 PROPERTIES
     TYPE RUNTIME
 )
-find_package(KF5Kirigami2  ${KF5_MIN_VERSION})
-set_package_properties(KF5Kirigami2 PROPERTIES
+find_package(KF6Kirigami2  ${KF6_MIN_VERSION})
+set_package_properties(KF6Kirigami2 PROPERTIES
     TYPE RUNTIME
 )
 ecm_find_qmlmodule(Qt.labs.qmlmodels 1.0)

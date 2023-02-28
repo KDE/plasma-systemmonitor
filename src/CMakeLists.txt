@@ -22,14 +22,14 @@ target_link_libraries(plasma-systemmonitor
     Qt::Quick
     Qt::Widgets
     Qt::DBus
-    KF5::I18n
-    KF5::ConfigGui
-    KF5::Declarative
-    KF5::Service
-    KF5::KIOGui
-    KF5::GlobalAccel
-    KF5::DBusAddons
-    KF5::WindowSystem
+    KF6::I18n
+    KF6::ConfigGui
+    KF6::Declarative
+    KF6::Service
+    KF6::KIOGui
+    KF6::GlobalAccel
+    KF6::DBusAddons
+    KF6::WindowSystem
 )
 
 install(TARGETS plasma-systemmonitor DESTINATION ${KDE_INSTALL_BINDIR})

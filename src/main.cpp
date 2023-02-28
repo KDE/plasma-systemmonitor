@@ -17,7 +17,6 @@
 
 #include <KAboutData>
 #include <KDBusService>
-#include <KDeclarative/KDeclarative>
 #include <KLocalizedString>
 #include <KWindowSystem>
 
