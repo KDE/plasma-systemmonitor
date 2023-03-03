@@ -8,9 +8,10 @@
 
 #include <QAbstractListModel>
 #include <QQmlParserStatus>
-#include <memory>
 
-class QQmlListReference;
+#include <KNSCore/Entry>
+
+#include <memory>
 
 class PageDataObject;
 
@@ -55,8 +56,7 @@ public:
     Q_INVOKABLE PageDataObject *addPage(const QString &fileName, const QVariantMap &properties = QVariantMap{});
     Q_INVOKABLE PageDataObject *importPage(const QUrl &file);
     Q_INVOKABLE void removeLocalPageFiles(const QString &fileName);
-    Q_INVOKABLE void ghnsEntriesChanged(const QQmlListReference &changedEntries);
-    Q_INVOKABLE void ghnsEntryStatusChanged(QObject *entry);
+    Q_INVOKABLE void ghnsEntryStatusChanged(const KNSCore::Entry &entry);
 
     QStringList pageOrder() const;
     void setPageOrder(const QStringList &pageOrder);

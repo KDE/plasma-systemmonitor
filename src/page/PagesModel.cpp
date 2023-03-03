@@ -12,7 +12,7 @@
 
 #include <KConfig>
 #include <KConfigGroup>
-#include <KNSCore/EntryWrapper>
+#include <KNSCore/Entry>
 
 #include "PageDataObject.h"
 
@@ -256,22 +256,14 @@ void PagesModel::removeLocalPageFiles(const QString &fileName)
     }
 }
 
-void PagesModel::ghnsEntriesChanged(const QQmlListReference &changedEntries)
+void PagesModel::ghnsEntryStatusChanged(const KNSCore::Entry &entry)
 {
-    for (int i = 0; i < changedEntries.count(); ++i) {
-        ghnsEntryStatusChanged(changedEntries.at(i));
-    }
-}
-
-void PagesModel::ghnsEntryStatusChanged(QObject *entry)
-{
-    const auto wrapper = qobject_cast<KNSCore::EntryWrapper *>(entry);
-    if (!wrapper) {
+    if (!entry.isValid()) {
         return;
     }
 
-    if (wrapper->entry().status() == KNS3::Entry::Installed) {
-        const auto files = wrapper->entry().installedFiles();
+    if (entry.status() == KNSCore::Entry::Installed) {
+        const auto files = entry.installedFiles();
         for (const auto &file : files) {
             const QString fileName = QUrl::fromLocalFile(file).fileName();
             if (fileName.endsWith(QLatin1String(".page"))) {
@@ -289,8 +281,8 @@ void PagesModel::ghnsEntryStatusChanged(QObject *entry)
                 }
             }
         }
-    } else if (wrapper->entry().status() == KNS3::Entry::Deleted) {
-        const auto files = wrapper->entry().uninstalledFiles();
+    } else if (entry.status() == KNSCore::Entry::Deleted) {
+        const auto files = entry.uninstalledFiles();
         for (const auto &file : files) {
             const QString fileName = QUrl::fromLocalFile(file).fileName();
             if (fileName.endsWith(QLatin1String(".page"))) {
