@@ -74,7 +74,6 @@ Dialog {
                     Kirigami.AbstractListItem {
                         id: listItem
                         readonly property string title: model ? model.title : ""
-                        readonly property string icon: model ? model.icon : ""
                         //Using directly model.hidden below doesn't work for some reason
                         readonly property bool hidden: model ? model.hidden : false
                         readonly property var filesWritable: model ? model.filesWriteable : false
@@ -106,7 +105,7 @@ Dialog {
                             Kirigami.Icon {
                                 Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
                                 Layout.preferredHeight: Layout.preferredWidth
-                                source: listItem.icon
+                                source: model ? model.icon : ""
                                 opacity: listItem.hidden ? 0.3 : 1
                             }
                             ColumnLayout {

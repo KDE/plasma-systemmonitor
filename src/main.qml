@@ -4,9 +4,10 @@
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
+import QtCore
 import QtQuick 2.12
 import QtQuick.Controls 2.12
-import QtQuick.Dialogs 1.3
+import QtQuick.Dialogs
 import QtQuick.Layouts 1.12
 import QtQuick.Window 2.12
 
@@ -249,24 +250,23 @@ Kirigami.ApplicationWindow {
     Page.DialogLoader {
         id: exportDialog
         sourceComponent: FileDialog {
-            selectExisting: false
-            folder: shortcuts.home
+            fileMode: FileDialog.SaveFile
+            currentFolder: StandardPaths.standardLocations(StandardPaths.HomeLocation)[0]
             title: i18nc("@title:window %1 is the name of the page that is being exported", "Export %1", app.pageStack.currentItem.title)
             defaultSuffix: "page"
             nameFilters: [i18nc("Name filter in file dialog", "System Monitor page (*.page)")]
-            onAccepted: app.pageStack.currentItem.pageData.saveAs(fileUrl)
+            onAccepted: app.pageStack.currentItem.pageData.saveAs(selectedFile)
         }
     }
     Page.DialogLoader {
         id: importDialog
         sourceComponent: FileDialog {
-            selectExisting: true
-            folder: shortcuts.home
+            currentFolder: StandardPaths.standardLocations(StandardPaths.HomeLocation)[0]
             title: i18nc("@title:window", "Import Page")
             defaultSuffix: "page"
             nameFilters: [i18nc("Name filter in file dialog", "System Monitor page (*.page)")]
             onAccepted: {
-                const newPage = pagesModel.importPage(fileUrl)
+                const newPage = pagesModel.importPage(selectedFile)
                 if (!newPage) {
                     return;
                 }
