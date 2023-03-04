@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:48+0000\n"
+"POT-Creation-Date: 2023-03-04 02:12+0000\n"
 "PO-Revision-Date: 2023-01-24 13:01\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -105,162 +105,162 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "Пра сістэмны назіральнік"
 
-#: src/main.cpp:110
+#: src/main.cpp:109
 #, kde-format
 msgid "System Monitor"
 msgstr "Сістэмны назіральнік"
 
-#: src/main.cpp:112
+#: src/main.cpp:111
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "Праграма для назірання за выкарыстаннем сістэмных рэсурсаў"
 
-#: src/main.cpp:114
+#: src/main.cpp:113
 #, kde-format
 msgid "© 2020 Plasma Development Team"
 msgstr "© 2020 Каманда распрацоўвання Plasma"
 
-#: src/main.cpp:120
+#: src/main.cpp:119
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "Arjen Hiemstra"
 
-#: src/main.cpp:120 src/main.cpp:123 src/main.cpp:125 src/main.cpp:126
+#: src/main.cpp:119 src/main.cpp:122 src/main.cpp:124 src/main.cpp:125
 #, kde-format
 msgid "Development"
 msgstr "Распрацоўванне"
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Uri Herrera"
 msgstr "Uri Herrera"
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Design"
 msgstr "Дызайн"
 
-#: src/main.cpp:122
+#: src/main.cpp:121
 #, kde-format
 msgid "Nate Graham"
 msgstr "Nate Graham"
 
-#: src/main.cpp:122 src/main.cpp:124
+#: src/main.cpp:121 src/main.cpp:123
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "Дызайн і забеспячэнне якасці"
 
-#: src/main.cpp:123
+#: src/main.cpp:122
 #, kde-format
 msgid "David Redondo"
 msgstr "David Redondo"
 
-#: src/main.cpp:124
+#: src/main.cpp:123
 #, kde-format
 msgid "Noah Davis"
 msgstr "Noah Davis"
 
-#: src/main.cpp:125
+#: src/main.cpp:124
 #, kde-format
 msgid "Marco Martin"
 msgstr "Marco Martin"
 
-#: src/main.cpp:126
+#: src/main.cpp:125
 #, kde-format
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Antikruk"
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "nashtlumach@gmail.com"
 
-#: src/main.qml:68
+#: src/main.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Інструменты"
 
-#: src/main.qml:74
+#: src/main.qml:75
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Рэдагаваць або выдаліць старонкі…"
 
-#: src/main.qml:79
+#: src/main.qml:80
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Экспартаваць бягучую старонку…"
 
-#: src/main.qml:86
+#: src/main.qml:87
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Імпартаваць старонку…"
 
-#: src/main.qml:91
+#: src/main.qml:92
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Атрымаць новыя старонкі…"
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Разгарнуць бакавую панэль"
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Згарнуць бакавую панэль"
 
-#: src/main.qml:111
+#: src/main.qml:112
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Паведаміць пра хібу…"
 
-#: src/main.qml:116
+#: src/main.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "Пра сістэмны назіральнік"
 
-#: src/main.qml:141
+#: src/main.qml:142
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Дадаць новую старонку…"
 
-#: src/main.qml:210
+#: src/main.qml:211
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Дадаць новую старонку"
 
-#: src/main.qml:231
+#: src/main.qml:232
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Рэдагаваць старонкі"
 
-#: src/main.qml:254
+#: src/main.qml:255
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Экспартаваць %1"
 
-#: src/main.qml:256 src/main.qml:267
+#: src/main.qml:257 src/main.qml:267
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
@@ -594,61 +594,61 @@ msgstr "Падчас запуску праграмы"
 msgid "New Title"
 msgstr "Новая назва"
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:100
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Паказваць старонку"
 
-#: src/page/PageSortDialog.qml:102
+#: src/page/PageSortDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Схаваць старонку"
 
-#: src/page/PageSortDialog.qml:149
+#: src/page/PageSortDialog.qml:148
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Не скідаць гэтую старонку"
 
-#: src/page/PageSortDialog.qml:153
+#: src/page/PageSortDialog.qml:152
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Гэтая старонка будзе скінутая да прадвызначанага стану"
 
-#: src/page/PageSortDialog.qml:162
+#: src/page/PageSortDialog.qml:161
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Скінуць гэтую старонку да прадвызначанага стану"
 
-#: src/page/PageSortDialog.qml:171
+#: src/page/PageSortDialog.qml:170
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Не выдаляць гэтую старонку"
 
-#: src/page/PageSortDialog.qml:175
+#: src/page/PageSortDialog.qml:174
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Гэтая старонка будзе выдаленая"
 
-#: src/page/PageSortDialog.qml:188
+#: src/page/PageSortDialog.qml:187
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Выдаліць гэтую старонку"
 
-#: src/page/PageSortDialog.qml:207
+#: src/page/PageSortDialog.qml:206
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Пачынаць з:"
 
-#: src/page/PageSortDialog.qml:216
+#: src/page/PageSortDialog.qml:215
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Апошняя наведаная старонка"

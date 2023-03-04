@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:48+0000\n"
+"POT-Creation-Date: 2023-03-04 02:12+0000\n"
 "PO-Revision-Date: 2022-06-16 19:53+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -101,162 +101,162 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "கணினி நோட்டம் பற்றி"
 
-#: src/main.cpp:110
+#: src/main.cpp:109
 #, kde-format
 msgid "System Monitor"
 msgstr "கணினி நோட்டம்"
 
-#: src/main.cpp:112
+#: src/main.cpp:111
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "கணினியின் வசதிகளின் பயன்பாட்டை கண்காணிக்க உதவும் செயலி"
 
-#: src/main.cpp:114
+#: src/main.cpp:113
 #, kde-format
 msgid "© 2020 Plasma Development Team"
 msgstr "© 2020 பிளாஸ்மா நிரலாக்க குழு"
 
-#: src/main.cpp:120
+#: src/main.cpp:119
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "ஆர்ஜென் ஹைம்ஸ்டிரா"
 
-#: src/main.cpp:120 src/main.cpp:123 src/main.cpp:125 src/main.cpp:126
+#: src/main.cpp:119 src/main.cpp:122 src/main.cpp:124 src/main.cpp:125
 #, kde-format
 msgid "Development"
 msgstr "உருவாக்கம்"
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Uri Herrera"
 msgstr "ஊரி ஹெறெரா"
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Design"
 msgstr "வடிவமைப்பு"
 
-#: src/main.cpp:122
+#: src/main.cpp:121
 #, kde-format
 msgid "Nate Graham"
 msgstr "நேட் கிரஹாம்"
 
-#: src/main.cpp:122 src/main.cpp:124
+#: src/main.cpp:121 src/main.cpp:123
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "வடிவமைப்பும் தரத்தை உறுதி செய்வதும்"
 
-#: src/main.cpp:123
+#: src/main.cpp:122
 #, kde-format
 msgid "David Redondo"
 msgstr "டேவிட் ரிடொண்டோ"
 
-#: src/main.cpp:124
+#: src/main.cpp:123
 #, kde-format
 msgid "Noah Davis"
 msgstr "நோவா டேவிசு"
 
-#: src/main.cpp:125
+#: src/main.cpp:124
 #, kde-format
 msgid "Marco Martin"
 msgstr "மார்க்கோ மார்ட்டின்"
 
-#: src/main.cpp:126
+#: src/main.cpp:125
 #, kde-format
 msgid "David Edmundson"
 msgstr "டேவிட் எட்மண்டுஸன்"
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "கோ. கிஷோர்"
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Kde-l10n-ta@kde.org"
 
-#: src/main.qml:68
+#: src/main.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "கருவிகள்"
 
-#: src/main.qml:74
+#: src/main.qml:75
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "பக்கங்களை திருத்து அல்லது நீக்கு…"
 
-#: src/main.qml:79
+#: src/main.qml:80
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "தற்போதைய பக்கத்தை ஏற்றுமதி செய்…"
 
-#: src/main.qml:86
+#: src/main.qml:87
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "பக்கத்தை இறக்குமதி செய்…"
 
-#: src/main.qml:91
+#: src/main.qml:92
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "புதிய பக்கங்களை பெறு…"
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "பக்கப்பட்டையை விரி"
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "பக்கப்பட்டையை சுருக்கு"
 
-#: src/main.qml:111
+#: src/main.qml:112
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "பிழையை தெரிவி…"
 
-#: src/main.qml:116
+#: src/main.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "கணினி நோட்டம் பற்றி"
 
-#: src/main.qml:141
+#: src/main.qml:142
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "புதிய பக்கத்தை சேர்…"
 
-#: src/main.qml:210
+#: src/main.qml:211
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "புதிய பக்கத்தை சேர்"
 
-#: src/main.qml:231
+#: src/main.qml:232
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "பக்கங்களை திருத்துதல்"
 
-#: src/main.qml:254
+#: src/main.qml:255
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "%1 தனை ஏற்றுமதி செய்"
 
-#: src/main.qml:256 src/main.qml:267
+#: src/main.qml:257 src/main.qml:267
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
@@ -585,61 +585,61 @@ msgstr "செயலியை துவக்கும்போது"
 msgid "New Title"
 msgstr "புதிய தலைப்பு"
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:100
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "பக்கத்தை காட்டு"
 
-#: src/page/PageSortDialog.qml:102
+#: src/page/PageSortDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "பக்கத்தை மறை"
 
-#: src/page/PageSortDialog.qml:149
+#: src/page/PageSortDialog.qml:148
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "பக்கத்தை மீட்டமைக்காதே"
 
-#: src/page/PageSortDialog.qml:153
+#: src/page/PageSortDialog.qml:152
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "பக்கம், அதன் இயல்பிருப்பு நிலைக்கு மாற்றப்படும்"
 
-#: src/page/PageSortDialog.qml:162
+#: src/page/PageSortDialog.qml:161
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "பக்கத்தை இயல்பிருப்பு நிலைக்கு மீட்டமை"
 
-#: src/page/PageSortDialog.qml:171
+#: src/page/PageSortDialog.qml:170
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "இப்பக்கத்தை நீக்காதே"
 
-#: src/page/PageSortDialog.qml:175
+#: src/page/PageSortDialog.qml:174
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "இப்பக்கம் நீக்கப்படும்"
 
-#: src/page/PageSortDialog.qml:188
+#: src/page/PageSortDialog.qml:187
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "இப்பக்கத்தை நீக்கு"
 
-#: src/page/PageSortDialog.qml:207
+#: src/page/PageSortDialog.qml:206
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "தொடங்கும்போது இதை காட்டு:"
 
-#: src/page/PageSortDialog.qml:216
+#: src/page/PageSortDialog.qml:215
 #, kde-format
 msgid "Last Visited Page"
 msgstr "கடைசியாக பார்த்த பக்கம்"

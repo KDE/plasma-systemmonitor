@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:48+0000\n"
+"POT-Creation-Date: 2023-03-04 02:12+0000\n"
 "PO-Revision-Date: 2022-06-18 14:51+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -104,162 +104,162 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "Om systemovervaking"
 
-#: src/main.cpp:110
+#: src/main.cpp:109
 #, kde-format
 msgid "System Monitor"
 msgstr "Systemovervaking"
 
-#: src/main.cpp:112
+#: src/main.cpp:111
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "Program for overvaking av systemressursar"
 
-#: src/main.cpp:114
+#: src/main.cpp:113
 #, kde-format
 msgid "© 2020 Plasma Development Team"
 msgstr "© 2020 Utviklingslaget for Plasma"
 
-#: src/main.cpp:120
+#: src/main.cpp:119
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "Arjen Hiemstra"
 
-#: src/main.cpp:120 src/main.cpp:123 src/main.cpp:125 src/main.cpp:126
+#: src/main.cpp:119 src/main.cpp:122 src/main.cpp:124 src/main.cpp:125
 #, kde-format
 msgid "Development"
 msgstr "Utvikling"
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Uri Herrera"
 msgstr "Uri Herrera"
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Design"
 msgstr "Design"
 
-#: src/main.cpp:122
+#: src/main.cpp:121
 #, kde-format
 msgid "Nate Graham"
 msgstr "Nate Graham"
 
-#: src/main.cpp:122 src/main.cpp:124
+#: src/main.cpp:121 src/main.cpp:123
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "Design og kvalitetskontroll"
 
-#: src/main.cpp:123
+#: src/main.cpp:122
 #, kde-format
 msgid "David Redondo"
 msgstr "David Redondo"
 
-#: src/main.cpp:124
+#: src/main.cpp:123
 #, kde-format
 msgid "Noah Davis"
 msgstr "Noah Davis"
 
-#: src/main.cpp:125
+#: src/main.cpp:124
 #, kde-format
 msgid "Marco Martin"
 msgstr "Marco Martin"
 
-#: src/main.cpp:126
+#: src/main.cpp:125
 #, kde-format
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Karl Ove Hufthammer"
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "karl@huftis.org"
 
-#: src/main.qml:68
+#: src/main.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Verktøy"
 
-#: src/main.qml:74
+#: src/main.qml:75
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Rediger eller fjern sider …"
 
-#: src/main.qml:79
+#: src/main.qml:80
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Eksporter gjeldande side …"
 
-#: src/main.qml:86
+#: src/main.qml:87
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Importer side …"
 
-#: src/main.qml:91
+#: src/main.qml:92
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Hent nye sider …"
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Utvid sidestolpe"
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Fald saman sidestolpe"
 
-#: src/main.qml:111
+#: src/main.qml:112
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Meld frå om feil …"
 
-#: src/main.qml:116
+#: src/main.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "Om systemovervaking"
 
-#: src/main.qml:141
+#: src/main.qml:142
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Legg til ny side …"
 
-#: src/main.qml:210
+#: src/main.qml:211
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Legg til ny side"
 
-#: src/main.qml:231
+#: src/main.qml:232
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Rediger sider"
 
-#: src/main.qml:254
+#: src/main.qml:255
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Eksporter %1"
 
-#: src/main.qml:256 src/main.qml:267
+#: src/main.qml:257 src/main.qml:267
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
@@ -591,61 +591,61 @@ msgstr "Ved programstart"
 msgid "New Title"
 msgstr "Ny tittel"
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:100
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Vis side"
 
-#: src/page/PageSortDialog.qml:102
+#: src/page/PageSortDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Gøym side"
 
-#: src/page/PageSortDialog.qml:149
+#: src/page/PageSortDialog.qml:148
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Ikkje tilbakestill sida"
 
-#: src/page/PageSortDialog.qml:153
+#: src/page/PageSortDialog.qml:152
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Sida vert stilt tilbake til standardtilstand"
 
-#: src/page/PageSortDialog.qml:162
+#: src/page/PageSortDialog.qml:161
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Tilbakestill sida til standardtilstand"
 
-#: src/page/PageSortDialog.qml:171
+#: src/page/PageSortDialog.qml:170
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Ikkje fjern denne sida"
 
-#: src/page/PageSortDialog.qml:175
+#: src/page/PageSortDialog.qml:174
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Sida vert fjerna"
 
-#: src/page/PageSortDialog.qml:188
+#: src/page/PageSortDialog.qml:187
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Fjern denne sida"
 
-#: src/page/PageSortDialog.qml:207
+#: src/page/PageSortDialog.qml:206
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Start med:"
 
-#: src/page/PageSortDialog.qml:216
+#: src/page/PageSortDialog.qml:215
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Siste vitja side"

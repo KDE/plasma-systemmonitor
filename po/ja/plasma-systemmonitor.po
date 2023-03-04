@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:48+0000\n"
+"POT-Creation-Date: 2023-03-04 02:12+0000\n"
 "PO-Revision-Date: 2021-09-24 21:59+0900\n"
 "Last-Translator: Tomohiro Hyakutake <tomhioo@outlook.jp>\n"
 "Language-Team: Japanese <kde-i18n-doc@kde.org>\n"
@@ -100,162 +100,162 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "システムモニタについて"
 
-#: src/main.cpp:110
+#: src/main.cpp:109
 #, kde-format
 msgid "System Monitor"
 msgstr ""
 
-#: src/main.cpp:112
+#: src/main.cpp:111
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "システムリソース監視アプリケーション"
 
-#: src/main.cpp:114
+#: src/main.cpp:113
 #, kde-format
 msgid "© 2020 Plasma Development Team"
 msgstr ""
 
-#: src/main.cpp:120
+#: src/main.cpp:119
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr ""
 
-#: src/main.cpp:120 src/main.cpp:123 src/main.cpp:125 src/main.cpp:126
+#: src/main.cpp:119 src/main.cpp:122 src/main.cpp:124 src/main.cpp:125
 #, kde-format
 msgid "Development"
 msgstr "開発"
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Uri Herrera"
 msgstr ""
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Design"
 msgstr "デザイン"
 
-#: src/main.cpp:122
+#: src/main.cpp:121
 #, kde-format
 msgid "Nate Graham"
 msgstr ""
 
-#: src/main.cpp:122 src/main.cpp:124
+#: src/main.cpp:121 src/main.cpp:123
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "デザインと品質保証"
 
-#: src/main.cpp:123
+#: src/main.cpp:122
 #, kde-format
 msgid "David Redondo"
 msgstr ""
 
-#: src/main.cpp:124
+#: src/main.cpp:123
 #, kde-format
 msgid "Noah Davis"
 msgstr ""
 
-#: src/main.cpp:125
+#: src/main.cpp:124
 #, kde-format
 msgid "Marco Martin"
 msgstr ""
 
-#: src/main.cpp:126
+#: src/main.cpp:125
 #, kde-format
 msgid "David Edmundson"
 msgstr ""
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 
-#: src/main.qml:68
+#: src/main.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "ツール"
 
-#: src/main.qml:74
+#: src/main.qml:75
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "ページを編集または削除…"
 
-#: src/main.qml:79
+#: src/main.qml:80
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "現在のページをエクスポート…"
 
-#: src/main.qml:86
+#: src/main.qml:87
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "ページをインポート…"
 
-#: src/main.qml:91
+#: src/main.qml:92
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "新しいページを取得…"
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr ""
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "サイドバーを折りたたむ"
 
-#: src/main.qml:111
+#: src/main.qml:112
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "バグを報告…"
 
-#: src/main.qml:116
+#: src/main.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "システムモニタについて"
 
-#: src/main.qml:141
+#: src/main.qml:142
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "新しいページを追加…"
 
-#: src/main.qml:210
+#: src/main.qml:211
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "新しいページを追加"
 
-#: src/main.qml:231
+#: src/main.qml:232
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "ページを編集"
 
-#: src/main.qml:254
+#: src/main.qml:255
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr ""
 
-#: src/main.qml:256 src/main.qml:267
+#: src/main.qml:257 src/main.qml:267
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
@@ -584,61 +584,61 @@ msgstr ""
 msgid "New Title"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:100
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:102
+#: src/page/PageSortDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:149
+#: src/page/PageSortDialog.qml:148
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:153
+#: src/page/PageSortDialog.qml:152
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:162
+#: src/page/PageSortDialog.qml:161
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:171
+#: src/page/PageSortDialog.qml:170
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:175
+#: src/page/PageSortDialog.qml:174
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:188
+#: src/page/PageSortDialog.qml:187
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:207
+#: src/page/PageSortDialog.qml:206
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:216
+#: src/page/PageSortDialog.qml:215
 #, kde-format
 msgid "Last Visited Page"
 msgstr ""

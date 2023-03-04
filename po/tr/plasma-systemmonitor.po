@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:48+0000\n"
+"POT-Creation-Date: 2023-03-04 02:12+0000\n"
 "PO-Revision-Date: 2023-02-26 14:28+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -101,162 +101,162 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "Sistem Monitörü Hakkında"
 
-#: src/main.cpp:110
+#: src/main.cpp:109
 #, kde-format
 msgid "System Monitor"
 msgstr "Sistem Monitörü"
 
-#: src/main.cpp:112
+#: src/main.cpp:111
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "Sistem özkaynaklarını izlemek için bir uygulama"
 
-#: src/main.cpp:114
+#: src/main.cpp:113
 #, kde-format
 msgid "© 2020 Plasma Development Team"
 msgstr "© Plasma Geliştirme Takımı"
 
-#: src/main.cpp:120
+#: src/main.cpp:119
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "Arjen Hiemstra"
 
-#: src/main.cpp:120 src/main.cpp:123 src/main.cpp:125 src/main.cpp:126
+#: src/main.cpp:119 src/main.cpp:122 src/main.cpp:124 src/main.cpp:125
 #, kde-format
 msgid "Development"
 msgstr "Geliştirme"
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Uri Herrera"
 msgstr "Uri Herrera"
 
-#: src/main.cpp:121
+#: src/main.cpp:120
 #, kde-format
 msgid "Design"
 msgstr "Tasarım"
 
-#: src/main.cpp:122
+#: src/main.cpp:121
 #, kde-format
 msgid "Nate Graham"
 msgstr "Nate Graham"
 
-#: src/main.cpp:122 src/main.cpp:124
+#: src/main.cpp:121 src/main.cpp:123
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "Tasarım ve Kalite Denetim"
 
-#: src/main.cpp:123
+#: src/main.cpp:122
 #, kde-format
 msgid "David Redondo"
 msgstr "David Redondo"
 
-#: src/main.cpp:124
+#: src/main.cpp:123
 #, kde-format
 msgid "Noah Davis"
 msgstr "Noah Davis"
 
-#: src/main.cpp:125
+#: src/main.cpp:124
 #, kde-format
 msgid "Marco Martin"
 msgstr "Marco Martin"
 
-#: src/main.cpp:126
+#: src/main.cpp:125
 #, kde-format
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Emir SARI"
 
-#: src/main.cpp:128
+#: src/main.cpp:127
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "emir_sari@icloud.com"
 
-#: src/main.qml:68
+#: src/main.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Araçlar"
 
-#: src/main.qml:74
+#: src/main.qml:75
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Sayfaları Düzenle veya Kaldır…"
 
-#: src/main.qml:79
+#: src/main.qml:80
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Geçerli Sayfayı Dışa Aktar…"
 
-#: src/main.qml:86
+#: src/main.qml:87
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Sayfa İçe Aktar…"
 
-#: src/main.qml:91
+#: src/main.qml:92
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Yeni Sayfalar Al…"
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Kenar Çubuğunu Genişlet"
 
-#: src/main.qml:103
+#: src/main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Kenar Çubuğunu Daralt"
 
-#: src/main.qml:111
+#: src/main.qml:112
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Hata Bildir…"
 
-#: src/main.qml:116
+#: src/main.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "Sistem Monitörü Hakkında"
 
-#: src/main.qml:141
+#: src/main.qml:142
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Yeni Sayfa Ekle…"
 
-#: src/main.qml:210
+#: src/main.qml:211
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Yeni Sayfa Ekle"
 
-#: src/main.qml:231
+#: src/main.qml:232
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Sayfaları Düzenle"
 
-#: src/main.qml:254
+#: src/main.qml:255
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Dışa Aktar: %1"
 
-#: src/main.qml:256 src/main.qml:267
+#: src/main.qml:257 src/main.qml:267
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
@@ -588,61 +588,61 @@ msgstr "Uygulama başlangıcında"
 msgid "New Title"
 msgstr "Yeni Başlık"
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:100
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Sayfayı Göster"
 
-#: src/page/PageSortDialog.qml:102
+#: src/page/PageSortDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Sayfayı Gizle"
 
-#: src/page/PageSortDialog.qml:149
+#: src/page/PageSortDialog.qml:148
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Sayfayı sıfırlama"
 
-#: src/page/PageSortDialog.qml:153
+#: src/page/PageSortDialog.qml:152
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Sayfa, öntanımlı durumuna sıfırlanacak"
 
-#: src/page/PageSortDialog.qml:162
+#: src/page/PageSortDialog.qml:161
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Sayfayı öntanımlı durumuna sıfırla"
 
-#: src/page/PageSortDialog.qml:171
+#: src/page/PageSortDialog.qml:170
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Bu sayfayı kaldırma"
 
-#: src/page/PageSortDialog.qml:175
+#: src/page/PageSortDialog.qml:174
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Bu sayfa kaldırılacak"
 
-#: src/page/PageSortDialog.qml:188
+#: src/page/PageSortDialog.qml:187
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Bu sayfayı kaldır"
 
-#: src/page/PageSortDialog.qml:207
+#: src/page/PageSortDialog.qml:206
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Şununla başla:"
 
-#: src/page/PageSortDialog.qml:216
+#: src/page/PageSortDialog.qml:215
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Son Ziyaret Edilen Sayfa"
