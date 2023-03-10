@@ -109,7 +109,7 @@ msgstr "Monitor Systému"
 #: src/main.cpp:112
 #, kde-format
 msgid "An application for monitoring system resources"
-msgstr ""
+msgstr "Aplikace pro monitorování systémových prostředků"
 
 #: src/main.cpp:114
 #, kde-format
