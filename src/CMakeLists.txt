@@ -24,7 +24,6 @@ target_link_libraries(plasma-systemmonitor
     Qt::DBus
     KF6::I18n
     KF6::ConfigGui
-    KF6::Declarative
     KF6::Service
     KF6::KIOGui
     KF6::GlobalAccel
