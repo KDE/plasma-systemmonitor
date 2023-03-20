@@ -18,5 +18,7 @@ Dependencies:
     'frameworks/kservice': '@latest-kf6'
     'frameworks/kwindowsystem': '@latest-kf6'
     'plasma/libksysguard': '@same'
+runtime-dependencies:
+    'frameworks/kiconthemes': '@latest-kf6' # IconDialog
 Options:
   require-passing-tests-on: [ 'Linux', 'FreeBSD']

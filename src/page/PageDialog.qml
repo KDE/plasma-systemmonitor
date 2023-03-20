@@ -10,7 +10,7 @@ import QtQuick.Layouts 1.14
 
 import org.kde.kirigami 2.12 as Kirigami
 import org.kde.kitemmodels 1.0 as KItemModels
-import org.kde.kquickcontrolsaddons 2.0 as Addons
+import org.kde.iconthemes as KIconThemes
 
 import org.kde.ksysguard.page 1.0
 
@@ -157,7 +157,7 @@ Dialog {
 
         Kirigami.Separator { anchors { left: parent.left; right: parent.right; bottom: parent.bottom } }
 
-        Addons.IconDialog {
+        KIconThemes.IconDialog {
             id: iconDialog;
             iconSize: Kirigami.Units.iconSizes.smallMedium
             onIconNameChanged: dialog.iconName = iconName

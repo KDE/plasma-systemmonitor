@@ -18,6 +18,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 include(ECMInstallIcons)
 include(ECMFindQmlModule)
+include(ECMFindQmlModule)
 include(FeatureSummary)
 include(KDEGitCommitHooks)
 include(ECMDeprecationSettings)
@@ -47,6 +48,7 @@ set_package_properties(KF6Kirigami2 PROPERTIES
     TYPE RUNTIME
 )
 ecm_find_qmlmodule(Qt.labs.qmlmodels 1.0)
+ecm_find_qmlmodule(org.kde.iconthemes 1.0)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
