@@ -11,7 +11,7 @@
 
 #include <KLocalizedString>
 
-#include <ksysguard/faces/SensorFaceController.h>
+#include <faces/SensorFaceController.h>
 
 #include "FaceLoader.h"
 #include "PageDataObject.h"
