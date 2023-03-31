@@ -1,19 +1,20 @@
 # translation of plasma-systemmonitor.po to Slovak
 # Roman Paholík <wizzardsk@gmail.com>, 2020, 2023.
 # Matej Mrenica <matejm98mthw@gmail.com>, 2020, 2021, 2022.
+# Ferdinand Galko <galko.ferdinand@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-04 02:12+0000\n"
-"PO-Revision-Date: 2023-03-11 16:30+0100\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
-"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"PO-Revision-Date: 2023-03-30 18:12+0200\n"
+"Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
+"Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 21.12.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: src/GlobalMenu.qml:15
@@ -113,7 +114,7 @@ msgstr "Aplikácia na sledovanie systémových zdrojov"
 #: src/main.cpp:113
 #, kde-format
 msgid "© 2020 Plasma Development Team"
-msgstr "© 2010-2019 Vývojový tím Plasma"
+msgstr "© 2020 Vývojový tím Plasma"
 
 #: src/main.cpp:119
 #, kde-format
@@ -485,7 +486,7 @@ msgstr "Zrušiť"
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
-msgstr ""
+msgstr "Nahradenie chýbajúcich senzorov"
 
 #: src/page/MoveButton.qml:23
 #, kde-format
@@ -496,7 +497,7 @@ msgstr "Presunúť"
 #: src/page/PageContents.qml:100 src/page/PageEditor.qml:131
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
-msgstr ""
+msgstr "Na tejto stránke chýbajú niektoré senzory a nezobrazí sa korektne."
 
 #: src/page/PageContents.qml:104 src/page/PageEditor.qml:135
 #, kde-format

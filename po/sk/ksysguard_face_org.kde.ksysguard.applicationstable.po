@@ -1,14 +1,15 @@
 # translation of ksysguard_face_org.kde.ksysguard.applicationstable.po to Slovak
 # Roman Paholík <wizzardsk@gmail.com>, 2020, 2022.
 # Matej Mrenica <matejm98mthw@gmail.com>, 2020, 2021.
+# Ferdinand Galko <galko.ferdinand@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-14 00:58+0000\n"
-"PO-Revision-Date: 2022-04-09 19:24+0200\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
-"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"PO-Revision-Date: 2023-03-30 18:05+0200\n"
+"Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
+"Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -179,15 +180,13 @@ msgstr[1] "Ukončiť %1 aplikácie"
 msgstr[2] "Ukončiť %1 aplikácií"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Quit Application"
+#, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
 msgstr[0] "Ukončiť aplikáciu"
-msgstr[1] "Ukončiť aplikáciu"
-msgstr[2] "Ukončiť aplikáciu"
+msgstr[1] "Ukončiť aplikácie"
+msgstr[2] "Ukončiť aplikácie"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
