@@ -250,8 +250,8 @@ Faces.SensorFace {
         items: table.selectedApplications
 
         delegate: Kirigami.BasicListItem {
-            icon: modelData.iconName
-            iconSize:  Kirigami.Units.iconSizes.large
+            icon.name: modelData.iconName
+            iconSize: Kirigami.Units.iconSizes.large
             label: modelData.name
             subtitle: i18ncp("@item:intable", "%1 Process", "%1 Processes", modelData.pids.length)
             highlighted: false
