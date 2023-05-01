@@ -53,7 +53,6 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &
         return false;
     }
 
-
     auto source = sourceModel();
 
     // Show regardless if an ancestor matches, this is kinda the inverse of recursiveFilteringEnabled

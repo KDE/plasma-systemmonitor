@@ -12,7 +12,6 @@
 #include <faces/SensorFaceController.h>
 class QQuickItem;
 
-
 class FaceLoader : public QObject
 {
     Q_OBJECT
