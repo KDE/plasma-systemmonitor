@@ -10,7 +10,7 @@ import QtQuick.Controls 2.12
 
 import Qt.labs.qmlmodels 1.0
 
-import org.kde.kcoreaddons 1.0 as KCoreAddons
+import org.kde.coreaddons 1.0 as KCoreAddons
 import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.quickcharts 1.0 as Charts
 
