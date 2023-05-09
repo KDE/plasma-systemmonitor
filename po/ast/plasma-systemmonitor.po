@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-04 02:12+0000\n"
-"PO-Revision-Date: 2023-05-03 23:19+0200\n"
+"PO-Revision-Date: 2023-05-05 22:30+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -75,7 +75,7 @@ msgstr ""
 #, kde-format
 msgctxt "@menu"
 msgid "Settings"
-msgstr ""
+msgstr "Configuración"
 
 #: src/GlobalMenu.qml:75
 #, kde-format
@@ -104,12 +104,12 @@ msgstr ""
 #: src/main.cpp:109
 #, kde-format
 msgid "System Monitor"
-msgstr ""
+msgstr "Supervisor del sistema"
 
 #: src/main.cpp:111
 #, kde-format
 msgid "An application for monitoring system resources"
-msgstr ""
+msgstr "Una aplicación pa supervisar los recursos del sistema"
 
 #: src/main.cpp:113
 #, kde-format
@@ -124,7 +124,7 @@ msgstr ""
 #: src/main.cpp:119 src/main.cpp:122 src/main.cpp:124 src/main.cpp:125
 #, kde-format
 msgid "Development"
-msgstr ""
+msgstr "Desendolcu"
 
 #: src/main.cpp:120
 #, kde-format
@@ -149,7 +149,7 @@ msgstr ""
 #: src/main.cpp:122
 #, kde-format
 msgid "David Redondo"
-msgstr ""
+msgstr "David Redondo"
 
 #: src/main.cpp:123
 #, kde-format
@@ -159,7 +159,7 @@ msgstr ""
 #: src/main.cpp:124
 #, kde-format
 msgid "Marco Martin"
-msgstr ""
+msgstr "Marco Martin"
 
 #: src/main.cpp:125
 #, kde-format
@@ -182,7 +182,7 @@ msgstr "alministradores@softastur.org"
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
-msgstr ""
+msgstr "Ferramientes"
 
 #: src/main.qml:75
 #, kde-format
