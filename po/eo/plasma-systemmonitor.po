@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-04 02:12+0000\n"
-"PO-Revision-Date: 2023-04-29 22:44+0100\n"
+"PO-Revision-Date: 2023-05-10 07:15+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -172,13 +172,13 @@ msgstr "David Edmundson"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Viaj nomoj"
+msgstr "Oliver Kellogg"
 
 #: src/main.cpp:127
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "Viaj retpoŝtoj"
+msgstr "okellogg@users.sourceforge.net"
 
 #: src/main.qml:69
 #, kde-format
@@ -469,13 +469,13 @@ msgstr "Neniu Diagramo"
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
-msgstr "Ŝargi Antaŭmetita"
+msgstr "Ŝargi Antaŭmetiton"
 
 #: src/page/LoadPresetDialog.qml:89
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
-msgstr "Ŝarĝo"
+msgstr "Ŝargi"
 
 #: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
 #: src/page/PageDialog.qml:176 src/table/KillDialog.qml:102
@@ -535,7 +535,7 @@ msgstr "Nomo ne povas esti malplena."
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Icon:"
-msgstr "Ikono:"
+msgstr "Piktogramo:"
 
 #: src/page/PageDialog.qml:97
 #, kde-format
