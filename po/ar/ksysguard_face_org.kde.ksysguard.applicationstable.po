@@ -154,13 +154,13 @@ msgstr "اقتل (KILL)"
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
-msgstr "مستخدم ١ (USR1)"
+msgstr "مستخدم 1 (USR1)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:219
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
-msgstr "مستخدم ٢ (USR2)"
+msgstr "مستخدم 2 (USR2)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:226
 #, kde-format
@@ -230,7 +230,7 @@ msgstr[5] ""
 msgctxt "@item:intable"
 msgid "%1 Process"
 msgid_plural "%1 Processes"
-msgstr[0] "٠ العمليّة"
+msgstr[0] "0 العمليّة"
 msgstr[1] "عملية واحدة"
 msgstr[2] "عمليتان"
 msgstr[3] "%1 عمليات"

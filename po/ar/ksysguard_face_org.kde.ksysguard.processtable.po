@@ -160,13 +160,13 @@ msgstr "اقتل (KILL)"
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
-msgstr "مستخدم ١ (USR1)"
+msgstr "مستخدم 1 (USR1)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:204
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
-msgstr "مستخدم ٢ (USR2)"
+msgstr "مستخدم 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:212
 #, kde-format
