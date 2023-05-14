@@ -723,13 +723,13 @@ msgstr "رسم خطي"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
-msgstr "نص فقط (مكبر إلى ١٠٠٪)"
+msgstr "نص فقط (مكبر إلى 100٪)"
 
 #: src/table/ColumnConfigurationDialog.qml:162
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
-msgstr "رسم خطي (مكبر إلى ١٠٠٪)"
+msgstr "رسم خطي (مكبر إلى 100٪)"
 
 #: src/table/KillDialog.qml:87
 #, kde-format
