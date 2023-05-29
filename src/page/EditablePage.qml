@@ -124,7 +124,7 @@ Kirigami.ScrollablePage {
         icon.name: "document-edit"
         visible: !page.edit
 
-        displayHint: page.actionsFace ? Kirigami.Action.DisplayHint.AlwaysHide : Kirigami.Action.DisplayHint.NoPreference
+        displayHint: page.actionsFace ? Kirigami.DisplayHint.AlwaysHide : Kirigami.DisplayHint.NoPreference
 
         onTriggered: page.edit = !page.edit
     }
