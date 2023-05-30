@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 "X-Generator: Lokalize 21.08.1\n"
@@ -168,7 +168,6 @@ msgctxt "@action:inmenu"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
 msgstr[0] ""
-msgstr[1] ""
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
 #, kde-format
@@ -176,7 +175,6 @@ msgctxt "@title:window"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
 msgstr[0] ""
-msgstr[1] ""
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, fuzzy, kde-format
@@ -186,7 +184,6 @@ msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
 msgstr[0] "アプリケーションを終了"
-msgstr[1] "アプリケーションを終了"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -197,7 +194,6 @@ msgid_plural ""
 "Are you sure you want to quit these %1 applications?\n"
 "Any unsaved work may be lost."
 msgstr[0] ""
-msgstr[1] ""
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
 #, kde-format
@@ -205,4 +201,3 @@ msgctxt "@item:intable"
 msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] ""
-msgstr[1] ""
