@@ -52,8 +52,8 @@ ecm_find_qmlmodule(org.kde.iconthemes 1.0)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
-ecm_set_disabled_deprecation_versions(QT 5.15.2
-    KF 5.101
+ecm_set_disabled_deprecation_versions(QT 6.5
+    KF 5.240.0
 )
 
 if ("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")

@@ -28,7 +28,7 @@ QVariant converted(const QVariant &variant, QMetaType::Type type)
         return QVariant{};
     }
 
-    if (!result.convert(type)) {
+    if (!result.convert(QMetaType(type))) {
         return QVariant{};
     }
 
