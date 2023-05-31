@@ -47,19 +47,11 @@ QVariant converted(const QVariant &variant, QMetaType::Type type)
     return result;
 }
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-int objectCount(QQmlListProperty<PageDataObject> *list)
-#else
 qsizetype objectCount(QQmlListProperty<PageDataObject> *list)
-#endif
 {
     return static_cast<PageDataObject *>(list->object)->children().count();
 }
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-PageDataObject *objectAt(QQmlListProperty<PageDataObject> *list, int index)
-#else
 PageDataObject *objectAt(QQmlListProperty<PageDataObject> *list, qsizetype index)
-#endif
 {
     return static_cast<PageDataObject *>(list->object)->children().at(index);
 }
