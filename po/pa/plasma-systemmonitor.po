@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-04 02:12+0000\n"
+"POT-Creation-Date: 2023-06-01 02:12+0000\n"
 "PO-Revision-Date: 2023-04-01 21:07-0700\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -101,78 +101,78 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "ਸਿਸਟਮ ਨਿਗਰਾਨ ਬਾਰੇ"
 
-#: src/main.cpp:109
+#: src/main.cpp:106
 #, kde-format
 msgid "System Monitor"
 msgstr "ਸਿਸਟਮ ਮਾਨੀਟਰ"
 
-#: src/main.cpp:111
+#: src/main.cpp:108
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "ਸਿਸਟਮ ਸਰੋਤਾਂ ਦੀ ਨਿਗਰਾਨੀ ਲਈ ਐਪਲੀਕੇਸ਼ਨ"
 
-#: src/main.cpp:113
+#: src/main.cpp:110
 #, kde-format
 msgid "© 2020 Plasma Development Team"
 msgstr "© 2020 ਪਲਾਜ਼ਮਾ ਡਿਵੈਲਪਮੈਂਟ ਟੀਮ"
 
-#: src/main.cpp:119
+#: src/main.cpp:116
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr ""
 
-#: src/main.cpp:119 src/main.cpp:122 src/main.cpp:124 src/main.cpp:125
+#: src/main.cpp:116 src/main.cpp:119 src/main.cpp:121 src/main.cpp:122
 #, kde-format
 msgid "Development"
 msgstr "ਡਿਵੈਲਪਮੈਂਟ"
 
-#: src/main.cpp:120
+#: src/main.cpp:117
 #, kde-format
 msgid "Uri Herrera"
 msgstr ""
 
-#: src/main.cpp:120
+#: src/main.cpp:117
 #, kde-format
 msgid "Design"
 msgstr "ਡਿਜ਼ਾਈਨ"
 
-#: src/main.cpp:121
+#: src/main.cpp:118
 #, kde-format
 msgid "Nate Graham"
 msgstr ""
 
-#: src/main.cpp:121 src/main.cpp:123
+#: src/main.cpp:118 src/main.cpp:120
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr ""
 
-#: src/main.cpp:122
+#: src/main.cpp:119
 #, kde-format
 msgid "David Redondo"
 msgstr ""
 
-#: src/main.cpp:123
+#: src/main.cpp:120
 #, kde-format
 msgid "Noah Davis"
 msgstr ""
 
-#: src/main.cpp:124
+#: src/main.cpp:121
 #, kde-format
 msgid "Marco Martin"
 msgstr ""
 
-#: src/main.cpp:125
+#: src/main.cpp:122
 #, kde-format
 msgid "David Edmundson"
 msgstr ""
 
-#: src/main.cpp:127
+#: src/main.cpp:124
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ ੨੦੨੦"
 
-#: src/main.cpp:127
+#: src/main.cpp:124
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"

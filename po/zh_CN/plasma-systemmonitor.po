@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-04 02:12+0000\n"
+"POT-Creation-Date: 2023-06-01 02:12+0000\n"
 "PO-Revision-Date: 2023-05-22 13:57\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -102,78 +102,78 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "关于系统监视器"
 
-#: src/main.cpp:109
+#: src/main.cpp:106
 #, kde-format
 msgid "System Monitor"
 msgstr "系统监视器"
 
-#: src/main.cpp:111
+#: src/main.cpp:108
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "系统资源监控程序"
 
-#: src/main.cpp:113
+#: src/main.cpp:110
 #, kde-format
 msgid "© 2020 Plasma Development Team"
 msgstr "© 2020 Plasma Development Team"
 
-#: src/main.cpp:119
+#: src/main.cpp:116
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "Arjen Hiemstra"
 
-#: src/main.cpp:119 src/main.cpp:122 src/main.cpp:124 src/main.cpp:125
+#: src/main.cpp:116 src/main.cpp:119 src/main.cpp:121 src/main.cpp:122
 #, kde-format
 msgid "Development"
 msgstr "开发"
 
-#: src/main.cpp:120
+#: src/main.cpp:117
 #, kde-format
 msgid "Uri Herrera"
 msgstr "Uri Herrera"
 
-#: src/main.cpp:120
+#: src/main.cpp:117
 #, kde-format
 msgid "Design"
 msgstr "设计"
 
-#: src/main.cpp:121
+#: src/main.cpp:118
 #, kde-format
 msgid "Nate Graham"
 msgstr "Nate Graham"
 
-#: src/main.cpp:121 src/main.cpp:123
+#: src/main.cpp:118 src/main.cpp:120
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "设计与质量保障"
 
-#: src/main.cpp:122
+#: src/main.cpp:119
 #, kde-format
 msgid "David Redondo"
 msgstr "David Redondo"
 
-#: src/main.cpp:123
+#: src/main.cpp:120
 #, kde-format
 msgid "Noah Davis"
 msgstr "Noah Davis"
 
-#: src/main.cpp:124
+#: src/main.cpp:121
 #, kde-format
 msgid "Marco Martin"
 msgstr "Marco Martin"
 
-#: src/main.cpp:125
+#: src/main.cpp:122
 #, kde-format
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: src/main.cpp:127
+#: src/main.cpp:124
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Tyson Tan"
 
-#: src/main.cpp:127
+#: src/main.cpp:124
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"

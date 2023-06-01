@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-04 02:12+0000\n"
+"POT-Creation-Date: 2023-06-01 02:12+0000\n"
 "PO-Revision-Date: 2023-04-04 00:53+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -101,78 +101,78 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "Sistem Monitörü Hakkında"
 
-#: src/main.cpp:109
+#: src/main.cpp:106
 #, kde-format
 msgid "System Monitor"
 msgstr "Sistem Monitörü"
 
-#: src/main.cpp:111
+#: src/main.cpp:108
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "Sistem özkaynaklarını izlemek için bir uygulama"
 
-#: src/main.cpp:113
+#: src/main.cpp:110
 #, kde-format
 msgid "© 2020 Plasma Development Team"
 msgstr "© Plasma Geliştirme Takımı"
 
-#: src/main.cpp:119
+#: src/main.cpp:116
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "Arjen Hiemstra"
 
-#: src/main.cpp:119 src/main.cpp:122 src/main.cpp:124 src/main.cpp:125
+#: src/main.cpp:116 src/main.cpp:119 src/main.cpp:121 src/main.cpp:122
 #, kde-format
 msgid "Development"
 msgstr "Geliştirme"
 
-#: src/main.cpp:120
+#: src/main.cpp:117
 #, kde-format
 msgid "Uri Herrera"
 msgstr "Uri Herrera"
 
-#: src/main.cpp:120
+#: src/main.cpp:117
 #, kde-format
 msgid "Design"
 msgstr "Tasarım"
 
-#: src/main.cpp:121
+#: src/main.cpp:118
 #, kde-format
 msgid "Nate Graham"
 msgstr "Nate Graham"
 
-#: src/main.cpp:121 src/main.cpp:123
+#: src/main.cpp:118 src/main.cpp:120
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "Tasarım ve Kalite Denetim"
 
-#: src/main.cpp:122
+#: src/main.cpp:119
 #, kde-format
 msgid "David Redondo"
 msgstr "David Redondo"
 
-#: src/main.cpp:123
+#: src/main.cpp:120
 #, kde-format
 msgid "Noah Davis"
 msgstr "Noah Davis"
 
-#: src/main.cpp:124
+#: src/main.cpp:121
 #, kde-format
 msgid "Marco Martin"
 msgstr "Marco Martin"
 
-#: src/main.cpp:125
+#: src/main.cpp:122
 #, kde-format
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: src/main.cpp:127
+#: src/main.cpp:124
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Emir SARI"
 
-#: src/main.cpp:127
+#: src/main.cpp:124
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
