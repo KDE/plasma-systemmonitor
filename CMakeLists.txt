@@ -25,7 +25,7 @@ include(ECMDeprecationSettings)
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS Quick Widgets DBus)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Quick Widgets DBus)
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS I18n Config Service GlobalAccel KIO DBusAddons NewStuff ItemModels WindowSystem Package)
 find_package(KSysGuard ${PROJECT_VERSION})
 set_package_properties(KSysGuard PROPERTIES
@@ -39,8 +39,8 @@ set_package_properties(KSystemStats PROPERTIES
     PURPOSE "Daemon providing system statistics"
     URL https://invent.kde.org/plasma/ksystemstats
 )
-find_package(Qt${QT_MAJOR_VERSION}QuickControls2  ${QT_MIN_VERSION})
-set_package_properties(Qt${QT_MAJOR_VERSION}QuickControls2 PROPERTIES
+find_package(Qt6QuickControls2  ${QT_MIN_VERSION})
+set_package_properties(Qt6QuickControls2 PROPERTIES
     TYPE RUNTIME
 )
 find_package(KF6Kirigami2  ${KF6_MIN_VERSION})
