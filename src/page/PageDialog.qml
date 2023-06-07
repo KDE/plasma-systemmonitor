@@ -64,12 +64,20 @@ Dialog {
         Kirigami.Theme.colorSet: Kirigami.Theme.View
         color: Kirigami.Theme.backgroundColor
         implicitWidth: Kirigami.Units.gridUnit * 20
-        implicitHeight: Kirigami.Units.gridUnit * 15
+        implicitHeight: form.implicitHeight + Kirigami.Units.largeSpacing
 
         Kirigami.Separator { anchors { left: parent.left; right: parent.right; top: parent.top } }
 
         Kirigami.FormLayout {
-            anchors.fill: parent
+            id: form
+
+            anchors {
+                top: parent.top
+                left: parent.left
+                right: parent.right
+                leftMargin: Kirigami.Units.largeSpacing
+                rightMargin: Kirigami.Units.largeSpacing
+            }
 
             TextField {
                 id: nameField
