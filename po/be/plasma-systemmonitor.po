@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-01 02:12+0000\n"
+"POT-Creation-Date: 2023-06-08 02:13+0000\n"
 "PO-Revision-Date: 2023-01-24 13:01\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -480,7 +480,7 @@ msgid "Load"
 msgstr "Загрузіць"
 
 #: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
-#: src/page/PageDialog.qml:176 src/table/KillDialog.qml:102
+#: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
@@ -523,67 +523,67 @@ msgctxt "@info:placeholder"
 msgid "New Page"
 msgstr "Новая старонка"
 
-#: src/page/PageDialog.qml:77
+#: src/page/PageDialog.qml:85
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
 msgstr "Назва:"
 
-#: src/page/PageDialog.qml:88
+#: src/page/PageDialog.qml:96
 #, kde-format
 msgctxt "@info:status"
 msgid "Name cannot be empty."
 msgstr "Назва не можа быць пустой."
 
-#: src/page/PageDialog.qml:92
+#: src/page/PageDialog.qml:100
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Icon:"
 msgstr "Значок:"
 
-#: src/page/PageDialog.qml:97
+#: src/page/PageDialog.qml:105
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page Margins:"
 msgstr "Палі старонкі:"
 
-#: src/page/PageDialog.qml:110
+#: src/page/PageDialog.qml:118
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "None"
 msgstr "Няма"
 
-#: src/page/PageDialog.qml:111
+#: src/page/PageDialog.qml:119
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Small"
 msgstr "Малы"
 
-#: src/page/PageDialog.qml:112
+#: src/page/PageDialog.qml:120
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Large"
 msgstr "Вялікі"
 
-#: src/page/PageDialog.qml:119
+#: src/page/PageDialog.qml:127
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
 msgstr "Выкарыстоўваць дзеянні з:"
 
-#: src/page/PageDialog.qml:137
+#: src/page/PageDialog.qml:145
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
 msgstr "Загрузка гэтай старонкі:"
 
-#: src/page/PageDialog.qml:150
+#: src/page/PageDialog.qml:158
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
 msgstr "Калі патрэбна"
 
-#: src/page/PageDialog.qml:151
+#: src/page/PageDialog.qml:159
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-01 02:12+0000\n"
+"POT-Creation-Date: 2023-06-08 02:13+0000\n"
 "PO-Revision-Date: 2021-10-25 10:59+0200\n"
 "Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -476,7 +476,7 @@ msgid "Load"
 msgstr "Betöltés"
 
 #: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
-#: src/page/PageDialog.qml:176 src/table/KillDialog.qml:102
+#: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
@@ -517,55 +517,55 @@ msgctxt "@info:placeholder"
 msgid "New Page"
 msgstr "Új oldal"
 
-#: src/page/PageDialog.qml:77
+#: src/page/PageDialog.qml:85
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
 msgstr "Név:"
 
-#: src/page/PageDialog.qml:88
+#: src/page/PageDialog.qml:96
 #, kde-format
 msgctxt "@info:status"
 msgid "Name cannot be empty."
 msgstr "A név nem lehet üres."
 
-#: src/page/PageDialog.qml:92
+#: src/page/PageDialog.qml:100
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Icon:"
 msgstr "Ikon:"
 
-#: src/page/PageDialog.qml:97
+#: src/page/PageDialog.qml:105
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page Margins:"
 msgstr "Oldalszegélyek:"
 
-#: src/page/PageDialog.qml:110
+#: src/page/PageDialog.qml:118
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "None"
 msgstr "Nincs"
 
-#: src/page/PageDialog.qml:111
+#: src/page/PageDialog.qml:119
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Small"
 msgstr "Kicsi"
 
-#: src/page/PageDialog.qml:112
+#: src/page/PageDialog.qml:120
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Large"
 msgstr "Nagy"
 
-#: src/page/PageDialog.qml:119
+#: src/page/PageDialog.qml:127
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
 msgstr "Műveletek használata innen:"
 
-#: src/page/PageDialog.qml:137
+#: src/page/PageDialog.qml:145
 #, fuzzy, kde-format
 #| msgctxt "@info:tooltip"
 #| msgid "Remove this page"
@@ -573,13 +573,13 @@ msgctxt "@label:listbox"
 msgid "Load this page:"
 msgstr "Oldal törlése"
 
-#: src/page/PageDialog.qml:150
+#: src/page/PageDialog.qml:158
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
 msgstr ""
 
-#: src/page/PageDialog.qml:151
+#: src/page/PageDialog.qml:159
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"

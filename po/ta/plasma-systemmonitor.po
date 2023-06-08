@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-01 02:12+0000\n"
+"POT-Creation-Date: 2023-06-08 02:13+0000\n"
 "PO-Revision-Date: 2022-06-16 19:53+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -473,7 +473,7 @@ msgid "Load"
 msgstr "ஏற்று"
 
 #: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
-#: src/page/PageDialog.qml:176 src/table/KillDialog.qml:102
+#: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
@@ -514,67 +514,67 @@ msgctxt "@info:placeholder"
 msgid "New Page"
 msgstr "புதிய பக்கம்"
 
-#: src/page/PageDialog.qml:77
+#: src/page/PageDialog.qml:85
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
 msgstr "பெயர்:"
 
-#: src/page/PageDialog.qml:88
+#: src/page/PageDialog.qml:96
 #, kde-format
 msgctxt "@info:status"
 msgid "Name cannot be empty."
 msgstr "பெயர் காலியாக இருக்க கூடாது."
 
-#: src/page/PageDialog.qml:92
+#: src/page/PageDialog.qml:100
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Icon:"
 msgstr "சின்னம்:"
 
-#: src/page/PageDialog.qml:97
+#: src/page/PageDialog.qml:105
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page Margins:"
 msgstr "பக்கத்தின் விளிம்புகள்:"
 
-#: src/page/PageDialog.qml:110
+#: src/page/PageDialog.qml:118
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "None"
 msgstr "ஏதுமில்லை"
 
-#: src/page/PageDialog.qml:111
+#: src/page/PageDialog.qml:119
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Small"
 msgstr "சிறியவை"
 
-#: src/page/PageDialog.qml:112
+#: src/page/PageDialog.qml:120
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Large"
 msgstr "பெரியவை"
 
-#: src/page/PageDialog.qml:119
+#: src/page/PageDialog.qml:127
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
 msgstr "இதிலிருந்து செயல்களை பயன்படுத்து:"
 
-#: src/page/PageDialog.qml:137
+#: src/page/PageDialog.qml:145
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
 msgstr "இப்பக்கத்தை ஏற்று:"
 
-#: src/page/PageDialog.qml:150
+#: src/page/PageDialog.qml:158
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
 msgstr "தேவைப்படும்போது"
 
-#: src/page/PageDialog.qml:151
+#: src/page/PageDialog.qml:159
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"

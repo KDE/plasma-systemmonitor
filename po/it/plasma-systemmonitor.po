@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-01 02:12+0000\n"
+"POT-Creation-Date: 2023-06-08 02:13+0000\n"
 "PO-Revision-Date: 2022-06-15 14:45+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -476,7 +476,7 @@ msgid "Load"
 msgstr "Carica"
 
 #: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
-#: src/page/PageDialog.qml:176 src/table/KillDialog.qml:102
+#: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
@@ -519,67 +519,67 @@ msgctxt "@info:placeholder"
 msgid "New Page"
 msgstr "Nuova pagina"
 
-#: src/page/PageDialog.qml:77
+#: src/page/PageDialog.qml:85
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
 msgstr "Nome:"
 
-#: src/page/PageDialog.qml:88
+#: src/page/PageDialog.qml:96
 #, kde-format
 msgctxt "@info:status"
 msgid "Name cannot be empty."
 msgstr "Il nome non può essere vuoto."
 
-#: src/page/PageDialog.qml:92
+#: src/page/PageDialog.qml:100
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Icon:"
 msgstr "Icona:"
 
-#: src/page/PageDialog.qml:97
+#: src/page/PageDialog.qml:105
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page Margins:"
 msgstr "Margini della pagina:"
 
-#: src/page/PageDialog.qml:110
+#: src/page/PageDialog.qml:118
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "None"
 msgstr "Nessuno"
 
-#: src/page/PageDialog.qml:111
+#: src/page/PageDialog.qml:119
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Small"
 msgstr "Piccolo"
 
-#: src/page/PageDialog.qml:112
+#: src/page/PageDialog.qml:120
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Large"
 msgstr "Grande"
 
-#: src/page/PageDialog.qml:119
+#: src/page/PageDialog.qml:127
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
 msgstr "Usa azioni da:"
 
-#: src/page/PageDialog.qml:137
+#: src/page/PageDialog.qml:145
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
 msgstr "Carica questa pagina:"
 
-#: src/page/PageDialog.qml:150
+#: src/page/PageDialog.qml:158
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
 msgstr "Se necessario"
 
-#: src/page/PageDialog.qml:151
+#: src/page/PageDialog.qml:159
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"
