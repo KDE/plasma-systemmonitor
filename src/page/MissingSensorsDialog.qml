@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2022 Arjen Hiemstra <ahiemstra@heimr.nl>
+ * SPDX-FileCopyrightText: 2023 Nate Graham <nate@kde.org>
  *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
@@ -8,31 +9,29 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
 
-import org.kde.kirigami 2.15 as Kirigami
+import org.kde.kirigami 2.20 as Kirigami
 
 import org.kde.ksysguard.page 1.0
 import org.kde.ksysguard.faces 1.0 as Faces
 
-Dialog {
+Kirigami.Dialog {
     id: dialog
 
     property var missingSensors: { }
     property var sensorReplacement: { }
 
-    modal: true
-    parent: Overlay.overlay
+    title: i18nc("@title", "Replace Missing Sensors")
+
+    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
+    preferredWidth: Kirigami.Units.gridUnit * 30
+    preferredHeight: Kirigami.Units.gridUnit * 30
+
     focus: true
 
-    x: parent ? Math.round(parent.width / 2 - width / 2) : 0
-    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
+    // We already have a cancel button in the footer
+    showCloseButton: false
 
-    leftPadding: 1 // Allow dialog background border to show
-    rightPadding: 1 // Allow dialog background border to show
-    bottomPadding: Kirigami.Units.smallSpacing
-    topPadding: Kirigami.Units.smallSpacing
-    bottomInset: -Kirigami.Units.smallSpacing
-
-    title: i18nc("@title", "Replace Missing Sensors")
+    standardButtons: Dialog.Save | Dialog.Cancel
 
     onAccepted: {
         let result = []
@@ -62,71 +61,36 @@ Dialog {
         }
     }
 
-    contentItem: Rectangle {
-        Kirigami.Theme.colorSet: Kirigami.Theme.View
-        color: Kirigami.Theme.backgroundColor
-        implicitWidth: Kirigami.Units.gridUnit * 30
-        implicitHeight: Kirigami.Units.gridUnit * 30
+    ListView {
+        model: ListModel { id: sensorsModel }
 
-        Kirigami.Separator { anchors { left: parent.left; right: parent.right; top: parent.top } }
+        section.property: "title"
+        section.delegate: Kirigami.ListSectionHeader {
+            required property string section
+            label: section
+        }
 
-        ScrollView {
-            anchors.fill: parent
-            anchors.topMargin: 1
-            anchors.bottomMargin: 1
-            clip: true
+        delegate: Kirigami.BasicListItem {
+            id: delegate
 
-            ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+            implicitHeight: Kirigami.Units.gridUnit * 2 + Kirigami.Units.smallSpacing * 2
+            labelItem.textFormat: Text.MarkdownText
+            label: model.sensor
 
-            ListView {
-                id: columnView
+            trailing: Faces.Choices {
+                width: delegate.width * 0.5
 
-                model: ListModel { id: sensorsModel }
+                supportsColors: false
+                maxAllowedSensors: 1
+                labelsEditable: false
+                labels: { }
 
-                section.property: "title"
-                section.delegate: Kirigami.ListSectionHeader {
-                    required property string section
-                    label: section
-                }
-
-                delegate: Kirigami.BasicListItem {
-                    id: delegate
-
-                    implicitHeight: Kirigami.Units.gridUnit * 2 + Kirigami.Units.smallSpacing * 2
-                    labelItem.textFormat: Text.MarkdownText
-                    label: model.sensor
-
-                    trailing: Faces.Choices {
-                        width: delegate.width * 0.5
-
-                        supportsColors: false
-                        maxAllowedSensors: 1
-                        labelsEditable: false
-                        labels: { }
-
-                        onSelectedChanged: {
-                            if (selected.length > 0) {
-                                sensorsModel.setProperty(index, "replacement", selected[0])
-                            }
-                        }
+                onSelectedChanged: {
+                    if (selected.length > 0) {
+                        sensorsModel.setProperty(index, "replacement", selected[0])
                     }
                 }
             }
-        }
-
-        Kirigami.Separator { anchors { left: parent.left; right: parent.right; bottom: parent.bottom } }
-    }
-
-    footer: DialogButtonBox {
-        Button {
-            DialogButtonBox.buttonRole: DialogButtonBox.AcceptRole
-            text: i18nc("@action:button", "Save")
-            icon.name: "document-save"
-        }
-        Button {
-            DialogButtonBox.buttonRole: DialogButtonBox.RejectRole
-            text: i18nc("@action:button", "Cancel")
-            icon.name: "dialog-close"
         }
     }
 }

@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
+ * SPDX-FileCopyrightText: 2023 Nate Graham <nate@kde.org>
  *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
@@ -8,13 +9,13 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
 
-import org.kde.kirigami 2.12 as Kirigami
+import org.kde.kirigami 2.20 as Kirigami
 import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.iconthemes as KIconThemes
 
 import org.kde.ksysguard.page 1.0
 
-Dialog {
+Kirigami.Dialog {
     id: dialog
 
     property string acceptText: i18nc("@action:button", "Add")
@@ -28,22 +29,37 @@ Dialog {
 
     property string loadType: "ondemand"
 
-    modal: true
-    parent: Overlay.overlay
-    focus: true
-
-    x: parent ? Math.round(parent.width / 2 - width / 2) : 0
     y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
 
-    leftPadding: 1 // Allow dialog background border to show
-    rightPadding: 1 // Allow dialog background border to show
-    bottomPadding: Kirigami.Units.smallSpacing
-    topPadding: Kirigami.Units.smallSpacing
-    bottomInset: -Kirigami.Units.smallSpacing
+    // No top padding since the content item is a Kirigami.FormLayout which
+    // brings its own. But it doesn't provide any other padding, so we need to
+    // add some or else it touches the edges of the dialog's content area,
+    // which looks bad.
+    topPadding: 0
+    leftPadding: Kirigami.Units.largeSpacing
+    rightPadding: Kirigami.Units.largeSpacing
+    bottomPadding: Kirigami.Units.largeSpacing
 
-    onAccepted: {
-        actionsFace = actionsCombobox.currentValue
-    }
+    focus: true
+
+    // We already have a cancel button in the footer
+    showCloseButton: false
+
+    standardButtons: Kirigami.Dialog.Cancel
+
+    customFooterActions: [
+        Kirigami.Action {
+            text: dialog.acceptText
+            icon.name: dialog.acceptIcon
+            enabled: nameField.acceptableInput
+            onTriggered: {
+                if (actionsCombobox.currentValue) {
+                    dialog.actionsFace = actionsCombobox.currentValue;
+                }
+                dialog.accept();
+            }
+        }
+    ]
 
     onOpened: {
         // Reset focus to the name field.
@@ -52,7 +68,7 @@ Dialog {
         // first things we generally want to do in this dialog is edit the
         // title, we reset the focus to the name field when the dialog is
         // opened.
-        nameField.focus = true
+        nameField.forceActiveFocus()
     }
 
     onClosed: {
@@ -60,129 +76,98 @@ Dialog {
         pageData = null
     }
 
-    contentItem: Rectangle {
-        Kirigami.Theme.colorSet: Kirigami.Theme.View
-        color: Kirigami.Theme.backgroundColor
-        implicitWidth: Kirigami.Units.gridUnit * 20
-        implicitHeight: form.implicitHeight + Kirigami.Units.largeSpacing
+    Kirigami.FormLayout {
+        id: form
 
-        Kirigami.Separator { anchors { left: parent.left; right: parent.right; top: parent.top } }
+        focus: true
 
-        Kirigami.FormLayout {
-            id: form
+        TextField {
+            id: nameField
 
-            anchors {
-                top: parent.top
-                left: parent.left
-                right: parent.right
-                leftMargin: Kirigami.Units.largeSpacing
-                rightMargin: Kirigami.Units.largeSpacing
-            }
+            Kirigami.FormData.label: i18nc("@label:textbox", "Name:")
+            text: dialog.name
+            onTextEdited: dialog.name = text
 
-            TextField {
-                id: nameField
+            focus: true
 
-                Kirigami.FormData.label: i18nc("@label:textbox", "Name:")
-                text: dialog.name
-                onTextEdited: dialog.name = text
+            validator: RegularExpressionValidator { regularExpression: /^[\pL\pN][^\pC/]*/ }
+        }
+        Kirigami.InlineMessage {
+            Layout.fillWidth: true
+            type: Kirigami.MessageType.Error
+            text: i18nc("@info:status", "Name cannot be empty.")
+            visible: !nameField.acceptableInput
+        }
+        Button {
+            Kirigami.FormData.label: i18nc("@label:textbox", "Icon:")
+            icon.name: dialog.iconName
+            onClicked: iconDialog.open()
+        }
+        ComboBox {
+            Kirigami.FormData.label: i18nc("@label:listbox", "Page Margins:")
 
-                focus: true
+            textRole: "key"
 
-                validator: RegularExpressionValidator { regularExpression: /^[\pL\pN][^\pC/]*/ }
-            }
-            Kirigami.InlineMessage {
-                Layout.fillWidth: true
-                type: Kirigami.MessageType.Error
-                text: i18nc("@info:status", "Name cannot be empty.")
-                visible: !nameField.acceptableInput
-            }
-            Button {
-                Kirigami.FormData.label: i18nc("@label:textbox", "Icon:")
-                icon.name: dialog.iconName
-                onClicked: iconDialog.open()
-            }
-            ComboBox {
-                Kirigami.FormData.label: i18nc("@label:listbox", "Page Margins:")
-
-                textRole: "key"
-
-                currentIndex: {
-                    for (var i in model) {
-                        if (model[i].value == dialog.margin) {
-                            return i
-                        }
-                    }
-                }
-
-                model: [
-                    { value: 0, key: i18nc("@item:inlistbox", "None") },
-                    { value: 1, key: i18nc("@item:inlistbox", "Small") },
-                    { value: 2, key: i18nc("@item:inlistbox", "Large") }
-                ]
-
-                onActivated: dialog.margin = model[index].value
-            }
-            ComboBox {
-                id: actionsCombobox
-                Kirigami.FormData.label: i18nc("@label:listbox", "Use Actions From:")
-                visible: count > 1
-                textRole: "display"
-                valueRole: "id"
-                currentIndex:indexOfValue(dialog.actionsFace)
-                model:  KItemModels.KSortFilterProxyModel {
-                    sourceModel: FacesModel {id: facesModel}
-                    filterRowCallback: function(row, parent) {
-                        // No face option
-                        if (row == facesModel.rowCount() - 1) {
-                            return true
-                        }
-                        const face = facesModel.faceAtIndex(row)
-                        return face.primaryActions.length != 0 && face.secondaryActions.length != 0
+            currentIndex: {
+                for (var i in model) {
+                    if (model[i].value == dialog.margin) {
+                        return i
                     }
                 }
             }
-            ComboBox {
-                Kirigami.FormData.label: i18nc("@label:listbox", "Load this page:")
 
-                textRole: "key"
+            model: [
+                { value: 0, key: i18nc("@item:inlistbox", "None") },
+                { value: 1, key: i18nc("@item:inlistbox", "Small") },
+                { value: 2, key: i18nc("@item:inlistbox", "Large") }
+            ]
 
-                currentIndex: {
-                    for (var i in model) {
-                        if (model[i].value == dialog.loadType) {
-                            return i
-                        }
+            onActivated: dialog.margin = model[index].value
+        }
+        ComboBox {
+            id: actionsCombobox
+            Kirigami.FormData.label: i18nc("@label:listbox", "Use Actions From:")
+            visible: count > 1
+            textRole: "display"
+            valueRole: "id"
+            currentIndex:indexOfValue(dialog.actionsFace)
+            model:  KItemModels.KSortFilterProxyModel {
+                sourceModel: FacesModel {id: facesModel}
+                filterRowCallback: function(row, parent) {
+                    // No face option
+                    if (row == facesModel.rowCount() - 1) {
+                        return true
                     }
+                    const face = facesModel.faceAtIndex(row)
+                    return face.primaryActions.length != 0 && face.secondaryActions.length != 0
                 }
-
-                model: [
-                    { value: "ondemand", key: i18nc("@item:inlistbox", "When needed") },
-                    { value: "onstart", key: i18nc("@item:inlistbox", "During application startup") }
-                ]
-
-                onActivated: dialog.loadType = model[index].value
             }
         }
+        ComboBox {
+            Kirigami.FormData.label: i18nc("@label:listbox", "Load this page:")
 
-        Kirigami.Separator { anchors { left: parent.left; right: parent.right; bottom: parent.bottom } }
+            textRole: "key"
 
-        KIconThemes.IconDialog {
-            id: iconDialog;
-            iconSize: Kirigami.Units.iconSizes.smallMedium
-            onIconNameChanged: dialog.iconName = iconName
+            currentIndex: {
+                for (var i in model) {
+                    if (model[i].value == dialog.loadType) {
+                        return i
+                    }
+                }
+            }
+
+            model: [
+                { value: "ondemand", key: i18nc("@item:inlistbox", "When needed") },
+                { value: "onstart", key: i18nc("@item:inlistbox", "During application startup") }
+            ]
+
+            onActivated: dialog.loadType = model[index].value
         }
     }
 
-    footer: DialogButtonBox {
-        Button {
-            DialogButtonBox.buttonRole: DialogButtonBox.AcceptRole
-            text: dialog.acceptText
-            icon.name: dialog.acceptIcon
-            enabled: nameField.acceptableInput
-        }
-        Button {
-            DialogButtonBox.buttonRole: DialogButtonBox.RejectRole
-            text: i18nc("@action:button", "Cancel")
-            icon.name: "dialog-cancel"
-        }
+    KIconThemes.IconDialog {
+        id: iconDialog
+        iconSize: Kirigami.Units.iconSizes.smallMedium
+        onIconNameChanged: dialog.iconName = iconName
     }
 }
