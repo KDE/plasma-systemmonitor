@@ -53,7 +53,7 @@ FocusScope {
 
     Kirigami.BasicListItem {
         id: heightHelper
-        text: "Placeholder"
+        text: i18n("Placeholder")
     }
 
     activeFocusOnTab: true
