@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-08 02:13+0000\n"
+"POT-Creation-Date: 2023-06-15 02:13+0000\n"
 "PO-Revision-Date: 2023-04-01 21:07-0700\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -733,6 +733,11 @@ msgstr "ਲਾਈਨ ਚਾਰਟ (100% ਸਕੇਲ ਕੀਤਾ)"
 msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "ਮੁੜ ਨਾ ਪੁੱਛੋ"
+
+#: src/table/TableViewHeader.qml:56
+#, kde-format
+msgid "Placeholder"
+msgstr ""
 
 #: src/ToolsModel.cpp:37
 #, kde-format

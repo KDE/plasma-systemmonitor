@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-08 02:13+0000\n"
+"POT-Creation-Date: 2023-06-15 02:13+0000\n"
 "PO-Revision-Date: 2021-09-24 21:59+0900\n"
 "Last-Translator: Tomohiro Hyakutake <tomhioo@outlook.jp>\n"
 "Language-Team: Japanese <kde-i18n-doc@kde.org>\n"
@@ -732,6 +732,11 @@ msgstr "折れ線グラフ (100%に縮尺)"
 msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "次回から確認しない"
+
+#: src/table/TableViewHeader.qml:56
+#, kde-format
+msgid "Placeholder"
+msgstr ""
 
 #: src/ToolsModel.cpp:37
 #, kde-format

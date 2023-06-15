@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-08 02:13+0000\n"
+"POT-Creation-Date: 2023-06-15 02:13+0000\n"
 "PO-Revision-Date: 2022-09-19 13:32+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: none\n"
@@ -740,6 +740,11 @@ msgstr "Linijinė diagrama (100% mastelis)"
 msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "Daugiau nebeklausti"
+
+#: src/table/TableViewHeader.qml:56
+#, kde-format
+msgid "Placeholder"
+msgstr ""
 
 #: src/ToolsModel.cpp:37
 #, kde-format
