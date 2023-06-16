@@ -67,8 +67,6 @@ Table.BaseTableView {
         id: descendantsModel
         sourceModel: rowFilter
         expandsByDefault: true
-
-        onLayoutChanged: view.onModelLayoutChanged()
     }
 
     Table.ProcessSortFilterModel {
