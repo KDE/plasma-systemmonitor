@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# giovanni <g.sora@tiscali.it>, 2021, 2022.
+# giovanni <g.sora@tiscali.it>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-15 02:13+0000\n"
-"PO-Revision-Date: 2022-06-29 15:14+0200\n"
+"PO-Revision-Date: 2023-06-15 16:01+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -742,7 +742,7 @@ msgstr "Non demanda de nove"
 #: src/table/TableViewHeader.qml:56
 #, kde-format
 msgid "Placeholder"
-msgstr ""
+msgstr "Substituto"
 
 #: src/ToolsModel.cpp:37
 #, kde-format

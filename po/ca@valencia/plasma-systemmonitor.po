@@ -1,15 +1,15 @@
 # Translation of plasma-systemmonitor.po to Catalan (Valencian)
-# Copyright (C) 2020-2022 This_file_is_part_of_KDE
+# Copyright (C) 2020-2023 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021, 2022.
+# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-15 02:13+0000\n"
-"PO-Revision-Date: 2022-06-15 10:14+0200\n"
+"PO-Revision-Date: 2023-06-15 09:13+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -744,7 +744,7 @@ msgstr "No ho tornes a preguntar"
 #: src/table/TableViewHeader.qml:56
 #, kde-format
 msgid "Placeholder"
-msgstr ""
+msgstr "Marcador de posició"
 
 #: src/ToolsModel.cpp:37
 #, kde-format

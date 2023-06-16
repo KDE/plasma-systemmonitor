@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-15 02:13+0000\n"
-"PO-Revision-Date: 2023-05-10 07:15+0100\n"
+"PO-Revision-Date: 2023-06-15 20:56+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -279,7 +279,7 @@ msgid ""
 msgstr ""
 "Sistema Monitoro revenis al programara bildigo ĉar hardvara akcelado ne "
 "haveblas, kaj vidaj misfunkciadoj povas aperi. Bonvolu kontroli viajn "
-"grafikajn ŝoforojn."
+"grafikajn pelilojn."
 
 #: src/page/ColumnControl.qml:117
 #, kde-format
@@ -742,7 +742,7 @@ msgstr "Ne demandi denove"
 #: src/table/TableViewHeader.qml:56
 #, kde-format
 msgid "Placeholder"
-msgstr ""
+msgstr "Lokokupilo"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
