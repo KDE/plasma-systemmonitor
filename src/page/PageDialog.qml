@@ -29,8 +29,6 @@ Kirigami.Dialog {
 
     property string loadType: "ondemand"
 
-    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
-
     // No top padding since the content item is a Kirigami.FormLayout which
     // brings its own. But it doesn't provide any other padding, so we need to
     // add some or else it touches the edges of the dialog's content area,

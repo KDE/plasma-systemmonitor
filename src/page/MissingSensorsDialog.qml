@@ -22,7 +22,6 @@ Kirigami.Dialog {
 
     title: i18nc("@title", "Replace Missing Sensors")
 
-    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
     preferredWidth: Kirigami.Units.gridUnit * 30
     preferredHeight: Kirigami.Units.gridUnit * 30
 

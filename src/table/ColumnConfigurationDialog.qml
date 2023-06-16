@@ -26,7 +26,6 @@ Kirigami.Dialog {
 
     title: i18ndc("plasma-systemmonitor", "@window:title", "Configure Columns")
 
-    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
     preferredWidth: parent ? parent.width * 0.75 : 0
     preferredHeight: parent ? parent.height * 0.75 : 0
 

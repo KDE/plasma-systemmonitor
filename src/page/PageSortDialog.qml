@@ -23,7 +23,6 @@ Kirigami.Dialog {
     property string newStartPage
     property bool startPageWasChanged: false
 
-    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
     preferredWidth: parent ? parent.width * 0.5 : -1
     preferredHeight: parent ? parent.height * 0.5 : -1
 

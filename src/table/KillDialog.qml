@@ -22,7 +22,6 @@ Kirigami.Dialog {
     property bool doNotAskAgain: false
     property alias delegate: list.delegate
 
-    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height - Kirigami.Units.smallSpacing : 0
     preferredWidth: Kirigami.Units.gridUnit * 25
 
     focus: true
