@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-15 02:13+0000\n"
+"POT-Creation-Date: 2023-06-17 02:07+0000\n"
 "PO-Revision-Date: 2023-01-24 13:01\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -349,7 +349,7 @@ msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Наладжванне старонкі \"%1\""
 
-#: src/page/EditablePage.qml:204 src/page/MissingSensorsDialog.qml:123
+#: src/page/EditablePage.qml:204
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -467,26 +467,19 @@ msgctxt "@info:placeholder"
 msgid "No Chart"
 msgstr "Няма дыяграмы"
 
-#: src/page/LoadPresetDialog.qml:22
+#: src/page/LoadPresetDialog.qml:23
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
 msgstr "Загрузіць профіль"
 
-#: src/page/LoadPresetDialog.qml:89
+#: src/page/LoadPresetDialog.qml:37
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
 msgstr "Загрузіць"
 
-#: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
-#: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Скасаваць"
-
-#: src/page/MissingSensorsDialog.qml:35
+#: src/page/MissingSensorsDialog.qml:23
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
@@ -511,13 +504,13 @@ msgctxt "@action:button"
 msgid "Fix…"
 msgstr "Выправіць…"
 
-#: src/page/PageDialog.qml:20
+#: src/page/PageDialog.qml:21
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Дадаць"
 
-#: src/page/PageDialog.qml:23
+#: src/page/PageDialog.qml:24
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "New Page"
@@ -594,61 +587,61 @@ msgstr "Падчас запуску праграмы"
 msgid "New Title"
 msgstr "Новая назва"
 
-#: src/page/PageSortDialog.qml:100
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Паказваць старонку"
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Схаваць старонку"
 
-#: src/page/PageSortDialog.qml:148
+#: src/page/PageSortDialog.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Не скідаць гэтую старонку"
 
-#: src/page/PageSortDialog.qml:152
+#: src/page/PageSortDialog.qml:145
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Гэтая старонка будзе скінутая да прадвызначанага стану"
 
-#: src/page/PageSortDialog.qml:161
+#: src/page/PageSortDialog.qml:154
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Скінуць гэтую старонку да прадвызначанага стану"
 
-#: src/page/PageSortDialog.qml:170
+#: src/page/PageSortDialog.qml:163
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Не выдаляць гэтую старонку"
 
-#: src/page/PageSortDialog.qml:174
+#: src/page/PageSortDialog.qml:167
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Гэтая старонка будзе выдаленая"
 
-#: src/page/PageSortDialog.qml:187
+#: src/page/PageSortDialog.qml:180
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Выдаліць гэтую старонку"
 
-#: src/page/PageSortDialog.qml:206
+#: src/page/PageSortDialog.qml:194
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Пачынаць з:"
 
-#: src/page/PageSortDialog.qml:215
+#: src/page/PageSortDialog.qml:203
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Апошняя наведаная старонка"
@@ -703,43 +696,43 @@ msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
 msgstr "Старацца выкарыстоўваць як мага большую вышыню."
 
-#: src/table/ColumnConfigurationDialog.qml:26
+#: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Наладжванне слупкоў"
 
-#: src/table/ColumnConfigurationDialog.qml:150
+#: src/table/ColumnConfigurationDialog.qml:131
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Схавана"
 
-#: src/table/ColumnConfigurationDialog.qml:151
+#: src/table/ColumnConfigurationDialog.qml:132
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Толькі тэкст"
 
-#: src/table/ColumnConfigurationDialog.qml:157
+#: src/table/ColumnConfigurationDialog.qml:138
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Лінейная дыяграма"
 
-#: src/table/ColumnConfigurationDialog.qml:161
+#: src/table/ColumnConfigurationDialog.qml:142
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Толькі тэкст (павялічана да 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:162
+#: src/table/ColumnConfigurationDialog.qml:143
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Лінейная дыяграма (павялічана да 100%)"
 
-#: src/table/KillDialog.qml:87
+#: src/table/KillDialog.qml:75
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
@@ -761,3 +754,7 @@ msgstr "Забіць працэс акна…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Запусціць %1"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Скасаваць"

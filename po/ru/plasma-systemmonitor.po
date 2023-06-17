@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-15 02:13+0000\n"
+"POT-Creation-Date: 2023-06-17 02:07+0000\n"
 "PO-Revision-Date: 2022-06-18 10:28+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -345,7 +345,7 @@ msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Настройка страницы «%1»"
 
-#: src/page/EditablePage.qml:204 src/page/MissingSensorsDialog.qml:123
+#: src/page/EditablePage.qml:204
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -464,26 +464,19 @@ msgctxt "@info:placeholder"
 msgid "No Chart"
 msgstr "Нет диаграммы"
 
-#: src/page/LoadPresetDialog.qml:22
+#: src/page/LoadPresetDialog.qml:23
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
 msgstr "Загрузить профиль"
 
-#: src/page/LoadPresetDialog.qml:89
+#: src/page/LoadPresetDialog.qml:37
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
 msgstr "Загрузить"
 
-#: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
-#: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Отмена"
-
-#: src/page/MissingSensorsDialog.qml:35
+#: src/page/MissingSensorsDialog.qml:23
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
@@ -508,13 +501,13 @@ msgctxt "@action:button"
 msgid "Fix…"
 msgstr "Исправить…"
 
-#: src/page/PageDialog.qml:20
+#: src/page/PageDialog.qml:21
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Добавить"
 
-#: src/page/PageDialog.qml:23
+#: src/page/PageDialog.qml:24
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "New Page"
@@ -591,61 +584,61 @@ msgstr "При запуске приложения"
 msgid "New Title"
 msgstr "Новый заголовок"
 
-#: src/page/PageSortDialog.qml:100
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Показать страницу"
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Скрыть страницу"
 
-#: src/page/PageSortDialog.qml:148
+#: src/page/PageSortDialog.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Не сбрасывать страницу"
 
-#: src/page/PageSortDialog.qml:152
+#: src/page/PageSortDialog.qml:145
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Страница будет сброшена к исходному состоянию"
 
-#: src/page/PageSortDialog.qml:161
+#: src/page/PageSortDialog.qml:154
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Сбросить страницу к исходному состоянию"
 
-#: src/page/PageSortDialog.qml:170
+#: src/page/PageSortDialog.qml:163
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Не удалять эту страницу"
 
-#: src/page/PageSortDialog.qml:174
+#: src/page/PageSortDialog.qml:167
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Страница будет удалена"
 
-#: src/page/PageSortDialog.qml:187
+#: src/page/PageSortDialog.qml:180
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Удалить эту страницу"
 
-#: src/page/PageSortDialog.qml:206
+#: src/page/PageSortDialog.qml:194
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Начальная страница:"
 
-#: src/page/PageSortDialog.qml:215
+#: src/page/PageSortDialog.qml:203
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Последние страницы"
@@ -698,43 +691,43 @@ msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
 msgstr "Использовать максимальную высоту строки."
 
-#: src/table/ColumnConfigurationDialog.qml:26
+#: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Настройка столбцов"
 
-#: src/table/ColumnConfigurationDialog.qml:150
+#: src/table/ColumnConfigurationDialog.qml:131
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Скрытый"
 
-#: src/table/ColumnConfigurationDialog.qml:151
+#: src/table/ColumnConfigurationDialog.qml:132
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Только подписи"
 
-#: src/table/ColumnConfigurationDialog.qml:157
+#: src/table/ColumnConfigurationDialog.qml:138
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Линейная диаграмма"
 
-#: src/table/ColumnConfigurationDialog.qml:161
+#: src/table/ColumnConfigurationDialog.qml:142
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Только текст (масштабируется до 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:162
+#: src/table/ColumnConfigurationDialog.qml:143
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Линейный график (масштабируется до 100%)"
 
-#: src/table/KillDialog.qml:87
+#: src/table/KillDialog.qml:75
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
@@ -756,6 +749,10 @@ msgstr "Принудительно закрыть окно..."
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Запустить %1"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Отмена"
 
 #~ msgctxt "@action"
 #~ msgid "Import Page..."

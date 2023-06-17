@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-15 02:13+0000\n"
+"POT-Creation-Date: 2023-06-17 02:07+0000\n"
 "PO-Revision-Date: 2022-07-11 21:57+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -345,7 +345,7 @@ msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Muokkaa sivua ”%1”"
 
-#: src/page/EditablePage.qml:204 src/page/MissingSensorsDialog.qml:123
+#: src/page/EditablePage.qml:204
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -463,26 +463,19 @@ msgctxt "@info:placeholder"
 msgid "No Chart"
 msgstr "Ei kaaviota"
 
-#: src/page/LoadPresetDialog.qml:22
+#: src/page/LoadPresetDialog.qml:23
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
 msgstr "Lataa esiasetus"
 
-#: src/page/LoadPresetDialog.qml:89
+#: src/page/LoadPresetDialog.qml:37
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
 msgstr "Lataa"
 
-#: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
-#: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Peru"
-
-#: src/page/MissingSensorsDialog.qml:35
+#: src/page/MissingSensorsDialog.qml:23
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
@@ -505,13 +498,13 @@ msgctxt "@action:button"
 msgid "Fix…"
 msgstr "Korjaa…"
 
-#: src/page/PageDialog.qml:20
+#: src/page/PageDialog.qml:21
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Lisää"
 
-#: src/page/PageDialog.qml:23
+#: src/page/PageDialog.qml:24
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "New Page"
@@ -589,61 +582,61 @@ msgstr "Sovelluksen käynnistyessä"
 msgid "New Title"
 msgstr "Uusi otsikko"
 
-#: src/page/PageSortDialog.qml:100
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Näytä sivu"
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Piilota sivu"
 
-#: src/page/PageSortDialog.qml:148
+#: src/page/PageSortDialog.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Älä palauta sivua"
 
-#: src/page/PageSortDialog.qml:152
+#: src/page/PageSortDialog.qml:145
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Sivu palautetaan oletustilaansa"
 
-#: src/page/PageSortDialog.qml:161
+#: src/page/PageSortDialog.qml:154
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Palauta sivu oletustilaansa"
 
-#: src/page/PageSortDialog.qml:170
+#: src/page/PageSortDialog.qml:163
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Älä poista tätä sivua"
 
-#: src/page/PageSortDialog.qml:174
+#: src/page/PageSortDialog.qml:167
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Sivu poistetaan"
 
-#: src/page/PageSortDialog.qml:187
+#: src/page/PageSortDialog.qml:180
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Poista tämä sivu"
 
-#: src/page/PageSortDialog.qml:206
+#: src/page/PageSortDialog.qml:194
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Aloita tällä:"
 
-#: src/page/PageSortDialog.qml:215
+#: src/page/PageSortDialog.qml:203
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Viimeisin vierailtu sivu"
@@ -696,43 +689,43 @@ msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
 msgstr "Yritä käyttää mahdollisimman suurta korkeutta."
 
-#: src/table/ColumnConfigurationDialog.qml:26
+#: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Sarakkeiden asetukset"
 
-#: src/table/ColumnConfigurationDialog.qml:150
+#: src/table/ColumnConfigurationDialog.qml:131
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Piilotettu"
 
-#: src/table/ColumnConfigurationDialog.qml:151
+#: src/table/ColumnConfigurationDialog.qml:132
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Vain teksti"
 
-#: src/table/ColumnConfigurationDialog.qml:157
+#: src/table/ColumnConfigurationDialog.qml:138
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Viivakaavio"
 
-#: src/table/ColumnConfigurationDialog.qml:161
+#: src/table/ColumnConfigurationDialog.qml:142
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Vain teksti (skaalattu 100 %)"
 
-#: src/table/ColumnConfigurationDialog.qml:162
+#: src/table/ColumnConfigurationDialog.qml:143
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Viivakaavio (skaalattu 100 %)"
 
-#: src/table/KillDialog.qml:87
+#: src/table/KillDialog.qml:75
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
@@ -754,6 +747,10 @@ msgstr "Tapa ikkuna…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Käynnistä %1"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Peru"
 
 #~ msgctxt "@action"
 #~ msgid "Import Page..."

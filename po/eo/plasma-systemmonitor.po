@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-15 02:13+0000\n"
+"POT-Creation-Date: 2023-06-17 02:07+0000\n"
 "PO-Revision-Date: 2023-06-15 20:56+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -347,7 +347,7 @@ msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Agordi paĝon \"%1\""
 
-#: src/page/EditablePage.qml:204 src/page/MissingSensorsDialog.qml:123
+#: src/page/EditablePage.qml:204
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -465,26 +465,19 @@ msgctxt "@info:placeholder"
 msgid "No Chart"
 msgstr "Neniu Diagramo"
 
-#: src/page/LoadPresetDialog.qml:22
+#: src/page/LoadPresetDialog.qml:23
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
 msgstr "Ŝargi Antaŭmetiton"
 
-#: src/page/LoadPresetDialog.qml:89
+#: src/page/LoadPresetDialog.qml:37
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
 msgstr "Ŝargi"
 
-#: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
-#: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Nuligi"
-
-#: src/page/MissingSensorsDialog.qml:35
+#: src/page/MissingSensorsDialog.qml:23
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
@@ -507,13 +500,13 @@ msgctxt "@action:button"
 msgid "Fix…"
 msgstr "Ripari…"
 
-#: src/page/PageDialog.qml:20
+#: src/page/PageDialog.qml:21
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Aldoni"
 
-#: src/page/PageDialog.qml:23
+#: src/page/PageDialog.qml:24
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "New Page"
@@ -590,61 +583,61 @@ msgstr "Dum lanĉo de aplikaĵo"
 msgid "New Title"
 msgstr "Nova Titolo"
 
-#: src/page/PageSortDialog.qml:100
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Montri Paĝon"
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Kaŝi Paĝon"
 
-#: src/page/PageSortDialog.qml:148
+#: src/page/PageSortDialog.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Ne restarigi la paĝon"
 
-#: src/page/PageSortDialog.qml:152
+#: src/page/PageSortDialog.qml:145
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "La paĝo estos rekomencigita al sia defaŭlta stato"
 
-#: src/page/PageSortDialog.qml:161
+#: src/page/PageSortDialog.qml:154
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Restarigi la paĝon al ĝia defaŭlta stato"
 
-#: src/page/PageSortDialog.qml:170
+#: src/page/PageSortDialog.qml:163
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Ne forigi ĉi tiun paĝon"
 
-#: src/page/PageSortDialog.qml:174
+#: src/page/PageSortDialog.qml:167
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "La paĝo estos forigita"
 
-#: src/page/PageSortDialog.qml:187
+#: src/page/PageSortDialog.qml:180
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Forigi ĉi tiun paĝon"
 
-#: src/page/PageSortDialog.qml:206
+#: src/page/PageSortDialog.qml:194
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Komenci per:"
 
-#: src/page/PageSortDialog.qml:215
+#: src/page/PageSortDialog.qml:203
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Lasta Vizitita Paĝo"
@@ -697,43 +690,43 @@ msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
 msgstr "Provi uzi kiel eble plej multe da alteco."
 
-#: src/table/ColumnConfigurationDialog.qml:26
+#: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Agordi Kolumnojn"
 
-#: src/table/ColumnConfigurationDialog.qml:150
+#: src/table/ColumnConfigurationDialog.qml:131
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Kaŝita"
 
-#: src/table/ColumnConfigurationDialog.qml:151
+#: src/table/ColumnConfigurationDialog.qml:132
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Nur Teksto"
 
-#: src/table/ColumnConfigurationDialog.qml:157
+#: src/table/ColumnConfigurationDialog.qml:138
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Linia Diagramo"
 
-#: src/table/ColumnConfigurationDialog.qml:161
+#: src/table/ColumnConfigurationDialog.qml:142
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Nur Teksto (Skalita al 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:162
+#: src/table/ColumnConfigurationDialog.qml:143
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Linia diagramo (Skalita al 100%)"
 
-#: src/table/KillDialog.qml:87
+#: src/table/KillDialog.qml:75
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
@@ -755,3 +748,7 @@ msgstr "Malestigi Fenestron…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Lanĉi %1"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Nuligi"

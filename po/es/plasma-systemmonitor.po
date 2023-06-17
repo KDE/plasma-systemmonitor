@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
 # Automatically generated, 2020.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2020, 2021, 2022.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-15 02:13+0000\n"
-"PO-Revision-Date: 2022-06-15 17:40+0200\n"
+"POT-Creation-Date: 2023-06-17 02:07+0000\n"
+"PO-Revision-Date: 2023-06-17 01:24+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.04.2\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -347,7 +347,7 @@ msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Configurar la página «%1»"
 
-#: src/page/EditablePage.qml:204 src/page/MissingSensorsDialog.qml:123
+#: src/page/EditablePage.qml:204
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -465,26 +465,19 @@ msgctxt "@info:placeholder"
 msgid "No Chart"
 msgstr "Sin gráfico"
 
-#: src/page/LoadPresetDialog.qml:22
+#: src/page/LoadPresetDialog.qml:23
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
 msgstr "Cargar ajuste automático"
 
-#: src/page/LoadPresetDialog.qml:89
+#: src/page/LoadPresetDialog.qml:37
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
 msgstr "Cargar"
 
-#: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
-#: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
-#, kde-format
-msgctxt "@action:button"
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/page/MissingSensorsDialog.qml:35
+#: src/page/MissingSensorsDialog.qml:23
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
@@ -509,13 +502,13 @@ msgctxt "@action:button"
 msgid "Fix…"
 msgstr "Corregir..."
 
-#: src/page/PageDialog.qml:20
+#: src/page/PageDialog.qml:21
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
 msgstr "Añadir"
 
-#: src/page/PageDialog.qml:23
+#: src/page/PageDialog.qml:24
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "New Page"
@@ -592,61 +585,61 @@ msgstr "Durante el inicio de la aplicación"
 msgid "New Title"
 msgstr "Nuevo título"
 
-#: src/page/PageSortDialog.qml:100
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Mostrar página"
 
-#: src/page/PageSortDialog.qml:101
+#: src/page/PageSortDialog.qml:91
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Ocultar página"
 
-#: src/page/PageSortDialog.qml:148
+#: src/page/PageSortDialog.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "No reiniciar la página"
 
-#: src/page/PageSortDialog.qml:152
+#: src/page/PageSortDialog.qml:145
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "La página se reiniciará a su estado predeterminado"
 
-#: src/page/PageSortDialog.qml:161
+#: src/page/PageSortDialog.qml:154
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Reiniciar la página a su estado predeterminado"
 
-#: src/page/PageSortDialog.qml:170
+#: src/page/PageSortDialog.qml:163
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "No eliminar esta página"
 
-#: src/page/PageSortDialog.qml:174
+#: src/page/PageSortDialog.qml:167
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Se eliminará la página"
 
-#: src/page/PageSortDialog.qml:187
+#: src/page/PageSortDialog.qml:180
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Eliminar esta página"
 
-#: src/page/PageSortDialog.qml:206
+#: src/page/PageSortDialog.qml:194
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Empezar con:"
 
-#: src/page/PageSortDialog.qml:215
+#: src/page/PageSortDialog.qml:203
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Última página visitada"
@@ -700,43 +693,43 @@ msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
 msgstr "Intentar usar la máxima altura posible."
 
-#: src/table/ColumnConfigurationDialog.qml:26
+#: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Configurar columnas"
 
-#: src/table/ColumnConfigurationDialog.qml:150
+#: src/table/ColumnConfigurationDialog.qml:131
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Oculta"
 
-#: src/table/ColumnConfigurationDialog.qml:151
+#: src/table/ColumnConfigurationDialog.qml:132
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Solo texto"
 
-#: src/table/ColumnConfigurationDialog.qml:157
+#: src/table/ColumnConfigurationDialog.qml:138
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Gráfico de líneas"
 
-#: src/table/ColumnConfigurationDialog.qml:161
+#: src/table/ColumnConfigurationDialog.qml:142
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Solo texto (escalado al 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:162
+#: src/table/ColumnConfigurationDialog.qml:143
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Gráfico de líneas (escalado al 100%)"
 
-#: src/table/KillDialog.qml:87
+#: src/table/KillDialog.qml:75
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
@@ -745,7 +738,7 @@ msgstr "No volver a preguntar"
 #: src/table/TableViewHeader.qml:56
 #, kde-format
 msgid "Placeholder"
-msgstr ""
+msgstr "Texto para sustituir"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
@@ -758,3 +751,7 @@ msgstr "Matar una ventana..."
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Lanzar %1"
+
+#~ msgctxt "@action:button"
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
