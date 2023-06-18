@@ -132,7 +132,7 @@ Faces.SensorFace {
     contentItem: ProcessTableView {
         id: table
 
-        flatList: root.config.viewMode === 0
+        flatList: false //root.config.viewMode === 0
         viewMode: root.config.userFilterMode
         onViewModeChanged: root.config.userFilterMode = viewMode
 

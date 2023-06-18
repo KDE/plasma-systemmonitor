@@ -19,8 +19,11 @@ RowLayout {
     signal clicked
     Layout.topMargin: -delegate.topPadding
     Layout.bottomMargin: -delegate.bottomPadding
+    readonly property siblings : {
+        const index = model.index(row, column)
+    }
     Repeater {
-        model: root.level - 1
+        model: root.level
         delegate: StylePrivate.StyleItem {
             Layout.preferredWidth: controlRoot.Layout.preferredWidth
             Layout.fillHeight: true
@@ -29,7 +32,7 @@ RowLayout {
             elementType: "itembranchindicator"
             properties: {
                 "isItem": false,
-                "hasSibling": root.hasSiblings[modelData]
+                "hasSibling": true
             }
         }
     }

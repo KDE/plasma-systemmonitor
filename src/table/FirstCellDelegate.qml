@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-import QtQuick 2.12
+import QtQuick
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
@@ -19,13 +19,18 @@ BaseCellDelegate {
     property real iconSize: Kirigami.Units.iconSizes.small
     property bool treeDecorationVisible: false
 
+    required property TreeView treeView 
+    required property bool isTreeNode
+    required property bool expanded
+    required property bool hasChildren
+    required property int depth
+
     leftPadding: Kirigami.Units.largeSpacing
 
     contentItem: RowLayout {
         id: row
         property Item treeDecoration
         Kirigami.Icon {
-            id:blah
             Layout.preferredWidth: delegate.iconName != "" ? delegate.iconSize : 0
             Layout.preferredHeight: Layout.preferredWidth
             source: delegate.iconName
@@ -51,14 +56,14 @@ BaseCellDelegate {
             var component = Qt.createComponent("TreeDecoration.qml")
             if (component.status == Component.Ready) {
                 var incubator = component.incubateObject(null, {
-                    hasSiblings: Qt.binding(() => model.kDescendantHasSiblings),
-                    level: Qt.binding(() => model.kDescendantLevel),
-                    expandable: Qt.binding(() => model.kDescendantExpandable),
-                    expanded: Qt.binding(() => model.kDescendantExpanded)
+                    hasSiblings: Qt.binding(() => false ),//model.kDescendantHasSiblings),
+                    level: Qt.binding(() => delegate.depth),
+                    expandable: Qt.binding(() => delegate.hasChildren),
+                    expanded: Qt.binding(() => delegate.expanded)
                 })
                 var finishCreation = () => {
                     row.treeDecoration = incubator.object
-                    row.treeDecoration.clicked.connect(() => descendantsModel.toggleChildren(index))
+                    row.treeDecoration.clicked.connect(() => treeView.toggleExpanded(index))
                     var children = Array.from(row.children)
                     children.unshift(row.treeDecoration)
                     row.children = children

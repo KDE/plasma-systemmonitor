@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-import QtQuick 2.12
+import QtQuick
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
@@ -90,7 +90,7 @@ FocusScope {
 
         background: Rectangle { color: Kirigami.Theme.backgroundColor; Kirigami.Theme.colorSet: Kirigami.Theme.View }
 
-        TableView {
+        TreeView {
             id: tableView
             anchors.left: parent.left
             property ItemSelectionModel selectionModel: ItemSelectionModel {
@@ -106,12 +106,12 @@ FocusScope {
 
             // FIXME Until Tableview correctly reverses its columns, see QTBUG-90547
             model: root.model
-            Binding on model {
-                when: scrollView.LayoutMirroring.enabled
-                value: Table.ReverseColumnsProxyModel {
-                    sourceModel: root.model
-                }
-            }
+            // Binding on model {
+            //     when: scrollView.LayoutMirroring.enabled
+            //     value: Table.ReverseColumnsProxyModel {
+            //         sourceModel: root.model
+            //     }
+            // }
 
             activeFocusOnTab: true
 

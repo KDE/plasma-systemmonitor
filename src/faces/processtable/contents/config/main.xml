@@ -11,7 +11,7 @@ SPDX-License-Identifier: LGPL-2.0-or-later
 
     <group name="General">
         <entry name="viewMode" type="UInt">
-            <default>0</default>
+            <default>1</default>
         </entry>
         <entry name="userFilterMode" type="UInt">
             <default>0</default>
