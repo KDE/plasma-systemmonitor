@@ -745,7 +745,3 @@ msgstr ""
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Start %1"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "Avbryt"
