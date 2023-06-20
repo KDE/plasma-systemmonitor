@@ -11,8 +11,6 @@ import QtQuick.Controls 2.14
 
 import org.kde.kirigami 2.12 as Kirigami
 
-import org.kde.ksysguard.sensors 1.0 as Sensors
-import org.kde.ksysguard.faces 1.0 as Faces
 import org.kde.ksysguard.table 1.0 as Table
 
 Kirigami.FormLayout {

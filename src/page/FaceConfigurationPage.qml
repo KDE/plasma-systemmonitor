@@ -8,7 +8,6 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
 
-import Qt.labs.platform 1.1 as Platform
 
 import org.kde.kirigami 2.12 as Kirigami
 import org.kde.newstuff 1.81 as NewStuff

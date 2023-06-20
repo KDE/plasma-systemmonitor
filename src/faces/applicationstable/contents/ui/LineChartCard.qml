@@ -11,7 +11,6 @@ import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.4 as Kirigami
 
 import org.kde.quickcharts 1.0 as Charts
-import org.kde.quickcharts.controls 1.0 as ChartsControls
 import org.kde.ksysguard.formatter 1.0 as Formatter
 
 Kirigami.AbstractCard {

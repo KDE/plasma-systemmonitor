@@ -12,7 +12,6 @@ import Qt.labs.qmlmodels 1.0
 
 import org.kde.kirigami 2.15 as Kirigami
 
-import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.quickcharts 1.0 as Charts
 
 import org.kde.ksysguard.formatter 1.0 as Formatter
