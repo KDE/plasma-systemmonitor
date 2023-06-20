@@ -69,7 +69,7 @@ msgstr "A vista de aplicacións non é compatíbel co seu sistema."
 #, kde-format
 msgctxt "@option:check"
 msgid "Show details panel"
-msgstr "Mostrar o panel de detalles."
+msgstr "Amosar o panel de detalles."
 
 #: src/faces/applicationstable/contents/ui/Config.qml:29
 #, kde-format
@@ -93,7 +93,7 @@ msgstr "Saír da aplicación"
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
-msgstr "Mostrar a barra lateral de detalles"
+msgstr "Amosar a barra lateral de detalles"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:57
 #, kde-format
