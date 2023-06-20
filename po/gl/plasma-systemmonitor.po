@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-08 02:47+0000\n"
-"PO-Revision-Date: 2023-03-26 19:35+0200\n"
+"PO-Revision-Date: 2023-06-16 08:38+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -295,7 +295,7 @@ msgstr "Engadir un divisor"
 #, kde-format
 msgctxt "@action"
 msgid "Show Background"
-msgstr "Mostrar o fondo"
+msgstr "Amosar o fondo"
 
 #: src/page/ColumnControl.qml:137
 #, kde-format
@@ -427,7 +427,7 @@ msgstr "Título"
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
-msgstr "Mostrar o título"
+msgstr "Amosar o título"
 
 #: src/page/FaceConfigurationPage.qml:127
 #, kde-format
@@ -497,7 +497,7 @@ msgstr "Mover"
 #: src/page/PageContents.qml:100 src/page/PageEditor.qml:131
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
-msgstr "Á páxina fáltanlle sensores e non se mostrará correctamente."
+msgstr "Á páxina fáltanlle sensores e non se amosará correctamente."
 
 #: src/page/PageContents.qml:104 src/page/PageEditor.qml:135
 #, kde-format
@@ -592,7 +592,7 @@ msgstr "Novo título"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
-msgstr "Mostrar a páxina"
+msgstr "Amosar a páxina"
 
 #: src/page/PageSortDialog.qml:102
 #, kde-format
@@ -681,7 +681,7 @@ msgstr "Mínima"
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
-msgstr "Usar a altura mínima necesaria para mostrar correctamente o contido."
+msgstr "Usar a altura mínima necesaria para amosar correctamente o contido."
 
 #: src/page/RowControl.qml:159
 #, kde-format
