@@ -25,8 +25,7 @@ BaseCellDelegate {
         id: row
         property Item treeDecoration
         Kirigami.Icon {
-            id:blah
-            Layout.preferredWidth: delegate.iconName != "" ? delegate.iconSize : 0
+            Layout.preferredWidth: delegate.iconSize
             Layout.preferredHeight: Layout.preferredWidth
             source: delegate.iconName
             fallback: ""
