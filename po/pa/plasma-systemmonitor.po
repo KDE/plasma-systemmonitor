@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-17 02:07+0000\n"
+"POT-Creation-Date: 2023-06-22 02:08+0000\n"
 "PO-Revision-Date: 2023-04-01 21:07-0700\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -360,96 +360,96 @@ msgctxt "@action"
 msgid "Remove"
 msgstr "ਹਟਾਓ"
 
-#: src/page/FaceConfigurationPage.qml:26
+#: src/page/FaceConfigurationPage.qml:25
 #, kde-format
 msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
 msgstr "%1 ਦੀ ਸੰਰਚਨਾ"
 
-#: src/page/FaceConfigurationPage.qml:32
+#: src/page/FaceConfigurationPage.qml:31
 #, kde-format
 msgctxt "@action"
 msgid "Close"
 msgstr "ਬੰਦ ਕਰੋ"
 
-#: src/page/FaceConfigurationPage.qml:38
+#: src/page/FaceConfigurationPage.qml:37
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
 msgstr "…ਪਹਿਲਾਂ-ਸੈ਼ਟ ਕੀਤੇ ਲੋਡ ਕਰੋ"
 
-#: src/page/FaceConfigurationPage.qml:43
+#: src/page/FaceConfigurationPage.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "…ਨਵੇਂ ਪਹਿਲਾਂ-ਸੈ਼ਟ ਕੀਤੇ ਲਵੋ"
 
-#: src/page/FaceConfigurationPage.qml:49
+#: src/page/FaceConfigurationPage.qml:48
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
 msgstr ""
 
-#: src/page/FaceConfigurationPage.qml:53
+#: src/page/FaceConfigurationPage.qml:52
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr ""
 
-#: src/page/FaceConfigurationPage.qml:58 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:57 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "ਚਾਰਟ ਨੂੰ ਡੈਸਕਟਾਪ ਵਿਜੈੱਟ ਵਜੋਂ ਜੋੜੋ"
 
-#: src/page/FaceConfigurationPage.qml:67
+#: src/page/FaceConfigurationPage.qml:66
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "ਨਵੇਂ ਦਿੱਖ ਸਟਾਈਲ ਲਵੋ…"
 
-#: src/page/FaceConfigurationPage.qml:86
+#: src/page/FaceConfigurationPage.qml:85
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "ਲੋਡ ਕੀਤਾ ਪ੍ਰੀ-ਸੈੱਟ %1।"
 
-#: src/page/FaceConfigurationPage.qml:103
+#: src/page/FaceConfigurationPage.qml:102
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "ਨਾਂ"
 
-#: src/page/FaceConfigurationPage.qml:109
+#: src/page/FaceConfigurationPage.qml:108
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "ਨਾਂ ਵੇਖਾਓ"
 
-#: src/page/FaceConfigurationPage.qml:127
+#: src/page/FaceConfigurationPage.qml:126
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "ਵੇਖਾਉਣ ਦੀ ਸ਼ੈਲੀ"
 
-#: src/page/FaceConfigurationPage.qml:155
+#: src/page/FaceConfigurationPage.qml:154
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "ਅੱਪਡੇਟ ਵਿਚਾਲੇ ਘੱਟੋ-ਘੱਟ ਸਮਾਂ:"
 
-#: src/page/FaceConfigurationPage.qml:172
+#: src/page/FaceConfigurationPage.qml:171
 #, kde-format
 msgid "No Limit"
 msgstr "ਕੋਈ ਹੱਦ ਨਹੀਂ"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:176
+#: src/page/FaceConfigurationPage.qml:175
 #, kde-format
 msgid "1 second"
 msgstr "1 ਸਕਿੰਟ"
 
-#: src/page/FaceConfigurationPage.qml:178
+#: src/page/FaceConfigurationPage.qml:177
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 ਸਕਿੰਟ"
@@ -578,61 +578,61 @@ msgstr ""
 msgid "New Title"
 msgstr "ਨਵਾਂ ਨਾਂ"
 
-#: src/page/PageSortDialog.qml:90
+#: src/page/PageSortDialog.qml:89
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "ਸਫ਼ਾ ਵੇਖਾਓ"
 
-#: src/page/PageSortDialog.qml:91
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "ਸਫ਼ਾ ਲੁਕਾਓ"
 
-#: src/page/PageSortDialog.qml:141
+#: src/page/PageSortDialog.qml:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "ਸਫ਼ੇ ਨੂੰ ਮੁੜ-ਸੈੱਟ ਨਾ ਕਰੋ"
 
-#: src/page/PageSortDialog.qml:145
+#: src/page/PageSortDialog.qml:144
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:154
+#: src/page/PageSortDialog.qml:153
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:163
+#: src/page/PageSortDialog.qml:162
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "ਇਸ ਸਫ਼ੇ ਨੂੰ ਨਾ ਹਟਾਓ"
 
-#: src/page/PageSortDialog.qml:167
+#: src/page/PageSortDialog.qml:166
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "ਸਫ਼ੇ ਨੂੰ ਹਟਾਇਆ ਜਾਵੇਗਾ"
 
-#: src/page/PageSortDialog.qml:180
+#: src/page/PageSortDialog.qml:179
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "ਇਹ ਸਫ਼ਾ ਹਟਾਓ"
 
-#: src/page/PageSortDialog.qml:194
+#: src/page/PageSortDialog.qml:193
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "ਇਸ ਨਾਲ ਸ਼ੁਰੂ:"
 
-#: src/page/PageSortDialog.qml:203
+#: src/page/PageSortDialog.qml:202
 #, kde-format
 msgid "Last Visited Page"
 msgstr "ਪਿਛਲੀ ਵਾਰ ਖੋਲ੍ਹਿਆ ਸਫ਼ਾ"

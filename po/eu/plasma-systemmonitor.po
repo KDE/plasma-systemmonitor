@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-17 02:07+0000\n"
+"POT-Creation-Date: 2023-06-22 02:08+0000\n"
 "PO-Revision-Date: 2022-08-04 16:31+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -366,96 +366,96 @@ msgctxt "@action"
 msgid "Remove"
 msgstr "Kendu"
 
-#: src/page/FaceConfigurationPage.qml:26
+#: src/page/FaceConfigurationPage.qml:25
 #, kde-format
 msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
 msgstr "Konfiguratu %1"
 
-#: src/page/FaceConfigurationPage.qml:32
+#: src/page/FaceConfigurationPage.qml:31
 #, kde-format
 msgctxt "@action"
 msgid "Close"
 msgstr "Itxi"
 
-#: src/page/FaceConfigurationPage.qml:38
+#: src/page/FaceConfigurationPage.qml:37
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
 msgstr "Zamatu aurrehautaketa..."
 
-#: src/page/FaceConfigurationPage.qml:43
+#: src/page/FaceConfigurationPage.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "Lortu aurrehautaketa berriak..."
 
-#: src/page/FaceConfigurationPage.qml:49
+#: src/page/FaceConfigurationPage.qml:48
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
 msgstr "Gorde ezarpenak aurrehautaketa gisa"
 
-#: src/page/FaceConfigurationPage.qml:53
+#: src/page/FaceConfigurationPage.qml:52
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Gorde ezarpenak %1 aurrehautaketa gisa."
 
-#: src/page/FaceConfigurationPage.qml:58 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:57 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "Gehitu diagrama mahaigaineko trepeta gisa"
 
-#: src/page/FaceConfigurationPage.qml:67
+#: src/page/FaceConfigurationPage.qml:66
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "Lortu azalpen estilo berriak..."
 
-#: src/page/FaceConfigurationPage.qml:86
+#: src/page/FaceConfigurationPage.qml:85
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "%1 aurrehautaketa zamatu da."
 
-#: src/page/FaceConfigurationPage.qml:103
+#: src/page/FaceConfigurationPage.qml:102
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "Titulua"
 
-#: src/page/FaceConfigurationPage.qml:109
+#: src/page/FaceConfigurationPage.qml:108
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "Erakutsi titulua"
 
-#: src/page/FaceConfigurationPage.qml:127
+#: src/page/FaceConfigurationPage.qml:126
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "Azaltzeko estiloa"
 
-#: src/page/FaceConfigurationPage.qml:155
+#: src/page/FaceConfigurationPage.qml:154
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "Eguneratzeen arteko gutxieneko denbora:"
 
-#: src/page/FaceConfigurationPage.qml:172
+#: src/page/FaceConfigurationPage.qml:171
 #, kde-format
 msgid "No Limit"
 msgstr "Mugarik ez"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:176
+#: src/page/FaceConfigurationPage.qml:175
 #, kde-format
 msgid "1 second"
 msgstr "segundo 1"
 
-#: src/page/FaceConfigurationPage.qml:178
+#: src/page/FaceConfigurationPage.qml:177
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 segundo"
@@ -584,61 +584,61 @@ msgstr "Aplikazio abioan"
 msgid "New Title"
 msgstr "Titulu berria"
 
-#: src/page/PageSortDialog.qml:90
+#: src/page/PageSortDialog.qml:89
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Erakutsi orria"
 
-#: src/page/PageSortDialog.qml:91
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Ezkutatu orria"
 
-#: src/page/PageSortDialog.qml:141
+#: src/page/PageSortDialog.qml:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Orria ez berrezarri"
 
-#: src/page/PageSortDialog.qml:145
+#: src/page/PageSortDialog.qml:144
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Orria egoera lehenetsira berrezarriko da"
 
-#: src/page/PageSortDialog.qml:154
+#: src/page/PageSortDialog.qml:153
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Berrezarri orria egoera lehenetsira"
 
-#: src/page/PageSortDialog.qml:163
+#: src/page/PageSortDialog.qml:162
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Ez kendu orri hau"
 
-#: src/page/PageSortDialog.qml:167
+#: src/page/PageSortDialog.qml:166
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Orria kendu egingo da"
 
-#: src/page/PageSortDialog.qml:180
+#: src/page/PageSortDialog.qml:179
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Kendu orri hau"
 
-#: src/page/PageSortDialog.qml:194
+#: src/page/PageSortDialog.qml:193
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Hasi honekin:"
 
-#: src/page/PageSortDialog.qml:203
+#: src/page/PageSortDialog.qml:202
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Bisitatutako azken orria"

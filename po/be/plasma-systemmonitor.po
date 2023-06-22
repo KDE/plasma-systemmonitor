@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-17 02:07+0000\n"
+"POT-Creation-Date: 2023-06-22 02:08+0000\n"
 "PO-Revision-Date: 2023-01-24 13:01\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -367,96 +367,96 @@ msgctxt "@action"
 msgid "Remove"
 msgstr "Выдаліць"
 
-#: src/page/FaceConfigurationPage.qml:26
+#: src/page/FaceConfigurationPage.qml:25
 #, kde-format
 msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
 msgstr "Наладжванне \"%1\""
 
-#: src/page/FaceConfigurationPage.qml:32
+#: src/page/FaceConfigurationPage.qml:31
 #, kde-format
 msgctxt "@action"
 msgid "Close"
 msgstr "Закрыць"
 
-#: src/page/FaceConfigurationPage.qml:38
+#: src/page/FaceConfigurationPage.qml:37
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
 msgstr "Загрузіць профіль…"
 
-#: src/page/FaceConfigurationPage.qml:43
+#: src/page/FaceConfigurationPage.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "Атрымаць новыя профілі…"
 
-#: src/page/FaceConfigurationPage.qml:49
+#: src/page/FaceConfigurationPage.qml:48
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
 msgstr "Захаваць налады як профіль"
 
-#: src/page/FaceConfigurationPage.qml:53
+#: src/page/FaceConfigurationPage.qml:52
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Захаваць налады як профіль \"%1\"."
 
-#: src/page/FaceConfigurationPage.qml:58 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:57 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "Дадаць дыяграму як віджэт працоўнага стала"
 
-#: src/page/FaceConfigurationPage.qml:67
+#: src/page/FaceConfigurationPage.qml:66
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "Атрымаць новыя стылі…"
 
-#: src/page/FaceConfigurationPage.qml:86
+#: src/page/FaceConfigurationPage.qml:85
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "Загружаны профіль \"%1\"."
 
-#: src/page/FaceConfigurationPage.qml:103
+#: src/page/FaceConfigurationPage.qml:102
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "Назва"
 
-#: src/page/FaceConfigurationPage.qml:109
+#: src/page/FaceConfigurationPage.qml:108
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "Паказваць назву"
 
-#: src/page/FaceConfigurationPage.qml:127
+#: src/page/FaceConfigurationPage.qml:126
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "Стыль паказу"
 
-#: src/page/FaceConfigurationPage.qml:155
+#: src/page/FaceConfigurationPage.qml:154
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "Мінімальны час паміж абнаўленнямі:"
 
-#: src/page/FaceConfigurationPage.qml:172
+#: src/page/FaceConfigurationPage.qml:171
 #, kde-format
 msgid "No Limit"
 msgstr "Няма абмежавання"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:176
+#: src/page/FaceConfigurationPage.qml:175
 #, kde-format
 msgid "1 second"
 msgstr "1 секунда"
 
-#: src/page/FaceConfigurationPage.qml:178
+#: src/page/FaceConfigurationPage.qml:177
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 секунд(ы) "
@@ -587,61 +587,61 @@ msgstr "Падчас запуску праграмы"
 msgid "New Title"
 msgstr "Новая назва"
 
-#: src/page/PageSortDialog.qml:90
+#: src/page/PageSortDialog.qml:89
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Паказваць старонку"
 
-#: src/page/PageSortDialog.qml:91
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Схаваць старонку"
 
-#: src/page/PageSortDialog.qml:141
+#: src/page/PageSortDialog.qml:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Не скідаць гэтую старонку"
 
-#: src/page/PageSortDialog.qml:145
+#: src/page/PageSortDialog.qml:144
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Гэтая старонка будзе скінутая да прадвызначанага стану"
 
-#: src/page/PageSortDialog.qml:154
+#: src/page/PageSortDialog.qml:153
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Скінуць гэтую старонку да прадвызначанага стану"
 
-#: src/page/PageSortDialog.qml:163
+#: src/page/PageSortDialog.qml:162
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Не выдаляць гэтую старонку"
 
-#: src/page/PageSortDialog.qml:167
+#: src/page/PageSortDialog.qml:166
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Гэтая старонка будзе выдаленая"
 
-#: src/page/PageSortDialog.qml:180
+#: src/page/PageSortDialog.qml:179
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Выдаліць гэтую старонку"
 
-#: src/page/PageSortDialog.qml:194
+#: src/page/PageSortDialog.qml:193
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Пачынаць з:"
 
-#: src/page/PageSortDialog.qml:203
+#: src/page/PageSortDialog.qml:202
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Апошняя наведаная старонка"

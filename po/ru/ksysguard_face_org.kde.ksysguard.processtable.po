@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-12 00:57+0000\n"
+"POT-Creation-Date: 2023-06-22 02:08+0000\n"
 "PO-Revision-Date: 2023-01-28 10:46+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -18,157 +18,157 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 21.08.3\n"
 
-#: src/faces/processtable/contents/ui/Config.qml:26
+#: src/faces/processtable/contents/ui/Config.qml:24
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes."
 msgstr "Подтверждать завершение процессов."
 
-#: src/faces/processtable/contents/ui/Config.qml:31
+#: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
 msgctxt "@label:listbox"
 msgid "By default show:"
 msgstr "По умолчанию показывать:"
 
-#: src/faces/processtable/contents/ui/Config.qml:40
+#: src/faces/processtable/contents/ui/Config.qml:38
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own Processes"
 msgstr "Собственные процессы"
 
-#: src/faces/processtable/contents/ui/Config.qml:41
+#: src/faces/processtable/contents/ui/Config.qml:39
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "User Processes"
 msgstr "Пользовательские процессы"
 
-#: src/faces/processtable/contents/ui/Config.qml:42
+#: src/faces/processtable/contents/ui/Config.qml:40
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "System Processes"
 msgstr "Системные процессы"
 
-#: src/faces/processtable/contents/ui/Config.qml:43
+#: src/faces/processtable/contents/ui/Config.qml:41
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "All Processes"
 msgstr "Все процессы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:29
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:28
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "Поиск"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:40
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:39
 #, kde-format
 msgctxt "@action"
 msgid "End Process"
 msgstr "Завершить процесс"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:54
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:53
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
 msgstr "В виде списка"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:71
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:70
 #, kde-format
 msgctxt "@action"
 msgid "Display as Tree"
 msgstr "В виде дерева"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:83
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:82
 #, kde-format
 msgctxt "@action %1 is view type"
 msgid "Show: %1"
 msgstr "Режим просмотра: %1"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:86
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:85
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
 msgstr "Собственные процессы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:95
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:94
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "User Processes"
 msgstr "Пользовательские процессы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:104
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:103
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
 msgstr "Системные процессы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:113
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:112
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
 msgstr "Все процессы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:125
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:124
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
 msgstr "Настроить столбцы..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:173
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:172
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Отправить сигнал"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:176
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:175
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Приостановить (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:180
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:179
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Возобновить (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:184
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:183
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Перечитать конфигурацию (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:188
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:187
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Прервать (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:192
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:191
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Завершить (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:196
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:195
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Уничтожить (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:200
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:199
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Пользовательский 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:204
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Пользовательский 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:212
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:211
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -178,13 +178,13 @@ msgstr[1] "Завершить %1 процесса"
 msgstr[2] "Завершить %1 процессов"
 msgstr[3] "Завершить процесс"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:224
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:223
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Настроить столбцы..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:234
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:233
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -194,7 +194,7 @@ msgstr[1] "Завершение %1 процессов"
 msgstr[2] "Завершение %1 процессов"
 msgstr[3] "Завершение процесса"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:234
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -204,7 +204,7 @@ msgstr[1] "Завершить процессы"
 msgstr[2] "Завершить процессы"
 msgstr[3] "Завершить процесс"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:237
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:236
 #, kde-format
 msgid ""
 "Are you sure you want to end this process?\n"
@@ -225,7 +225,7 @@ msgstr[3] ""
 "Завершить выбранный процесс?\n"
 "Все несохранённые данные будут потеряны."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:244
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:243
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"

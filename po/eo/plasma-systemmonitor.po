@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-17 02:07+0000\n"
+"POT-Creation-Date: 2023-06-22 02:08+0000\n"
 "PO-Revision-Date: 2023-06-15 20:56+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -365,96 +365,96 @@ msgctxt "@action"
 msgid "Remove"
 msgstr "Forigi"
 
-#: src/page/FaceConfigurationPage.qml:26
+#: src/page/FaceConfigurationPage.qml:25
 #, kde-format
 msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
 msgstr "Agordi %1"
 
-#: src/page/FaceConfigurationPage.qml:32
+#: src/page/FaceConfigurationPage.qml:31
 #, kde-format
 msgctxt "@action"
 msgid "Close"
 msgstr "Fermi"
 
-#: src/page/FaceConfigurationPage.qml:38
+#: src/page/FaceConfigurationPage.qml:37
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
 msgstr "Ŝargi antaŭgordilon…"
 
-#: src/page/FaceConfigurationPage.qml:43
+#: src/page/FaceConfigurationPage.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "Akiri novajn antaŭgordojn…"
 
-#: src/page/FaceConfigurationPage.qml:49
+#: src/page/FaceConfigurationPage.qml:48
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
 msgstr "Konservi agordojn kiel antaŭdifinitajn"
 
-#: src/page/FaceConfigurationPage.qml:53
+#: src/page/FaceConfigurationPage.qml:52
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Konservitaj agordoj kiel antaŭdifinita %1."
 
-#: src/page/FaceConfigurationPage.qml:58 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:57 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "Aldoni Charton kiel Labortablan Fenestraĵon"
 
-#: src/page/FaceConfigurationPage.qml:67
+#: src/page/FaceConfigurationPage.qml:66
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "Akiri novajn ekranstilojn…"
 
-#: src/page/FaceConfigurationPage.qml:86
+#: src/page/FaceConfigurationPage.qml:85
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "Ŝargita antaŭfiksita %1."
 
-#: src/page/FaceConfigurationPage.qml:103
+#: src/page/FaceConfigurationPage.qml:102
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "Titolo"
 
-#: src/page/FaceConfigurationPage.qml:109
+#: src/page/FaceConfigurationPage.qml:108
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "Montri Titolo"
 
-#: src/page/FaceConfigurationPage.qml:127
+#: src/page/FaceConfigurationPage.qml:126
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "Montra Stilo"
 
-#: src/page/FaceConfigurationPage.qml:155
+#: src/page/FaceConfigurationPage.qml:154
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "Minimuma tempo inter ĝisdatigoj:"
 
-#: src/page/FaceConfigurationPage.qml:172
+#: src/page/FaceConfigurationPage.qml:171
 #, kde-format
 msgid "No Limit"
 msgstr "Neniu Limo"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:176
+#: src/page/FaceConfigurationPage.qml:175
 #, kde-format
 msgid "1 second"
 msgstr "1 sekundo"
 
-#: src/page/FaceConfigurationPage.qml:178
+#: src/page/FaceConfigurationPage.qml:177
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 sekundoj"
@@ -583,61 +583,61 @@ msgstr "Dum lanĉo de aplikaĵo"
 msgid "New Title"
 msgstr "Nova Titolo"
 
-#: src/page/PageSortDialog.qml:90
+#: src/page/PageSortDialog.qml:89
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Montri Paĝon"
 
-#: src/page/PageSortDialog.qml:91
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Kaŝi Paĝon"
 
-#: src/page/PageSortDialog.qml:141
+#: src/page/PageSortDialog.qml:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Ne restarigi la paĝon"
 
-#: src/page/PageSortDialog.qml:145
+#: src/page/PageSortDialog.qml:144
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "La paĝo estos rekomencigita al sia defaŭlta stato"
 
-#: src/page/PageSortDialog.qml:154
+#: src/page/PageSortDialog.qml:153
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Restarigi la paĝon al ĝia defaŭlta stato"
 
-#: src/page/PageSortDialog.qml:163
+#: src/page/PageSortDialog.qml:162
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Ne forigi ĉi tiun paĝon"
 
-#: src/page/PageSortDialog.qml:167
+#: src/page/PageSortDialog.qml:166
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "La paĝo estos forigita"
 
-#: src/page/PageSortDialog.qml:180
+#: src/page/PageSortDialog.qml:179
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Forigi ĉi tiun paĝon"
 
-#: src/page/PageSortDialog.qml:194
+#: src/page/PageSortDialog.qml:193
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Komenci per:"
 
-#: src/page/PageSortDialog.qml:203
+#: src/page/PageSortDialog.qml:202
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Lasta Vizitita Paĝo"

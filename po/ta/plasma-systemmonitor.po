@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-17 02:07+0000\n"
+"POT-Creation-Date: 2023-06-22 02:08+0000\n"
 "PO-Revision-Date: 2023-06-18 14:00+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -360,96 +360,96 @@ msgctxt "@action"
 msgid "Remove"
 msgstr "நீக்கு"
 
-#: src/page/FaceConfigurationPage.qml:26
+#: src/page/FaceConfigurationPage.qml:25
 #, kde-format
 msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
 msgstr "%1 தனை அமை"
 
-#: src/page/FaceConfigurationPage.qml:32
+#: src/page/FaceConfigurationPage.qml:31
 #, kde-format
 msgctxt "@action"
 msgid "Close"
 msgstr "மூடு"
 
-#: src/page/FaceConfigurationPage.qml:38
+#: src/page/FaceConfigurationPage.qml:37
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
 msgstr "முன்னமைக்கப்பட்டதை ஏற்று…"
 
-#: src/page/FaceConfigurationPage.qml:43
+#: src/page/FaceConfigurationPage.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "புதிய முன்னமைப்புகளை பெறு…"
 
-#: src/page/FaceConfigurationPage.qml:49
+#: src/page/FaceConfigurationPage.qml:48
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
 msgstr "அமைப்புகளை முன்னமைப்பாக சேமி"
 
-#: src/page/FaceConfigurationPage.qml:53
+#: src/page/FaceConfigurationPage.qml:52
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "%1 என்ற முன்னமைக்கப்பாக அமைப்புகள் சேமிக்கப்பட்டன."
 
-#: src/page/FaceConfigurationPage.qml:58 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:57 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "வரைபடத்தை பணிமேடை பிளாஸ்மாய்டாக சேர்"
 
-#: src/page/FaceConfigurationPage.qml:67
+#: src/page/FaceConfigurationPage.qml:66
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "புதிய காட்சிமுறைகளை பெறு…"
 
-#: src/page/FaceConfigurationPage.qml:86
+#: src/page/FaceConfigurationPage.qml:85
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "%1 என்ற முன்னமைப்பு ஏற்றப்பட்டது."
 
-#: src/page/FaceConfigurationPage.qml:103
+#: src/page/FaceConfigurationPage.qml:102
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "தலைப்பு"
 
-#: src/page/FaceConfigurationPage.qml:109
+#: src/page/FaceConfigurationPage.qml:108
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "தலைப்பை காட்டு"
 
-#: src/page/FaceConfigurationPage.qml:127
+#: src/page/FaceConfigurationPage.qml:126
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "காட்சி முறை"
 
-#: src/page/FaceConfigurationPage.qml:155
+#: src/page/FaceConfigurationPage.qml:154
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "புதிப்பிப்புகளுக்கிடையே குறைந்தபட்ச நேரம்:"
 
-#: src/page/FaceConfigurationPage.qml:172
+#: src/page/FaceConfigurationPage.qml:171
 #, kde-format
 msgid "No Limit"
 msgstr "வரம்பில்லை"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:176
+#: src/page/FaceConfigurationPage.qml:175
 #, kde-format
 msgid "1 second"
 msgstr "1 நொடி"
 
-#: src/page/FaceConfigurationPage.qml:178
+#: src/page/FaceConfigurationPage.qml:177
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 நொடிகள்"
@@ -578,61 +578,61 @@ msgstr "செயலியை துவக்கும்போது"
 msgid "New Title"
 msgstr "புதிய தலைப்பு"
 
-#: src/page/PageSortDialog.qml:90
+#: src/page/PageSortDialog.qml:89
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "பக்கத்தை காட்டு"
 
-#: src/page/PageSortDialog.qml:91
+#: src/page/PageSortDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "பக்கத்தை மறை"
 
-#: src/page/PageSortDialog.qml:141
+#: src/page/PageSortDialog.qml:140
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "பக்கத்தை மீட்டமைக்காதே"
 
-#: src/page/PageSortDialog.qml:145
+#: src/page/PageSortDialog.qml:144
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "பக்கம், அதன் இயல்பிருப்பு நிலைக்கு மாற்றப்படும்"
 
-#: src/page/PageSortDialog.qml:154
+#: src/page/PageSortDialog.qml:153
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "பக்கத்தை இயல்பிருப்பு நிலைக்கு மீட்டமை"
 
-#: src/page/PageSortDialog.qml:163
+#: src/page/PageSortDialog.qml:162
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "இப்பக்கத்தை நீக்காதே"
 
-#: src/page/PageSortDialog.qml:167
+#: src/page/PageSortDialog.qml:166
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "இப்பக்கம் நீக்கப்படும்"
 
-#: src/page/PageSortDialog.qml:180
+#: src/page/PageSortDialog.qml:179
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "இப்பக்கத்தை நீக்கு"
 
-#: src/page/PageSortDialog.qml:194
+#: src/page/PageSortDialog.qml:193
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "தொடங்கும்போது இதை காட்டு:"
 
-#: src/page/PageSortDialog.qml:203
+#: src/page/PageSortDialog.qml:202
 #, kde-format
 msgid "Last Visited Page"
 msgstr "கடைசியாக பார்த்த பக்கம்"
