@@ -730,7 +730,7 @@ msgstr "Znovu se nedotazovat"
 #: src/table/TableViewHeader.qml:56
 #, kde-format
 msgid "Placeholder"
-msgstr ""
+msgstr "Prázdné místo"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
@@ -743,7 +743,3 @@ msgstr "Zabít okno…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Spustit %1"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "Zrušit"
