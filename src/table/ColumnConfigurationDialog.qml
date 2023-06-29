@@ -105,7 +105,9 @@ Kirigami.Dialog {
                         Layout.rowSpan: 2
                         listItem: listItem
                         listView: columnView
-                        onMoveRequested: sortModel.move(oldIndex, newIndex)
+                        onMoveRequested: (oldIndex, newIndex) => {
+                            sortModel.move(oldIndex, newIndex);
+                        }
                     }
                     Label {
                         Layout.preferredWidth: Kirigami.Units.gridUnit * 10

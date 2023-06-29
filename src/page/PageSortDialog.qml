@@ -79,7 +79,7 @@ Kirigami.Dialog {
                         Layout.rowSpan: 2
                         listItem: listItem
                         listView: pageList
-                        onMoveRequested: {
+                        onMoveRequested: (oldIndex, newIndex) => {
                             sortModel.move(oldIndex, newIndex)
                         }
                     }
