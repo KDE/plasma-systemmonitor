@@ -291,3 +291,5 @@ void PagesModel::ghnsEntryStatusChanged(const KNSCore::Entry &entry)
         }
     }
 }
+
+#include "moc_PagesModel.cpp"

@@ -210,3 +210,5 @@ void ProcessSortFilterModel::findColumns()
     }
     setFilterKeyColumn(nameColumn);
 }
+
+#include "moc_ProcessSortFilterModel.cpp"

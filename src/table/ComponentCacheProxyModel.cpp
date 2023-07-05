@@ -129,3 +129,5 @@ void ComponentCacheProxyModel::createPendingInstance()
         Q_EMIT dataChanged(index, index, {CachedComponentRole});
     }
 }
+
+#include "moc_ComponentCacheProxyModel.cpp"

@@ -24,3 +24,5 @@ void TablePlugin::registerTypes(const char *uri)
     qmlRegisterType<ProcessSortFilterModel>(uri, 1, 0, "ProcessSortFilterModel");
     qmlRegisterType<ReverseColumnsProxyModel>(uri, 1, 0, "ReverseColumnsProxyModel");
 }
+
+#include "moc_TablePlugin.cpp"

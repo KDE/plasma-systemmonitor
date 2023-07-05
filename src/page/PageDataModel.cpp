@@ -122,3 +122,5 @@ int PageDataModel::countObjects(const QVariantMap &properties)
 
     return result;
 }
+
+#include "moc_PageDataModel.cpp"

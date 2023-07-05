@@ -67,3 +67,5 @@ QString WidgetExporter::configEntriesScript(const KConfigGroup &group, const QSt
     }
     return script;
 }
+
+#include "moc_WidgetExporter.cpp"

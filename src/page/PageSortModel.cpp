@@ -152,3 +152,5 @@ void PageSortModel::applyChangesToSourceModel() const
         pagesModel->removeLocalPageFiles(name);
     }
 }
+
+#include "moc_PageSortModel.cpp"

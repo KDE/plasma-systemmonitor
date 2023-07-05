@@ -110,3 +110,5 @@ void FacesModel::findFaceLoaders(PageDataObject *pageData)
         }
     }
 }
+
+#include "moc_FacesModel.cpp"

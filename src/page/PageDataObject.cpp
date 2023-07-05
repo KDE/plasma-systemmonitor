@@ -372,3 +372,5 @@ QString PageDataObject::fileName() const
 {
     return m_config->name();
 }
+
+#include "moc_PageDataObject.cpp"

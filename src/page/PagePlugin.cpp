@@ -31,3 +31,5 @@ void PagePlugin::registerTypes(const char *uri)
 
     qmlRegisterUncreatableType<PageDataObject>(uri, 1, 0, "PageDataObject", QStringLiteral("Used for data storage"));
 }
+
+#include "moc_PagePlugin.cpp"

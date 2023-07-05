@@ -74,3 +74,5 @@ void Configuration::componentComplete()
 
     Q_EMIT configurationLoaded();
 }
+
+#include "moc_Configuration.cpp"

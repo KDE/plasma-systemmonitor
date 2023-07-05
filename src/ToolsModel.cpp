@@ -118,3 +118,5 @@ void ToolsModel::addFromService(const QString &serviceName)
         m_entries << entry;
     }
 }
+
+#include "moc_ToolsModel.cpp"

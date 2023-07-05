@@ -127,3 +127,5 @@ int ColumnDisplayModel::idRoleNumber() const
     }
     return m_idRoleNumber;
 }
+
+#include "moc_ColumnDisplayModel.cpp"

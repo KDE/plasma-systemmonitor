@@ -104,3 +104,5 @@ void FaceLoader::reset()
     m_oldController = m_faceController;
     m_faceController = nullptr;
 }
+
+#include "moc_FaceLoader.cpp"

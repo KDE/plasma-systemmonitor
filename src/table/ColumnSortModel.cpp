@@ -117,3 +117,5 @@ int ColumnSortModel::idRoleNumber() const
 
     return m_idRoleNumber;
 }
+
+#include "moc_ColumnSortModel.cpp"
