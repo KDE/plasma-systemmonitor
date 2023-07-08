@@ -84,12 +84,18 @@ FocusScope {
         view: tableView
 
         width: scrollView.width
-        onSort: root.sort(column, order)
 
-        onResize: root.setColumnWidth(column, width)
+        onSort: (column, order) => {
+            root.sort(column, order)
+        }
 
-        onContextMenuRequested: root.headerContextMenuRequested(column, position)
+        onResize: (column, width) => {
+            root.setColumnWidth(column, width)
+        }
 
+        onContextMenuRequested:(column, position) => {
+            root.headerContextMenuRequested(column, position)
+        }
     }
 
     ScrollView {
@@ -132,7 +138,7 @@ FocusScope {
             clip: true
             boundsBehavior: Flickable.StopAtBounds
 
-            Keys.onPressed: {
+            Keys.onPressed: event => {
                 switch (event.key) {
                     case Qt.Key_Up:
                         selectRelative(-1)

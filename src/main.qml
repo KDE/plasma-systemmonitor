@@ -11,7 +11,7 @@ import QtQuick.Dialogs
 import QtQuick.Layouts 1.12
 import QtQuick.Window 2.12
 
-import org.kde.kirigami 2.11 as Kirigami
+import org.kde.kirigami 2.20 as Kirigami
 import org.kde.newstuff 1.81 as NewStuff
 
 import org.kde.systemmonitor 1.0
@@ -132,8 +132,9 @@ Kirigami.ApplicationWindow {
                     onTriggered: toolsModel.trigger(model.id)
                 }
 
-                onObjectAdded: { toolsAction.children.push(object) }
-                onObjectRemoved: { }
+                onObjectAdded: (index, object) => {
+                    toolsAction.children.push(object)
+                }
             }
         }
 
@@ -175,13 +176,13 @@ Kirigami.ApplicationWindow {
                 }
             }
 
-            onObjectAdded: {
+            onObjectAdded: (index, object) => {
                 var actions = Array.prototype.map.call(globalDrawer.actions, i => i)
                 actions.splice(index, 0, object)
                 globalDrawer.actions = actions
             }
 
-            onObjectRemoved: {
+            onObjectRemoved: (index, object) => {
                 var actions = Array.prototype.map.call(globalDrawer.actions, i => i)
                 var actionIndex = actions.indexOf(object)
                 actions.splice(actionIndex, 1)

@@ -10,7 +10,7 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
 
-import org.kde.kirigami 2.8 as Kirigami
+import org.kde.kirigami 2.20 as Kirigami
 
 import org.kde.ksysguard.faces 1.0 as Faces
 import org.kde.ksysguard.process 1.0 as Process
@@ -153,7 +153,7 @@ Faces.SensorFace {
         enabledColumns: columnDialog.visibleColumns
         columnDisplay: columnDialog.columnDisplay
 
-        Keys.onPressed: {
+        Keys.onPressed: event => {
             if (event.matches(StandardKey.Delete)) {
                 processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal);
                 event.accepted = true;

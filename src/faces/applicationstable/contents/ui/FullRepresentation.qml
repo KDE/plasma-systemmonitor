@@ -10,7 +10,7 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.14
 
-import org.kde.kirigami 2.8 as Kirigami
+import org.kde.kirigami 2.20 as Kirigami
 
 import org.kde.ksysguard.faces 1.0 as Faces
 import org.kde.ksysguard.process 1.0 as Process
@@ -89,7 +89,7 @@ Faces.SensorFace {
             sortOrder: root.config.sortDirection
             onSortOrderChanged: root.config.sortDirection = sortOrder
 
-            Keys.onPressed: {
+            Keys.onPressed: event => {
                 if (event.matches(StandardKey.Delete)) {
                     processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal);
                     event.accepted = true;
@@ -128,11 +128,13 @@ Faces.SensorFace {
 
                 property real startX
 
-                onPressed: startX = mouse.x
+                onPressed: mouse => {
+                    startX = mouse.x
+                }
 
-                onPositionChanged: {
-                    var change = LayoutMirroring.enabled ? startX - mouse.x : mouse.x - startX
-                    var newWidth = details.width - change
+                onPositionChanged: mouse => {
+                    const change = LayoutMirroring.enabled ? startX - mouse.x : mouse.x - startX
+                    const newWidth = details.width - change
                     if (newWidth > details.minimumWidth && newWidth < details.maximumWidth) {
                         details.width += -change
                     }

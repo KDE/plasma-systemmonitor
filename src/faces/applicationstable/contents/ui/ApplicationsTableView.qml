@@ -9,7 +9,7 @@ import QtQuick.Controls 2.12
 
 import Qt.labs.qmlmodels 1.0
 
-import org.kde.kirigami 2.12 as Kirigami
+import org.kde.kirigami 2.20 as Kirigami
 import org.kde.kitemmodels 1.0 as KItemModels
 import org.kde.quickcharts 1.0 as Charts
 
@@ -74,7 +74,7 @@ Table.BaseTableView {
 
     columnWidths: [200, 100, 100, 100, 100]
 
-    onSort: {
+    onSort: (column, order) => {
         sortColumnFilter.sortColumn = column
         sortColumnFilter.sortOrder = order
     }

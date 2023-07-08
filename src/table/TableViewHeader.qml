@@ -8,7 +8,7 @@ import QtQuick 2.12
 import QtQuick.Controls 2.2
 import QtQml.Models 2.12
 
-import org.kde.kirigami 2.2 as Kirigami
+import org.kde.kirigami 2.20 as Kirigami
 import org.kde.ksysguard.formatter 1.0 as Formatter
 
 import org.kde.kitemmodels 1.0 as KItemModels
@@ -125,7 +125,7 @@ FocusScope {
                     "textalignment": Text.AlignHCenter
                 }
 
-                Keys.onPressed: {
+                Keys.onPressed: event => {
                     switch (event.key) {
                         case Qt.Key_Space:
                         case Qt.Key_Enter:
