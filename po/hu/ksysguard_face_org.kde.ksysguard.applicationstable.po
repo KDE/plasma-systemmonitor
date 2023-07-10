@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-22 02:08+0000\n"
+"POT-Creation-Date: 2023-07-10 02:12+0000\n"
 "PO-Revision-Date: 2021-12-09 08:02+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -102,67 +102,67 @@ msgctxt "@action"
 msgid "Configure columns…"
 msgstr "Oszlopbeállítások…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:184
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:186
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Prioritás…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:187
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:189
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Szignál küldése"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:190
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:192
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Felfüggesztés (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:194
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:196
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Folytatás (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:198
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Bontás (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:202
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:204
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Megszakítás (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:206
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:208
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Befejezés (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Kilövés (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:214
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Felhasználó 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Felhasználó 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:225
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -170,7 +170,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Kilépés az alkalmazásból"
 msgstr[1] "Kilépés %1 alkalmazásból"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:243
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -178,7 +178,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Kilépés az alkalmazásból"
 msgstr[1] "Kilépés %1 alkalmazásból"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Quit Application"
@@ -188,7 +188,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "Kilépés az alkalmazásból"
 msgstr[1] "Kilépés az alkalmazásból"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:248
 #, kde-format
 msgid ""
 "Are you sure you want to quit this application?\n"
@@ -203,7 +203,7 @@ msgstr[1] ""
 "Biztosan kilép ebből a(z) %1 alkalmazásból?\n"
 "A nem mentett munkák elveszhetnek."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:255
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-30 02:09+0000\n"
+"POT-Creation-Date: 2023-07-10 02:12+0000\n"
 "PO-Revision-Date: 2023-04-01 21:07-0700\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -232,43 +232,43 @@ msgctxt "@action"
 msgid "About System Monitor"
 msgstr "ਸਿਸਟਮ ਨਿਗਰਾਨ ਬਾਰੇ"
 
-#: src/main.qml:142
+#: src/main.qml:143
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "…ਨਵਾਂ ਸਫ਼ਾ ਜੋੜੋ"
 
-#: src/main.qml:211
+#: src/main.qml:212
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "ਨਵਾਂ ਸਫ਼ਾ ਜੋੜੋ"
 
-#: src/main.qml:232
+#: src/main.qml:233
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "ਸਫ਼ਿਆਂ ਨੂੰ ਸੋਧੋ"
 
-#: src/main.qml:255
+#: src/main.qml:256
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "%1 ਐਕਸਪੋਰਟ ਕਰੋ"
 
-#: src/main.qml:257 src/main.qml:267
+#: src/main.qml:258 src/main.qml:268
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "ਸਿਸਟਮ ਮਾਨੀਟਰ ਸਫ਼ਾ (*.page)"
 
-#: src/main.qml:265
+#: src/main.qml:266
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "ਸਫ਼ੇ ਨੂੰ ਇੰਪੋਰਟ ਕਰੋ"
 
-#: src/main.qml:298
+#: src/main.qml:299
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
