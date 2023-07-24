@@ -57,13 +57,13 @@ msgstr "프로세스: %1개"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select an application to see its details"
-msgstr "자세한 정보를 보려면 프로그램을 선택하십시오"
+msgstr "자세한 정보를 보려면 앱을 선택하십시오"
 
 #: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:28
 #, kde-format
 msgctxt "Warning message shown on runtime error"
 msgid "Applications view is unsupported on your system"
-msgstr "현재 시스템에서 프로그램 보기를 지원하지 않음"
+msgstr "현재 시스템에서 앱 보기를 지원하지 않음"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:24
 #, kde-format
@@ -75,7 +75,7 @@ msgstr "자세한 정보 패널 표시"
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm when quitting applications"
-msgstr "프로그램을 끝낼 때 확인"
+msgstr "앱을 끝낼 때 확인"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:29
 #, kde-format
@@ -87,7 +87,7 @@ msgstr "검색"
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
-msgstr "프로그램 끝내기"
+msgstr "앱 끝내기"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:49
 #, kde-format
@@ -166,21 +166,21 @@ msgstr "사용자 2(USR2)"
 msgctxt "@action:inmenu"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] "프로그램 %1개 끝내기"
+msgstr[0] "앱 %1개 끝내기"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] "프로그램 %1개 끝내기"
+msgstr[0] "앱 %1개 끝내기"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
-msgstr[0] "프로그램 끝내기"
+msgstr[0] "앱 끝내기"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -191,7 +191,7 @@ msgid_plural ""
 "Are you sure you want to quit these %1 applications?\n"
 "Any unsaved work may be lost."
 msgstr[0] ""
-"이 프로그램 %1개를 종료하시겠습니까?\n"
+"이 앱 %1개를 종료하시겠습니까?\n"
 "저장하지 않은 작업은 손실됩니다."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
