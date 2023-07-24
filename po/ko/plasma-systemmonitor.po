@@ -109,7 +109,7 @@ msgstr "시스템 모니터"
 #: src/main.cpp:108
 #, kde-format
 msgid "An application for monitoring system resources"
-msgstr "시스템 자원을 관찰하는 프로그램"
+msgstr "시스템 자원을 관찰하는 앱"
 
 #: src/main.cpp:110
 #, kde-format
@@ -573,7 +573,7 @@ msgstr "필요할 때"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"
-msgstr "프로그램을 시작할 때"
+msgstr "앱을 시작할 때"
 
 #: src/page/PageEditor.qml:181
 #, kde-format
