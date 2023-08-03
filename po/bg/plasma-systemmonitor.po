@@ -748,7 +748,3 @@ msgstr "Принудително затваряне на прозорец…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Стартиране %1"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "О&тказ"
