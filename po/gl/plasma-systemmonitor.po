@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-08 02:47+0000\n"
-"PO-Revision-Date: 2023-06-16 08:38+0200\n"
+"PO-Revision-Date: 2023-08-06 05:25+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -592,19 +592,19 @@ msgstr "Novo título"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
-msgstr "Amosar a páxina"
+msgstr "Amosar a páxina."
 
 #: src/page/PageSortDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr "Agochar a páxina"
+msgstr "Agochar a páxina."
 
 #: src/page/PageSortDialog.qml:149
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
-msgstr "Non restabelecer a páxina"
+msgstr "Non restabelecer a páxina."
 
 #: src/page/PageSortDialog.qml:153
 #, kde-format
@@ -616,13 +616,13 @@ msgstr "Restabelecerase o estado predeterminado da páxina"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr "Restabelecer o estado predeterminado da páxina"
+msgstr "Restabelecer o estado predeterminado da páxina."
 
 #: src/page/PageSortDialog.qml:171
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
-msgstr "Non retirar esta páxina"
+msgstr "Non retirar esta páxina."
 
 #: src/page/PageSortDialog.qml:175
 #, kde-format
@@ -634,7 +634,7 @@ msgstr "Retirarase a páxina"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
-msgstr "Retirar esta páxina"
+msgstr "Retirar esta páxina."
 
 #: src/page/PageSortDialog.qml:207
 #, kde-format
