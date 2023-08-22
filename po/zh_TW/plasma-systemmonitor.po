@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2023-08-07 19:17+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
@@ -731,11 +731,6 @@ msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "不要再詢問"
 
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
-msgstr "佔位符"
-
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
@@ -747,6 +742,9 @@ msgstr "強制停止視窗…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "啟動 %1"
+
+#~ msgid "Placeholder"
+#~ msgstr "佔位符"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

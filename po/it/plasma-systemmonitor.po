@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2023-06-15 14:49+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -733,11 +733,6 @@ msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "Non chiedere più"
 
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
-msgstr "Segnaposto"
-
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
@@ -749,6 +744,9 @@ msgstr "Termina una finestra…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Avvia %1"
+
+#~ msgid "Placeholder"
+#~ msgstr "Segnaposto"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

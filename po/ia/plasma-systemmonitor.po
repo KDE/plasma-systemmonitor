@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2023-06-15 16:01+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -732,11 +732,6 @@ msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "Non demanda de nove"
 
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
-msgstr "Substituto"
-
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
@@ -748,6 +743,9 @@ msgstr "Occide  un Fenestra…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Lancea %1"
+
+#~ msgid "Placeholder"
+#~ msgstr "Substituto"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2023-05-05 22:30+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
@@ -725,11 +725,6 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
-msgstr ""
-
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
 msgstr ""
 
 #: src/ToolsModel.cpp:37

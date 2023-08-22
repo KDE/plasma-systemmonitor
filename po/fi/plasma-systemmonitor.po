@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2023-06-27 15:54+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -731,11 +731,6 @@ msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "Älä kysy enää"
 
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
-msgstr "Paikanvaraus"
-
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
@@ -747,6 +742,9 @@ msgstr "Tapa ikkuna…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Käynnistä %1"
+
+#~ msgid "Placeholder"
+#~ msgstr "Paikanvaraus"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

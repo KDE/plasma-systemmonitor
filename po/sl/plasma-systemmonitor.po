@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2023-06-15 08:37+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -731,11 +731,6 @@ msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "Ne sprašuj več"
 
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
-msgstr "Označevalnik lokacije"
-
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
@@ -747,6 +742,9 @@ msgstr "Ubij okno…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Zaženi %1"
+
+#~ msgid "Placeholder"
+#~ msgstr "Označevalnik lokacije"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

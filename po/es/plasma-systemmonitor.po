@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2023-06-17 01:24+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -735,11 +735,6 @@ msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "No volver a preguntar"
 
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
-msgstr "Texto para sustituir"
-
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
@@ -751,6 +746,9 @@ msgstr "Matar una ventana..."
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Lanzar %1"
+
+#~ msgid "Placeholder"
+#~ msgstr "Texto para sustituir"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

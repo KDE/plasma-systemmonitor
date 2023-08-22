@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2023-07-15 13:52+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -733,11 +733,6 @@ msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "Ikkje spør igjen"
 
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
-msgstr "Plasshaldar"
-
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
@@ -749,3 +744,6 @@ msgstr "Tvangsavslutt vindauge …"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Start %1"
+
+#~ msgid "Placeholder"
+#~ msgstr "Plasshaldar"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2021-10-25 10:59+0200\n"
 "Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -732,11 +732,6 @@ msgstr "Vonaldiagram (100%-ra méretezve)"
 msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "Ne kérdezzen rá többször"
-
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
-msgstr ""
 
 #: src/ToolsModel.cpp:37
 #, kde-format

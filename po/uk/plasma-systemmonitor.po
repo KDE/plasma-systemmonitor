@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-08-22 02:00+0000\n"
 "PO-Revision-Date: 2023-06-16 08:56+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -737,11 +737,6 @@ msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "Більше не питати"
 
-#: src/table/TableViewHeader.qml:56
-#, kde-format
-msgid "Placeholder"
-msgstr "Замінник"
-
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
@@ -753,6 +748,9 @@ msgstr "Вбити вікно…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Запустити %1"
+
+#~ msgid "Placeholder"
+#~ msgstr "Замінник"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"
