@@ -58,7 +58,7 @@ Table.BaseTableView {
 
     idRole: "Attribute"
 
-    onSort: rowFilter.sort(column, order)
+    onSort: (column, order) => rowFilter.sort(column, order)
 
     headerModel: rowFilter
 
