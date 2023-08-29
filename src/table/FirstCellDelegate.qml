@@ -29,6 +29,7 @@ BaseCellDelegate {
             Layout.preferredHeight: Layout.preferredWidth
             source: delegate.iconName
             fallback: ""
+            animated: false
         }
         Label {
             id: label
