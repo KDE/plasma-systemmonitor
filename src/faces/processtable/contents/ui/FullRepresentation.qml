@@ -52,7 +52,7 @@ Faces.SensorFace {
             visible: table.treeModeSupported
             text: i18nc("@action", "Display as List")
 
-            displayHint: Kirigami.Action.IconOnly
+            displayHint: Kirigami.DisplayHint.IconOnly
             property int mode: 0
             onTriggered: {
                 root.config.viewMode = mode
@@ -68,7 +68,7 @@ Faces.SensorFace {
             checked: root.config.viewMode === mode
             visible: table.treeModeSupported
             text: i18nc("@action", "Display as Tree")
-            displayHint: Kirigami.Action.IconOnly
+            displayHint: Kirigami.DisplayHint.IconOnly
             property int mode: 1
             onTriggered: {
                 root.config.viewMode = mode;
