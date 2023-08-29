@@ -18,44 +18,16 @@ Control
 
     property int row: model.row
     property int column: model.column
-    property bool selected: false
+    required property bool selected
 
     readonly property bool rowHovered: root.TableView.view.hoveredRow == row
 
     readonly property var __selection: TableView.view.selectionModel
 
-    // We need to update:
-    // if the selected indexes changes
-    // if our delegate moves
-    // if the model moves and the delegate stays in the same place
-    function updateIsSelected() {
-        selected = __selection.rowIntersectsSelection(row)
-    }
-
     leftPadding: 0
     rightPadding: 0
     topPadding: 0
     bottomPadding: 0
-
-    Connections {
-        target: __selection
-        function onSelectionChanged() {
-            updateIsSelected();
-        }
-    }
-
-    onRowChanged: updateIsSelected();
-
-    Connections {
-        target: root.TableView.view
-        function onModelLayoutHasChanged() {
-            updateIsSelected();
-        }
-    }
-
-    Component.onCompleted: {
-        updateIsSelected();
-    }
 
     Kirigami.Theme.colorSet: selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
     Kirigami.Theme.inherit: false
