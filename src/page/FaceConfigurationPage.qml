@@ -26,24 +26,32 @@ Kirigami.ScrollablePage {
 
     Kirigami.ColumnView.fillWidth: false
 
-    actions.main: Kirigami.Action {
-        icon.name: "dialog-close"
-        text: i18nc("@action", "Close")
-        onTriggered: applicationWindow().pageStack.pop()
-    }
+    actions: [
+        Kirigami.Action {
+            icon.name: "dialog-close"
+            text: i18nc("@action", "Close")
+            onTriggered: applicationWindow().pageStack.pop()
 
-    actions.contextualActions: [
+            displayHint: Kirigami.DisplayHint.KeepVisible
+        },
+
         Kirigami.Action {
             text: i18nc("@action", "Load Preset…")
             icon.name: "document-new-from-template"
             onTriggered: loadPresetDialog.open()
         },
+
         NewStuff.Action {
             text: i18nc("@action", "Get new presets…")
             configFile: "systemmonitor-presets.knsrc"
             pageStack: applicationWindow().pageStack.layers
-            onChangedEntriesChanged: loader.controller.availablePresetsModel.reload();
+            onEntryEvent: (entry, event) => {
+                if (event == NewStuff.Engine.StatusChangedEvent) {
+                    Qt.callLater(loader.controller.availablePresetsModel.reload)
+                }
+            }
         },
+
         Kirigami.Action {
             text: i18nc("@action", "Save Settings as Preset")
             icon.name: "document-save-as-template"
@@ -53,6 +61,7 @@ Kirigami.ScrollablePage {
                 message.visible = true
             }
         },
+
         Kirigami.Action {
             text: i18nc("@action", "Add Chart as Desktop Widget")
             icon.name: "document-export"
@@ -61,12 +70,18 @@ Kirigami.ScrollablePage {
                 WidgetExporter.exportAsWidget(loader)
             }
         },
+
         Kirigami.Action { separator: true },
+
         NewStuff.Action {
             text: i18nc("@action", "Get new display styles…")
             configFile: "systemmonitor-faces.knsrc"
             pageStack: applicationWindow().pageStack.layers
-            onChangedEntriesChanged: loader.controller.availableFacesModel.reload();
+            onEntryEvent: (entry, event) => {
+                if (event == NewStuff.Engine.StatusChangedEvent) {
+                    Qt.callLater(loader.controller.availableFacesModel.reload)
+                }
+            }
         }
     ]
 
