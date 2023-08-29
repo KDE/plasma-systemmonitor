@@ -19,7 +19,7 @@ Kirigami.Dialog {
 
     property alias model: columnView.model
     property alias sourceModel: sortModel.sourceModel
-    property var visibleColumns: []
+    property var visibleColumns: ["name"]
     property var sortedColumns: []
     property var fixedColumns: []
     property var columnDisplay: {"name": "text"}
