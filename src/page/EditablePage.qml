@@ -45,12 +45,10 @@ Kirigami.ScrollablePage {
     }
 
     function updateActions() {
-        actions.main = null
-        actions.left = null
-        actions.right = null
+        actions = []
 
         if (!actionsFace || page.edit) {
-            actions.contextualActions = defaultActions
+            actions = defaultActions
             return
         }
 
@@ -58,37 +56,11 @@ Kirigami.ScrollablePage {
         let secondary = page.actionsFace.secondaryActions
 
         if (primary.length == 0 && secondary.length == 0) {
-            if (actions.contextualActions == defaultActions) {
-                return;
-            }
-
-            actions.contextualActions = defaultActions
+            actions = defaultActions
             return
         }
 
-        if (primary.length >= 1) {
-            actions.main = primary[0]
-        }
-
-        if (primary.length >= 2) {
-            actions.left = primary[1]
-        }
-
-        if (primary.length >= 3) {
-            actions.right = primary[2]
-        }
-
-        let contextual = []
-
-        if (primary.length >= 4) {
-            contextual = Array.prototype.map.call(primary, i => i).slice(4)
-        }
-
-        if (secondary.length > 0) {
-            contextual = contextual.concat(Array.prototype.map.call(secondary, i => i))
-        }
-
-        actions.contextualActions = contextual.concat(defaultActions)
+        actions = actions.concat(primary).concat(secondary).concat(defaultActions)
     }
 
     // Scroll the contents of the page based on the position of a rect (in scene
