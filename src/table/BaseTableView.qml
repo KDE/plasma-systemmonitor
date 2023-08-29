@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-import QtQuick 2.12
+import QtQuick 6.4
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
@@ -110,7 +110,7 @@ FocusScope {
         TableView {
             id: tableView
             anchors.left: parent.left
-            property ItemSelectionModel selectionModel: ItemSelectionModel {
+            selectionModel: ItemSelectionModel {
                 id: selectionModel
                 model: tableView.model
             }
