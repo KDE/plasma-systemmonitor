@@ -4,15 +4,15 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-import QtQuick 2.12
-import QtQuick.Controls 2.2
-import QtQml.Models 2.12
+import QtQuick
+import QtQuick.Controls
+import QtQml.Models
 
-import org.kde.kirigami 2.20 as Kirigami
-import org.kde.ksysguard.formatter 1.0 as Formatter
+import org.kde.kirigami as Kirigami
+import org.kde.ksysguard.formatter as Formatter
 
-import org.kde.kitemmodels 1.0 as KItemModels
-import org.kde.qqc2desktopstyle.private 1.0 as StylePrivate
+import org.kde.kitemmodels as KItemModels
+import org.kde.qqc2desktopstyle.private as StylePrivate
 
 FocusScope {
     id: heading

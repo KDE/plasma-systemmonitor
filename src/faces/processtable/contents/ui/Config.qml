@@ -5,13 +5,13 @@
  *   SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
-import QtQuick 2.14
-import QtQuick.Layouts 1.14
-import QtQuick.Controls 2.14
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls
 
-import org.kde.kirigami 2.12 as Kirigami
+import org.kde.kirigami as Kirigami
 
-import org.kde.ksysguard.table 1.0 as Table
+import org.kde.ksysguard.table as Table
 
 Kirigami.FormLayout {
     id: root

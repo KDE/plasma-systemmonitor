@@ -5,15 +5,15 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-import QtQuick 2.14
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.14
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.20 as Kirigami
-import org.kde.kitemmodels 1.0 as KItemModels
+import org.kde.kirigami as Kirigami
+import org.kde.kitemmodels as KItemModels
 import org.kde.iconthemes as KIconThemes
 
-import org.kde.ksysguard.page 1.0
+import org.kde.ksysguard.page
 
 Kirigami.Dialog {
     id: dialog

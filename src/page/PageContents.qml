@@ -4,15 +4,15 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-import QtQuick 2.12
-import QtQuick.Controls 2.12
-import QtQuick.Layouts 1.12
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import Qt5Compat.GraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects
 
-import org.kde.kirigami 2.12 as Kirigami
-import org.kde.ksysguard.faces 1.0 as Faces
-import org.kde.ksysguard.page 1.0
+import org.kde.kirigami as Kirigami
+import org.kde.ksysguard.faces as Faces
+import org.kde.ksysguard.page
 
 ColumnLayout {
     id: root

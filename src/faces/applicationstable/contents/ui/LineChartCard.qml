@@ -4,14 +4,14 @@
  * SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
-import QtQuick 2.9
-import QtQuick.Controls 2.2
-import QtQuick.Layouts 1.2
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.4 as Kirigami
+import org.kde.kirigami as Kirigami
 
-import org.kde.quickcharts 1.0 as Charts
-import org.kde.ksysguard.formatter 1.0 as Formatter
+import org.kde.quickcharts as Charts
+import org.kde.ksysguard.formatter as Formatter
 
 Kirigami.AbstractCard {
     id: card

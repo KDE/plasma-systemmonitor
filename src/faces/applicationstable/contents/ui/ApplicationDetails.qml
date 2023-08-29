@@ -4,20 +4,20 @@
  * SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
-import QtQuick 2.12
-import QtQuick.Controls 2.2
-import QtQuick.Layouts 1.2
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import Qt.labs.qmlmodels 1.0
+import Qt.labs.qmlmodels
 
-import org.kde.kirigami 2.15 as Kirigami
+import org.kde.kirigami as Kirigami
 
-import org.kde.quickcharts 1.0 as Charts
+import org.kde.quickcharts as Charts
 
-import org.kde.ksysguard.formatter 1.0 as Formatter
-import org.kde.ksysguard.process 1.0 as Process
-import org.kde.ksysguard.sensors 1.0 as Sensors
-import org.kde.ksysguard.table 1.0 as Table
+import org.kde.ksysguard.formatter as Formatter
+import org.kde.ksysguard.process as Process
+import org.kde.ksysguard.sensors as Sensors
+import org.kde.ksysguard.table as Table
 
 Page {
     id: root

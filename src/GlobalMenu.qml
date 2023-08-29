@@ -4,11 +4,11 @@
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
-import QtQuick 2.15
-import Qt.labs.platform 1.1 as Labs
-import org.kde.newstuff 1.81 as NewStuff
+import QtQuick
+import Qt.labs.platform as Labs
+import org.kde.newstuff as NewStuff
 
-import org.kde.systemmonitor 1.0
+import org.kde.systemmonitor
 
 Labs.MenuBar {
     Labs.Menu {

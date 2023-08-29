@@ -5,17 +5,17 @@
  */
 
 import QtCore
-import QtQuick 2.12
-import QtQuick.Controls 2.12
+import QtQuick
+import QtQuick.Controls
 import QtQuick.Dialogs
-import QtQuick.Layouts 1.12
-import QtQuick.Window 2.12
+import QtQuick.Layouts
+import QtQuick.Window
 
-import org.kde.kirigami 2.20 as Kirigami
-import org.kde.newstuff 1.81 as NewStuff
+import org.kde.kirigami as Kirigami
+import org.kde.newstuff as NewStuff
 
-import org.kde.systemmonitor 1.0
-import org.kde.ksysguard.page 1.0 as Page
+import org.kde.systemmonitor
+import org.kde.ksysguard.page as Page
 
 Kirigami.ApplicationWindow {
     id: app

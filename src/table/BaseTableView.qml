@@ -4,13 +4,13 @@
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
 
-import QtQuick 6.4
-import QtQuick.Controls 2.12
-import QtQuick.Layouts 1.12
-import QtQml.Models 2.12
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import QtQml.Models
 
-import org.kde.kirigami 2.2 as Kirigami
-import org.kde.ksysguard.table 1.0 as Table
+import org.kde.kirigami as Kirigami
+import org.kde.ksysguard.table as Table
 
 FocusScope {
     id: root

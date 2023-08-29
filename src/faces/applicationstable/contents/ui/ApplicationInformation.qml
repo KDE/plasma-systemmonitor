@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
-import QtQml 2.12
+import QtQml
 
 QtObject {
     id: info

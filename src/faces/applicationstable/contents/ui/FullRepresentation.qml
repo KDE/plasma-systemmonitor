@@ -6,16 +6,16 @@
  * SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
-import QtQuick 2.14
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.14
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.20 as Kirigami
+import org.kde.kirigami as Kirigami
 
-import org.kde.ksysguard.faces 1.0 as Faces
-import org.kde.ksysguard.process 1.0 as Process
+import org.kde.ksysguard.faces as Faces
+import org.kde.ksysguard.process as Process
 
-import org.kde.ksysguard.table 1.0 as Table
+import org.kde.ksysguard.table as Table
 
 Faces.SensorFace {
     id: root

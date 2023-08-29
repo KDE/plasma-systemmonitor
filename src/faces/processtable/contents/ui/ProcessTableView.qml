@@ -4,18 +4,18 @@
  *   SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
-import QtQuick 2.12
-import QtQuick.Layouts 1.4
-import QtQuick.Controls 2.12
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls
 
-import Qt.labs.qmlmodels 1.0
+import Qt.labs.qmlmodels
 
-import org.kde.kitemmodels 1.0 as KItemModels
-import org.kde.quickcharts 1.0 as Charts
+import org.kde.kitemmodels as KItemModels
+import org.kde.quickcharts as Charts
 
-import org.kde.ksysguard.formatter 1.0 as Formatter
-import org.kde.ksysguard.process 1.0 as Process
-import org.kde.ksysguard.table 1.0 as Table
+import org.kde.ksysguard.formatter as Formatter
+import org.kde.ksysguard.process as Process
+import org.kde.ksysguard.table as Table
 
 Table.BaseTableView {
     id: view
