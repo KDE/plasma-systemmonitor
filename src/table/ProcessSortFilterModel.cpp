@@ -22,6 +22,7 @@ ProcessSortFilterModel::ProcessSortFilterModel(QObject *parent)
     setFilterRole(ProcessDataModel::Value);
     setFilterCaseSensitivity(Qt::CaseInsensitive);
     setRecursiveFilteringEnabled(true);
+    setAutoAcceptChildRows(true);
 }
 
 void ProcessSortFilterModel::setSourceModel(QAbstractItemModel *newSourceModel)
@@ -54,13 +55,6 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &
     }
 
     auto source = sourceModel();
-
-    // Show regardless if an ancestor matches, this is kinda the inverse of recursiveFilteringEnabled
-    if (sourceParent.parent().isValid()) {
-        if (filterAcceptsRow(sourceParent.row(), sourceParent.parent())) {
-            return true;
-        }
-    }
 
     bool result = true;
 
