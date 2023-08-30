@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-22 02:00+0000\n"
+"POT-Creation-Date: 2023-08-30 01:58+0000\n"
 "PO-Revision-Date: 2023-06-18 14:00+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -300,49 +300,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "பின்புலத்தின் விளிம்புகளை நீக்கு"
 
-#: src/page/EditablePage.qml:123
+#: src/page/EditablePage.qml:95
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "பக்கத்தை திருத்து"
 
-#: src/page/EditablePage.qml:133
+#: src/page/EditablePage.qml:105
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "மாற்றங்களை சேமி"
 
-#: src/page/EditablePage.qml:143
+#: src/page/EditablePage.qml:115
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "மாற்றங்களை கைவிடு"
 
-#: src/page/EditablePage.qml:154
+#: src/page/EditablePage.qml:126
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "பக்கத்தை அமை…"
 
-#: src/page/EditablePage.qml:163
+#: src/page/EditablePage.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "வரிசையை சேர்"
 
-#: src/page/EditablePage.qml:172
+#: src/page/EditablePage.qml:144
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "தலைப்பை சேர்"
 
-#: src/page/EditablePage.qml:202
+#: src/page/EditablePage.qml:174
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "\"%1\" பக்கத்தை அமை"
 
-#: src/page/EditablePage.qml:204
+#: src/page/EditablePage.qml:176
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -366,90 +366,90 @@ msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
 msgstr "%1 தனை அமை"
 
-#: src/page/FaceConfigurationPage.qml:31
+#: src/page/FaceConfigurationPage.qml:32
 #, kde-format
 msgctxt "@action"
 msgid "Close"
 msgstr "மூடு"
 
-#: src/page/FaceConfigurationPage.qml:37
+#: src/page/FaceConfigurationPage.qml:39
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
 msgstr "முன்னமைக்கப்பட்டதை ஏற்று…"
 
-#: src/page/FaceConfigurationPage.qml:42
+#: src/page/FaceConfigurationPage.qml:45
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "புதிய முன்னமைப்புகளை பெறு…"
 
-#: src/page/FaceConfigurationPage.qml:48
+#: src/page/FaceConfigurationPage.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
 msgstr "அமைப்புகளை முன்னமைப்பாக சேமி"
 
-#: src/page/FaceConfigurationPage.qml:52
+#: src/page/FaceConfigurationPage.qml:60
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "%1 என்ற முன்னமைக்கப்பாக அமைப்புகள் சேமிக்கப்பட்டன."
 
-#: src/page/FaceConfigurationPage.qml:57 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "வரைபடத்தை பணிமேடை பிளாஸ்மாய்டாக சேர்"
 
-#: src/page/FaceConfigurationPage.qml:66
+#: src/page/FaceConfigurationPage.qml:77
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "புதிய காட்சிமுறைகளை பெறு…"
 
-#: src/page/FaceConfigurationPage.qml:85
+#: src/page/FaceConfigurationPage.qml:100
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "%1 என்ற முன்னமைப்பு ஏற்றப்பட்டது."
 
-#: src/page/FaceConfigurationPage.qml:102
+#: src/page/FaceConfigurationPage.qml:117
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "தலைப்பு"
 
-#: src/page/FaceConfigurationPage.qml:108
+#: src/page/FaceConfigurationPage.qml:123
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "தலைப்பை காட்டு"
 
-#: src/page/FaceConfigurationPage.qml:126
+#: src/page/FaceConfigurationPage.qml:141
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "காட்சி முறை"
 
-#: src/page/FaceConfigurationPage.qml:154
+#: src/page/FaceConfigurationPage.qml:169
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "புதிப்பிப்புகளுக்கிடையே குறைந்தபட்ச நேரம்:"
 
-#: src/page/FaceConfigurationPage.qml:171
+#: src/page/FaceConfigurationPage.qml:186
 #, kde-format
 msgid "No Limit"
 msgstr "வரம்பில்லை"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:175
+#: src/page/FaceConfigurationPage.qml:190
 #, kde-format
 msgid "1 second"
 msgstr "1 நொடி"
 
-#: src/page/FaceConfigurationPage.qml:177
+#: src/page/FaceConfigurationPage.qml:192
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 நொடிகள்"

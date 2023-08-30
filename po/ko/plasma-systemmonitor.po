@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-22 02:00+0000\n"
+"POT-Creation-Date: 2023-08-30 01:58+0000\n"
 "PO-Revision-Date: 2023-07-25 01:15+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -302,49 +302,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "배경 여백 삭제"
 
-#: src/page/EditablePage.qml:123
+#: src/page/EditablePage.qml:95
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "쪽 편집"
 
-#: src/page/EditablePage.qml:133
+#: src/page/EditablePage.qml:105
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "변경 사항 저장"
 
-#: src/page/EditablePage.qml:143
+#: src/page/EditablePage.qml:115
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "변경 사항 취소"
 
-#: src/page/EditablePage.qml:154
+#: src/page/EditablePage.qml:126
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "쪽 설정..."
 
-#: src/page/EditablePage.qml:163
+#: src/page/EditablePage.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "열 추가"
 
-#: src/page/EditablePage.qml:172
+#: src/page/EditablePage.qml:144
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "제목 추가"
 
-#: src/page/EditablePage.qml:202
+#: src/page/EditablePage.qml:174
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "쪽 \"%1\" 설정"
 
-#: src/page/EditablePage.qml:204
+#: src/page/EditablePage.qml:176
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -368,90 +368,90 @@ msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
 msgstr "%1 설정"
 
-#: src/page/FaceConfigurationPage.qml:31
+#: src/page/FaceConfigurationPage.qml:32
 #, kde-format
 msgctxt "@action"
 msgid "Close"
 msgstr "닫기"
 
-#: src/page/FaceConfigurationPage.qml:37
+#: src/page/FaceConfigurationPage.qml:39
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
 msgstr "사전 설정 불러오기..."
 
-#: src/page/FaceConfigurationPage.qml:42
+#: src/page/FaceConfigurationPage.qml:45
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "새 사전 설정 가져오기..."
 
-#: src/page/FaceConfigurationPage.qml:48
+#: src/page/FaceConfigurationPage.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
 msgstr "사전 설정으로 설정 저장"
 
-#: src/page/FaceConfigurationPage.qml:52
+#: src/page/FaceConfigurationPage.qml:60
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "사전 설정 %1(으)로 설정을 저장했습니다."
 
-#: src/page/FaceConfigurationPage.qml:57 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "데스크톱 위젯으로 차트 추가"
 
-#: src/page/FaceConfigurationPage.qml:66
+#: src/page/FaceConfigurationPage.qml:77
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "새 표시 스타일 가져오기..."
 
-#: src/page/FaceConfigurationPage.qml:85
+#: src/page/FaceConfigurationPage.qml:100
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "사전 설정 %1을(를) 불러왔습니다."
 
-#: src/page/FaceConfigurationPage.qml:102
+#: src/page/FaceConfigurationPage.qml:117
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "제목"
 
-#: src/page/FaceConfigurationPage.qml:108
+#: src/page/FaceConfigurationPage.qml:123
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "제목 표시"
 
-#: src/page/FaceConfigurationPage.qml:126
+#: src/page/FaceConfigurationPage.qml:141
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "표시 스타일"
 
-#: src/page/FaceConfigurationPage.qml:154
+#: src/page/FaceConfigurationPage.qml:169
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "업데이트 최소 시간 간격:"
 
-#: src/page/FaceConfigurationPage.qml:171
+#: src/page/FaceConfigurationPage.qml:186
 #, kde-format
 msgid "No Limit"
 msgstr "무제한"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:175
+#: src/page/FaceConfigurationPage.qml:190
 #, kde-format
 msgid "1 second"
 msgstr "1초"
 
-#: src/page/FaceConfigurationPage.qml:177
+#: src/page/FaceConfigurationPage.qml:192
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1초"

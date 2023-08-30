@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-22 02:00+0000\n"
+"POT-Creation-Date: 2023-08-30 01:58+0000\n"
 "PO-Revision-Date: 2023-06-17 12:02+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -303,49 +303,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Remove Background Margins"
 
-#: src/page/EditablePage.qml:123
+#: src/page/EditablePage.qml:95
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Edit Page"
 
-#: src/page/EditablePage.qml:133
+#: src/page/EditablePage.qml:105
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Save Changes"
 
-#: src/page/EditablePage.qml:143
+#: src/page/EditablePage.qml:115
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Discard Changes"
 
-#: src/page/EditablePage.qml:154
+#: src/page/EditablePage.qml:126
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Configure Page…"
 
-#: src/page/EditablePage.qml:163
+#: src/page/EditablePage.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Add Row"
 
-#: src/page/EditablePage.qml:172
+#: src/page/EditablePage.qml:144
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Add Title"
 
-#: src/page/EditablePage.qml:202
+#: src/page/EditablePage.qml:174
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Configure Page \"%1\""
 
-#: src/page/EditablePage.qml:204
+#: src/page/EditablePage.qml:176
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -369,90 +369,90 @@ msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
 msgstr "Configure %1"
 
-#: src/page/FaceConfigurationPage.qml:31
+#: src/page/FaceConfigurationPage.qml:32
 #, kde-format
 msgctxt "@action"
 msgid "Close"
 msgstr "Close"
 
-#: src/page/FaceConfigurationPage.qml:37
+#: src/page/FaceConfigurationPage.qml:39
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
 msgstr "Load Preset…"
 
-#: src/page/FaceConfigurationPage.qml:42
+#: src/page/FaceConfigurationPage.qml:45
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "Get new presets…"
 
-#: src/page/FaceConfigurationPage.qml:48
+#: src/page/FaceConfigurationPage.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
 msgstr "Save Settings as Preset"
 
-#: src/page/FaceConfigurationPage.qml:52
+#: src/page/FaceConfigurationPage.qml:60
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Saved settings as preset %1."
 
-#: src/page/FaceConfigurationPage.qml:57 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "Add Chart as Desktop Widget"
 
-#: src/page/FaceConfigurationPage.qml:66
+#: src/page/FaceConfigurationPage.qml:77
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "Get new display styles…"
 
-#: src/page/FaceConfigurationPage.qml:85
+#: src/page/FaceConfigurationPage.qml:100
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "Loaded preset %1."
 
-#: src/page/FaceConfigurationPage.qml:102
+#: src/page/FaceConfigurationPage.qml:117
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "Title"
 
-#: src/page/FaceConfigurationPage.qml:108
+#: src/page/FaceConfigurationPage.qml:123
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "Show Title"
 
-#: src/page/FaceConfigurationPage.qml:126
+#: src/page/FaceConfigurationPage.qml:141
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "Display Style"
 
-#: src/page/FaceConfigurationPage.qml:154
+#: src/page/FaceConfigurationPage.qml:169
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "Minimum time between updates:"
 
-#: src/page/FaceConfigurationPage.qml:171
+#: src/page/FaceConfigurationPage.qml:186
 #, kde-format
 msgid "No Limit"
 msgstr "No Limit"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:175
+#: src/page/FaceConfigurationPage.qml:190
 #, kde-format
 msgid "1 second"
 msgstr "1 second"
 
-#: src/page/FaceConfigurationPage.qml:177
+#: src/page/FaceConfigurationPage.qml:192
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 seconds"

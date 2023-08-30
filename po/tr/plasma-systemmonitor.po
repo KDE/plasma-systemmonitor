@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-22 02:00+0000\n"
+"POT-Creation-Date: 2023-08-30 01:58+0000\n"
 "PO-Revision-Date: 2023-07-13 13:08+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -303,49 +303,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Arka Plan Kenar Boşluklarını Kaldır"
 
-#: src/page/EditablePage.qml:123
+#: src/page/EditablePage.qml:95
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Sayfayı Düzenle"
 
-#: src/page/EditablePage.qml:133
+#: src/page/EditablePage.qml:105
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Değişiklikleri Kaydet"
 
-#: src/page/EditablePage.qml:143
+#: src/page/EditablePage.qml:115
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Değişiklikleri At"
 
-#: src/page/EditablePage.qml:154
+#: src/page/EditablePage.qml:126
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Sayfayı Yapılandır…"
 
-#: src/page/EditablePage.qml:163
+#: src/page/EditablePage.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Satır Ekle"
 
-#: src/page/EditablePage.qml:172
+#: src/page/EditablePage.qml:144
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Başlık Ekle"
 
-#: src/page/EditablePage.qml:202
+#: src/page/EditablePage.qml:174
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "\"%1\" Sayfasını Yapılandır"
 
-#: src/page/EditablePage.qml:204
+#: src/page/EditablePage.qml:176
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -369,90 +369,90 @@ msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
 msgstr "Yapılandır: %1"
 
-#: src/page/FaceConfigurationPage.qml:31
+#: src/page/FaceConfigurationPage.qml:32
 #, kde-format
 msgctxt "@action"
 msgid "Close"
 msgstr "Kapat"
 
-#: src/page/FaceConfigurationPage.qml:37
+#: src/page/FaceConfigurationPage.qml:39
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
 msgstr "Önayar Yükle…"
 
-#: src/page/FaceConfigurationPage.qml:42
+#: src/page/FaceConfigurationPage.qml:45
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "Yeni önayarlar al…"
 
-#: src/page/FaceConfigurationPage.qml:48
+#: src/page/FaceConfigurationPage.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
 msgstr "Ayarları Önayar olarak Kaydet"
 
-#: src/page/FaceConfigurationPage.qml:52
+#: src/page/FaceConfigurationPage.qml:60
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Ayarlar, %1 önayarı olarak kaydedildi"
 
-#: src/page/FaceConfigurationPage.qml:57 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "Masaüstü Araç Takımı Olarak Grafik Ekle"
 
-#: src/page/FaceConfigurationPage.qml:66
+#: src/page/FaceConfigurationPage.qml:77
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "Yeni görüntüleme biçemleri al…"
 
-#: src/page/FaceConfigurationPage.qml:85
+#: src/page/FaceConfigurationPage.qml:100
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "%1 önayarı yüklendi."
 
-#: src/page/FaceConfigurationPage.qml:102
+#: src/page/FaceConfigurationPage.qml:117
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "Başlık"
 
-#: src/page/FaceConfigurationPage.qml:108
+#: src/page/FaceConfigurationPage.qml:123
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "Başlığı Göster"
 
-#: src/page/FaceConfigurationPage.qml:126
+#: src/page/FaceConfigurationPage.qml:141
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "Görüntüleme Biçemi"
 
-#: src/page/FaceConfigurationPage.qml:154
+#: src/page/FaceConfigurationPage.qml:169
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "Güncellemeler arasındaki en az süre:"
 
-#: src/page/FaceConfigurationPage.qml:171
+#: src/page/FaceConfigurationPage.qml:186
 #, kde-format
 msgid "No Limit"
 msgstr "Sınırsız"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:175
+#: src/page/FaceConfigurationPage.qml:190
 #, kde-format
 msgid "1 second"
 msgstr "1 saniye"
 
-#: src/page/FaceConfigurationPage.qml:177
+#: src/page/FaceConfigurationPage.qml:192
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 saniye"
