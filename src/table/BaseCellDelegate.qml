@@ -60,7 +60,9 @@ Control
             root.TableView.view.hoveredRow = row
         }
         onExited: {
-            root.TableView.view.hoveredRow = -1
+            if (root.TableView.view.hoveredRow == row) {
+                root.TableView.view.hoveredRow = -1
+            }
         }
 
         onClicked: (mouse) => {
