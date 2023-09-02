@@ -738,6 +738,3 @@ msgstr "Zabít okno…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Spustit %1"
-
-#~ msgid "Placeholder"
-#~ msgstr "Prázdné místo"
