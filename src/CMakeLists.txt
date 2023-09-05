@@ -18,7 +18,7 @@ target_sources(plasma-systemmonitor PRIVATE
 )
 
 ecm_target_qml_sources(plasma-systemmonitor SOURCES
-    main.qml
+    Main.qml
     GlobalMenu.qml
     AboutPage.qml
 )

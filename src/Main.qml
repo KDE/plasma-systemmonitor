@@ -29,7 +29,7 @@ Kirigami.ApplicationWindow {
 
     Loader {
         active: !Kirigami.Settings.isMobile
-        source: Qt.resolvedUrl("qrc:/GlobalMenu.qml")
+        sourceComponent: GlobalMenu { }
     }
 
     Kirigami.PagePool {
