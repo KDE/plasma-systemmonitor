@@ -37,6 +37,8 @@ target_link_libraries(plasma-systemmonitor PRIVATE
     KF6::GlobalAccel
     KF6::DBusAddons
     KF6::WindowSystem
+    PlasmaSystemMonitorPage
+    PlasmaSystemMonitorTable
 )
 
 install(TARGETS plasma-systemmonitor DESTINATION ${KDE_INSTALL_BINDIR})
