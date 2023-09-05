@@ -106,7 +106,7 @@ Table.BaseTableView {
             return parts.some(part => name.includes(part))
         }
 
-        sortRole: "Value"
+        sortRoleName: "Value"
 
         onLayoutChanged: view.onModelLayoutChanged()
     }
