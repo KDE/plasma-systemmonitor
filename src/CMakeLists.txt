@@ -15,6 +15,8 @@ target_sources(plasma-systemmonitor PRIVATE
     ToolsModel.h
     Configuration.cpp
     Configuration.h
+    CommandLineArguments.cpp
+    CommandLineArguments.h
 )
 
 ecm_target_qml_sources(plasma-systemmonitor SOURCES

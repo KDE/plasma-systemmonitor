@@ -8,7 +8,6 @@
 #include <QCommandLineParser>
 #include <QDBusConnection>
 #include <QDBusConnectionInterface>
-#include <QLoggingCategory>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QSessionManager>
@@ -20,33 +19,9 @@
 #include <KLocalizedString>
 #include <KWindowSystem>
 
+#include "CommandLineArguments.h"
 #include "Configuration.h"
 #include "ToolsModel.h"
-
-class CommandLineArguments : public QObject
-{
-    Q_OBJECT
-    Q_PROPERTY(QString pageId MEMBER m_pageId CONSTANT)
-    Q_PROPERTY(QString pageName MEMBER m_pageName CONSTANT)
-    Q_PROPERTY(QVariant aboutData READ aboutData CONSTANT)
-
-public:
-    CommandLineArguments(QCommandLineParser &parser)
-        : QObject()
-        , m_pageId(parser.value(QStringLiteral("page-id")))
-        , m_pageName(parser.value(QStringLiteral("page-name")))
-    {
-    }
-
-    QVariant aboutData() const
-    {
-        return QVariant::fromValue(KAboutData::applicationData());
-    }
-
-private:
-    QString m_pageId;
-    QString m_pageName;
-};
 
 class SessionManager : public QObject
 {
@@ -111,12 +86,13 @@ int main(int argc, char **argv)
 
     KDBusService service(KDBusService::Unique);
 
-    QCommandLineParser parser;
-    aboutData.setupCommandLine(&parser);
-    parser.addOption({QStringLiteral("page-id"), QStringLiteral("Start with the specified page ID shown"), QStringLiteral("page-id")});
-    parser.addOption({QStringLiteral("page-name"), QStringLiteral("Start with the specified page name shown"), QStringLiteral("page-name")});
-    parser.process(app);
-    aboutData.processCommandLine(&parser);
+    auto parser = std::make_shared<QCommandLineParser>();
+    aboutData.setupCommandLine(parser.get());
+    parser->addOption({QStringLiteral("page-id"), QStringLiteral("Start with the specified page ID shown"), QStringLiteral("page-id")});
+    parser->addOption({QStringLiteral("page-name"), QStringLiteral("Start with the specified page name shown"), QStringLiteral("page-name")});
+    parser->process(app);
+    aboutData.processCommandLine(parser.get());
+    CommandLineArguments::setCommandLineParser(parser);
 
     auto sessionManager = new SessionManager(&app);
 
