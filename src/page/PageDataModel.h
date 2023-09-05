@@ -9,6 +9,7 @@
 #include <QAbstractListModel>
 #include <QQmlParserStatus>
 #include <memory>
+#include <qqmlregistration.h>
 
 class PageDataObject;
 
@@ -17,6 +18,7 @@ class PageDataModel : public QAbstractListModel
     Q_OBJECT
     //     Q_INTERFACES(QQmlParserStatus)
     Q_PROPERTY(PageDataObject *data READ dataObject WRITE setDataObject NOTIFY dataObjectChanged)
+    QML_ELEMENT
 
 public:
     enum Roles {

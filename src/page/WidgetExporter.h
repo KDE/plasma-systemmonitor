@@ -7,6 +7,7 @@
 #pragma once
 
 #include <QObject>
+#include <qqmlregistration.h>
 
 class FaceLoader;
 class KConfigGroup;
@@ -15,6 +16,9 @@ class WidgetExporter : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(bool plasmashellAvailable MEMBER m_plasmashellAvailable NOTIFY plasmashellAvailableChanged)
+    QML_ELEMENT
+    QML_SINGLETON
+
 public:
     explicit WidgetExporter(QObject *parent = nullptr);
 

@@ -7,6 +7,7 @@
 #pragma once
 
 #include <QAbstractListModel>
+#include <qqmlregistration.h>
 
 class QQuickItem;
 
@@ -17,6 +18,7 @@ class FacesModel : public QAbstractListModel
 {
     Q_OBJECT
     Q_PROPERTY(PageDataObject *pageData READ pageData WRITE setPageData NOTIFY pageDataChanged)
+    QML_ELEMENT
 
     enum Roles {
         IdRole = Qt::UserRole,

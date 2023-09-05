@@ -8,6 +8,7 @@
 
 #include <QQmlListProperty>
 #include <QQmlPropertyMap>
+#include <qqmlregistration.h>
 
 #include <KSharedConfig>
 
@@ -19,6 +20,8 @@ class PageDataObject : public QQmlPropertyMap
     Q_PROPERTY(QQmlListProperty<PageDataObject> children READ childrenProperty NOTIFY childrenChanged)
     Q_PROPERTY(bool dirty READ dirty NOTIFY dirtyChanged)
     Q_PROPERTY(QString fileName READ fileName CONSTANT)
+    QML_ELEMENT
+    QML_UNCREATABLE("Used for data storage")
 
 public:
     explicit PageDataObject(const KSharedConfig::Ptr &config, QObject *parent = nullptr);

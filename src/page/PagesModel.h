@@ -8,6 +8,7 @@
 
 #include <QAbstractListModel>
 #include <QQmlParserStatus>
+#include <qqmlregistration.h>
 
 #include <KNSCore/Entry>
 
@@ -19,6 +20,7 @@ class PagesModel : public QAbstractListModel, public QQmlParserStatus
 {
     Q_OBJECT
     Q_INTERFACES(QQmlParserStatus)
+    QML_ELEMENT
 
 public:
     enum Roles {

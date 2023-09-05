@@ -8,12 +8,14 @@
 #pragma once
 
 #include <QAbstractProxyModel>
+#include <qqmlregistration.h>
 
 #include "PagesModel.h"
 
 class PageSortModel : public QAbstractProxyModel
 {
     Q_OBJECT
+    QML_ELEMENT
 
 public:
     enum Roles {

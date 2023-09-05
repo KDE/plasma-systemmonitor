@@ -1,5 +1,9 @@
 
-set(page_SRCS
+add_library(PlasmaSystemMonitorPage)
+
+ecm_add_qml_module(PlasmaSystemMonitorPage URI "org.kde.ksysguard.page" GENERATE_PLUGIN_SOURCE)
+
+target_sources(PlasmaSystemMonitorPage PRIVATE
     FaceLoader.cpp
     FaceLoader.h
     FacesModel.cpp
@@ -8,8 +12,6 @@ set(page_SRCS
     PageDataModel.h
     PageDataObject.cpp
     PageDataObject.h
-    PagePlugin.cpp
-    PagePlugin.h
     PagesModel.cpp
     PagesModel.h
     PageSortModel.cpp
@@ -18,7 +20,7 @@ set(page_SRCS
     WidgetExporter.h
 )
 
-set(page_QML
+ecm_target_qml_sources(PlasmaSystemMonitorPage SOURCES
     ColumnControl.qml
     Container.qml
     EditablePage.qml
@@ -39,8 +41,8 @@ set(page_QML
     MissingSensorsDialog.qml
 )
 
-add_library(PagePlugin SHARED ${page_SRCS})
-target_link_libraries(PagePlugin Qt::DBus Qt::Quick KF6::ConfigCore KF6::I18n KF6::NewStuffCore KSysGuard::Sensors KSysGuard::SensorFaces)
+target_link_libraries(PlasmaSystemMonitorPage PRIVATE Qt::DBus Qt::Quick KF6::ConfigCore KF6::I18n KF6::NewStuffCore KSysGuard::Sensors KSysGuard::SensorFaces)
 
-install(TARGETS PagePlugin DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/page)
-install(FILES qmldir ${page_QML} DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/page)
+install(TARGETS PlasmaSystemMonitorPage ${KDE_INSTALL_DEFAULT_ARGS})
+
+ecm_finalize_qml_module(PlasmaSystemMonitorPage)
