@@ -8,6 +8,7 @@
 
 #include <QIdentityProxyModel>
 #include <QQmlComponent>
+#include <qqmlregistration.h>
 
 /**
  * Attached property object for ComponentCacheProxyModel
@@ -18,6 +19,7 @@ class ComponentCacheAttached : public QObject
     Q_PROPERTY(QAbstractItemModel *model MEMBER m_model CONSTANT)
     Q_PROPERTY(int row MEMBER m_row CONSTANT)
     Q_PROPERTY(int column MEMBER m_column CONSTANT)
+    QML_ANONYMOUS
 
 public:
     explicit ComponentCacheAttached(QObject *parent = nullptr);
@@ -45,6 +47,8 @@ class ComponentCacheProxyModel : public QIdentityProxyModel
 {
     Q_OBJECT
     Q_PROPERTY(QQmlComponent *component READ component WRITE setComponent NOTIFY componentChanged)
+    QML_ELEMENT
+    QML_ATTACHED(ComponentCacheAttached)
 
 public:
     enum Roles {
@@ -80,5 +84,3 @@ private:
 
     mutable QVector<QPersistentModelIndex> m_pendingInstances;
 };
-
-QML_DECLARE_TYPEINFO(ComponentCacheProxyModel, QML_HAS_ATTACHED_PROPERTIES)

@@ -188,6 +188,7 @@ void ProcessSortFilterModel::setFilterPids(const QVariantList &newFilterPids)
 void ProcessSortFilterModel::sort(int column, Qt::SortOrder order)
 {
     QSortFilterProxyModel::sort(column, order);
+    Q_EMIT sorted();
 }
 
 void ProcessSortFilterModel::findColumns()

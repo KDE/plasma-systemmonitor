@@ -7,7 +7,7 @@
 #pragma once
 
 #include <QIdentityProxyModel>
-//#include <QVariantList>
+#include <qqmlregistration.h>
 
 class ColumnSortModel : public QIdentityProxyModel
 {
@@ -18,6 +18,7 @@ class ColumnSortModel : public QIdentityProxyModel
     //     Q_PROPERTY(QString columnIdRole READ columnIdRole WRITE setColumnIdRole NOTIFY columnIdRoleChanged)
     Q_PROPERTY(QStringList sortedColumns READ sortedColumns WRITE setSortedColumns NOTIFY sortedColumnsChanged)
     Q_PROPERTY(QString idRole READ idRole WRITE setIdRole NOTIFY idRoleChanged)
+    QML_ELEMENT
 
 public:
     enum Roles {

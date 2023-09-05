@@ -1,4 +1,8 @@
-set(table_SRCS
+
+add_library(PlasmaSystemMonitorTable)
+ecm_add_qml_module(PlasmaSystemMonitorTable URI "org.kde.ksysguard.table" GENERATE_PLUGIN_SOURCE)
+
+target_sources(PlasmaSystemMonitorTable PRIVATE
     ColumnDisplayModel.cpp
     ColumnDisplayModel.h
     ColumnSortModel.cpp
@@ -9,11 +13,9 @@ set(table_SRCS
     ProcessSortFilterModel.h
     ReverseColumnsProxyModel.cpp
     ReverseColumnsProxyModel.h
-    TablePlugin.cpp
-    TablePlugin.h
 )
 
-set(table_QML
+ecm_target_qml_sources(PlasmaSystemMonitorTable SOURCES
     BaseCellDelegate.qml
     BaseTableView.qml
     TextCellDelegate.qml
@@ -26,8 +28,8 @@ set(table_QML
     TreeDecoration.qml
 )
 
-add_library(TablePlugin SHARED ${table_SRCS})
-target_link_libraries(TablePlugin Qt::Quick KSysGuard::Sensors KSysGuard::ProcessCore KF6::CoreAddons KF6::ItemModels)
+target_link_libraries(PlasmaSystemMonitorTable PRIVATE Qt::Quick KSysGuard::Sensors KSysGuard::ProcessCore KF6::CoreAddons KF6::ItemModels)
 
-install(TARGETS TablePlugin DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/table)
-install(FILES qmldir ${table_QML} DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/ksysguard/table)
+install(TARGETS PlasmaSystemMonitorTable ${KDE_INSTALL_DEFAULT_ARGS})
+
+ecm_finalize_qml_module(PlasmaSystemMonitorTable)

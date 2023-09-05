@@ -8,12 +8,17 @@
 
 #include <KRearrangeColumnsProxyModel>
 
+#include <qqmlregistration.h>
+
 /**
  * A proxy model to reverse the columns of a table. Needed because QML Tableview does not correctly
  * reverse its columns when using a RTL language.
  */
 class ReverseColumnsProxyModel : public KRearrangeColumnsProxyModel
 {
+    Q_OBJECT
+    QML_ELEMENT
+
 public:
     explicit ReverseColumnsProxyModel(QObject *parent = nullptr);
     void setSourceModel(QAbstractItemModel *sourceModel) override;

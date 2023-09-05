@@ -7,6 +7,7 @@
 #pragma once
 
 #include <QSortFilterProxyModel>
+#include <qqmlregistration.h>
 
 #include <KUser>
 
@@ -17,6 +18,11 @@ class ProcessSortFilterModel : public QSortFilterProxyModel
     Q_PROPERTY(ViewMode viewMode READ viewMode WRITE setViewMode NOTIFY viewModeChanged)
     Q_PROPERTY(QStringList hiddenAttributes READ hiddenAttributes WRITE setHiddenAttributes NOTIFY hiddenAttributesChanged)
     Q_PROPERTY(QVariantList filterPids READ filterPids WRITE setFilterPids NOTIFY filterPidsChanged)
+
+    Q_PROPERTY(int sortColumn READ sortColumn NOTIFY sorted)
+    Q_PROPERTY(int sortOrder READ sortOrder NOTIFY sorted)
+
+    QML_ELEMENT
 
 public:
     enum ViewMode {
@@ -50,6 +56,7 @@ public:
     Q_SIGNAL void filterPidsChanged();
 
     Q_INVOKABLE void sort(int column, Qt::SortOrder order) override;
+    Q_SIGNAL void sorted();
 
 private:
     void findColumns();

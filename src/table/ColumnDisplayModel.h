@@ -7,6 +7,7 @@
 #pragma once
 
 #include <QIdentityProxyModel>
+#include <qqmlregistration.h>
 
 class ColumnDisplayModel : public QIdentityProxyModel
 {
@@ -14,6 +15,7 @@ class ColumnDisplayModel : public QIdentityProxyModel
     Q_PROPERTY(QVariantMap columnDisplay READ columnDisplay WRITE setColumnDisplay NOTIFY columnDisplayChanged)
     Q_PROPERTY(QStringList visibleColumnIds READ visibleColumnIds NOTIFY columnDisplayChanged)
     Q_PROPERTY(QString idRole READ idRole WRITE setIdRole NOTIFY idRoleChanged)
+    QML_ELEMENT
 
 public:
     enum Roles {
