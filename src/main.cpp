@@ -118,12 +118,6 @@ int main(int argc, char **argv)
     parser.process(app);
     aboutData.processCommandLine(&parser);
 
-    qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.systemmonitor", 1);
-    qmlRegisterType<ToolsModel>("org.kde.systemmonitor", 1, 0, "ToolsModel");
-    qmlRegisterType<Configuration>("org.kde.systemmonitor", 1, 0, "Configuration");
-    qmlRegisterSingletonType<CommandLineArguments>("org.kde.systemmonitor", 1, 0, "CommandLineArguments", [&parser](QQmlEngine *, QJSEngine *) {
-        return new CommandLineArguments{parser};
-    });
     auto sessionManager = new SessionManager(&app);
 
     QQmlApplicationEngine engine;

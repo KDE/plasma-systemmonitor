@@ -12,6 +12,8 @@
 #include <QQmlParserStatus>
 #include <QTimer>
 
+#include <qqmlregistration.h>
+
 #include "systemmonitor.h"
 
 /**
@@ -25,6 +27,7 @@ class Configuration : public QObject, public QQmlParserStatus
 {
     Q_OBJECT
     Q_INTERFACES(QQmlParserStatus)
+    QML_ELEMENT
 
 public:
     explicit Configuration(QObject *parent = nullptr);

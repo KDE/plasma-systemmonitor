@@ -2,7 +2,14 @@ add_subdirectory(page)
 add_subdirectory(table)
 add_subdirectory(faces)
 
-set(plasma-systemmonitor_SRCS
+kconfig_add_kcfg_files(plasma-systemmonitor_SRCS GENERATE_MOC systemmonitor.kcfgc)
+
+add_definitions(-DQT_NO_KEYWORDS)
+
+add_executable(plasma-systemmonitor ${plasma-systemmonitor_SRCS} ${plasma-systemmonitor_QRC})
+ecm_add_qml_module(plasma-systemmonitor URI "org.kde.systemmonitor" GENERATE_PLUGIN_SOURCE)
+
+target_sources(plasma-systemmonitor PRIVATE
     main.cpp
     ToolsModel.cpp
     ToolsModel.h
@@ -10,15 +17,14 @@ set(plasma-systemmonitor_SRCS
     Configuration.h
 )
 
-qt_add_resources(plasma-systemmonitor_QRC systemmonitor.qrc)
+ecm_target_qml_sources(plasma-systemmonitor SOURCES
+    main.qml
+    GlobalMenu.qml
+    AboutPage.qml
+)
 
-kconfig_add_kcfg_files(plasma-systemmonitor_SRCS GENERATE_MOC systemmonitor.kcfgc)
-
-add_definitions(-DQT_NO_KEYWORDS)
-
-add_executable(plasma-systemmonitor ${plasma-systemmonitor_SRCS} ${plasma-systemmonitor_QRC})
 target_compile_definitions(plasma-systemmonitor PRIVATE PROJECT_VERSION="${PROJECT_VERSION}")
-target_link_libraries(plasma-systemmonitor
+target_link_libraries(plasma-systemmonitor PRIVATE
     Qt::Quick
     Qt::Widgets
     Qt::DBus
@@ -42,3 +48,5 @@ install(FILES
     pages/processes.page
     DESTINATION ${KDE_INSTALL_DATADIR}/plasma-systemmonitor
 )
+
+ecm_finalize_qml_module(plasma-systemmonitor)

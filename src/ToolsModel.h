@@ -9,6 +9,8 @@
 #include <QAbstractListModel>
 #include <QQmlParserStatus>
 
+#include <qqmlregistration.h>
+
 #include <KService>
 
 class QDBusInterface;
@@ -19,6 +21,7 @@ class QDBusInterface;
 class ToolsModel : public QAbstractListModel
 {
     Q_OBJECT
+    QML_ELEMENT
 
 public:
     enum Roles {
