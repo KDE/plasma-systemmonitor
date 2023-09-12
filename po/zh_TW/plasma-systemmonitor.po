@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-08-30 01:58+0000\n"
-"PO-Revision-Date: 2023-08-07 19:17+0900\n"
+"POT-Creation-Date: 2023-09-12 02:00+0000\n"
+"PO-Revision-Date: 2023-09-12 01:37+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.0\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -103,174 +103,174 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "關於系統監控"
 
-#: src/main.cpp:106
+#: src/main.cpp:64
 #, kde-format
 msgid "System Monitor"
 msgstr "系統監控"
 
-#: src/main.cpp:108
+#: src/main.cpp:66
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "一個監控系統資源的應用程式"
 
-#: src/main.cpp:110
+#: src/main.cpp:68
 #, kde-format
 msgid "© 2020 Plasma Development Team"
 msgstr "© 2020 Plasma 開發團隊"
 
-#: src/main.cpp:116
+#: src/main.cpp:74
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "Arjen Hiemstra"
 
-#: src/main.cpp:116 src/main.cpp:119 src/main.cpp:121 src/main.cpp:122
+#: src/main.cpp:74 src/main.cpp:77 src/main.cpp:79 src/main.cpp:80
 #, kde-format
 msgid "Development"
 msgstr "開發"
 
-#: src/main.cpp:117
+#: src/main.cpp:75
 #, kde-format
 msgid "Uri Herrera"
 msgstr "Uri Herrera"
 
-#: src/main.cpp:117
+#: src/main.cpp:75
 #, kde-format
 msgid "Design"
 msgstr "設計"
 
-#: src/main.cpp:118
+#: src/main.cpp:76
 #, kde-format
 msgid "Nate Graham"
 msgstr "Nate Graham"
 
-#: src/main.cpp:118 src/main.cpp:120
+#: src/main.cpp:76 src/main.cpp:78
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "設計與品質保證"
 
-#: src/main.cpp:119
+#: src/main.cpp:77
 #, kde-format
 msgid "David Redondo"
 msgstr "David Redondo"
 
-#: src/main.cpp:120
+#: src/main.cpp:78
 #, kde-format
 msgid "Noah Davis"
 msgstr "Noah Davis"
 
-#: src/main.cpp:121
+#: src/main.cpp:79
 #, kde-format
 msgid "Marco Martin"
 msgstr "Marco Martin"
 
-#: src/main.cpp:122
+#: src/main.cpp:80
 #, kde-format
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: src/main.cpp:124
+#: src/main.cpp:82
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Kisaragi Hiu"
 
-#: src/main.cpp:124
+#: src/main.cpp:82
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mail@kisaragi-hiu.com"
 
-#: src/main.qml:69
+#: src/Main.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "工具"
 
-#: src/main.qml:75
+#: src/Main.qml:75
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "編輯或移除頁面…"
 
-#: src/main.qml:80
+#: src/Main.qml:80
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "匯出目前頁面…"
 
-#: src/main.qml:87
+#: src/Main.qml:87
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "匯入頁面…"
 
-#: src/main.qml:92
+#: src/Main.qml:92
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "取得新頁面…"
 
-#: src/main.qml:104
+#: src/Main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "展開側邊欄"
 
-#: src/main.qml:104
+#: src/Main.qml:104
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "收起側邊欄"
 
-#: src/main.qml:112
+#: src/Main.qml:112
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "回報臭蟲…"
 
-#: src/main.qml:117
+#: src/Main.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "關於系統監控"
 
-#: src/main.qml:143
+#: src/Main.qml:143
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "新增頁面…"
 
-#: src/main.qml:212
+#: src/Main.qml:212
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "新增頁面"
 
-#: src/main.qml:233
+#: src/Main.qml:233
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "編輯頁面"
 
-#: src/main.qml:256
+#: src/Main.qml:256
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "匯出 %1"
 
-#: src/main.qml:258 src/main.qml:268
+#: src/Main.qml:258 src/Main.qml:268
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "系統監控頁面 (*.page)"
 
-#: src/main.qml:266
+#: src/Main.qml:266
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "匯入頁面"
 
-#: src/main.qml:299
+#: src/Main.qml:299
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
@@ -380,25 +380,25 @@ msgstr "關閉"
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr "載入機制…"
+msgstr "載入預設檔…"
 
 #: src/page/FaceConfigurationPage.qml:45
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
-msgstr "取得新機制…"
+msgstr "取得新預設檔…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
-msgstr "將設定儲存為機制"
+msgstr "將設定儲存為預設檔"
 
 #: src/page/FaceConfigurationPage.qml:60
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
-msgstr "已將設定存為 %1 機制。"
+msgstr "已將設定存為 %1 預設檔。"
 
 #: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
 #, kde-format
@@ -416,7 +416,7 @@ msgstr "取得新顯示風格…"
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
-msgstr "已載入 %1 機制。"
+msgstr "已載入 %1 預設檔。"
 
 #: src/page/FaceConfigurationPage.qml:117
 #, kde-format
@@ -468,7 +468,7 @@ msgstr "無圖表"
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
-msgstr "載入機制"
+msgstr "載入預設檔"
 
 #: src/page/LoadPresetDialog.qml:37
 #, kde-format
