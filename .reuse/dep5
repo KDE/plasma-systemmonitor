@@ -15,6 +15,10 @@ Files: *.desktop */*.desktop
 Copyright: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
 License: CC0-1.0
 
+Files: */metadata.json
+Copyright: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
+License: CC0-1.0
+
 Files: */faceproperties
 Copyright: 2020 Arjen Hiemstra <ahiemstra@heimr.nl>
 License: CC0-1.0
