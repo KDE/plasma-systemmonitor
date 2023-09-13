@@ -1,4 +1,5 @@
 {
+    "KPackageStructure": "KSysguard/SensorFace",
     "KPlugin": {
         "Authors": [
             {
@@ -56,6 +57,5 @@
         "Version": "1.0",
         "Website": "https://kde.org"
     },
-    "X-KDE-ParentApp": "org.kde.plasmashell",
-    "KPackageStructure": "KSysguard/SensorFace"
+    "X-KDE-ParentApp": "org.kde.plasmashell"
 }
