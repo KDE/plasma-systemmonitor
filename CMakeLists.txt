@@ -47,6 +47,11 @@ find_package(KF6Kirigami2  ${KF6_MIN_VERSION})
 set_package_properties(KF6Kirigami2 PROPERTIES
     TYPE RUNTIME
 )
+find_package(KF${QT_MAJOR_VERSION}KirigamiAddons REQUIRED)
+set_package_properties(KF${QT_MAJOR_VERSION}KirigamiAddons PROPERTIES
+    TYPE REQUIRED
+    PURPOSE "Provides additional visual components"
+)
 ecm_find_qmlmodule(Qt.labs.qmlmodels 1.0)
 ecm_find_qmlmodule(org.kde.iconthemes 1.0)
 

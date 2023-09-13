@@ -5,13 +5,9 @@
  */
 
 import QtQuick
-import QtQuick.Controls
-import QtQuick.Layouts
-
-import org.kde.kirigami as Kirigami
-
+import org.kde.kirigamiaddons.formcard 1 as FormCard
 import org.kde.systemmonitor
 
-Kirigami.AboutPage {
+FormCard.AboutPage {
     aboutData: CommandLineArguments.aboutData
 }
