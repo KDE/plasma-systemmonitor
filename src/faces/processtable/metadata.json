@@ -4,7 +4,15 @@
         "Authors": [
             {
                 "Email": "ahiemstra@heimr.nl",
-                "Name": "Arjen Hiemstra"
+                "Name": "Arjen Hiemstra",
+                "Name[ca]": "Arjen Hiemstra",
+                "Name[eo]": "Arjen Hiemstra",
+                "Name[es]": "Arjen Hiemstra",
+                "Name[ia]": "Arjen Hiemstra",
+                "Name[nl]": "Arjen Hiemstra",
+                "Name[sl]": "Arjen Hiemstra",
+                "Name[uk]": "Arjen Hiemstra",
+                "Name[x-test]": "xxArjen Hiemstraxx"
             }
         ],
         "Icon": "view-process-system",
