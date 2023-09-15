@@ -741,10 +741,3 @@ msgstr "Bir Pencereyi Öldür…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Başlat: %1"
-
-#~ msgid "Placeholder"
-#~ msgstr "Yer Tutucu"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "İptal"
