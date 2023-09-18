@@ -745,6 +745,3 @@ msgstr "Mata una finestra…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Inicia %1"
-
-#~ msgid "Placeholder"
-#~ msgstr "Marcador de posició"
