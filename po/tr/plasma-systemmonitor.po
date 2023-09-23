@@ -114,7 +114,7 @@ msgstr "Sistem özkaynaklarını izlemek için bir uygulama"
 #: src/main.cpp:68
 #, kde-format
 msgid "© 2020 Plasma Development Team"
-msgstr "© Plasma Geliştirme Takımı"
+msgstr "© 2020 Plasma Geliştirme Takımı"
 
 #: src/main.cpp:74
 #, kde-format
@@ -633,7 +633,7 @@ msgstr "Bu sayfayı kaldır"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
-msgstr "Şununla başla:"
+msgstr "Şununla başlat:"
 
 #: src/page/PageSortDialog.qml:202
 #, kde-format
@@ -662,31 +662,31 @@ msgstr "Dengeli"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
-msgstr "Aynı yüksekliği satırlar arasında dene ve kullan."
+msgstr "Aynı yüksekliği satırlar arasında deneyin ve kullanın."
 
 #: src/page/RowControl.qml:150
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Minimum"
-msgstr "En az"
+msgstr "En Az"
 
 #: src/page/RowControl.qml:151
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
-msgstr "İçeriği düzgünce görüntülemek için gerekli en az yüksekliği kullan."
+msgstr "İçeriği düzgünce görüntülemek için gerekli en az yüksekliği kullanın."
 
 #: src/page/RowControl.qml:159
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Maximum"
-msgstr "En fazla"
+msgstr "En Çok"
 
 #: src/page/RowControl.qml:160
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
-msgstr "Olabildiğince fazla yükseklik kullanmayı dene."
+msgstr "Olabildiğince fazla yükseklik kullanmayı deneyin."
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
