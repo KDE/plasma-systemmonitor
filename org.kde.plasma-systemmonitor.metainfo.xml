@@ -40,6 +40,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="pt-BR">Monitor do sistema Plasma</name>
   <name xml:lang="ro">Monitor de sistem Plasma</name>
   <name xml:lang="ru">Системный монитор Plasma</name>
+  <name xml:lang="sa">प्लाज्मा सङ्गणकतन्त्रस्य निरीक्षकः</name>
   <name xml:lang="sk">Plasma Monitorovanie systému</name>
   <name xml:lang="sl">Plasma System Monitor</name>
   <name xml:lang="sv">Plasma systemövervakare</name>
@@ -78,6 +79,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="pt-BR">Um aplicativo para monitorar os recursos do sistema</summary>
   <summary xml:lang="ro">Aplicație pentru monitorizarea resurselor sistemului</summary>
   <summary xml:lang="ru">Приложение для отслеживания использования ресурсов системы</summary>
+  <summary xml:lang="sa">सङ्गणकतन्त्रसंसाधनानाम् निरीक्षणार्थं एकः अनुप्रयोगः</summary>
   <summary xml:lang="sk">Aplikácia na sledovanie systémových zdrojov</summary>
   <summary xml:lang="sl">Aplikacija za nadzorovanje sistemskih virov</summary>
   <summary xml:lang="sv">Ett program för att övervaka systemresurser</summary>
@@ -93,7 +95,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="az">Plasma sistem izləyicisi sistem sensorlarını izləyən, proseslər və sistem resursları haqqında məlumatları göstərən interfeysi təqdim edir.</p>
     <p xml:lang="be">Сістэмны назіральнік Plasma забяспечвае інтэрфейсам для назірання за сістэмнымі датчыкамі, працэсамі і іншымі рэсурсамі сістэмы.</p>
     <p xml:lang="bg">Наблюдение на системата на Plasma предоставя интерфейс за следене на системни сензори, информация за процеси и други ресурси.</p>
-    <p xml:lang="ca">El Monitor del sistema del Plasma proporciona una interfície per controlar els sensors del sistema, la informació dels processos i altres recursos del sistema.</p>
+    <p xml:lang="ca">El Monitor del sistema del Plasma proporciona una interfície per a controlar els sensors del sistema, la informació dels processos i altres recursos del sistema.</p>
     <p xml:lang="ca-valencia">El Monitor del sistema de Plasma proporciona una interfície per a controlar els sensors del sistema, la informació dels processos i altres recursos del sistema.</p>
     <p xml:lang="da">Plasma Systemovervågning giver en brugerflade til at overvåge systemsensorer, procesinformation og andre systemressourcer.</p>
     <p xml:lang="de">Plasma-Systemmonitor bietet eine Schnittstelle zur Überwachung von Systemsensoren, Prozessinformationen und anderen System-Ressourcen.</p>
@@ -120,6 +122,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="pt-BR">O monitor do sistema Plasma fornece a você uma interface para o monitoramento de sensores do sistema, informações dos processos e outros recursos do sistema.</p>
     <p xml:lang="ro">Monitorul de sistem Plasma oferă o interfață pentru monitorizarea senzorilor sistemului, a informației despre procese și altor resurse ale sistemului.</p>
     <p xml:lang="ru">Системный монитор Plasma — приложение для отслеживания показаний системных датчиков, состояния процессов и использования ресурсов системы.</p>
+    <p xml:lang="sa">प्लाज्मा सङ्गणकतन्त्रस्य निरीक्षकः सङ्गणकतन्त्रसंवेदकस्य, प्रक्रियासूचनायाः अन्येषां सङ्गणकतन्त्रसंसाधनानाम् च निरीक्षणार्थं एकं अन्तरफलकं प्रदाति ।.</p>
     <p xml:lang="sk">Plasma Monitorovanie systému poskytuje rozhranie na monitorovanie systémových senzorov, informácie o procesoch a ďalších systémových prostriedkoch.</p>
     <p xml:lang="sl">Plasma System Monitor nudi vmesnik za nadzor sistemskih senzorjev, obdeluje informacije in druge sistemske vire.</p>
     <p xml:lang="sv">Plasma systemövervakare tillhandahåller ett gränssnitt för att övervaka systemsensorer, processinformation och andra systemresurser.</p>
