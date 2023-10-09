@@ -737,7 +737,3 @@ msgstr "ウィンドウを強制終了…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "%1 を起動"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "キャンセル"
