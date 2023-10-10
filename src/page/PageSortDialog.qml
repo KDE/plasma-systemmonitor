@@ -45,142 +45,139 @@ Kirigami.Dialog {
 
     ListView {
         id: pageList
+
+        reuseItems: true
+
         model: Page.PageSortModel {
             id: sortModel
         }
-        delegate: Kirigami.DelegateRecycler {
-            sourceComponent: delegateComponent
-        }
-        Component {
-            id: delegateComponent
-            Kirigami.AbstractListItem {
-                id: listItem
-                readonly property string title: model ? model.title : ""
-                //Using directly model.hidden below doesn't work for some reason
-                readonly property bool hidden: model ? model.hidden : false
-                readonly property var filesWritable: model ? model.filesWriteable : false
-                readonly property bool shouldRemoveFiles: model ? model.shouldRemoveFiles : false
+        delegate: Kirigami.AbstractListItem {
+            id: listItem
+            readonly property string title: model ? model.title : ""
+            //Using directly model.hidden below doesn't work for some reason
+            readonly property bool hidden: model ? model.hidden : false
+            readonly property var filesWritable: model ? model.filesWriteable : false
+            readonly property bool shouldRemoveFiles: model ? model.shouldRemoveFiles : false
 
-                width: pageList.width - pageList.leftMargin - pageList.rightMargin
+            width: pageList.width - pageList.leftMargin - pageList.rightMargin
 
-                activeFocusOnTab: false
+            activeFocusOnTab: false
 
-                // We don't want visual interactivity for the background
-                highlighted: false
-                hoverEnabled: false
-                down: false
+            // We don't want visual interactivity for the background
+            highlighted: false
+            hoverEnabled: false
+            down: false
 
-                contentItem: RowLayout {
-                    spacing: Kirigami.Units.smallSpacing
+            contentItem: RowLayout {
+                spacing: Kirigami.Units.smallSpacing
 
-                    Kirigami.ListItemDragHandle {
-                        id: handle
-                        Layout.fillHeight: true
-                        Layout.rowSpan: 2
-                        listItem: listItem
-                        listView: pageList
-                        onMoveRequested: (oldIndex, newIndex) => {
-                            sortModel.move(oldIndex, newIndex)
-                        }
+                Kirigami.ListItemDragHandle {
+                    id: handle
+                    Layout.fillHeight: true
+                    Layout.rowSpan: 2
+                    listItem: listItem
+                    listView: pageList
+                    onMoveRequested: (oldIndex, newIndex) => {
+                        sortModel.move(oldIndex, newIndex)
                     }
-                    CheckBox {
-                        checked: !listItem.hidden
-                        onToggled: pageList.model.setData(pageList.model.index(index, 0), !listItem.hidden, Page.PagesModel.HiddenRole)
-                        ToolTip.text: listItem.hidden ? i18nc("@info:tooltip", "Show Page")
-                                                        : i18nc("@info:tooltip", "Hide Page")
-                        ToolTip.delay: Kirigami.Units.toolTipDelay
-                        ToolTip.visible: hovered
-                    }
-                    Kirigami.Icon {
-                        Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
-                        Layout.preferredHeight: Layout.preferredWidth
-                        source: model ? model.icon : ""
+                }
+                CheckBox {
+                    checked: !listItem.hidden
+                    onToggled: pageList.model.setData(pageList.model.index(index, 0), !listItem.hidden, Page.PagesModel.HiddenRole)
+                    ToolTip.text: listItem.hidden ? i18nc("@info:tooltip", "Show Page")
+                                                    : i18nc("@info:tooltip", "Hide Page")
+                    ToolTip.delay: Kirigami.Units.toolTipDelay
+                    ToolTip.visible: hovered
+                }
+                Kirigami.Icon {
+                    Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
+                    Layout.preferredHeight: Layout.preferredWidth
+                    source: model ? model.icon : ""
+                    opacity: listItem.hidden ? 0.3 : 1
+                }
+                ColumnLayout {
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignVCenter
+                    spacing: 0
+                    Label {
+                        Layout.fillWidth: true
+                        text: listItem.title
                         opacity: listItem.hidden ? 0.3 : 1
                     }
-                    ColumnLayout {
+                    Label {
+                        id: subtitle
                         Layout.fillWidth: true
-                        Layout.alignment: Qt.AlignVCenter
-                        spacing: 0
-                        Label {
-                            Layout.fillWidth: true
-                            text: listItem.title
-                            opacity: listItem.hidden ? 0.3 : 1
-                        }
-                        Label {
-                            id: subtitle
-                            Layout.fillWidth: true
-                            font: Kirigami.Theme.smallFont
-                            opacity: 0.7
-                            visible: text.length > 0
-                        }
+                        font: Kirigami.Theme.smallFont
+                        opacity: 0.7
+                        visible: text.length > 0
                     }
-                    Button {
-                        id: removeButton
-                        onClicked: pageList.model.setData(pageList.model.index(index, 0), !listItem.shouldRemoveFiles, Page.PageSortModel.ShouldRemoveFilesRole)
-                        ToolTip.delay: Kirigami.Units.toolTipDelay
-                        ToolTip.visible: hovered
-                    }
-
-                    states: [
-                        State {
-                            name: "noChanges"
-                            extend: "localChanges"
-                            when: listItem.filesWritable == Page.PagesModel.NotWriteable
-                            PropertyChanges {
-                                target: removeButton;
-                                enabled: false;
-                            }
-                        },
-                        State {
-                            name: "removeLocalChanges"
-                            when:  listItem.filesWritable == Page.PagesModel.LocalChanges && listItem.shouldRemoveFiles
-                            PropertyChanges {
-                                target: removeButton
-                                icon.name: "edit-redo"
-                                ToolTip.text: i18nc("@info:tooltip", "Do not reset the page")
-                            }
-                            PropertyChanges {
-                                target: subtitle
-                                text: i18nc("@item:intable", "The page will be reset to its default state")
-                            }
-                        },
-                        State {
-                            name: "localChanges"
-                            when: listItem.filesWritable == Page.PagesModel.LocalChanges
-                            PropertyChanges {
-                                target: removeButton
-                                icon.name: "edit-reset"
-                                ToolTip.text: i18nc("@info:tooltip", "Reset the page to its default state")
-                            }
-                        },
-                        State {
-                            name: "remove"
-                            when: listItem.filesWritable == Page.PagesModel.AllWriteable && listItem.shouldRemoveFiles
-                            PropertyChanges {
-                                target: removeButton
-                                icon.name: "edit-undo"
-                                ToolTip.text: i18nc("@info:tooltip", "Do not remove this page")
-                            }
-                            PropertyChanges {
-                                target: subtitle
-                                text: i18nc("@item:intable", "The page will be removed")
-                            }
-                            PropertyChanges {
-                                target: listItem
-                                backgroundColor: Kirigami.Theme.negativeBackgroundColor
-                            }
-                        },
-                        State {
-                            name: "removeable"
-                            when: listItem.filesWritable == Page.PagesModel.AllWriteable
-                            PropertyChanges {
-                                target: removeButton
-                                icon.name: "edit-delete"
-                                ToolTip.text: i18nc("@info:tooltip", "Remove this page")
-                            }
-                        }
-                    ]
                 }
+                Button {
+                    id: removeButton
+                    onClicked: pageList.model.setData(pageList.model.index(index, 0), !listItem.shouldRemoveFiles, Page.PageSortModel.ShouldRemoveFilesRole)
+                    ToolTip.delay: Kirigami.Units.toolTipDelay
+                    ToolTip.visible: hovered
+                }
+
+                states: [
+                    State {
+                        name: "noChanges"
+                        extend: "localChanges"
+                        when: listItem.filesWritable == Page.PagesModel.NotWriteable
+                        PropertyChanges {
+                            target: removeButton;
+                            enabled: false;
+                        }
+                    },
+                    State {
+                        name: "removeLocalChanges"
+                        when:  listItem.filesWritable == Page.PagesModel.LocalChanges && listItem.shouldRemoveFiles
+                        PropertyChanges {
+                            target: removeButton
+                            icon.name: "edit-redo"
+                            ToolTip.text: i18nc("@info:tooltip", "Do not reset the page")
+                        }
+                        PropertyChanges {
+                            target: subtitle
+                            text: i18nc("@item:intable", "The page will be reset to its default state")
+                        }
+                    },
+                    State {
+                        name: "localChanges"
+                        when: listItem.filesWritable == Page.PagesModel.LocalChanges
+                        PropertyChanges {
+                            target: removeButton
+                            icon.name: "edit-reset"
+                            ToolTip.text: i18nc("@info:tooltip", "Reset the page to its default state")
+                        }
+                    },
+                    State {
+                        name: "remove"
+                        when: listItem.filesWritable == Page.PagesModel.AllWriteable && listItem.shouldRemoveFiles
+                        PropertyChanges {
+                            target: removeButton
+                            icon.name: "edit-undo"
+                            ToolTip.text: i18nc("@info:tooltip", "Do not remove this page")
+                        }
+                        PropertyChanges {
+                            target: subtitle
+                            text: i18nc("@item:intable", "The page will be removed")
+                        }
+                        PropertyChanges {
+                            target: listItem
+                            backgroundColor: Kirigami.Theme.negativeBackgroundColor
+                        }
+                    },
+                    State {
+                        name: "removeable"
+                        when: listItem.filesWritable == Page.PagesModel.AllWriteable
+                        PropertyChanges {
+                            target: removeButton
+                            icon.name: "edit-delete"
+                            ToolTip.text: i18nc("@info:tooltip", "Remove this page")
+                        }
+                    }
+                ]
             }
         }
     }
