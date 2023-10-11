@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-12 02:00+0000\n"
+"POT-Creation-Date: 2023-10-11 02:07+0000\n"
 "PO-Revision-Date: 2023-07-25 01:15+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -580,61 +580,61 @@ msgstr "앱을 시작할 때"
 msgid "New Title"
 msgstr "새 제목"
 
-#: src/page/PageSortDialog.qml:89
+#: src/page/PageSortDialog.qml:87
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "페이지 표시"
 
-#: src/page/PageSortDialog.qml:90
+#: src/page/PageSortDialog.qml:88
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "쪽 수기기"
 
-#: src/page/PageSortDialog.qml:140
+#: src/page/PageSortDialog.qml:138
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "쪽 초기화하지 않기"
 
-#: src/page/PageSortDialog.qml:144
+#: src/page/PageSortDialog.qml:142
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "쪽 크기를 기본값으로 초기화합니다"
 
-#: src/page/PageSortDialog.qml:153
+#: src/page/PageSortDialog.qml:151
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "쪽 크기를 기본값으로 초기화"
 
-#: src/page/PageSortDialog.qml:162
+#: src/page/PageSortDialog.qml:160
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "이 쪽을 삭제하지 않음"
 
-#: src/page/PageSortDialog.qml:166
+#: src/page/PageSortDialog.qml:164
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "쪽을 삭제합니다"
 
-#: src/page/PageSortDialog.qml:179
+#: src/page/PageSortDialog.qml:177
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "이 쪽 삭제"
 
-#: src/page/PageSortDialog.qml:193
+#: src/page/PageSortDialog.qml:190
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "다음으로 시작:"
 
-#: src/page/PageSortDialog.qml:202
+#: src/page/PageSortDialog.qml:199
 #, kde-format
 msgid "Last Visited Page"
 msgstr "마지막으로 방문한 쪽"

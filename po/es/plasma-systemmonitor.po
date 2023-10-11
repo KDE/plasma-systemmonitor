@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-12 02:00+0000\n"
+"POT-Creation-Date: 2023-10-11 02:07+0000\n"
 "PO-Revision-Date: 2023-06-17 01:24+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -585,61 +585,61 @@ msgstr "Durante el inicio de la aplicación"
 msgid "New Title"
 msgstr "Nuevo título"
 
-#: src/page/PageSortDialog.qml:89
+#: src/page/PageSortDialog.qml:87
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Mostrar página"
 
-#: src/page/PageSortDialog.qml:90
+#: src/page/PageSortDialog.qml:88
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Ocultar página"
 
-#: src/page/PageSortDialog.qml:140
+#: src/page/PageSortDialog.qml:138
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "No reiniciar la página"
 
-#: src/page/PageSortDialog.qml:144
+#: src/page/PageSortDialog.qml:142
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "La página se reiniciará a su estado predeterminado"
 
-#: src/page/PageSortDialog.qml:153
+#: src/page/PageSortDialog.qml:151
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Reiniciar la página a su estado predeterminado"
 
-#: src/page/PageSortDialog.qml:162
+#: src/page/PageSortDialog.qml:160
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "No eliminar esta página"
 
-#: src/page/PageSortDialog.qml:166
+#: src/page/PageSortDialog.qml:164
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Se eliminará la página"
 
-#: src/page/PageSortDialog.qml:179
+#: src/page/PageSortDialog.qml:177
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Eliminar esta página"
 
-#: src/page/PageSortDialog.qml:193
+#: src/page/PageSortDialog.qml:190
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Empezar con:"
 
-#: src/page/PageSortDialog.qml:202
+#: src/page/PageSortDialog.qml:199
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Última página visitada"

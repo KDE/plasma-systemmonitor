@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-12 02:00+0000\n"
+"POT-Creation-Date: 2023-10-11 02:07+0000\n"
 "PO-Revision-Date: 2023-06-18 14:00+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -578,61 +578,61 @@ msgstr "செயலியை துவக்கும்போது"
 msgid "New Title"
 msgstr "புதிய தலைப்பு"
 
-#: src/page/PageSortDialog.qml:89
+#: src/page/PageSortDialog.qml:87
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "பக்கத்தை காட்டு"
 
-#: src/page/PageSortDialog.qml:90
+#: src/page/PageSortDialog.qml:88
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "பக்கத்தை மறை"
 
-#: src/page/PageSortDialog.qml:140
+#: src/page/PageSortDialog.qml:138
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "பக்கத்தை மீட்டமைக்காதே"
 
-#: src/page/PageSortDialog.qml:144
+#: src/page/PageSortDialog.qml:142
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "பக்கம், அதன் இயல்பிருப்பு நிலைக்கு மாற்றப்படும்"
 
-#: src/page/PageSortDialog.qml:153
+#: src/page/PageSortDialog.qml:151
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "பக்கத்தை இயல்பிருப்பு நிலைக்கு மீட்டமை"
 
-#: src/page/PageSortDialog.qml:162
+#: src/page/PageSortDialog.qml:160
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "இப்பக்கத்தை நீக்காதே"
 
-#: src/page/PageSortDialog.qml:166
+#: src/page/PageSortDialog.qml:164
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "இப்பக்கம் நீக்கப்படும்"
 
-#: src/page/PageSortDialog.qml:179
+#: src/page/PageSortDialog.qml:177
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "இப்பக்கத்தை நீக்கு"
 
-#: src/page/PageSortDialog.qml:193
+#: src/page/PageSortDialog.qml:190
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "தொடங்கும்போது இதை காட்டு:"
 
-#: src/page/PageSortDialog.qml:202
+#: src/page/PageSortDialog.qml:199
 #, kde-format
 msgid "Last Visited Page"
 msgstr "கடைசியாக பார்த்த பக்கம்"
