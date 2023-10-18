@@ -24,6 +24,9 @@ Control
 
     readonly property var __selection: TableView.view.selectionModel
 
+    // Important: Don't remove this until QTBUG-84858 is resolved properly.
+    Accessible.role: Accessible.Cell
+
     leftPadding: 0
     rightPadding: 0
     topPadding: 0
