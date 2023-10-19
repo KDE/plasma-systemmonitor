@@ -27,7 +27,7 @@ public:
     explicit PageDataObject(const KSharedConfig::Ptr &config, QObject *parent = nullptr);
 
     QQmlListProperty<PageDataObject> childrenProperty() const;
-    QVector<PageDataObject *> children() const;
+    QList<PageDataObject *> children() const;
 
     KSharedConfig::Ptr config() const;
 
@@ -71,7 +71,7 @@ private:
     void updateNames();
 
     QQmlListProperty<PageDataObject> m_childrenProperty;
-    QVector<PageDataObject *> m_children;
+    QList<PageDataObject *> m_children;
     KSharedConfig::Ptr m_config;
     bool m_dirty = false;
     FaceLoader *m_faceLoader = nullptr;

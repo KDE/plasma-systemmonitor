@@ -33,7 +33,7 @@ void ReverseColumnsProxyModel::reverseColumns()
     if (!sourceModel()) {
         return;
     }
-    QVector<int> columns(sourceModel()->columnCount());
+    QList<int> columns(sourceModel()->columnCount());
     std::iota(columns.rbegin(), columns.rend(), 0);
     setSourceColumns(columns);
 }

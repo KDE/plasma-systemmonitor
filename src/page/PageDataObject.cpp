@@ -69,7 +69,7 @@ QQmlListProperty<PageDataObject> PageDataObject::childrenProperty() const
     return m_childrenProperty;
 }
 
-QVector<PageDataObject *> PageDataObject::children() const
+QList<PageDataObject *> PageDataObject::children() const
 {
     return m_children;
 }

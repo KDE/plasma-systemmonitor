@@ -47,7 +47,7 @@ public:
 private:
     int idRoleNumber() const;
 
-    QVector<int> m_rowMapping;
+    QList<int> m_rowMapping;
     QString m_idRole = QStringLiteral("id");
     mutable int m_idRoleNumber = -1;
 };

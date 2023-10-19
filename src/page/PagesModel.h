@@ -71,7 +71,7 @@ Q_SIGNALS:
     void hiddenPagesChanged();
 
 private:
-    QVector<PageDataObject *> m_pages;
+    QList<PageDataObject *> m_pages;
     QStringList m_pageOrder;
     QStringList m_hiddenPages;
     QHash<QString, FilesWriteableStates> m_writeableCache;

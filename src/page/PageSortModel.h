@@ -43,7 +43,7 @@ public:
     Q_INVOKABLE void applyChangesToSourceModel() const;
 
 private:
-    QVector<int> m_rowMapping;
-    QVector<bool> m_hiddenProxy;
-    QVector<bool> m_removeFiles;
+    QList<int> m_rowMapping;
+    QList<bool> m_hiddenProxy;
+    QList<bool> m_removeFiles;
 };

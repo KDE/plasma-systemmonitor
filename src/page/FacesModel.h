@@ -43,5 +43,5 @@ private:
     void findFaceLoaders(PageDataObject *pageData);
 
     PageDataObject *m_pageData = nullptr;
-    QVector<FaceLoader *> m_faceLoaders;
+    QList<FaceLoader *> m_faceLoaders;
 };

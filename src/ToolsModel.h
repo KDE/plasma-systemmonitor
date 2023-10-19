@@ -49,5 +49,5 @@ private:
         QString shortcut;
         KService::Ptr service;
     };
-    QVector<Entry> m_entries;
+    QList<Entry> m_entries;
 };

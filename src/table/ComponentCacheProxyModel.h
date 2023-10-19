@@ -82,5 +82,5 @@ private:
     QQmlComponent *m_component = nullptr;
     QHash<QPersistentModelIndex, QObject *> m_instances;
 
-    mutable QVector<QPersistentModelIndex> m_pendingInstances;
+    mutable QList<QPersistentModelIndex> m_pendingInstances;
 };
