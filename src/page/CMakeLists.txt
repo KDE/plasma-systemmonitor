@@ -39,6 +39,7 @@ ecm_target_qml_sources(PlasmaSystemMonitorPage SOURCES
     PageSortDialog.qml
     DialogLoader.qml
     MissingSensorsDialog.qml
+    ConditionalLoader.qml
 )
 
 target_link_libraries(PlasmaSystemMonitorPage PRIVATE Qt::DBus Qt::Quick KF6::ConfigCore KF6::I18n KF6::NewStuffCore KSysGuard::Sensors KSysGuard::SensorFaces)
