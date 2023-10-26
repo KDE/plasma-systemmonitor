@@ -8,7 +8,6 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
-import Qt5Compat.GraphicalEffects
 
 import org.kde.kirigami as Kirigami
 import org.kde.ksysguard.faces as Faces
@@ -109,7 +108,23 @@ ColumnLayout {
     Repeater {
         model: PageDataModel { data: root.pageData }
 
-        Item {
+        ConditionalLoader {
+            required property var model
+
+            readonly property real minimumContentHeight: model.data.isTitle ? item.height : item.Layout.minimumHeight
+
+            readonly property string heightMode: {
+                if (model.data.heightMode) {
+                    return model.data.heightMode
+                }
+
+                if (model.data.isTitle) {
+                    return "minimum"
+                }
+
+                return "balanced"
+            }
+
             Layout.fillWidth: true
             Layout.fillHeight: heightMode != "minimum"
             Layout.preferredHeight: 0
@@ -136,39 +151,18 @@ ColumnLayout {
                 return -1
             }
 
-            readonly property real minimumContentHeight: {
-                if (model.data.isTitle) {
-                    return title.height
-                }
+            condition: model.data.isTitle
 
-                return rowContents.Layout.minimumHeight
-            }
-
-            readonly property string heightMode: {
-                if (model.data.heightMode) {
-                    return model.data.heightMode
-                }
-
-                if (model.data.isTitle) {
-                    return "minimum"
-                }
-
-                return "balanced"
-            }
-
-            Kirigami.Heading {
-                id: title
+            sourceTrue: Kirigami.Heading {
                 anchors.left: parent.left
                 level: 2
                 text: model.data.title ? model.data.title : ""
-                visible: model.data.isTitle
             }
 
-            GridLayout {
+            sourceFalse: GridLayout {
                 id: rowContents
 
                 anchors.fill: parent
-                visible: !model.data.isTitle
 
                 columnSpacing: Kirigami.Units.largeSpacing
                 rowSpacing: Kirigami.Units.largeSpacing
@@ -176,17 +170,15 @@ ColumnLayout {
                 Repeater {
                     model: PageDataModel { data: model.data }
 
-                    Item {
+                    ConditionalLoader {
+                        required property var model
+
                         Layout.fillWidth: true
                         Layout.fillHeight: true
-                        Layout.minimumHeight: columnContents.Layout.minimumHeight + columnContents.anchors.topMargin + columnContents.anchors.bottomMargin
+                        Layout.minimumHeight: item.Layout.minimumHeight + (model.data.noMargins ? 0 : Kirigami.Units.largeSpacing * 2)
+                        Layout.preferredWidth: 0
 
-                        Kirigami.AbstractCard {
-                            anchors.fill: parent
-                            visible: model.data.showBackground
-                        }
-
-                        RowLayout {
+                        component ColumnContents: RowLayout {
                             id: columnContents
 
                             anchors.fill: parent
@@ -194,40 +186,46 @@ ColumnLayout {
 
                             spacing: Kirigami.Units.largeSpacing
 
-                            layer.enabled: model.data.showBackground && model.data.noMargins
-                            layer.effect: OpacityMask {
-                                maskSource: Kirigami.ShadowedRectangle {
-                                    width: columnContents.width
-                                    height: columnContents.height
-                                    radius: Kirigami.Units.smallSpacing
-                                }
+                            layer.enabled: (model.data.showBackground && model.data.noMargins) ?? false
+                            layer.effect: Kirigami.ShadowedTexture {
+                                radius: Kirigami.Units.smallSpacing
                             }
 
                             Repeater {
                                 model: PageDataModel { data: model.data }
 
-                                Loader {
+                                ConditionalLoader {
+                                    required property var model
+
                                     Layout.fillHeight: true
-                                    Layout.fillWidth: model.data.isSeparator ? false : true
-                                    Layout.preferredWidth: model.data.isSeparator ? 1 : 0
-                                    Layout.minimumHeight: item ? item.Layout.minimumHeight : 0
+                                    Layout.fillWidth: item?.Layout.fillWidth ?? true
+                                    Layout.preferredWidth: item?.Layout.preferredWidth ?? 0
+                                    Layout.minimumHeight: item?.Layout.minimumHeight ?? 0
 
-                                    property var modelData: model
+                                    condition: model.data.isSeparator
 
-                                    sourceComponent: model.data.isSeparator ? separatorComponent : faceComponent
+                                    sourceTrue: Kirigami.Separator { Layout.preferredWidth: 1 }
+
+                                    sourceFalse: faceComponent
                                 }
                             }
                         }
+
+                        condition: model.data.showBackground
+
+                        sourceTrue: Kirigami.AbstractCard {
+                            anchors.fill: parent
+
+                            Layout.minimumHeight: contents.Layout.minimumHeight
+
+                            ColumnContents { id: contents }
+                        }
+
+                        sourceFalse: ColumnContents { }
                     }
                 }
             }
         }
-    }
-
-    Component {
-        id: separatorComponent
-
-        Kirigami.Separator { }
     }
 
     Component {
@@ -239,14 +237,16 @@ ColumnLayout {
             topPadding: 0
             bottomPadding: 0
 
+            Layout.preferredWidth: 0
             Layout.minimumHeight: contentItem ? contentItem.Layout.minimumHeight : 0
+            Layout.fillWidth: true
 
             FaceLoader {
                 id: loader
-                dataObject: modelData.data
+                dataObject: model.data
 
                 Component.onCompleted: {
-                    root.faceMapping[modelData.data.face] = loader
+                    root.faceMapping[model.data.face] = loader
                 }
             }
 
@@ -256,7 +256,7 @@ ColumnLayout {
                 function onMissingSensorsChanged() {
                     for (let i of missingSensors) {
                         root.missingSensors.push({
-                            "face": modelData.data.face,
+                            "face": model.data.face,
                             "title": loader.controller.title,
                             "sensor": i
                         })
@@ -265,7 +265,7 @@ ColumnLayout {
                 }
 
                 Component.onCompleted: {
-                    root.faceMapping[modelData.data.face] = loader
+                    root.faceMapping[model.data.face] = loader
                 }
             }
 
@@ -273,7 +273,7 @@ ColumnLayout {
                 loader.controller.fullRepresentation.formFactor = Faces.SensorFace.Constrained;
                 contentItem = loader.controller.fullRepresentation
 
-                if (root.pageData.actionsFace == modelData.data.face) {
+                if (root.pageData.actionsFace == model.data.face) {
                     root.actionsFace = loader.controller.fullRepresentation
                 }
             }
