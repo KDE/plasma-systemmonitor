@@ -58,7 +58,7 @@ int main(int argc, char **argv)
     QApplication app(argc, argv);
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("utilities-system-monitor")));
 
-    KLocalizedString::setApplicationDomain("plasma-systemmonitor");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("plasma-systemmonitor"));
 
     KAboutData aboutData{/* componentName */ QStringLiteral("plasma-systemmonitor"),
                          /* displayName */ i18n("System Monitor"),
