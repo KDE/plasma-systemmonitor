@@ -40,8 +40,7 @@ Kirigami.ScrollablePage {
     onActionsFaceChanged: Qt.callLater(updateActions)
     Connections {
         target: page.actionsFace
-        function onPrimaryActionsChanged() { Qt.callLater(page.updateActions) }
-        function onSecondaryActionsChanged() { Qt.callLater(page.updateActions) }
+        function onActionsChanged() { Qt.callLater(page.updateActions) }
     }
 
     function updateActions() {
@@ -52,15 +51,7 @@ Kirigami.ScrollablePage {
             return
         }
 
-        let primary = page.actionsFace.primaryActions
-        let secondary = page.actionsFace.secondaryActions
-
-        if (primary.length == 0 && secondary.length == 0) {
-            actions = defaultActions
-            return
-        }
-
-        actions = actions.concat(primary).concat(secondary).concat(defaultActions)
+        actions = actions.concat(page.actionsFace.actions).concat(defaultActions)
     }
 
     // Scroll the contents of the page based on the position of a rect (in scene

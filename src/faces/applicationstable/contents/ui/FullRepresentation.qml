@@ -22,10 +22,11 @@ Faces.SensorFace {
 
     readonly property var config: controller.faceConfiguration
 
-    primaryActions: [
+    actions: [
         Kirigami.Action {
             icon.name: "search"
             text: i18nc("@action", "Search")
+            displayHint: Kirigami.DisplayHint.KeepVisible
             displayComponent: Kirigami.SearchField {
                 text: table.filterString
                 onTextEdited: table.filterString = text;
@@ -36,12 +37,10 @@ Faces.SensorFace {
         Kirigami.Action {
             icon.name: "application-exit"
             text: i18nc("@action", "Quit Application")
+            displayHint: Kirigami.DisplayHint.KeepVisible
             onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             enabled: table.selection.hasSelection
-        }
-    ]
-
-    secondaryActions: [
+        },
         Kirigami.Action {
             id: showDetailsAction
             icon.name: "documentinfo"

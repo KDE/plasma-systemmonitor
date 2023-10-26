@@ -22,10 +22,11 @@ Faces.SensorFace {
 
     readonly property var config: controller.faceConfiguration
 
-    primaryActions: [
+    actions: [
         Kirigami.Action {
             icon.name: "search"
             text: i18nc("@action", "Search")
+            displayHint: Kirigami.DisplayHint.KeepVisible
             displayComponent: Kirigami.SearchField {
                 text: table.nameFilterString
                 onTextEdited: table.nameFilterString = text;
@@ -39,12 +40,10 @@ Faces.SensorFace {
             text: i18nc("@action", "End Process")
             onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
             enabled: table.selection.hasSelection
-        }
-    ]
+        },
 
-    secondaryActions: [
         // Note: can't use ActionGroup there because of https://bugreports.qt.io/browse/QTBUG-86860
-         Kirigami.Action {
+        Kirigami.Action {
             id: listAction
             icon.name: "view-list-details"
             checkable: true
