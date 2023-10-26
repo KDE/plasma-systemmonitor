@@ -23,7 +23,7 @@ Kirigami.ApplicationWindow {
     minimumWidth: Kirigami.Units.gridUnit * 34
     minimumHeight: Kirigami.Units.gridUnit* 27
 
-    title: pageStack.currentItem.title
+    title: pageStack.currentItem?.title ?? ""
 
     header: contentItem.GraphicsInfo.api === GraphicsInfo.Software ? degradedWarning.createObject(app) : null
 
@@ -79,7 +79,7 @@ Kirigami.ApplicationWindow {
                         id: exportAction
                         text: i18nc("@action", "Export Current Page…")
                         icon.name: "document-export"
-                        enabled: !app.pageStack.currentItem.edit
+                        enabled: !app.pageStack.currentItem?.edit ?? false
                         onTriggered: exportDialog.open()
                     },
                     Kirigami.Action {

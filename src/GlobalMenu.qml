@@ -29,7 +29,7 @@ Labs.MenuBar {
         Labs.MenuItem {
             text: i18nc("@menu-action", "Export Current Page…")
             icon.name: "document-export"
-            enabled: !app.pageStack.currentItem.edit
+            enabled: !app.pageStack.currentItem?.edit ?? false
             onTriggered: exportDialog.open()
         }
 
