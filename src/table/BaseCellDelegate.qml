@@ -63,7 +63,7 @@ Control
             root.TableView.view.hoveredRow = -1
         }
 
-        onClicked: {
+        onClicked: (mouse) => {
             var modelIndex = root.TableView.view.model.index(row, column);
             root.TableView.view.forceActiveFocus(Qt.ClickFocus)
 

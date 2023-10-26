@@ -218,7 +218,7 @@ Page {
                 columnWidths: [0.5, 0.25, 0.25]
                 sortName: processModel.enabledAttributes.includes(controller.faceConfiguration.sortColumn) ? controller.faceConfiguration.sortColumn : "vmPSS"
                 sortOrder: controller.faceConfiguration.sortDirection
-                onSort: sortFilter.sort(column, order)
+                onSort: (column, order) => sortFilter.sort(column, order)
 
                 model: Table.ProcessSortFilterModel {
                     id: sortFilter
