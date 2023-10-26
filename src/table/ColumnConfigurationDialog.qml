@@ -66,6 +66,8 @@ Kirigami.Dialog {
     ListView {
         id: columnView
 
+        Kirigami.Theme.colorSet: Kirigami.Theme.View
+        Kirigami.Theme.inherit: false
 
         model: Table.ColumnDisplayModel {
             id: displayModel
@@ -84,9 +86,8 @@ Kirigami.Dialog {
 
         Component {
             id: delegateComponent
-            Kirigami.AbstractListItem {
-                id: listItem
-                Kirigami.Theme.colorSet: Kirigami.Theme.View
+            Kirigami.SubtitleDelegate {
+                id: delegate
                 rightPadding: Kirigami.Units.smallSpacing
                 property int index: modelData ? modelData.row : -1
                 activeFocusOnTab: false
@@ -96,32 +97,27 @@ Kirigami.Dialog {
                 hoverEnabled: false
                 down: false
 
-                contentItem: GridLayout {
-                    rows: 2
-                    flow: GridLayout.TopToBottom
+                text: modelData?.name ?? ""
+                subtitle: modelData?.description ?? ""
+
+                Kirigami.Theme.useAlternateBackgroundColor: true
+
+                contentItem: RowLayout {
+                    spacing: Kirigami.Units.smallSpacing
                     Kirigami.ListItemDragHandle {
                         id: handle
-                        Layout.fillHeight: true
-                        Layout.rowSpan: 2
-                        listItem: listItem
+                        listItem: delegate
                         listView: columnView
                         onMoveRequested: (oldIndex, newIndex) => {
                             sortModel.move(oldIndex, newIndex);
                         }
                     }
-                    Label {
-                        Layout.preferredWidth: Kirigami.Units.gridUnit * 10
-                        Layout.rowSpan: modelData && modelData.description ? 1 : 2
-                        text: modelData ? modelData.name : ""
-                    }
-                    Label {
-                        id: descriptionLabel
+
+                    Kirigami.TitleSubtitle {
+                        id: titleSubtitle
                         Layout.fillWidth: true
-                        elide: Text.ElideRight
-                        maximumLineCount: 1
-                        textFormat: Text.PlainText
-                        text: modelData ? modelData.description.replace("<br>", " ") : ""
-                        color: Kirigami.Theme.disabledTextColor
+                        title: delegate.text
+                        subtitle: delegate.subtitle
                     }
 
                     ComboBox {
@@ -162,13 +158,13 @@ Kirigami.Dialog {
                         }
 
                         onActivated: {
-                            displayModel.setDisplay(listItem.index, model[index].value);
+                            displayModel.setDisplay(delegate.index, model[index].value);
                         }
                     }
                 }
 
-                ToolTip.text: modelData ? modelData.description.replace("<br>", " ") : ""
-                ToolTip.visible: listItem.hovered && descriptionLabel.truncated
+                ToolTip.text: modelData?.description ?? ""
+                ToolTip.visible: delegate.hovered && titleSubtitle.truncated
                 ToolTip.delay: Kirigami.Units.toolTipDelay
             }
         }

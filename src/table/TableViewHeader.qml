@@ -51,8 +51,9 @@ FocusScope {
         }
     }
 
-    Kirigami.BasicListItem {
+    ItemDelegate {
         id: heightHelper
+        icon.name: "document-new"
         text: "Placeholder"
         visible: false
     }

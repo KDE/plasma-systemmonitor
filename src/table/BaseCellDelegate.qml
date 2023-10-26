@@ -27,10 +27,10 @@ Control
     // Important: Don't remove this until QTBUG-84858 is resolved properly.
     Accessible.role: Accessible.Cell
 
-    leftPadding: 0
-    rightPadding: 0
-    topPadding: 0
-    bottomPadding: 0
+    leftPadding: Kirigami.Units.smallSpacing
+    rightPadding: Kirigami.Units.smallSpacing
+    topPadding: Kirigami.Units.smallSpacing
+    bottomPadding: Kirigami.Units.smallSpacing
 
     Kirigami.Theme.colorSet: selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
     Kirigami.Theme.inherit: false

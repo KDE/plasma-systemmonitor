@@ -69,24 +69,34 @@ Kirigami.Dialog {
             label: section
         }
 
-        delegate: Kirigami.BasicListItem {
+        delegate: ItemDelegate {
             id: delegate
 
-            implicitHeight: Kirigami.Units.gridUnit * 2 + Kirigami.Units.smallSpacing * 2
-            labelItem.textFormat: Text.MarkdownText
-            label: model.sensor
+            width: ListView.view.width
 
-            trailing: Faces.Choices {
-                width: delegate.width * 0.5
+            text: model.sensor
 
-                supportsColors: false
-                maxAllowedSensors: 1
-                labelsEditable: false
-                labels: { }
+            contentItem: RowLayout {
+                spacing: Kirigami.Units.smallSpacing
 
-                onSelectedChanged: {
-                    if (selected.length > 0) {
-                        sensorsModel.setProperty(index, "replacement", selected[0])
+                Label {
+                    Layout.fillWidth: true
+                    text: delegate.text
+                    textFormat: Text.MarkdownText
+                }
+
+                Faces.Choices {
+                    Layout.preferredWidth: delegate.width * 0.5
+
+                    supportsColors: false
+                    maxAllowedSensors: 1
+                    labelsEditable: false
+                    labels: { }
+
+                    onSelectedChanged: {
+                        if (selected.length > 0) {
+                            sensorsModel.setProperty(index, "replacement", selected[0])
+                        }
                     }
                 }
             }

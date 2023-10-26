@@ -33,7 +33,6 @@ FocusScope {
     property var columnWidths: []
     property real defaultColumnWidth: 0.1
     property real minimumColumnWidth: Kirigami.Units.gridUnit * 4
-    property real rowHeight: Kirigami.Units.gridUnit + Kirigami.Units.smallSpacing * 2
 
     readonly property alias headerHeight: heading.height
 
@@ -234,7 +233,6 @@ FocusScope {
                 return width
             }
 
-            rowHeightProvider: (index) => root.rowHeight
 
             contentWidth: {
                 var w = 0
@@ -243,8 +241,6 @@ FocusScope {
                 }
                 return Math.max(w, scrollView.innerWidth)
             }
-            // FIXME: because of the delay populating the model, TableView seems to not calculate a proper contentHeight automatically
-            contentHeight : root.rowHeight * rows
         }
     }
 }

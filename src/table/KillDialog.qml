@@ -39,34 +39,39 @@ Kirigami.Dialog {
         }
     ]
 
-    ListView {
-        id: list
+    contentItem: ScrollView {
+        implicitWidth: Kirigami.Units.gridUnit * 25
 
-        topMargin: Kirigami.Units.largeSpacing
-        leftMargin: Kirigami.Units.largeSpacing
-        rightMargin: Kirigami.Units.largeSpacing
-        bottomMargin: Kirigami.Units.largeSpacing
+        leftPadding: Kirigami.Units.largeSpacing
+        rightPadding: Kirigami.Units.largeSpacing
+        topPadding: Kirigami.Units.largeSpacing
+        bottomPadding: Kirigami.Units.largeSpacing
 
-        implicitHeight: contentHeight + topMargin + bottomMargin
+        ListView {
+            id: list
 
-        header: Label {
-            padding: Kirigami.Units.largeSpacing
-            width: list.width - list.leftMargin - list.rightMargin
-            text: dialog.questionText
-            wrapMode: Text.Wrap
-        }
+            header: Label {
+                padding: Kirigami.Units.largeSpacing
+                width: list.width - list.leftMargin - list.rightMargin
+                text: dialog.questionText
+                wrapMode: Text.Wrap
+            }
 
-        model: dialog.items
-        currentIndex: -1
+            model: dialog.items
+            currentIndex: -1
 
-        delegate: Kirigami.AbstractListItem {
-            width: list.width - list.leftMargin - list.rightMargin
-            contentItem: Label { text: modelData; elide: Text.ElideRight }
+            Kirigami.Theme.colorSet: Kirigami.Theme.View
+            Kirigami.Theme.inherit: false
 
-            // We don't want visual interactivity for the background
-            highlighted: false
-            hoverEnabled: false
-            down: false
+            delegate: ItemDelegate {
+                width: ListView.view.width
+                text: modelData
+
+                // We don't want visual interactivity for the background
+                highlighted: false
+                hoverEnabled: false
+                down: false
+            }
         }
     }
 

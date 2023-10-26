@@ -16,7 +16,7 @@ BaseCellDelegate {
 
     property string iconName
     property string text: model.display != undefined ? model.display : ""
-    property real iconSize: Kirigami.Units.iconSizes.small
+    property real iconSize: Kirigami.Units.iconSizes.smallMedium
     property bool treeDecorationVisible: false
 
     leftPadding: Kirigami.Units.largeSpacing
@@ -33,9 +33,6 @@ BaseCellDelegate {
         }
         Label {
             id: label
-
-            padding: Kirigami.Units.smallSpacing
-
             Layout.fillWidth: true
             Layout.fillHeight: true
             text: delegate.text
