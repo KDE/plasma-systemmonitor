@@ -11,6 +11,8 @@ import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 
 import org.kde.quickcharts as Charts
+import org.kde.quickcharts.controls as ChartsControls
+
 import org.kde.ksysguard.formatter as Formatter
 
 Kirigami.AbstractCard {
@@ -46,9 +48,9 @@ Kirigami.AbstractCard {
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
     contentItem: Item {
-        Charts.GridLines {
+        ChartsControls.GridLines {
             anchors.fill: chart
-            direction: Charts.GridLines.Vertical
+            direction: ChartsControls.GridLines.Vertical
 
             major.visible: false
 
@@ -56,7 +58,7 @@ Kirigami.AbstractCard {
             minor.count: 5
         }
 
-        Charts.AxisLabels {
+        ChartsControls.AxisLabels {
             id: axisLabels
 
             anchors {
@@ -65,12 +67,12 @@ Kirigami.AbstractCard {
                 bottom: parent.bottom
             }
 
-            direction: Charts.AxisLabels.VerticalBottomTop
+            direction: ChartsControls.AxisLabels.VerticalBottomTop
             alignment: Qt.AlignRight | Qt.AlignBottom
             constrainToBounds: true
 
             delegate: Label {
-                text: card.formatLabel(Charts.AxisLabels.label);
+                text: card.formatLabel(ChartsControls.AxisLabels.label);
                 font: Kirigami.Theme.smallFont;
                 opacity: 0.8
             }
