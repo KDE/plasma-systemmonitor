@@ -51,7 +51,7 @@ Kirigami.Dialog {
         model: Page.PageSortModel {
             id: sortModel
         }
-        delegate: Kirigami.AbstractListItem {
+        delegate: ItemDelegate {
             id: listItem
             readonly property string title: model ? model.title : ""
             //Using directly model.hidden below doesn't work for some reason
