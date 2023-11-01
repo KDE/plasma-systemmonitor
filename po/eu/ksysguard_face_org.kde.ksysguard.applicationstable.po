@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-11-01 01:41+0000\n"
 "PO-Revision-Date: 2023-01-12 21:29+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -86,85 +86,85 @@ msgctxt "@action"
 msgid "Search"
 msgstr "Bilatu"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:38
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:39
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "Irten aplikaziotik"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:48
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:47
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "Erakutsi xehetasunen alboko-barra"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:56
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:55
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
 msgstr "Konfiguratu zutabeak..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:186
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:185
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Ezarri lehentasuna..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:189
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:188
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Bidali seinalea"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:192
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:191
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Egonean utzi (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:196
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:195
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Jarraitu (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:199
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Eseki (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:204
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Eten (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:208
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Bukatu (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:211
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Akabatu (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:215
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "1 erabiltzailea (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:219
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "2 erabiltzailea (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:226
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -172,7 +172,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Irten aplikaziotik"
 msgstr[1] "Irten %1 aplikaziotatik"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -180,7 +180,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Irten aplikaziotik"
 msgstr[1] "Irten %1 aplikaziotatik"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -188,7 +188,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "Irten aplikaziotik"
 msgstr[1] "Irten aplikazioetatik"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:248
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgid ""
 "Are you sure you want to quit this application?\n"
@@ -203,7 +203,7 @@ msgstr[1] ""
 "Ziur zaude %1 aplikazio hauetatik irten nahi duzula?\n"
 "Gorde gabeko lana gal daiteke."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

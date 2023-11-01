@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-11-01 01:41+0000\n"
 "PO-Revision-Date: 2023-03-06 22:04+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -85,106 +85,106 @@ msgctxt "@action"
 msgid "Search"
 msgstr "搜尋"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:38
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:39
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "關閉應用程式"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:48
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:47
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "顯示詳細資訊側邊欄"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:56
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:55
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
 msgstr "設定欄位…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:186
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:185
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "設定優先權…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:189
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:188
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "傳送訊號"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:192
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:191
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "暫停 (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:196
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:195
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "繼續 (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:199
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "掛起 (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:204
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "中斷 (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:208
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "終止 (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:211
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "強制停止 (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:215
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "使用者訊號1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:219
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "使用者訊號2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:226
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
 msgstr[0] "關閉 %1 個應用程式"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
 msgstr[0] "關閉 %1 個應用程式"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
 msgstr[0] "關閉應用程式"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:248
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgid ""
 "Are you sure you want to quit this application?\n"
@@ -196,7 +196,7 @@ msgstr[0] ""
 "您確定要關閉這 %1 個應用程式嗎？\n"
 "任何未儲存的變更都可能會丟失。"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

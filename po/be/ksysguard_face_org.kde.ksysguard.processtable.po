@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-22 02:08+0000\n"
+"POT-Creation-Date: 2023-11-01 01:41+0000\n"
 "PO-Revision-Date: 2023-01-24 13:01\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -64,115 +64,115 @@ msgctxt "@action"
 msgid "Search"
 msgstr "Пошук"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:39
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:40
 #, kde-format
 msgctxt "@action"
 msgid "End Process"
 msgstr "Скончыць працэс"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:53
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:52
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
 msgstr "Паказваць як спіс"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:70
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Display as Tree"
 msgstr "Паказваць як дрэва"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:82
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:81
 #, kde-format
 msgctxt "@action %1 is view type"
 msgid "Show: %1"
 msgstr "Паказ: %1"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:85
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:84
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
 msgstr "Уласныя працэсы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:94
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:93
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "User Processes"
 msgstr "Працэсы карыстальніка"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:103
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:102
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
 msgstr "Сістэмныя працэсы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:112
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:111
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
 msgstr "Усе працэсы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:124
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:123
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
 msgstr "Наладжванне слупкоў…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:172
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:171
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Адправіць сігнал"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:175
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:174
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Прыпыніць (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:179
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:178
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Працягнуць (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:183
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:182
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Разарваць (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:187
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:186
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Перапыніць (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:191
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:190
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Знішчыць (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:195
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:194
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Забіць (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:199
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:198
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Карыстальнік 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:203
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:202
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Карыстальнік 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:211
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:210
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -182,13 +182,13 @@ msgstr[1] "Скончыць %1 працэсы"
 msgstr[2] "Скончыць %1 працэсаў"
 msgstr[3] "Скончыць %1 працэсы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:223
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:222
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Наладжванне слупкоў…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:233
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:232
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -198,7 +198,7 @@ msgstr[1] "Скончыць %1 працэсы"
 msgstr[2] "Скончыць %1 працэсаў"
 msgstr[3] "Скончыць %1 працэсы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:234
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:233
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -208,7 +208,7 @@ msgstr[1] "Скончыць працэсы"
 msgstr[2] "Скончыць працэсы"
 msgstr[3] "Скончыць працэсы"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:236
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
 #, kde-format
 msgid ""
 "Are you sure you want to end this process?\n"
@@ -229,7 +229,7 @@ msgstr[3] ""
 "Сапраўды хочаце скончыць %1 працэсы?\n"
 "Незахаваныя змены могуць страціцца."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:243
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"

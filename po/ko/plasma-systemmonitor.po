@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-11 02:07+0000\n"
+"POT-Creation-Date: 2023-11-01 01:41+0000\n"
 "PO-Revision-Date: 2023-07-25 01:15+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -178,97 +178,97 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde@peremen.name"
 
-#: src/Main.qml:69
+#: src/Main.qml:68
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "도구"
 
-#: src/Main.qml:75
+#: src/Main.qml:74
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "쪽 편집 및 삭제..."
 
-#: src/Main.qml:80
+#: src/Main.qml:79
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "현재 쪽 내보내기..."
 
-#: src/Main.qml:87
+#: src/Main.qml:86
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "쪽 가져오기..."
 
-#: src/Main.qml:92
+#: src/Main.qml:91
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "새 쪽 가져오기..."
 
-#: src/Main.qml:104
+#: src/Main.qml:103
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "사이드바 펼치기"
 
-#: src/Main.qml:104
+#: src/Main.qml:103
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "사이드바 접기"
 
-#: src/Main.qml:112
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "버그 보고..."
 
-#: src/Main.qml:117
+#: src/Main.qml:116
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "시스템 모니터 정보"
 
-#: src/Main.qml:143
+#: src/Main.qml:142
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "새 쪽 추가..."
 
-#: src/Main.qml:212
+#: src/Main.qml:211
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "새 쪽 추가"
 
-#: src/Main.qml:233
+#: src/Main.qml:232
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "쪽 편집"
 
-#: src/Main.qml:256
+#: src/Main.qml:255
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "%1 내보내기"
 
-#: src/Main.qml:258 src/Main.qml:268
+#: src/Main.qml:257 src/Main.qml:267
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "시스템 모니터 쪽 (*.page)"
 
-#: src/Main.qml:266
+#: src/Main.qml:265
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "쪽 가져오기"
 
-#: src/Main.qml:299
+#: src/Main.qml:298
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
@@ -302,49 +302,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "배경 여백 삭제"
 
-#: src/page/EditablePage.qml:95
+#: src/page/EditablePage.qml:86
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "쪽 편집"
 
-#: src/page/EditablePage.qml:105
+#: src/page/EditablePage.qml:96
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "변경 사항 저장"
 
-#: src/page/EditablePage.qml:115
+#: src/page/EditablePage.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "변경 사항 취소"
 
-#: src/page/EditablePage.qml:126
+#: src/page/EditablePage.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "쪽 설정..."
 
-#: src/page/EditablePage.qml:135
+#: src/page/EditablePage.qml:126
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "열 추가"
 
-#: src/page/EditablePage.qml:144
+#: src/page/EditablePage.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "제목 추가"
 
-#: src/page/EditablePage.qml:174
+#: src/page/EditablePage.qml:165
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "쪽 \"%1\" 설정"
 
-#: src/page/EditablePage.qml:176
+#: src/page/EditablePage.qml:167
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -486,12 +486,12 @@ msgctxt "@action"
 msgid "Move"
 msgstr "이동"
 
-#: src/page/PageContents.qml:100 src/page/PageEditor.qml:131
+#: src/page/PageContents.qml:99 src/page/PageEditor.qml:131
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "이 페이지에 일부 센서가 빠져 있으므로 올바르게 표시되지 않을 것입니다."
 
-#: src/page/PageContents.qml:104 src/page/PageEditor.qml:135
+#: src/page/PageContents.qml:103 src/page/PageEditor.qml:135
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
@@ -693,37 +693,37 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "항목 설정"
 
-#: src/table/ColumnConfigurationDialog.qml:133
+#: src/table/ColumnConfigurationDialog.qml:129
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "숨겨짐"
 
-#: src/table/ColumnConfigurationDialog.qml:134
+#: src/table/ColumnConfigurationDialog.qml:130
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "텍스트만"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:136
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "꺾은선형 차트"
 
-#: src/table/ColumnConfigurationDialog.qml:144
+#: src/table/ColumnConfigurationDialog.qml:140
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "텍스트만(100%로 크기 조절)"
 
-#: src/table/ColumnConfigurationDialog.qml:145
+#: src/table/ColumnConfigurationDialog.qml:141
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "꺾은선형 차트(100%로 크기 조절)"
 
-#: src/table/KillDialog.qml:75
+#: src/table/KillDialog.qml:80
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"

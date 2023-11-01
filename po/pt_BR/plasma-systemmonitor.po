@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-11 02:07+0000\n"
+"POT-Creation-Date: 2023-11-01 01:41+0000\n"
 "PO-Revision-Date: 2023-06-26 17:09-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -178,97 +178,97 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "elchevive@opensuse.org"
 
-#: src/Main.qml:69
+#: src/Main.qml:68
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Ferramentas"
 
-#: src/Main.qml:75
+#: src/Main.qml:74
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Editar ou remover páginas..."
 
-#: src/Main.qml:80
+#: src/Main.qml:79
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Exportar página atual..."
 
-#: src/Main.qml:87
+#: src/Main.qml:86
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Importar página..."
 
-#: src/Main.qml:92
+#: src/Main.qml:91
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Baixar novas páginas..."
 
-#: src/Main.qml:104
+#: src/Main.qml:103
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Expandir barra lateral"
 
-#: src/Main.qml:104
+#: src/Main.qml:103
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Recolher barra lateral"
 
-#: src/Main.qml:112
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Relatar erro..."
 
-#: src/Main.qml:117
+#: src/Main.qml:116
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "Sobre o monitor do sistema"
 
-#: src/Main.qml:143
+#: src/Main.qml:142
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Adicionar nova página..."
 
-#: src/Main.qml:212
+#: src/Main.qml:211
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Adicionar nova página"
 
-#: src/Main.qml:233
+#: src/Main.qml:232
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Editar páginas"
 
-#: src/Main.qml:256
+#: src/Main.qml:255
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Exportar %1"
 
-#: src/Main.qml:258 src/Main.qml:268
+#: src/Main.qml:257 src/Main.qml:267
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "Página do monitor do sistema (*.page)"
 
-#: src/Main.qml:266
+#: src/Main.qml:265
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "Importar página"
 
-#: src/Main.qml:299
+#: src/Main.qml:298
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
@@ -303,49 +303,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Remover margens do fundo"
 
-#: src/page/EditablePage.qml:95
+#: src/page/EditablePage.qml:86
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Editar página"
 
-#: src/page/EditablePage.qml:105
+#: src/page/EditablePage.qml:96
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Salvar alterações"
 
-#: src/page/EditablePage.qml:115
+#: src/page/EditablePage.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Descartar alterações"
 
-#: src/page/EditablePage.qml:126
+#: src/page/EditablePage.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Configura página..."
 
-#: src/page/EditablePage.qml:135
+#: src/page/EditablePage.qml:126
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Adicionar linha"
 
-#: src/page/EditablePage.qml:144
+#: src/page/EditablePage.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Adicionar título"
 
-#: src/page/EditablePage.qml:174
+#: src/page/EditablePage.qml:165
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Configurar página \"%1\""
 
-#: src/page/EditablePage.qml:176
+#: src/page/EditablePage.qml:167
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -487,13 +487,13 @@ msgctxt "@action"
 msgid "Move"
 msgstr "Mover"
 
-#: src/page/PageContents.qml:100 src/page/PageEditor.qml:131
+#: src/page/PageContents.qml:99 src/page/PageEditor.qml:131
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr ""
 "Esta página está faltando alguns sensores e não será exibida corretamente."
 
-#: src/page/PageContents.qml:104 src/page/PageEditor.qml:135
+#: src/page/PageContents.qml:103 src/page/PageEditor.qml:135
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
@@ -697,37 +697,37 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Configurar colunas"
 
-#: src/table/ColumnConfigurationDialog.qml:133
+#: src/table/ColumnConfigurationDialog.qml:129
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Oculto"
 
-#: src/table/ColumnConfigurationDialog.qml:134
+#: src/table/ColumnConfigurationDialog.qml:130
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Apenas texto"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:136
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Gráfico de linhas"
 
-#: src/table/ColumnConfigurationDialog.qml:144
+#: src/table/ColumnConfigurationDialog.qml:140
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Apenas texto (dimensionado para 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:145
+#: src/table/ColumnConfigurationDialog.qml:141
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Gráfico de linhas (dimensionado para 100%)"
 
-#: src/table/KillDialog.qml:75
+#: src/table/KillDialog.qml:80
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"

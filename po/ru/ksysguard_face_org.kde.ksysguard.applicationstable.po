@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-10 02:12+0000\n"
+"POT-Creation-Date: 2023-11-01 01:41+0000\n"
 "PO-Revision-Date: 2023-01-28 10:46+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -85,85 +85,85 @@ msgctxt "@action"
 msgid "Search"
 msgstr "Поиск"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:38
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:39
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "Выйти из приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:48
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:47
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "Показать панель сведений"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:56
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:55
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
 msgstr "Настроить столбцы..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:186
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:185
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Установить приоритет..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:189
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:188
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Отправить сигнал"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:192
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:191
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Приостановить (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:196
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:195
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Возобновить (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:199
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Перечитать конфигурацию (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:204
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Прервать (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:208
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Завершить (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:211
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Уничтожить (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:215
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Пользовательский 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:219
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Пользовательский 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:226
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -173,7 +173,7 @@ msgstr[1] "Выйти из %1 приложений"
 msgstr[2] "Выйти из %1 приложений"
 msgstr[3] "Выйти из приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -183,7 +183,7 @@ msgstr[1] "Выйти из %1 приложений"
 msgstr[2] "Выйти из %1 приложений"
 msgstr[3] "Выйти из приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -193,7 +193,7 @@ msgstr[1] "Выйти из приложений"
 msgstr[2] "Выйти из приложений"
 msgstr[3] "Выйти из приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:248
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgid ""
 "Are you sure you want to quit this application?\n"
@@ -214,7 +214,7 @@ msgstr[3] ""
 "Завершить работу приложения?\n"
 "Несохранённые данные могут быть потеряны."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

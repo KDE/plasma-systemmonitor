@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-06-22 02:08+0000\n"
+"POT-Creation-Date: 2023-11-01 01:41+0000\n"
 "PO-Revision-Date: 2023-01-14 16:49+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -60,115 +60,115 @@ msgctxt "@action"
 msgid "Search"
 msgstr "ابحث"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:39
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:40
 #, kde-format
 msgctxt "@action"
 msgid "End Process"
 msgstr "أنهِ العملية"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:53
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:52
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
 msgstr "اعرض كقائمة"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:70
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Display as Tree"
 msgstr "اعرض كشجرة"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:82
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:81
 #, kde-format
 msgctxt "@action %1 is view type"
 msgid "Show: %1"
 msgstr "أظهر: %1"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:85
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:84
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
 msgstr "عملياتي أنا"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:94
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:93
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "User Processes"
 msgstr "عمليات المستخدم"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:103
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:102
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
 msgstr "عمليات النظام"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:112
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:111
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
 msgstr "كل العمليات"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:124
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:123
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
 msgstr "اضبط الأعمدة…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:172
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:171
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "أرسل إشارة"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:175
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:174
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "علّق (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:179
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:178
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "تابِع (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:183
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:182
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "افصل (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:187
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:186
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "قاطِع (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:191
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:190
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "أنهِ (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:195
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:194
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "اقتل (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:199
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:198
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "مستخدم 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:203
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:202
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "مستخدم 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:211
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:210
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -180,13 +180,13 @@ msgstr[3] "أنهِ %1 عمليات"
 msgstr[4] "أنهِ %1 عملية"
 msgstr[5] "أنهِ %1 عملية"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:223
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:222
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "اضبط الأعمدة..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:233
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:232
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -198,7 +198,7 @@ msgstr[3] "أنهِ %1 عمليات"
 msgstr[4] "أنهِ %1 عملية"
 msgstr[5] "أنهِ %1 عملية"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:234
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:233
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -210,7 +210,7 @@ msgstr[3] "أنهِ العمليات"
 msgstr[4] "أنهِ العمليات"
 msgstr[5] "أنهِ العمليات"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:236
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
 #, kde-format
 msgid ""
 "Are you sure you want to end this process?\n"
@@ -237,7 +237,7 @@ msgstr[5] ""
 "هل أنت متأكد أنك تريد إنهاء هذه %1 عملية؟ \n"
 "قد يفقد أي عمل غير محفوظ."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:243
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
