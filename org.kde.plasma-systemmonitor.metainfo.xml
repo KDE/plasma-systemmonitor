@@ -9,6 +9,7 @@ SPDX-License-Identifier: CC0-1.0
   <project_license>GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL</project_license>
   <name>Plasma System Monitor</name>
   <name xml:lang="ar">مراقب النظام بلازما</name>
+  <name xml:lang="ast">Supervisor del sistema de Plasma</name>
   <name xml:lang="az">Plasma sistem izləyicisi</name>
   <name xml:lang="be">Сістэмны назіральнік Plasma</name>
   <name xml:lang="bg">Наблюдение на системата на Plasma</name>
@@ -52,6 +53,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="zh-TW">Plasma 系統監控</name>
   <summary>An application for monitoring system resources</summary>
   <summary xml:lang="ar">تطبيق لرصد موارد النظام</summary>
+  <summary xml:lang="ast">Una aplicación pa supervisar los recursos del sistema</summary>
   <summary xml:lang="az">Sistem resurslarını izləmək üçün tətbiq</summary>
   <summary xml:lang="be">Праграма для назірання за выкарыстаннем сістэмных рэсурсаў</summary>
   <summary xml:lang="bg">Приложение за наблюдение на системните ресурси.</summary>
@@ -92,6 +94,7 @@ SPDX-License-Identifier: CC0-1.0
   <description>
     <p>Plasma System Monitor provides an interface for monitoring system sensors, process information and other system resources.</p>
     <p xml:lang="ar">يوفر مراقب النظام بلازما واجهة لرصد مستشعرات النظام ومعلومات المعالجة وموارد النظام الأخرى.</p>
+    <p xml:lang="ast">El supervisor del sistema de Plasma forne una interfaz pa supervisar los sensores del sistema, la información de los procesos ya otros recursos del sistema.</p>
     <p xml:lang="az">Plasma sistem izləyicisi sistem sensorlarını izləyən, proseslər və sistem resursları haqqında məlumatları göstərən interfeysi təqdim edir.</p>
     <p xml:lang="be">Сістэмны назіральнік Plasma забяспечвае інтэрфейсам для назірання за сістэмнымі датчыкамі, працэсамі і іншымі рэсурсамі сістэмы.</p>
     <p xml:lang="bg">Наблюдение на системата на Plasma предоставя интерфейс за следене на системни сензори, информация за процеси и други ресурси.</p>
