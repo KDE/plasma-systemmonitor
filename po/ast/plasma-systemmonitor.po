@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Enol P. <enolp@softastur.org>, 2023.
+# SPDX-FileCopyrightText: 2023 Enol P. <enolp@softastur.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-01 01:41+0000\n"
-"PO-Revision-Date: 2023-05-05 22:30+0200\n"
+"PO-Revision-Date: 2023-11-04 22:48+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -63,7 +63,7 @@ msgstr ""
 #, kde-format
 msgctxt "@menu-action"
 msgid "Expand Sidebar"
-msgstr ""
+msgstr "Espander la barra llateral"
 
 #: src/GlobalMenu.qml:65
 #, kde-format
@@ -134,7 +134,7 @@ msgstr "Uri Herrera"
 #: src/main.cpp:75
 #, kde-format
 msgid "Design"
-msgstr ""
+msgstr "Diseñu"
 
 #: src/main.cpp:76
 #, kde-format
@@ -304,31 +304,31 @@ msgstr ""
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
-msgstr ""
+msgstr "Editar la páxina"
 
 #: src/page/EditablePage.qml:96
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
-msgstr ""
+msgstr "Guardar los cambeos"
 
 #: src/page/EditablePage.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
-msgstr ""
+msgstr "Escartar los cambeos"
 
 #: src/page/EditablePage.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr ""
+msgstr "Configurar la páxina…"
 
 #: src/page/EditablePage.qml:126
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
-msgstr ""
+msgstr "Amestar una filera"
 
 #: src/page/EditablePage.qml:135
 #, kde-format
@@ -340,13 +340,13 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
-msgstr ""
+msgstr "Configuración de la páxina «%1»"
 
 #: src/page/EditablePage.qml:167
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
 #: src/page/EditorToolBar.qml:36
 #, kde-format
@@ -447,12 +447,12 @@ msgstr ""
 #: src/page/FaceConfigurationPage.qml:190
 #, kde-format
 msgid "1 second"
-msgstr ""
+msgstr "1 segundu"
 
 #: src/page/FaceConfigurationPage.qml:192
 #, kde-format
 msgid "%1 seconds"
-msgstr ""
+msgstr "%1 segundos"
 
 #: src/page/FacesModel.cpp:46
 #, kde-format
@@ -505,13 +505,13 @@ msgstr ""
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "New Page"
-msgstr ""
+msgstr "Páxina nueva"
 
 #: src/page/PageDialog.qml:85
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr ""
+msgstr "Nome:"
 
 #: src/page/PageDialog.qml:96
 #, kde-format
@@ -523,7 +523,7 @@ msgstr ""
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Icon:"
-msgstr ""
+msgstr "Iconu:"
 
 #: src/page/PageDialog.qml:105
 #, kde-format

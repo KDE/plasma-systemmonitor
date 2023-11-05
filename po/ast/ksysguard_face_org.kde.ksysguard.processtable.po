@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Enol P. <enolp@softastur.org>, 2023.
+# SPDX-FileCopyrightText: 2023 Enol P. <enolp@softastur.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-01 01:41+0000\n"
-"PO-Revision-Date: 2023-05-01 23:40+0200\n"
+"PO-Revision-Date: 2023-11-04 22:56+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
 #, kde-format
@@ -45,7 +45,7 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "System Processes"
-msgstr ""
+msgstr "Procesos del sistema"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
 #, kde-format
@@ -99,19 +99,19 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
-msgstr ""
+msgstr "Procesos del sistema"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:111
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
-msgstr ""
+msgstr "Tolos procesos"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:123
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
-msgstr ""
+msgstr "Configurar les columnes…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:171
 #, kde-format
@@ -123,13 +123,13 @@ msgstr ""
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
-msgstr ""
+msgstr "Suspender (STOP)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:178
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
-msgstr ""
+msgstr "Siguir (CONT)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:182
 #, kde-format
@@ -141,19 +141,19 @@ msgstr ""
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
-msgstr ""
+msgstr "Interumpir (INT)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:190
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
-msgstr ""
+msgstr "Terminar (TERM)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:194
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
-msgstr ""
+msgstr "Matar (KILL)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:198
 #, kde-format
@@ -179,7 +179,7 @@ msgstr[1] ""
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
-msgstr ""
+msgstr "Configurar les columnes…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:232
 #, kde-format

@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Enol P. <enolp@softastur.org>, 2023.
+# SPDX-FileCopyrightText: 2023 Enol P. <enolp@softastur.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-01 01:41+0000\n"
-"PO-Revision-Date: 2023-05-03 23:19+0200\n"
+"PO-Revision-Date: 2023-11-04 22:42+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -15,43 +15,43 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.08.2\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
 msgctxt "@title:window"
 msgid "Details"
-msgstr ""
+msgstr "Detalles"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:72
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:124
 #, kde-format
 msgctxt "@title:group"
 msgid "Memory"
-msgstr ""
+msgstr "Memoria"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:150
 #, kde-format
 msgctxt "@title:group"
 msgid "Network"
-msgstr ""
+msgstr "Rede"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:175
 #, kde-format
 msgctxt "@title:group"
 msgid "Disk"
-msgstr ""
+msgstr "Discu"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:201
 #, kde-format
 msgctxt "@title:group"
 msgid "Processes: %1"
-msgstr ""
+msgstr "Procesos: %1"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:262
 #, kde-format
@@ -93,7 +93,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
-msgstr ""
+msgstr "Amosar la barra llateral de detalles"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:55
 #, kde-format
@@ -117,13 +117,13 @@ msgstr ""
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
-msgstr ""
+msgstr "Suspender (STOP)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:195
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
-msgstr ""
+msgstr "Siguir (CONT)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:199
 #, kde-format
@@ -135,19 +135,19 @@ msgstr ""
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
-msgstr ""
+msgstr "Interumpir (INT)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
-msgstr ""
+msgstr "Terminar (TERM)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:211
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
-msgstr ""
+msgstr "Matar (KILL)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:215
 #, kde-format
@@ -182,8 +182,8 @@ msgstr[1] ""
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Colar de l'aplicación"
+msgstr[1] "Colar de les aplicaciones"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
@@ -201,5 +201,5 @@ msgstr[1] ""
 msgctxt "@item:intable"
 msgid "%1 Process"
 msgid_plural "%1 Processes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 procesu"
+msgstr[1] "%1 procesos"
