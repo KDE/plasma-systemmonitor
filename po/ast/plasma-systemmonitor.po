@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-01 01:41+0000\n"
-"PO-Revision-Date: 2023-11-04 22:48+0100\n"
+"PO-Revision-Date: 2023-11-08 00:16+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -334,7 +334,7 @@ msgstr "Amestar una filera"
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
-msgstr ""
+msgstr "Amestar un títulu"
 
 #: src/page/EditablePage.qml:165
 #, kde-format
