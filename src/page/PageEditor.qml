@@ -161,12 +161,12 @@ Column {
 
             page: root.parentPage
 
-            onSelect: root.activeItem = item
+            onSelect: item => root.activeItem = item
 
             onRemove: pageData.removeChild(index)
-            onMove: pageData.moveChild(from, to)
+            onMove: (from, to) => pageData.moveChild(from, to)
 
-            onMissingSensorsChanged: root.updateMissingSensors(id, title, sensors)
+            onMissingSensorsChanged: (id, title, sensors) => root.updateMissingSensors(id, title, sensors)
         }
     }
 

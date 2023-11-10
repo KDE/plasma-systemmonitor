@@ -49,9 +49,9 @@ Container {
         visible: !modelData.isSeparator
         dataObject: control.sectionData
 
-        onSelect: control.select(item)
+        onSelect: item => control.select(item)
 
-        onMissingSensorsChanged: control.missingSensorsChanged(id, title, sensors)
+        onMissingSensorsChanged: (id, title, sensors) => control.missingSensorsChanged(id, title, sensors)
     }
 
     toolbar.addVisible: false

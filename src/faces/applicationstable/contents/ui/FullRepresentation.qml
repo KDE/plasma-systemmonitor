@@ -70,11 +70,11 @@ Faces.SensorFace {
                 bottom: parent.bottom
             }
 
-            onContextMenuRequested: {
+            onContextMenuRequested: (index, position) => {
                 contextMenu.popup(null, position.x, position.y)
             }
 
-            onHeaderContextMenuRequested: {
+            onHeaderContextMenuRequested: (column, position) => {
                 headerContextMenu.popup(null, position)
             }
 

@@ -101,13 +101,13 @@ Container {
                 sectionData: model.data
                 index: model.index
 
-                onSelect: control.select(item)
+                onSelect: item => control.select(item)
                 onAddSection: control.addSection(index + 1)
                 onAddSeparator: control.addSeparator(index + 1)
                 onRemove: control.columnData.removeChild(index)
-                onMove: control.columnData.moveChild(from, to)
+                onMove: (from, to) => control.columnData.moveChild(from, to)
 
-                onMissingSensorsChanged: control.missingSensorsChanged(id, title, sensors)
+                onMissingSensorsChanged: (id, title, sensors) => control.missingSensorsChanged(id, title, sensors)
             }
         }
     }

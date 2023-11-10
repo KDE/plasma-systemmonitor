@@ -141,11 +141,11 @@ Faces.SensorFace {
         sortOrder: root.config.sortDirection
         onSortOrderChanged: root.config.sortDirection = sortOrder
 
-        onContextMenuRequested: {
+        onContextMenuRequested: (index, position) => {
             contextMenu.popup(null, position.x, position.y)
         }
 
-        onHeaderContextMenuRequested: {
+        onHeaderContextMenuRequested: (column, position) => {
             headerContextMenu.popup(null, position)
         }
 

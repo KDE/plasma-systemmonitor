@@ -92,7 +92,7 @@ FocusScope {
             root.setColumnWidth(column, width)
         }
 
-        onContextMenuRequested:(column, position) => {
+        onContextMenuRequested: (column, position) => {
             root.headerContextMenuRequested(column, position)
         }
     }
@@ -119,7 +119,9 @@ FocusScope {
             signal modelLayoutHasChanged()
 
             signal contextMenuRequested(var index, point position)
-            onContextMenuRequested: root.contextMenuRequested(index, position)
+            onContextMenuRequested: (index, position) => {
+                root.contextMenuRequested(index, position);
+            }
 
             onWidthChanged: forceLayout()
 

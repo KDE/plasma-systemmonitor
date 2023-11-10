@@ -114,11 +114,11 @@ Container {
                 columnData: model.data
                 index: model.index
 
-                onSelect: control.select(item)
+                onSelect: item => control.select(item)
                 onRemove: control.rowData.removeChild(index)
-                onMove: control.rowData.moveChild(from, to)
+                onMove: (from, to) => control.rowData.moveChild(from, to)
 
-                onMissingSensorsChanged: control.missingSensorsChanged(id, title, sensors)
+                onMissingSensorsChanged: (id, title, sensors) => control.missingSensorsChanged(id, title, sensors)
             }
         }
     }

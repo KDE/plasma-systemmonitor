@@ -169,7 +169,7 @@ FocusScope {
                     hoverEnabled: true
                     acceptedButtons: Qt.LeftButton | Qt.RightButton
 
-                    onClicked: {
+                    onClicked: mouse => {
                         if (mouse.button == Qt.RightButton) {
                             heading.contextMenuRequested(model.row, mapToGlobal(mouse.x, mouse.y))
                             return
@@ -192,7 +192,7 @@ FocusScope {
                     drag.axis: Drag.XAxis
                     cursorShape: enabled ? Qt.SplitHCursor : undefined
                     width: Kirigami.Units.smallSpacing * 2
-                    onPressed: {
+                    onPressed: mouse => {
                         dragging = true
                         mouseDownX = x
                     }
@@ -204,7 +204,7 @@ FocusScope {
                         mouseDownX = x
 
                     }
-                    onReleased: {
+                    onReleased: mouse => {
                         dragging = false
                     }
                 }

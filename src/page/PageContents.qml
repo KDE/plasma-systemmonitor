@@ -280,7 +280,7 @@ ColumnLayout {
             TapHandler {
                 acceptedButtons: Qt.RightButton
                 enabled: WidgetExporter.plasmashellAvailable
-                onTapped: {
+                onTapped: eventPoint => {
                     const point = parent.mapToItem(contextMenu.parent, eventPoint.position)
                     contextMenu.x = point.x
                     contextMenu.y = point.y

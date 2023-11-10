@@ -120,7 +120,9 @@ Kirigami.Dialog {
                 { value: 2, key: i18nc("@item:inlistbox", "Large") }
             ]
 
-            onActivated: dialog.margin = model[index].value
+            onActivated: index => {
+                dialog.margin = model[index].value;
+            }
         }
         ComboBox {
             id: actionsCombobox
@@ -159,7 +161,9 @@ Kirigami.Dialog {
                 { value: "onstart", key: i18nc("@item:inlistbox", "During application startup") }
             ]
 
-            onActivated: dialog.loadType = model[index].value
+            onActivated: index => {
+                dialog.loadType = model[index].value;
+            }
         }
     }
 
