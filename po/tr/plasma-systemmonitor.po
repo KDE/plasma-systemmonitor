@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-01 01:41+0000\n"
+"POT-Creation-Date: 2023-11-14 01:39+0000\n"
 "PO-Revision-Date: 2023-07-13 13:08+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -552,25 +552,25 @@ msgctxt "@item:inlistbox"
 msgid "Large"
 msgstr "Büyük"
 
-#: src/page/PageDialog.qml:127
+#: src/page/PageDialog.qml:129
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
 msgstr "Eylemleri Şuradan Kullan:"
 
-#: src/page/PageDialog.qml:145
+#: src/page/PageDialog.qml:147
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
 msgstr "Bu sayfayı yükle:"
 
-#: src/page/PageDialog.qml:158
+#: src/page/PageDialog.qml:160
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
 msgstr "Gerektiğinde"
 
-#: src/page/PageDialog.qml:159
+#: src/page/PageDialog.qml:161
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"

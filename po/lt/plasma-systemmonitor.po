@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-01 01:41+0000\n"
+"POT-Creation-Date: 2023-11-14 01:39+0000\n"
 "PO-Revision-Date: 2022-09-19 13:32+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: none\n"
@@ -556,25 +556,25 @@ msgctxt "@item:inlistbox"
 msgid "Large"
 msgstr "Didelės"
 
-#: src/page/PageDialog.qml:127
+#: src/page/PageDialog.qml:129
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
 msgstr "Naudoti veiksmus iš:"
 
-#: src/page/PageDialog.qml:145
+#: src/page/PageDialog.qml:147
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
 msgstr "Įkelti šį puslapį:"
 
-#: src/page/PageDialog.qml:158
+#: src/page/PageDialog.qml:160
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
 msgstr "Kai reikia"
 
-#: src/page/PageDialog.qml:159
+#: src/page/PageDialog.qml:161
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-01 01:41+0000\n"
+"POT-Creation-Date: 2023-11-14 01:39+0000\n"
 "PO-Revision-Date: 2022-06-15 22:37+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -552,25 +552,25 @@ msgctxt "@item:inlistbox"
 msgid "Large"
 msgstr "Stora"
 
-#: src/page/PageDialog.qml:127
+#: src/page/PageDialog.qml:129
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
 msgstr "Använd åtgärder från:"
 
-#: src/page/PageDialog.qml:145
+#: src/page/PageDialog.qml:147
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
 msgstr "Läs in denna sida:"
 
-#: src/page/PageDialog.qml:158
+#: src/page/PageDialog.qml:160
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
 msgstr "Vid behov"
 
-#: src/page/PageDialog.qml:159
+#: src/page/PageDialog.qml:161
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"
