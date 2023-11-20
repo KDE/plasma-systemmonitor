@@ -42,7 +42,7 @@ Table.BaseTableView {
 
             rows[i.row] = true
 
-            var index = rowFilter.mapToSource(descendantsModel.mapToSource(i))
+            var index = rowFilter.mapToSource(i)
 
             var item = {}
 
@@ -62,18 +62,11 @@ Table.BaseTableView {
 
     headerModel: rowFilter
 
-    model: KItemModels.KDescendantsProxyModel {
-        id: descendantsModel
-        sourceModel: rowFilter
-        expandsByDefault: true
-
-        onLayoutChanged: view.onModelLayoutChanged()
-    }
-
-    Table.ProcessSortFilterModel {
+    model: Table.ProcessSortFilterModel {
         id: rowFilter
         sourceModel: cacheModel
         hiddenAttributes: processModel.hiddenSensors
+        onLayoutChanged: view.onModelLayoutChanged()
     }
 
     Table.ComponentCacheProxyModel {
@@ -113,6 +106,7 @@ Table.BaseTableView {
 
     Process.ProcessDataModel {
         id: processModel
+        onFlatListChanged:  Qt.callLater(view.view.expandRecursively, -1, -1)
 
         property int nameColumn
         property int pidColumn
@@ -162,8 +156,8 @@ Table.BaseTableView {
                 id: delegate
                 treeDecorationVisible: !view.flatList
                 iconName: {
-                    var index = descendantsModel.mapToSource(descendantsModel.index(model.row, 0))
-                    index = rowFilter.mapToSource(index);
+                    var index = treeView.index(model.row, 0);
+                    index = rowFilter.mapToSource(index)
                     index = cacheModel.mapToSource(index);
                     index = displayModel.mapToSource(index);
                     index = processModel.index(index.row, processModel.nameColumn, index.parent);
@@ -175,7 +169,7 @@ Table.BaseTableView {
             roleValue: "line"
             Table.LineChartCellDelegate {
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
-                maximum: descendantsModel.data(descendantsModel.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                maximum: rowFilter.data(treeView.index(model.row, model.column), Process.ProcessDataModel.Maximum)
             }
 
         }
@@ -183,7 +177,7 @@ Table.BaseTableView {
             roleValue: "lineScaled"
             Table.LineChartCellDelegate {
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
-                maximum: descendantsModel.data(descendantsModel.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                maximum: rowFilter.data(treeView.index(model.row, model.column), Process.ProcessDataModel.Maximum)
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
             }
 

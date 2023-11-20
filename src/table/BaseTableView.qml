@@ -16,6 +16,7 @@ FocusScope {
     id: root
 
     property var model
+    property alias view: tableView
     property alias delegate: tableView.delegate
 
     property alias headerModel: heading.sourceModel
@@ -106,7 +107,7 @@ FocusScope {
 
         background: Rectangle { color: Kirigami.Theme.backgroundColor; Kirigami.Theme.colorSet: Kirigami.Theme.View }
 
-        TableView {
+        TreeView {
             id: tableView
             anchors.left: parent.left
             selectionModel: ItemSelectionModel {

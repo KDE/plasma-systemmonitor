@@ -25,7 +25,6 @@ ecm_target_qml_sources(PlasmaSystemMonitorTable SOURCES
     TableViewHeader.qml
     UserCellDelegate.qml
     KillDialog.qml
-    TreeDecoration.qml
 )
 
 target_link_libraries(PlasmaSystemMonitorTable PRIVATE Qt::Quick KSysGuard::Sensors KSysGuard::ProcessCore KF6::CoreAddons KF6::ItemModels)

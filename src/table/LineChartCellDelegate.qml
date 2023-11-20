@@ -15,7 +15,6 @@ import org.kde.quickcharts as Charts
 BaseCellDelegate {
     id: delegate
 
-    property string text: model.display != undefined ? model.display : ""
     property real maximum: 100
     property alias valueSources: chart.valueSources
 
@@ -56,13 +55,13 @@ BaseCellDelegate {
 
             padding: Kirigami.Units.smallSpacing
 
-            text: delegate.text
+            text: model.display
             horizontalAlignment: Text.AlignLeft
             elide: Text.ElideRight
         }
     }
 
-    ToolTip.text: delegate.text
+    ToolTip.text: model.display
     ToolTip.delay: Kirigami.Units.toolTipDelay
     ToolTip.visible: delegate.hovered && label.truncated
 }

@@ -49,7 +49,6 @@ Table.BaseTableView {
             item.index = index
             result.push(item)
         }
-
         return result
     }
 

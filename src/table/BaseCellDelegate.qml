@@ -12,13 +12,9 @@ import QtQml.Models
 import org.kde.kirigami as Kirigami
 import org.kde.ksysguard.table as Table
 
-Control
+TreeViewDelegate
 {
     id: root
-
-    property int row: model.row
-    property int column: model.column
-    required property bool selected
 
     readonly property bool rowHovered: root.TableView.view.hoveredRow == row
 
@@ -27,13 +23,9 @@ Control
     // Important: Don't remove this until QTBUG-84858 is resolved properly.
     Accessible.role: Accessible.Cell
 
-    leftPadding: Kirigami.Units.smallSpacing
     rightPadding: Kirigami.Units.smallSpacing
     topPadding: Kirigami.Units.smallSpacing
     bottomPadding: Kirigami.Units.smallSpacing
-
-    Kirigami.Theme.colorSet: selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
-    Kirigami.Theme.inherit: false
 
     background: Rectangle {
         color: (row % 2 == 0 || selected) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
@@ -48,46 +40,42 @@ Control
         }
     }
 
+    onHoveredChanged: {
+        if (hovered) {
+            root.TableView.view.hoveredRow = root.row
+        }
+    }
+
     hoverEnabled: true
 
-    MouseArea {
-        anchors.fill: parent
-        hoverEnabled: true
-
+    TapHandler {
         acceptedButtons: Qt.LeftButton | Qt.RightButton
 
-        onEntered: {
-            root.TableView.view.hoveredRow = row
-        }
-        onExited: {
-            if (root.TableView.view.hoveredRow == row) {
-                root.TableView.view.hoveredRow = -1
-            }
-        }
 
-        onClicked: (mouse) => {
+        onTapped: (eventPoint, button) => {
             var modelIndex = root.TableView.view.model.index(row, column);
+
             root.TableView.view.forceActiveFocus(Qt.ClickFocus)
 
             // latest clicks sets current index
             root.__selection.setCurrentIndex(modelIndex, ItemSelectionModel.Current | ItemSelectionModel.Rows)
 
-            if (root.__selection.isSelected(modelIndex) && mouse.button == Qt.RightButton) {
-                root.TableView.view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
+            if (root.__selection.isSelected(modelIndex) && button == Qt.RightButton) {
+                root.TableView.view.contextMenuRequested(modelIndex, eventPoint.globalPressPosition)
                 return
             }
 
-            if (mouse.modifiers & Qt.ShiftModifier) {
+            if (point.modifiers & Qt.ShiftModifier) {
                 //TODO: Implement range selection
                 root.__selection.select(modelIndex, ItemSelectionModel.Toggle | ItemSelectionModel.Rows)
-            } else if (mouse.modifiers & Qt.ControlModifier) {
+            } else if (point.modifiers & Qt.ControlModifier) {
                 root.__selection.select(modelIndex, ItemSelectionModel.Toggle | ItemSelectionModel.Rows)
             } else {
                 root.__selection.select(modelIndex, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
             }
 
-            if (mouse.button == Qt.RightButton) {
-                root.TableView.view.contextMenuRequested(modelIndex, mapToGlobal(mouse.x, mouse.y))
+            if (button == Qt.RightButton) {
+                root.TableView.view.contextMenuRequested(modelIndex, eventPoint.globalPressPosition)
             }
         }
     }

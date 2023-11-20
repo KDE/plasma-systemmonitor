@@ -14,7 +14,6 @@ BaseCellDelegate {
 
     leftPadding: Kirigami.Units.smallSpacing
 
-    property alias text: label.text
 
     contentItem: Label {
         id: label
@@ -23,8 +22,4 @@ BaseCellDelegate {
         elide: Text.ElideRight
         horizontalAlignment: Text.AlignHCenter
     }
-
-    ToolTip.text: delegate.text
-    ToolTip.delay: Kirigami.Units.toolTipDelay
-    ToolTip.visible: hovered && label.truncated
 }
