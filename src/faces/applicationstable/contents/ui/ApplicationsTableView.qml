@@ -78,8 +78,6 @@ Table.BaseTableView {
         sortColumnFilter.sortOrder = order
     }
 
-    headerModel: sortColumnFilter
-
     model: KItemModels.KSortFilterProxyModel {
         id: sortColumnFilter
 
@@ -107,7 +105,6 @@ Table.BaseTableView {
 
         sortRoleName: "Value"
 
-        onLayoutChanged: view.onModelLayoutChanged()
     }
 
     Table.ComponentCacheProxyModel {

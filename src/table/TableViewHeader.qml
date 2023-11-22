@@ -12,208 +12,81 @@ import org.kde.kirigami as Kirigami
 import org.kde.ksysguard.formatter as Formatter
 
 import org.kde.kitemmodels as KItemModels
-import org.kde.qqc2desktopstyle.private as StylePrivate
 
-FocusScope {
-    id: heading
+HorizontalHeaderView {
+    id: header
 
-    x: LayoutMirroring.enabled ? view.contentWidth - view.width - view.contentX : -view.contentX
-    width: view.contentWidth
-    height: heightHelper.height
+    anchors {
+        top: parent.top
+        left: parent.left
+        right: parent.right
+    }
 
-    property TableView view
-    property int sortColumn: -1
+    property alias view: header.syncView
+
+    property alias sortColumn: header.currentColumn
     property int sortOrder: Qt.AscendingOrder
+    property string sortName
+    onSortNameChanged: updateSelectedColumn()
 
     property string idRole: "Attribute"
-    property string sortName
-
-    property alias sourceModel: headerModel.sourceModel
 
     signal sort(int column, int order)
     signal resize(int column, real width)
     signal contextMenuRequested(int column, point position)
 
-    function columnWidth(index) {
-        return repeater.itemAt(index).width
-    }
+    resizableColumns: true
+    clip: true
 
-    Kirigami.Theme.inherit: false
     Kirigami.Theme.colorSet: Kirigami.Theme.Button
+    Kirigami.Theme.inherit: false
 
-    StylePrivate.StyleItem {
-        anchors.fill: parent
-        elementType: "header"
-        raised: false
-        sunken: false
-        properties: {
-            "headerpos": LayoutMirroring.enabled ? "beginning" : "end"
+    onCurrentColumnChanged: sort(sortColumn, sortOrder)
+
+    Component.onCompleted: Qt.callLater(updateSelectedColumn)
+
+    function updateSelectedColumn() {
+        let roleIndex = headerModel.KItemModels.KRoleNames.role(idRole)
+        for (let i = 0; i < headerModel.rowCount(); ++i) {
+            let index = headerModel.index(i, 0)
+            if (headerModel.data(index, roleIndex) == sortName) {
+                selectionModel.setCurrentIndex(headerModel.sourceModel.index(0, i), ItemSelectionModel.Current)
+                break
+            }
         }
     }
 
-    ItemDelegate {
-        id: heightHelper
-        icon.name: "document-new"
-        text: "Placeholder"
-        visible: false
+    selectionModel: ItemSelectionModel { model: headerModel }
+    model: KItemModels.KColumnHeadersModel {
+        id: headerModel
+        sourceModel: header.view.model
+        sortColumn: header.currentColumn
+        sortOrder: header.sortOrder
     }
 
-    activeFocusOnTab: true
+    TapHandler {
+        acceptedButtons: Qt.LeftButton
 
-    function focusNext(delta) {
-        var newIndex = headerRow.currentIndex
-        var item = undefined
-        while (item === undefined || item instanceof Repeater) {
-            newIndex = newIndex + delta
-
-            if (newIndex < 0) {
-                newIndex = headerRow.children.length - 1
+        onTapped: (eventPoint, button) => {
+            let cell = header.cellAtPosition(eventPoint.position)
+            if (cell.x == header.currentColumn) {
+                header.sortOrder = header.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
+                header.sort(header.sortColumn, header.sortOrder)
+            } else {
+                header.sortOrder = model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder
+                eventPoint.accepted = false
             }
-            if (newIndex >= headerRow.children.length) {
-                newIndex = 0
-            }
-
-            item = headerRow.children[newIndex]
         }
-
-        item.focus = true
-        headerRow.currentIndex = newIndex
     }
 
-    Row {
-        id: headerRow
-        anchors.left: parent.left
-        anchors.leftMargin: LayoutMirroring.enabled ? view.contentWidth - width : 0
-        property int currentIndex: 0
+    TapHandler {
+        acceptedButtons: Qt.RightButton
 
-        Repeater {
-            id: repeater
+        gesturePolicy: TapHandler.ReleaseWithinBounds
 
-            model: KItemModels.KColumnHeadersModel {
-                id: headerModel
-                sourceModel: heading.view.model
-            }
-
-            delegate: StylePrivate.StyleItem {
-                id: headerItem
-                // FIXME Need to reverse the index order until TableView correctly supports it itself, see QTBUG-90547
-                width: heading.view.columnWidthProvider(LayoutMirroring.enabled ? repeater.count - model.row - 1 : model.row)
-                height: heightHelper.height
-                enabled: width > 0
-
-                property string headerPosition: {
-                    if (repeater.count === 1) {
-                        return "only";
-                    }
-                    if (index == 0) {
-                        return LayoutMirroring.enabled ? "end" : "beginning"
-                    }
-                    return "middle"
-                }
-
-                property string columnId: model[heading.idRole] !== undefined ? model[heading.idRole] : ""
-
-                elementType: "header"
-                activeControl: heading.sortName == columnId ? (heading.sortOrder == Qt.AscendingOrder ? "down" : "up") : ""
-                raised: false
-                sunken: mouse.pressed || activeFocus
-                text: model.display != undefined ? model.display : ""
-                hover: mouse.containsMouse
-
-                focus: true
-
-                properties: {
-                    "headerpos": headerPosition,
-                    "textalignment": Text.AlignHCenter
-                }
-
-                Keys.onPressed: event => {
-                    switch (event.key) {
-                        case Qt.Key_Space:
-                        case Qt.Key_Enter:
-                        case Qt.Key_Return:
-                            toggleSort()
-                            break;
-                        case Qt.Key_Menu:
-                            heading.contextMenuRequested(model.row, mapToGlobal(headerItem.x, headerItem.y + headerItem.height))
-                            break
-                        case Qt.Key_Left:
-                            heading.focusNext(-1)
-                            break
-                        case Qt.Key_Right:
-                            heading.focusNext(1)
-                            break
-                        default:
-                            break;
-                    }
-                }
-
-                function toggleSort() {
-                    if (heading.sortName == headerItem.columnId) {
-                        sort(heading.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder);
-                    } else {
-                        sort(model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder);
-                    }
-                }
-
-                function sort(sortOrder) {
-                    heading.sortColumn = model.row;
-                    heading.sortName = headerItem.columnId
-                    heading.sortOrder = sortOrder
-                    heading.sort(heading.sortColumn, heading.sortOrder)
-                }
-
-                MouseArea {
-                    id: mouse
-                    anchors.fill: parent
-                    hoverEnabled: true
-                    acceptedButtons: Qt.LeftButton | Qt.RightButton
-
-                    onClicked: mouse => {
-                        if (mouse.button == Qt.RightButton) {
-                            heading.contextMenuRequested(model.row, mapToGlobal(mouse.x, mouse.y))
-                            return
-                        }
-
-                        headerItem.toggleSort()
-                    }
-                }
-                MouseArea {
-                    id: dragHandle
-                    property real mouseDownX
-                    property bool dragging: false
-                    anchors {
-                        top: parent.top
-                        bottom: parent.bottom
-                        left: LayoutMirroring.enabled && !dragging ? parent.left : undefined
-                        right: !LayoutMirroring.enabled && !dragging ? parent.right : undefined
-                    }
-                    drag.target: dragHandle
-                    drag.axis: Drag.XAxis
-                    cursorShape: enabled ? Qt.SplitHCursor : undefined
-                    width: Kirigami.Units.smallSpacing * 2
-                    onPressed: mouse => {
-                        dragging = true
-                        mouseDownX = x
-                    }
-                    onXChanged: {
-                        if (!dragging) {
-                            return
-                        }
-                        heading.resize(model.row, headerItem.width + (x - mouseDownX))
-                        mouseDownX = x
-
-                    }
-                    onReleased: mouse => {
-                        dragging = false
-                    }
-                }
-                Component.onCompleted: {
-                    if (heading.sortColumn == -1 && headerItem.columnId == heading.sortName) {
-                        Qt.callLater(() => headerItem.sort(heading.sortOrder));
-                    }
-                }
-            }
+        onTapped: (eventPoint, button) => {
+            let cell = header.cellAtPosition(eventPoint.position)
+            header.contextMenuRequested(cell.x, eventPoint.scenePosition)
         }
     }
 }

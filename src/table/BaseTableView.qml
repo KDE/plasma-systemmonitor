@@ -9,6 +9,8 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import QtQml.Models
 
+import org.kde.kitemmodels as ItemModels
+
 import org.kde.kirigami as Kirigami
 import org.kde.ksysguard.table as Table
 
@@ -18,8 +20,6 @@ FocusScope {
     property var model
     property alias view: tableView
     property alias delegate: tableView.delegate
-
-    property alias headerModel: heading.sourceModel
 
     property alias sortColumn: heading.sortColumn
     property alias sortOrder: heading.sortOrder
@@ -49,32 +49,6 @@ FocusScope {
 
     clip: true
 
-    function setColumnWidth(index, width) {
-        if (index < 0 || index >= tableView.columns || width < minimumColumnWidth) {
-            return
-        }
-
-        while (index >= columnWidths.length) {
-            columnWidths.push(defaultColumnWidth)
-        }
-
-        columnWidths[index] = width / scrollView.innerWidth
-        columnWidthsChanged();
-    }
-
-    // This is a workaround for a small memory leak in QQmlPropertyCache.
-    // When using Connection {} in combination with
-    // QAbstractItemModel::layoutChanged() from within QML,
-    // QQmlPropertyCache::createArgumentsObject() will leak. As a workaround, we
-    // can put a proxy signal in between that is used instead and the leak won't
-    // happen.
-    // TODO KF6: Remove this as the bug doesn't exist in Qt 6.
-    function onModelLayoutChanged() {
-        tableView.modelLayoutHasChanged()
-    }
-
-    onColumnWidthsChanged: tableView.forceLayout()
-
     Kirigami.Theme.inherit: false
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
@@ -93,7 +67,7 @@ FocusScope {
             root.setColumnWidth(column, width)
         }
 
-        onContextMenuRequested: (column, position) => {
+        onContextMenuRequested:(column, position) => {
             root.headerContextMenuRequested(column, position)
         }
     }
@@ -117,14 +91,10 @@ FocusScope {
             property int hoveredRow: -1
             property int sortColumn: root.sortColumn
 
-            signal modelLayoutHasChanged()
-
             signal contextMenuRequested(var index, point position)
             onContextMenuRequested: (index, position) => {
                 root.contextMenuRequested(index, position);
             }
-
-            onWidthChanged: forceLayout()
 
             // FIXME Until Tableview correctly reverses its columns, see QTBUG-90547
             model: root.model
@@ -221,28 +191,28 @@ FocusScope {
             }
 
             columnWidthProvider: function(index) {
+                let column = index
                 // FIXME Until Tableview correctly reverses its columns, see QTBUG-90547
-                if (scrollView.LayoutMirroring.enabled) {
-                    var width = root.columnWidths[root.columnWidths.length - index - 1]
-                } else {
-                    var width = root.columnWidths[index]
+                if (LayoutMirroring.enabled) {
+                    column = root.columnWidths.length - index - 1
                 }
-                if (width === undefined || width === null) {
-                    width = root.defaultColumnWidth
-                } else {
-                    width = width
-                }
-                width = Math.max(Math.floor(width * scrollView.innerWidth), root.minimumColumnWidth)
-                return width
-            }
 
-
-            contentWidth: {
-                var w = 0
-                for (var i = 0; i < columns; i++) {
-                    w += columnWidthProvider(i)
+                // Resizing sets the explicit column width and has no other trigger. If
+                // we don't make use of that value we can't resize. So read the value,
+                // convert it to a fraction of total width and write it back to
+                // columnWidths, then clear the explicit column width again so that
+                // resizing updates the column width properly. This isn't the prettiest
+                // of solutions but at least makes things work the way we want.
+                let explicitWidth = explicitColumnWidth(index)
+                if (explicitWidth >= 0) {
+                    let w = explicitWidth / width
+                    root.columnWidths[column] = w
+                    root.columnWidthsChanged()
+                    clearColumnWidths()
                 }
-                return Math.max(w, scrollView.innerWidth)
+
+                let columnWidth = root.columnWidths[column]
+                return Math.max(Math.floor((columnWidth ?? root.defaultColumnWidth) * scrollView.innerWidth), root.minimumColumnWidth)
             }
         }
     }

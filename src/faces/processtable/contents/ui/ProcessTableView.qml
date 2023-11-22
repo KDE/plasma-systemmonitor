@@ -60,8 +60,6 @@ Table.BaseTableView {
 
     onSort: (column, order) => rowFilter.sort(column, order)
 
-    headerModel: rowFilter
-
     model: Table.ProcessSortFilterModel {
         id: rowFilter
         sourceModel: cacheModel
