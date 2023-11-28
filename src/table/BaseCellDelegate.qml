@@ -50,7 +50,7 @@ TreeViewDelegate
 
     TapHandler {
         acceptedButtons: Qt.LeftButton | Qt.RightButton
-
+        gesturePolicy: TapHandler.ReleaseWithinBounds
 
         onTapped: (eventPoint, button) => {
             var modelIndex = root.TableView.view.model.index(row, column);
