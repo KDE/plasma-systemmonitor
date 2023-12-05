@@ -14,10 +14,9 @@ BaseCellDelegate {
 
     leftPadding: Kirigami.Units.smallSpacing
 
-
     contentItem: Label {
         id: label
-        text:model.display != undefined ? model.display : ""
+        text: delegate.text
         maximumLineCount: 1
         elide: Text.ElideRight
         horizontalAlignment: Text.AlignHCenter

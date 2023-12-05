@@ -55,13 +55,13 @@ BaseCellDelegate {
 
             padding: Kirigami.Units.smallSpacing
 
-            text: model.display
+            text: delegate.text
             horizontalAlignment: Text.AlignLeft
             elide: Text.ElideRight
         }
     }
 
-    ToolTip.text: model.display
+    ToolTip.text: delegate.text
     ToolTip.delay: Kirigami.Units.toolTipDelay
     ToolTip.visible: delegate.hovered && label.truncated
 }

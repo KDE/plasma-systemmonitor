@@ -20,6 +20,8 @@ TreeViewDelegate
 
     readonly property var __selection: TableView.view.selectionModel
 
+    text: model.display
+
     // Important: Don't remove this until QTBUG-84858 is resolved properly.
     Accessible.role: Accessible.Cell
 

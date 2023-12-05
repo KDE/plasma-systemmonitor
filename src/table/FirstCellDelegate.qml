@@ -39,7 +39,7 @@ BaseCellDelegate {
             id: label
             Layout.fillWidth: true
             Layout.fillHeight: true
-            text: model.display
+            text: delegate.text
             horizontalAlignment: Text.AlignLeft
             elide: Text.ElideRight
         }
