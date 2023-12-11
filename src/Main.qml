@@ -41,8 +41,8 @@ Kirigami.ApplicationWindow {
 
         handleVisible: false
         modal: false
-        width: collapsed ? globalToolBar.Layout.minimumWidth + Kirigami.Units.smallSpacing : Kirigami.Units.gridUnit * 10
-        Behavior on width { NumberAnimation { duration: Kirigami.Units.longDuration; easing.type: Easing.InOutQuad } }
+        width: collapsed ? globalToolBar.Layout.minimumWidth + Kirigami.Units.smallSpacing : Math.max(globalToolBar.implicitWidth + globalToolBar.Layout.minimumWidth + Kirigami.Units.smallSpacing * 3, Kirigami.Units.gridUnit * 10)
+        Behavior on width { NumberAnimation {id: collapseAnimation; duration: Kirigami.Units.longDuration; easing.type: Easing.InOutQuad } }
         showHeaderWhenCollapsed: true
 
         Kirigami.Theme.colorSet: Kirigami.Theme.View
@@ -72,18 +72,21 @@ Kirigami.ApplicationWindow {
                         id: editPagesAction
                         icon.name: "handle-sort"
                         text: i18nc("@action", "Edit or Remove pages…")
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
                         onTriggered: pageSortDialog.open()
                     },
-                     Kirigami.Action {
+                    Kirigami.Action {
                         id: exportAction
                         text: i18nc("@action", "Export Current Page…")
                         icon.name: "document-export"
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
                         enabled: !app.pageStack.currentItem?.edit ?? false
                         onTriggered: exportDialog.open()
                     },
                     Kirigami.Action {
                         icon.name: "document-import"
                         text: i18nc("@action", "Import Page…")
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
                         onTriggered: importDialog.open()
                     },
                     NewStuff.Action {
@@ -91,6 +94,7 @@ Kirigami.ApplicationWindow {
                         text: i18nc("@action:inmenu", "Get New Pages…")
                         configFile: "plasma-systemmonitor.knsrc"
                         pageStack: app.pageStack.layers
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
                         onEntryEvent: {
                             if (event === NewStuff.Engine.StatusChangedEvent) {
                                 pagesModel.ghnsEntryStatusChanged(entry)
@@ -102,23 +106,30 @@ Kirigami.ApplicationWindow {
                         icon.name: app.globalDrawer.collapsed ? "view-split-left-right" : "view-left-close"
                         text: app.globalDrawer.collapsed ? i18nc("@action", "Expand Sidebar") : i18nc("@action", "Collapse Sidebar")
                         onTriggered: app.globalDrawer.collapsed = !app.globalDrawer.collapsed
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
                     },
                     Kirigami.Action {
                         separator: true
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
                     },
                     Kirigami.Action {
                         icon.name: "tools-report-bug";
                         text: i18nc("@action", "Report Bug…");
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
                         onTriggered: Qt.openUrlExternally(CommandLineArguments.aboutData.bugAddress);
                     },
                     Kirigami.Action {
                         icon.name: "help-about-symbolic";
                         text: i18nc("@action", "About System Monitor");
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
                         onTriggered: app.pageStack.layers.push("AboutPage.qml")
                         enabled: app.pageStack.layers.depth <= 1
                     }
                 ]
-                Component.onCompleted: actions.push(app.quitAction)
+                Component.onCompleted: {
+                    app.quitAction.displayHint = Kirigami.DisplayHint.AlwaysHide
+                    actions.push(app.quitAction)
+                }
             }
 
             Instantiator {
