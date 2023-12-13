@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:38+0000\n"
+"POT-Creation-Date: 2023-12-13 01:36+0000\n"
 "PO-Revision-Date: 2023-08-06 05:25+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -178,97 +178,97 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "adrian@chaves.io"
 
-#: src/Main.qml:68
+#: src/Main.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Ferramentas"
 
-#: src/Main.qml:74
+#: src/Main.qml:75
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Editar ou retirar páxinas…"
 
-#: src/Main.qml:80
+#: src/Main.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Exportar a páxina actual…"
 
-#: src/Main.qml:88
+#: src/Main.qml:89
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Importar unha páxina…"
 
-#: src/Main.qml:94
+#: src/Main.qml:95
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Obter novas páxinas…"
 
-#: src/Main.qml:107
+#: src/Main.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Expandir a barra lateral"
 
-#: src/Main.qml:107
+#: src/Main.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Pregar a barra lateral"
 
-#: src/Main.qml:117
+#: src/Main.qml:118
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Informar dun fallo…"
 
-#: src/Main.qml:123
+#: src/Main.qml:124
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "Sobre o vixilante do sistema"
 
-#: src/Main.qml:153
+#: src/Main.qml:154
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Engadir unha nova páxina…"
 
-#: src/Main.qml:222
+#: src/Main.qml:223
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Engadir unha nova páxina"
 
-#: src/Main.qml:243
+#: src/Main.qml:244
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Editar páxinas"
 
-#: src/Main.qml:266
+#: src/Main.qml:267
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Exportar %1"
 
-#: src/Main.qml:268 src/Main.qml:278
+#: src/Main.qml:269 src/Main.qml:279
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "Páxina do vixilante do sistema (*.page)"
 
-#: src/Main.qml:276
+#: src/Main.qml:277
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "Importar unha páxina"
 
-#: src/Main.qml:309
+#: src/Main.qml:319
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "

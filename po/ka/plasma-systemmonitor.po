@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:38+0000\n"
+"POT-Creation-Date: 2023-12-13 01:36+0000\n"
 "PO-Revision-Date: 2023-11-17 09:32+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -179,97 +179,97 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Temuri.doghonadze@gmail.com"
 
-#: src/Main.qml:68
+#: src/Main.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "ხელსაწყოები"
 
-#: src/Main.qml:74
+#: src/Main.qml:75
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "გვერდების ჩასწორება ან წაშლა…"
 
-#: src/Main.qml:80
+#: src/Main.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "მიმდინარე გვერდის შემოტანა…"
 
-#: src/Main.qml:88
+#: src/Main.qml:89
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "გვერდის შემოტანა…"
 
-#: src/Main.qml:94
+#: src/Main.qml:95
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "ახალი გვერდების მიღება…"
 
-#: src/Main.qml:107
+#: src/Main.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "გვერდითი ზოლის გაფართოება"
 
-#: src/Main.qml:107
+#: src/Main.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "გვერდითი ზოლის ჩაკეცვა"
 
-#: src/Main.qml:117
+#: src/Main.qml:118
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "შეცდომის ანგარიში…"
 
-#: src/Main.qml:123
+#: src/Main.qml:124
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "სისტემური მონიტორის შესახებ"
 
-#: src/Main.qml:153
+#: src/Main.qml:154
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "ახალი გვერდის დამატება…"
 
-#: src/Main.qml:222
+#: src/Main.qml:223
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "ახალი გვერდის დამატება"
 
-#: src/Main.qml:243
+#: src/Main.qml:244
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "გვერდების ჩასწორება"
 
-#: src/Main.qml:266
+#: src/Main.qml:267
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "%1-ის გატანა"
 
-#: src/Main.qml:268 src/Main.qml:278
+#: src/Main.qml:269 src/Main.qml:279
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "სისტემის მონიტორის გვერდი (*.page)"
 
-#: src/Main.qml:276
+#: src/Main.qml:277
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "გვერდის შემოტანა"
 
-#: src/Main.qml:309
+#: src/Main.qml:319
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "

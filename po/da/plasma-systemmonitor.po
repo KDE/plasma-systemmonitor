@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:38+0000\n"
+"POT-Creation-Date: 2023-12-13 01:36+0000\n"
 "PO-Revision-Date: 2020-10-15 23:09+0200\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish\n"
@@ -191,13 +191,13 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ","
 
-#: src/Main.qml:68
+#: src/Main.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Værktøjer"
 
-#: src/Main.qml:74
+#: src/Main.qml:75
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Edit pages..."
@@ -205,7 +205,7 @@ msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Rediger sider ..."
 
-#: src/Main.qml:80
+#: src/Main.qml:81
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Configure Page..."
@@ -213,7 +213,7 @@ msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Konfigurer side ..."
 
-#: src/Main.qml:88
+#: src/Main.qml:89
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Configure Page..."
@@ -221,25 +221,25 @@ msgctxt "@action"
 msgid "Import Page…"
 msgstr "Konfigurer side ..."
 
-#: src/Main.qml:94
+#: src/Main.qml:95
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Hent/Få nye sider ..."
 
-#: src/Main.qml:107
+#: src/Main.qml:108
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Udfold sidebjælke"
 
-#: src/Main.qml:107
+#: src/Main.qml:108
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Sammenfold sidebjælke"
 
-#: src/Main.qml:117
+#: src/Main.qml:118
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Configure Page..."
@@ -247,13 +247,13 @@ msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Konfigurer side ..."
 
-#: src/Main.qml:123
+#: src/Main.qml:124
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "Om Systemovervågning"
 
-#: src/Main.qml:153
+#: src/Main.qml:154
 #, fuzzy, kde-format
 #| msgctxt "@window:title"
 #| msgid "Add New Page"
@@ -261,38 +261,38 @@ msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Tilføj ny side"
 
-#: src/Main.qml:222
+#: src/Main.qml:223
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Tilføj ny side"
 
-#: src/Main.qml:243
+#: src/Main.qml:244
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Rediger sider"
 
-#: src/Main.qml:266
+#: src/Main.qml:267
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr ""
 
-#: src/Main.qml:268 src/Main.qml:278
+#: src/Main.qml:269 src/Main.qml:279
 #, fuzzy, kde-format
 #| msgid "System Monitor"
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "Systemovervågning"
 
-#: src/Main.qml:276
+#: src/Main.qml:277
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr ""
 
-#: src/Main.qml:309
+#: src/Main.qml:319
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
