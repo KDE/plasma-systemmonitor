@@ -64,7 +64,6 @@ Table.BaseTableView {
         id: rowFilter
         sourceModel: cacheModel
         hiddenAttributes: processModel.hiddenSensors
-        onLayoutChanged: view.onModelLayoutChanged()
     }
 
     Table.ComponentCacheProxyModel {
