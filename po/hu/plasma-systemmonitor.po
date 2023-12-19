@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Kristóf Kiszel <kiszel.kristof@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2021, 2023 Kristóf Kiszel <kiszel.kristof@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-13 01:36+0000\n"
-"PO-Revision-Date: 2021-10-25 10:59+0200\n"
+"PO-Revision-Date: 2023-12-18 13:48+0100\n"
 "Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.08.2\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -479,7 +479,7 @@ msgstr "Betöltés"
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
-msgstr ""
+msgstr "Hiányzó érzékelők cseréje"
 
 #: src/page/MoveButton.qml:23
 #, kde-format
@@ -491,12 +491,13 @@ msgstr "Mozgatás"
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr ""
+"Az oldalról hiányzik néhány érzékelő, ezért nem jelenik meg megfelelően."
 
 #: src/page/PageContents.qml:103 src/page/PageEditor.qml:135
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
-msgstr ""
+msgstr "Javítás…"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -559,24 +560,22 @@ msgid "Use Actions From:"
 msgstr "Műveletek használata innen:"
 
 #: src/page/PageDialog.qml:147
-#, fuzzy, kde-format
-#| msgctxt "@info:tooltip"
-#| msgid "Remove this page"
+#, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
-msgstr "Oldal törlése"
+msgstr "Oldal betöltése:"
 
 #: src/page/PageDialog.qml:160
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
-msgstr ""
+msgstr "Ha szükséges"
 
 #: src/page/PageDialog.qml:161
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"
-msgstr ""
+msgstr "Az alkalmazás indulásakor"
 
 #: src/page/PageEditor.qml:181
 #, kde-format
