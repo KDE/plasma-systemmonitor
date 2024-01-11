@@ -69,6 +69,8 @@ Kirigami.Dialog {
         Kirigami.Theme.colorSet: Kirigami.Theme.View
         Kirigami.Theme.inherit: false
 
+        clip: true
+
         model: Table.ColumnDisplayModel {
             id: displayModel
 

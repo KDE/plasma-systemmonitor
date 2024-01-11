@@ -69,6 +69,8 @@ Kirigami.Dialog {
             label: section
         }
 
+        clip: true
+
         delegate: ItemDelegate {
             id: delegate
 
