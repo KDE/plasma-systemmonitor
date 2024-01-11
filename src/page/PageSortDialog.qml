@@ -47,6 +47,7 @@ Kirigami.Dialog {
         id: pageList
 
         reuseItems: true
+        clip: true
 
         model: Page.PageSortModel {
             id: sortModel

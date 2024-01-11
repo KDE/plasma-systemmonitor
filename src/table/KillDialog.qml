@@ -59,6 +59,7 @@ Kirigami.Dialog {
 
             model: dialog.items
             currentIndex: -1
+            clip: true
 
             Kirigami.Theme.colorSet: Kirigami.Theme.View
             Kirigami.Theme.inherit: false

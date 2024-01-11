@@ -45,6 +45,7 @@ Kirigami.Dialog {
         id: presetList
 
         currentIndex: -1
+        clip: true
 
         model: dialog.controller.availablePresetsModel
         delegate: Kirigami.SwipeListItem {
