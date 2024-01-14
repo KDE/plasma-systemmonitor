@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-13 01:36+0000\n"
+"POT-Creation-Date: 2024-01-14 03:09+0000\n"
 "PO-Revision-Date: 2023-12-18 13:48+0100\n"
 "Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -582,61 +582,61 @@ msgstr "Az alkalmazás indulásakor"
 msgid "New Title"
 msgstr "Új cím"
 
-#: src/page/PageSortDialog.qml:87
+#: src/page/PageSortDialog.qml:88
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Oldal megjelenítése"
 
-#: src/page/PageSortDialog.qml:88
+#: src/page/PageSortDialog.qml:89
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Oldal elrejtése"
 
-#: src/page/PageSortDialog.qml:138
+#: src/page/PageSortDialog.qml:139
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Ne állítsa alapállapotba az oldalt"
 
-#: src/page/PageSortDialog.qml:142
+#: src/page/PageSortDialog.qml:143
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Az oldal visszaállítódik az alapállapotába"
 
-#: src/page/PageSortDialog.qml:151
+#: src/page/PageSortDialog.qml:152
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Oldal visszaállítása alapállapotba"
 
-#: src/page/PageSortDialog.qml:160
+#: src/page/PageSortDialog.qml:161
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Ne törölje ezt az oldalt"
 
-#: src/page/PageSortDialog.qml:164
+#: src/page/PageSortDialog.qml:165
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Az oldal törlődik"
 
-#: src/page/PageSortDialog.qml:177
+#: src/page/PageSortDialog.qml:178
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Oldal törlése"
 
-#: src/page/PageSortDialog.qml:190
+#: src/page/PageSortDialog.qml:191
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Kezdés:"
 
-#: src/page/PageSortDialog.qml:199
+#: src/page/PageSortDialog.qml:200
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Utoljára megnézett oldal"
@@ -696,37 +696,37 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Oszlopbeállítások"
 
-#: src/table/ColumnConfigurationDialog.qml:129
+#: src/table/ColumnConfigurationDialog.qml:131
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Rejtett"
 
-#: src/table/ColumnConfigurationDialog.qml:130
+#: src/table/ColumnConfigurationDialog.qml:132
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Csak szöveg"
 
-#: src/table/ColumnConfigurationDialog.qml:136
+#: src/table/ColumnConfigurationDialog.qml:138
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Vonaldiagram"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:142
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Csak szöveg (100%-ra méretezve)"
 
-#: src/table/ColumnConfigurationDialog.qml:141
+#: src/table/ColumnConfigurationDialog.qml:143
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Vonaldiagram (100%-ra méretezve)"
 
-#: src/table/KillDialog.qml:80
+#: src/table/KillDialog.qml:81
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"

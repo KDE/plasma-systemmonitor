@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-13 01:36+0000\n"
+"POT-Creation-Date: 2024-01-14 03:09+0000\n"
 "PO-Revision-Date: 2023-12-24 09:30-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -578,61 +578,61 @@ msgstr "ਐਪਲੀਕੇਸ਼ਨ ਸ਼ੁਰੂ ਹੋਣ ਦੇ ਦੌਰਾਨ"
 msgid "New Title"
 msgstr "ਨਵਾਂ ਨਾਂ"
 
-#: src/page/PageSortDialog.qml:87
+#: src/page/PageSortDialog.qml:88
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "ਸਫ਼ਾ ਵੇਖਾਓ"
 
-#: src/page/PageSortDialog.qml:88
+#: src/page/PageSortDialog.qml:89
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "ਸਫ਼ਾ ਲੁਕਾਓ"
 
-#: src/page/PageSortDialog.qml:138
+#: src/page/PageSortDialog.qml:139
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "ਸਫ਼ੇ ਨੂੰ ਮੁੜ-ਸੈੱਟ ਨਾ ਕਰੋ"
 
-#: src/page/PageSortDialog.qml:142
+#: src/page/PageSortDialog.qml:143
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:151
+#: src/page/PageSortDialog.qml:152
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr ""
 
-#: src/page/PageSortDialog.qml:160
+#: src/page/PageSortDialog.qml:161
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "ਇਸ ਸਫ਼ੇ ਨੂੰ ਨਾ ਹਟਾਓ"
 
-#: src/page/PageSortDialog.qml:164
+#: src/page/PageSortDialog.qml:165
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "ਸਫ਼ੇ ਨੂੰ ਹਟਾਇਆ ਜਾਵੇਗਾ"
 
-#: src/page/PageSortDialog.qml:177
+#: src/page/PageSortDialog.qml:178
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "ਇਹ ਸਫ਼ਾ ਹਟਾਓ"
 
-#: src/page/PageSortDialog.qml:190
+#: src/page/PageSortDialog.qml:191
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "ਇਸ ਨਾਲ ਸ਼ੁਰੂ:"
 
-#: src/page/PageSortDialog.qml:199
+#: src/page/PageSortDialog.qml:200
 #, kde-format
 msgid "Last Visited Page"
 msgstr "ਪਿਛਲੀ ਵਾਰ ਖੋਲ੍ਹਿਆ ਸਫ਼ਾ"
@@ -691,37 +691,37 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "ਕਾਲਮਾਂ ਦੀ ਸੰਰਚਨਾ"
 
-#: src/table/ColumnConfigurationDialog.qml:129
+#: src/table/ColumnConfigurationDialog.qml:131
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "ਓਹਲੇ"
 
-#: src/table/ColumnConfigurationDialog.qml:130
+#: src/table/ColumnConfigurationDialog.qml:132
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "ਸਿਰਫ਼ ਲਿਖਤ"
 
-#: src/table/ColumnConfigurationDialog.qml:136
+#: src/table/ColumnConfigurationDialog.qml:138
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "ਰੇਖਾ ਚਾਰਟ"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:142
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "ਸਿਰਫ਼ ਲਿਖਤ (100% ਸਕੇਲ ਕੀਤਾ)"
 
-#: src/table/ColumnConfigurationDialog.qml:141
+#: src/table/ColumnConfigurationDialog.qml:143
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "ਲਾਈਨ ਚਾਰਟ (100% ਸਕੇਲ ਕੀਤਾ)"
 
-#: src/table/KillDialog.qml:80
+#: src/table/KillDialog.qml:81
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"

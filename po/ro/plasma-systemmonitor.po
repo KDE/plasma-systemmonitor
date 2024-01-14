@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-13 01:36+0000\n"
+"POT-Creation-Date: 2024-01-14 03:09+0000\n"
 "PO-Revision-Date: 2022-08-14 16:53+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -582,61 +582,61 @@ msgstr "În timpul pornirii aplicației"
 msgid "New Title"
 msgstr "Titlu nou"
 
-#: src/page/PageSortDialog.qml:87
+#: src/page/PageSortDialog.qml:88
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Arată pagina"
 
-#: src/page/PageSortDialog.qml:88
+#: src/page/PageSortDialog.qml:89
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Ascunde pagina"
 
-#: src/page/PageSortDialog.qml:138
+#: src/page/PageSortDialog.qml:139
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Nu reinițializa pagina"
 
-#: src/page/PageSortDialog.qml:142
+#: src/page/PageSortDialog.qml:143
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Pagina va fi reinițializată la starea implicită"
 
-#: src/page/PageSortDialog.qml:151
+#: src/page/PageSortDialog.qml:152
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Reinițializează pagina la starea sa implicită"
 
-#: src/page/PageSortDialog.qml:160
+#: src/page/PageSortDialog.qml:161
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Nu elimina această pagină"
 
-#: src/page/PageSortDialog.qml:164
+#: src/page/PageSortDialog.qml:165
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Această pagină va fi eliminată"
 
-#: src/page/PageSortDialog.qml:177
+#: src/page/PageSortDialog.qml:178
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Elimină această pagină"
 
-#: src/page/PageSortDialog.qml:190
+#: src/page/PageSortDialog.qml:191
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Începe cu:"
 
-#: src/page/PageSortDialog.qml:199
+#: src/page/PageSortDialog.qml:200
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Ultima pagină vizitată"
@@ -696,37 +696,37 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Configurează coloane"
 
-#: src/table/ColumnConfigurationDialog.qml:129
+#: src/table/ColumnConfigurationDialog.qml:131
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Ascuns"
 
-#: src/table/ColumnConfigurationDialog.qml:130
+#: src/table/ColumnConfigurationDialog.qml:132
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Numai text"
 
-#: src/table/ColumnConfigurationDialog.qml:136
+#: src/table/ColumnConfigurationDialog.qml:138
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Diagramă liniară"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:142
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Numai text (scalat la 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:141
+#: src/table/ColumnConfigurationDialog.qml:143
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Diagramă liniară (scalat la 100%)"
 
-#: src/table/KillDialog.qml:80
+#: src/table/KillDialog.qml:81
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"

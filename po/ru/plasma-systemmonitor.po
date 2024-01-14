@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-13 01:36+0000\n"
+"POT-Creation-Date: 2024-01-14 03:09+0000\n"
 "PO-Revision-Date: 2022-06-18 10:28+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -584,61 +584,61 @@ msgstr "При запуске приложения"
 msgid "New Title"
 msgstr "Новый заголовок"
 
-#: src/page/PageSortDialog.qml:87
+#: src/page/PageSortDialog.qml:88
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Показать страницу"
 
-#: src/page/PageSortDialog.qml:88
+#: src/page/PageSortDialog.qml:89
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Скрыть страницу"
 
-#: src/page/PageSortDialog.qml:138
+#: src/page/PageSortDialog.qml:139
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Не сбрасывать страницу"
 
-#: src/page/PageSortDialog.qml:142
+#: src/page/PageSortDialog.qml:143
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Страница будет сброшена к исходному состоянию"
 
-#: src/page/PageSortDialog.qml:151
+#: src/page/PageSortDialog.qml:152
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Сбросить страницу к исходному состоянию"
 
-#: src/page/PageSortDialog.qml:160
+#: src/page/PageSortDialog.qml:161
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Не удалять эту страницу"
 
-#: src/page/PageSortDialog.qml:164
+#: src/page/PageSortDialog.qml:165
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Страница будет удалена"
 
-#: src/page/PageSortDialog.qml:177
+#: src/page/PageSortDialog.qml:178
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Удалить эту страницу"
 
-#: src/page/PageSortDialog.qml:190
+#: src/page/PageSortDialog.qml:191
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Начальная страница:"
 
-#: src/page/PageSortDialog.qml:199
+#: src/page/PageSortDialog.qml:200
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Последние страницы"
@@ -697,37 +697,37 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Настройка столбцов"
 
-#: src/table/ColumnConfigurationDialog.qml:129
+#: src/table/ColumnConfigurationDialog.qml:131
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Скрытый"
 
-#: src/table/ColumnConfigurationDialog.qml:130
+#: src/table/ColumnConfigurationDialog.qml:132
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Только подписи"
 
-#: src/table/ColumnConfigurationDialog.qml:136
+#: src/table/ColumnConfigurationDialog.qml:138
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Линейная диаграмма"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:142
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Только текст (масштабируется до 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:141
+#: src/table/ColumnConfigurationDialog.qml:143
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Линейный график (масштабируется до 100%)"
 
-#: src/table/KillDialog.qml:80
+#: src/table/KillDialog.qml:81
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
