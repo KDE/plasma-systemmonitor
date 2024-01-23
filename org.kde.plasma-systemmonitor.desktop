@@ -140,3 +140,4 @@ SingleMainWindow=true
 X-DBUS-StartupType=Unique
 X-DBUS-ServiceName=org.kde.plasma-systemmonitor
 X-KDE-Shortcuts=Meta+Esc
+X-KDE-Migrate-Shortcut=kded5,Show System Activity
