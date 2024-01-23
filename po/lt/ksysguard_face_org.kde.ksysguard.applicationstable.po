@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-01 01:41+0000\n"
-"PO-Revision-Date: 2021-12-12 15:55+0200\n"
+"PO-Revision-Date: 2024-01-23 01:35+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -184,16 +184,14 @@ msgstr[2] "Baigti %1 programų darbą"
 msgstr[3] "Baigti %1 programos darbą"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Quit Application"
+#, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
 msgstr[0] "Baigti programos darbą"
-msgstr[1] "Baigti programos darbą"
-msgstr[2] "Baigti programos darbą"
-msgstr[3] "Baigti programos darbą"
+msgstr[1] "Baigti programų darbą"
+msgstr[2] "Baigti programų darbą"
+msgstr[3] "Baigti programų darbą"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
