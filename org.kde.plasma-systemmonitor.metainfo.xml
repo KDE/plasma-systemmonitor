@@ -33,6 +33,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="ka">Plasma-ის სისტემური მონიტორი</name>
   <name xml:lang="ko">Plasma 시스템 모니터</name>
   <name xml:lang="lt">Plasma sistemos prižiūryklė</name>
+  <name xml:lang="lv">„Plasma“ sistēmas pārraugs</name>
   <name xml:lang="nl">Plasma systeemmonitor</name>
   <name xml:lang="nn">Plasma systemovervaking</name>
   <name xml:lang="pa">ਪਲਾਜ਼ਮਾ ਸਿਸਟਮ ਮਾਨੀਟਰ</name>
@@ -74,6 +75,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ka">აპლიკაცია სისტემის რესურსების მონიტორინგისთვის</summary>
   <summary xml:lang="ko">시스템 자원을 관찰하는 앱</summary>
   <summary xml:lang="lt">Sistemos išteklių stebėjimo programa</summary>
+  <summary xml:lang="lv">Programma sistēmas resursu pārraudzībai</summary>
   <summary xml:lang="nl">Een toepassing voor het monitoren van systeembronnen</summary>
   <summary xml:lang="nn">Program for overvaking av systemressursar</summary>
   <summary xml:lang="pa">ਸਿਸਟਮ ਸਰੋਤਾਂ ਦੀ ਨਿਗਰਾਨੀ ਲਈ ਐਪਲੀਕੇਸ਼ਨ</summary>
@@ -118,6 +120,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="ka">Plasma -ის სისტემის მონიტორი სისტემური სენსორების, პროცესის ინფორმაციის და სხვა სისტემური რესურსების მონიტორინგის ინტერფეისს მოგაწოდებთ.</p>
     <p xml:lang="ko">Plasma 시스템 모니터는 시스템 센서, 프로세스 정보, 기타 시스템 자원을 관찰할 수 있습니다.</p>
     <p xml:lang="lt">Plasma sistemos prižiūryklė pateikia sąsają, skirtą stebėti sistemos jutiklius, procesų informaciją bei kitus sistemos išteklius.</p>
+    <p xml:lang="lv">„Plasma“ sistēmas pārraugs sniedz saskarni sistēmas sensoru nolasīšanai, procesu informācijai un citiem sistēmas resursiem.</p>
     <p xml:lang="nl">Plasma systeemmonitor biedt een interface voor het monitoren van systeembronnen, procesinformatie en andere systeembronnen.</p>
     <p xml:lang="nn">Plasma system­overvaking er ei grafisk brukarflate for overvaking av system­sensorar, prosess­informasjon og andre system­ressursar.</p>
     <p xml:lang="pa">ਪਲਾਜ਼ਮਾ ਸਿਸਟਮ ਮਾਨੀਟਰ ਸਿਸਟਮ ਸੈਂਸਰਾਂ, ਪਰੋਸੈਸ ਜਾਣਕਾਰੀ ਅਤੇ ਹੋਰ ਸਿਸਟਮ ਸਰੋਤਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਰਨ ਲਈ ਇੰਟਰਫੇਸ ਦਿੰਦਾ ਹੈ।</p>
