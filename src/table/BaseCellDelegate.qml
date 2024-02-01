@@ -18,8 +18,6 @@ TreeViewDelegate
 
     readonly property bool rowHovered: root.TableView.view.hoveredRow == row
 
-    readonly property var __selection: TableView.view.selectionModel
-
     text: model.display
 
     // Important: Don't remove this until QTBUG-84858 is resolved properly.
@@ -49,36 +47,4 @@ TreeViewDelegate
     }
 
     hoverEnabled: true
-
-    TapHandler {
-        acceptedButtons: Qt.LeftButton | Qt.RightButton
-        gesturePolicy: TapHandler.ReleaseWithinBounds
-
-        onTapped: (eventPoint, button) => {
-            var modelIndex = root.TableView.view.model.index(row, column);
-
-            root.TableView.view.forceActiveFocus(Qt.ClickFocus)
-
-            // latest clicks sets current index
-            root.__selection.setCurrentIndex(modelIndex, ItemSelectionModel.Current | ItemSelectionModel.Rows)
-
-            if (root.__selection.isSelected(modelIndex) && button == Qt.RightButton) {
-                root.TableView.view.contextMenuRequested(modelIndex, eventPoint.globalPressPosition)
-                return
-            }
-
-            if (point.modifiers & Qt.ShiftModifier) {
-                //TODO: Implement range selection
-                root.__selection.select(modelIndex, ItemSelectionModel.Toggle | ItemSelectionModel.Rows)
-            } else if (point.modifiers & Qt.ControlModifier) {
-                root.__selection.select(modelIndex, ItemSelectionModel.Toggle | ItemSelectionModel.Rows)
-            } else {
-                root.__selection.select(modelIndex, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
-            }
-
-            if (button == Qt.RightButton) {
-                root.TableView.view.contextMenuRequested(modelIndex, eventPoint.globalPressPosition)
-            }
-        }
-    }
 }
