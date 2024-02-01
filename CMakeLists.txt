@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 project(systemmonitor)
 
-set(PROJECT_VERSION "5.93.0")
+set(PROJECT_VERSION "6.0.0")
 set(PROJECT_VERSION_MAJOR 6)
 
 set(QT_MIN_VERSION "6.6.0")
