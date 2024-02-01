@@ -24,7 +24,7 @@ HorizontalHeaderView {
 
     property alias view: header.syncView
 
-    property alias sortColumn: header.currentColumn
+    property int sortColumn: 0
     property int sortOrder: Qt.AscendingOrder
     property string sortName
     onSortNameChanged: updateSelectedColumn()
@@ -41,7 +41,7 @@ HorizontalHeaderView {
     Kirigami.Theme.colorSet: Kirigami.Theme.Button
     Kirigami.Theme.inherit: false
 
-    onCurrentColumnChanged: sort(sortColumn, sortOrder)
+    onSortColumnChanged: sort(sortColumn, sortOrder)
 
     Component.onCompleted: Qt.callLater(updateSelectedColumn)
 
@@ -50,17 +50,16 @@ HorizontalHeaderView {
         for (let i = 0; i < headerModel.rowCount(); ++i) {
             let index = headerModel.index(i, 0)
             if (headerModel.data(index, roleIndex) == sortName) {
-                selectionModel.setCurrentIndex(headerModel.sourceModel.index(0, i), ItemSelectionModel.Current)
+                header.sortColumn = i
                 break
             }
         }
     }
 
-    selectionModel: ItemSelectionModel { model: headerModel }
     model: KItemModels.KColumnHeadersModel {
         id: headerModel
         sourceModel: header.view.model
-        sortColumn: header.currentColumn
+        sortColumn: header.sortColumn
         sortOrder: header.sortOrder
     }
 
@@ -69,12 +68,12 @@ HorizontalHeaderView {
 
         onTapped: (eventPoint, button) => {
             let cell = header.cellAtPosition(eventPoint.position)
-            if (cell.x == header.currentColumn) {
+            if (cell.x == header.sortColumn) {
                 header.sortOrder = header.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
                 header.sort(header.sortColumn, header.sortOrder)
             } else {
                 header.sortOrder = model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder
-                eventPoint.accepted = false
+                header.sortColumn = cell.x
             }
         }
     }
