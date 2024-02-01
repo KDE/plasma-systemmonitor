@@ -91,11 +91,6 @@ FocusScope {
             property int hoveredRow: -1
             property int sortColumn: root.sortColumn
 
-            signal contextMenuRequested(var index, point position)
-            onContextMenuRequested: (index, position) => {
-                root.contextMenuRequested(index, position);
-            }
-
             // FIXME Until Tableview correctly reverses its columns, see QTBUG-90547
             model: root.model
             Binding on model {
@@ -110,85 +105,8 @@ FocusScope {
             clip: true
             boundsBehavior: Flickable.StopAtBounds
 
-            Keys.onPressed: event => {
-                switch (event.key) {
-                    case Qt.Key_Up:
-                        selectRelative(-1)
-                        if (!atYBeginning) {
-                            contentY -= root.rowHeight
-                            returnToBounds()
-                        }
-                        event.accepted = true
-                        return;
-                    case Qt.Key_Down:
-                        selectRelative(1)
-                        if (!atYEnd) {
-                            contentY += root.rowHeight
-                            returnToBounds()
-                        }
-                        event.accepted = true
-                        return;
-                    case Qt.Key_PageUp:
-                        if (!atYBeginning) {
-                            if ((contentY - (tableView.height - root.rowHeight)) < 0) {
-                                contentY = 0
-                            } else {
-                                contentY -= tableView.height - root.rowHeight // subtracting root.rowHeight so the last row still visible
-                            }
-                            returnToBounds()
-                        }
-                        return;
-                    case Qt.Key_PageDown:
-                        if (!atYEnd) {
-                            if ((contentY + (tableView.height - root.rowHeight)) > contentHeight - height) {
-                                contentY = contentHeight - height
-                            } else {
-                                contentY += tableView.height - root.rowHeight // subtracting root.rowHeight so the last row still visible
-                            }
-                            returnToBounds()
-                        }
-                        return;
-                    case Qt.Key_Home:
-                        if (!atYBeginning) {
-                            contentY = 0
-                            returnToBounds()
-                        }
-                        return;
-                    case Qt.Key_End:
-                        if (!atYEnd) {
-                            contentY = contentHeight - height
-                            returnToBounds()
-                        }
-                        return;
-                    case Qt.Key_Menu:
-                        contextMenuRequested(selectionModel.currentIndex, mapToGlobal(0, 0))
-                        return;
-                    default:
-                        break;
-                }
-                if (event.matches(StandardKey.SelectAll)) {
-                    selectionModel.select(model.index(0, 0), ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Columns);
-                    return;
-                }
-            }
-
-            onActiveFocusChanged: {
-                if (activeFocus && !selectionModel.hasSelection) {
-                    selectionModel.setCurrentIndex(model.index(0, 0), ItemSelectionModel.ClearAndSelect)
-                }
-            }
-
-            function selectRelative(delta) {
-                var nextRow = selectionModel.currentIndex.row + delta
-                if (nextRow < 0) {
-                    nextRow = 0
-                }
-                if (nextRow >= rows) {
-                    nextRow = rows - 1
-                }
-                var index = model.index(nextRow, selectionModel.currentIndex.column)
-                selectionModel.setCurrentIndex(index, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
-            }
+            selectionBehavior: TableView.SelectRows
+            selectionMode: TableView.ExtendedSelection
 
             columnWidthProvider: function(index) {
                 let column = index
@@ -214,7 +132,31 @@ FocusScope {
                 let columnWidth = root.columnWidths[column]
                 return Math.max(Math.floor((columnWidth ?? root.defaultColumnWidth) * scrollView.innerWidth), root.minimumColumnWidth)
             }
+
+            TapHandler {
+                acceptedButtons: Qt.RightButton
+                gesturePolicy: TapHandler.ReleaseWithinBounds
+
+                onTapped: (eventPoint, button) => {
+                    let cell = tableView.cellAtPosition(eventPoint.pressPosition);
+                    let index = tableView.index(cell.y, cell.x)
+
+                    if (!tableView.selectionModel.isSelected(index)) {
+                        tableView.selectionModel.setCurrentIndex(index, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
+                    }
+
+                    root.contextMenuRequested(tableView.index(cell.y, cell.x), eventPoint.globalPressPosition)
+                }
+            }
         }
+    }
+
+    SelectionRectangle {
+        target: tableView
+
+        selectionMode: SelectionRectangle.Drag
+        topLeftHandle: null
+        bottomRightHandle: null
     }
 }
 
