@@ -104,8 +104,13 @@ Kirigami.Dialog {
 
                 Kirigami.Theme.useAlternateBackgroundColor: true
 
+                ToolTip.visible: hoverHandler.hovered && contentItem.truncated
+
                 contentItem: RowLayout {
                     spacing: Kirigami.Units.smallSpacing
+
+                    property bool truncated: titleSubtitle.truncated
+
                     Kirigami.ListItemDragHandle {
                         id: handle
                         listItem: delegate
@@ -126,6 +131,7 @@ Kirigami.Dialog {
                         id: showCombo
                         textRole: "text"
                         Layout.rowSpan: 2
+                        Layout.rightMargin: Kirigami.Units.smallSpacing
                         model: {
                             var result = [
                                 {text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Hidden"), value: "hidden"},
@@ -165,9 +171,9 @@ Kirigami.Dialog {
                     }
                 }
 
-                ToolTip.text: modelData?.description ?? ""
-                ToolTip.visible: delegate.hovered && titleSubtitle.truncated
-                ToolTip.delay: Kirigami.Units.toolTipDelay
+                HoverHandler {
+                    id: hoverHandler
+                }
             }
         }
     }
