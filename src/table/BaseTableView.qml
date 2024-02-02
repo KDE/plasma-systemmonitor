@@ -108,6 +108,13 @@ FocusScope {
             selectionBehavior: TableView.SelectRows
             selectionMode: TableView.ExtendedSelection
 
+            onCurrentRowChanged: {
+                // Workaround for QTBUG-114999
+                if (!selectionModel.hasSelection) {
+                    selectionModel.select(index(currentRow, 0), ItemSelectionModel.Select | ItemSelectionModel.Rows)
+                }
+            }
+
             columnWidthProvider: function(index) {
                 let column = index
                 // FIXME Until Tableview correctly reverses its columns, see QTBUG-90547
