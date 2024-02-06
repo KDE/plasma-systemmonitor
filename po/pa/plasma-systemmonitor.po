@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023 A S Alam <aalam.yellow@gmail.com>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 A S Alam <aalam.yellow@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-13 00:39+0000\n"
-"PO-Revision-Date: 2023-12-24 09:30-0600\n"
+"PO-Revision-Date: 2024-02-05 08:04-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
 "Language: pa\n"
@@ -388,7 +388,7 @@ msgstr "…ਨਵੇਂ ਪਹਿਲਾਂ-ਸੈ਼ਟ ਕੀਤੇ ਲਵੋ"
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
-msgstr ""
+msgstr "ਸੈਟਿੰਗਾਂ ਨੂੰ ਪ੍ਰੀ-ਸੈੱਟ ਵਜੋਂ ਸੰਭਾਲੋ"
 
 #: src/page/FaceConfigurationPage.qml:60
 #, kde-format
