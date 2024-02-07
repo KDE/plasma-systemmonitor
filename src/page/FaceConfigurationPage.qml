@@ -209,16 +209,12 @@ Kirigami.ScrollablePage {
         }
 
         Item {
+            id: configContainer
+
             Layout.fillWidth: true
             implicitHeight: children.length > 0 ? children[0].implicitHeight : 0
 
             children: loader.controller.faceConfigUi
-
-            onWidthChanged: {
-                if (children.length > 0) {
-                    children[0].width = width
-                }
-            }
 
             Connections {
                 target: loader.controller.faceConfigUi
@@ -228,19 +224,21 @@ Kirigami.ScrollablePage {
                     loader.dataObject.markDirty()
                 }
             }
+
+            Binding {
+                target: configContainer.children[0]
+                property: "width"
+                value: configContainer.width
+            }
         }
 
         Item {
+            id: sensorsContainer
+
             Layout.fillWidth: true
             implicitHeight: children.length > 0 ? children[0].implicitHeight : 0
 
             children: loader.controller.sensorsConfigUi
-
-            onWidthChanged: {
-                if (children.length > 0) {
-                    children[0].width = width
-                }
-            }
 
             Connections {
                 target: loader.controller.sensorsConfigUi
@@ -249,6 +247,12 @@ Kirigami.ScrollablePage {
                     loader.controller.sensorsConfigUi.saveConfig()
                     loader.dataObject.markDirty()
                 }
+            }
+
+            Binding {
+                target: sensorsContainer.children[0]
+                property: "width"
+                value: sensorsContainer.width
             }
         }
 
