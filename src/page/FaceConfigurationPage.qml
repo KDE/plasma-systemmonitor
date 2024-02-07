@@ -157,7 +157,7 @@ Kirigami.ScrollablePage {
                 }
                 return -1;
             }
-            onActivated: {
+            onActivated: (index) => {
                 page.loader.controller.faceId = model.pluginId(index);
             }
 
