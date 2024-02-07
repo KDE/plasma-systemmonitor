@@ -321,5 +321,5 @@ Kirigami.ApplicationWindow {
         }
     }
 
-    pageStack.columnView.columnWidth: Kirigami.Units.gridUnit * 19
+    pageStack.columnView.columnWidth: Kirigami.Units.gridUnit * 22
 }
