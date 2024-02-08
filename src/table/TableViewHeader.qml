@@ -51,6 +51,7 @@ HorizontalHeaderView {
             let index = headerModel.index(i, 0)
             if (headerModel.data(index, roleIndex) == sortName) {
                 header.sortColumn = i
+                header.sort(i, header.sortOrder)
                 break
             }
         }
@@ -73,6 +74,7 @@ HorizontalHeaderView {
                 header.sort(header.sortColumn, header.sortOrder)
             } else {
                 header.sortOrder = model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder
+                header.sortName = headerModel.data(headerModel.index(cell.x, 0), headerModel.KItemModels.KRoleNames.role(header.idRole))
                 header.sortColumn = cell.x
             }
         }
