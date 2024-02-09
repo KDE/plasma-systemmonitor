@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-08 00:39+0000\n"
+"POT-Creation-Date: 2024-02-09 00:39+0000\n"
 "PO-Revision-Date: 2024-02-05 11:37\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -269,7 +269,7 @@ msgctxt "@title:window"
 msgid "Import Page"
 msgstr "导入页面"
 
-#: src/Main.qml:319
+#: src/Main.qml:341
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
