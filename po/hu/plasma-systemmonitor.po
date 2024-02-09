@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-08 02:29+0000\n"
+"POT-Creation-Date: 2024-02-09 02:34+0000\n"
 "PO-Revision-Date: 2023-12-18 13:48+0100\n"
 "Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -268,7 +268,7 @@ msgctxt "@title:window"
 msgid "Import Page"
 msgstr "Oldal importálása"
 
-#: src/Main.qml:319
+#: src/Main.qml:341
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
