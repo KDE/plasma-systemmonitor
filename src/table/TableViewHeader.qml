@@ -37,6 +37,8 @@ HorizontalHeaderView {
 
     resizableColumns: true
     clip: true
+    // Workaround for QTBUG-122560
+    boundsBehavior: Flickable.StopAtBounds
 
     Kirigami.Theme.colorSet: Kirigami.Theme.Button
     Kirigami.Theme.inherit: false
