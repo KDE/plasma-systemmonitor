@@ -254,7 +254,7 @@ ColumnLayout {
                 target: loader.controller
 
                 function onMissingSensorsChanged() {
-                    for (let i of missingSensors) {
+                    for (let i of loader.controller.missingSensors) {
                         root.missingSensors.push({
                             "face": model.data.face,
                             "title": loader.controller.title,

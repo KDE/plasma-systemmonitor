@@ -66,6 +66,7 @@ Kirigami.Dialog {
         section.property: "title"
         section.delegate: Kirigami.ListSectionHeader {
             required property string section
+            width: ListView.view.width
             label: section
         }
 
