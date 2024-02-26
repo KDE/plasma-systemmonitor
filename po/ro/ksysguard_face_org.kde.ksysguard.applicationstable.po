@@ -1,22 +1,22 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# Sergiu Bivol <sergiu@cip.md>, 2020, 2021, 2022.
+# Sergiu Bivol <sergiu@cip.md>, 2020, 2021, 2022, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-14 00:58+0000\n"
-"PO-Revision-Date: 2022-02-04 16:38+0000\n"
+"PO-Revision-Date: 2024-02-24 14:36+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
-"Language-Team: Romanian\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:49
 #, kde-format
@@ -181,15 +181,13 @@ msgstr[1] "Închide %1 aplicații"
 msgstr[2] "Închide %1 de aplicații"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Quit Application"
+#, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
 msgstr[0] "Închide aplicația"
-msgstr[1] "Închide aplicația"
-msgstr[2] "Închide aplicația"
+msgstr[1] "Închide aplicațiile"
+msgstr[2] "Închide aplicațiile"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
