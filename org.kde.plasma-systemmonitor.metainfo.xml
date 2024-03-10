@@ -31,6 +31,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="ia">Monitor de systema de Plasma</name>
   <name xml:lang="id">Plasma System Monitor</name>
   <name xml:lang="it">Monitor di sistema di Plasma</name>
+  <name xml:lang="ja">Plasma システムモニタ</name>
   <name xml:lang="ka">Plasma-ის სისტემური მონიტორი</name>
   <name xml:lang="ko">Plasma 시스템 모니터</name>
   <name xml:lang="lt">Plasma sistemos prižiūryklė</name>
@@ -74,6 +75,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="hu">Alkalmazás a rendszer erőforrásainak monitorozásához</summary>
   <summary xml:lang="ia">Un application per supervider ressources de systema</summary>
   <summary xml:lang="it">Un'applicazione per il monitoraggio delle risorse di sistema</summary>
+  <summary xml:lang="ja">システムリソース監視アプリケーション</summary>
   <summary xml:lang="ka">აპლიკაცია სისტემის რესურსების მონიტორინგისთვის</summary>
   <summary xml:lang="ko">시스템 자원을 관찰하는 앱</summary>
   <summary xml:lang="lt">Sistemos išteklių stebėjimo programa</summary>
@@ -120,6 +122,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="ia">Plasma System Monitor (Monitor o supervision de systema de Plasma) provide un interfacie per supervider sensores de systema, information de processo e altere ressources de systema.</p>
     <p xml:lang="id">Plasma System Monitor menyediakan sebuah antarmuka untuk memantau sensor-sensor sistem, informasi proses dan sumberdaya sistem lainnya.</p>
     <p xml:lang="it">Monitor di sistema di Plasma fornisce un'interfaccia per il monitoraggio dei sensori di sistema, informazioni sui processi e altre risorse di sistema.</p>
+    <p xml:lang="ja">Plasma システムモニタは、センサーやプロセス情報などのシステム情報を監視するためのインターフェースを提供します。</p>
     <p xml:lang="ka">Plasma -ის სისტემის მონიტორი სისტემური სენსორების, პროცესის ინფორმაციის და სხვა სისტემური რესურსების მონიტორინგის ინტერფეისს მოგაწოდებთ.</p>
     <p xml:lang="ko">Plasma 시스템 모니터는 시스템 센서, 프로세스 정보, 기타 시스템 자원을 관찰할 수 있습니다.</p>
     <p xml:lang="lt">Plasma sistemos prižiūryklė pateikia sąsają, skirtą stebėti sistemos jutiklius, procesų informaciją bei kitus sistemos išteklius.</p>
