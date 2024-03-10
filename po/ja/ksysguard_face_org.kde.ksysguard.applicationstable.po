@@ -1,11 +1,12 @@
+# SPDX-FileCopyrightText: 2024 Ryuichi Yamada <ryuichi_ya220@outlook.jp>
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-14 00:58+0000\n"
-"PO-Revision-Date: 2021-09-23 16:37+0900\n"
-"Last-Translator: Tomohiro Hyakutake <tomhioo@outlook.jp>\n"
+"PO-Revision-Date: 2024-03-06 21:17+0900\n"
+"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:49
 #, kde-format
@@ -26,7 +27,7 @@ msgstr "詳細"
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:125
 #, kde-format
@@ -62,27 +63,25 @@ msgstr "詳細を見るアプリケーションを選択してください"
 #, kde-format
 msgctxt "Warning message shown on runtime error"
 msgid "Applications view is unsupported on your system"
-msgstr ""
+msgstr "お使いのシステムではアプリケーション表示はサポートされていません"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show details panel"
-msgstr "詳細情報サイドバーを表示"
+msgstr "詳細パネルを表示"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:29
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm when quitting applications"
-msgstr ""
+msgstr "アプリケーション終了時に確認"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:29
 #, kde-format
 msgctxt "@action"
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:39
 #, kde-format
@@ -167,19 +166,17 @@ msgstr "ユーザ 2 (USR2)"
 msgctxt "@action:inmenu"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] ""
+msgstr[0] "%1 個のアプリケーションを終了"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] ""
+msgstr[0] "%1 個のアプリケーションを終了"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Quit Application"
+#, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
@@ -194,10 +191,12 @@ msgid_plural ""
 "Are you sure you want to quit these %1 applications?\n"
 "Any unsaved work may be lost."
 msgstr[0] ""
+"本当にこれら %1 個のアプリケーションを終了しますか？\n"
+"保存されていない作業は失われる可能性があります。"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
 msgid_plural "%1 Processes"
-msgstr[0] ""
+msgstr[0] "%1 個のプロセス"

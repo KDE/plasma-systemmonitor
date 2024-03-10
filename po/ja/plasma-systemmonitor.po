@@ -1,12 +1,13 @@
+# SPDX-FileCopyrightText: 2024 Ryuichi Yamada <ryuichi_ya220@outlook.jp>
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-08 02:47+0000\n"
-"PO-Revision-Date: 2021-09-24 21:59+0900\n"
-"Last-Translator: Tomohiro Hyakutake <tomhioo@outlook.jp>\n"
-"Language-Team: Japanese <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2024-03-05 01:34+0900\n"
+"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,79 +15,79 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
 msgctxt "@menu"
 msgid "File"
-msgstr ""
+msgstr "ファイル"
 
 #: src/GlobalMenu.qml:18
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr ""
+msgstr "新しいページを追加…"
 
 #: src/GlobalMenu.qml:24
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr ""
+msgstr "ページをインポート…"
 
 #: src/GlobalMenu.qml:30
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
-msgstr ""
+msgstr "現在のページをエクスポート…"
 
 #: src/GlobalMenu.qml:37
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr ""
+msgstr "新しいページを取得…"
 
 #: src/GlobalMenu.qml:54
 #, kde-format
 msgctxt "@menu-action"
 msgid "Quit"
-msgstr ""
+msgstr "終了"
 
 #: src/GlobalMenu.qml:62
 #, kde-format
 msgctxt "@menu"
 msgid "View"
-msgstr ""
+msgstr "表示"
 
 #: src/GlobalMenu.qml:65
 #, kde-format
 msgctxt "@menu-action"
 msgid "Expand Sidebar"
-msgstr ""
+msgstr "サイドバーを展開"
 
 #: src/GlobalMenu.qml:65
 #, kde-format
 msgctxt "@menu-action"
 msgid "Collapse Sidebar"
-msgstr ""
+msgstr "サイドバーを折りたたむ"
 
 #: src/GlobalMenu.qml:72
 #, kde-format
 msgctxt "@menu"
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: src/GlobalMenu.qml:75
 #, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove pages…"
-msgstr ""
+msgstr "ページを編集または削除…"
 
 #: src/GlobalMenu.qml:82
 #, kde-format
 msgctxt "@menu"
 msgid "Help"
-msgstr ""
+msgstr "ヘルプ"
 
 #: src/GlobalMenu.qml:85
 #, kde-format
@@ -103,7 +104,7 @@ msgstr "システムモニタについて"
 #: src/main.cpp:110
 #, kde-format
 msgid "System Monitor"
-msgstr ""
+msgstr "システムモニタ"
 
 #: src/main.cpp:112
 #, kde-format
@@ -113,12 +114,12 @@ msgstr "システムリソース監視アプリケーション"
 #: src/main.cpp:114
 #, kde-format
 msgid "© 2020 Plasma Development Team"
-msgstr ""
+msgstr "© 2020 Plasma Development Team"
 
 #: src/main.cpp:120
 #, kde-format
 msgid "Arjen Hiemstra"
-msgstr ""
+msgstr "Arjen Hiemstra"
 
 #: src/main.cpp:120 src/main.cpp:123 src/main.cpp:125 src/main.cpp:126
 #, kde-format
@@ -128,7 +129,7 @@ msgstr "開発"
 #: src/main.cpp:121
 #, kde-format
 msgid "Uri Herrera"
-msgstr ""
+msgstr "Uri Herrera"
 
 #: src/main.cpp:121
 #, kde-format
@@ -138,7 +139,7 @@ msgstr "デザイン"
 #: src/main.cpp:122
 #, kde-format
 msgid "Nate Graham"
-msgstr ""
+msgstr "Nate Graham"
 
 #: src/main.cpp:122 src/main.cpp:124
 #, kde-format
@@ -148,34 +149,34 @@ msgstr "デザインと品質保証"
 #: src/main.cpp:123
 #, kde-format
 msgid "David Redondo"
-msgstr ""
+msgstr "David Redondo"
 
 #: src/main.cpp:124
 #, kde-format
 msgid "Noah Davis"
-msgstr ""
+msgstr "Noah Davis"
 
 #: src/main.cpp:125
 #, kde-format
 msgid "Marco Martin"
-msgstr ""
+msgstr "Marco Martin"
 
 #: src/main.cpp:126
 #, kde-format
 msgid "David Edmundson"
-msgstr ""
+msgstr "David Edmundson"
 
 #: src/main.cpp:128
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Ryuichi Yamada"
 
 #: src/main.cpp:128
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "ryuichi_ya220@outlook.jp"
 
 #: src/main.qml:68
 #, kde-format
@@ -211,7 +212,7 @@ msgstr "新しいページを取得…"
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
-msgstr ""
+msgstr "サイドバーを展開"
 
 #: src/main.qml:103
 #, kde-format
@@ -253,19 +254,19 @@ msgstr "ページを編集"
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
-msgstr ""
+msgstr "%1をエクスポート"
 
 #: src/main.qml:256 src/main.qml:267
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
-msgstr ""
+msgstr "システムモニタページ (*.page)"
 
 #: src/main.qml:265
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
-msgstr ""
+msgstr "ページをインポート"
 
 #: src/main.qml:298
 #, kde-format
@@ -274,30 +275,33 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
+"ハードウェアアクセラレーションが利用できないため、システムモニタはソフトウェ"
+"アレンダリングを使用しています。そのため、視覚的な不具合が発生する可能性があ"
+"ります。"
 
 #: src/page/ColumnControl.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "Add Section"
-msgstr ""
+msgstr "セクションを追加"
 
 #: src/page/ColumnControl.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Add Separator"
-msgstr ""
+msgstr "セパレータを追加"
 
 #: src/page/ColumnControl.qml:130
 #, kde-format
 msgctxt "@action"
 msgid "Show Background"
-msgstr ""
+msgstr "背景を表示"
 
 #: src/page/ColumnControl.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Remove Background Margins"
-msgstr ""
+msgstr "背景の余白を削除"
 
 #: src/page/EditablePage.qml:123
 #, kde-format
@@ -339,7 +343,7 @@ msgstr "タイトルを追加"
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
-msgstr ""
+msgstr "ページ \"%1\" を設定"
 
 #: src/page/EditablePage.qml:204 src/page/MissingSensorsDialog.qml:123
 #, kde-format
@@ -363,55 +367,55 @@ msgstr "削除"
 #, kde-format
 msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
-msgstr ""
+msgstr "%1を設定"
 
 #: src/page/FaceConfigurationPage.qml:32
 #, kde-format
 msgctxt "@action"
 msgid "Close"
-msgstr ""
+msgstr "閉じる"
 
 #: src/page/FaceConfigurationPage.qml:38
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr ""
+msgstr "プリセットを読み込み…"
 
 #: src/page/FaceConfigurationPage.qml:43
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
-msgstr ""
+msgstr "新しいプリセットを取得..."
 
 #: src/page/FaceConfigurationPage.qml:49
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
-msgstr ""
+msgstr "設定をプリセットとして保存"
 
 #: src/page/FaceConfigurationPage.qml:53
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
-msgstr ""
+msgstr "設定をプリセット %1 として保存しました。"
 
 #: src/page/FaceConfigurationPage.qml:58 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
-msgstr ""
+msgstr "チャートをデスクトップウィジェットとして追加"
 
 #: src/page/FaceConfigurationPage.qml:67
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
-msgstr ""
+msgstr "新しい表示スタイルを取得..."
 
 #: src/page/FaceConfigurationPage.qml:86
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
-msgstr ""
+msgstr "%1 のプリセットを読み込みました。"
 
 #: src/page/FaceConfigurationPage.qml:103
 #, kde-format
@@ -423,7 +427,7 @@ msgstr "タイトル"
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
-msgstr ""
+msgstr "タイトルを表示"
 
 #: src/page/FaceConfigurationPage.qml:127
 #, kde-format
@@ -435,41 +439,41 @@ msgstr "表示スタイル"
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
-msgstr ""
+msgstr "最短の更新間隔:"
 
 #: src/page/FaceConfigurationPage.qml:172
 #, kde-format
 msgid "No Limit"
-msgstr ""
+msgstr "制限なし"
 
 #. i18ndp doesn't handle floats :(
 #: src/page/FaceConfigurationPage.qml:176
 #, kde-format
 msgid "1 second"
-msgstr ""
+msgstr "1 秒"
 
 #: src/page/FaceConfigurationPage.qml:178
 #, kde-format
 msgid "%1 seconds"
-msgstr ""
+msgstr "%1 秒"
 
 #: src/page/FacesModel.cpp:46
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No Chart"
-msgstr ""
+msgstr "チャートなし"
 
 #: src/page/LoadPresetDialog.qml:22
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
-msgstr ""
+msgstr "プリセットを読み込み"
 
 #: src/page/LoadPresetDialog.qml:89
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
-msgstr ""
+msgstr "読み込み"
 
 #: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
 #: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
@@ -482,7 +486,7 @@ msgstr "キャンセル"
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
-msgstr ""
+msgstr "欠けているセンサーを置換"
 
 #: src/page/MoveButton.qml:23
 #, kde-format
@@ -494,12 +498,13 @@ msgstr "移動"
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr ""
+"いくつかのセンサーが不足しているため、このページは正しく表示されません。"
 
 #: src/page/PageContents.qml:104 src/page/PageEditor.qml:135
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
-msgstr ""
+msgstr "修復..."
 
 #: src/page/PageDialog.qml:20
 #, kde-format
@@ -523,7 +528,7 @@ msgstr "名前:"
 #, kde-format
 msgctxt "@info:status"
 msgid "Name cannot be empty."
-msgstr ""
+msgstr "名前は空にはできません。"
 
 #: src/page/PageDialog.qml:100
 #, kde-format
@@ -559,137 +564,137 @@ msgstr "大"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
-msgstr ""
+msgstr "ここからアクションを使用:"
 
 #: src/page/PageDialog.qml:145
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
-msgstr ""
+msgstr "このページを読み込み:"
 
 #: src/page/PageDialog.qml:158
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
-msgstr ""
+msgstr "必要なとき"
 
 #: src/page/PageDialog.qml:159
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"
-msgstr ""
+msgstr "アプリケーション起動時に"
 
 #: src/page/PageEditor.qml:181
 #, kde-format
 msgid "New Title"
-msgstr ""
+msgstr "新しいタイトル"
 
 #: src/page/PageSortDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
-msgstr ""
+msgstr "ページを表示"
 
 #: src/page/PageSortDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr ""
+msgstr "ページを隠す"
 
 #: src/page/PageSortDialog.qml:149
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
-msgstr ""
+msgstr "ページをリセットしない"
 
 #: src/page/PageSortDialog.qml:153
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
-msgstr ""
+msgstr "このページはデフォルトの状態にリセットされます"
 
 #: src/page/PageSortDialog.qml:162
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr ""
+msgstr "このページをデフォルトの状態にリセット"
 
 #: src/page/PageSortDialog.qml:171
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
-msgstr ""
+msgstr "このページを削除しない"
 
 #: src/page/PageSortDialog.qml:175
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
-msgstr ""
+msgstr "このページは削除されます"
 
 #: src/page/PageSortDialog.qml:188
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
-msgstr ""
+msgstr "このページを削除"
 
 #: src/page/PageSortDialog.qml:207
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
-msgstr ""
+msgstr "開始時に表示:"
 
 #: src/page/PageSortDialog.qml:216
 #, kde-format
 msgid "Last Visited Page"
-msgstr ""
+msgstr "最後に表示したページ"
 
 #: src/page/RowControl.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
-msgstr ""
+msgstr "列を追加"
 
 #: src/page/RowControl.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Height"
-msgstr ""
+msgstr "高さ"
 
 #: src/page/RowControl.qml:141
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Balanced"
-msgstr ""
+msgstr "バランス"
 
 #: src/page/RowControl.qml:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
-msgstr ""
+msgstr "それぞれの列で同じ高さを使用することを試みます。"
 
 #: src/page/RowControl.qml:150
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Minimum"
-msgstr ""
+msgstr "最小"
 
 #: src/page/RowControl.qml:151
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
-msgstr ""
+msgstr "内容を正しく表示するために必要な最短の高さを使用します。"
 
 #: src/page/RowControl.qml:159
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Maximum"
-msgstr ""
+msgstr "最大"
 
 #: src/page/RowControl.qml:160
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
-msgstr ""
+msgstr "利用可能な高さをできるだけ使用します。"
 
 #: src/table/ColumnConfigurationDialog.qml:26
 #, kde-format
