@@ -1,4 +1,0 @@
-File=systemmonitor.kcfg
-ClassName=SystemMonitorConfiguration
-Mutators=true
-GenerateProperties=true

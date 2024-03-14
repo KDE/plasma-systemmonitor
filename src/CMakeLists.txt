@@ -2,7 +2,6 @@ add_subdirectory(page)
 add_subdirectory(table)
 add_subdirectory(faces)
 
-kconfig_add_kcfg_files(plasma-systemmonitor_SRCS GENERATE_MOC systemmonitor.kcfgc)
 
 add_definitions(-DQT_NO_KEYWORDS)
 
@@ -23,6 +22,8 @@ ecm_target_qml_sources(plasma-systemmonitor SOURCES
     Main.qml
     GlobalMenu.qml
 )
+
+kconfig_target_kcfg_file(plasma-systemmonitor FILE systemmonitor.kcfg CLASS_NAME SystemMonitorConfiguration MUTATORS GENERATE_PROPERTIES GENERATE_MOC)
 
 target_compile_definitions(plasma-systemmonitor PRIVATE PROJECT_VERSION="${PROJECT_VERSION}")
 target_link_libraries(plasma-systemmonitor PRIVATE
