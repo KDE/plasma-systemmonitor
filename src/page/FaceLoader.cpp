@@ -101,8 +101,9 @@ SensorFaceController *FaceLoader::controller() const
 void FaceLoader::reset()
 {
     auto faceConfig = m_dataObject->value(QStringLiteral("face")).toString();
-    if (s_faceCache.contains(faceConfig)) {
-        s_faceCache.remove(faceConfig);
+    auto cacheName = m_dataObject->fileName() + u"_"_s + faceConfig;
+    if (s_faceCache.contains(cacheName)) {
+        s_faceCache.remove(cacheName);
     }
 
     // Deleting the controller here, even when using deleteLater will trigger a
