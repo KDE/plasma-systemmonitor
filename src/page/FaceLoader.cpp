@@ -9,7 +9,7 @@
 using namespace Qt::StringLiterals;
 using namespace KSysGuard;
 
-QHash<QString, KSysGuard::SensorFaceController *> FaceLoader::s_faceCache;
+QHash<QString, QPointer<KSysGuard::SensorFaceController>> FaceLoader::s_faceCache;
 
 FaceLoader::FaceLoader(QObject *parent)
     : QObject(parent)
@@ -61,7 +61,13 @@ void FaceLoader::setDataObject(PageDataObject *newDataObject)
         auto cacheName = m_dataObject->fileName() + u"_"_s + faceConfig;
         if (s_faceCache.contains(cacheName)) {
             m_faceController = s_faceCache.value(cacheName);
-        } else {
+
+            if (!m_faceController) {
+                s_faceCache.remove(cacheName);
+            }
+        }
+
+        if (!m_faceController) {
             auto configGroup = m_dataObject->config()->group(faceConfig);
             m_faceController = new SensorFaceController(configGroup, qmlEngine(this));
             m_faceController->setShouldSync(false);

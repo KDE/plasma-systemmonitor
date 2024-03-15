@@ -35,8 +35,8 @@ public:
 
 private:
     QPointer<PageDataObject> m_dataObject = nullptr;
-    KSysGuard::SensorFaceController *m_faceController = nullptr;
-    KSysGuard::SensorFaceController *m_oldController = nullptr;
+    QPointer<KSysGuard::SensorFaceController> m_faceController = nullptr;
+    QPointer<KSysGuard::SensorFaceController> m_oldController = nullptr;
 
-    static QHash<QString, KSysGuard::SensorFaceController *> s_faceCache;
+    static QHash<QString, QPointer<KSysGuard::SensorFaceController>> s_faceCache;
 };
