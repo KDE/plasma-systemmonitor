@@ -178,6 +178,10 @@ Kirigami.Dialog {
                         }
                     ]
                 }
+
+                background: Rectangle {
+                    color: listItemContainer.filesWriteable == Page.PagesModel.AllWriteable && listItemContainer.shouldRemoveFiles ? Kirigami.Theme.negativeBackgroundColor : Kirigami.Theme.backgroundColor
+                }
             }
         }
     }
