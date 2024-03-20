@@ -100,6 +100,7 @@ Keywords[eu]=ataza;kudeatzailea;prozesua;puz;memoria;
 Keywords[fi]=tehtävä;hallinta;prosessi;suoritin;keskusyksikkö;prosessori;muisti;
 Keywords[fr]=tâche ; gestionnaire ; processus ; processeur ; mémoire ;
 Keywords[gl]=tarefa;xestor;proceso;cpu;memoria
+Keywords[hu]=feladat;kezelő;folyamat;cpu;memória;
 Keywords[ia]=task;manager;process;cpu;memory;
 Keywords[ie]=tache;gerente;processe;cpu;memorie;
 Keywords[it]=processo;gestore;processo;cpu;memoria;
