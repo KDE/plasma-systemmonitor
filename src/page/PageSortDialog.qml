@@ -10,7 +10,7 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 import org.kde.kirigami as Kirigami
-
+import org.kde.kirigami.delegates as KD
 
 import org.kde.ksysguard.page as Page
 
@@ -89,6 +89,7 @@ Kirigami.Dialog {
                             sortModel.move(oldIndex, newIndex)
                         }
                     }
+
                     CheckBox {
                         checked: !listItemContainer.hidden
                         onToggled: pageList.model.setData(pageList.model.index(listItemContainer.index, 0), !listItemContainer.hidden, Page.PagesModel.HiddenRole)
@@ -98,29 +99,22 @@ Kirigami.Dialog {
                         ToolTip.visible: hovered
                     }
 
-                    Kirigami.Icon {
-                        Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
-                        Layout.preferredHeight: Layout.preferredWidth
-                        source: listItemContainer.icon
+                    KD.IconTitleSubtitle {
+                        id: iconTitleSubtitle
+
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+
+                        icon.name: listItemContainer.icon
+                        icon.width: Kirigami.Units.iconSizes.smallMedium
+                        icon.height: Kirigami.Units.iconSizes.smallMedium
+
+                        title: listItemContainer.title
+                        reserveSpaceForSubtitle: true
+
                         opacity: listItemContainer.hidden ? 0.3 : 1
                     }
-                    ColumnLayout {
-                        Layout.fillWidth: true
-                        Layout.alignment: Qt.AlignVCenter
-                        spacing: 0
-                        Label {
-                            Layout.fillWidth: true
-                            text: listItemContainer.title
-                            opacity: listItemContainer.hidden ? 0.3 : 1
-                        }
-                        Label {
-                            id: subtitle
-                            Layout.fillWidth: true
-                            font: Kirigami.Theme.smallFont
-                            opacity: 0.7
-                            visible: text.length > 0
-                        }
-                    }
+
                     Button {
                         id: removeButton
                         onClicked: pageList.model.setData(pageList.model.index(listItemContainer.index, 0), !listItemContainer.shouldRemoveFiles, Page.PageSortModel.ShouldRemoveFilesRole)
@@ -147,8 +141,8 @@ Kirigami.Dialog {
                                 ToolTip.text: i18nc("@info:tooltip", "Do not reset the page")
                             }
                             PropertyChanges {
-                                target: subtitle
-                                text: i18nc("@item:intable", "The page will be reset to its default state")
+                                target: iconTitleSubtitle
+                                subtitle: i18nc("@item:intable", "The page will be reset to its default state")
                             }
                         },
                         State {
@@ -169,8 +163,8 @@ Kirigami.Dialog {
                                 ToolTip.text: i18nc("@info:tooltip", "Do not remove this page")
                             }
                             PropertyChanges {
-                                target: subtitle
-                                text: i18nc("@item:intable", "The page will be removed")
+                                target: iconTitleSubtitle
+                                subtitle: i18nc("@item:intable", "The page will be removed")
                             }
                         },
                         State {
