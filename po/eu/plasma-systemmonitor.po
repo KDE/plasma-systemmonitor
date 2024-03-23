@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-09 00:39+0000\n"
+"POT-Creation-Date: 2024-03-23 00:39+0000\n"
 "PO-Revision-Date: 2023-07-15 08:39+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -584,61 +584,61 @@ msgstr "Aplikazio abioan"
 msgid "New Title"
 msgstr "Titulu berria"
 
-#: src/page/PageSortDialog.qml:88
+#: src/page/PageSortDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Erakutsi orria"
 
-#: src/page/PageSortDialog.qml:89
+#: src/page/PageSortDialog.qml:97
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Ezkutatu orria"
 
-#: src/page/PageSortDialog.qml:139
+#: src/page/PageSortDialog.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Orria ez berrezarri"
 
-#: src/page/PageSortDialog.qml:143
+#: src/page/PageSortDialog.qml:145
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Orria egoera lehenetsira berrezarriko da"
 
-#: src/page/PageSortDialog.qml:152
+#: src/page/PageSortDialog.qml:154
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Berrezarri orria egoera lehenetsira"
 
-#: src/page/PageSortDialog.qml:161
+#: src/page/PageSortDialog.qml:163
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Ez kendu orri hau"
 
-#: src/page/PageSortDialog.qml:165
+#: src/page/PageSortDialog.qml:167
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Orria kendu egingo da"
 
-#: src/page/PageSortDialog.qml:178
+#: src/page/PageSortDialog.qml:176
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Kendu orri hau"
 
-#: src/page/PageSortDialog.qml:191
+#: src/page/PageSortDialog.qml:194
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Hasi honekin:"
 
-#: src/page/PageSortDialog.qml:200
+#: src/page/PageSortDialog.qml:203
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Bisitatutako azken orria"

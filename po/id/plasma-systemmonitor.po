@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-09 00:39+0000\n"
+"POT-Creation-Date: 2024-03-23 00:39+0000\n"
 "PO-Revision-Date: 2022-09-27 17:14+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -583,61 +583,61 @@ msgstr ""
 msgid "New Title"
 msgstr "Judul Baru"
 
-#: src/page/PageSortDialog.qml:88
+#: src/page/PageSortDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Tampilkan Halaman"
 
-#: src/page/PageSortDialog.qml:89
+#: src/page/PageSortDialog.qml:97
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Sembunyikan Halaman"
 
-#: src/page/PageSortDialog.qml:139
+#: src/page/PageSortDialog.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Jangan reset halaman"
 
-#: src/page/PageSortDialog.qml:143
+#: src/page/PageSortDialog.qml:145
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Halaman akan di-reset ke keadaan default-nya"
 
-#: src/page/PageSortDialog.qml:152
+#: src/page/PageSortDialog.qml:154
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Reset halaman ke keadaan default-nya"
 
-#: src/page/PageSortDialog.qml:161
+#: src/page/PageSortDialog.qml:163
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Jangan singkirkan halaman ini"
 
-#: src/page/PageSortDialog.qml:165
+#: src/page/PageSortDialog.qml:167
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Halaman akan disingkirkan"
 
-#: src/page/PageSortDialog.qml:178
+#: src/page/PageSortDialog.qml:176
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Singkirkan halaman ini"
 
-#: src/page/PageSortDialog.qml:191
+#: src/page/PageSortDialog.qml:194
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Dimulai dengan:"
 
-#: src/page/PageSortDialog.qml:200
+#: src/page/PageSortDialog.qml:203
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Halaman Terakhir Yang Dikunjungi"

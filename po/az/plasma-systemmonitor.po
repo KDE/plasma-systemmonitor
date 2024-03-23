@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-09 00:39+0000\n"
+"POT-Creation-Date: 2024-03-23 00:39+0000\n"
 "PO-Revision-Date: 2022-07-31 23:12+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -581,61 +581,61 @@ msgstr "Tətbiq başladığı zaman"
 msgid "New Title"
 msgstr "Yeni Başlıq"
 
-#: src/page/PageSortDialog.qml:88
+#: src/page/PageSortDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Səhifəni göstərmək"
 
-#: src/page/PageSortDialog.qml:89
+#: src/page/PageSortDialog.qml:97
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Səhifəni gizlətmək"
 
-#: src/page/PageSortDialog.qml:139
+#: src/page/PageSortDialog.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Səhifəni sıfırlamamaq"
 
-#: src/page/PageSortDialog.qml:143
+#: src/page/PageSortDialog.qml:145
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Səhifə onun standart vəziyyətinə sıfırlanacaq"
 
-#: src/page/PageSortDialog.qml:152
+#: src/page/PageSortDialog.qml:154
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Səhifəni ilkin vəziyyətinə sıfırlamaq"
 
-#: src/page/PageSortDialog.qml:161
+#: src/page/PageSortDialog.qml:163
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Bu səhifəni silməmək"
 
-#: src/page/PageSortDialog.qml:165
+#: src/page/PageSortDialog.qml:167
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Bu səhifə silinəcək"
 
-#: src/page/PageSortDialog.qml:178
+#: src/page/PageSortDialog.qml:176
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Bu səhifəni silmək"
 
-#: src/page/PageSortDialog.qml:191
+#: src/page/PageSortDialog.qml:194
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Bununla başlatmaq:"
 
-#: src/page/PageSortDialog.qml:200
+#: src/page/PageSortDialog.qml:203
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Sonuncu baxılan səhifə"
