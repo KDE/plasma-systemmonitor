@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-09 02:34+0000\n"
+"POT-Creation-Date: 2024-03-23 02:27+0000\n"
 "PO-Revision-Date: 2023-06-27 15:54+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -582,61 +582,61 @@ msgstr "Sovelluksen käynnistyessä"
 msgid "New Title"
 msgstr "Uusi otsikko"
 
-#: src/page/PageSortDialog.qml:88
+#: src/page/PageSortDialog.qml:95
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Näytä sivu"
 
-#: src/page/PageSortDialog.qml:89
+#: src/page/PageSortDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Piilota sivu"
 
-#: src/page/PageSortDialog.qml:139
+#: src/page/PageSortDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Älä palauta sivua"
 
-#: src/page/PageSortDialog.qml:143
+#: src/page/PageSortDialog.qml:151
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Sivu palautetaan oletustilaansa"
 
-#: src/page/PageSortDialog.qml:152
+#: src/page/PageSortDialog.qml:160
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Palauta sivu oletustilaansa"
 
-#: src/page/PageSortDialog.qml:161
+#: src/page/PageSortDialog.qml:169
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Älä poista tätä sivua"
 
-#: src/page/PageSortDialog.qml:165
+#: src/page/PageSortDialog.qml:173
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Sivu poistetaan"
 
-#: src/page/PageSortDialog.qml:178
+#: src/page/PageSortDialog.qml:182
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Poista tämä sivu"
 
-#: src/page/PageSortDialog.qml:191
+#: src/page/PageSortDialog.qml:196
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Aloita tällä:"
 
-#: src/page/PageSortDialog.qml:200
+#: src/page/PageSortDialog.qml:205
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Viimeisin vierailtu sivu"
