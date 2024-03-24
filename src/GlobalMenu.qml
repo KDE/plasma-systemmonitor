@@ -90,7 +90,7 @@ Labs.MenuBar {
         Labs.MenuItem {
             text: i18nc("@menu-action", "About System Monitor")
             icon.name: "help-about"
-            onTriggered: pageStack.layers.push("qrc:/AboutPage.qml")
+            onTriggered: pageStack.layers.push("AboutPage.qml")
             enabled: app.pageStack.layers.depth <= 1
         }
     }
