@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2023 Enol P. <enolp@softastur.org>
+# SPDX-FileCopyrightText: 2023, 2024 Enol P. <enolp@softastur.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-01 01:41+0000\n"
-"PO-Revision-Date: 2023-12-14 22:01+0100\n"
+"PO-Revision-Date: 2024-03-27 21:10+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Assamese <alministradores@softastur.org>\n"
 "Language: ast\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.02.1\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -87,7 +87,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
-msgstr ""
+msgstr "Colar de l'aplicación"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:47
 #, kde-format
@@ -99,7 +99,7 @@ msgstr "Amosar la barra llateral de detalles"
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
-msgstr ""
+msgstr "Configurar les columnes…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:185
 #, kde-format
