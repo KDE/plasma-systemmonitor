@@ -1,121 +1,122 @@
+# translation of plasma-systemmonitor.pot to Esperanto
+# Copyright (C) 2019 Free Software Foundation, Inc.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
+#
+# Minuskloj: ĉ ĝ ĵ ĥ ŝ ŭ   Majuskloj: Ĉ Ĝ Ĵ Ĥ Ŝ Ŭ
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: kdeorg\n"
+"Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-08 02:47+0000\n"
-"PO-Revision-Date: 2024-03-28 19:25\n"
-"Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2023-06-15 20:56+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-stable/messages/plasma-systemmonitor/plasma-"
-"systemmonitor.pot\n"
-"X-Crowdin-File-ID: 24930\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
 msgctxt "@menu"
 msgid "File"
-msgstr "文件"
+msgstr "Dosiero"
 
 #: src/GlobalMenu.qml:18
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr "新增页面…"
+msgstr "Aldoni novan paĝon…"
 
 #: src/GlobalMenu.qml:24
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "导入页面…"
+msgstr "Importi paĝon…"
 
 #: src/GlobalMenu.qml:30
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
-msgstr "导出当前页面…"
+msgstr "Eksporti Nunan Paĝon…"
 
 #: src/GlobalMenu.qml:37
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr "获取新页面…"
+msgstr "Ekpreni novajn paĝojn…"
 
 #: src/GlobalMenu.qml:54
 #, kde-format
 msgctxt "@menu-action"
 msgid "Quit"
-msgstr "退出"
+msgstr "Forlasi"
 
 #: src/GlobalMenu.qml:62
 #, kde-format
 msgctxt "@menu"
 msgid "View"
-msgstr "视图"
+msgstr "Vido"
 
 #: src/GlobalMenu.qml:65
 #, kde-format
 msgctxt "@menu-action"
 msgid "Expand Sidebar"
-msgstr "展开侧边栏"
+msgstr "Vastigu Flankbreton"
 
 #: src/GlobalMenu.qml:65
 #, kde-format
 msgctxt "@menu-action"
 msgid "Collapse Sidebar"
-msgstr "折叠侧边栏"
+msgstr "Kolapsi Flankbreton"
 
 #: src/GlobalMenu.qml:72
 #, kde-format
 msgctxt "@menu"
 msgid "Settings"
-msgstr "设置"
+msgstr "Agordoj"
 
 #: src/GlobalMenu.qml:75
 #, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove pages…"
-msgstr "编辑或移除页面…"
+msgstr "Redakti aŭ Forigi paĝojn…"
 
 #: src/GlobalMenu.qml:82
 #, kde-format
 msgctxt "@menu"
 msgid "Help"
-msgstr "帮助"
+msgstr "Helpo"
 
 #: src/GlobalMenu.qml:85
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr "报告程序缺陷…"
+msgstr "Raporti cimon…"
 
 #: src/GlobalMenu.qml:91
 #, kde-format
 msgctxt "@menu-action"
 msgid "About System Monitor"
-msgstr "关于系统监视器"
+msgstr "Pri Sistema Monitoro"
 
 #: src/main.cpp:110
 #, kde-format
 msgid "System Monitor"
-msgstr "系统监视器"
+msgstr "Sistema Monitoro"
 
 #: src/main.cpp:112
 #, kde-format
 msgid "An application for monitoring system resources"
-msgstr "系统资源监控程序"
+msgstr "Apliko por monitorado de sistemaj rimedoj"
 
 #: src/main.cpp:114
 #, kde-format
 msgid "© 2020 Plasma Development Team"
-msgstr "© 2020 Plasma Development Team"
+msgstr "© 2020 Plasma Disvolva Teamo"
 
 #: src/main.cpp:120
 #, kde-format
@@ -125,7 +126,7 @@ msgstr "Arjen Hiemstra"
 #: src/main.cpp:120 src/main.cpp:123 src/main.cpp:125 src/main.cpp:126
 #, kde-format
 msgid "Development"
-msgstr "开发"
+msgstr "Evoluo"
 
 #: src/main.cpp:121
 #, kde-format
@@ -135,7 +136,7 @@ msgstr "Uri Herrera"
 #: src/main.cpp:121
 #, kde-format
 msgid "Design"
-msgstr "设计"
+msgstr "Dezajno"
 
 #: src/main.cpp:122
 #, kde-format
@@ -145,7 +146,7 @@ msgstr "Nate Graham"
 #: src/main.cpp:122 src/main.cpp:124
 #, kde-format
 msgid "Design and Quality Assurance"
-msgstr "设计与质量保障"
+msgstr "Dezajno kaj Kvalita Asekuro"
 
 #: src/main.cpp:123
 #, kde-format
@@ -171,103 +172,103 @@ msgstr "David Edmundson"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Tyson Tan"
+msgstr "Oliver Kellogg"
 
 #: src/main.cpp:128
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "tds00@qq.com"
+msgstr "okellogg@users.sourceforge.net"
 
 #: src/main.qml:68
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
-msgstr "工具"
+msgstr "Iloj"
 
 #: src/main.qml:74
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
-msgstr "编辑或移除页面…"
+msgstr "Redakti aŭ Forigi paĝojn…"
 
 #: src/main.qml:79
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
-msgstr "导出当前页面…"
+msgstr "Eksporti Nunan Paĝon…"
 
 #: src/main.qml:86
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "导入页面…"
+msgstr "Importi paĝon…"
 
 #: src/main.qml:91
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
-msgstr "获取新页面…"
+msgstr "Ekpreni novajn paĝojn…"
 
 #: src/main.qml:103
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
-msgstr "展开侧边栏"
+msgstr "Vastigu Flankbreton"
 
 #: src/main.qml:103
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
-msgstr "折叠侧边栏"
+msgstr "Kolapsi Flankbreton"
 
 #: src/main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr "报告程序缺陷…"
+msgstr "Raporti cimon…"
 
 #: src/main.qml:116
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
-msgstr "关于系统监视器"
+msgstr "Pri Sistema Monitoro"
 
 #: src/main.qml:141
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
-msgstr "新增页面…"
+msgstr "Aldoni novan paĝon…"
 
 #: src/main.qml:210
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
-msgstr "新增页面"
+msgstr "Aldoni Novan Paĝon"
 
 #: src/main.qml:231
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
-msgstr "编辑页面"
+msgstr "Redakti Paĝojn"
 
 #: src/main.qml:254
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
-msgstr "导出 %1"
+msgstr "Eksporti %1"
 
 #: src/main.qml:256 src/main.qml:267
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
-msgstr "系统监视器页面 (*.page)"
+msgstr "Paĝo de Sistema Monitoro (*.paĝo)"
 
 #: src/main.qml:265
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
-msgstr "导入页面"
+msgstr "Import Paĝo"
 
 #: src/main.qml:298
 #, kde-format
@@ -276,475 +277,476 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
-"系统监视器已回退到软件渲染，因为硬件加速不可用。这可能造成视觉瑕疵。请检查本"
-"机的图形驱动程序。"
+"Sistema Monitoro revenis al programara bildigo ĉar hardvara akcelado ne "
+"haveblas, kaj vidaj misfunkciadoj povas aperi. Bonvolu kontroli viajn "
+"grafikajn pelilojn."
 
 #: src/page/ColumnControl.qml:117
 #, kde-format
 msgctxt "@action"
 msgid "Add Section"
-msgstr "新增节段"
+msgstr "Aldoni Sekcion"
 
 #: src/page/ColumnControl.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Add Separator"
-msgstr "新增分隔线"
+msgstr "Aldoni Apartigilon"
 
 #: src/page/ColumnControl.qml:130
 #, kde-format
 msgctxt "@action"
 msgid "Show Background"
-msgstr "显示背景色"
+msgstr "Montri Fonon"
 
 #: src/page/ColumnControl.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Remove Background Margins"
-msgstr "移除背景边缘"
+msgstr "Forigi Fonajn Marĝojn"
 
 #: src/page/EditablePage.qml:123
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
-msgstr "编辑页面"
+msgstr "Redakti Paĝon"
 
 #: src/page/EditablePage.qml:133
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
-msgstr "保存更改"
+msgstr "Konservi Ŝanĝojn"
 
 #: src/page/EditablePage.qml:143
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
-msgstr "丢弃更改"
+msgstr "Forĵeti Ŝanĝojn"
 
 #: src/page/EditablePage.qml:154
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "配置页面…"
+msgstr "Agordi paĝon…"
 
 #: src/page/EditablePage.qml:163
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
-msgstr "新增一行"
+msgstr "Aldoni Vicon"
 
 #: src/page/EditablePage.qml:172
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
-msgstr "新增一列"
+msgstr "Aldoni titolon"
 
 #: src/page/EditablePage.qml:202
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
-msgstr "配置页面“%1”"
+msgstr "Agordi paĝon \"%1\""
 
 #: src/page/EditablePage.qml:204 src/page/MissingSensorsDialog.qml:123
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
-msgstr "保存"
+msgstr "Konservi"
 
 #: src/page/EditorToolBar.qml:36
 #, kde-format
 msgctxt "@action"
 msgid "Add"
-msgstr "新增"
+msgstr "Aldoni"
 
 #: src/page/EditorToolBar.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Remove"
-msgstr "移除"
+msgstr "Forigi"
 
 #: src/page/FaceConfigurationPage.qml:26
 #, kde-format
 msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
-msgstr "配置 %1"
+msgstr "Agordi %1"
 
 #: src/page/FaceConfigurationPage.qml:32
 #, kde-format
 msgctxt "@action"
 msgid "Close"
-msgstr "保存"
+msgstr "Fermi"
 
 #: src/page/FaceConfigurationPage.qml:38
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr "加载预设…"
+msgstr "Ŝargi antaŭgordilon…"
 
 #: src/page/FaceConfigurationPage.qml:43
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
-msgstr "获取新预设…"
+msgstr "Akiri novajn antaŭgordojn…"
 
 #: src/page/FaceConfigurationPage.qml:49
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
-msgstr "保存设置为预设"
+msgstr "Konservi agordojn kiel antaŭdifinitajn"
 
 #: src/page/FaceConfigurationPage.qml:53
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
-msgstr "保存设置为预设 %1。"
+msgstr "Konservitaj agordoj kiel antaŭdifinita %1."
 
 #: src/page/FaceConfigurationPage.qml:58 src/page/PageContents.qml:298
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
-msgstr "添加此图表为桌面挂件"
+msgstr "Aldoni Charton kiel Labortablan Fenestraĵon"
 
 #: src/page/FaceConfigurationPage.qml:67
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
-msgstr "获取新显示风格…"
+msgstr "Akiri novajn ekranstilojn…"
 
 #: src/page/FaceConfigurationPage.qml:86
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
-msgstr "已加载预设 %1。"
+msgstr "Ŝargita antaŭfiksita %1."
 
 #: src/page/FaceConfigurationPage.qml:103
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
-msgstr "标题"
+msgstr "Titolo"
 
 #: src/page/FaceConfigurationPage.qml:109
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
-msgstr "显示标题"
+msgstr "Montri Titolo"
 
 #: src/page/FaceConfigurationPage.qml:127
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
-msgstr "显示风格"
+msgstr "Montra Stilo"
 
 #: src/page/FaceConfigurationPage.qml:155
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
-msgstr "更新最小间隔："
+msgstr "Minimuma tempo inter ĝisdatigoj:"
 
 #: src/page/FaceConfigurationPage.qml:172
 #, kde-format
 msgid "No Limit"
-msgstr "无限制"
+msgstr "Neniu Limo"
 
 #. i18ndp doesn't handle floats :(
 #: src/page/FaceConfigurationPage.qml:176
 #, kde-format
 msgid "1 second"
-msgstr "1 秒"
+msgstr "1 sekundo"
 
 #: src/page/FaceConfigurationPage.qml:178
 #, kde-format
 msgid "%1 seconds"
-msgstr "%1 秒"
+msgstr "%1 sekundoj"
 
 #: src/page/FacesModel.cpp:46
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No Chart"
-msgstr "无图表"
+msgstr "Neniu Diagramo"
 
 #: src/page/LoadPresetDialog.qml:22
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
-msgstr "加载预设"
+msgstr "Ŝargi Antaŭmetiton"
 
 #: src/page/LoadPresetDialog.qml:89
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
-msgstr "加载"
+msgstr "Ŝargi"
 
 #: src/page/LoadPresetDialog.qml:95 src/page/MissingSensorsDialog.qml:128
 #: src/page/PageDialog.qml:184 src/table/KillDialog.qml:102
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr "取消"
+msgstr "Nuligi"
 
 #: src/page/MissingSensorsDialog.qml:35
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
-msgstr "替换缺少的传感器"
+msgstr "Anstataŭigi Mankantajn Sensilojn"
 
 #: src/page/MoveButton.qml:23
 #, kde-format
 msgctxt "@action"
 msgid "Move"
-msgstr "移动"
+msgstr "Movi"
 
 #: src/page/PageContents.qml:100 src/page/PageEditor.qml:131
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
-msgstr "此页面缺少了部分传感器，它将无法正常显示。"
+msgstr "Ĉi tiu paĝo mankas iuj sensiloj kaj ne aperos ĝuste."
 
 #: src/page/PageContents.qml:104 src/page/PageEditor.qml:135
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
-msgstr "修复…"
+msgstr "Ripari…"
 
 #: src/page/PageDialog.qml:20
 #, kde-format
 msgctxt "@action:button"
 msgid "Add"
-msgstr "新增"
+msgstr "Aldoni"
 
 #: src/page/PageDialog.qml:23
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "New Page"
-msgstr "新页面"
+msgstr "Nova Paĝo"
 
 #: src/page/PageDialog.qml:85
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Name:"
-msgstr "名称："
+msgstr "Nomo:"
 
 #: src/page/PageDialog.qml:96
 #, kde-format
 msgctxt "@info:status"
 msgid "Name cannot be empty."
-msgstr "名称不能为空。"
+msgstr "Nomo ne povas esti malplena."
 
 #: src/page/PageDialog.qml:100
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Icon:"
-msgstr "图标："
+msgstr "Piktogramo:"
 
 #: src/page/PageDialog.qml:105
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page Margins:"
-msgstr "页边距"
+msgstr "Paĝaj Marĝenoj:"
 
 #: src/page/PageDialog.qml:118
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "None"
-msgstr "无"
+msgstr "Neniu"
 
 #: src/page/PageDialog.qml:119
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Small"
-msgstr "小"
+msgstr "Malgranda"
 
 #: src/page/PageDialog.qml:120
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Large"
-msgstr "大"
+msgstr "Granda"
 
 #: src/page/PageDialog.qml:127
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
-msgstr "所用操作来自："
+msgstr "Uzi Agojn De:"
 
 #: src/page/PageDialog.qml:145
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
-msgstr "页面加载时机："
+msgstr "Ŝargi ĉi tiun paĝon:"
 
 #: src/page/PageDialog.qml:158
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
-msgstr "按需加载"
+msgstr "Kiam necesas"
 
 #: src/page/PageDialog.qml:159
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"
-msgstr "应用程序启动时加载"
+msgstr "Dum lanĉo de aplikaĵo"
 
 #: src/page/PageEditor.qml:181
 #, kde-format
 msgid "New Title"
-msgstr "新标题"
+msgstr "Nova Titolo"
 
 #: src/page/PageSortDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
-msgstr "显示页面"
+msgstr "Montri Paĝon"
 
 #: src/page/PageSortDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr "隐藏页面"
+msgstr "Kaŝi Paĝon"
 
 #: src/page/PageSortDialog.qml:149
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
-msgstr "不重置页面"
+msgstr "Ne restarigi la paĝon"
 
 #: src/page/PageSortDialog.qml:153
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
-msgstr "页面将重置为默认状态"
+msgstr "La paĝo estos rekomencigita al sia defaŭlta stato"
 
 #: src/page/PageSortDialog.qml:162
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr "重置页面为默认状态"
+msgstr "Restarigi la paĝon al ĝia defaŭlta stato"
 
 #: src/page/PageSortDialog.qml:171
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
-msgstr "不移除此页面"
+msgstr "Ne forigi ĉi tiun paĝon"
 
 #: src/page/PageSortDialog.qml:175
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
-msgstr "此页面将被移除"
+msgstr "La paĝo estos forigita"
 
 #: src/page/PageSortDialog.qml:188
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
-msgstr "移除此页面"
+msgstr "Forigi ĉi tiun paĝon"
 
 #: src/page/PageSortDialog.qml:207
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
-msgstr "开始于："
+msgstr "Komenci per:"
 
 #: src/page/PageSortDialog.qml:216
 #, kde-format
 msgid "Last Visited Page"
-msgstr "最后访问页面"
+msgstr "Lasta Vizitita Paĝo"
 
 #: src/page/RowControl.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
-msgstr "新增一列"
+msgstr "Aldoni Kolumnon"
 
 #: src/page/RowControl.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Height"
-msgstr "高度"
+msgstr "Alteco"
 
 #: src/page/RowControl.qml:141
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Balanced"
-msgstr "平衡"
+msgstr "Ekvilibrata"
 
 #: src/page/RowControl.qml:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
-msgstr "尝试在每行使用相同的高度。"
+msgstr "Provi uzi la saman altecon tra malsamaj vicoj."
 
 #: src/page/RowControl.qml:150
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Minimum"
-msgstr "最小"
+msgstr "Minimumo"
 
 #: src/page/RowControl.qml:151
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
-msgstr "使用能正常显示内容的最小高度。"
+msgstr "Uzi la minimuman altecon necesan por ĝuste montri enhavon."
 
 #: src/page/RowControl.qml:159
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Maximum"
-msgstr "最大"
+msgstr "Maksimumo"
 
 #: src/page/RowControl.qml:160
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
-msgstr "尝试使用尽可能大的高度。"
+msgstr "Provi uzi kiel eble plej multe da alteco."
 
 #: src/table/ColumnConfigurationDialog.qml:26
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
-msgstr "配置列"
+msgstr "Agordi Kolumnojn"
 
 #: src/table/ColumnConfigurationDialog.qml:150
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
-msgstr "隐藏"
+msgstr "Kaŝita"
 
 #: src/table/ColumnConfigurationDialog.qml:151
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
-msgstr "仅文字"
+msgstr "Nur Teksto"
 
 #: src/table/ColumnConfigurationDialog.qml:157
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
-msgstr "折线图"
+msgstr "Linia Diagramo"
 
 #: src/table/ColumnConfigurationDialog.qml:161
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
-msgstr "仅文本 (缩放到100%)"
+msgstr "Nur Teksto (Skalita al 100%)"
 
 #: src/table/ColumnConfigurationDialog.qml:162
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
-msgstr "折线图 (缩放到100%)"
+msgstr "Linia diagramo (Skalita al 100%)"
 
 #: src/table/KillDialog.qml:87
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
-msgstr "不再询问"
+msgstr "Ne demandi denove"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Kill a Window…"
-msgstr "强制中止窗口…"
+msgstr "Malestigi Fenestron…"
 
 #: src/ToolsModel.cpp:115
 #, kde-format
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
-msgstr "启动 %1"
+msgstr "Lanĉi %1"
