@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-23 02:27+0000\n"
-"PO-Revision-Date: 2024-01-06 03:31\n"
+"PO-Revision-Date: 2024-03-30 19:38\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,9 +14,9 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/plasma-systemmonitor/plasma-"
+"X-Crowdin-File: /kf6-stable/messages/plasma-systemmonitor/plasma-"
 "systemmonitor.pot\n"
-"X-Crowdin-File-ID: 43645\n"
+"X-Crowdin-File-ID: 50568\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -64,13 +64,13 @@ msgstr "视图"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Expand Sidebar"
-msgstr "展开侧栏"
+msgstr "展开侧边栏"
 
 #: src/GlobalMenu.qml:65
 #, kde-format
 msgctxt "@menu-action"
 msgid "Collapse Sidebar"
-msgstr "折叠侧栏"
+msgstr "折叠侧边栏"
 
 #: src/GlobalMenu.qml:72
 #, kde-format
@@ -213,13 +213,13 @@ msgstr "获取新页面…"
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
-msgstr "展开侧栏"
+msgstr "展开侧边栏"
 
 #: src/Main.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
-msgstr "折叠侧栏"
+msgstr "折叠侧边栏"
 
 #: src/Main.qml:118
 #, kde-format
