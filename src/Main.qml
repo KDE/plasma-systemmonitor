@@ -125,6 +125,13 @@ Kirigami.ApplicationWindow {
                         displayHint: Kirigami.DisplayHint.AlwaysHide
                         onTriggered: app.pageStack.layers.push("AboutPage.qml")
                         enabled: app.pageStack.layers.depth <= 1
+                    },
+                    Kirigami.Action {
+                        icon.name: "kdeapp";
+                        text: i18nc("@action", "About KDE");
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
+                        onTriggered: app.pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutKDE"))
+                        enabled: app.pageStack.layers.depth <= 1
                     }
                 ]
                 Component.onCompleted: {
