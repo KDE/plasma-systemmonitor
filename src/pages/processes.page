@@ -3,6 +3,7 @@
 
 [Face-94051759765872][Appearance]
 chartFace=org.kde.ksysguard.processtable
+updateRateLimit=1500
 
 [page]
 icon=view-process-system
