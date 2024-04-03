@@ -53,7 +53,7 @@ Faces.SensorFace {
         Kirigami.Action {
             id: configureColumnsAction
             icon.name: "configure"
-            text: i18nc("@action", "Configure columns…")
+            text: i18nc("@action", "Configure Columns…")
             onTriggered: columnDialog.open()
         }
     ]
