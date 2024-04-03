@@ -123,7 +123,7 @@ Kirigami.ApplicationWindow {
                         icon.name: "help-about-symbolic";
                         text: i18nc("@action", "About System Monitor");
                         displayHint: Kirigami.DisplayHint.AlwaysHide
-                        onTriggered: app.pageStack.layers.push("AboutPage.qml")
+                        onTriggered: app.pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutPage"))
                         enabled: app.pageStack.layers.depth <= 1
                     },
                     Kirigami.Action {
