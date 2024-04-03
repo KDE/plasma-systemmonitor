@@ -9,6 +9,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Window
 
 import org.kde.kirigami as Kirigami
 
@@ -275,6 +276,8 @@ Faces.SensorFace {
 
     Table.ColumnConfigurationDialog {
         id: columnDialog
+
+        parent: root.Window.window?.overlay
 
         sourceModel: table.processModel.attributesModel
 
