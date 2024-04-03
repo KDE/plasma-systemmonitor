@@ -28,6 +28,11 @@ BaseCellDelegate {
 
     contentItem: RowLayout {
         id: row
+
+        // This is so the TreeViewDelegate from the style can detect when to show a tooltip.
+        // Since our label is one level under, it doesn't have access to `truncated` normally.
+        property alias truncated: label.truncated
+
         Kirigami.Icon {
             Layout.preferredWidth: delegate.iconSize
             Layout.preferredHeight: Layout.preferredWidth
