@@ -12,6 +12,7 @@ import QtQuick.Layouts
 import QtQuick.Window
 
 import org.kde.kirigami as Kirigami
+import org.kde.kquickcontrolsaddons as KQuickControlsAddons
 
 import org.kde.ksysguard.faces as Faces
 import org.kde.ksysguard.process as Process
@@ -143,6 +144,7 @@ Faces.SensorFace {
         onSortOrderChanged: root.config.sortDirection = sortOrder
 
         onContextMenuRequested: (index, position) => {
+            contextMenu.index = index;
             contextMenu.popup(null, position.x, position.y)
         }
 
@@ -166,6 +168,8 @@ Faces.SensorFace {
 
     Menu {
         id: contextMenu
+
+        property var index
 
 //         MenuItem { text: i18n("Set priority...") }
         Menu {
@@ -204,6 +208,13 @@ Faces.SensorFace {
                 text: i18nc("@action:inmenu  Send Signal", "User 2 (USR2)")
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.User2Signal)
             }
+        }
+        MenuItem {
+            icon.name: "edit-copy";
+            text: i18nc("@action:inmenu", "Copy Current Column")
+            onTriggered: clipboard.content = table.model.data(contextMenu.index)
+
+            KQuickControlsAddons.Clipboard { id: clipboard }
         }
 //         MenuItem { text: i18nc("@action:inmenu", "Show Application Window") }
         MenuSeparator { }
