@@ -187,6 +187,7 @@ Faces.SensorFace {
 
         Menu {
             title: i18nc("@action:inmenu", "Send Signal")
+            icon.name: "send_signal-symbolic"
 
             MenuItem {
                text: i18nc("@action:inmenu Send Signal", "Suspend (STOP)");
