@@ -221,6 +221,7 @@ Faces.SensorFace {
 
         MenuItem {
             text: i18nc("@action:inmenu", "Configure Columns…")
+            icon.name: "configure"
             onClicked: columnDialog.open()
         }
     }
