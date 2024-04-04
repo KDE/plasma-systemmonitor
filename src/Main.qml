@@ -127,7 +127,7 @@ Kirigami.ApplicationWindow {
                         enabled: app.pageStack.layers.depth <= 1
                     },
                     Kirigami.Action {
-                        icon.name: "kdeapp";
+                        icon.name: "kde-symbolic";
                         text: i18nc("@action", "About KDE");
                         displayHint: Kirigami.DisplayHint.AlwaysHide
                         onTriggered: app.pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutKDE"))
