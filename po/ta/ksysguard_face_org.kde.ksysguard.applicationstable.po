@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-01 01:41+0000\n"
+"POT-Creation-Date: 2024-04-04 00:39+0000\n"
 "PO-Revision-Date: 2023-01-12 21:29+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -77,91 +77,93 @@ msgctxt "@option:check"
 msgid "Confirm when quitting applications"
 msgstr "செயலிகளை மூடும்போது எச்சரி"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:28
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:29
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "தேடு"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:39
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:40
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "செயலியை மூடு"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:47
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:48
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "விவர ஓரப்பட்டையை காட்டு"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:55
-#, kde-format
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:56
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Configure columns…"
 msgctxt "@action"
-msgid "Configure columns…"
+msgid "Configure Columns…"
 msgstr "நெடுவரிசைகளை அமை…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:185
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:186
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "முன்னிலையை அமை…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:188
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:189
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "சமிக்ஞை அனுப்பு"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:191
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:193
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "இடைநிறுத்து (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:195
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:197
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "தொடர் (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:199
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:201
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "இணைப்பை துண்டி (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:205
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "குறுக்கிடு (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:209
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "நிறுத்து (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:211
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:213
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "கட்டாயமாக நிறுத்து (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:215
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:217
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "தனிப்பயன் 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:219
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:221
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "தனிப்பயன் 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:226
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:228
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -169,7 +171,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "செயலியை மூடு"
 msgstr[1] "%1 செயலிகளை மூடு"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -177,7 +179,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "செயலியை மூடுவது"
 msgstr[1] "%1 செயலிகளை மூடுவது"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -185,7 +187,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "செயலியை மூடு"
 msgstr[1] "செயலிகளை மூடு"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgid ""
 "Are you sure you want to quit this application?\n"
@@ -200,7 +202,7 @@ msgstr[1] ""
 "இந்த %1 செயலிகளை உறுதியாக நிறுத்த வேண்டுமா?\n"
 "சேமிக்கப்படாதவற்றை நீங்கள் இழக்க நேரிடலாம்."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

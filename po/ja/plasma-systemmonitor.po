@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-23 00:39+0000\n"
+"POT-Creation-Date: 2024-04-04 00:39+0000\n"
 "PO-Revision-Date: 2024-03-05 01:34+0900\n"
 "Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -232,43 +232,49 @@ msgctxt "@action"
 msgid "About System Monitor"
 msgstr "システムモニタについて"
 
-#: src/Main.qml:154
+#: src/Main.qml:131
+#, kde-format
+msgctxt "@action"
+msgid "About KDE"
+msgstr ""
+
+#: src/Main.qml:161
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "新しいページを追加…"
 
-#: src/Main.qml:223
+#: src/Main.qml:230
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "新しいページを追加"
 
-#: src/Main.qml:244
+#: src/Main.qml:251
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "ページを編集"
 
-#: src/Main.qml:267
+#: src/Main.qml:274
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "%1をエクスポート"
 
-#: src/Main.qml:269 src/Main.qml:279
+#: src/Main.qml:276 src/Main.qml:286
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "システムモニタページ (*.page)"
 
-#: src/Main.qml:277
+#: src/Main.qml:284
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "ページをインポート"
 
-#: src/Main.qml:341
+#: src/Main.qml:348
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
