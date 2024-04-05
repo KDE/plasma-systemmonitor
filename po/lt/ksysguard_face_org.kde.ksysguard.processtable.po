@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-01 01:41+0000\n"
+"POT-Creation-Date: 2024-04-05 02:43+0000\n"
 "PO-Revision-Date: 2024-01-23 01:35+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -55,121 +55,121 @@ msgctxt "@item:inlistbox"
 msgid "All Processes"
 msgstr "Visi procesai"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:28
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:29
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "Ieškoti"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:40
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:41
 #, kde-format
 msgctxt "@action"
 msgid "End Process"
 msgstr "Užbaigti procesą"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:52
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:53
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
 msgstr "Rodyti kaip sąrašą"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:69
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:70
 #, kde-format
 msgctxt "@action"
 msgid "Display as Tree"
 msgstr "Rodyti kaip medį"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:81
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:82
 #, kde-format
 msgctxt "@action %1 is view type"
 msgid "Show: %1"
 msgstr "Rodyti: %1"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:84
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:85
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
 msgstr "Savi procesai"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:93
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:94
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "User Processes"
 msgstr "Naudotojo procesai"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:102
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:103
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
 msgstr "Sisteminiai procesai"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:111
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:112
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
 msgstr "Visi procesai"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:123
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:124
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
 msgstr "Konfigūruoti stulpelius…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:171
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:172
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Siųsti signalą"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:174
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:175
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Pristabdyti (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:178
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:179
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Tęsti (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:182
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:183
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Užstrigdinti (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:186
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:187
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Pertraukti (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:190
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:191
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Nutraukti (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:194
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:195
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Nutraukti (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:198
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:199
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Naudotojas 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:202
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Naudotojas 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:210
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:211
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -179,13 +179,13 @@ msgstr[1] "Užbaigti %1 procesus"
 msgstr[2] "Užbaigti %1 procesų"
 msgstr[3] "Užbaigti %1 procesą"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:222
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:223
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Konfigūruoti stulpelius…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:232
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:233
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -195,7 +195,7 @@ msgstr[1] "Užbaigti %1 procesus"
 msgstr[2] "Užbaigti %1 procesų"
 msgstr[3] "Užbaigti %1 procesą"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:233
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:234
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -205,7 +205,7 @@ msgstr[1] "Užbaigti procesus"
 msgstr[2] "Užbaigti procesus"
 msgstr[3] "Užbaigti procesus"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:236
 #, kde-format
 msgid ""
 "Are you sure you want to end this process?\n"
@@ -226,7 +226,7 @@ msgstr[3] ""
 "Ar tikrai norite užbaigti šį %1 procesą?\n"
 "Bet koks neįrašytas darbas gali būti prarastas."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
