@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# giovanni <g.sora@tiscali.it>, 2021, 2022, 2023.
+# giovanni <g.sora@tiscali.it>, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:39+0000\n"
-"PO-Revision-Date: 2023-06-15 16:01+0200\n"
+"PO-Revision-Date: 2024-04-05 18:20+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -236,7 +236,7 @@ msgstr "Re Monitor de Systema"
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
-msgstr ""
+msgstr "A proposito de KDE"
 
 #: src/Main.qml:161
 #, kde-format
