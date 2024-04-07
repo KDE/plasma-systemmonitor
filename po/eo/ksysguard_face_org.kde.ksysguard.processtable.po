@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:39+0000\n"
-"PO-Revision-Date: 2023-04-29 22:44+0100\n"
+"PO-Revision-Date: 2024-04-06 22:35+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -111,9 +111,7 @@ msgid "All Processes"
 msgstr "Ĉiuj Procezoj"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:124
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Agordi Kolumnojn…"
