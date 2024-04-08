@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Kishore G <kishore96@gmail.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:39+0000\n"
-"PO-Revision-Date: 2023-01-12 21:29+0530\n"
+"PO-Revision-Date: 2024-04-07 17:13+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 24.02.1\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -96,9 +96,7 @@ msgid "Show Details Sidebar"
 msgstr "விவர ஓரப்பட்டையை காட்டு"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:56
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Configure columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "நெடுவரிசைகளை அமை…"
