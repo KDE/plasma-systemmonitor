@@ -96,12 +96,10 @@ msgid "Show Details Sidebar"
 msgstr "Zobrazit postranní lištu podrobností"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:56
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Configure columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
-msgstr "Nastavit sloupce…"
+msgstr ""
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:186
 #, kde-format

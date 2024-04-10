@@ -236,7 +236,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
-msgstr ""
+msgstr "O KDE"
 
 #: src/Main.qml:161
 #, kde-format

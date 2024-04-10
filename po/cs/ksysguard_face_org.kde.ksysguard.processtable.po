@@ -108,12 +108,10 @@ msgid "All Processes"
 msgstr "Všechny procesy"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:124
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
-msgstr "Nastavit sloupce…"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:172
 #, kde-format
@@ -218,7 +216,3 @@ msgstr[1] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr ""
-
-#~ msgctxt "@action"
-#~ msgid "Configure columns…"
-#~ msgstr "Nastavit sloupce…"
