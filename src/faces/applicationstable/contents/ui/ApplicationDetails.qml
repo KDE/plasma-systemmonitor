@@ -243,6 +243,12 @@ Page {
                 delegate: DelegateChooser {
                     role: "Attribute"
                     DelegateChoice {
+                        column: processTable.LayoutMirroring.enabled ? processTable.model.columnCount() - 1 : 0
+                        Table.FirstCellDelegate {
+                            iconSize: 0
+                        }
+                    }
+                    DelegateChoice {
                         roleValue: "usage"
                         Table.TextCellDelegate {
                             text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
