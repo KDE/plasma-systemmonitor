@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-04 00:39+0000\n"
+"POT-Creation-Date: 2024-04-17 00:39+0000\n"
 "PO-Revision-Date: 2024-02-24 14:37+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -54,61 +54,61 @@ msgctxt "@item:inlistbox"
 msgid "All Processes"
 msgstr "Toate procesele"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:29
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:30
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "Caută"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:41
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "End Process"
 msgstr "Termină procesul"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:53
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:54
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
 msgstr "Afișează ca listă"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:70
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:71
 #, kde-format
 msgctxt "@action"
 msgid "Display as Tree"
 msgstr "Afișează ca arbore"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:82
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:83
 #, kde-format
 msgctxt "@action %1 is view type"
 msgid "Show: %1"
 msgstr "Arată: %1"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:85
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:86
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
 msgstr "Procese proprii"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:94
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:95
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "User Processes"
 msgstr "Procesele utilizatorilor"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:103
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:104
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
 msgstr "Procesele de sistem"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:112
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:113
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
 msgstr "Toate procesele"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:124
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:125
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "Configure Columns…"
@@ -116,61 +116,69 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Configurează coloane…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:172
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:176
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Trimite semnal"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:176
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:180
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Suspendare (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:180
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:184
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Continuare (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:184
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:188
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Agățare (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:188
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:192
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Întrerupere (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:192
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:196
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Terminare (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:196
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:200
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Omorâre (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:200
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:204
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Utilizator 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:204
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:208
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Utilizator 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:212
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:214
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Configure Columns…"
+msgctxt "@action:inmenu"
+msgid "Copy Current Column"
+msgstr "Configurează coloane…"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:223
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -179,13 +187,13 @@ msgstr[0] "Termină procesul"
 msgstr[1] "Termină %1 procese"
 msgstr[2] "Termină %1 de procese"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:224
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Configurează coloane…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -194,7 +202,7 @@ msgstr[0] "Termină procesul"
 msgstr[1] "Termină %1 procese"
 msgstr[2] "Termină %1 de procese"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:236
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -203,7 +211,7 @@ msgstr[0] "Termină procesul"
 msgstr[1] "Termină procesele"
 msgstr[2] "Termină procesele"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:238
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgid ""
 "Are you sure you want to end this process?\n"
@@ -221,7 +229,7 @@ msgstr[2] ""
 "Sigur doriți să terminați aceste %1 de procese?\n"
 "Lucrul nesalvat poate fi pierdut."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:249
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
