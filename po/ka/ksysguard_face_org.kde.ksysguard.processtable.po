@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-17 00:39+0000\n"
-"PO-Revision-Date: 2024-04-04 08:38+0200\n"
+"PO-Revision-Date: 2024-04-17 05:18+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -169,12 +169,10 @@ msgid "User 2 (USR2)"
 msgstr "მომხმ 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:214
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "სვეტების მორგება…"
+msgstr "მიმდინარე სვეტის კოპირება"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:223
 #, kde-format
