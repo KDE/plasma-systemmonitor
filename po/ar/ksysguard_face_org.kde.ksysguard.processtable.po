@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-17 00:39+0000\n"
-"PO-Revision-Date: 2024-04-04 11:27+0400\n"
+"PO-Revision-Date: 2024-04-18 13:25+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -169,12 +169,10 @@ msgid "User 2 (USR2)"
 msgstr "مستخدم 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:214
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "اضبط الأعمدة..."
+msgstr "انسخ العمود الحالي"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:223
 #, kde-format

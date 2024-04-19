@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.processtable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-17 00:39+0000\n"
-"PO-Revision-Date: 2024-04-04 09:25+0300\n"
+"PO-Revision-Date: 2024-04-18 22:26+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian\n"
 "Language: uk\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
 #, kde-format
@@ -171,12 +171,10 @@ msgid "User 2 (USR2)"
 msgstr "Користувач 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:214
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "Налаштувати стовпчики…"
+msgstr "Копіювати поточний стовпчик"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:223
 #, kde-format
