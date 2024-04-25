@@ -1,9 +1,10 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 # Burkhard Lück <lueck@hube-lueck.de>, 2020, 2021.
 # Alois Spitzbart <spitz234@hotmail.com>, 2020, 2021.
 # Frederik Schwarzer <schwarzer@kde.org>, 2021, 2022, 2023.
 # Jannick Kuhr <opensource@kuhr.org>, 2023.
+# SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 #
 msgid ""
 msgstr ""
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.07.70\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
