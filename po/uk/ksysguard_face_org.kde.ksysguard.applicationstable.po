@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-05 02:43+0000\n"
+"POT-Creation-Date: 2024-04-26 02:24+0000\n"
 "PO-Revision-Date: 2023-01-12 09:12+0200\n"
 "Last-Translator: Fracture dept <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -56,7 +56,7 @@ msgctxt "@title:group"
 msgid "Processes: %1"
 msgstr "Процеси: %1"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:262
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:268
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select an application to see its details"

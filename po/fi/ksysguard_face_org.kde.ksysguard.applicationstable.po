@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-05 02:43+0000\n"
+"POT-Creation-Date: 2024-04-26 02:24+0000\n"
 "PO-Revision-Date: 2023-03-04 20:01+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -53,7 +53,7 @@ msgctxt "@title:group"
 msgid "Processes: %1"
 msgstr "Prosesseja: %1"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:262
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:268
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select an application to see its details"
