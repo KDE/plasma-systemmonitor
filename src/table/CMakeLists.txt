@@ -1,6 +1,6 @@
 
 add_library(PlasmaSystemMonitorTable)
-ecm_add_qml_module(PlasmaSystemMonitorTable URI "org.kde.ksysguard.table" GENERATE_PLUGIN_SOURCE)
+ecm_add_qml_module(PlasmaSystemMonitorTable URI "org.kde.ksysguard.table" GENERATE_PLUGIN_SOURCE DEPENDENCIES "QtCore")
 
 target_sources(PlasmaSystemMonitorTable PRIVATE
     ColumnDisplayModel.cpp

@@ -6,7 +6,7 @@ add_subdirectory(faces)
 add_definitions(-DQT_NO_KEYWORDS)
 
 add_executable(plasma-systemmonitor ${plasma-systemmonitor_SRCS} ${plasma-systemmonitor_QRC})
-ecm_add_qml_module(plasma-systemmonitor URI "org.kde.systemmonitor" GENERATE_PLUGIN_SOURCE)
+ecm_add_qml_module(plasma-systemmonitor URI "org.kde.systemmonitor" GENERATE_PLUGIN_SOURCE DEPENDENCIES "QtCore")
 
 target_sources(plasma-systemmonitor PRIVATE
     main.cpp

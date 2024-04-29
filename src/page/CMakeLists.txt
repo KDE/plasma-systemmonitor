@@ -1,7 +1,7 @@
 
 add_library(PlasmaSystemMonitorPage)
 
-ecm_add_qml_module(PlasmaSystemMonitorPage URI "org.kde.ksysguard.page" GENERATE_PLUGIN_SOURCE)
+ecm_add_qml_module(PlasmaSystemMonitorPage URI "org.kde.ksysguard.page" GENERATE_PLUGIN_SOURCE DEPENDENCIES "QtCore" "org.kde.ksysguard.faces")
 
 target_sources(PlasmaSystemMonitorPage PRIVATE
     FaceLoader.cpp
