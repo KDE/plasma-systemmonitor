@@ -36,6 +36,7 @@ BaseCellDelegate {
         Kirigami.Icon {
             Layout.preferredWidth: delegate.iconSize
             Layout.preferredHeight: Layout.preferredWidth
+            Layout.alignment: Qt.AlignVCenter
             source: delegate.iconName
             fallback: ""
             animated: false
@@ -46,6 +47,7 @@ BaseCellDelegate {
             Layout.fillHeight: true
             text: delegate.text
             horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
             elide: Text.ElideRight
         }
     }

@@ -20,5 +20,6 @@ BaseCellDelegate {
         maximumLineCount: 1
         elide: Text.ElideRight
         horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
     }
 }
