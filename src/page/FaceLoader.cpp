@@ -69,7 +69,7 @@ void FaceLoader::setDataObject(PageDataObject *newDataObject)
 
         if (!m_faceController) {
             auto configGroup = m_dataObject->config()->group(faceConfig);
-            m_faceController = new SensorFaceController(configGroup, qmlEngine(this));
+            m_faceController = new SensorFaceController(configGroup, qmlEngine(this), qmlEngine(this));
             m_faceController->setShouldSync(false);
             s_faceCache.insert(cacheName, m_faceController);
         }
