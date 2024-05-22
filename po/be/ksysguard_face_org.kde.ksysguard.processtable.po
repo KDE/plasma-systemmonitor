@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-17 00:39+0000\n"
-"PO-Revision-Date: 2024-05-12 20:05\n"
+"PO-Revision-Date: 2024-05-20 21:10\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -113,9 +113,7 @@ msgid "All Processes"
 msgstr "Усе працэсы"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:125
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Наладжванне слупкоў…"
@@ -175,12 +173,10 @@ msgid "User 2 (USR2)"
 msgstr "Карыстальнік 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:214
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "Наладжванне слупкоў…"
+msgstr "Скапіяваць бягучы слупок"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:223
 #, kde-format

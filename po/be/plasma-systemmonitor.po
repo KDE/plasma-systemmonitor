@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:39+0000\n"
-"PO-Revision-Date: 2024-05-12 20:05\n"
+"PO-Revision-Date: 2024-05-19 09:15\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -241,7 +241,7 @@ msgstr "Пра сістэмны назіральнік"
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
-msgstr ""
+msgstr "Пра KDE"
 
 #: src/Main.qml:161
 #, kde-format
