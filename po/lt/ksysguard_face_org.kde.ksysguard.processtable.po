@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-17 00:39+0000\n"
-"PO-Revision-Date: 2024-04-06 01:00+0300\n"
+"PO-Revision-Date: 2024-05-24 02:00+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -170,12 +170,10 @@ msgid "User 2 (USR2)"
 msgstr "Naudotojas 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:214
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "Konfigūruoti stulpelius…"
+msgstr "Kopijuoti dabartinį stulpelį"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:223
 #, kde-format
