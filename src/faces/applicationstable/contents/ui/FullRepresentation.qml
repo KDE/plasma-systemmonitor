@@ -89,6 +89,12 @@ Faces.SensorFace {
             sortOrder: root.config.sortDirection
             onSortOrderChanged: root.config.sortDirection = sortOrder
 
+            // Workaround QTBUG-125867
+            // SelectionRectangle is too eager when filtering events, causing drags
+            // in overlays to be intercepted and used for selection instead of
+            // scrolling the overlay.
+            selectionEnabled: !(killDialog.visible || columnDialog.visible)
+
             Keys.onPressed: event => {
                 if (event.matches(StandardKey.Delete)) {
                     processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal);

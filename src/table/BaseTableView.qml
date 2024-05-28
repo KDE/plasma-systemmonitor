@@ -35,6 +35,8 @@ FocusScope {
     property real defaultColumnWidth: 0.1
     property real minimumColumnWidth: Kirigami.Units.gridUnit * 4
 
+    property alias selectionEnabled: selectionRectangle.enabled
+
     readonly property alias headerHeight: heading.height
 
     readonly property alias selection: tableView.selectionModel
@@ -84,6 +86,7 @@ FocusScope {
         TreeView {
             id: tableView
             anchors.left: parent.left
+
             selectionModel: ItemSelectionModel {
                 id: selectionModel
                 model: tableView.model
@@ -159,6 +162,8 @@ FocusScope {
     }
 
     SelectionRectangle {
+        id: selectionRectangle
+
         target: tableView
 
         selectionMode: SelectionRectangle.Drag
@@ -166,4 +171,3 @@ FocusScope {
         bottomRightHandle: null
     }
 }
-
