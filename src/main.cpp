@@ -15,6 +15,7 @@
 #include <QWindow>
 
 #include <KAboutData>
+#include <KCrash>
 #include <KDBusService>
 #include <KLocalizedString>
 #include <KWindowSystem>
@@ -83,6 +84,8 @@ int main(int argc, char **argv)
 
     aboutData.setBugAddress("https://bugs.kde.org/enter_bug.cgi?product=plasma-systemmonitor");
     KAboutData::setApplicationData(aboutData);
+
+    KCrash::initialize();
 
     KDBusService service(KDBusService::Unique);
 
