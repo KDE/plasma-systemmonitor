@@ -223,7 +223,3 @@ msgstr[1] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "Процес ID %1, притежаван от %2"
-
-#~ msgctxt "@action"
-#~ msgid "Configure columns…"
-#~ msgstr "Конфигуриране на колони…"
