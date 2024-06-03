@@ -32,6 +32,7 @@ target_link_libraries(plasma-systemmonitor PRIVATE
     Qt::DBus
     KF6::I18n
     KF6::ConfigGui
+    KF6::Crash
     KF6::Service
     KF6::KIOGui
     KF6::GlobalAccel
