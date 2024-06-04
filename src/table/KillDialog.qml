@@ -4,6 +4,7 @@
  *
  * SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick
 import QtQuick.Controls
@@ -65,6 +66,8 @@ Kirigami.Dialog {
             Kirigami.Theme.inherit: false
 
             delegate: ItemDelegate {
+                required property var modelData
+
                 width: ListView.view.width
                 text: modelData
 
