@@ -32,6 +32,8 @@ Kirigami.Dialog {
 
     standardButtons: Dialog.Cancel
 
+    horizontalPadding: Kirigami.Units.largeSpacing
+
     customFooterActions: [
         Kirigami.Action {
             text: dialog.killButtonText
@@ -43,16 +45,10 @@ Kirigami.Dialog {
     contentItem: ScrollView {
         implicitWidth: Kirigami.Units.gridUnit * 25
 
-        leftPadding: Kirigami.Units.largeSpacing
-        rightPadding: Kirigami.Units.largeSpacing
-        topPadding: Kirigami.Units.largeSpacing
-        bottomPadding: Kirigami.Units.largeSpacing
-
         ListView {
             id: list
 
             header: Label {
-                padding: Kirigami.Units.largeSpacing
                 width: list.width - list.leftMargin - list.rightMargin
                 text: dialog.questionText
                 wrapMode: Text.Wrap
@@ -78,7 +74,6 @@ Kirigami.Dialog {
             }
 
             footer: CheckBox {
-                leftPadding: Kirigami.Units.largeSpacing
                 text: i18ndc("plasma-systemmonitor", "@option:check", "Do not ask again");
                 onToggled: dialog.doNotAskAgain = checked
             }
