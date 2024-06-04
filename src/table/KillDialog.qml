@@ -76,12 +76,12 @@ Kirigami.Dialog {
                 hoverEnabled: false
                 down: false
             }
-        }
-    }
 
-    footerLeadingComponent: CheckBox {
-        leftPadding: Kirigami.Units.largeSpacing
-        text: i18ndc("plasma-systemmonitor", "@option:check", "Do not ask again");
-        onToggled: dialog.doNotAskAgain = checked
+            footer: CheckBox {
+                leftPadding: Kirigami.Units.largeSpacing
+                text: i18ndc("plasma-systemmonitor", "@option:check", "Do not ask again");
+                onToggled: dialog.doNotAskAgain = checked
+            }
+        }
     }
 }
