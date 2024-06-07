@@ -20,6 +20,8 @@ import org.kde.ksysguard.table as Table
 
 Faces.SensorFace {
     id: root
+    Layout.minimumHeight: Kirigami.Units.gridUnit * 10
+    Layout.minimumWidth: Kirigami.Units.gridUnit * 5
 
     readonly property var config: controller.faceConfiguration
 
