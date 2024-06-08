@@ -28,6 +28,8 @@ Kirigami.Dialog {
 
     preferredWidth: parent ? parent.width * 0.75 : 0
     preferredHeight: parent ? parent.height * 0.75 : 0
+    // So that the background of the columnView delegates doesn't overlap the border.
+    leftPadding: 1
 
     focus: true
 
@@ -94,8 +96,9 @@ Kirigami.Dialog {
                 property int index: modelData ? modelData.row : -1
                 activeFocusOnTab: false
 
-                // We don't want visual interactivity for the background
-                highlighted: false
+                highlighted: parent === columnView
+
+                // We don't want visual interactivity for the background except on drag.
                 hoverEnabled: false
                 down: false
 
