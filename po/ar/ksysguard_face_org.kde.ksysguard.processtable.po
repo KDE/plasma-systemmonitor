@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-17 00:39+0000\n"
+"POT-Creation-Date: 2024-06-08 00:40+0000\n"
 "PO-Revision-Date: 2024-04-18 13:25+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -53,127 +53,127 @@ msgctxt "@item:inlistbox"
 msgid "All Processes"
 msgstr "كل العمليات"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:30
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:32
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "ابحث"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:42
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:44
 #, kde-format
 msgctxt "@action"
 msgid "End Process"
 msgstr "أنهِ العملية"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:54
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
 msgstr "اعرض كقائمة"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:71
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:73
 #, kde-format
 msgctxt "@action"
 msgid "Display as Tree"
 msgstr "اعرض كشجرة"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:83
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:85
 #, kde-format
 msgctxt "@action %1 is view type"
 msgid "Show: %1"
 msgstr "أظهر: %1"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:86
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:88
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
 msgstr "عملياتي أنا"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:95
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:97
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "User Processes"
 msgstr "عمليات المستخدم"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:104
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:106
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
 msgstr "عمليات النظام"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:113
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:115
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
 msgstr "كل العمليات"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:125
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "اضبط الأعمدة…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:176
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:178
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "أرسل إشارة"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:180
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:182
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "علّق (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:184
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:186
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "تابِع (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:188
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:190
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "افصل (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:192
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:194
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "قاطِع (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:196
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:198
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "أنهِ (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:200
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:202
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "اقتل (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:204
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:206
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "مستخدم 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:208
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:210
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "مستخدم 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:214
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:216
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "انسخ العمود الحالي"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:223
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:225
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -185,13 +185,13 @@ msgstr[3] "أنهِ %1 عمليات"
 msgstr[4] "أنهِ %1 عملية"
 msgstr[5] "أنهِ %1 عملية"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "اضبط الأعمدة..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:248
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -203,7 +203,7 @@ msgstr[3] "أنهِ %1 عمليات"
 msgstr[4] "أنهِ %1 عملية"
 msgstr[5] "أنهِ %1 عملية"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:247
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -215,7 +215,7 @@ msgstr[3] "أنهِ العمليات"
 msgstr[4] "أنهِ العمليات"
 msgstr[5] "أنهِ العمليات"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:249
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:251
 #, kde-format
 msgid ""
 "Are you sure you want to end this process?\n"
@@ -242,7 +242,7 @@ msgstr[5] ""
 "هل أنت متأكد أنك تريد إنهاء هذه %1 عملية؟ \n"
 "قد يفقد أي عمل غير محفوظ."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:260
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:262
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
