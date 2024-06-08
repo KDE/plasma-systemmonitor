@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-17 00:39+0000\n"
+"POT-Creation-Date: 2024-06-08 02:33+0000\n"
 "PO-Revision-Date: 2022-03-16 07:58+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -53,61 +53,61 @@ msgctxt "@item:inlistbox"
 msgid "All Processes"
 msgstr "Semua Proses"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:30
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:32
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "Cari"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:42
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:44
 #, kde-format
 msgctxt "@action"
 msgid "End Process"
 msgstr "Akhiri Proses"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:54
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
 msgstr "Tampilkan sebagai Daftar"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:71
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:73
 #, kde-format
 msgctxt "@action"
 msgid "Display as Tree"
 msgstr "Tampilkan sebagai Ranting"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:83
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:85
 #, kde-format
 msgctxt "@action %1 is view type"
 msgid "Show: %1"
 msgstr "Tampilkan: %1"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:86
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:88
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
 msgstr "Proses Milikku"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:95
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:97
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "User Processes"
 msgstr "Proses Pengguna"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:104
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:106
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
 msgstr "Proses Sistem"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:113
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:115
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
 msgstr "Semua Proses"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:125
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:127
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "Configure Columns…"
@@ -115,61 +115,61 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Konfigurasi Kolom..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:176
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:178
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Kirim Sinyal"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:180
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:182
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Suspensi (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:184
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:186
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Teruskan (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:188
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:190
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Putus (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:192
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:194
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Interupsi (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:196
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:198
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Akhiri (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:200
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:202
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Bunuh (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:204
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:206
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Pengguna 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:208
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:210
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Pengguna 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:214
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:216
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "Configure Columns…"
@@ -177,7 +177,7 @@ msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "Konfigurasi Kolom..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:223
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:225
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -185,13 +185,13 @@ msgid_plural "End %1 Processes"
 msgstr[0] "Akhiri Proses"
 msgstr[1] "Akhiri %1 Proses"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:235
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:237
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Konfigurasi Kolom..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:248
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -199,7 +199,7 @@ msgid_plural "End %1 Processes"
 msgstr[0] "Akhiri Proses"
 msgstr[1] "Akhiri %1 Proses"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:247
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:249
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "End Process"
@@ -209,7 +209,7 @@ msgid_plural "End Processes"
 msgstr[0] "Akhiri Proses"
 msgstr[1] "Akhiri Proses"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:249
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:251
 #, kde-format
 msgid ""
 "Are you sure you want to end this process?\n"
@@ -224,7 +224,7 @@ msgstr[1] ""
 "Apakah kamu yakin ingin mengakhiri %1 proses tersebut?\n"
 "Apapun pekerjaan yang tidak disimpan mungkin hilang."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:260
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:262
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"

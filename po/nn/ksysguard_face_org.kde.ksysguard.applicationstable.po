@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-26 00:39+0000\n"
+"POT-Creation-Date: 2024-06-08 02:33+0000\n"
 "PO-Revision-Date: 2023-01-15 12:22+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -80,25 +80,25 @@ msgctxt "@option:check"
 msgid "Confirm when quitting applications"
 msgstr "Stadfest av avslutting av program"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:29
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:31
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "Søk"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:40
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "Avslutt program"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:48
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:50
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "Vis detalj­sidestolpe"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:56
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:58
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Configure columns…"
@@ -106,67 +106,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Set opp kolonnar …"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:186
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:188
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Vel prioritet …"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:189
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:191
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Send signal"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:193
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:195
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Set på pause (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:197
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:199
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Hald fram (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:201
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Legg på (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:205
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Avbryt (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:209
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:211
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Avslutt (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:213
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:215
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Tvangs­avslutt (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:217
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:219
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Brukar 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:221
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:223
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Brukar 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:228
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:230
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -174,7 +174,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Avslutt program"
 msgstr[1] "Avslutt %1 program"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:248
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -182,7 +182,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Avslutt program"
 msgstr[1] "Avslutt %1 program"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -190,7 +190,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "Avslutt programet"
 msgstr[1] "Avslutt programma"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:251
 #, kde-format
 msgid ""
 "Are you sure you want to quit this application?\n"
@@ -205,7 +205,7 @@ msgstr[1] ""
 "Er du sikker på at du vil avslutta desse %1 programma?\n"
 "Arbeid som ikkje er lagra, kan gå tapt."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:265
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
