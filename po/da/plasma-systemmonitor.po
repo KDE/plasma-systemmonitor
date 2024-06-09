@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-04 00:40+0000\n"
+"POT-Creation-Date: 2024-06-09 00:40+0000\n"
 "PO-Revision-Date: 2020-10-15 23:09+0200\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish\n"
@@ -735,31 +735,31 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Konfigurer kolonner"
 
-#: src/table/ColumnConfigurationDialog.qml:137
+#: src/table/ColumnConfigurationDialog.qml:140
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Skjult"
 
-#: src/table/ColumnConfigurationDialog.qml:138
+#: src/table/ColumnConfigurationDialog.qml:141
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Kun tekst"
 
-#: src/table/ColumnConfigurationDialog.qml:144
+#: src/table/ColumnConfigurationDialog.qml:147
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Linjediagram"
 
-#: src/table/ColumnConfigurationDialog.qml:148
+#: src/table/ColumnConfigurationDialog.qml:151
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Kun tekst (skaleret til 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:149
+#: src/table/ColumnConfigurationDialog.qml:152
 #, fuzzy, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"

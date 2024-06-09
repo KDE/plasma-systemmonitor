@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-04 00:40+0000\n"
+"POT-Creation-Date: 2024-06-09 00:40+0000\n"
 "PO-Revision-Date: 2024-04-07 17:12+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -697,31 +697,31 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "பத்திகளை அமை"
 
-#: src/table/ColumnConfigurationDialog.qml:137
+#: src/table/ColumnConfigurationDialog.qml:140
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "மறைந்தது"
 
-#: src/table/ColumnConfigurationDialog.qml:138
+#: src/table/ColumnConfigurationDialog.qml:141
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "உரை மட்டும்"
 
-#: src/table/ColumnConfigurationDialog.qml:144
+#: src/table/ColumnConfigurationDialog.qml:147
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "கோடு வரைபடம்"
 
-#: src/table/ColumnConfigurationDialog.qml:148
+#: src/table/ColumnConfigurationDialog.qml:151
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "உரை மட்டும் (100%-க்கு அளவுமாற்று)"
 
-#: src/table/ColumnConfigurationDialog.qml:149
+#: src/table/ColumnConfigurationDialog.qml:152
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-04 00:40+0000\n"
+"POT-Creation-Date: 2024-06-09 00:40+0000\n"
 "PO-Revision-Date: 2024-06-05 07:05\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -709,31 +709,31 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Наладжванне слупкоў"
 
-#: src/table/ColumnConfigurationDialog.qml:137
+#: src/table/ColumnConfigurationDialog.qml:140
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Схавана"
 
-#: src/table/ColumnConfigurationDialog.qml:138
+#: src/table/ColumnConfigurationDialog.qml:141
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Толькі тэкст"
 
-#: src/table/ColumnConfigurationDialog.qml:144
+#: src/table/ColumnConfigurationDialog.qml:147
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Лінейная дыяграма"
 
-#: src/table/ColumnConfigurationDialog.qml:148
+#: src/table/ColumnConfigurationDialog.qml:151
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Толькі тэкст (павялічана да 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:149
+#: src/table/ColumnConfigurationDialog.qml:152
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
