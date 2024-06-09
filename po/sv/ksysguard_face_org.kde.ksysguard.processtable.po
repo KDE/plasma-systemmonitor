@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2020, 2021.
+# SPDX-FileCopyrightText: 2020, 2021, 2024 Stefan Asserhäll <stefan.asserhall@bredband.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-08 02:33+0000\n"
-"PO-Revision-Date: 2021-05-27 18:47+0200\n"
+"PO-Revision-Date: 2024-06-08 16:57+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
 #, kde-format
@@ -108,9 +108,7 @@ msgid "All Processes"
 msgstr "Alla processer"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:127
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Anpassa kolumner…"
@@ -170,12 +168,10 @@ msgid "User 2 (USR2)"
 msgstr "Användarsignal 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:216
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "Anpassa kolumner…"
+msgstr "Kopiera nuvarande kolumn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:225
 #, kde-format
@@ -200,14 +196,12 @@ msgstr[0] "Avsluta process"
 msgstr[1] "Avsluta %1 processer"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:249
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "End Process"
+#, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
 msgstr[0] "Avsluta process"
-msgstr[1] "Avsluta process"
+msgstr[1] "Avsluta processer"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:251
 #, kde-format
