@@ -201,7 +201,7 @@ Kirigami.ScrollablePage {
     Rectangle {
         id: loadOverlay
 
-        parent: page.overlay
+        z: 9999
         anchors.fill: parent
         anchors.margins: -pageData.margin * Kirigami.Units.largeSpacing
         color: Kirigami.Theme.backgroundColor
