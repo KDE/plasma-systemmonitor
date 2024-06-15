@@ -31,6 +31,7 @@ public:
     QVariant data(const QModelIndex &index, int role) const override;
 
     Q_INVOKABLE void setDisplay(int column, const QString &display);
+    Q_INVOKABLE void setDisplayById(const QString &id, const QString &display);
 
     QVariantMap columnDisplay() const;
     void setColumnDisplay(const QVariantMap &newColumnDisplay);
@@ -49,4 +50,6 @@ private:
 
     QString m_idRole = QStringLiteral("id");
     mutable int m_idRoleNumber = -1;
+
+    QModelIndex indexForId(const QString &id);
 };

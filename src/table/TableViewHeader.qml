@@ -10,6 +10,7 @@ import QtQml.Models
 
 import org.kde.kirigami as Kirigami
 import org.kde.ksysguard.formatter as Formatter
+import org.kde.ksysguard.process as Process
 
 import org.kde.kitemmodels as KItemModels
 
@@ -33,7 +34,7 @@ HorizontalHeaderView {
 
     signal sort(int column, int order)
     signal resize(int column, real width)
-    signal contextMenuRequested(int column, point position)
+    signal contextMenuRequested(int column, string id, point position)
 
     resizableColumns: true
     clip: true
@@ -89,7 +90,8 @@ HorizontalHeaderView {
 
         onTapped: (eventPoint, button) => {
             let cell = header.cellAtPosition(eventPoint.position)
-            header.contextMenuRequested(cell.x, eventPoint.scenePosition)
+            let columnId = header.modelIndex(cell).data(headerModel.KItemModels.KRoleNames.role(idRole));
+            header.contextMenuRequested(cell.x, columnId, eventPoint.scenePosition)
         }
     }
 }

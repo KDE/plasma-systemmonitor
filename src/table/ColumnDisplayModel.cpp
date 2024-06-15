@@ -59,6 +59,40 @@ void ColumnDisplayModel::setDisplay(int row, const QString &display)
     }
 }
 
+void ColumnDisplayModel::setDisplayById(const QString &id, const QString &display)
+{
+    auto changed = false;
+    if (!m_columnDisplay.contains(id)) {
+        m_columnDisplay.insert(id, display);
+        changed = true;
+    } else if (m_columnDisplay.value(id) != display) {
+        m_columnDisplay[id] = display;
+        changed = true;
+    }
+
+    if (changed) {
+        auto i = indexForId(id);
+        if (!i.isValid()) {
+            return;
+        }
+
+        Q_EMIT dataChanged(i, i, {DisplayStyleRole});
+        Q_EMIT columnDisplayChanged();
+    }
+}
+
+QModelIndex ColumnDisplayModel::indexForId(const QString &id)
+{
+    for (int i = 0; i < sourceModel()->rowCount(); i++) {
+        const auto index = sourceModel()->index(i, 0);
+        if (index.data(idRoleNumber()).toString() == id) {
+            return mapFromSource(index);
+        }
+    }
+
+    return {};
+}
+
 QVariantMap ColumnDisplayModel::columnDisplay() const
 {
     QVariantMap result;

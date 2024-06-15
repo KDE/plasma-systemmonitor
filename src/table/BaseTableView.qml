@@ -42,7 +42,7 @@ FocusScope {
     readonly property alias columns: tableView.columns
 
     signal contextMenuRequested(var index, point position)
-    signal headerContextMenuRequested(int column, point position)
+    signal headerContextMenuRequested(int column, string columnId, point position)
     signal sort(int column, int order)
 
     Layout.minimumHeight: heading.height + root.rowHeight * 3
@@ -67,8 +67,8 @@ FocusScope {
             root.setColumnWidth(column, width)
         }
 
-        onContextMenuRequested:(column, position) => {
-            root.headerContextMenuRequested(column, position)
+        onContextMenuRequested:(column, columnId, position) => {
+            root.headerContextMenuRequested(column, columnId, position)
         }
     }
 

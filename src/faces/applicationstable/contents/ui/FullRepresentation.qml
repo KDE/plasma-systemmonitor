@@ -77,7 +77,8 @@ Faces.SensorFace {
                 contextMenu.popup(null, position.x, position.y)
             }
 
-            onHeaderContextMenuRequested: (column, position) => {
+            onHeaderContextMenuRequested: (column, columnId, position) => {
+                headerContextMenu.columnId = columnId;
                 headerContextMenu.popup(null, position)
             }
 
@@ -234,7 +235,13 @@ Faces.SensorFace {
 
     Menu {
         id: headerContextMenu
+        property string columnId
 
+        MenuItem {
+            text: i18nc("@action:inmenu hide column", "Hide")
+            icon.name: "hide_table_column"
+            onClicked: columnDialog.hideColumn(headerContextMenu.columnId)
+        }
         MenuItem {
             action: configureColumnsAction
         }

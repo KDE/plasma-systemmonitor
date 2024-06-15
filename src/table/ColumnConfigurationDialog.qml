@@ -65,6 +65,11 @@ Kirigami.Dialog {
         columnDisplay = displayModel.columnDisplay
     }
 
+    function hideColumn(columnId) {
+        displayModel.setDisplayById(columnId, "hidden");
+        accept()
+    }
+
     ListView {
         id: columnView
 
