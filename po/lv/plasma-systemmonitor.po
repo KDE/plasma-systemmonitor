@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-09 00:40+0000\n"
+"POT-Creation-Date: 2024-06-16 00:40+0000\n"
 "PO-Revision-Date: 2024-01-26 08:40+0200\n"
 "Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -701,31 +701,31 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Konfigurēt kolonnas"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:145
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Paslēpts"
 
-#: src/table/ColumnConfigurationDialog.qml:141
+#: src/table/ColumnConfigurationDialog.qml:146
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Tikai teksts"
 
-#: src/table/ColumnConfigurationDialog.qml:147
+#: src/table/ColumnConfigurationDialog.qml:152
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Līniju diagramma"
 
-#: src/table/ColumnConfigurationDialog.qml:151
+#: src/table/ColumnConfigurationDialog.qml:156
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Tikai teksts (mērogots līdz 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:152
+#: src/table/ColumnConfigurationDialog.qml:157
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-08 00:40+0000\n"
+"POT-Creation-Date: 2024-06-16 00:40+0000\n"
 "PO-Revision-Date: 2024-04-17 14:34+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -113,67 +113,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Sütunları Yapılandır…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:178
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:179
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Sinyal Gönder"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:182
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:183
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Askıya Al (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:186
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:187
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Sürdür (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:190
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:191
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Ani Olarak Kapat (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:194
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:195
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Yarıda Kes (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:198
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:199
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Sonlandır (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:202
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Öldür (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:206
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:207
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Kullanıcı 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:210
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:211
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Kullanıcı 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:216
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:217
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "Geçerli Sütunu Kopyala"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:225
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:226
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -181,13 +181,19 @@ msgid_plural "End %1 Processes"
 msgstr[0] "Süreci Sonlandır"
 msgstr[1] "%1 Süreci Sonlandır"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:237
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:239
+#, kde-format
+msgctxt "@action:inmenu hide column"
+msgid "Hide"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Sütunları Yapılandır…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:248
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -195,7 +201,7 @@ msgid_plural "End %1 Processes"
 msgstr[0] "Süreci Sonlandır"
 msgstr[1] "%1 Süreci Sonlandır"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:249
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:256
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -203,7 +209,7 @@ msgid_plural "End Processes"
 msgstr[0] "Süreci Sonlandır"
 msgstr[1] "Süreçleri Sonlandır"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:251
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:258
 #, kde-format
 msgid ""
 "Are you sure you want to end this process?\n"
@@ -218,7 +224,7 @@ msgstr[1] ""
 "Bu %1 süreci sonlandırmak istediğinizden emin misiniz?\n"
 "Kaydedilmemiş veri kaybolabilir."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:262
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:269
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"

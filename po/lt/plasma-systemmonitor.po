@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-09 00:40+0000\n"
+"POT-Creation-Date: 2024-06-16 00:40+0000\n"
 "PO-Revision-Date: 2024-04-06 01:00+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: none\n"
@@ -704,31 +704,31 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Konfigūruoti stulpelius"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:145
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Paslėptas"
 
-#: src/table/ColumnConfigurationDialog.qml:141
+#: src/table/ColumnConfigurationDialog.qml:146
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Tik tekstas"
 
-#: src/table/ColumnConfigurationDialog.qml:147
+#: src/table/ColumnConfigurationDialog.qml:152
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Linijinė diagrama"
 
-#: src/table/ColumnConfigurationDialog.qml:151
+#: src/table/ColumnConfigurationDialog.qml:156
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Tik tekstas (100% mastelis)"
 
-#: src/table/ColumnConfigurationDialog.qml:152
+#: src/table/ColumnConfigurationDialog.qml:157
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"

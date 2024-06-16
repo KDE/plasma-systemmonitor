@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-08 00:40+0000\n"
+"POT-Creation-Date: 2024-06-16 00:40+0000\n"
 "PO-Revision-Date: 2024-01-25 14:53+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -104,67 +104,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Konfigurēt kolonnas..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:188
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:189
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Noteikt prioritāti..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:191
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:192
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Sūtīt signālu"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:195
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:196
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Aizturēt (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:199
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Turpināt (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:204
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Nolikt (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:208
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Pārtraukt (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:211
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Izbeigt (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:215
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Nobeigt (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:219
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "1. lietotājs (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:223
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:224
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "2. lietotājs (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:230
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:231
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -173,7 +173,13 @@ msgstr[0] "Aizvērt %1 programmu"
 msgstr[1] "Aizvērt %1 programmas"
 msgstr[2] "Aizvērt %1 programmu"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:248
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:241
+#, kde-format
+msgctxt "@action:inmenu hide column"
+msgid "Hide"
+msgstr ""
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:255
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -182,7 +188,7 @@ msgstr[0] "Aizvērt %1 programmu"
 msgstr[1] "Aizvērt %1 programmas"
 msgstr[2] "Aizvērt %1 programmu"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -191,7 +197,7 @@ msgstr[0] "Aizvērt programmu"
 msgstr[1] "Aizvērt programmas"
 msgstr[2] "Aizvērt programmas"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:251
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
 #, kde-format
 msgid ""
 "Are you sure you want to quit this application?\n"
@@ -209,7 +215,7 @@ msgstr[2] ""
 "Vai tiešām vēlaties aizvērt šīs %1 programmas?\n"
 "Nesaglabātais darbs būs zudis."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:265
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:272
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

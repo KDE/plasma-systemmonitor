@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-09 00:40+0000\n"
+"POT-Creation-Date: 2024-06-16 00:40+0000\n"
 "PO-Revision-Date: 2023-07-25 01:15+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -699,31 +699,31 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "항목 설정"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:145
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "숨겨짐"
 
-#: src/table/ColumnConfigurationDialog.qml:141
+#: src/table/ColumnConfigurationDialog.qml:146
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "텍스트만"
 
-#: src/table/ColumnConfigurationDialog.qml:147
+#: src/table/ColumnConfigurationDialog.qml:152
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "꺾은선형 차트"
 
-#: src/table/ColumnConfigurationDialog.qml:151
+#: src/table/ColumnConfigurationDialog.qml:156
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "텍스트만(100%로 크기 조절)"
 
-#: src/table/ColumnConfigurationDialog.qml:152
+#: src/table/ColumnConfigurationDialog.qml:157
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"

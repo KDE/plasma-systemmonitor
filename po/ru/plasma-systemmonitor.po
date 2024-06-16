@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-09 00:40+0000\n"
+"POT-Creation-Date: 2024-06-16 00:40+0000\n"
 "PO-Revision-Date: 2022-06-18 10:28+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -703,31 +703,31 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Настройка столбцов"
 
-#: src/table/ColumnConfigurationDialog.qml:140
+#: src/table/ColumnConfigurationDialog.qml:145
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Скрытый"
 
-#: src/table/ColumnConfigurationDialog.qml:141
+#: src/table/ColumnConfigurationDialog.qml:146
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Только подписи"
 
-#: src/table/ColumnConfigurationDialog.qml:147
+#: src/table/ColumnConfigurationDialog.qml:152
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Линейная диаграмма"
 
-#: src/table/ColumnConfigurationDialog.qml:151
+#: src/table/ColumnConfigurationDialog.qml:156
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Только текст (масштабируется до 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:152
+#: src/table/ColumnConfigurationDialog.qml:157
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
