@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-16 00:40+0000\n"
-"PO-Revision-Date: 2024-04-04 08:38+0200\n"
+"PO-Revision-Date: 2024-06-16 05:49+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -174,7 +174,7 @@ msgstr[1] "%1 აპლიკაციიდან გასვლა"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "დამალვა"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:255
 #, kde-format
