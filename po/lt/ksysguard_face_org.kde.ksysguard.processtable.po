@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-16 00:40+0000\n"
-"PO-Revision-Date: 2024-05-24 02:00+0300\n"
+"PO-Revision-Date: 2024-06-17 12:12+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -189,7 +189,7 @@ msgstr[3] "Užbaigti %1 procesą"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Slėpti"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format
