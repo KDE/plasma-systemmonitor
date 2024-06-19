@@ -185,7 +185,7 @@ msgstr[0] "结束 %1 个进程"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "隐藏"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format

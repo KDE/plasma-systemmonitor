@@ -173,7 +173,7 @@ msgstr[0] "退出 %1 个应用程序"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "隐藏"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:255
 #, kde-format
