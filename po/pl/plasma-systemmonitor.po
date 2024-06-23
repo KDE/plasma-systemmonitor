@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-04 02:25+0000\n"
-"PO-Revision-Date: 2024-04-13 19:31+0200\n"
+"PO-Revision-Date: 2024-06-22 08:56+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -552,13 +553,13 @@ msgstr "Brak"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Small"
-msgstr "Mały"
+msgstr "Małe"
 
 #: src/page/PageDialog.qml:120
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Large"
-msgstr "Duży"
+msgstr "Duże"
 
 #: src/page/PageDialog.qml:129
 #, kde-format
