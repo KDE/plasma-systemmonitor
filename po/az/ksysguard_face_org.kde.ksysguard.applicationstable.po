@@ -2,13 +2,14 @@
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
 # SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Kheyyam Gojayev <xxmn77@gmail.com>
+# SPDX-FileCopyrightText: 2024 Kheyyam Godjayev <xxmn77gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-16 00:40+0000\n"
-"PO-Revision-Date: 2024-06-10 11:52+0400\n"
-"Last-Translator: Kheyyam Godjayev <xxmn77@gmail.com>\n"
+"PO-Revision-Date: 2024-06-25 14:18+0400\n"
+"Last-Translator: Kheyyam Godjayev <xxmn77gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
@@ -173,14 +174,14 @@ msgstr[1] "%1 tətbiqdən çıxmaq"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Gizlətmək"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:255
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] "Tətbiqdən Çıxmaq"
+msgstr[0] "Tətbiqdən çıxmaq"
 msgstr[1] "%1 tətbiqdən çıxmaq"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
@@ -188,8 +189,8 @@ msgstr[1] "%1 tətbiqdən çıxmaq"
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
-msgstr[0] "Tətbiqdən çıx"
-msgstr[1] "Tətbiqlərdən çıx"
+msgstr[0] "Tətbiqdən çıxmaq"
+msgstr[1] "Tətbiqlərdən çıxmaq"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
 #, kde-format

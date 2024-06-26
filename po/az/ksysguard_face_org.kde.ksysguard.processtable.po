@@ -2,13 +2,14 @@
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
 # SPDX-FileCopyrightText: 2020, 2021, 2023, 2024 Kheyyam Gojayev <xxmn77@gmail.com>
+# SPDX-FileCopyrightText: 2024 Kheyyam Godjayev <xxmn77gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-16 00:40+0000\n"
-"PO-Revision-Date: 2024-06-10 11:53+0400\n"
-"Last-Translator: Kheyyam Godjayev <xxmn77@gmail.com>\n"
+"PO-Revision-Date: 2024-06-25 14:17+0400\n"
+"Last-Translator: Kheyyam Godjayev <xxmn77gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
 "MIME-Version: 1.0\n"
@@ -185,20 +186,20 @@ msgstr[1] "%1 prosesi sonlandırmaq"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Gizlətmək"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
-msgstr "Sütunları Tənzimləmək..."
+msgstr "Sütunları tənzimləmək..."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
 msgid_plural "End %1 Processes"
-msgstr[0] "Prosesi Sonlandırmaq"
+msgstr[0] "Prosesi sonlandırmaq"
 msgstr[1] "%1 prosesi sonlandırmaq"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
@@ -206,8 +207,8 @@ msgstr[1] "%1 prosesi sonlandırmaq"
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
-msgstr[0] "Prosesi sonlandır"
-msgstr[1] "Prosesləri sonlandır"
+msgstr[0] "Prosesi sonlandırmaq"
+msgstr[1] "Prosesləri sonlandırmaq"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:258
 #, kde-format
@@ -228,7 +229,7 @@ msgstr[1] ""
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
-msgstr "Proses İD %1, sahibi %2"
+msgstr "Proses İD: %1, sahibi: %2"
 
 #~ msgctxt "@action"
 #~ msgid "Configure columns…"
