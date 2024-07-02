@@ -28,8 +28,6 @@ Kirigami.Dialog {
 
     preferredWidth: parent ? parent.width * 0.75 : 0
     preferredHeight: parent ? parent.height * 0.75 : 0
-    // So that the background of the columnView delegates doesn't overlap the border.
-    leftPadding: 1
 
     focus: true
 
