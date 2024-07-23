@@ -62,7 +62,7 @@ ecm_set_disabled_deprecation_versions(QT 6.7
     KF 6.5.0
 )
 
-if ("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
+if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
     add_definitions(-DQT_QML_DEBUG)
 endif()
 
