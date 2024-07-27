@@ -1,13 +1,12 @@
 # Translation of ksysguard_face_org.kde.ksysguard.processtable to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2020, 2023.
 # Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-16 00:40+0000\n"
-"PO-Revision-Date: 2023-01-15 12:22+0100\n"
+"PO-Revision-Date: 2024-07-26 15:05+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -15,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 24.11.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -111,9 +110,7 @@ msgid "All Processes"
 msgstr "Alle prosessar"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:127
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Set opp kolonnar …"
@@ -173,12 +170,10 @@ msgid "User 2 (USR2)"
 msgstr "Brukar 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:217
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "Set opp kolonnar …"
+msgstr "Kopier kolonnen"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:226
 #, kde-format
@@ -192,7 +187,7 @@ msgstr[1] "Avslutt dei %1 prosessane"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Gøym"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format
