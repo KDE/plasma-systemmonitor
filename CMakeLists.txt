@@ -44,8 +44,8 @@ find_package(Qt6QuickControls2  ${QT_MIN_VERSION})
 set_package_properties(Qt6QuickControls2 PROPERTIES
     TYPE RUNTIME
 )
-find_package(KF6Kirigami2  ${KF6_MIN_VERSION})
-set_package_properties(KF6Kirigami2 PROPERTIES
+find_package(KF6Kirigami  ${KF6_MIN_VERSION})
+set_package_properties(KF6Kirigami PROPERTIES
     TYPE RUNTIME
 )
 find_package(KF${QT_MAJOR_VERSION}KirigamiAddons 1.1.0 REQUIRED)
