@@ -26,6 +26,7 @@ Kirigami.Dialog {
     preferredHeight: Kirigami.Units.gridUnit * 30
 
     focus: true
+    padding: 0
 
     // We already have a cancel button in the footer
     showCloseButton: false
