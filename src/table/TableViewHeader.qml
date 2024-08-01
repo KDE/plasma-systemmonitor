@@ -38,6 +38,7 @@ HorizontalHeaderView {
 
     resizableColumns: true
     clip: true
+    activeFocusOnTab: false
     // Workaround for QTBUG-122560
     boundsBehavior: Flickable.StopAtBounds
 
