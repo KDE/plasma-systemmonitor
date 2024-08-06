@@ -77,7 +77,8 @@ HorizontalHeaderView {
                 header.sortOrder = header.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
                 header.sort(header.sortColumn, header.sortOrder)
             } else {
-                header.sortOrder = model.Unit == Formatter.Units.UnitNone || model.Unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder
+                const unit = headerModel.data(headerModel.index(cell.x, 0), headerModel.KItemModels.KRoleNames.role("Unit"))
+                header.sortOrder = unit == Formatter.Units.UnitNone || unit == Formatter.Units.UnitInvalid ? Qt.AscendingOrder : Qt.DescendingOrder
                 header.sortName = headerModel.data(headerModel.index(cell.x, 0), headerModel.KItemModels.KRoleNames.role(header.idRole))
                 header.sortColumn = cell.x
             }
