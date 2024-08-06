@@ -27,18 +27,7 @@ TreeViewDelegate
     topPadding: Kirigami.Units.smallSpacing
     bottomPadding: Kirigami.Units.smallSpacing
 
-    background: Rectangle {
-        color: (row % 2 == 0 || selected) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
-
-        Rectangle {
-            anchors.fill: parent
-            Kirigami.Theme.inherit: false
-            Kirigami.Theme.colorSet: Kirigami.Theme.Selection
-            color: Kirigami.Theme.backgroundColor
-            opacity: 0.3
-            visible: root.rowHovered
-        }
-    }
+    background: Item { }
 
     onHoveredChanged: {
         if (hovered) {

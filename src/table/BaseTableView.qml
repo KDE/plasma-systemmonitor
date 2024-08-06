@@ -72,14 +72,97 @@ FocusScope {
         }
     }
 
+    Rectangle {
+        id: background
+
+        anchors.fill: parent
+        anchors.topMargin: heading.height
+
+        Kirigami.Theme.colorSet: Kirigami.Theme.View
+        color: Kirigami.Theme.backgroundColor;
+    }
+
+    TreeView {
+        id: rowBackgroundView
+
+        anchors {
+            fill: parent
+            leftMargin: scrollView.leftPadding
+            rightMargin: scrollView.rightPadding
+            topMargin: heading.height
+            bottomMargin: scrollView.bottomPadding
+        }
+
+        model: ItemModels.KSortFilterProxyModel {
+            sourceModel: root.model
+            filterColumnCallback: function (column, parent) {
+                return column == 0
+            }
+        }
+
+        syncView: tableView
+        alternatingRows: true
+        clip: true
+        interactive: false
+
+        delegate: Item {
+            id: delegate
+
+            required property int row
+            required property int column
+
+            property Item mainItem
+
+            function expressionForMainItem(): Item {
+                // Note: this is not observable in case of model changes
+                return tableView.itemAtCell(Qt.point(column, row))
+            }
+
+            function refreshMainItem(): void {
+                mainItem = Qt.binding(() => expressionForMainItem());
+            }
+
+            Component.onCompleted: {
+                refreshMainItem();
+            }
+
+            TableView.onReused: {
+                refreshMainItem();
+            }
+
+
+            property bool useSelectionSet: mainItem ? (mainItem.highlighted || mainItem.rowHovered) : false
+
+            implicitHeight: Kirigami.Units.gridUnit * 2
+
+            Rectangle {
+                Kirigami.Theme.colorSet: delegate.useSelectionSet ? Kirigami.Theme.Selection : Kirigami.Theme.View
+                Kirigami.Theme.inherit: false
+
+                width: delegate.TableView.view.width
+                height: delegate.height
+
+                color: {
+                    if (delegate.mainItem?.highlighted) {
+                        return Kirigami.Theme.backgroundColor
+                    }
+
+                    if (delegate.mainItem?.rowHovered) {
+                        return Qt.alpha(Kirigami.Theme.backgroundColor, 0.3)
+                    }
+
+                    return delegate.row % 2 == 0 ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
+                }
+            }
+        }
+    }
+
     ScrollView {
         id: scrollView
         anchors.fill: parent
         anchors.topMargin: heading.height
 
         property real innerWidth: LayoutMirroring.enabled ? width - leftPadding : width - rightPadding
-
-        background: Rectangle { color: Kirigami.Theme.backgroundColor; Kirigami.Theme.colorSet: Kirigami.Theme.View }
 
         TreeView {
             id: tableView
@@ -114,6 +197,9 @@ FocusScope {
                     selectionModel.select(index(currentRow, 0), ItemSelectionModel.Select | ItemSelectionModel.Rows)
                 }
             }
+
+            onCollapsed: (row, recursively) => rowBackgroundView.collapse(row)
+            onExpanded: (row, depth) => rowBackgroundView.expandRecursively(row, depth)
 
             columnWidthProvider: function(index) {
                 let column = index
