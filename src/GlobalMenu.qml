@@ -90,7 +90,7 @@ Labs.MenuBar {
         Labs.MenuItem {
             text: i18nc("@menu-action", "About System Monitor")
             icon.name: "help-about"
-            onTriggered: pageStack.layers.push("AboutPage.qml")
+            onTriggered: app.pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutPage"))
             enabled: app.pageStack.layers.depth <= 1
         }
     }
