@@ -42,7 +42,7 @@ Kirigami.ScrollablePage {
         },
 
         NewStuff.Action {
-            text: i18nc("@action", "Get new presets…")
+            text: i18nc("@action", "Get New Presets…")
             configFile: "systemmonitor-presets.knsrc"
             pageStack: applicationWindow().pageStack.layers
             onEntryEvent: (entry, event) => {
@@ -74,7 +74,7 @@ Kirigami.ScrollablePage {
         Kirigami.Action { separator: true },
 
         NewStuff.Action {
-            text: i18nc("@action", "Get new display styles…")
+            text: i18nc("@action", "Get New Display Styles…")
             configFile: "systemmonitor-faces.knsrc"
             pageStack: applicationWindow().pageStack.layers
             onEntryEvent: (entry, event) => {
