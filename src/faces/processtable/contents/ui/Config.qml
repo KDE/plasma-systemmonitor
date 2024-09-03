@@ -21,7 +21,7 @@ Kirigami.FormLayout {
 
     CheckBox {
         id: confirmCheckbox
-        text: i18nc("@option:check", "Confirm ending processes.")
+        text: i18nc("@option:check", "Confirm ending processes")
     }
 
     ComboBox {
@@ -35,10 +35,10 @@ Kirigami.FormLayout {
         Component.onCompleted: currentIndex = indexOfValue(root.cfg_userFilterMode)
 
         model: [
-            { key: i18nc("@item:inlistbox", "Own Processes"), value: Table.ProcessSortFilterModel.ViewOwn },
-            { key: i18nc("@item:inlistbox", "User Processes"), value: Table.ProcessSortFilterModel.ViewUser },
-            { key: i18nc("@item:inlistbox", "System Processes"), value: Table.ProcessSortFilterModel.ViewSystem },
-            { key: i18nc("@item:inlistbox", "All Processes"), value: Table.ProcessSortFilterModel.ViewAll },
+            { key: i18nc("@item:inlistbox", "Own processes"), value: Table.ProcessSortFilterModel.ViewOwn },
+            { key: i18nc("@item:inlistbox", "User processes"), value: Table.ProcessSortFilterModel.ViewUser },
+            { key: i18nc("@item:inlistbox", "System processes"), value: Table.ProcessSortFilterModel.ViewSystem },
+            { key: i18nc("@item:inlistbox", "All processes"), value: Table.ProcessSortFilterModel.ViewAll },
         ]
     }
 }
