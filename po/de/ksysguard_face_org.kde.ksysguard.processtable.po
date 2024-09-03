@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-16 00:40+0000\n"
-"PO-Revision-Date: 2024-04-24 00:14+0200\n"
+"PO-Revision-Date: 2024-09-02 19:34+0200\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.11.70\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
 #, kde-format
@@ -170,12 +170,10 @@ msgid "User 2 (USR2)"
 msgstr "Benutzer 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:217
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "Spalten einrichten ..."
+msgstr "Aktuelle Spalte kopieren"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:226
 #, kde-format
@@ -189,7 +187,7 @@ msgstr[1] "%1 Prozesse beenden"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Ausblenden"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format
