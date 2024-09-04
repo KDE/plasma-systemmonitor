@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-03 00:40+0000\n"
+"POT-Creation-Date: 2024-09-04 00:41+0000\n"
 "PO-Revision-Date: 2023-09-23 15:42+0530\n"
 "Last-Translator: \n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -389,9 +389,11 @@ msgid "Load Preset…"
 msgstr "पूर्वनिर्धारितं आरोपयतु…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Get new presets…"
 msgctxt "@action"
-msgid "Get new presets…"
+msgid "Get New Presets…"
 msgstr "नूतनानि पूर्वनिर्धारितानि प्राप्नुवन्तु…"
 
 #: src/page/FaceConfigurationPage.qml:56
@@ -413,9 +415,11 @@ msgid "Add Chart as Desktop Widget"
 msgstr "कार्यमुखस्य विजेट् इति रूपेण चित्रपटं योजयन्तु"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Get new display styles…"
 msgctxt "@action"
-msgid "Get new display styles…"
+msgid "Get New Display Styles…"
 msgstr "नवीनाः प्रदर्शनशैल्याः प्राप्नुवन्तु…"
 
 #: src/page/FaceConfigurationPage.qml:100

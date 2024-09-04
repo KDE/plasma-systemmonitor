@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-16 00:40+0000\n"
+"POT-Creation-Date: 2024-09-04 00:41+0000\n"
 "PO-Revision-Date: 2024-05-25 23:55\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -23,9 +23,11 @@ msgstr ""
 "X-Crowdin-File-ID: 10720\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Confirm ending processes."
 msgctxt "@option:check"
-msgid "Confirm ending processes."
+msgid "Confirm ending processes"
 msgstr "Пацвердзіць сканчэнне працэсаў."
 
 #: src/faces/processtable/contents/ui/Config.qml:29
@@ -35,27 +37,35 @@ msgid "By default show:"
 msgstr "Прадвызначана паказваць:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "Own Processes"
 msgctxt "@item:inlistbox"
-msgid "Own Processes"
+msgid "Own processes"
 msgstr "Уласныя працэсы"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "User Processes"
 msgctxt "@item:inlistbox"
-msgid "User Processes"
+msgid "User processes"
 msgstr "Працэсы карыстальніка"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "System Processes"
 msgctxt "@item:inlistbox"
-msgid "System Processes"
+msgid "System processes"
 msgstr "Сістэмныя працэсы"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "All Processes"
 msgctxt "@item:inlistbox"
-msgid "All Processes"
+msgid "All processes"
 msgstr "Усе працэсы"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:32

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-03 00:40+0000\n"
+"POT-Creation-Date: 2024-09-04 00:41+0000\n"
 "PO-Revision-Date: 2024-06-20 00:38-0300\n"
 "Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -389,9 +389,11 @@ msgid "Load Preset…"
 msgstr "Carregar predefinição..."
 
 #: src/page/FaceConfigurationPage.qml:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Get new presets…"
 msgctxt "@action"
-msgid "Get new presets…"
+msgid "Get New Presets…"
 msgstr "Baixar novas predefinições..."
 
 #: src/page/FaceConfigurationPage.qml:56
@@ -413,9 +415,11 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Adicionar gráfico ao widget da área de trabalho"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Get new display styles…"
 msgctxt "@action"
-msgid "Get new display styles…"
+msgid "Get New Display Styles…"
 msgstr "Baixar novos estilos de exibição..."
 
 #: src/page/FaceConfigurationPage.qml:100

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-16 00:40+0000\n"
+"POT-Creation-Date: 2024-09-04 00:41+0000\n"
 "PO-Revision-Date: 2024-07-05 12:06+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -21,9 +21,11 @@ msgstr ""
 "X-Generator: Lokalize 24.05.2\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Confirm ending processes."
 msgctxt "@option:check"
-msgid "Confirm ending processes."
+msgid "Confirm ending processes"
 msgstr "Berretsi prozesuak amaitzea."
 
 #: src/faces/processtable/contents/ui/Config.qml:29
@@ -33,27 +35,35 @@ msgid "By default show:"
 msgstr "Era lehenetsian erakutsi:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "Own Processes"
 msgctxt "@item:inlistbox"
-msgid "Own Processes"
+msgid "Own processes"
 msgstr "Norberaren prozesuak"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "User Processes"
 msgctxt "@item:inlistbox"
-msgid "User Processes"
+msgid "User processes"
 msgstr "Erabiltzaileen prozesuak"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "System Processes"
 msgctxt "@item:inlistbox"
-msgid "System Processes"
+msgid "System processes"
 msgstr "Sistemaren prozesuak"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "All Processes"
 msgctxt "@item:inlistbox"
-msgid "All Processes"
+msgid "All processes"
 msgstr "Prozesu guztiak"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:32

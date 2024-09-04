@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.processtable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-16 00:40+0000\n"
+"POT-Creation-Date: 2024-09-04 00:41+0000\n"
 "PO-Revision-Date: 2023-03-30 18:04+0200\n"
 "Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
 "Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
@@ -18,9 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Confirm ending processes."
 msgctxt "@option:check"
-msgid "Confirm ending processes."
+msgid "Confirm ending processes"
 msgstr "Potvrdiť ukončenie procesu."
 
 #: src/faces/processtable/contents/ui/Config.qml:29
@@ -30,27 +32,35 @@ msgid "By default show:"
 msgstr "Predvolene zobraziť:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "Own Processes"
 msgctxt "@item:inlistbox"
-msgid "Own Processes"
+msgid "Own processes"
 msgstr "Vlastné procesy"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "User Processes"
 msgctxt "@item:inlistbox"
-msgid "User Processes"
+msgid "User processes"
 msgstr "Užívateľské procesy"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "System Processes"
 msgctxt "@item:inlistbox"
-msgid "System Processes"
+msgid "System processes"
 msgstr "Systémové procesy"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox"
+#| msgid "All Processes"
 msgctxt "@item:inlistbox"
-msgid "All Processes"
+msgid "All processes"
 msgstr "Všetky procesy"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:32

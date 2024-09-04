@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-03 00:40+0000\n"
+"POT-Creation-Date: 2024-09-04 00:41+0000\n"
 "PO-Revision-Date: 2024-04-04 20:39+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -391,9 +391,11 @@ msgid "Load Preset…"
 msgstr "Zamatu aurrehautaketa..."
 
 #: src/page/FaceConfigurationPage.qml:45
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Get new presets…"
 msgctxt "@action"
-msgid "Get new presets…"
+msgid "Get New Presets…"
 msgstr "Lortu aurrehautaketa berriak..."
 
 #: src/page/FaceConfigurationPage.qml:56
@@ -415,9 +417,11 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Gehitu diagrama mahaigaineko trepeta gisa"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Get new display styles…"
 msgctxt "@action"
-msgid "Get new display styles…"
+msgid "Get New Display Styles…"
 msgstr "Lortu azalpen estilo berriak..."
 
 #: src/page/FaceConfigurationPage.qml:100
