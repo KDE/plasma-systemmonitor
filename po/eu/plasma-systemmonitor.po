@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-04-04 20:39+0200\n"
+"PO-Revision-Date: 2024-09-04 23:21+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.1\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -391,12 +391,10 @@ msgid "Load Preset…"
 msgstr "Zamatu aurrehautaketa..."
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "Lortu aurrehautaketa berriak..."
+msgstr "Lortu aurrezarpen berriak..."
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
@@ -417,12 +415,10 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Gehitu diagrama mahaigaineko trepeta gisa"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr "Lortu azalpen estilo berriak..."
+msgstr "Lortu azaltzeko estilo berriak..."
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format

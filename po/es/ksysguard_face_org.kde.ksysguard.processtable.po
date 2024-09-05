@@ -1,5 +1,5 @@
-# Spanish translations for ksysguard_face_org.kde.ksysguard.processtable.po package.
-# Copyright (C) 2020 This file is copyright:
+# Translation of ksysguard_face_org.kde.ksysguard.processtable to Spanish
+# Copyright (C) 2020-2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
 # Automatically generated, 2020.
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ksysguard_face_org\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-06-16 13:41+0200\n"
+"PO-Revision-Date: 2024-09-04 16:59+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,15 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "Confirmar la terminación de procesos."
+msgstr "Confirmar la terminación de procesos"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -34,33 +32,25 @@ msgid "By default show:"
 msgstr "Mostrar por omisión:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "Procesos propios"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
-msgstr "Procesos de usuarios"
+msgstr "Procesos del usuario"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "Procesos del sistema"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "Todos los procesos"
