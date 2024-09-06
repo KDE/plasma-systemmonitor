@@ -19,12 +19,10 @@ msgstr ""
 "X-Crowdin-File-ID: 43337\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "确认结束进程。"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -33,36 +31,28 @@ msgid "By default show:"
 msgstr "默认显示："
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
-msgstr "自有进程"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
-msgstr "用户进程"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
-msgstr "系统进程"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
-msgstr "所有进程"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:32
 #, kde-format

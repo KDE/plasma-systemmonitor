@@ -388,12 +388,10 @@ msgid "Load Preset…"
 msgstr "加载预设…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "获取新预设…"
+msgstr ""
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
@@ -414,12 +412,10 @@ msgid "Add Chart as Desktop Widget"
 msgstr "添加此图表为桌面挂件"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr "获取新显示风格…"
+msgstr ""
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format
