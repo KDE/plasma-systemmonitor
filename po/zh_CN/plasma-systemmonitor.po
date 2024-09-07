@@ -391,7 +391,7 @@ msgstr "加载预设…"
 #, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr ""
+msgstr "获取新预设…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
@@ -415,7 +415,7 @@ msgstr "添加此图表为桌面挂件"
 #, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr ""
+msgstr "获取新显示样式…"
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format

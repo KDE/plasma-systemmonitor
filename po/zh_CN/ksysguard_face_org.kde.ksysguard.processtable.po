@@ -22,7 +22,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr ""
+msgstr "确认结束进程"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -34,25 +34,25 @@ msgstr "默认显示："
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
-msgstr ""
+msgstr "自有进程"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
-msgstr ""
+msgstr "用户进程"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
-msgstr ""
+msgstr "系统进程"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
-msgstr ""
+msgstr "所有进程"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:32
 #, kde-format
