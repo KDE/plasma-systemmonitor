@@ -114,7 +114,7 @@ msgstr "Unha aplicación para vixiar os recursos do sistema"
 #: src/main.cpp:69
 #, kde-format
 msgid "© 2020 Plasma Development Team"
-msgstr "© 2020 Equipo de desenvolvemento de Plasma"
+msgstr "© 2020 Equipo desenvolvedor de Plasma"
 
 #: src/main.cpp:75
 #, kde-format

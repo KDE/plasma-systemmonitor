@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-04-07 17:12+0530\n"
+"PO-Revision-Date: 2024-09-07 19:53+0200\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.1\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -281,6 +281,9 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
+"வன்பொருள்வழி வரைகலை கிடைக்காததால் கணினிக் கண்காணி மென்பொருள்வழி வரைகலையையே "
+"பயன்படுத்துகிறது. இதனால் காட்டப்படுபவற்றில் உருக்குலைவுகள் ஏற்படலாம்.உங்கள் வரைகலை "
+"சாதனநிரலை சரிபார்க்கவும்."
 
 #: src/page/ColumnControl.qml:117
 #, kde-format
@@ -385,9 +388,7 @@ msgid "Load Preset…"
 msgstr "முன்னமைக்கப்பட்டதை ஏற்று…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
 msgstr "புதிய முன்னமைப்புகளை பெறு…"
@@ -411,9 +412,7 @@ msgid "Add Chart as Desktop Widget"
 msgstr "வரைபடத்தை பணிமேடை பிளாஸ்மாய்டாக சேர்"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "புதிய காட்சிமுறைகளை பெறு…"

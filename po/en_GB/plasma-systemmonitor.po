@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-05-20 19:33+0100\n"
+"PO-Revision-Date: 2024-09-07 12:21+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
 "Language: en_GB\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -388,12 +388,10 @@ msgid "Load Preset…"
 msgstr "Load Preset…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "Get new presets…"
+msgstr "Get New Presets…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
@@ -414,12 +412,10 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Add Chart as Desktop Widget"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr "Get new display styles…"
+msgstr "Get New Display Styles…"
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format
