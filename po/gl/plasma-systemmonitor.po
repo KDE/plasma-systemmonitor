@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-06-04 02:25+0000\n"
-"PO-Revision-Date: 2024-04-14 15:12+0200\n"
+"PO-Revision-Date: 2024-09-04 17:28+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -114,7 +114,7 @@ msgstr "Unha aplicación para vixiar os recursos do sistema"
 #: src/main.cpp:69
 #, kde-format
 msgid "© 2020 Plasma Development Team"
-msgstr "© 2020 Equipo de desenvolvemento de Plasma"
+msgstr "© 2020 Equipo desenvolvedor de Plasma"
 
 #: src/main.cpp:75
 #, kde-format
