@@ -252,11 +252,20 @@ Faces.SensorFace {
 
         property int signalToSend
 
-        title: i18ncp("@title:window", "End Process", "End %1 Processes", items.length)
-        killButtonText: i18ncp("@action:button", "End Process", "End Processes", items.length)
+        title: signalToSend === Process.ProcessController.KillSignal
+               ? i18ncp("@title:window", "Forcibly End Process", "Forcibly End %1 Processes", items.length)
+               : i18ncp("@title:window", "End Process", "End %1 Processes", items.length)
+        killButtonText: signalToSend === Process.ProcessController.KillSignal
+                        ? i18ncp("@action:button", "Forcibly End Process", "Forcibly End Processes", items.length)
+                        : i18ncp("@action:button", "End Process", "End Processes", items.length)
         killButtonIcon: "process-stop"
-        questionText: i18np("Are you sure you want to end this process?\nAny unsaved work may be lost.",
-                            "Are you sure you want to end these %1 processes?\nAny unsaved work may be lost.", items.length)
+        questionText: signalToSend === Process.ProcessController.KillSignal
+                      ? i18np("Forcibly end (SIGKILL) this process? Unsaved work may be lost.",
+                              "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost.",
+                              items.length)
+                      : i18np("End this process? Unsaved work may be lost.",
+                              "End these %1 processes? Unsaved work may be lost.",
+                              items.length)
 
         items: table.selectedProcesses
 

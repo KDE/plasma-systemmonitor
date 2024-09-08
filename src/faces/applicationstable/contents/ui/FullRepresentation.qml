@@ -252,11 +252,20 @@ Faces.SensorFace {
 
         property int signalToSend
 
-        title: i18ncp("@title:window", "Quit Application", "Quit %1 Applications", items.length)
-        killButtonText: i18ncp("@action:button", "Quit Application", "Quit Applications", items.length)
+        title: signalToSend === Process.ProcessController.KillSignal
+               ? i18ncp("@title:window", "Force Quit Application", "Force Quit %1 Applications", items.length)
+               : i18ncp("@title:window", "Quit Application", "Quit %1 Applications", items.length)
+        killButtonText: signalToSend === Process.ProcessController.KillSignal
+               ? i18ncp("@action:button", "Force Quit Application", "Force Quit Applications", items.length)
+               : i18ncp("@action:button", "Quit Application", "Quit Applications", items.length)
         killButtonIcon: "application-exit"
-        questionText: i18np("Are you sure you want to quit this application?\nAny unsaved work may be lost.",
-                            "Are you sure you want to quit these %1 applications?\nAny unsaved work may be lost.", items.length)
+        questionText: signalToSend === Process.ProcessController.KillSignal
+                      ? i18np("Force quit (SIGKILL) the application? Unsaved work may be lost.",
+                              "Force quit (SIGKILL) these %1 applications Unsaved work may be lost.",
+                              items.length)
+                      : i18np("Quit this application? Unsaved work may be lost.",
+                              "Quit these %1 applications? Unsaved work may be lost.",
+                              items.length)
 
         items: table.selectedApplications
 
