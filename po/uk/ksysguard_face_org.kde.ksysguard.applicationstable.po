@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-16 00:40+0000\n"
+"POT-Creation-Date: 2024-09-09 00:40+0000\n"
 "PO-Revision-Date: 2024-06-16 09:28+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian\n"
@@ -180,7 +180,20 @@ msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Приховати"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:255
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Quit Application"
+#| msgid_plural "Quit %1 Applications"
+msgctxt "@title:window"
+msgid "Force Quit Application"
+msgid_plural "Force Quit %1 Applications"
+msgstr[0] "Вийти з %1 програми"
+msgstr[1] "Вийти з %1 програм"
+msgstr[2] "Вийти з %1 програм"
+msgstr[3] "Вийти з %1 програми"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -190,7 +203,20 @@ msgstr[1] "Вийти з %1 програм"
 msgstr[2] "Вийти з %1 програм"
 msgstr[3] "Вийти з %1 програми"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Quit Application"
+#| msgid_plural "Quit Applications"
+msgctxt "@action:button"
+msgid "Force Quit Application"
+msgid_plural "Force Quit Applications"
+msgstr[0] "Вийти з програм"
+msgstr[1] "Вийти з програм"
+msgstr[2] "Вийти з програм"
+msgstr[3] "Вийти з програми"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -200,14 +226,17 @@ msgstr[1] "Вийти з програм"
 msgstr[2] "Вийти з програм"
 msgstr[3] "Вийти з програми"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
-#, kde-format
-msgid ""
-"Are you sure you want to quit this application?\n"
-"Any unsaved work may be lost."
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to quit this application?\n"
+#| "Any unsaved work may be lost."
+#| msgid_plural ""
+#| "Are you sure you want to quit these %1 applications?\n"
+#| "Any unsaved work may be lost."
+msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
-"Are you sure you want to quit these %1 applications?\n"
-"Any unsaved work may be lost."
+"Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
 "Ви справді хочете завершити роботу цієї %1 програми?\n"
 "Усі незбережені дані буде втрачено."
@@ -221,7 +250,30 @@ msgstr[3] ""
 "Ви справді хочете завершити роботу цієї програми?\n"
 "Усі незбережені дані буде втрачено."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:272
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to quit this application?\n"
+#| "Any unsaved work may be lost."
+#| msgid_plural ""
+#| "Are you sure you want to quit these %1 applications?\n"
+#| "Any unsaved work may be lost."
+msgid "Quit this application? Unsaved work may be lost."
+msgid_plural "Quit these %1 applications? Unsaved work may be lost."
+msgstr[0] ""
+"Ви справді хочете завершити роботу цієї %1 програми?\n"
+"Усі незбережені дані буде втрачено."
+msgstr[1] ""
+"Ви справді хочете завершити роботу цих %1 програм?\n"
+"Усі незбережені дані буде втрачено."
+msgstr[2] ""
+"Ви справді хочете завершити роботу цих %1 програм?\n"
+"Усі незбережені дані буде втрачено."
+msgstr[3] ""
+"Ви справді хочете завершити роботу цієї програми?\n"
+"Усі незбережені дані буде втрачено."
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

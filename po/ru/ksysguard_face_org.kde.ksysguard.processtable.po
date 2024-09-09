@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-04 00:41+0000\n"
+"POT-Creation-Date: 2024-09-09 00:40+0000\n"
 "PO-Revision-Date: 2023-01-28 10:46+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -210,7 +210,20 @@ msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Настроить столбцы..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:255
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:256
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "End Process"
+#| msgid_plural "End %1 Processes"
+msgctxt "@title:window"
+msgid "Forcibly End Process"
+msgid_plural "Forcibly End %1 Processes"
+msgstr[0] "Завершение %1 процесса"
+msgstr[1] "Завершение %1 процессов"
+msgstr[2] "Завершение %1 процессов"
+msgstr[3] "Завершение процесса"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -220,7 +233,20 @@ msgstr[1] "Завершение %1 процессов"
 msgstr[2] "Завершение %1 процессов"
 msgstr[3] "Завершение процесса"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:256
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "End Process"
+#| msgid_plural "End Processes"
+msgctxt "@action:button"
+msgid "Forcibly End Process"
+msgid_plural "Forcibly End Processes"
+msgstr[0] "Завершить процессы"
+msgstr[1] "Завершить процессы"
+msgstr[2] "Завершить процессы"
+msgstr[3] "Завершить процесс"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -230,14 +256,17 @@ msgstr[1] "Завершить процессы"
 msgstr[2] "Завершить процессы"
 msgstr[3] "Завершить процесс"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:258
-#, kde-format
-msgid ""
-"Are you sure you want to end this process?\n"
-"Any unsaved work may be lost."
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to end this process?\n"
+#| "Any unsaved work may be lost."
+#| msgid_plural ""
+#| "Are you sure you want to end these %1 processes?\n"
+#| "Any unsaved work may be lost."
+msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
-"Are you sure you want to end these %1 processes?\n"
-"Any unsaved work may be lost."
+"Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
 "Завершить %1 выбранный процесс?\n"
 "Все несохранённые данные будут потеряны."
@@ -251,7 +280,30 @@ msgstr[3] ""
 "Завершить выбранный процесс?\n"
 "Все несохранённые данные будут потеряны."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:269
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:266
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to end this process?\n"
+#| "Any unsaved work may be lost."
+#| msgid_plural ""
+#| "Are you sure you want to end these %1 processes?\n"
+#| "Any unsaved work may be lost."
+msgid "End this process? Unsaved work may be lost."
+msgid_plural "End these %1 processes? Unsaved work may be lost."
+msgstr[0] ""
+"Завершить %1 выбранный процесс?\n"
+"Все несохранённые данные будут потеряны."
+msgstr[1] ""
+"Завершить %1 выбранных процесса?\n"
+"Все несохранённые данные будут потеряны."
+msgstr[2] ""
+"Завершить %1 выбранных процессов?\n"
+"Все несохранённые данные будут потеряны."
+msgstr[3] ""
+"Завершить выбранный процесс?\n"
+"Все несохранённые данные будут потеряны."
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"

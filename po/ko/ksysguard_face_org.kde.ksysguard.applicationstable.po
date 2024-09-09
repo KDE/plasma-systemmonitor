@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-16 00:40+0000\n"
+"POT-Creation-Date: 2024-09-09 00:40+0000\n"
 "PO-Revision-Date: 2024-08-21 00:18+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -174,33 +174,70 @@ msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "숨기기"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:255
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Quit Application"
+#| msgid_plural "Quit %1 Applications"
+msgctxt "@title:window"
+msgid "Force Quit Application"
+msgid_plural "Force Quit %1 Applications"
+msgstr[0] "앱 %1개 끝내기"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
 msgstr[0] "앱 %1개 끝내기"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "Quit Application"
+#| msgid_plural "Quit Applications"
+msgctxt "@action:button"
+msgid "Force Quit Application"
+msgid_plural "Force Quit Applications"
+msgstr[0] "앱 끝내기"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
 msgstr[0] "앱 끝내기"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
-#, kde-format
-msgid ""
-"Are you sure you want to quit this application?\n"
-"Any unsaved work may be lost."
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to quit this application?\n"
+#| "Any unsaved work may be lost."
+#| msgid_plural ""
+#| "Are you sure you want to quit these %1 applications?\n"
+#| "Any unsaved work may be lost."
+msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
-"Are you sure you want to quit these %1 applications?\n"
-"Any unsaved work may be lost."
+"Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
 "이 앱 %1개를 종료하시겠습니까?\n"
 "저장하지 않은 작업은 손실됩니다."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:272
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to quit this application?\n"
+#| "Any unsaved work may be lost."
+#| msgid_plural ""
+#| "Are you sure you want to quit these %1 applications?\n"
+#| "Any unsaved work may be lost."
+msgid "Quit this application? Unsaved work may be lost."
+msgid_plural "Quit these %1 applications? Unsaved work may be lost."
+msgstr[0] ""
+"이 앱 %1개를 종료하시겠습니까?\n"
+"저장하지 않은 작업은 손실됩니다."
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

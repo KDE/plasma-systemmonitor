@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-04 00:41+0000\n"
+"POT-Creation-Date: 2024-09-09 00:40+0000\n"
 "PO-Revision-Date: 2024-09-04 08:21+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -196,7 +196,20 @@ msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "הגדרת עמודות…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:255
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:256
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "End Process"
+#| msgid_plural "End %1 Processes"
+msgctxt "@title:window"
+msgid "Forcibly End Process"
+msgid_plural "Forcibly End %1 Processes"
+msgstr[0] "סיום תהליך"
+msgstr[1] "סיום שני תהליכים"
+msgstr[2] "סיום %1 תהליכים"
+msgstr[3] "סיום %1 תהליכים"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -206,7 +219,20 @@ msgstr[1] "סיום שני תהליכים"
 msgstr[2] "סיום %1 תהליכים"
 msgstr[3] "סיום %1 תהליכים"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:256
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
+#, fuzzy, kde-format
+#| msgctxt "@action:button"
+#| msgid "End Process"
+#| msgid_plural "End Processes"
+msgctxt "@action:button"
+msgid "Forcibly End Process"
+msgid_plural "Forcibly End Processes"
+msgstr[0] "סיום תהליך"
+msgstr[1] "סיום תהליכים"
+msgstr[2] "סיום תהליכים"
+msgstr[3] "סיום תהליכים"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -216,14 +242,17 @@ msgstr[1] "סיום תהליכים"
 msgstr[2] "סיום תהליכים"
 msgstr[3] "סיום תהליכים"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:258
-#, kde-format
-msgid ""
-"Are you sure you want to end this process?\n"
-"Any unsaved work may be lost."
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to end this process?\n"
+#| "Any unsaved work may be lost."
+#| msgid_plural ""
+#| "Are you sure you want to end these %1 processes?\n"
+#| "Any unsaved work may be lost."
+msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
-"Are you sure you want to end these %1 processes?\n"
-"Any unsaved work may be lost."
+"Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
 "לסיים את התהליך הזה?\n"
 "עבודה שלא שמרת תלך לאיבוד."
@@ -237,7 +266,30 @@ msgstr[3] ""
 "לסיים את %1 התהליכים האלה?\n"
 "עבודה שלא שמרת תלך לאיבוד."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:269
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:266
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure you want to end this process?\n"
+#| "Any unsaved work may be lost."
+#| msgid_plural ""
+#| "Are you sure you want to end these %1 processes?\n"
+#| "Any unsaved work may be lost."
+msgid "End this process? Unsaved work may be lost."
+msgid_plural "End these %1 processes? Unsaved work may be lost."
+msgstr[0] ""
+"לסיים את התהליך הזה?\n"
+"עבודה שלא שמרת תלך לאיבוד."
+msgstr[1] ""
+"לסיים את שני התהליכים האלה?\n"
+"עבודה שלא שמרת תלך לאיבוד."
+msgstr[2] ""
+"לסיים את %1 התהליכים האלה?\n"
+"עבודה שלא שמרת תלך לאיבוד."
+msgstr[3] ""
+"לסיים את %1 התהליכים האלה?\n"
+"עבודה שלא שמרת תלך לאיבוד."
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
