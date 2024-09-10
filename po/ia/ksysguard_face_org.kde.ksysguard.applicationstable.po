@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# giovanni <g.sora@tiscali.it>, 2021, 2023.
+# SPDX-FileCopyrightText: 2021, 2023, 2024 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-14 00:58+0000\n"
-"PO-Revision-Date: 2023-01-25 15:47+0100\n"
+"PO-Revision-Date: 2024-09-09 15:11+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:49
 #, kde-format
@@ -195,7 +195,7 @@ msgid_plural ""
 "Any unsaved work may be lost."
 msgstr[0] ""
 "Tu es secur que tu vole abandonar iste application?\n"
-"Ulle travalio nonn salveguardate poterea esser perdite."
+"Ulle travalio non salveguardate poterea esser perdite."
 msgstr[1] ""
 "Tu es secur que tu vole abandonar iste %1 applicationes? Omne labor non "
 "salveguardate potera esser perdite.."
