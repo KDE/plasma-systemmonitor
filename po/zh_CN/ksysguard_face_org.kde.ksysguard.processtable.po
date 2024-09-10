@@ -194,14 +194,11 @@ msgid "Configure Columns…"
 msgstr "配置列…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "结束 %1 个进程"
+msgstr[0] ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -211,14 +208,11 @@ msgid_plural "End %1 Processes"
 msgstr[0] "结束 %1 个进程"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "结束进程"
+msgstr[0] ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -228,29 +222,17 @@ msgid_plural "End Processes"
 msgstr[0] "结束进程"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
-msgstr[0] "您确定要结束这 %1 个进程吗？尚未保存的工作进度可能会丢失。"
+msgstr[0] ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] "您确定要结束这 %1 个进程吗？尚未保存的工作进度可能会丢失。"
+msgstr[0] ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format

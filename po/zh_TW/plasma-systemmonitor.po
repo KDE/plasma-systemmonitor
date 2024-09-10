@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-05-09 06:06+0900\n"
+"PO-Revision-Date: 2024-09-10 01:17+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.04.70\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -389,9 +389,7 @@ msgid "Load Preset…"
 msgstr "載入預設檔…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
 msgstr "取得新預設檔…"
@@ -415,9 +413,7 @@ msgid "Add Chart as Desktop Widget"
 msgstr "將圖表作為小元件新增至桌面"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "取得新顯示風格…"

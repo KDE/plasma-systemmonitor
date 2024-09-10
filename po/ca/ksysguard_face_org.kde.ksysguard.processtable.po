@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-09-04 10:36+0200\n"
+"PO-Revision-Date: 2024-09-09 10:23+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -197,15 +197,12 @@ msgid "Configure Columns…"
 msgstr "Configura les columnes…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Finalitza el procés"
-msgstr[1] "Finalitza %1 processos"
+msgstr[0] "Finalitza forçadament el procés"
+msgstr[1] "Finalitza forçadament %1 processos"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -216,15 +213,12 @@ msgstr[0] "Finalitza el procés"
 msgstr[1] "Finalitza %1 processos"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Finalitza el procés"
-msgstr[1] "Finalitza els processos"
+msgstr[0] "Finalitza forçadament el procés"
+msgstr[1] "Finalitza forçadament els processos"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -235,39 +229,23 @@ msgstr[0] "Finalitza el procés"
 msgstr[1] "Finalitza els processos"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Esteu segur que voleu finalitzar aquest procés?\n"
-"Es perdrà qualsevol treball no desat."
+"Finalitza forçadament (SIGKILL) aquest procés? Pot perdre's la feina no "
+"desada."
 msgstr[1] ""
-"Esteu segur que voleu matar aquests %1 processos?\n"
-"Es perdrà qualsevol treball no desat."
+"Finalitza forçadament (SIGKILL) aquests %1 processos? Pot perdre's la feina "
+"no desada."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"Esteu segur que voleu finalitzar aquest procés?\n"
-"Es perdrà qualsevol treball no desat."
-msgstr[1] ""
-"Esteu segur que voleu matar aquests %1 processos?\n"
-"Es perdrà qualsevol treball no desat."
+msgstr[0] "Finalitzo aquest procés? Pot perdre's la feina no desada."
+msgstr[1] "Finalitzo aquests %1 processos? Pot perdre's la feina no desada."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format

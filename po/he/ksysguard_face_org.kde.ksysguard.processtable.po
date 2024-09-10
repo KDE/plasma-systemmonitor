@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-09-04 08:21+0300\n"
+"PO-Revision-Date: 2024-09-09 19:13+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -197,17 +197,14 @@ msgid "Configure Columns…"
 msgstr "הגדרת עמודות…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "סיום תהליך"
-msgstr[1] "סיום שני תהליכים"
-msgstr[2] "סיום %1 תהליכים"
-msgstr[3] "סיום %1 תהליכים"
+msgstr[0] "סיום תהליך בכוח"
+msgstr[1] "סיום שני תהליכים בכוח"
+msgstr[2] "סיום %1 תהליכים בכוח"
+msgstr[3] "סיום %1 תהליכים בכוח"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -220,17 +217,14 @@ msgstr[2] "סיום %1 תהליכים"
 msgstr[3] "סיום %1 תהליכים"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "סיום תהליך"
-msgstr[1] "סיום תהליכים"
-msgstr[2] "סיום תהליכים"
-msgstr[3] "סיום תהליכים"
+msgstr[0] "סיום תהליך בכוח"
+msgstr[1] "סיום תהליכים בכוח"
+msgstr[2] "סיום תהליכים בכוח"
+msgstr[3] "סיום תהליכים בכוח"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -243,51 +237,24 @@ msgstr[2] "סיום תהליכים"
 msgstr[3] "סיום תהליכים"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"לסיים את התהליך הזה?\n"
-"עבודה שלא שמרת תלך לאיבוד."
+msgstr[0] "לסיים (SIGKILL) את התהליך הזה בכוח? עבודה שלא שמרת תאבד."
 msgstr[1] ""
-"לסיים את שני התהליכים האלה?\n"
-"עבודה שלא שמרת תלך לאיבוד."
-msgstr[2] ""
-"לסיים את %1 התהליכים האלה?\n"
-"עבודה שלא שמרת תלך לאיבוד."
-msgstr[3] ""
-"לסיים את %1 התהליכים האלה?\n"
-"עבודה שלא שמרת תלך לאיבוד."
+"לסיים (SIGKILL) את שני התהליכים האלה בכוח? עבודה שלא שמרת תלך לאיבוד."
+msgstr[2] "לסיים (SIGKILL) את %1 התהליכים האלה בכוח? עבודה שלא שמרת תאבד."
+msgstr[3] "לסיים (SIGKILL) את %1 התהליכים האלה? עבודה שלא שמרת תאבד."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"לסיים את התהליך הזה?\n"
-"עבודה שלא שמרת תלך לאיבוד."
-msgstr[1] ""
-"לסיים את שני התהליכים האלה?\n"
-"עבודה שלא שמרת תלך לאיבוד."
-msgstr[2] ""
-"לסיים את %1 התהליכים האלה?\n"
-"עבודה שלא שמרת תלך לאיבוד."
-msgstr[3] ""
-"לסיים את %1 התהליכים האלה?\n"
-"עבודה שלא שמרת תלך לאיבוד."
+msgstr[0] "לסיים את התהליך הזה? עבודה שלא שמרת תאבד."
+msgstr[1] "לסיים את שני התהליכים האלה? עבודה שלא שמרת תאבד."
+msgstr[2] "לסיים את %1 התהליכים האלה? עבודה שלא שמרת תאבד."
+msgstr[3] "לסיים את %1 התהליכים האלה? עבודה שלא שמרת תאבד."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format

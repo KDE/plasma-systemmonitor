@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-09-04 07:10+0200\n"
+"PO-Revision-Date: 2024-09-09 08:37+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -197,17 +197,14 @@ msgid "Configure Columns…"
 msgstr "Nastavi stolpce…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Končaj %1 proces"
-msgstr[1] "Končaj %1 procesa"
-msgstr[2] "Končaj %1 procese"
-msgstr[3] "Končaj %1 procesov"
+msgstr[0] "Prisilno končaj %1 proces"
+msgstr[1] "Prisilno končaj %1 procesa"
+msgstr[2] "Prisilno končaj %1 procese"
+msgstr[3] "Prisilno končaj %1 procesov"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -220,17 +217,14 @@ msgstr[2] "Končaj %1 procese"
 msgstr[3] "Končaj %1 procesov"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Končaj proces"
-msgstr[1] "Končaj procesa"
-msgstr[2] "Končaj procese"
-msgstr[3] "Končaj procese"
+msgstr[0] "Prisilno končaj proces"
+msgstr[1] "Prisilno končaj procesa"
+msgstr[2] "Prisilno končaj procese"
+msgstr[3] "Prisilno končaj procese"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -243,51 +237,34 @@ msgstr[2] "Končaj procese"
 msgstr[3] "Končaj procese"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Ali ste prepričani, da želite zapustiti to %1 aplikacijo?\n"
-"Neshranjeno delo bo morda izgubljeno."
+"Prisilno končaj (SIGKILL) teh %1 procesov? Neshranjeno delo bo morda "
+"izgubljeno."
 msgstr[1] ""
-"Ali ste prepričani, da želite zapustiti ti %1 aplikaciji?\n"
-"Neshranjeno delo bo morda izgubljeno."
+"Prisilno končaj (SIGKILL) ta %1 proces? Neshranjeno delo bo morda izgubljeno."
 msgstr[2] ""
-"Ali ste prepričani, da želite zapustiti te %1 aplikacije?\n"
-"Neshranjeno delo bo morda izgubljeno."
+"Prisilno končaj (SIGKILL) ta %1 procesa? Neshranjeno delo bo morda "
+"izgubljeno."
 msgstr[3] ""
-"Ali ste prepričani, da želite zapustiti teh %1 aplikaciji?\n"
-"Neshranjeno delo bo morda izgubljeno."
+"Prisilno končaj (SIGKILL) te %1 procese? Neshranjeno delo bo morda "
+"izgubljeno."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Ali ste prepričani, da želite zapustiti to %1 aplikacijo?\n"
-"Neshranjeno delo bo morda izgubljeno."
+"Končaj (SIGKILL) teh %1 procesov? Neshranjeno delo bo morda izgubljeno."
 msgstr[1] ""
-"Ali ste prepričani, da želite zapustiti ti %1 aplikaciji?\n"
-"Neshranjeno delo bo morda izgubljeno."
+"Končaj (SIGKILL) ta %1 proces? Neshranjeno delo bo morda izgubljeno."
 msgstr[2] ""
-"Ali ste prepričani, da želite zapustiti te %1 aplikacije?\n"
-"Neshranjeno delo bo morda izgubljeno."
+"Končaj (SIGKILL) ta %1 procesa? Neshranjeno delo bo morda izgubljeno."
 msgstr[3] ""
-"Ali ste prepričani, da želite zapustiti teh %1 aplikaciji?\n"
-"Neshranjeno delo bo morda izgubljeno."
+"Končaj (SIGKILL) te %1 procese? Neshranjeno delo bo morda izgubljeno."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format

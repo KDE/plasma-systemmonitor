@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-20 02:27+0900\n"
+"PO-Revision-Date: 2024-09-10 01:15+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -17,15 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.04.70\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "確認終止行程。"
+msgstr "確認終止行程"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -34,33 +32,25 @@ msgid "By default show:"
 msgstr "預設顯示："
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "自己的行程"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "使用者行程"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "系統行程"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "所有行程"
@@ -205,14 +195,11 @@ msgid "Configure Columns…"
 msgstr "設定欄位…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "結束 %1 個行程"
+msgstr[0] "強制終止 %1 個行程"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -222,14 +209,11 @@ msgid_plural "End %1 Processes"
 msgstr[0] "結束 %1 個行程"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "結束行程"
+msgstr[0] "強制終止行程"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -239,33 +223,18 @@ msgid_plural "End Processes"
 msgstr[0] "結束行程"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"您確定要結束這 %1 個行程嗎？\n"
-"任何未儲存的變更都可能會丟失。"
+"您確定要強制終止 (SIGKILL) 這 %1 個行程嗎？任何未儲存的變更都可能會丟失。"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"您確定要結束這 %1 個行程嗎？\n"
-"任何未儲存的變更都可能會丟失。"
+msgstr[0] "您確定要結束這 %1 個行程嗎？任何未儲存的變更都可能會丟失。"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format

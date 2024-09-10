@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-17 14:37+0200\n"
+"PO-Revision-Date: 2024-09-09 12:16+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -176,15 +176,12 @@ msgid "Hide"
 msgstr "Cela"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Quita Application"
-msgstr[1] "Quita %1 applicationes"
+msgstr[0] "Fortia Quitar Application"
+msgstr[1] "Fortia Quitar %1 applicationes"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -195,15 +192,12 @@ msgstr[0] "Quita Application"
 msgstr[1] "Quita %1 applicationes"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Quita Application"
-msgstr[1] "Quita Application"
+msgstr[0] "Fortia Quitar Application"
+msgstr[1] "Fortia Quitar Applicationes"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -214,39 +208,27 @@ msgstr[0] "Quita Application"
 msgstr[1] "Quita Application"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Tu es secur que tu vole abandonar iste application?\n"
-"Ulle travalio nonn salveguardate poterea esser perdite."
+"Fortia quitar (SIGKILL) le application?\n"
+"Ulle travalio non salveguardate poterea esser perdite."
 msgstr[1] ""
-"Tu es secur que tu vole abandonar iste %1 applicationes? Omne labor non "
-"salveguardate potera esser perdite.."
+"Fortia quitar (SIGKILL) iste %1 applicationes? Omne labor non salveguardate "
+"potera esser perdite."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] ""
-"Tu es secur que tu vole abandonar iste application?\n"
-"Ulle travalio nonn salveguardate poterea esser perdite."
+"Quita iste application?\n"
+"Ulle travalio non salveguardate poterea esser perdite."
 msgstr[1] ""
-"Tu es secur que tu vole abandonar iste %1 applicationes? Omne labor non "
-"salveguardate potera esser perdite.."
+"Quitar iste %1 applicationes? Omne labor non salveguardate potera esser "
+"perdite."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format

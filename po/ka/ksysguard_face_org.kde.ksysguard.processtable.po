@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-09-04 04:58+0200\n"
+"PO-Revision-Date: 2024-09-09 04:55+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -195,15 +195,12 @@ msgid "Configure Columns…"
 msgstr "სვეტების მორგება…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "პროცესის დასრულება"
-msgstr[1] "%1 პროცესის დასრულება"
+msgstr[0] "პროცესის ნაძალადევი დასრულება"
+msgstr[1] "%1 პროცესის ნაძალადევი დასრულება"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -214,15 +211,12 @@ msgstr[0] "პროცესის დასრულება"
 msgstr[1] "%1 პროცესის დასრულება"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "პროცესის დასრულება"
-msgstr[1] "პროცესების დასრულება"
+msgstr[0] "პროცესის ნაძალადევი დასრულება"
+msgstr[1] "პროცესების ნაძალადევი დასრულება"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -233,39 +227,21 @@ msgstr[0] "პროცესის დასრულება"
 msgstr[1] "პროცესების დასრულება"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"დარწმუნებული ბრძანდებით, რომ გნებავთ, დაასრულოთ ეს პროცესი?\n"
-"შეუნახავი ნამუშევრები დაგეკარგებათ."
+"დავასრულო ძალით (SIGKILL) ეს პროცესი? შეუნახავი სამუშაო დაგეკარგებათ."
 msgstr[1] ""
-"დარწმუნებული ბრძანდებით, რომ გნებავთ, დაასრულოთ %1 პროცესი?\n"
-"შეუნახავი ნამუშევრები დაგეკარგებათ."
+"დავასრულო ძალით (SIGKILL) ეს %1 პროცესი? შეუნახავი სამუშაო დაგეკარგებათ."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"დარწმუნებული ბრძანდებით, რომ გნებავთ, დაასრულოთ ეს პროცესი?\n"
-"შეუნახავი ნამუშევრები დაგეკარგებათ."
-msgstr[1] ""
-"დარწმუნებული ბრძანდებით, რომ გნებავთ, დაასრულოთ %1 პროცესი?\n"
-"შეუნახავი ნამუშევრები დაგეკარგებათ."
+msgstr[0] "დავასრულო ეს პროცესი? შეუნახავი სამუშაო დაგეკარგებათ."
+msgstr[1] "დავასრულო ეს %1 პროცესი? შეუნახავი სამუშაო დაგეკარგებათ."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format

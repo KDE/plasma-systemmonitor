@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-16 07:24+0300\n"
+"PO-Revision-Date: 2024-09-09 19:10+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -179,17 +179,14 @@ msgid "Hide"
 msgstr "הסתרה"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "יציאה מיישום"
-msgstr[1] "יציאה משני יישומים"
-msgstr[2] "יציאה מ־%1 יישומים"
-msgstr[3] "יציאה מ־%1 יישומים"
+msgstr[0] "אילוץ יציאה מיישום"
+msgstr[1] "אילוץ יציאה משני יישומים"
+msgstr[2] "אילוץ יציאה מ־%1 יישומים"
+msgstr[3] "אילוץ יציאה מ־%1 יישומים"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -202,17 +199,14 @@ msgstr[2] "יציאה מ־%1 יישומים"
 msgstr[3] "יציאה מ־%1 יישומים"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "יציאה מיישום"
-msgstr[1] "יציאה מיישומים"
-msgstr[2] "יציאה מיישומים"
-msgstr[3] "יציאה מיישומים"
+msgstr[0] "אילוץ יציאה מיישום"
+msgstr[1] "אילוץ יציאה מיישומים"
+msgstr[2] "אילוץ יציאה מיישומים"
+msgstr[3] "אילוץ יציאה מיישומים"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -225,51 +219,23 @@ msgstr[2] "יציאה מיישומים"
 msgstr[3] "יציאה מיישומים"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
-msgstr[0] ""
-"לצאת מהיישום הזה?\n"
-"שינויים שלא שמרת ילכו לאיבוד."
-msgstr[1] ""
-"לצאת משני היישומים האלה?\n"
-"שינויים שלא שמרת ילכו לאיבוד."
-msgstr[2] ""
-"לצאת מ־%1 היישומים האלה?\n"
-"שינויים שלא שמרת ילכו לאיבוד."
-msgstr[3] ""
-"לצאת מ־%1 היישומים האלה?\n"
-"שינויים שלא שמרת ילכו לאיבוד."
+msgstr[0] "לאלץ יציאה (SIGKILL) מהיישום? עבודה שלא נשמרה תאבד."
+msgstr[1] "לאלץ יציאה (SIGKILL) משני יישומים? עבודה שלא נשמרה תאבד."
+msgstr[2] "לאלץ יציאה (SIGKILL) מ־%1 יישומים? עבודה שלא נשמרה תאבד."
+msgstr[3] "לאלץ יציאה (SIGKILL) מ־%1 יישומים? עבודה שלא נשמרה תאבד."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"לצאת מהיישום הזה?\n"
-"שינויים שלא שמרת ילכו לאיבוד."
-msgstr[1] ""
-"לצאת משני היישומים האלה?\n"
-"שינויים שלא שמרת ילכו לאיבוד."
-msgstr[2] ""
-"לצאת מ־%1 היישומים האלה?\n"
-"שינויים שלא שמרת ילכו לאיבוד."
-msgstr[3] ""
-"לצאת מ־%1 היישומים האלה?\n"
-"שינויים שלא שמרת ילכו לאיבוד."
+msgstr[0] "לצאת מהיישום הזה? שינויים שלא שמרת יאבדו."
+msgstr[1] "לצאת משני היישומים האלה? שינויים שלא שמרת יאבדו."
+msgstr[2] "לצאת מ־%1 היישומים האלה? שינויים שלא שמרת יאבדו."
+msgstr[3] "לצאת מ־%1 היישומים האלה? שינויים שלא שמרת יאבדו."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ksysguard_face_org\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-09-04 16:59+0200\n"
+"PO-Revision-Date: 2024-09-10 01:40+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -196,15 +196,12 @@ msgid "Configure Columns…"
 msgstr "Configurar columnas..."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Terminar proceso"
-msgstr[1] "Terminar %1 procesos"
+msgstr[0] "Terminar el proceso por la fuerza"
+msgstr[1] "Terminar %1 procesos por la fuerza"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -215,15 +212,12 @@ msgstr[0] "Terminar proceso"
 msgstr[1] "Terminar %1 procesos"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Terminar proceso"
-msgstr[1] "Terminar procesos"
+msgstr[0] "Terminar proceso por la fuerza"
+msgstr[1] "Terminar procesos por la fuerza"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -234,39 +228,24 @@ msgstr[0] "Terminar proceso"
 msgstr[1] "Terminar procesos"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"¿Seguro que quiere terminar este proceso?\n"
-"Se perderá el trabajo no guardado."
+"¿Terminar este proceso por la fuerza (SIGKILL)? El trabajo no guardado se "
+"puede perder."
 msgstr[1] ""
-"¿Seguro que quiere terminar estos %1 procesos?\n"
-"Se perderá el trabajo no guardado."
+"¿Terminar estos %1 procesos por la fuerza (SIGKILL)? El trabajo no guardado "
+"se puede perder."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"¿Seguro que quiere terminar este proceso?\n"
-"Se perderá el trabajo no guardado."
+msgstr[0] "¿Terminar este proceso? El trabajo no guardado se puede perder."
 msgstr[1] ""
-"¿Seguro que quiere terminar estos %1 procesos?\n"
-"Se perderá el trabajo no guardado."
+"¿Terminar estos %1 procesos? El trabajo no guardado se puede perder."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format

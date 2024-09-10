@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-07-05 12:06+0200\n"
+"PO-Revision-Date: 2024-09-09 20:41+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -179,15 +179,12 @@ msgid "Hide"
 msgstr "Ezkutatu"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Irten aplikaziotik"
-msgstr[1] "Irten %1 aplikaziotatik"
+msgstr[0] "Behartu aplikaziotik irtetea"
+msgstr[1] "Behartu %1 aplikaziotatik irtetea"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -198,14 +195,11 @@ msgstr[0] "Irten aplikaziotik"
 msgstr[1] "Irten %1 aplikaziotatik"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Irten aplikaziotik"
+msgstr[0] "Behartu aplikaziotik irtetea"
 msgstr[1] "Irten aplikazioetatik"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
@@ -217,39 +211,22 @@ msgstr[0] "Irten aplikaziotik"
 msgstr[1] "Irten aplikazioetatik"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Ziur zaude aplikazio honetatik irten nahi duzula?\n"
-"Gorde gabeko lana gal daiteke."
+"Aplikaziotik irtetea (SIGKILL) behartu? Gorde gabeko lana gal daiteke."
 msgstr[1] ""
-"Ziur zaude %1 aplikazio hauetatik irten nahi duzula?\n"
-"Gorde gabeko lana gal daiteke."
+"%1 aplikazio hauetatik irtetea (SIGKILL) behartu? Gorde gabeko lana gal "
+"daiteke."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"Ziur zaude aplikazio honetatik irten nahi duzula?\n"
-"Gorde gabeko lana gal daiteke."
-msgstr[1] ""
-"Ziur zaude %1 aplikazio hauetatik irten nahi duzula?\n"
-"Gorde gabeko lana gal daiteke."
+msgstr[0] "Aplikazio honetatik irten? Gorde gabeko lana gal daiteke."
+msgstr[1] "%1 aplikazio hauetatik irten? Gorde gabeko lana gal daiteke."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format

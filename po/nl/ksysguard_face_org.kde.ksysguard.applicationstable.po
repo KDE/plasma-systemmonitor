@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-16 15:30+0200\n"
+"PO-Revision-Date: 2024-09-09 09:42+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -176,15 +176,12 @@ msgid "Hide"
 msgstr "Verbergen"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Toepassing afsluiten"
-msgstr[1] "%1 toepassingen afsluiten"
+msgstr[0] "Toepassing gedwongen afsluiten"
+msgstr[1] "%1 toepassingen gedwongen afsluiten"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -195,15 +192,12 @@ msgstr[0] "Toepassing afsluiten"
 msgstr[1] "%1 toepassingen afsluiten"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Toepassing afsluiten"
-msgstr[1] "Toepassingen afsluiten"
+msgstr[0] "Toepassing gedwongen afsluiten"
+msgstr[1] "Toepassingen gedwongen afsluiten"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -214,39 +208,23 @@ msgstr[0] "Toepassing afsluiten"
 msgstr[1] "Toepassingen afsluiten"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Wilt u deze toepassing afsluiten?\n"
-"Alle niet opgeslagen werk gaat verloren."
+"De toepassing (SIGKILL) gedwongen afsluiten? Alle niet opgeslagen werk gaat "
+"verloren."
 msgstr[1] ""
-"Wilt u deze %1 toepassingen afsluiten?\n"
-"Alle niet opgeslagen werk gaat verloren."
+"Deze %1 toepassingen (SIGKILL) gedwongen afsluiten? Alle niet opgeslagen "
+"werk gaat verloren."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"Wilt u deze toepassing afsluiten?\n"
-"Alle niet opgeslagen werk gaat verloren."
-msgstr[1] ""
-"Wilt u deze %1 toepassingen afsluiten?\n"
-"Alle niet opgeslagen werk gaat verloren."
+msgstr[0] "Deze toepassing afsluiten? Niet opgeslagen werk gaat verloren."
+msgstr[1] "Deze %1 toepassingen afsluiten? Niet opgeslagen werk gaat verloren."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
