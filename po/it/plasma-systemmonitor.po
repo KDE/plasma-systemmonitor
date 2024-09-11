@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-04-04 14:46+0200\n"
+"PO-Revision-Date: 2024-09-04 18:24+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.1\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -388,9 +388,7 @@ msgid "Load Preset…"
 msgstr "Carica preimpostazione…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
 msgstr "Ottieni nuove preimpostazioni…"
@@ -414,9 +412,7 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Aggiungi grafico come oggetto del desktop"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "Ottieni nuovi stili di visualizzazione…"

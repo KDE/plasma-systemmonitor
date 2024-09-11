@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-19 18:45+0200\n"
+"PO-Revision-Date: 2024-09-05 14:29+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,15 +15,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "Conferma la conclusione dei processi."
+msgstr "Conferma la conclusione dei processi"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -32,33 +30,25 @@ msgid "By default show:"
 msgstr "Per impostazione predefinita mostra:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "Processi propri"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "Processi utente"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "Processi di sistema"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "Tutti i processi"
