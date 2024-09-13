@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-20 18:35+0200\n"
+"PO-Revision-Date: 2024-09-10 08:52+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -175,14 +175,11 @@ msgid "Hide"
 msgstr "Masquer"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Fermer une application"
+msgstr[0] "Forcer la fermeture d'une application"
 msgstr[1] "Fermer %1 applications"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
@@ -194,14 +191,11 @@ msgstr[0] "Fermer une application"
 msgstr[1] "Fermer %1 applications"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Fermer une application"
+msgstr[0] "Forcer la fermeture d'une application"
 msgstr[1] "Fermer des applications"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
@@ -213,36 +207,24 @@ msgstr[0] "Fermer une application"
 msgstr[1] "Fermer des applications"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Voulez-vous vraiment terminer cette application ? \n"
-"Tout travail non enregistré pourrait être perdu."
+"Voulez-vous vraiment forcer la fermeture (SIGKILL) de l'application ? Les "
+"modifications non enregistrées pourraient être perdues."
 msgstr[1] ""
 "Voulez-vous vraiment terminer ces %1 applications ? \n"
 "Tout travail non enregistré pourrait être perdu."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] ""
-"Voulez-vous vraiment terminer cette application ? \n"
-"Tout travail non enregistré pourrait être perdu."
+"Voulez-vous vraiment fermer cette application ? Les modifications non "
+"enregistrées pourraient être perdues."
 msgstr[1] ""
 "Voulez-vous vraiment terminer ces %1 applications ? \n"
 "Tout travail non enregistré pourrait être perdu."
