@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-04-06 01:00+0300\n"
+"PO-Revision-Date: 2024-09-14 00:48+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -390,9 +390,7 @@ msgid "Load Preset…"
 msgstr "Įkelti išankstinę parinktį…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
 msgstr "Gauti naujų išankstinių parinkčių…"
@@ -416,9 +414,7 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Pridėti diagramą kaip darbalaukio valdiklį"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "Gauti naujų atvaizdavimo stilių…"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-17 12:12+0300\n"
+"PO-Revision-Date: 2024-09-14 01:01+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -180,17 +180,14 @@ msgid "Hide"
 msgstr "Slėpti"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Baigti programos darbą"
-msgstr[1] "Baigti %1 programų darbą"
-msgstr[2] "Baigti %1 programų darbą"
-msgstr[3] "Baigti %1 programos darbą"
+msgstr[0] "Priverstinai baigti programos darbą"
+msgstr[1] "Priverstinai baigti %1 programų darbą"
+msgstr[2] "Priverstinai baigti %1 programų darbą"
+msgstr[3] "Priverstinai baigti %1 programos darbą"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -203,17 +200,14 @@ msgstr[2] "Baigti %1 programų darbą"
 msgstr[3] "Baigti %1 programos darbą"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Baigti programos darbą"
-msgstr[1] "Baigti programų darbą"
-msgstr[2] "Baigti programų darbą"
-msgstr[3] "Baigti programų darbą"
+msgstr[0] "Priverstinai baigti programos darbą"
+msgstr[1] "Priverstinai baigti programų darbą"
+msgstr[2] "Priverstinai baigti programų darbą"
+msgstr[3] "Priverstinai baigti programų darbą"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -226,51 +220,36 @@ msgstr[2] "Baigti programų darbą"
 msgstr[3] "Baigti programų darbą"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Ar tikrai norite užbaigti šios programos darbą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Priverstinai baigti (SIGKILL) šios programos darbą? Bet koks neįrašytas "
+"darbas gali būti prarastas."
 msgstr[1] ""
-"Ar tikrai norite užbaigti šių %1 programų darbą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Priverstinai baigti (SIGKILL) šių %1 programų darbą? Bet koks neįrašytas "
+"darbas gali būti prarastas."
 msgstr[2] ""
-"Ar tikrai norite užbaigti %1 programų darbą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Priverstinai baigti (SIGKILL) šių %1 programų darbą? Bet koks neįrašytas "
+"darbas gali būti prarastas."
 msgstr[3] ""
-"Ar tikrai norite užbaigti šios %1 programos darbą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Priverstinai baigti (SIGKILL) šios %1 programos darbą? Bet koks neįrašytas "
+"darbas gali būti prarastas."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] ""
-"Ar tikrai norite užbaigti šios programos darbą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Baigti šios programos darbą? Bet koks neįrašytas darbas gali būti prarastas."
 msgstr[1] ""
-"Ar tikrai norite užbaigti šių %1 programų darbą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Baigti šių %1 programų darbą? Bet koks neįrašytas darbas gali būti prarastas."
 msgstr[2] ""
-"Ar tikrai norite užbaigti %1 programų darbą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Baigti šių %1 programų darbą? Bet koks neįrašytas darbas gali būti prarastas."
 msgstr[3] ""
-"Ar tikrai norite užbaigti šios %1 programos darbą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Baigti šios %1 programos darbą? Bet koks neįrašytas darbas gali būti "
+"prarastas."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format

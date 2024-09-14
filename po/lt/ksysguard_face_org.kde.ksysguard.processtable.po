@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-17 12:12+0300\n"
+"PO-Revision-Date: 2024-09-14 00:56+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -20,12 +20,10 @@ msgstr ""
 "X-Generator: Poedit 3.4.2\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "Klausti patvirtinimo, kai procesai užbaigiami."
+msgstr "Klausti patvirtinimo, kai procesai užbaigiami"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -34,33 +32,25 @@ msgid "By default show:"
 msgstr "Pagal numatymą rodyti:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "Savi procesai"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "Naudotojo procesai"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "Sisteminiai procesai"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "Visi procesai"
@@ -208,17 +198,14 @@ msgid "Configure Columns…"
 msgstr "Konfigūruoti stulpelius…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Užbaigti procesą"
-msgstr[1] "Užbaigti %1 procesus"
-msgstr[2] "Užbaigti %1 procesų"
-msgstr[3] "Užbaigti %1 procesą"
+msgstr[0] "Priverstinai užbaigti procesą"
+msgstr[1] "Priverstinai užbaigti %1 procesus"
+msgstr[2] "Priverstinai užbaigti %1 procesų"
+msgstr[3] "Priverstinai užbaigti %1 procesą"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -231,17 +218,14 @@ msgstr[2] "Užbaigti %1 procesų"
 msgstr[3] "Užbaigti %1 procesą"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Užbaigti procesą"
-msgstr[1] "Užbaigti procesus"
-msgstr[2] "Užbaigti procesus"
-msgstr[3] "Užbaigti procesus"
+msgstr[0] "Priverstinai užbaigti procesą"
+msgstr[1] "Priverstinai užbaigti procesus"
+msgstr[2] "Priverstinai užbaigti procesus"
+msgstr[3] "Priverstinai užbaigti procesus"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -254,51 +238,35 @@ msgstr[2] "Užbaigti procesus"
 msgstr[3] "Užbaigti procesus"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Ar tikrai norite užbaigti šį procesą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Užbaigti priverstinai (SIGKILL) šį procesą? Bet koks neįrašytas darbas gali "
+"būti prarastas."
 msgstr[1] ""
-"Ar tikrai norite užbaigti šiuos %1 procesus?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Užbaigti priverstinai (SIGKILL) šiuos %1 procesus? Bet koks neįrašytas "
+"darbas gali būti prarastas."
 msgstr[2] ""
-"Ar tikrai norite užbaigti %1 procesų?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Užbaigti priverstinai (SIGKILL) šiuos %1 procesų? Bet koks neįrašytas darbas "
+"gali būti prarastas."
 msgstr[3] ""
-"Ar tikrai norite užbaigti šį %1 procesą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Užbaigti priverstinai (SIGKILL) šį %1 procesą? Bet koks neįrašytas darbas "
+"gali būti prarastas."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Ar tikrai norite užbaigti šį procesą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Užbaigti šį procesą? Bet koks neįrašytas darbas gali būti prarastas."
 msgstr[1] ""
-"Ar tikrai norite užbaigti šiuos %1 procesus?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Užbaigti šiuos %1 procesus? Bet koks neįrašytas darbas gali būti prarastas."
 msgstr[2] ""
-"Ar tikrai norite užbaigti %1 procesų?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Užbaigti šiuos %1 procesų? Bet koks neįrašytas darbas gali būti prarastas."
 msgstr[3] ""
-"Ar tikrai norite užbaigti šį %1 procesą?\n"
-"Bet koks neįrašytas darbas gali būti prarastas."
+"Užbaigti šį %1 procesą? Bet koks neįrašytas darbas gali būti prarastas."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
