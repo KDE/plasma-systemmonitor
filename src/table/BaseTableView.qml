@@ -103,6 +103,7 @@ FocusScope {
             activeFocusOnTab: true
 
             clip: true
+            pixelAligned: true
             boundsBehavior: Flickable.StopAtBounds
 
             selectionBehavior: TableView.SelectRows
