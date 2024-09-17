@@ -177,16 +177,13 @@ msgid "Hide"
 msgstr "Skrýt"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Ukončit aplikaci"
-msgstr[1] "Ukončit %1 aplikace"
-msgstr[2] "Ukončit %1 aplikací"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -198,16 +195,13 @@ msgstr[1] "Ukončit %1 aplikace"
 msgstr[2] "Ukončit %1 aplikací"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Ukončit aplikaci"
-msgstr[1] "Ukončit aplikace"
-msgstr[2] "Ukončit aplikace"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -219,45 +213,21 @@ msgstr[1] "Ukončit aplikace"
 msgstr[2] "Ukončit aplikace"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Opravdu chcete ukončit tuto aplikaci?\n"
-"Neuložená práce může být ztracena."
 msgstr[1] ""
-"Opravdu chcete ukončit tyto %1 aplikace?\n"
-"Neuložená práce může být ztracena."
 msgstr[2] ""
-"Opravdu chcete ukončit těchto %1 aplikací?\n"
-"Neuložená práce může být ztracena."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] ""
-"Opravdu chcete ukončit tuto aplikaci?\n"
-"Neuložená práce může být ztracena."
 msgstr[1] ""
-"Opravdu chcete ukončit tyto %1 aplikace?\n"
-"Neuložená práce může být ztracena."
 msgstr[2] ""
-"Opravdu chcete ukončit těchto %1 aplikací?\n"
-"Neuložená práce může být ztracena."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
