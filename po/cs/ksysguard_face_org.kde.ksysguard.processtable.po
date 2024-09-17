@@ -30,36 +30,28 @@ msgid "By default show:"
 msgstr ""
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
-msgstr "Vlastní procesy"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
-msgstr "Uživatelské procesy"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
-msgstr "Systémové procesy"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
-msgstr "Všechny procesy"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:32
 #, kde-format
@@ -203,16 +195,13 @@ msgid "Configure Columns…"
 msgstr "Nastavit sloupce…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Ukončit proces"
-msgstr[1] "Ukončit %1 procesy"
-msgstr[2] "Ukončit %1 procesů"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -224,16 +213,13 @@ msgstr[1] "Ukončit %1 procesy"
 msgstr[2] "Ukončit %1 procesů"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Ukončit proces"
-msgstr[1] "Ukončit procesy"
-msgstr[2] "Ukončit procesy"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
