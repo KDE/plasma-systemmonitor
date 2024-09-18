@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021, 2023, 2024.
+# SPDX-FileCopyrightText: 2020, 2021, 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-16 08:52+0200\n"
+"PO-Revision-Date: 2024-09-09 10:19+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -179,15 +179,12 @@ msgid "Hide"
 msgstr "Oculta"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Ix de l'aplicació"
-msgstr[1] "Ix de les %1 aplicacions"
+msgstr[0] "Força l'eixida de l'aplicació"
+msgstr[1] "Força l'eixida de %1 aplicacions"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -198,15 +195,12 @@ msgstr[0] "Ix de l'aplicació"
 msgstr[1] "Ix de les %1 aplicacions"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Ix de l'aplicació"
-msgstr[1] "Ix de les aplicacions"
+msgstr[0] "Força l'eixida de l'aplicació"
+msgstr[1] "Força l'eixida de les aplicacions"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -217,39 +211,23 @@ msgstr[0] "Ix de l'aplicació"
 msgstr[1] "Ix de les aplicacions"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Segur que voleu eixir d'esta aplicació?\n"
-"Es perdrà qualsevol treball no guardat."
+"Force l'eixida (SIGKILL) de l'aplicació? Pot perdre's la faena no guardada."
 msgstr[1] ""
-"Segur que voleu eixir d'estes %1 aplicacions?\n"
-"Es perdrà qualsevol treball no guardat."
+"Force l'eixida (SIGKILL) d'estes %1 aplicacions? Pot perdre's la faena no "
+"guardada."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"Segur que voleu eixir d'esta aplicació?\n"
-"Es perdrà qualsevol treball no guardat."
+msgstr[0] "Voleu eixir d'esta aplicació? Pot perdre's la faena no guardada."
 msgstr[1] ""
-"Segur que voleu eixir d'estes %1 aplicacions?\n"
-"Es perdrà qualsevol treball no guardat."
+"Voleu eixir d'estes %1 aplicacions? Pot perdre's la faena no guardada."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
