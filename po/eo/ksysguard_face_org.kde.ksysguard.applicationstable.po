@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-16 06:33+0200\n"
+"PO-Revision-Date: 2024-09-18 19:03+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -179,15 +179,12 @@ msgid "Hide"
 msgstr "Kaŝi"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Ĉesigi aplikaĵon"
-msgstr[1] "Ĉesigi %1 aplikaĵojn"
+msgstr[0] "Devige Ĉesigi Aplikaĵon"
+msgstr[1] "Devige Ĉesigi %1 Aplikaĵojn"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -198,58 +195,38 @@ msgstr[0] "Ĉesigi aplikaĵon"
 msgstr[1] "Ĉesigi %1 aplikaĵojn"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Ĉesigi aplikaĵon"
-msgstr[1] "Ĉesigi aplikaĵojn"
+msgstr[0] "Devige Ĉesigi Aplikaĵon"
+msgstr[1] "Devige Ĉesigi Aplikaĵojn"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
-msgstr[0] "Ĉesigi aplikaĵon"
-msgstr[1] "Ĉesigi aplikaĵojn"
+msgstr[0] "Ĉesigi Aplikaĵon"
+msgstr[1] "Ĉesigi Aplikaĵojn"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Ĉu vi certas ke vi volas ĉesigi tiun aplikaĵon?\n"
-"Iu nekonservita laboro povus perdiĝi."
+"Ĉu devige ĉesigi (SIGKILL) la aplikaĵon? Nekonservita laboro povus perdiĝi."
 msgstr[1] ""
-"Ĉu vi certas ke vi volas ĉesigi tiujn %1 aplikaĵojn?\n"
-"Iu nekonservita laboro povus perdiĝi."
+"Ĉu devige ĉesigi (SIGKILL) tiujn %1 aplikaĵojn? Nekonservita laboro povus "
+"perdiĝi."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"Ĉu vi certas ke vi volas ĉesigi tiun aplikaĵon?\n"
-"Iu nekonservita laboro povus perdiĝi."
-msgstr[1] ""
-"Ĉu vi certas ke vi volas ĉesigi tiujn %1 aplikaĵojn?\n"
-"Iu nekonservita laboro povus perdiĝi."
+msgstr[0] "Ĉu ĉesigi tiun aplikaĵon? Nekonservita laboro povus perdiĝi."
+msgstr[1] "Ĉu ĉesigi tiujn %1 aplikaĵojn? Nekonservita laboro povus perdiĝi."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
