@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-09-18 19:03+0200\n"
+"PO-Revision-Date: 2024-09-19 21:59+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -229,39 +229,23 @@ msgstr[0] "Fini Procezon"
 msgstr[1] "Fini Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Ĉu vi certas ke vi volas ĉesigi tiun procezon?\n"
-"Iu nekonservita laboro povus perdiĝi."
+"Ĉu perforte ĉesigi (SIGKILL) tiun procezon? Iu ekonservita laboro povus "
+"perdiĝi."
 msgstr[1] ""
-"Ĉu vi certas ke vi volas ĉesigi tiujn %1 procezojn?\n"
-"Iu nekonservita laboro povus perdiĝi."
+"Ĉu perforte ĉesigi (SIGKILL) tiujn %1 procezojn? Iu nekonservita laboro "
+"povus perdiĝi."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"Ĉu vi certas ke vi volas ĉesigi tiun procezon?\n"
-"Iu nekonservita laboro povus perdiĝi."
-msgstr[1] ""
-"Ĉu vi certas ke vi volas ĉesigi tiujn %1 procezojn?\n"
-"Iu nekonservita laboro povus perdiĝi."
+msgstr[0] "Ĉu ĉesigi tiun procezon? Iu nekonservita laboro povus perdiĝi."
+msgstr[1] "Ĉu ĉesigi tiujn %1 procezojn? Iu nekonservita laboro povus perdiĝi."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
