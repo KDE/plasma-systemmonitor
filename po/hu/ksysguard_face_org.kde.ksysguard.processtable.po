@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-05-27 22:50+0200\n"
+"PO-Revision-Date: 2024-09-22 21:51+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -16,15 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "Folyamatok befejezésének megerősítése."
+msgstr "Folyamatok befejezésének megerősítése"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -33,33 +31,25 @@ msgid "By default show:"
 msgstr "Alapértelmezésként megjelenítendő:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "Saját folyamatok"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "Felhasználói folyamatok"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "Rendszerfolyamatok"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "Minden folyamat"
@@ -196,7 +186,7 @@ msgstr[1] "%1 folyamat befejezése"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Elrejtés"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format
@@ -205,15 +195,12 @@ msgid "Configure Columns…"
 msgstr "Oszlopbeállítások…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Folyamat befejezése"
-msgstr[1] "%1 folyamat befejezése"
+msgstr[0] "Folyamat befejezésének kényszerítése"
+msgstr[1] "%1 folyamat befejezésének kényszerítése"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -224,15 +211,12 @@ msgstr[0] "Folyamat befejezése"
 msgstr[1] "%1 folyamat befejezése"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Folyamat befejezése"
-msgstr[1] "Folyamatok befejezése"
+msgstr[0] "Folyamat befejezésének kényszerítése"
+msgstr[1] "Folyamatok befejezésének kényszerítése"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -243,39 +227,24 @@ msgstr[0] "Folyamat befejezése"
 msgstr[1] "Folyamatok befejezése"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Biztosan leállítja ezt a folyamatot?\n"
-"A nem mentett munkák elveszhetnek."
+"Kényszeríti a folyamat leállítását (SIGKILL)? A nem mentett munkák "
+"elveszhetnek."
 msgstr[1] ""
-"Biztosan leállítja ezt a(z) %1 folyamatot?\n"
-"A nem mentett munkák elveszhetnek."
+"Kényszeríti ennek a(z) %1 folyamatnak a leállítását (SIGKILL)? A nem mentett "
+"munkák elveszhetnek."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"Biztosan leállítja ezt a folyamatot?\n"
-"A nem mentett munkák elveszhetnek."
+msgstr[0] "Leállítja ezt a folyamatot? A nem mentett munkák elveszhetnek."
 msgstr[1] ""
-"Biztosan leállítja ezt a(z) %1 folyamatot?\n"
-"A nem mentett munkák elveszhetnek."
+"Leállítja ezt a(z) %1 folyamatot? A nem mentett munkák elveszhetnek."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
