@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-16 10:06+0200\n"
+"PO-Revision-Date: 2024-09-22 12:48+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 24.07.70\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -176,15 +176,12 @@ msgid "Hide"
 msgstr "Скриване"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Изход от приложението"
-msgstr[1] "Изход от %1 приложения"
+msgstr[0] "Принудителен изход от едно приложение"
+msgstr[1] "Принудителен изход от %1 приложения"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -195,15 +192,12 @@ msgstr[0] "Изход от приложението"
 msgstr[1] "Изход от %1 приложения"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Изход от приложението"
-msgstr[1] "Изход от приложенията"
+msgstr[0] "Принудителен изход от приложение"
+msgstr[1] "Принудителен изход от приложения"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -214,39 +208,25 @@ msgstr[0] "Изход от приложението"
 msgstr[1] "Изход от приложенията"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Наистина ли искате да приключите тази програма?\n"
-"Всяка незаписана работа може да бъде загубена."
+"Принудително излизане (SIGKILL) от приложението? Незапазената работа може да "
+"бъде загубена."
 msgstr[1] ""
-"Наистина ли искате да излезете от тези %1 програми?\n"
-" Всяка незаписана работа може да бъде загубена."
+"Принудително излизане (SIGKILL) от %1 приложения? Незапазената работа може "
+"да бъде загубена."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] ""
-"Наистина ли искате да приключите тази програма?\n"
-"Всяка незаписана работа може да бъде загубена."
+"Излизане от това приложение? Незапазената работа може да бъде загубена."
 msgstr[1] ""
-"Наистина ли искате да излезете от тези %1 програми?\n"
-" Всяка незаписана работа може да бъде загубена."
+"Излизане от тези %1 приложения? Незапазената работа може да бъде загубена."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
