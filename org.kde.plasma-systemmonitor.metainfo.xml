@@ -156,6 +156,12 @@ SPDX-License-Identifier: CC0-1.0
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=plasma-systemmonitor</url>
   <url type="donation">https://www.kde.org/community/donations</url>
   <launchable type="desktop-id">org.kde.plasma-systemmonitor.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/plasma-systemmonitor/overview.png</image>
+      <caption/>
+    </screenshot>
+  </screenshots>
   <provides>
     <binary>plasma-systemmonitor</binary>
   </provides>
