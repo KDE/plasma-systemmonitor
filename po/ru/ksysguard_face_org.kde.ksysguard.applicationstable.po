@@ -1,23 +1,23 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
 # Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021, 2023.
-# Olesya Gerasimenko <translation-team@basealt.ru>, 2022.
+# SPDX-FileCopyrightText: 2022, 2024 Olesya Gerasimenko <translation-team@basealt.ru>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2023-01-28 10:46+0300\n"
-"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
-"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"PO-Revision-Date: 2024-09-25 17:30+0300\n"
+"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.08.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -98,9 +98,7 @@ msgid "Show Details Sidebar"
 msgstr "Показать панель сведений"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:58
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Configure columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Настроить столбцы..."
@@ -179,43 +177,37 @@ msgstr[3] "Выйти из приложения"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Скрыть"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Выйти из %1 приложения"
-msgstr[1] "Выйти из %1 приложений"
-msgstr[2] "Выйти из %1 приложений"
-msgstr[3] "Выйти из приложения"
+msgstr[0] "Выполнение принудительного выхода из %1 приложения"
+msgstr[1] "Выполнение принудительного выхода из %1 приложений"
+msgstr[2] "Выполнение принудительного выхода из %1 приложений"
+msgstr[3] "Выполнение принудительного выхода из приложения"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] "Выйти из %1 приложения"
-msgstr[1] "Выйти из %1 приложений"
-msgstr[2] "Выйти из %1 приложений"
-msgstr[3] "Выйти из приложения"
+msgstr[0] "Выход из %1 приложения"
+msgstr[1] "Выход из %1 приложений"
+msgstr[2] "Выход из %1 приложений"
+msgstr[3] "Выход из приложения"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Выйти из приложений"
-msgstr[1] "Выйти из приложений"
-msgstr[2] "Выйти из приложений"
-msgstr[3] "Выйти из приложения"
+msgstr[0] "Выполнить принудительный выход из приложений"
+msgstr[1] "Выполнить принудительный выход из приложений"
+msgstr[2] "Выполнить принудительный выход из приложений"
+msgstr[3] "Выполнить принудительный выход из приложения"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -228,51 +220,35 @@ msgstr[2] "Выйти из приложений"
 msgstr[3] "Выйти из приложения"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Завершить работу %1 приложения?\n"
-"Несохранённые данные могут быть потеряны."
+"Выполнить принудительный выход (SIGKILL) из %1 приложения? Несохранённые "
+"данные могут быть потеряны."
 msgstr[1] ""
-"Завершить работу %1 приложений?\n"
-"Несохранённые данные могут быть потеряны."
+"Выполнить принудительный выход (SIGKILL) из %1 приложений? Несохранённые "
+"данные могут быть потеряны."
 msgstr[2] ""
-"Завершить работу %1 приложений?\n"
-"Несохранённые данные могут быть потеряны."
+"Выполнить принудительный выход (SIGKILL) из %1 приложений? Несохранённые "
+"данные могут быть потеряны."
 msgstr[3] ""
-"Завершить работу приложения?\n"
-"Несохранённые данные могут быть потеряны."
+"Выполнить принудительный выход (SIGKILL) из приложения? Несохранённые данные "
+"могут быть потеряны."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] ""
-"Завершить работу %1 приложения?\n"
-"Несохранённые данные могут быть потеряны."
+"Выполнить выход из %1 приложения? Несохранённые данные могут быть потеряны."
 msgstr[1] ""
-"Завершить работу %1 приложений?\n"
-"Несохранённые данные могут быть потеряны."
+"Выполнить выход из %1 приложений? Несохранённые данные могут быть потеряны."
 msgstr[2] ""
-"Завершить работу %1 приложений?\n"
-"Несохранённые данные могут быть потеряны."
+"Выполнить выход из %1 приложений? Несохранённые данные могут быть потеряны."
 msgstr[3] ""
-"Завершить работу приложения?\n"
-"Несохранённые данные могут быть потеряны."
+"Выполнить выход из приложения? Несохранённые данные могут быть потеряны."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
