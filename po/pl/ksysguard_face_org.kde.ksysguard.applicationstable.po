@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-07-06 11:30+0200\n"
+"PO-Revision-Date: 2024-09-29 08:54+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -178,16 +178,13 @@ msgid "Hide"
 msgstr "Ukryj"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Zakończ aplikację"
-msgstr[1] "Zakończ %1 aplikacje"
-msgstr[2] "Zakończ %1 aplikacji"
+msgstr[0] "Wymuś zakończenie aplikacji"
+msgstr[1] "Wymuś zakończenie %1 aplikacji"
+msgstr[2] "Wymuś zakończenie %1 aplikacji"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -199,16 +196,13 @@ msgstr[1] "Zakończ %1 aplikacje"
 msgstr[2] "Zakończ %1 aplikacji"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Zakończ aplikację"
-msgstr[1] "Zakończ aplikację"
-msgstr[2] "Zakończ aplikację"
+msgstr[0] "Wymuś zakończenie aplikacji"
+msgstr[1] "Wymuś zakończenie aplikacji"
+msgstr[2] "Wymuś zakończenie aplikacji"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -220,45 +214,28 @@ msgstr[1] "Zakończ aplikację"
 msgstr[2] "Zakończ aplikację"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Czy na pewno zakończyć tę aplikację?\n"
-"W przypadku niezapisanej pracy, zostanie ona utracona."
+"Czy wymusić (SIGKILL) zakończenie tej aplikacji? Niezapisana praca zostanie "
+"utracona."
 msgstr[1] ""
-"Czy na pewno zakończyć te %1 aplikacje?\n"
-"W przypadku niezapisanej pracy, zostanie ona utracona."
+"Czy wymusić (SIGKILL) zakończenie tych %1 aplikacji? Niezapisana praca "
+"zostanie utracona."
 msgstr[2] ""
-"Czy na pewno zakończyć te %1 aplikacji?\n"
-"W przypadku niezapisanej pracy, zostanie ona utracona."
+"Czy wymusić (SIGKILL) zakończenie tych %1 aplikacji? Niezapisana praca "
+"zostanie utracona."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"Czy na pewno zakończyć tę aplikację?\n"
-"W przypadku niezapisanej pracy, zostanie ona utracona."
-msgstr[1] ""
-"Czy na pewno zakończyć te %1 aplikacje?\n"
-"W przypadku niezapisanej pracy, zostanie ona utracona."
+msgstr[0] "Czy zakończyć tę aplikację? Niezapisana praca zostanie utracona."
+msgstr[1] "Czy zakończyć te %1 aplikacje? Niezapisana praca zostanie utracona."
 msgstr[2] ""
-"Czy na pewno zakończyć te %1 aplikacji?\n"
-"W przypadku niezapisanej pracy, zostanie ona utracona."
+"Czy zakończyć tych %1 aplikacji? Niezapisana praca zostanie utracona."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
