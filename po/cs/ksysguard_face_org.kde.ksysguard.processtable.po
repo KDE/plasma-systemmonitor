@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-09-17 15:17+0200\n"
+"PO-Revision-Date: 2024-09-20 15:13+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -21,7 +21,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr ""
+msgstr "Potvrdit ukončení procesu"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -199,9 +199,9 @@ msgstr "Nastavit sloupce…"
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Vynutit ukončení procesu"
+msgstr[1] "Vynutit ukončení %1 procesů"
+msgstr[2] "Vynutit ukončení %1 procesů"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -217,9 +217,9 @@ msgstr[2] "Ukončit %1 procesů"
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Vynutit ukončení procesu"
+msgstr[1] "Vynutit ukončení procesů"
+msgstr[2] "Vynutit ukončení procesů"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
