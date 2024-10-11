@@ -14,9 +14,9 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/plasma-systemmonitor/ksysguard_face_org."
+"X-Crowdin-File: /kf6-stable/messages/plasma-systemmonitor/ksysguard_face_org."
 "kde.ksysguard.applicationstable.pot\n"
-"X-Crowdin-File-ID: 42741\n"
+"X-Crowdin-File-ID: 52726\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -180,7 +180,7 @@ msgstr "隐藏"
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] ""
+msgstr[0] "强制退出 %1 个应用程序"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -194,7 +194,7 @@ msgstr[0] "退出 %1 个应用程序"
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] ""
+msgstr[0] "强制退出应用程序"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -208,13 +208,13 @@ msgstr[0] "退出应用程序"
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
-msgstr[0] ""
+msgstr[0] "强制退出 (SIGKILL) 这 %1 个应用程序吗？未保存的工作可能会丢失。"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
+msgstr[0] "退出这 %1 个应用程序吗？未保存的工作可能会丢失。"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
