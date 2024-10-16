@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-08-27 16:46+0300\n"
+"PO-Revision-Date: 2024-10-14 15:03+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -178,16 +178,13 @@ msgid "Hide"
 msgstr "Paslēpt"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Aizvērt %1 programmu"
-msgstr[1] "Aizvērt %1 programmas"
-msgstr[2] "Aizvērt %1 programmu"
+msgstr[0] "Piespiedu aizvērt %1 programmu"
+msgstr[1] "Piespiedu aizvērt %1 programmas"
+msgstr[2] "Piespiedu aizvērt %1 programmu"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -199,16 +196,13 @@ msgstr[1] "Aizvērt %1 programmas"
 msgstr[2] "Aizvērt %1 programmu"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Aizvērt programmu"
-msgstr[1] "Aizvērt programmas"
-msgstr[2] "Aizvērt programmas"
+msgstr[0] "Piespiedu aizvērt programmu"
+msgstr[1] "Piespiedu aizvērt programmas"
+msgstr[2] "Piespiedu aizvērt programmas"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -220,45 +214,27 @@ msgstr[1] "Aizvērt programmas"
 msgstr[2] "Aizvērt programmas"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Vai tiešām vēlaties aizvērt šo %1 programmu?\n"
-"Nesaglabātais darbs būs zudis."
+"Vai piespiedu aizvērt (SIGKILL) šo %1 programmu? Nesaglabātais darbs būs "
+"zudis."
 msgstr[1] ""
-"Vai tiešām vēlaties aizvērt šīs %1 programmas?\n"
-"Nesaglabātais darbs būs zudis."
+"Vai piespiedu aizvērt (SIGKILL) šīs %1 programmas? Nesaglabātais darbs būs "
+"zudis."
 msgstr[2] ""
-"Vai tiešām vēlaties aizvērt šīs %1 programmas?\n"
-"Nesaglabātais darbs būs zudis."
+"Vai piespiedu aizvērt (SIGKILL) šīs %1 programmas? Nesaglabātais darbs būs "
+"zudis."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"Vai tiešām vēlaties aizvērt šo %1 programmu?\n"
-"Nesaglabātais darbs būs zudis."
-msgstr[1] ""
-"Vai tiešām vēlaties aizvērt šīs %1 programmas?\n"
-"Nesaglabātais darbs būs zudis."
-msgstr[2] ""
-"Vai tiešām vēlaties aizvērt šīs %1 programmas?\n"
-"Nesaglabātais darbs būs zudis."
+msgstr[0] "Vai aizvērt šo %1 programmu? Nesaglabātais darbs būs zudis."
+msgstr[1] "Vai aizvērt šīs %1 programmas? Nesaglabātais darbs būs zudis."
+msgstr[2] "Vai aizvērt šīs %1 programmas? Nesaglabātais darbs būs zudis."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format

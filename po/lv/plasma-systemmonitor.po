@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-01-26 08:40+0200\n"
-"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
+"PO-Revision-Date: 2024-10-14 15:11+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -28,25 +28,25 @@ msgstr "Datne"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr "Pievienot jaunu lapu..."
+msgstr "Pievienot jaunu lapu…"
 
 #: src/GlobalMenu.qml:24
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "Importēt lapu..."
+msgstr "Importēt lapu…"
 
 #: src/GlobalMenu.qml:30
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
-msgstr "Eksportēt šo lapu..."
+msgstr "Eksportēt šo lapu…"
 
 #: src/GlobalMenu.qml:37
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr "Iegūt jaunas lapas..."
+msgstr "Iegūt jaunas lapas…"
 
 #: src/GlobalMenu.qml:54
 #, kde-format
@@ -82,7 +82,7 @@ msgstr "Iestatījumi"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove pages…"
-msgstr "Rediģēt vai noņemt lapas..."
+msgstr "Rediģēt vai noņemt lapas…"
 
 #: src/GlobalMenu.qml:82
 #, kde-format
@@ -94,7 +94,7 @@ msgstr "Palīdzība"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr "Ziņot par kļūdu..."
+msgstr "Ziņot par kļūdu…"
 
 #: src/GlobalMenu.qml:91
 #, kde-format
@@ -189,25 +189,25 @@ msgstr "Rīki"
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
-msgstr "Rediģēt vai noņemt lapas..."
+msgstr "Rediģēt vai noņemt lapas…"
 
 #: src/Main.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
-msgstr "Eksportēt šo lapu..."
+msgstr "Eksportēt šo lapu…"
 
 #: src/Main.qml:89
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "Importēt lapu..."
+msgstr "Importēt lapu…"
 
 #: src/Main.qml:95
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
-msgstr "Iegūt jaunas lapas..."
+msgstr "Iegūt jaunas lapas…"
 
 #: src/Main.qml:108
 #, kde-format
@@ -225,7 +225,7 @@ msgstr "Sakļaut sānu joslu"
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr "Ziņot par kļūdu..."
+msgstr "Ziņot par kļūdu…"
 
 #: src/Main.qml:124
 #, kde-format
@@ -237,13 +237,13 @@ msgstr "Par Sistēmas pārraugu"
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
-msgstr ""
+msgstr "Par KDE"
 
 #: src/Main.qml:161
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
-msgstr "Pievienot jaunu lapu..."
+msgstr "Pievienot jaunu lapu…"
 
 #: src/Main.qml:230
 #, kde-format
@@ -332,7 +332,7 @@ msgstr "Izmest izmaiņas"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "Konfigurēt lapu..."
+msgstr "Konfigurēt lapu…"
 
 #: src/page/EditablePage.qml:126
 #, kde-format
@@ -386,15 +386,13 @@ msgstr "Aizvērt"
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr "Ielādēt priekšiestatījumus..."
+msgstr "Ielādēt priekšiestatījumus…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "Iegūt jaunus priekšiestatījumus..."
+msgstr "Iegūt jaunus priekšiestatījumus…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
@@ -415,12 +413,10 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Pievienot diagrammu kā darbvirsmas logdaļu"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr "Iegūt jaunus vizuālus stilus..."
+msgstr "Iegūt jaunus vizuālus stilus…"
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format
@@ -507,7 +503,7 @@ msgstr "Šajā lapā trūkst atsevišķu sensoru un tā korekti neatveidosies."
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
-msgstr "Labot..."
+msgstr "Labt…"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -745,7 +741,7 @@ msgstr "Vairāk nejautāt"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Kill a Window…"
-msgstr "Nobeigt logu..."
+msgstr "Nobeigt logu…"
 
 #: src/ToolsModel.cpp:115
 #, kde-format

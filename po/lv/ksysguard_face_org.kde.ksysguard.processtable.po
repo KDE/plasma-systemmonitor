@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-08-27 16:46+0300\n"
+"PO-Revision-Date: 2024-10-14 15:10+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,15 +16,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "Apstiprināt procesu izbeigšanu."
+msgstr "Apstiprināt procesu izbeigšanu"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -33,33 +31,25 @@ msgid "By default show:"
 msgstr "Pēc noklusējuma rādīt:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "Paša procesus"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "Lietotāja procesus"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "Sistēmas procesus"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "Visus procesus"
@@ -206,16 +196,13 @@ msgid "Configure Columns…"
 msgstr "Konfigurēt kolonnas…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Izbeigt %1 procesu"
-msgstr[1] "Izbeigt %1 procesus"
-msgstr[2] "Izbeigt %1 procesu"
+msgstr[0] "Piespiedu izbeigt %1 procesu"
+msgstr[1] "Piespiedu izbeigt %1 procesus"
+msgstr[2] "Piespiedu izbeigt %1 procesu"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -227,16 +214,13 @@ msgstr[1] "Izbeigt %1 procesus"
 msgstr[2] "Izbeigt %1 procesu"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Izbeigt procesu"
-msgstr[1] "Izbeigt procesus"
-msgstr[2] "Izbeigt procesu"
+msgstr[0] "Piespiedu izbeigt procesu"
+msgstr[1] "Piespiedu izbeigt procesus"
+msgstr[2] "Piespiedu izbeigt procesu"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -248,45 +232,27 @@ msgstr[1] "Izbeigt procesus"
 msgstr[2] "Izbeigt procesu"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Vai tiešām vēlaties izbeigt šo %1 procesu?\n"
-"Varat zaudēt visu nesaglabāto darbu."
+"Vai piespiedu izbeigt (SIGKILL) šo %1 procesu? Varat zaudēt visu nesaglabāto "
+"darbu."
 msgstr[1] ""
-"Vai tiešām vēlaties izbeigt šos %1 procesus?\n"
-"Varat zaudēt visu nesaglabāto darbu."
+"Vai piespiedu izbeigt (SIGKILL) šos %1 procesus? Varat zaudēt visu "
+"nesaglabāto darbu."
 msgstr[2] ""
-"Vai tiešām vēlaties izbeigt šos %1 procesus?\n"
-"Varat zaudēt visu nesaglabāto darbu."
+"Vai piespiedu izbeigt (SIGKILL) šos %1 procesus? Varat zaudēt visu "
+"nesaglabāto darbu."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"Vai tiešām vēlaties izbeigt šo %1 procesu?\n"
-"Varat zaudēt visu nesaglabāto darbu."
-msgstr[1] ""
-"Vai tiešām vēlaties izbeigt šos %1 procesus?\n"
-"Varat zaudēt visu nesaglabāto darbu."
-msgstr[2] ""
-"Vai tiešām vēlaties izbeigt šos %1 procesus?\n"
-"Varat zaudēt visu nesaglabāto darbu."
+msgstr[0] "Vai izbeigt šo %1 procesu? Varat zaudēt visu nesaglabāto darbu."
+msgstr[1] "Vai izbeigt šos %1 procesus? Varat zaudēt visu nesaglabāto darbu."
+msgstr[2] "Vai izbeigt šos %1 procesus? Varat zaudēt visu nesaglabāto darbu."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
