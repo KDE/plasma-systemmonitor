@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-17 14:35+0200\n"
-"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"PO-Revision-Date: 2024-10-18 11:32+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -181,9 +181,9 @@ msgstr "Skrýt"
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Vynutit ukončení aplikace"
+msgstr[1] "Vynutit ukončení %1 aplikací"
+msgstr[2] "Vynutit ukončení %1 aplikací"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -199,9 +199,9 @@ msgstr[2] "Ukončit %1 aplikací"
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Vynutit ukončení aplikace"
+msgstr[1] "Vynutit ukončení aplikací"
+msgstr[2] "Vynutit ukončení aplikací"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -217,17 +217,19 @@ msgstr[2] "Ukončit aplikace"
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
-msgstr[0] ""
+msgstr[0] "Ukončit (SIGKILL) tuto aplikaci? Neuložená práce může být ztracena."
 msgstr[1] ""
+"Ukončit (SIGKILL) tyto %1 aplikace? Neuložená práce může být ztracena."
 msgstr[2] ""
+"Ukončit (SIGKILL) těchto %1 aplikací? Neuložená práce může být ztracena."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Ukončit tuto aplikaci? Neuložená práce může být ztracena."
+msgstr[1] "Ukončit tyto %1 aplikace? Neuložená práce může být ztracena."
+msgstr[2] "Ukončit těchto %1 aplikací? Neuložená práce může být ztracena."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
