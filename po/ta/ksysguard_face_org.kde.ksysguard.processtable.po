@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-09-07 20:30+0200\n"
+"PO-Revision-Date: 2024-10-20 16:08+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
 #, kde-format
@@ -194,15 +194,12 @@ msgid "Configure Columns…"
 msgstr "நெடுவரிசைகளை அமை…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "பணியை நிறுத்துவது"
-msgstr[1] "%1 பணிகளை நிறுத்துவது"
+msgstr[0] "பணியை கட்டாயமாக நிறுத்துவது"
+msgstr[1] "%1 பணிகளை கட்டாயமாக நிறுத்துவது"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -213,15 +210,12 @@ msgstr[0] "பணியை நிறுத்துவது"
 msgstr[1] "%1 பணிகளை நிறுத்துவது"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "பணியை நிறுத்து"
-msgstr[1] "பணிகளை நிறுத்து"
+msgstr[0] "பணியை கட்டாயமாக நிறுத்து"
+msgstr[1] "பணிகளை கட்டாயமாக நிறுத்து"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -232,39 +226,27 @@ msgstr[0] "பணியை நிறுத்து"
 msgstr[1] "பணிகளை நிறுத்து"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"இப்பணியை உறுதியாக நிறுத்த வேண்டுமா?\n"
-"சேமிக்கப்படாதவற்றை நீங்கள் இழக்க நேரிடலாம்."
+"இப்பணியை கட்டாயமாக நிறுத்த வேண்டுமா (SIGKILL மூலம்)?\n"
+"சேமிக்கப்படாதவற்றை இழக்க நேரிடலாம்."
 msgstr[1] ""
-"இந்த %1 பணிகளை உறுதியாக நிறுத்த வேண்டுமா?\n"
-"சேமிக்கப்படாதவற்றை நீங்கள் இழக்க நேரிடலாம்."
+"இந்த %1 பணிகளை கட்டாயமாக நிறுத்த வேண்டுமா (SIGKILL மூலம்)?\n"
+"சேமிக்கப்படாதவற்றை இழக்க நேரிடலாம்."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"இப்பணியை உறுதியாக நிறுத்த வேண்டுமா?\n"
-"சேமிக்கப்படாதவற்றை நீங்கள் இழக்க நேரிடலாம்."
+"இப்பணியை கட்டாயமாக நிறுத்த வேண்டுமா?\n"
+"சேமிக்கப்படாதவற்றை இழக்க நேரிடலாம்."
 msgstr[1] ""
-"இந்த %1 பணிகளை உறுதியாக நிறுத்த வேண்டுமா?\n"
-"சேமிக்கப்படாதவற்றை நீங்கள் இழக்க நேரிடலாம்."
+"இந்த %1 பணிகளை கட்டாயமாக நிறுத்த வேண்டுமா?\n"
+"சேமிக்கப்படாதவற்றை இழக்க நேரிடலாம்."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
