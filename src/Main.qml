@@ -14,6 +14,7 @@ import QtQuick.Window
 
 import org.kde.kirigami as Kirigami
 import org.kde.newstuff as NewStuff
+import org.kde.config as KConfig
 
 import org.kde.systemmonitor
 import org.kde.ksysguard.page as Page
@@ -23,6 +24,8 @@ Kirigami.ApplicationWindow {
 
     minimumWidth: Kirigami.Units.gridUnit * 34
     minimumHeight: Kirigami.Units.gridUnit* 27
+    width: Kirigami.Units.gridUnit * 55
+    height: Kirigami.Units.gridUnit * 39
 
     title: pageStack.currentItem?.title ?? ""
 
@@ -295,6 +298,10 @@ Kirigami.ApplicationWindow {
         }
     }
 
+    KConfig.WindowStateSaver {
+        configGroupName: "MainWindow"
+    }
+
     Configuration {
         id: config
         property alias sidebarCollapsed: globalDrawer.collapsed
@@ -302,39 +309,6 @@ Kirigami.ApplicationWindow {
         property alias hiddenPages: pagesModel.hiddenPages
         property string startPage
         property string lastVisitedPage
-
-        property real width
-        Binding on width {
-            when: app.visibility == Window.Windowed
-            delayed: true
-            value: app.width
-            restoreMode: Binding.RestoreNone
-        }
-
-        property real height
-        Binding on height {
-            when: app.visibility == Window.Windowed
-            delayed: true
-            value: app.height
-            restoreMode: Binding.RestoreNone
-        }
-
-        property bool maximized
-
-        Binding on maximized {
-            when: app.visibility != Window.Hidden
-            // This is delayed otherwise it still writes to the config property even though when is false
-            delayed: true
-            value: app.visibility == Window.Maximized
-            restoreMode: Binding.RestoreNone
-        }
-    }
-
-    onVisibilityChanged: (visibility) => {
-        if (visibility == Window.Windowed) {
-            width = config.width
-            height = config.height
-        }
     }
 
     Component {
