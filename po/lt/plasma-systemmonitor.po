@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-04 00:41+0000\n"
+"POT-Creation-Date: 2024-11-07 00:41+0000\n"
 "PO-Revision-Date: 2024-09-14 00:48+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: none\n"
@@ -180,103 +180,103 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "<>"
 
-#: src/Main.qml:69
+#: src/Main.qml:72
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Įrankiai"
 
-#: src/Main.qml:75
+#: src/Main.qml:78
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Taisyti ar šalinti puslapius…"
 
-#: src/Main.qml:81
+#: src/Main.qml:84
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Konfigūruoti dabartinį puslapį…"
 
-#: src/Main.qml:89
+#: src/Main.qml:92
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Importuoti puslapį…"
 
-#: src/Main.qml:95
+#: src/Main.qml:98
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Gauti naujų puslapių…"
 
-#: src/Main.qml:108
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Išskleisti šoninę juostą"
 
-#: src/Main.qml:108
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Suskleisti šoninę juostą"
 
-#: src/Main.qml:118
+#: src/Main.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Pranešti apie klaidą…"
 
-#: src/Main.qml:124
+#: src/Main.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "Apie sistemos prižiūryklę"
 
-#: src/Main.qml:131
+#: src/Main.qml:134
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "Apie KDE"
 
-#: src/Main.qml:161
+#: src/Main.qml:164
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Pridėti naują puslapį…"
 
-#: src/Main.qml:230
+#: src/Main.qml:233
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Pridėti naują puslapį"
 
-#: src/Main.qml:251
+#: src/Main.qml:254
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Taisyti puslapius"
 
-#: src/Main.qml:274
+#: src/Main.qml:277
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Eksportuoti %1"
 
-#: src/Main.qml:276 src/Main.qml:286
+#: src/Main.qml:279 src/Main.qml:289
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "Sistemos prižiūryklės puslapis (*.page)"
 
-#: src/Main.qml:284
+#: src/Main.qml:287
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "Importuoti puslapį"
 
-#: src/Main.qml:348
+#: src/Main.qml:322
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "

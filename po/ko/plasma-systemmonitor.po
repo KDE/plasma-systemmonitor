@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-04 00:41+0000\n"
+"POT-Creation-Date: 2024-11-07 00:41+0000\n"
 "PO-Revision-Date: 2024-08-21 00:18+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -178,103 +178,103 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde@peremen.name"
 
-#: src/Main.qml:69
+#: src/Main.qml:72
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "도구"
 
-#: src/Main.qml:75
+#: src/Main.qml:78
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "쪽 편집 및 삭제..."
 
-#: src/Main.qml:81
+#: src/Main.qml:84
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "현재 쪽 내보내기..."
 
-#: src/Main.qml:89
+#: src/Main.qml:92
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "쪽 가져오기..."
 
-#: src/Main.qml:95
+#: src/Main.qml:98
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "새 쪽 가져오기..."
 
-#: src/Main.qml:108
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "사이드바 펼치기"
 
-#: src/Main.qml:108
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "사이드바 접기"
 
-#: src/Main.qml:118
+#: src/Main.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "버그 보고..."
 
-#: src/Main.qml:124
+#: src/Main.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "시스템 모니터 정보"
 
-#: src/Main.qml:131
+#: src/Main.qml:134
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "KDE 정보"
 
-#: src/Main.qml:161
+#: src/Main.qml:164
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "새 쪽 추가..."
 
-#: src/Main.qml:230
+#: src/Main.qml:233
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "새 쪽 추가"
 
-#: src/Main.qml:251
+#: src/Main.qml:254
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "쪽 편집"
 
-#: src/Main.qml:274
+#: src/Main.qml:277
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "%1 내보내기"
 
-#: src/Main.qml:276 src/Main.qml:286
+#: src/Main.qml:279 src/Main.qml:289
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "시스템 모니터 쪽 (*.page)"
 
-#: src/Main.qml:284
+#: src/Main.qml:287
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "쪽 가져오기"
 
-#: src/Main.qml:348
+#: src/Main.qml:322
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "

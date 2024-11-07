@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-04 00:41+0000\n"
+"POT-Creation-Date: 2024-11-07 00:41+0000\n"
 "PO-Revision-Date: 2024-09-07 19:53+0200\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -178,103 +178,103 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Kde-l10n-ta@kde.org"
 
-#: src/Main.qml:69
+#: src/Main.qml:72
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "கருவிகள்"
 
-#: src/Main.qml:75
+#: src/Main.qml:78
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "பக்கங்களை திருத்து அல்லது நீக்கு…"
 
-#: src/Main.qml:81
+#: src/Main.qml:84
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "தற்போதைய பக்கத்தை ஏற்றுமதி செய்…"
 
-#: src/Main.qml:89
+#: src/Main.qml:92
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "பக்கத்தை இறக்குமதி செய்…"
 
-#: src/Main.qml:95
+#: src/Main.qml:98
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "புதிய பக்கங்களை பெறு…"
 
-#: src/Main.qml:108
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "பக்கப்பட்டையை விரி"
 
-#: src/Main.qml:108
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "பக்கப்பட்டையை சுருக்கு"
 
-#: src/Main.qml:118
+#: src/Main.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "பிழையை தெரிவி…"
 
-#: src/Main.qml:124
+#: src/Main.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "கணினி நோட்டம் பற்றி"
 
-#: src/Main.qml:131
+#: src/Main.qml:134
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "கே.டீ.யீ. பற்றி"
 
-#: src/Main.qml:161
+#: src/Main.qml:164
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "புதிய பக்கத்தை சேர்…"
 
-#: src/Main.qml:230
+#: src/Main.qml:233
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "புதிய பக்கத்தை சேர்"
 
-#: src/Main.qml:251
+#: src/Main.qml:254
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "பக்கங்களை திருத்துதல்"
 
-#: src/Main.qml:274
+#: src/Main.qml:277
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "%1 தனை ஏற்றுமதி செய்"
 
-#: src/Main.qml:276 src/Main.qml:286
+#: src/Main.qml:279 src/Main.qml:289
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "கணினி நோட்டத்திற்கான பக்கம் (*.page)"
 
-#: src/Main.qml:284
+#: src/Main.qml:287
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "பக்கத்தை இறக்குமதி செய்தல்"
 
-#: src/Main.qml:348
+#: src/Main.qml:322
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "

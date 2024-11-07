@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-04 00:41+0000\n"
+"POT-Creation-Date: 2024-11-07 00:41+0000\n"
 "PO-Revision-Date: 2022-09-27 17:14+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -178,103 +178,103 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wantoyek@gmail.com"
 
-#: src/Main.qml:69
+#: src/Main.qml:72
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Peralatan"
 
-#: src/Main.qml:75
+#: src/Main.qml:78
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Edit atau Singkirkan halaman..."
 
-#: src/Main.qml:81
+#: src/Main.qml:84
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Ekspor Halaman Saat Ini..."
 
-#: src/Main.qml:89
+#: src/Main.qml:92
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Impor Halaman..."
 
-#: src/Main.qml:95
+#: src/Main.qml:98
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Dapatkan Halaman Baru..."
 
-#: src/Main.qml:108
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Bentangkan Sidebar"
 
-#: src/Main.qml:108
+#: src/Main.qml:111
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Ciutkan Sidebar"
 
-#: src/Main.qml:118
+#: src/Main.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Laporkan Bug..."
 
-#: src/Main.qml:124
+#: src/Main.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "Tentang System Monitor"
 
-#: src/Main.qml:131
+#: src/Main.qml:134
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr ""
 
-#: src/Main.qml:161
+#: src/Main.qml:164
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Tambahkan Halaman Baru..."
 
-#: src/Main.qml:230
+#: src/Main.qml:233
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Tambahkan Halaman Baru"
 
-#: src/Main.qml:251
+#: src/Main.qml:254
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Edit Halaman"
 
-#: src/Main.qml:274
+#: src/Main.qml:277
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Ekspor %1"
 
-#: src/Main.qml:276 src/Main.qml:286
+#: src/Main.qml:279 src/Main.qml:289
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "Halaman System Monitor (*.page)"
 
-#: src/Main.qml:284
+#: src/Main.qml:287
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "Impor Halaman"
 
-#: src/Main.qml:348
+#: src/Main.qml:322
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
