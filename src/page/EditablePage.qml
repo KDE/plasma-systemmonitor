@@ -203,7 +203,11 @@ Kirigami.ScrollablePage {
 
         z: 9999
         anchors.fill: parent
-        anchors.margins: -pageData.margin * Kirigami.Units.largeSpacing
+        // Make sure the overlay covers the parent and ignores its margins
+        anchors.bottomMargin: -parent.anchors.bottomMargin
+        anchors.topMargin: -parent.anchors.topMargin
+        anchors.leftMargin: -parent.anchors.leftMargin
+        anchors.rightMargin: -parent.anchors.rightMargin
         color: Kirigami.Theme.backgroundColor
 
         opacity: 1
@@ -231,6 +235,7 @@ Kirigami.ScrollablePage {
         onStatusChanged: {
             if (status == Loader.Loading) {
                 loadOverlay.opacity = 1
+                visible = false
                 if (!edit && applicationWindow().pageStack.columnView.containsItem(page)) {
                     // Pop any pages that might have been opened during editing
                     applicationWindow().pageStack.pop(page)
@@ -238,6 +243,7 @@ Kirigami.ScrollablePage {
             } else {
                 Qt.callLater(updateActions)
                 page.flickable.returnToBounds()
+                visible = true
                 loadOverlay.opacity = 0
             }
         }
