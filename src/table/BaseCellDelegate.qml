@@ -17,7 +17,7 @@ TreeViewDelegate
     id: root
 
     readonly property bool rowHovered: root.TableView.view.hoveredRow == row
-
+    Kirigami.Theme.colorSet: selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
     text: model.display
 
     // Important: Don't remove this until QTBUG-84858 is resolved properly.
