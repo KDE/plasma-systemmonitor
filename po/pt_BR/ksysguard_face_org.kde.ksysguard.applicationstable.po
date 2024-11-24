@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-20 00:36-0300\n"
+"PO-Revision-Date: 2024-11-23 00:01-0300\n"
 "Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -177,15 +177,12 @@ msgid "Hide"
 msgstr "Ocultar"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Sair do aplicativo"
-msgstr[1] "Sair de %1 aplicativos"
+msgstr[0] "Forçar a saída do aplicativo"
+msgstr[1] "Forçar a saída dos %1 aplicativos"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -196,15 +193,12 @@ msgstr[0] "Sair do aplicativo"
 msgstr[1] "Sair de %1 aplicativos"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Sair do aplicativo"
-msgstr[1] "Sair dos aplicativos"
+msgstr[0] "Forçar a saída do aplicativo"
+msgstr[1] "Forçar a saída dos aplicativos"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -215,38 +209,26 @@ msgstr[0] "Sair do aplicativo"
 msgstr[1] "Sair dos aplicativos"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Tem certeza de que deseja sair deste aplicativo?\n"
+"Tem certeza de que deseja forçar a saída deste aplicativo (SIGKILL)?\n"
 "Qualquer trabalho não salvo pode ser perdido."
 msgstr[1] ""
-"Tem certeza de que deseja sair destes %1 aplicativos?\n"
+"Tem certeza de que deseja forçar a saída destes %1 aplicativos (SIGKILL)?\n"
 "Qualquer trabalho não salvo pode ser perdido."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] ""
-"Tem certeza de que deseja sair deste aplicativo?\n"
+"Sair deste aplicativo?\n"
 "Qualquer trabalho não salvo pode ser perdido."
 msgstr[1] ""
-"Tem certeza de que deseja sair destes %1 aplicativos?\n"
+"Sair destes %1 aplicativos?\n"
 "Qualquer trabalho não salvo pode ser perdido."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
