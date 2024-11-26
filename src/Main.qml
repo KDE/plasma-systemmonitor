@@ -73,6 +73,12 @@ Kirigami.ApplicationWindow {
                         icon.name: "tools-symbolic"
                     },
                     Kirigami.Action {
+                        icon.name: "list-add"
+                        text: i18nc("@action", "Add New Page…")
+                        displayHint: Kirigami.DisplayHint.AlwaysHide
+                        onTriggered: pageDialog.open()
+                    },
+                    Kirigami.Action {
                         id: editPagesAction
                         icon.name: "handle-sort"
                         text: i18nc("@action", "Edit or Remove pages…")
@@ -158,14 +164,6 @@ Kirigami.ApplicationWindow {
                 }
             }
         }
-
-        actions: [
-            Kirigami.Action {
-                text: i18nc("@action", "Add New Page…")
-                icon.name: "list-add"
-                onTriggered: pageDialog.open()
-            }
-        ]
 
         Instantiator {
             model: Page.PagesModel { id: pagesModel }
