@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-07 00:41+0000\n"
+"POT-Creation-Date: 2024-11-27 00:42+0000\n"
 "PO-Revision-Date: 2024-09-04 10:36+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -186,97 +186,97 @@ msgctxt "@action"
 msgid "Tools"
 msgstr "Eines"
 
-#: src/Main.qml:78
-#, kde-format
-msgctxt "@action"
-msgid "Edit or Remove pages…"
-msgstr "Edita o elimina pàgines…"
-
-#: src/Main.qml:84
-#, kde-format
-msgctxt "@action"
-msgid "Export Current Page…"
-msgstr "Exporta la pàgina actual…"
-
-#: src/Main.qml:92
-#, kde-format
-msgctxt "@action"
-msgid "Import Page…"
-msgstr "Importa una pàgina…"
-
-#: src/Main.qml:98
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Get New Pages…"
-msgstr "Obtén pàgines noves…"
-
-#: src/Main.qml:111
-#, kde-format
-msgctxt "@action"
-msgid "Expand Sidebar"
-msgstr "Expandeix la barra lateral"
-
-#: src/Main.qml:111
-#, kde-format
-msgctxt "@action"
-msgid "Collapse Sidebar"
-msgstr "Redueix la barra lateral"
-
-#: src/Main.qml:121
-#, kde-format
-msgctxt "@action"
-msgid "Report Bug…"
-msgstr "Informeu d'un error…"
-
-#: src/Main.qml:127
-#, kde-format
-msgctxt "@action"
-msgid "About System Monitor"
-msgstr "Quant al Monitor del sistema"
-
-#: src/Main.qml:134
-#, kde-format
-msgctxt "@action"
-msgid "About KDE"
-msgstr "Quant a KDE"
-
-#: src/Main.qml:164
+#: src/Main.qml:77
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Afegeix una pàgina nova…"
 
-#: src/Main.qml:233
+#: src/Main.qml:84
+#, kde-format
+msgctxt "@action"
+msgid "Edit or Remove pages…"
+msgstr "Edita o elimina pàgines…"
+
+#: src/Main.qml:90
+#, kde-format
+msgctxt "@action"
+msgid "Export Current Page…"
+msgstr "Exporta la pàgina actual…"
+
+#: src/Main.qml:98
+#, kde-format
+msgctxt "@action"
+msgid "Import Page…"
+msgstr "Importa una pàgina…"
+
+#: src/Main.qml:104
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Get New Pages…"
+msgstr "Obtén pàgines noves…"
+
+#: src/Main.qml:117
+#, kde-format
+msgctxt "@action"
+msgid "Expand Sidebar"
+msgstr "Expandeix la barra lateral"
+
+#: src/Main.qml:117
+#, kde-format
+msgctxt "@action"
+msgid "Collapse Sidebar"
+msgstr "Redueix la barra lateral"
+
+#: src/Main.qml:127
+#, kde-format
+msgctxt "@action"
+msgid "Report Bug…"
+msgstr "Informeu d'un error…"
+
+#: src/Main.qml:133
+#, kde-format
+msgctxt "@action"
+msgid "About System Monitor"
+msgstr "Quant al Monitor del sistema"
+
+#: src/Main.qml:140
+#, kde-format
+msgctxt "@action"
+msgid "About KDE"
+msgstr "Quant a KDE"
+
+#: src/Main.qml:231
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Afegeix una pàgina nova"
 
-#: src/Main.qml:254
+#: src/Main.qml:252
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Edita pàgines"
 
-#: src/Main.qml:277
+#: src/Main.qml:275
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Exporta %1"
 
-#: src/Main.qml:279 src/Main.qml:289
+#: src/Main.qml:277 src/Main.qml:287
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "Pàgina del Monitor del sistema (*.page)"
 
-#: src/Main.qml:287
+#: src/Main.qml:285
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "Importa una pàgina"
 
-#: src/Main.qml:322
+#: src/Main.qml:320
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
