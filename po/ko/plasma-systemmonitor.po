@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-08-21 00:18+0200\n"
+"PO-Revision-Date: 2024-11-28 23:26+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -387,12 +387,10 @@ msgid "Load Preset…"
 msgstr "사전 설정 불러오기..."
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "새 사전 설정 가져오기..."
+msgstr "새 사전 설정 가져오기…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
@@ -413,9 +411,7 @@ msgid "Add Chart as Desktop Widget"
 msgstr "데스크톱 위젯으로 차트 추가"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "새 표시 스타일 가져오기..."
