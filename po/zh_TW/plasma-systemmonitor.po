@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-27 00:42+0000\n"
+"POT-Creation-Date: 2024-12-02 00:44+0000\n"
 "PO-Revision-Date: 2024-09-10 01:17+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -476,7 +476,7 @@ msgctxt "@title:window"
 msgid "Load Preset"
 msgstr "載入預設檔"
 
-#: src/page/LoadPresetDialog.qml:37
+#: src/page/LoadPresetDialog.qml:38
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
@@ -588,61 +588,61 @@ msgstr "應用程式啟動時"
 msgid "New Title"
 msgstr "新標題"
 
-#: src/page/PageSortDialog.qml:96
+#: src/page/PageSortDialog.qml:97
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "顯示頁面"
 
-#: src/page/PageSortDialog.qml:97
+#: src/page/PageSortDialog.qml:98
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "隱藏頁面"
 
-#: src/page/PageSortDialog.qml:141
+#: src/page/PageSortDialog.qml:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "不要重設這個頁面"
 
-#: src/page/PageSortDialog.qml:145
+#: src/page/PageSortDialog.qml:146
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "此頁面將被重設至預設"
 
-#: src/page/PageSortDialog.qml:154
+#: src/page/PageSortDialog.qml:155
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "將頁面重設至預設值"
 
-#: src/page/PageSortDialog.qml:163
+#: src/page/PageSortDialog.qml:164
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "不要移除這個頁面"
 
-#: src/page/PageSortDialog.qml:167
+#: src/page/PageSortDialog.qml:168
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "此頁面將被移除"
 
-#: src/page/PageSortDialog.qml:176
+#: src/page/PageSortDialog.qml:177
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "移除這個頁面"
 
-#: src/page/PageSortDialog.qml:194
+#: src/page/PageSortDialog.qml:195
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "起始頁面："
 
-#: src/page/PageSortDialog.qml:203
+#: src/page/PageSortDialog.qml:204
 #, kde-format
 msgid "Last Visited Page"
 msgstr "上次檢視的頁面"

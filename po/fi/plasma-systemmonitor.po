@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# Tommi Nieminen <translator@legisign.org>, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-27 00:42+0000\n"
-"PO-Revision-Date: 2023-06-27 15:54+0300\n"
+"POT-Creation-Date: 2024-12-02 00:44+0000\n"
+"PO-Revision-Date: 2024-10-16 18:47+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -242,7 +242,7 @@ msgstr "Tietoa järjestelmänvalvonnasta"
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
-msgstr ""
+msgstr "Tietoa KDE:stä"
 
 #: src/Main.qml:231
 #, kde-format
@@ -388,9 +388,7 @@ msgid "Load Preset…"
 msgstr "Lataa esiasetus…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
 msgstr "Hae uusia esiasetuksia…"
@@ -414,9 +412,7 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Lisää kaavio työpöytäsovelmaksi"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "Hae uusia näyttötyylejä…"
@@ -479,7 +475,7 @@ msgctxt "@title:window"
 msgid "Load Preset"
 msgstr "Lataa esiasetus"
 
-#: src/page/LoadPresetDialog.qml:37
+#: src/page/LoadPresetDialog.qml:38
 #, kde-format
 msgctxt "@action:button"
 msgid "Load"
@@ -592,61 +588,61 @@ msgstr "Sovelluksen käynnistyessä"
 msgid "New Title"
 msgstr "Uusi otsikko"
 
-#: src/page/PageSortDialog.qml:96
+#: src/page/PageSortDialog.qml:97
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
 msgstr "Näytä sivu"
 
-#: src/page/PageSortDialog.qml:97
+#: src/page/PageSortDialog.qml:98
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
 msgstr "Piilota sivu"
 
-#: src/page/PageSortDialog.qml:141
+#: src/page/PageSortDialog.qml:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
 msgstr "Älä palauta sivua"
 
-#: src/page/PageSortDialog.qml:145
+#: src/page/PageSortDialog.qml:146
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
 msgstr "Sivu palautetaan oletustilaansa"
 
-#: src/page/PageSortDialog.qml:154
+#: src/page/PageSortDialog.qml:155
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
 msgstr "Palauta sivu oletustilaansa"
 
-#: src/page/PageSortDialog.qml:163
+#: src/page/PageSortDialog.qml:164
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
 msgstr "Älä poista tätä sivua"
 
-#: src/page/PageSortDialog.qml:167
+#: src/page/PageSortDialog.qml:168
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
 msgstr "Sivu poistetaan"
 
-#: src/page/PageSortDialog.qml:176
+#: src/page/PageSortDialog.qml:177
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
 msgstr "Poista tämä sivu"
 
-#: src/page/PageSortDialog.qml:194
+#: src/page/PageSortDialog.qml:195
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
 msgstr "Aloita tällä:"
 
-#: src/page/PageSortDialog.qml:203
+#: src/page/PageSortDialog.qml:204
 #, kde-format
 msgid "Last Visited Page"
 msgstr "Viimeisin vierailtu sivu"

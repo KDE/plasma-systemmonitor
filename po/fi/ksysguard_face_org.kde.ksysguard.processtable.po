@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# Tommi Nieminen <translator@legisign.org>, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2020, 2021, 2023, 2024 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2023-03-04 20:01+0200\n"
+"PO-Revision-Date: 2024-10-16 18:47+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,12 +15,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
 msgstr "Vahvista prosessien lopettaminen."
@@ -32,33 +30,25 @@ msgid "By default show:"
 msgstr "Näytä oletuksena:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "Omat prosessit"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "Käyttäjän prosessit"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "Järjestelmäprosessit"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "Kaikki prosessit"
@@ -118,9 +108,7 @@ msgid "All Processes"
 msgstr "Kaikki prosessit"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:127
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Sarakeasetukset…"
@@ -180,12 +168,10 @@ msgid "User 2 (USR2)"
 msgstr "Käyttäjä 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:217
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "Sarakeasetukset…"
+msgstr "Kopioi nykyinen sarake"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:226
 #, kde-format
@@ -199,7 +185,7 @@ msgstr[1] "Lopeta %1 prosessia"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Piilota"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format
@@ -208,15 +194,12 @@ msgid "Configure Columns…"
 msgstr "Sarakeasetukset…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Lopeta prosessi"
-msgstr[1] "Lopeta %1 prosessia"
+msgstr[0] "Pakota prosessin lopettaminen"
+msgstr[1] "Pakota %1 prosessin lopettaminen"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -227,15 +210,12 @@ msgstr[0] "Lopeta prosessi"
 msgstr[1] "Lopeta %1 prosessia"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Lopeta prosessi"
-msgstr[1] "Lopeta prosessit"
+msgstr[0] "Pakota prosessin lopettaminen"
+msgstr[1] "Pakota prosessien lopettaminen"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -246,39 +226,23 @@ msgstr[0] "Lopeta prosessi"
 msgstr[1] "Lopeta prosessit"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Haluatko varmasti lopettaa tämän prosessin?\n"
-"Tallentamattomat työt menetetään."
+"Pakotetaanko (SIGKILL) tämän prosessin lopettaminen? Tallentamattomat työt "
+"menetetään."
 msgstr[1] ""
-"Haluatko varmasti lopettaa nämä %1 prosessia?\n"
-"Tallentamattomat työt menetetään."
+"Pakotetaanko (SIGKILL) näiden %1 prosessin lopettaminen? Tallentamattomat "
+"työt menetetään."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"Haluatko varmasti lopettaa tämän prosessin?\n"
-"Tallentamattomat työt menetetään."
-msgstr[1] ""
-"Haluatko varmasti lopettaa nämä %1 prosessia?\n"
-"Tallentamattomat työt menetetään."
+msgstr[0] "Lopetetaanko tämä prosessi? Tallentamattomat työt menetetään."
+msgstr[1] "Lopetetaanko nämä %1 prosessia? Tallentamattomat työt menetetään."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
