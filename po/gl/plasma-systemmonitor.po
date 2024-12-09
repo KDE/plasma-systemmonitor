@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-04 00:41+0000\n"
-"PO-Revision-Date: 2024-09-04 17:28+0200\n"
+"PO-Revision-Date: 2024-12-08 14:54+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -281,9 +281,9 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
-"O vixilante do sistema pasou a usar debuxado por software porque a "
-"aceleración por hardware non está dispoñíbel, e poderían aparecer artefactos "
-"visuais. Revise os seus controladores gráficos."
+"O vixilante do sistema pasou a usar debuxado lóxico porque a aceleración "
+"física non está dispoñíbel, e poderían aparecer artefactos visuais. Revise "
+"os seus controladores gráficos."
 
 #: src/page/ColumnControl.qml:117
 #, kde-format
