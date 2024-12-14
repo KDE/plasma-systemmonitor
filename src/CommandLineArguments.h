@@ -18,7 +18,6 @@ class CommandLineArguments : public QObject
     Q_OBJECT
     Q_PROPERTY(QString pageId READ pageId CONSTANT)
     Q_PROPERTY(QString pageName READ pageName CONSTANT)
-    Q_PROPERTY(QVariant aboutData READ aboutData CONSTANT)
     QML_ELEMENT
     QML_SINGLETON
 
@@ -27,7 +26,6 @@ public:
 
     QString pageId() const;
     QString pageName() const;
-    QVariant aboutData() const;
 
     static void setCommandLineParser(std::shared_ptr<QCommandLineParser> parser);
 

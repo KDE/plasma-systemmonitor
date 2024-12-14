@@ -7,6 +7,7 @@
 import QtQuick
 import Qt.labs.platform as Labs
 import org.kde.newstuff as NewStuff
+import org.kde.coreaddons as KCoreAddons
 
 import org.kde.systemmonitor
 
@@ -84,7 +85,7 @@ Labs.MenuBar {
         Labs.MenuItem {
             text: i18nc("@menu-action", "Report Bug…")
             icon.name: "tools-report-bug"
-            onTriggered: Qt.openUrlExternally(CommandLineArguments.aboutData.bugAddress);
+            onTriggered: Qt.openUrlExternally(KCoreAddons.AboutData.bugAddress);
         }
 
         Labs.MenuItem {

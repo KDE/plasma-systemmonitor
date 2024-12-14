@@ -31,11 +31,6 @@ QString CommandLineArguments::pageName() const
     return QString{};
 }
 
-QVariant CommandLineArguments::aboutData() const
-{
-    return QVariant::fromValue(KAboutData::applicationData());
-}
-
 void CommandLineArguments::setCommandLineParser(std::shared_ptr<QCommandLineParser> parser)
 {
     s_commandLineParser = parser;

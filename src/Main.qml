@@ -15,6 +15,7 @@ import QtQuick.Window
 import org.kde.kirigami as Kirigami
 import org.kde.newstuff as NewStuff
 import org.kde.config as KConfig
+import org.kde.coreaddons as KCoreAddons
 
 import org.kde.systemmonitor
 import org.kde.ksysguard.page as Page
@@ -126,7 +127,7 @@ Kirigami.ApplicationWindow {
                         icon.name: "tools-report-bug";
                         text: i18nc("@action", "Report Bug…");
                         displayHint: Kirigami.DisplayHint.AlwaysHide
-                        onTriggered: Qt.openUrlExternally(CommandLineArguments.aboutData.bugAddress);
+                        onTriggered: Qt.openUrlExternally(KCoreAddons.AboutData.bugAddress);
                     },
                     Kirigami.Action {
                         icon.name: "help-about-symbolic";
