@@ -184,13 +184,13 @@ Kirigami.ApplicationWindow {
                 }
 
                 Component.onCompleted: {
-                    if (CommandLineArguments.pageId && model.fileName == CommandLineArguments.pageId) {
+                    if (CommandLineArguments.pageId && model.fileName === CommandLineArguments.pageId) {
                         trigger()
-                    } else if (CommandLineArguments.pageName && model.title == CommandLineArguments.pageName) {
+                    } else if (CommandLineArguments.pageName && model.title === CommandLineArguments.pageName) {
                         trigger()
-                    } else if (config.startPage == model.fileName) {
+                    } else if (config.startPage === model.fileName) {
                         trigger()
-                    } else if (config.startPage == "" && config.lastVisitedPage == model.fileName) {
+                    } else if (config.startPage == "" && config.lastVisitedPage === model.fileName) {
                         trigger()
                     }
                 }
@@ -239,7 +239,7 @@ Kirigami.ApplicationWindow {
                 column.insertChild(0, {name: "section-0", isSeparator: false})
                 newPage.savePage()
 
-                const pageAction = Array.from(globalDrawer.actions).find(action => action.pageData.fileName == newPage.fileName)
+                const pageAction = Array.from(globalDrawer.actions).find(action => action.pageData.fileName === newPage.fileName)
                 pageAction.trigger()
                 app.pageStack.currentItem.edit = true
             }
@@ -257,12 +257,12 @@ Kirigami.ApplicationWindow {
                 config.startPage = startPage
                 const currentPage = pageStack.currentItem.pageData.fileName
                 const indices = pagesModel.match(pagesModel.index(0, 0), Page.PagesModel.FileNameRole, currentPage, 1,  Qt.MatchExactly)
-                if (indices.length == 0 || pagesModel.data(indices[0], Page.PagesModel.HiddenRole)) {
-                    if (config.lastVisitedPage == currentPage) {
+                if (indices.length === 0 || pagesModel.data(indices[0], Page.PagesModel.HiddenRole)) {
+                    if (config.lastVisitedPage === currentPage) {
                         config.lastVisitedPage = "overview.page"
                     }
                     const startPage = config.startPage || config.lastVisitedPage
-                    Array.prototype.find.call(globalDrawer.actions, action => action.pageData.fileName == startPage).trigger()
+                    Array.prototype.find.call(globalDrawer.actions, action => action.pageData.fileName === startPage).trigger()
                 }
             }
         }
@@ -291,7 +291,7 @@ Kirigami.ApplicationWindow {
                 if (!newPage) {
                     return;
                 }
-                const pageAction = Array.from(globalDrawer.actions).find(action => action.pageData.fileName == newPage.fileName)
+                const pageAction = Array.from(globalDrawer.actions).find(action => action.pageData.fileName === newPage.fileName)
                 pageAction.trigger()
             }
         }
