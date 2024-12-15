@@ -177,7 +177,7 @@ msgstr[1] "%1 अनुप्रयोगाः त्यजन्तु"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "गोपयतु"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
 #, fuzzy, kde-format

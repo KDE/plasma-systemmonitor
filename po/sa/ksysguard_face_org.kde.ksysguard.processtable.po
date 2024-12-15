@@ -201,7 +201,7 @@ msgstr[1] "%1 प्रक्रियाः समाप्ताः"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "गोपयतु"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format
@@ -287,7 +287,3 @@ msgstr[1] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "प्रक्रिया ID %1, %2 इत्यस्य स्वामित्वम्"
-
-#~ msgctxt "@action"
-#~ msgid "Configure columns…"
-#~ msgstr "स्तम्भान् विन्यस्यताम्…"

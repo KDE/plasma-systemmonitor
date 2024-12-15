@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-02 00:44+0000\n"
+"POT-Creation-Date: 2024-12-15 00:43+0000\n"
 "PO-Revision-Date: 2024-09-04 11:52+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -20,85 +20,85 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 23.04.3\n"
 
-#: src/GlobalMenu.qml:15
+#: src/GlobalMenu.qml:16
 #, kde-format
 msgctxt "@menu"
 msgid "File"
 msgstr "Файл"
 
-#: src/GlobalMenu.qml:18
+#: src/GlobalMenu.qml:19
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
 msgstr "Додати нову сторінку…"
 
-#: src/GlobalMenu.qml:24
+#: src/GlobalMenu.qml:25
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
 msgstr "Імпортувати сторінку…"
 
-#: src/GlobalMenu.qml:30
+#: src/GlobalMenu.qml:31
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
 msgstr "Експортувати поточну сторінку…"
 
-#: src/GlobalMenu.qml:37
+#: src/GlobalMenu.qml:38
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
 msgstr "Отримати нові сторінки…"
 
-#: src/GlobalMenu.qml:54
+#: src/GlobalMenu.qml:55
 #, kde-format
 msgctxt "@menu-action"
 msgid "Quit"
 msgstr "Вийти"
 
-#: src/GlobalMenu.qml:62
+#: src/GlobalMenu.qml:63
 #, kde-format
 msgctxt "@menu"
 msgid "View"
 msgstr "Перегляд"
 
-#: src/GlobalMenu.qml:65
+#: src/GlobalMenu.qml:66
 #, kde-format
 msgctxt "@menu-action"
 msgid "Expand Sidebar"
 msgstr "Розгорнути бічну панель"
 
-#: src/GlobalMenu.qml:65
+#: src/GlobalMenu.qml:66
 #, kde-format
 msgctxt "@menu-action"
 msgid "Collapse Sidebar"
 msgstr "Згорнути бічну панель"
 
-#: src/GlobalMenu.qml:72
+#: src/GlobalMenu.qml:73
 #, kde-format
 msgctxt "@menu"
 msgid "Settings"
 msgstr "Параметри"
 
-#: src/GlobalMenu.qml:75
+#: src/GlobalMenu.qml:76
 #, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove pages…"
 msgstr "Редагувати або вилучити сторінки…"
 
-#: src/GlobalMenu.qml:82
+#: src/GlobalMenu.qml:83
 #, kde-format
 msgctxt "@menu"
 msgid "Help"
 msgstr "Довідка"
 
-#: src/GlobalMenu.qml:85
+#: src/GlobalMenu.qml:86
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
 msgstr "Надіслати звіт про помилку…"
 
-#: src/GlobalMenu.qml:91
+#: src/GlobalMenu.qml:92
 #, kde-format
 msgctxt "@menu-action"
 msgid "About System Monitor"
@@ -181,103 +181,103 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
-#: src/Main.qml:72
+#: src/Main.qml:73
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Інструменти"
 
-#: src/Main.qml:77
+#: src/Main.qml:78
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Додати нову сторінку…"
 
-#: src/Main.qml:84
+#: src/Main.qml:85
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Редагувати або вилучити сторінки…"
 
-#: src/Main.qml:90
+#: src/Main.qml:91
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Експортувати поточну сторінку…"
 
-#: src/Main.qml:98
+#: src/Main.qml:99
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Імпортувати сторінку…"
 
-#: src/Main.qml:104
+#: src/Main.qml:105
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Отримати нові сторінки…"
 
-#: src/Main.qml:117
+#: src/Main.qml:118
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Розгорнути бічну панель"
 
-#: src/Main.qml:117
+#: src/Main.qml:118
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Згорнути бічну панель"
 
-#: src/Main.qml:127
+#: src/Main.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Надіслати звіт про помилку…"
 
-#: src/Main.qml:133
+#: src/Main.qml:134
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "Про «Системний монітор»"
 
-#: src/Main.qml:140
+#: src/Main.qml:141
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "Про KDE"
 
-#: src/Main.qml:231
+#: src/Main.qml:232
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Додати нову сторінку"
 
-#: src/Main.qml:252
+#: src/Main.qml:253
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Редагування сторінок"
 
-#: src/Main.qml:275
+#: src/Main.qml:276
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Експорт %1"
 
-#: src/Main.qml:277 src/Main.qml:287
+#: src/Main.qml:278 src/Main.qml:288
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "сторінка монітора системи (*.page)"
 
-#: src/Main.qml:285
+#: src/Main.qml:286
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "Імпорт сторінки"
 
-#: src/Main.qml:320
+#: src/Main.qml:321
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
