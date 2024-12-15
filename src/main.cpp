@@ -24,6 +24,10 @@
 #include "Configuration.h"
 #include "ToolsModel.h"
 
+#if KI18N_VERSION >= QT_VERSION_CHECK(6, 8, 0)
+#include <KLocalizedQmlContext>
+#endif
+
 class SessionManager : public QObject
 {
     Q_OBJECT
@@ -100,7 +104,11 @@ int main(int argc, char **argv)
     auto sessionManager = new SessionManager(&app);
 
     QQmlApplicationEngine engine;
+#if KI18N_VERSION < QT_VERSION_CHECK(6, 8, 0)
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+#else
+    engine.rootContext()->setContextObject(new KLocalizedQmlContext(&engine));
+#endif
     engine.loadFromModule("org.kde.systemmonitor", "Main");
 
     QObject::connect(&service, &KDBusService::activateRequested, &engine, []() {
