@@ -22,7 +22,7 @@ class CommandLineArguments : public QObject
     QML_SINGLETON
 
 public:
-    CommandLineArguments(QObject *parent = nullptr);
+    explicit CommandLineArguments(QObject *parent = nullptr);
 
     QString pageId() const;
     QString pageName() const;
