@@ -27,6 +27,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="fr">Moniteur de surveillance de Plasma</name>
   <name xml:lang="gl">Vixilante do sistema de Plasma</name>
   <name xml:lang="he">צג המערכת של פלזמה</name>
+  <name xml:lang="hi">प्लाज्मा सिस्टम मॉनिटर</name>
   <name xml:lang="hu">Plasma rendszermonitor</name>
   <name xml:lang="ia">Monitor de systema de Plasma</name>
   <name xml:lang="id">Plasma System Monitor</name>
@@ -74,6 +75,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="fr">Une application pour la surveillance des ressources du système.</summary>
   <summary xml:lang="gl">Unha aplicación para vixiar os recursos do sistema.</summary>
   <summary xml:lang="he">יישום למעקב אחר משאבי המערכת</summary>
+  <summary xml:lang="hi">सिस्टम संसाधनों की निगरानी के लिए एक अनुप्रयोग</summary>
   <summary xml:lang="hu">Alkalmazás a rendszer erőforrásainak monitorozásához</summary>
   <summary xml:lang="ia">Un application per supervider ressources de systema</summary>
   <summary xml:lang="is">Forrit til að fylgjast með virkni stýrikerfisins</summary>
@@ -121,6 +123,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="fr">Le moniteur de surveillance de Plasma fournit une interface la surveillance des senseurs du système, le traitement des informations et des autres ressources du système.</p>
     <p xml:lang="gl">O vixilante do sistema de Plasma fornece unha interface para vixiar os sensores do sistema, a información dos procesos e outros recursos do sistema.</p>
     <p xml:lang="he">צג המערכת של פלזמה מספק ממשק למעקב אחר חיישני המערכת, פרטי התהליכים ושאר משאבי המערכת.</p>
+    <p xml:lang="hi">प्लाज्मा सिस्टम मॉनिटर सिस्टम सेंसर, प्रक्रिया जानकारी और अन्य सिस्टम संसाधनों की निगरानी के लिए एक इंटरफ़ेस प्रदान करता है।</p>
     <p xml:lang="hu">A Plasma rendszermonitor felületet nyújt a rendszer szenzorainak, folyamatinformációinak és más rendszererőforrások monitorozásához.</p>
     <p xml:lang="ia">Plasma System Monitor (Monitor o supervision de systema de Plasma) provide un interfacie per supervider sensores de systema, information de processo e altere ressources de systema.</p>
     <p xml:lang="id">Plasma System Monitor menyediakan sebuah antarmuka untuk memantau sensor-sensor sistem, informasi proses dan sumberdaya sistem lainnya.</p>
