@@ -70,7 +70,7 @@ int main(int argc, char **argv)
                          /* version */ PROJECT_VERSION,
                          /* shortDescription */ i18n("An application for monitoring system resources"),
                          /* licenseType */ KAboutLicense::GPL,
-                         /* copyrightStatement */ i18n("© 2020 Plasma Development Team"),
+                         /* copyrightStatement */ i18n("© 2024 Plasma Development Team"),
                          /* otherText */ QString{},
                          /* homePageAddress */ QString{}};
     aboutData.setDesktopFileName(QStringLiteral("org.kde.plasma-systemmonitor"));
