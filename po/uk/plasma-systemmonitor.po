@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-17 00:42+0000\n"
+"POT-Creation-Date: 2024-12-18 00:42+0000\n"
 "PO-Revision-Date: 2024-09-04 11:52+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -115,8 +115,9 @@ msgid "An application for monitoring system resources"
 msgstr "Програма для стеження за використанням ресурсів системи"
 
 #: src/main.cpp:73
-#, kde-format
-msgid "© 2020 Plasma Development Team"
+#, fuzzy, kde-format
+#| msgid "© 2020 Plasma Development Team"
+msgid "© 2024 Plasma Development Team"
 msgstr "© Команда розробників Плазми, 2020"
 
 #: src/main.cpp:79
