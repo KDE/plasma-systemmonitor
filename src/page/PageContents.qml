@@ -44,7 +44,7 @@ ColumnLayout {
         }
     }
 
-    spacing: rowSpacing // From parent Loader
+    spacing: pageData.margin * Kirigami.Units.smallSpacing
 
     readonly property real balancedRowHeight: {
         let reservedSpace = 0;
