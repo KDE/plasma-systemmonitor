@@ -25,6 +25,10 @@ Kirigami.ScrollablePage {
     topPadding: pageData.margin * Kirigami.Units.largeSpacing
     bottomPadding: pageData.margin * Kirigami.Units.largeSpacing
 
+    // Default pages to be invisible, to ensure that when they're being loaded
+    // in the background they do not end up taking any rendering time.
+    visible: false
+
     Kirigami.ColumnView.fillWidth: true
     Kirigami.ColumnView.reservedSpace: edit ? applicationWindow().pageStack.columnView.columnWidth : 0
 
