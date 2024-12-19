@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-18 00:42+0000\n"
-"PO-Revision-Date: 2024-09-04 07:09+0200\n"
+"PO-Revision-Date: 2024-12-18 07:16+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -113,10 +113,9 @@ msgid "An application for monitoring system resources"
 msgstr "Aplikacija za nadzor sistemskih virov"
 
 #: src/main.cpp:73
-#, fuzzy, kde-format
-#| msgid "© 2020 Plasma Development Team"
+#, kde-format
 msgid "© 2024 Plasma Development Team"
-msgstr "© 2020 Razvojna ekipa Plasma"
+msgstr "© 2024 Razvojna ekipa Plasma"
 
 #: src/main.cpp:79
 #, kde-format
