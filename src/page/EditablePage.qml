@@ -216,7 +216,7 @@ Kirigami.ScrollablePage {
 
         opacity: 1
         visible: opacity > 0
-        Behavior on opacity { OpacityAnimator { duration: Kirigami.Units.shortDuration } }
+        Behavior on opacity { NumberAnimation { duration: Kirigami.Units.shortDuration } }
 
         BusyIndicator {
             anchors.centerIn: parent
