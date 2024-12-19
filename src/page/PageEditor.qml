@@ -23,7 +23,7 @@ Column {
     property var missingSensors: []
     signal showMissingSensors()
 
-    spacing: rowSpacing // From parent loader
+    spacing: pageData.margin * Kirigami.Units.smallSpacing
 
     move: Transition {
         NumberAnimation { properties: "x,y"; duration: Kirigami.Units.shortDuration }
