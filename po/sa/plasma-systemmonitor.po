@@ -1,22 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:42+0000\n"
-"PO-Revision-Date: 2024-12-15 22:02+0530\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2024-12-20 00:42+0000\n"
+"PO-Revision-Date: 2024-12-19 22:12+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Lokalize 24.08.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: src/GlobalMenu.qml:16
@@ -114,10 +113,9 @@ msgid "An application for monitoring system resources"
 msgstr "सङ्गणकतन्त्रसंसाधनानाम् निरीक्षणार्थं एकः अनुप्रयोगः"
 
 #: src/main.cpp:73
-#, fuzzy, kde-format
-#| msgid "© 2020 Plasma Development Team"
+#, kde-format
 msgid "© 2024 Plasma Development Team"
-msgstr "© २०२० प्लाज्मा विकास दल"
+msgstr "© २०२४ प्लाज्मा विकास दल"
 
 #: src/main.cpp:79
 #, kde-format
@@ -311,49 +309,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "पृष्ठभूमिसीमां निष्कासयन्तु"
 
-#: src/page/EditablePage.qml:86
+#: src/page/EditablePage.qml:90
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "पृष्ठं सम्पादयतु"
 
-#: src/page/EditablePage.qml:96
+#: src/page/EditablePage.qml:100
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "परिवर्तनं रक्षन्तु"
 
-#: src/page/EditablePage.qml:106
+#: src/page/EditablePage.qml:110
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "परिवर्तनानि परित्यजन्तु"
 
-#: src/page/EditablePage.qml:117
+#: src/page/EditablePage.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "पृष्ठं विन्यस्यताम्…"
 
-#: src/page/EditablePage.qml:126
+#: src/page/EditablePage.qml:130
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "पङ्क्तिः योजयतु"
 
-#: src/page/EditablePage.qml:135
+#: src/page/EditablePage.qml:139
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "शीर्षकं योजयतु"
 
-#: src/page/EditablePage.qml:165
+#: src/page/EditablePage.qml:169
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "पृष्ठं \"%1\" विन्यस्यताम्"
 
-#: src/page/EditablePage.qml:167
+#: src/page/EditablePage.qml:171
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-18 00:42+0000\n"
-"PO-Revision-Date: 2024-09-10 01:17+0900\n"
+"POT-Creation-Date: 2024-12-20 00:42+0000\n"
+"PO-Revision-Date: 2024-12-19 17:36+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -114,10 +114,9 @@ msgid "An application for monitoring system resources"
 msgstr "一個監控系統資源的應用程式"
 
 #: src/main.cpp:73
-#, fuzzy, kde-format
-#| msgid "© 2020 Plasma Development Team"
+#, kde-format
 msgid "© 2024 Plasma Development Team"
-msgstr "© 2020 Plasma 開發團隊"
+msgstr "© 2024 Plasma 開發團隊"
 
 #: src/main.cpp:79
 #, kde-format
@@ -311,49 +310,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "移除背景邊界"
 
-#: src/page/EditablePage.qml:86
+#: src/page/EditablePage.qml:90
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "編輯頁面"
 
-#: src/page/EditablePage.qml:96
+#: src/page/EditablePage.qml:100
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "儲存變更"
 
-#: src/page/EditablePage.qml:106
+#: src/page/EditablePage.qml:110
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "捨棄變更"
 
-#: src/page/EditablePage.qml:117
+#: src/page/EditablePage.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "設定頁面…"
 
-#: src/page/EditablePage.qml:126
+#: src/page/EditablePage.qml:130
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "新增列"
 
-#: src/page/EditablePage.qml:135
+#: src/page/EditablePage.qml:139
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "新增標題"
 
-#: src/page/EditablePage.qml:165
+#: src/page/EditablePage.qml:169
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "設定頁面「%1」"
 
-#: src/page/EditablePage.qml:167
+#: src/page/EditablePage.qml:171
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
