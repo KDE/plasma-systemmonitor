@@ -1,22 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2024 kali <shreekantkalwar@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-12-15 21:59+0530\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2024-12-25 19:35+0530\n"
+"Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Lokalize 24.08.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
@@ -41,7 +40,7 @@ msgstr "प्राथमिकं भण्डारणम्"
 #, kde-format
 msgctxt "@title:group"
 msgid "Network"
-msgstr "संजालम्"
+msgstr "जालकृति"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:175
 #, kde-format
