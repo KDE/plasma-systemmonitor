@@ -31,8 +31,6 @@ public:
 
     KSharedConfig::Ptr config() const;
 
-    void setValue(const QString &name, const QVariant &value);
-
     Q_INVOKABLE bool resetPage();
     Q_INVOKABLE bool savePage();
     Q_INVOKABLE void saveAs(const QUrl &destination);
