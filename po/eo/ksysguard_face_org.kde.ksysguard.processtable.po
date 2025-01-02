@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-06-16 06:33+0200\n"
+"PO-Revision-Date: 2024-09-19 21:59+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -21,12 +21,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "Konfirmu finadon de procezoj."
+msgstr "Konfirmi finadon de procezoj"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -35,36 +33,28 @@ msgid "By default show:"
 msgstr "Defaŭlte montri:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
-msgstr "Propraj Procezoj"
+msgstr "Proprajn Procezojn"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
-msgstr "Uzantaj Procezoj"
+msgstr "Uzantajn Procezojn"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
-msgstr "Sistemaj Procezoj"
+msgstr "Sistemajn Procezojn"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
-msgstr "Ĉiuj Procezoj"
+msgstr "Ĉiujn Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:32
 #, kde-format
@@ -94,31 +84,31 @@ msgstr "Montri kiel Arbo"
 #, kde-format
 msgctxt "@action %1 is view type"
 msgid "Show: %1"
-msgstr "Montru: %1"
+msgstr "Montri: %1"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:88
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
-msgstr "Propraj Procezoj"
+msgstr "Proprajn Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:97
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "User Processes"
-msgstr "Uzantaj Procezoj"
+msgstr "Uzantajn Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:106
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
-msgstr "Sistemaj Procezoj"
+msgstr "Sistemajn Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:115
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
-msgstr "Ĉiuj Procezoj"
+msgstr "Ĉiujn Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:127
 #, kde-format
@@ -207,15 +197,12 @@ msgid "Configure Columns…"
 msgstr "Agordi Kolumnojn…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Fini Procezon"
-msgstr[1] "Fini %1 Procezojn"
+msgstr[0] "Perforte Fini Procezon"
+msgstr[1] "Perforte Fini %1 Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -226,15 +213,12 @@ msgstr[0] "Fini Procezon"
 msgstr[1] "Fini %1 Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Fini Procezon"
-msgstr[1] "Fini Procezojn"
+msgstr[0] "Perforte Fini Procezon"
+msgstr[1] "Perforte Fini Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -245,39 +229,23 @@ msgstr[0] "Fini Procezon"
 msgstr[1] "Fini Procezojn"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Ĉu vi certas ke vi volas ĉesigi tiun procezon?\n"
-"Iu nekonservita laboro povus perdiĝi."
+"Ĉu perforte ĉesigi (SIGKILL) tiun procezon? Iu ekonservita laboro povus "
+"perdiĝi."
 msgstr[1] ""
-"Ĉu vi certas ke vi volas ĉesigi tiujn %1 procezojn?\n"
-"Iu nekonservita laboro povus perdiĝi."
+"Ĉu perforte ĉesigi (SIGKILL) tiujn %1 procezojn? Iu nekonservita laboro "
+"povus perdiĝi."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"Ĉu vi certas ke vi volas ĉesigi tiun procezon?\n"
-"Iu nekonservita laboro povus perdiĝi."
-msgstr[1] ""
-"Ĉu vi certas ke vi volas ĉesigi tiujn %1 procezojn?\n"
-"Iu nekonservita laboro povus perdiĝi."
+msgstr[0] "Ĉu ĉesigi tiun procezon? Iu nekonservita laboro povus perdiĝi."
+msgstr[1] "Ĉu ĉesigi tiujn %1 procezojn? Iu nekonservita laboro povus perdiĝi."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
