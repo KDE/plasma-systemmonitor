@@ -17,7 +17,7 @@ SPDX-License-Identifier: LGPL-2.0-or-later
             <default>350</default>
         </entry>
         <entry name="sortedColumns" type="StringList">
-            <default>appName,usage,vmPSS,netInbound,netOutbound,ioCharactersActuallyReadRate,ioCharactersActuallyWrittenRate</default>
+            <default>appName,usage,memory,netInbound,netOutbound,ioCharactersActuallyReadRate,ioCharactersActuallyWrittenRate</default>
         </entry>
         <entry name="columnWidths" type="StringList">
             <default>0.31,0.10,0.11,0.12,0.12,0.12,0.12</default>
@@ -34,7 +34,7 @@ SPDX-License-Identifier: LGPL-2.0-or-later
             that, we serialize it from and to JSON. So the below default should
             be valid JSON.
             -->
-            <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","appName":"text","netInbound":"text","netOutbound":"text","usage":"lineScaled","vmPSS":"text"}</default>
+            <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","appName":"text","netInbound":"text","netOutbound":"text","usage":"lineScaled","memory":"text"}</default>
         </entry>
         <entry name="askWhenKilling" type="Bool">
             <default>true</default>

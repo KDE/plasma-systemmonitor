@@ -57,7 +57,7 @@ Table.BaseTableView {
         sensorColumns: {
             "name": appModel.enabledAttributes.indexOf("appName"),
             "cpu": appModel.enabledAttributes.indexOf("usage"),
-            "memory": appModel.enabledAttributes.indexOf("vmPSS"),
+            "memory": appModel.enabledAttributes.indexOf("memory"),
             "netInbound": appModel.enabledAttributes.indexOf("netInbound"),
             "netOutbound": appModel.enabledAttributes.indexOf("netOutbound"),
             "diskRead": appModel.enabledAttributes.indexOf("ioCharactersActuallyReadRate"),
@@ -141,7 +141,7 @@ Table.BaseTableView {
             "iconName",
             "appName",
             "usage",
-            "vmPSS",
+            "memory",
             "netInbound",
             "netOutbound",
             "ioCharactersActuallyReadRate",
