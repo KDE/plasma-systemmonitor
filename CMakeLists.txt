@@ -73,6 +73,9 @@ install(PROGRAMS org.kde.plasma-systemmonitor.desktop  DESTINATION  ${KDE_INSTAL
 install(FILES org.kde.plasma-systemmonitor.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install(FILES kcm_external_plasma-systemmonitor.desktop DESTINATION ${KDE_INSTALL_DATADIR}/plasma/kinfocenter/externalmodules)
 
+install(FILES kconf_update/plasma-systemmonitor.upd DESTINATION ${KDE_INSTALL_KCONFUPDATEDIR})
+install(PROGRAMS kconf_update/plasma-systemmonitor-replace-vmpss.py DESTINATION ${KDE_INSTALL_KCONFUPDATEDIR})
+
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)

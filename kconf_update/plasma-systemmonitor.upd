@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2024 Arjen Hiemstra <ahiemstra@heimr.nl>
+# SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+#
+# Configuration update for plasma-systemmonitor
+
+Version=6
+
+# The new column "memory" was introduced to replace the vmPSS column which now
+# is only PSS.
+Id=memory-column
+Script=plasma-systemmonitor-replace-vmpss.py
