@@ -115,7 +115,6 @@ msgstr "Program for overvåking av systemressurser"
 
 #: src/main.cpp:73
 #, fuzzy, kde-format
-#| msgid "© 2020 Plasma Development Team"
 msgid "© 2024 Plasma Development Team"
 msgstr "© 2020 Utviklingslaget for Plasma"
 
@@ -413,8 +412,6 @@ msgstr "Bruk diagram som skrivebordselement"
 
 #: src/page/FaceConfigurationPage.qml:77
 #, fuzzy, kde-format
-#| msgctxt "@label:textbox"
-#| msgid "Display Style"
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "Visningsstil"
