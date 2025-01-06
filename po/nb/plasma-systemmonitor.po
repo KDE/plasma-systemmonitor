@@ -412,8 +412,6 @@ msgstr "Bruk diagram som skrivebordselement"
 
 #: src/page/FaceConfigurationPage.qml:77
 #, fuzzy, kde-format
-#| msgctxt "@label:textbox"
-#| msgid "Display Style"
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "Visningsstil"
