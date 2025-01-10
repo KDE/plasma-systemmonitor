@@ -50,6 +50,7 @@ Name[x-test]=xxSystem Monitorxx
 Name[zh_CN]=系统监视器
 Name[zh_TW]=系統監控
 Comment=Monitor app and system resource usage
+Comment[ar]=تطبيق مراقبة ومتابعة استخدام موارد النظام
 Comment[bg]=Проследяване на използването на приложения и системни ресурси
 Comment[ca]=Controla les aplicacions i l'ús dels recursos del sistema
 Comment[ca@valencia]=Controla les aplicacions i l'ús dels recursos del sistema
