@@ -39,8 +39,7 @@ void WidgetExporter::exportAsWidget(FaceLoader *loader) const
     const QString group = data->value(QStringLiteral("face")).toString();
     const KConfigGroup configGroup = data->config()->group(group);
 
-    QString script = QStringLiteral(R"(a = currentActivity()
-        d = desktopsForActivity(a)[0]
+    QString script = QStringLiteral(R"(d = desktopForScreen(0)
         w = d.addWidget('org.kde.plasma.systemmonitor'))");
     script += QChar('\n');
     script += configEntriesScript(configGroup);
