@@ -147,6 +147,12 @@ FocusScope {
 
                 onTapped: (eventPoint, button) => {
                     let cell = tableView.cellAtPosition(eventPoint.pressPosition);
+
+                    // The user must have right-clicked an empty area; ignore it.
+                    if (cell.x === -1 && cell.y === -1) {
+                        return;
+                    }
+
                     let index = tableView.index(cell.y, cell.x)
 
                     if (!tableView.selectionModel.isSelected(index)) {
