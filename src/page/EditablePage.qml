@@ -38,6 +38,12 @@ Kirigami.ScrollablePage {
         value: contentLoader.status != Loader.Loading
     }
 
+    Binding {
+        target: flickable
+        property: "interactive"
+        value: false
+    }
+
     readonly property real heightForContent: (parent?.height ?? 0) - topPadding - bottomPadding - (globalToolBarItem?.height ?? 0)
 
     readonly property var actionsFace: contentLoader.item && contentLoader.item.actionsFace ? contentLoader.item.actionsFace : null
