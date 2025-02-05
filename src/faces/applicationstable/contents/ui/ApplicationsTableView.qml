@@ -62,7 +62,8 @@ Table.BaseTableView {
             "netOutbound": appModel.enabledAttributes.indexOf("netOutbound"),
             "diskRead": appModel.enabledAttributes.indexOf("ioCharactersActuallyReadRate"),
             "diskWrite": appModel.enabledAttributes.indexOf("ioCharactersActuallyWrittenRate"),
-            "iconName": appModel.enabledAttributes.indexOf("iconName")
+            "iconName": appModel.enabledAttributes.indexOf("iconName"),
+            "menuId": appModel.enabledAttributes.indexOf("menuId")
         }
         role: Process.ProcessDataModel.Value
         pidsRole: Process.ProcessDataModel.PIDs
@@ -145,6 +146,7 @@ Table.BaseTableView {
         property var requiredAttributes: [
             "iconName",
             "appName",
+            "menuId",
             "usage",
             "memory",
             "netInbound",
