@@ -25,6 +25,15 @@ Faces.SensorFace {
 
     readonly property var config: controller.faceConfiguration
 
+    readonly property bool quitEnabled: {
+        for (let info of table.selectedApplications) {
+            if (info.menuId == "session.slice" || info.menuId == "background.slice") {
+                return false
+            }
+        }
+        return true
+    }
+
     actions: [
         Kirigami.Action {
             icon.name: "search"
@@ -42,7 +51,7 @@ Faces.SensorFace {
             text: i18nc("@action", "Quit Application")
             displayHint: Kirigami.DisplayHint.KeepVisible
             onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
-            enabled: table.selection.hasSelection
+            enabled: table.selection.hasSelection && root.quitEnabled
         },
         Kirigami.Action {
             id: showDetailsAction
@@ -191,9 +200,10 @@ Faces.SensorFace {
         Menu {
             title: i18nc("@action:inmenu", "Send Signal")
             icon.name: "send_signal-symbolic"
+            enabled: root.quitEnabled
 
             MenuItem {
-               text: i18nc("@action:inmenu Send Signal", "Suspend (STOP)");
+                text: i18nc("@action:inmenu Send Signal", "Suspend (STOP)");
                 onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.StopSignal)
             }
             MenuItem {
@@ -228,6 +238,7 @@ Faces.SensorFace {
         MenuSeparator { }
         MenuItem {
             icon.name: "application-exit";
+            enabled: root.quitEnabled
             text: i18ncp("@action:inmenu", "Quit Application", "Quit %1 Applications", killDialog.items.length);
             onTriggered: processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal)
         }
