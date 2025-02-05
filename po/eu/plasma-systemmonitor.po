@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-20 00:42+0000\n"
+"POT-Creation-Date: 2025-02-05 02:35+0000\n"
 "PO-Revision-Date: 2024-12-21 07:58+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -312,49 +312,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Kendu atzeko planoko marjinak"
 
-#: src/page/EditablePage.qml:90
+#: src/page/EditablePage.qml:96
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Editatu orria"
 
-#: src/page/EditablePage.qml:100
+#: src/page/EditablePage.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Gorde aldaketak"
 
-#: src/page/EditablePage.qml:110
+#: src/page/EditablePage.qml:116
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Baztertu aldaketak"
 
-#: src/page/EditablePage.qml:121
+#: src/page/EditablePage.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Konfiguratu orria..."
 
-#: src/page/EditablePage.qml:130
+#: src/page/EditablePage.qml:136
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Gehitu errenkada"
 
-#: src/page/EditablePage.qml:139
+#: src/page/EditablePage.qml:145
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Gehitu titulua"
 
-#: src/page/EditablePage.qml:169
+#: src/page/EditablePage.qml:175
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Konfiguratu «%1» orria"
 
-#: src/page/EditablePage.qml:171
+#: src/page/EditablePage.qml:177
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
