@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-10 09:29+0000\n"
+"POT-Creation-Date: 2025-02-05 00:43+0000\n"
 "PO-Revision-Date: 2024-04-24 00:14+0200\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -314,49 +314,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Hintergrundränder entfernen"
 
-#: src/page/EditablePage.qml:90
+#: src/page/EditablePage.qml:96
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Seite bearbeiten"
 
-#: src/page/EditablePage.qml:100
+#: src/page/EditablePage.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Änderungen speichern"
 
-#: src/page/EditablePage.qml:110
+#: src/page/EditablePage.qml:116
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Änderungen verwerfen"
 
-#: src/page/EditablePage.qml:121
+#: src/page/EditablePage.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Seite einrichten ..."
 
-#: src/page/EditablePage.qml:130
+#: src/page/EditablePage.qml:136
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Zeile hinzufügen"
 
-#: src/page/EditablePage.qml:139
+#: src/page/EditablePage.qml:145
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Titel hinzufügen"
 
-#: src/page/EditablePage.qml:169
+#: src/page/EditablePage.qml:175
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Seite „%1“ einrichten"
 
-#: src/page/EditablePage.qml:171
+#: src/page/EditablePage.qml:177
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"

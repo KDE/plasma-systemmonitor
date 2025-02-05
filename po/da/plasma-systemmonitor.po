@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-10 09:29+0000\n"
+"POT-Creation-Date: 2025-02-05 00:43+0000\n"
 "PO-Revision-Date: 2024-10-26 18:07+0200\n"
 "Last-Translator: rasmus rosendahl-kaa <rasmus@rosendahl-kaa.name>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -334,25 +334,25 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Vis baggrund"
 
-#: src/page/EditablePage.qml:90
+#: src/page/EditablePage.qml:96
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Rediger side"
 
-#: src/page/EditablePage.qml:100
+#: src/page/EditablePage.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Gem ændringer"
 
-#: src/page/EditablePage.qml:110
+#: src/page/EditablePage.qml:116
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Forkast ændringer"
 
-#: src/page/EditablePage.qml:121
+#: src/page/EditablePage.qml:127
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Configure Page..."
@@ -360,25 +360,25 @@ msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Konfigurer side ..."
 
-#: src/page/EditablePage.qml:130
+#: src/page/EditablePage.qml:136
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Tilføj række"
 
-#: src/page/EditablePage.qml:139
+#: src/page/EditablePage.qml:145
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Tilføj titel"
 
-#: src/page/EditablePage.qml:169
+#: src/page/EditablePage.qml:175
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Konfigurer side \"%1\""
 
-#: src/page/EditablePage.qml:171
+#: src/page/EditablePage.qml:177
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"

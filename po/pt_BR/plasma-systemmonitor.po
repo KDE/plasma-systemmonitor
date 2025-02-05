@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2020, 2021, 2022, 2023.
-# SPDX-FileCopyrightText: 2024 Geraldo Simiao <geraldosimiao@fedoraproject.org>
+# SPDX-FileCopyrightText: 2024, 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-10 09:29+0000\n"
-"PO-Revision-Date: 2024-11-15 23:40-0300\n"
+"POT-Creation-Date: 2025-02-05 00:43+0000\n"
+"PO-Revision-Date: 2025-02-04 11:23-0300\n"
 "Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -113,10 +113,9 @@ msgid "An application for monitoring system resources"
 msgstr "Um aplicativo para monitorar os recursos do sistema"
 
 #: src/main.cpp:71
-#, fuzzy, kde-format
-#| msgid "© 2020 Plasma Development Team"
+#, kde-format
 msgid "© 2024 Plasma Development Team"
-msgstr "© 2020 Equipe de desenvolvimento do Plasma"
+msgstr "© 2024 Equipe de desenvolvimento do Plasma"
 
 #: src/main.cpp:77
 #, kde-format
@@ -311,49 +310,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Remover margens do fundo"
 
-#: src/page/EditablePage.qml:90
+#: src/page/EditablePage.qml:96
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Editar página"
 
-#: src/page/EditablePage.qml:100
+#: src/page/EditablePage.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Salvar alterações"
 
-#: src/page/EditablePage.qml:110
+#: src/page/EditablePage.qml:116
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Descartar alterações"
 
-#: src/page/EditablePage.qml:121
+#: src/page/EditablePage.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Configura página..."
 
-#: src/page/EditablePage.qml:130
+#: src/page/EditablePage.qml:136
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Adicionar linha"
 
-#: src/page/EditablePage.qml:139
+#: src/page/EditablePage.qml:145
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Adicionar título"
 
-#: src/page/EditablePage.qml:169
+#: src/page/EditablePage.qml:175
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Configurar página \"%1\""
 
-#: src/page/EditablePage.qml:171
+#: src/page/EditablePage.qml:177
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
