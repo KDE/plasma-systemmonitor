@@ -156,6 +156,17 @@ Table.BaseTableView {
 
         enabled: view.visible
 
+        includeCGroups: {
+            "session.slice": {
+                "name": i18nc("@label", "Session Services"),
+                "icon": "preferences-system-session-services"
+            },
+            "background.slice": {
+                "name": i18nc("@label", "Background Services"),
+                "icon": "preferences-system-services"
+            }
+        }
+
         enabledAttributes: {
             var result = []
             for (let i of view.enabledColumns) {
