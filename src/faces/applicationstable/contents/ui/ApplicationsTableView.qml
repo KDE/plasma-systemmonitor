@@ -156,6 +156,21 @@ Table.BaseTableView {
 
         enabled: view.visible
 
+        cgroupMapping: {
+            // We want all processes that are part of the session and background
+            // cgroups to be listed as part of a "Background Services" entry.
+            "session.slice": "services",
+            "background.slice": "services",
+        }
+
+        applicationOverrides: {
+            "services": {
+                "menuId": "services",
+                "appName": i18nc("@label", "Background Services"),
+                "iconName": "preferences-system-services"
+            }
+        }
+
         enabledAttributes: {
             var result = []
             for (let i of view.enabledColumns) {
