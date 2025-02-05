@@ -43,6 +43,7 @@ QtObject {
         }
 
         name = "" + model.data(model.index(index.row, sensorColumns["name"]), role)
+        menuId = "" + model.data(model.index(index.row, sensorColumns["menuId"]), role)
         cpu = parseFloat(model.data(model.index(index.row, sensorColumns["cpu"]), role))
         memory = parseFloat(model.data(model.index(index.row, sensorColumns["memory"]), role))
         netInbound = parseFloat(model.data(model.index(index.row, sensorColumns["netInbound"]), role))
