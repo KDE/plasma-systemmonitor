@@ -216,7 +216,7 @@ Page {
                 anchors.fill: parent
 
                 columnWidths: [0.5, 0.25, 0.25]
-                sortName: processModel.enabledAttributes.includes(controller.faceConfiguration.sortColumn) ? controller.faceConfiguration.sortColumn : "vmPSS"
+                sortName: processModel.enabledAttributes.includes(controller.faceConfiguration.sortColumn) ? controller.faceConfiguration.sortColumn : "memory"
                 sortOrder: controller.faceConfiguration.sortDirection
                 onSort: (column, order) => sortFilter.sort(column, order)
 
@@ -235,7 +235,7 @@ Page {
                     enabledAttributes: [
                         "name",
                         "usage",
-                        "vmPSS",
+                        "memory",
                         "pid",
                     ]
                 }
