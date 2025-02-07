@@ -95,6 +95,11 @@ Table.BaseTableView {
             return true
         }
         filterRowCallback: function(row, parent) {
+            let pids = sourceModel.data(sourceModel.index(row, 0, parent), Process.ProcessDataModel.PIDs)
+            if (pids.length == 0) {
+                return false
+            }
+
             if (filterString.length == 0) {
                 return true
             }
