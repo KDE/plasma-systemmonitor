@@ -16,7 +16,7 @@ TreeViewDelegate
 {
     id: root
 
-    readonly property bool rowHovered: root.TableView.view.hoveredRow == row
+    readonly property bool rowHovered: treeView.hoveredRow == row
     Kirigami.Theme.colorSet: selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
     text: model.display
 
@@ -42,7 +42,7 @@ TreeViewDelegate
 
     onHoveredChanged: {
         if (hovered) {
-            root.TableView.view.hoveredRow = root.row
+            treeView.hoveredRow = row
         }
     }
 
