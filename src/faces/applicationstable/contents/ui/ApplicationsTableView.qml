@@ -163,6 +163,19 @@ Table.BaseTableView {
             // cgroups to be listed as part of a "Background Services" entry.
             "session.slice": "services",
             "background.slice": "services",
+
+            // These all show up as part of the app CGroup but are really
+            // background services, so move them there.
+            "org.a11y.atspi.Registry": "services",
+            "org.kde.discover.notifier": "services",
+            "geoclue": "services",
+            "org.kde.kunifiedpush": "services",
+            "dconf.service": "services",
+            "flatpak-session-helper.service": "services",
+            "gpg-agent.service": "services",
+            "org.kde.xwaylandvideobridge": "services",
+            "org.kde.kalendarac": "services",
+            "xdg-desktop-portal-gtk.service": "services"
         }
 
         applicationOverrides: {
