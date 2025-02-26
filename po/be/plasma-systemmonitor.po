@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-05 00:43+0000\n"
+"POT-Creation-Date: 2025-02-26 00:43+0000\n"
 "PO-Revision-Date: 2024-06-05 07:05\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -119,7 +119,7 @@ msgstr "Праграма для назірання за выкарыстанне
 #: src/main.cpp:71
 #, fuzzy, kde-format
 #| msgid "© 2020 Plasma Development Team"
-msgid "© 2024 Plasma Development Team"
+msgid "© 2025 Plasma Development Team"
 msgstr "© 2020 Каманда распрацоўвання Plasma"
 
 #: src/main.cpp:77

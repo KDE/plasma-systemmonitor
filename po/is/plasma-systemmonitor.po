@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-05 00:43+0000\n"
+"POT-Creation-Date: 2025-02-26 00:43+0000\n"
 "PO-Revision-Date: 2024-07-22 22:31+0000\n"
 "Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -114,7 +114,7 @@ msgstr "Forrit til að fylgjast með virkni stýrikerfisins"
 #: src/main.cpp:71
 #, fuzzy, kde-format
 #| msgid "© 2020 Plasma Development Team"
-msgid "© 2024 Plasma Development Team"
+msgid "© 2025 Plasma Development Team"
 msgstr "© 20-20 Plasma þróunarteymið"
 
 #: src/main.cpp:77

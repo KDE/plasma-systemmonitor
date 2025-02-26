@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-05 00:43+0000\n"
+"POT-Creation-Date: 2025-02-26 00:43+0000\n"
 "PO-Revision-Date: 2021-03-18 08:03+0100\n"
 "Last-Translator: Jacob Dybvald Ludvigsen <jacob.ludvigsen@protonmail.com>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -115,7 +115,7 @@ msgstr "Program for overvåking av systemressurser"
 
 #: src/main.cpp:71
 #, fuzzy, kde-format
-msgid "© 2024 Plasma Development Team"
+msgid "© 2025 Plasma Development Team"
 msgstr "© 2020 Utviklingslaget for Plasma"
 
 #: src/main.cpp:77

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-05 00:43+0000\n"
+"POT-Creation-Date: 2025-02-26 00:43+0000\n"
 "PO-Revision-Date: 2025-01-03 16:57+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -113,8 +113,9 @@ msgid "An application for monitoring system resources"
 msgstr "Programma sistēmas resursu pārraudzībai"
 
 #: src/main.cpp:71
-#, kde-format
-msgid "© 2024 Plasma Development Team"
+#, fuzzy, kde-format
+#| msgid "© 2024 Plasma Development Team"
+msgid "© 2025 Plasma Development Team"
 msgstr "© 2024 „Plasma“ izstrādātāju komanda"
 
 #: src/main.cpp:77
