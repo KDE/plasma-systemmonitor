@@ -1,15 +1,15 @@
 # Translation of plasma-systemmonitor to Spanish
-# Copyright (C) 2020-2024 This file is copyright:
+# Copyright (C) 2020-2025 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
 # Automatically generated, 2020.
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-12-19 01:19+0100\n"
+"PO-Revision-Date: 2025-02-27 00:25+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -29,25 +29,25 @@ msgstr "Archivo"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr "Añadir nueva página..."
+msgstr "Añadir nueva página…"
 
 #: src/GlobalMenu.qml:25
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "Importar página..."
+msgstr "Importar página…"
 
 #: src/GlobalMenu.qml:31
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
-msgstr "Exportar la página actual..."
+msgstr "Exportar la página actual…"
 
 #: src/GlobalMenu.qml:38
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr "Obtener nuevas páginas..."
+msgstr "Obtener nuevas páginas…"
 
 #: src/GlobalMenu.qml:55
 #, kde-format
@@ -83,7 +83,7 @@ msgstr "Preferencias"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove pages…"
-msgstr "Editar o eliminar páginas..."
+msgstr "Editar o eliminar páginas…"
 
 #: src/GlobalMenu.qml:83
 #, kde-format
@@ -95,7 +95,7 @@ msgstr "Ayuda"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr "Informar de fallo..."
+msgstr "Informar de fallo…"
 
 #: src/GlobalMenu.qml:92
 #, kde-format
@@ -114,10 +114,9 @@ msgid "An application for monitoring system resources"
 msgstr "Aplicación para monitorizar recursos del sistema"
 
 #: src/main.cpp:71
-#, fuzzy, kde-format
-#| msgid "© 2024 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© 2024 El equipo de desarrollo de Plasma"
+msgstr "© 2025 El equipo de desarrollo de Plasma"
 
 #: src/main.cpp:77
 #, kde-format
@@ -191,31 +190,31 @@ msgstr "Herramientas"
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
-msgstr "Añadir nueva página..."
+msgstr "Añadir nueva página…"
 
 #: src/Main.qml:85
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
-msgstr "Editar o eliminar páginas..."
+msgstr "Editar o eliminar páginas…"
 
 #: src/Main.qml:91
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
-msgstr "Exportar la página actual..."
+msgstr "Exportar la página actual…"
 
 #: src/Main.qml:99
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "Importar página..."
+msgstr "Importar página…"
 
 #: src/Main.qml:105
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
-msgstr "Obtener nuevas páginas..."
+msgstr "Obtener nuevas páginas…"
 
 #: src/Main.qml:118
 #, kde-format
@@ -233,7 +232,7 @@ msgstr "Contraer la barra lateral"
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr "Informar de fallo..."
+msgstr "Informar de fallo…"
 
 #: src/Main.qml:134
 #, kde-format
@@ -334,7 +333,7 @@ msgstr "Descartar cambios"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "Configurar página..."
+msgstr "Configurar página…"
 
 #: src/page/EditablePage.qml:136
 #, kde-format
@@ -388,13 +387,13 @@ msgstr "Cerrar"
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr "Cargar ajuste automático..."
+msgstr "Cargar ajuste automático…"
 
 #: src/page/FaceConfigurationPage.qml:45
 #, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "Obtener nuevos ajustes automáticos..."
+msgstr "Obtener nuevos ajustes automáticos…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
@@ -418,7 +417,7 @@ msgstr "Añadir gráfico como elemento del escritorio"
 #, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr "Obtener nuevos estilos de visor..."
+msgstr "Obtener nuevos estilos de visor…"
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format
@@ -507,7 +506,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
-msgstr "Corregir..."
+msgstr "Corregir…"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -746,7 +745,7 @@ msgstr "No volver a preguntar"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Kill a Window…"
-msgstr "Matar una ventana..."
+msgstr "Matar una ventana…"
 
 #: src/ToolsModel.cpp:115
 #, kde-format

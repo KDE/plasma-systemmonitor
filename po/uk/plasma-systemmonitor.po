@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2024-12-18 09:30+0200\n"
+"PO-Revision-Date: 2025-02-26 14:41+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -115,10 +115,9 @@ msgid "An application for monitoring system resources"
 msgstr "Програма для стеження за використанням ресурсів системи"
 
 #: src/main.cpp:71
-#, fuzzy, kde-format
-#| msgid "© 2024 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© Команда розробників Плазми, 2024"
+msgstr "© Команда розробників Плазми, 2025"
 
 #: src/main.cpp:77
 #, kde-format
