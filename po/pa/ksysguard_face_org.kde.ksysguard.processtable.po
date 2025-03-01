@@ -1,29 +1,27 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# A S Alam <aalam@satluj.org>, 2021, 2023.
+# SPDX-FileCopyrightText: 2021, 2023, 2025 A S Alam <aalam@satluj.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2023-04-01 21:07-0700\n"
-"Last-Translator: A S Alam <aalam@satluj.org>\n"
-"Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2025-02-28 09:53-0600\n"
+"Last-Translator: A S Alam <aman@punlinux.org>\n"
+"Language-Team: pa\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "ਪਰੋਸੈਸ ਖਤਮ ਕਰਨ ਦੀ ਤਸਦੀਕ।"
+msgstr "ਪਰੋਸੈਸ ਖਤਮ ਕਰਨ ਦੀ ਤਸਦੀਕ"
 
 #: src/faces/processtable/contents/ui/Config.qml:29
 #, kde-format
@@ -32,33 +30,25 @@ msgid "By default show:"
 msgstr "ਮੂਲ ਰੂਪ ਵਿੱਚ ਵੇਖੋ:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "ਆਪਣੇ ਪਰੋਸੈਸ"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "ਵਰਤੋਂਕਾਰ ਪਰੋਸੈਸ"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "ਸਿਸਟਮ ਪਰੋਸੈਸ"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "ਸਾਰੇ ਪਰੋਸੈਸ"
@@ -118,9 +108,7 @@ msgid "All Processes"
 msgstr "ਸਾਰੇ ਪਰੋਸੈਸ"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:127
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "…ਕਾਲਮਾਂ ਦੀ ਸੰਰਚਨਾ"
@@ -180,12 +168,10 @@ msgid "User 2 (USR2)"
 msgstr "ਵਰਤੋਂਕਾਰ 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:217
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "…ਕਾਲਮਾਂ ਦੀ ਸੰਰਚਨਾ"
+msgstr "ਮੌਜੂਦਾ ਕਾਲਮਾਂ ਨੂੰ ਕਾਪੀ ਕਰੋ"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:226
 #, kde-format
@@ -199,7 +185,7 @@ msgstr[1] "%1 ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰੋ"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "ਓਹਲੇ"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:244
 #, kde-format
@@ -208,34 +194,28 @@ msgid "Configure Columns…"
 msgstr "…ਕਾਲਮਾਂ ਦੀ ਸੰਰਚਨਾ"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰੋ"
-msgstr[1] "%1 ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰੋ"
+msgstr[0] "ਪਰੋਸੈਸ ਨੂੰ ਧੱਕੇ ਨਾਲ ਖਤਮ ਕਰੋ"
+msgstr[1] "%1 ਪਰੋਸੈਸਾਂ ਨੂੰ ਧੱਕੇ ਨਾਲ ਖਤਮ ਕਰੋ"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
 msgid_plural "End %1 Processes"
-msgstr[0] "ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰੋ"
-msgstr[1] "%1 ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰੋ"
+msgstr[0] "ਪਰੋਸੈਸ ਨੂੰ ਸਮਾਪਤ ਕਰੋ"
+msgstr[1] "%1 ਪਰੋਸੈਸਾਂ ਨੂੰ ਸਮਾਪਤ ਕਰੋ"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰੋ"
-msgstr[1] "ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰੋ"
+msgstr[0] "ਪਰੋਸੈਸ ਨੂੰ ਧੱਕੇ ਨਾਲ ਸਮਾਪਤ ਕਰੋ"
+msgstr[1] "ਪਰੋਸੈਸ ਨੂੰ ਧੱਕੇ ਨਾਲ ਸਮਾਪਤ ਕਰੋ"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -246,39 +226,20 @@ msgstr[0] "ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰੋ"
 msgstr[1] "ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰੋ"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"ਕੀ ਤੁਸੀਂ ਇਹ ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?\n"
-"ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਜਾਵੇਗਾ।"
+msgstr[0] "ਇਸ ਪਰੋਸੈਸ ਨੂੰ ਧੱਕੇ ਸਮਾਪਤ (SIGKILL) ਕਰਨਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਸਕਦਾ ਹੈ।"
 msgstr[1] ""
-"ਕੀ ਤੁਸੀਂ ਇਹ %1 ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰਨੇ ਚਾਹੁੰਦੇ ਹੋ?\n"
-"ਕੋਈ ਵੀ ਨਾ ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਜਾਵੇਗਾ।"
+"ਇਹ %1 ਪਰੋਸੈਸਾਂ ਨੂੰ ਧੱਕੇ ਸਮਾਪਤ (SIGKILL) ਕਰਨਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਸਕਦਾ ਹੈ।"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"ਕੀ ਤੁਸੀਂ ਇਹ ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?\n"
-"ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਜਾਵੇਗਾ।"
-msgstr[1] ""
-"ਕੀ ਤੁਸੀਂ ਇਹ %1 ਪਰੋਸੈਸ ਸਮਾਪਤ ਕਰਨੇ ਚਾਹੁੰਦੇ ਹੋ?\n"
-"ਕੋਈ ਵੀ ਨਾ ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਜਾਵੇਗਾ।"
+msgstr[0] "ਇਸ ਪਰੋਸੈਸ ਨੂੰ ਸਮਾਪਤ ਕਰਨਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਸਕਦਾ ਹੈ।"
+msgstr[1] "ਇਹਨਾਂ %1 ਪਰੋਸੈਸ ਨੂੰ ਸਮਾਪਤ ਕਰਨਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਸਕਦਾ ਹੈ।"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format

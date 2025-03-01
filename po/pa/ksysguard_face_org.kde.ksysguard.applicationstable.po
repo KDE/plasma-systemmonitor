@@ -1,21 +1,21 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# A S Alam <aalam@satluj.org>, 2021, 2023.
+# SPDX-FileCopyrightText: 2021, 2023, 2025 A S Alam <aalam@satluj.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2023-04-01 21:07-0700\n"
-"Last-Translator: A S Alam <aalam@satluj.org>\n"
-"Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2025-02-28 09:55-0600\n"
+"Last-Translator: A S Alam <aman@punlinux.org>\n"
+"Language-Team: pa\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -96,9 +96,7 @@ msgid "Show Details Sidebar"
 msgstr "ਵੇਰਵੇ ਬਾਹੀ ਵੇਖਾਓ"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:58
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Configure columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "…ਕਾਲਮਾਂ ਦੀ ਸੰਰਚਨਾ"
@@ -175,18 +173,15 @@ msgstr[1] "%1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਓ
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "ਓਹਲੇ"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਓ"
-msgstr[1] "%1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਓ"
+msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਮਜ਼ਬੂਰ"
+msgstr[1] "%1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ  ਬਾਹਰ ਜਾਣ ਲਈ ਮਜ਼ਬੂਰ"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -197,15 +192,12 @@ msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 msgstr[1] "%1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਓ"
-msgstr[1] "ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਓ"
+msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਮਜ਼ਬੂਰ"
+msgstr[1] "ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਮਜ਼ਬੂਰ"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -216,39 +208,22 @@ msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 msgstr[1] "ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"ਕੀ ਤੁਸੀਂ ਇਹ ਐਪਲੀਕਸ਼ਨ ਵਿੱਚੋਂ ਬਾਹਰ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹੋ?\n"
-"ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਜਾਵੇਗਾ।"
+"ਐਪਲੀਕੇਸ਼ਨ ਵਿੱਚੋਂ ਧੱਕੇ ਨਾਲ ਬਾਹਰ (SIGKILL) ਜਾਣਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਸਕਦਾ ਹੈ।"
 msgstr[1] ""
-"ਕੀ ਤੁਸੀਂ ਇਹ %1 ਐਪਲੀਕਸ਼ਨਾਂ ਵਿੱਚੋਂ ਬਾਹਰ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹੋ?\n"
-"ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਜਾਵੇਗਾ।"
+"ਇਹਨਾਂ %1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਵਿੱਚੋਂ ਧੱਕੇ ਨਾਲ ਬਾਹਰ (SIGKILL) ਜਾਣਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ "
+"ਸਕਦਾ ਹੈ।"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"ਕੀ ਤੁਸੀਂ ਇਹ ਐਪਲੀਕਸ਼ਨ ਵਿੱਚੋਂ ਬਾਹਰ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹੋ?\n"
-"ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਜਾਵੇਗਾ।"
-msgstr[1] ""
-"ਕੀ ਤੁਸੀਂ ਇਹ %1 ਐਪਲੀਕਸ਼ਨਾਂ ਵਿੱਚੋਂ ਬਾਹਰ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹੋ?\n"
-"ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਜਾਵੇਗਾ।"
+msgstr[0] "ਇਸ ਐਪਲੀਕੇਸ਼ਨ ਵਿੱਚੋਂ ਬਾਹਰ ਜਾਣਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਸਕਦਾ ਹੈ।"
+msgstr[1] "ਇਹਨਾਂ %1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਵਿੱਚੋਂ ਬਾਹਰ ਜਾਣਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਸਕਦਾ ਹੈ।"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
 #, kde-format
