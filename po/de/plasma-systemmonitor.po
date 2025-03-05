@@ -175,13 +175,13 @@ msgstr "David Edmundson"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Alois Spitzbart"
+msgstr "Deutsches KDE-Übersetzungsteam"
 
 #: src/main.cpp:87
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "spitz234@hotmail.com"
+msgstr "kde-i18n-de@kde.org"
 
 #: src/Main.qml:73
 #, kde-format
