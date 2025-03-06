@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2025-01-03 16:57+0200\n"
+"PO-Revision-Date: 2025-03-04 17:03+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -113,10 +113,9 @@ msgid "An application for monitoring system resources"
 msgstr "Programma sistēmas resursu pārraudzībai"
 
 #: src/main.cpp:71
-#, fuzzy, kde-format
-#| msgid "© 2024 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© 2024 „Plasma“ izstrādātāju komanda"
+msgstr "© 2025 „Plasma“ izstrādātāju komanda"
 
 #: src/main.cpp:77
 #, kde-format
