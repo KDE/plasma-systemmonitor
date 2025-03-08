@@ -186,7 +186,7 @@ ColumnLayout {
 
                             spacing: Kirigami.Units.largeSpacing
 
-                            layer.enabled: (model.data.showBackground && model.data.noMargins) ?? false
+                            layer.enabled: (GraphicsInfo.api !== GraphicsInfo.Software && model.data.showBackground && model.data.noMargins) ?? false
                             layer.effect: Kirigami.ShadowedTexture {
                                 radius: Kirigami.Units.smallSpacing
                             }
