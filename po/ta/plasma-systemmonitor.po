@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-26 00:43+0000\n"
-"PO-Revision-Date: 2025-01-26 19:00+0530\n"
+"PO-Revision-Date: 2025-03-09 17:25+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -112,10 +112,9 @@ msgid "An application for monitoring system resources"
 msgstr "கணினியின் வசதிகளின் பயன்பாட்டை கண்காணிக்க உதவும் செயலி"
 
 #: src/main.cpp:71
-#, fuzzy, kde-format
-#| msgid "© 2024 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© 2024 பிளாஸ்மா நிரலாக்க குழு"
+msgstr "© 2025 பிளாஸ்மா நிரலாக்க குழு"
 
 #: src/main.cpp:77
 #, kde-format
