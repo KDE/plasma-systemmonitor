@@ -252,7 +252,3 @@ msgstr[1] "Finalitzo aquests %1 processos? Pot perdre's la feina no desada."
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "ID del procés %1, propietat de %2"
-
-#~ msgctxt "@action"
-#~ msgid "Configure columns…"
-#~ msgstr "Configura les columnes…"
