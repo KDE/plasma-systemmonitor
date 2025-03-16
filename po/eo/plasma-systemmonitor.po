@@ -220,7 +220,7 @@ msgstr "Ekpreni novajn paĝojn…"
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
-msgstr "Vastigu Flankbreton"
+msgstr "Vastigi Flankbreton"
 
 #: src/Main.qml:118
 #, kde-format
