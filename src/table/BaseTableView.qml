@@ -163,6 +163,17 @@ FocusScope {
                     root.contextMenuRequested(tableView.index(cell.y, cell.x), eventPoint.globalPressPosition)
                 }
             }
+
+            Shortcut {
+                sequences: [StandardKey.SelectAll]
+                onActivated: {
+                    // ItemSelectionModel or TableView don't have a "select all". In addition, ItemSelectionModel doesn't
+                    // have a clear way of selecting ranges. So instead, first select the first column, then use the
+                    // selection resulting from that to select the rest of the columns.
+                    selectionModel.select(tableView.index(0, 0), ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
+                    selectionModel.select(selectionModel.selection, ItemSelectionModel.Select | ItemSelectionModel.Columns)
+                }
+            }
         }
     }
 
