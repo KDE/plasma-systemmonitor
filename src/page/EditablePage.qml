@@ -44,6 +44,18 @@ Kirigami.ScrollablePage {
         value: false
     }
 
+    Connections {
+        target: page.Kirigami.PageStack.pageStack
+
+        function onPageRemoved(removed) {
+            if (page.edit && removed instanceof FaceConfigurationPage && page.Kirigami.PageStack.pageStack.depth == 1) {
+                if (contentLoader.item.activeItem instanceof FaceControl) {
+                    contentLoader.item.activeItem = null
+                }
+            }
+        }
+    }
+
     readonly property real heightForContent: (parent?.height ?? 0) - topPadding - bottomPadding - (globalToolBarItem?.height ?? 0)
 
     readonly property var actionsFace: contentLoader.item && contentLoader.item.actionsFace ? contentLoader.item.actionsFace : null

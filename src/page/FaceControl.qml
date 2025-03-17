@@ -8,6 +8,8 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
+import org.kde.kirigami as Kirigami
+
 import org.kde.ksysguard.sensors as Sensors
 import org.kde.ksysguard.faces as Faces
 import org.kde.ksysguard.page
@@ -46,13 +48,19 @@ Container {
 
     onActiveChanged: {
         if (active) {
-            applicationWindow().pageStack.push(Qt.resolvedUrl("FaceConfigurationPage.qml"), {"loader": loader})
+            if (Kirigami.PageStack.pageStack.depth > 1) {
+                // If we already have the face config page open, don't close and reopen it,
+                // instead just change the object the page is editing.
+                Kirigami.PageStack.pageStack.lastItem.loader = loader
+            } else {
+                Kirigami.PageStack.push(Qt.resolvedUrl("FaceConfigurationPage.qml"), {"loader": loader})
+            }
         } else {
             if (activeItem instanceof FaceControl) {
                 return
             } else {
-                if (applicationWindow().pageStack.depth > 1) {
-                    applicationWindow().pageStack.pop()
+                if (Kirigami.PageStack.pageStack.depth > 1) {
+                    Kirigami.PageStack.pop()
                 }
             }
         }

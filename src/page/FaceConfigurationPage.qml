@@ -226,7 +226,7 @@ Kirigami.ScrollablePage {
             }
 
             Binding {
-                target: configContainer.children[0]
+                target: configContainer.children[0] ?? null
                 property: "width"
                 value: configContainer.width
             }
@@ -250,7 +250,7 @@ Kirigami.ScrollablePage {
             }
 
             Binding {
-                target: sensorsContainer.children[0]
+                target: sensorsContainer.children[0] ?? null
                 property: "width"
                 value: sensorsContainer.width
             }
