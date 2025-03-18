@@ -14,7 +14,7 @@
 
 #include <memory>
 
-class PageDataObject;
+class PageController;
 
 class PagesModel : public QAbstractListModel, public QQmlParserStatus
 {
@@ -33,17 +33,7 @@ public:
     };
     Q_ENUM(Roles)
 
-    enum FilesWriteableStates {
-        NotWriteable,
-        AllWriteable,
-        LocalChanges,
-    };
-    Q_ENUM(FilesWriteableStates)
-
     explicit PagesModel(QObject *parent = nullptr);
-
-    Q_PROPERTY(QStringList pageOrder READ pageOrder WRITE setPageOrder NOTIFY pageOrderChanged)
-    Q_PROPERTY(QStringList hiddenPages READ hiddenPages WRITE setHiddenPages NOTIFY hiddenPagesChanged)
 
     QHash<int, QByteArray> roleNames() const override;
 
@@ -55,24 +45,8 @@ public:
     void classBegin() override;
     void componentComplete() override;
 
-    Q_INVOKABLE PageDataObject *addPage(const QString &fileName, const QVariantMap &properties = QVariantMap{});
-    Q_INVOKABLE PageDataObject *importPage(const QUrl &file);
-    Q_INVOKABLE void removeLocalPageFiles(const QString &fileName);
-    Q_INVOKABLE void ghnsEntryStatusChanged(const KNSCore::Entry &entry);
-
-    QStringList pageOrder() const;
-    void setPageOrder(const QStringList &pageOrder);
-
-    QStringList hiddenPages() const;
-    void setHiddenPages(const QStringList &hiddenPages);
-
-Q_SIGNALS:
-    void pageOrderChanged();
-    void hiddenPagesChanged();
-
 private:
-    QList<PageDataObject *> m_pages;
-    QStringList m_pageOrder;
-    QStringList m_hiddenPages;
-    QHash<QString, FilesWriteableStates> m_writeableCache;
+    void onPageAdded(PageController *page);
+
+    QList<PageController *> m_pages;
 };
