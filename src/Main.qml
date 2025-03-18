@@ -233,7 +233,7 @@ Kirigami.ApplicationWindow {
 
             onAccepted: {
                 var fileName = name.toLowerCase().replace(" ", "_");
-                var newPage = pagesModel.addPage(fileName, {title: name, icon: iconName, margin: margin})
+                var newPage = Page.PageManager.addPage(fileName, {title: name, icon: iconName, margin: margin})
                 var row = newPage.insertChild(0, {name: "row-0", isTitle: false, title: "", heightMode: "balanced"})
                 var column = row.insertChild(0, {name: "column-0", showBackground: true})
                 column.insertChild(0, {name: "section-0", isSeparator: false})
@@ -287,7 +287,7 @@ Kirigami.ApplicationWindow {
             defaultSuffix: "page"
             nameFilters: [i18nc("Name filter in file dialog", "System Monitor page (*.page)")]
             onAccepted: {
-                const newPage = pagesModel.importPage(selectedFile)
+                const newPage = Page.PageManager.importPage(selectedFile)
                 if (!newPage) {
                     return;
                 }
@@ -304,10 +304,31 @@ Kirigami.ApplicationWindow {
     Configuration {
         id: config
         property alias sidebarCollapsed: globalDrawer.collapsed
-        property alias pageOrder: pagesModel.pageOrder
-        property alias hiddenPages: pagesModel.hiddenPages
         property string startPage
         property string lastVisitedPage
+
+        property list<string> pageOrder
+        property list<string> hiddenPages
+
+        onPageOrderChanged: {
+            Page.PageManager.pageOrder = pageOrder
+        }
+        onHiddenPagesChanged: {
+            Page.PageManager.hiddenPages = hiddenPages
+        }
+    }
+
+    Connections {
+        target: Page.PageManager
+
+        function onPageOrderChanged() {
+            print(Page.PageManager.pageOrder)
+            config.pageOrder = Page.PageManager.pageOrder
+        }
+
+        function onHiddenPagesChanged() {
+            config.hiddenPages = Page.PageManager.hiddenPages
+        }
     }
 
     Component {
