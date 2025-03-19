@@ -23,6 +23,8 @@ Column {
     property var missingSensors: []
     signal showMissingSensors()
 
+    signal rowAdded()
+
     spacing: pageData.margin * Kirigami.Units.smallSpacing
 
     move: Transition {
@@ -181,6 +183,8 @@ Column {
             title: i18n("New Title"),
             heightMode: "minimum"
         })
+
+        root.rowAdded()
     }
 
     function addRow(index) {
@@ -194,6 +198,8 @@ Column {
             title: "",
             heightMode: "balanced"
         })
+
+        root.rowAdded()
     }
 
     Component.onCompleted: {

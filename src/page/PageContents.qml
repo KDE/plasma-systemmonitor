@@ -24,6 +24,9 @@ ColumnLayout {
 
     signal showMissingSensors()
 
+    // For API similarity to PageEditor
+    signal rowAdded()
+
     function replaceSensors(replacement) {
         if (!replacement) {
             return

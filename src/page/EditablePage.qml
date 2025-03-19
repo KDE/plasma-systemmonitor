@@ -275,6 +275,10 @@ Kirigami.ScrollablePage {
             function onShowMissingSensors() {
                 missingSensorsDialog.open()
             }
+
+            function onRowAdded() {
+                page.flickable.flick(0, page.flickable.contentY - page.flickable.contentHeight * (page.flickable.flickDeceleration / 1250))
+            }
         }
     }
 }
