@@ -162,6 +162,15 @@ Container {
                 checked: control.rowData.heightMode == "maximum"
                 onTriggered: control.rowData.heightMode = "maximum"
             }
+
+            Kirigami.Action {
+                text: i18nc("@action:inmenu", "Half Page Height")
+                tooltip: i18nc("@info:tooltip", "Use half the height of the page.")
+                ActionGroup.group: heightGroup
+                checkable: true
+                checked: control.rowData.heightMode == "half"
+                onTriggered: control.rowData.heightMode = "half"
+            }
         }
     ]
 
