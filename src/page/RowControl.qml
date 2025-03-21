@@ -20,7 +20,6 @@ Container {
 
     property string heightMode: {
         if (rowData.heightMode) {
-            print("heightMode", rowData.heightMode)
             return rowData.heightMode
         }
 
