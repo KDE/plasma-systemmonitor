@@ -231,7 +231,7 @@ ColumnLayout {
                             id: columnContents
 
                             anchors.fill: parent
-                            anchors.margins: model.data.noMargins ? 0 : Kirigami.Units.largeSpacing
+                            anchors.margins: model.data.noMargins ? model.data.showBackground : Kirigami.Units.largeSpacing
 
                             spacing: Kirigami.Units.largeSpacing
 
