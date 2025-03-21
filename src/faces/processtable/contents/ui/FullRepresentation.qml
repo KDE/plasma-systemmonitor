@@ -131,40 +131,102 @@ Faces.SensorFace {
 
     ActionGroup { id: showGroup; onTriggered: root.config.userFilterMode = action.mode }
 
-    contentItem: ProcessTableView {
-        id: table
+    contentItem: Item {
+        ToolBar {
+            id: toolbar
 
-        flatList: root.config.viewMode === 0
-        viewMode: root.config.userFilterMode
-        onViewModeChanged: root.config.userFilterMode = viewMode
+            anchors {
+                left: parent.left
+                right: parent.right
+                top: parent.top
+            }
+            height: visible ? undefined : 0
+            visible: root.controller.showTitle || root.config.showToolBar
 
-        columnWidths: root.config.columnWidths
-        onColumnWidthsChanged: root.config.columnWidths = columnWidths
-        sortName: root.config.sortColumn
-        onSortNameChanged: root.config.sortColumn = sortName
-        sortOrder: root.config.sortDirection
-        onSortOrderChanged: root.config.sortDirection = sortOrder
+            Kirigami.Theme.inherit: false
+            Kirigami.Theme.colorSet: Kirigami.Theme.Button
 
-        onContextMenuRequested: (index, position) => {
-            contextMenu.index = index;
-            contextMenu.popup(null, position.x, position.y)
+            RowLayout {
+                anchors.fill: parent
+
+                Kirigami.Heading {
+                    Layout.leftMargin: Kirigami.Units.largeSpacing
+                    level: 2
+                    text: root.controller.title
+                    visible: root.controller.showTitle
+                }
+
+                Kirigami.ActionToolBar {
+                    Layout.fillWidth: true
+                    actions: root.actions
+                    alignment: Qt.AlignRight
+                    visible: root.config.showToolBar
+                }
+            }
+
+            background: Rectangle {
+                color: Kirigami.Theme.backgroundColor
+
+                Kirigami.Separator {
+                    anchors {
+                        left: parent.left
+                        right: parent.right
+                        bottom: parent.bottom
+                    }
+                }
+            }
         }
 
-        onHeaderContextMenuRequested: (column, columnId, position) => {
-            headerContextMenu.columnId = columnId;
-            headerContextMenu.popup(null, position)
+        ProcessTableView {
+            id: table
+
+            anchors {
+                top: toolbar.bottom
+                left: parent.left
+                right: parent.right
+                bottom: parent.bottom
+            }
+
+            flatList: root.config.viewMode === 0
+            viewMode: root.config.userFilterMode
+            onViewModeChanged: root.config.userFilterMode = viewMode
+
+            columnWidths: root.config.columnWidths
+            onColumnWidthsChanged: root.config.columnWidths = columnWidths
+            sortName: root.config.sortColumn
+            onSortNameChanged: root.config.sortColumn = sortName
+            sortOrder: root.config.sortDirection
+            onSortOrderChanged: root.config.sortDirection = sortOrder
+
+            onContextMenuRequested: (index, position) => {
+                contextMenu.index = index;
+                contextMenu.popup(null, position.x, position.y)
+            }
+
+            onHeaderContextMenuRequested: (column, columnId, position) => {
+                headerContextMenu.columnId = columnId;
+                headerContextMenu.popup(null, position)
+            }
+
+            enabledColumns: columnDialog.visibleColumns
+            columnDisplay: columnDialog.columnDisplay
+
+            Keys.onPressed: event => {
+                if (event.matches(StandardKey.Delete)) {
+                    processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal);
+                    event.accepted = true;
+                } else if ((event.modifiers & Qt.ShiftModifier) && (event.key == Qt.Key_Delete)) {
+                    processHelper.sendSignalToSelection(Process.ProcessController.KillSignal);
+                    event.accepted = true;
+                }
+            }
         }
 
-        enabledColumns: columnDialog.visibleColumns
-        columnDisplay: columnDialog.columnDisplay
-
-        Keys.onPressed: event => {
-            if (event.matches(StandardKey.Delete)) {
-                processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal);
-                event.accepted = true;
-            } else if ((event.modifiers & Qt.ShiftModifier) && (event.key == Qt.Key_Delete)) {
-                processHelper.sendSignalToSelection(Process.ProcessController.KillSignal);
-                event.accepted = true;
+        Kirigami.Separator {
+            anchors {
+                left: parent.left
+                right: parent.right
+                bottom: parent.bottom
             }
         }
     }

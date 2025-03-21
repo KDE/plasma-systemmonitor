@@ -16,8 +16,14 @@ import org.kde.ksysguard.table as Table
 Kirigami.FormLayout {
     id: root
 
+    property alias cfg_showToolBar: showToolBarCheckbox.checked
     property alias cfg_askWhenKilling: confirmCheckbox.checked
     property int cfg_userFilterMode
+
+    CheckBox {
+        id: showToolBarCheckbox
+        text: i18nc("@option:check", "Show toolbar")
+    }
 
     CheckBox {
         id: confirmCheckbox
