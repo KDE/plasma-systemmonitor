@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-03-21 00:43+0000\n"
 "PO-Revision-Date: 2024-12-24 19:10+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -309,49 +309,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "배경 여백 삭제"
 
-#: src/page/EditablePage.qml:96
+#: src/page/EditablePage.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "쪽 편집"
 
-#: src/page/EditablePage.qml:106
+#: src/page/EditablePage.qml:118
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "변경 사항 저장"
 
-#: src/page/EditablePage.qml:116
+#: src/page/EditablePage.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "변경 사항 취소"
 
-#: src/page/EditablePage.qml:127
+#: src/page/EditablePage.qml:139
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "쪽 설정..."
 
-#: src/page/EditablePage.qml:136
+#: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "열 추가"
 
-#: src/page/EditablePage.qml:145
+#: src/page/EditablePage.qml:157
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "제목 추가"
 
-#: src/page/EditablePage.qml:175
+#: src/page/EditablePage.qml:187
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "쪽 \"%1\" 설정"
 
-#: src/page/EditablePage.qml:177
+#: src/page/EditablePage.qml:189
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -405,7 +405,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "사전 설정 %1(으)로 설정을 저장했습니다."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:301
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -493,12 +493,12 @@ msgctxt "@action"
 msgid "Move"
 msgstr "이동"
 
-#: src/page/PageContents.qml:99 src/page/PageEditor.qml:131
+#: src/page/PageContents.qml:102 src/page/PageEditor.qml:133
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "이 페이지에 일부 센서가 빠져 있으므로 올바르게 표시되지 않을 것입니다."
 
-#: src/page/PageContents.qml:103 src/page/PageEditor.qml:135
+#: src/page/PageContents.qml:106 src/page/PageEditor.qml:137
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
@@ -582,7 +582,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "앱을 시작할 때"
 
-#: src/page/PageEditor.qml:181
+#: src/page/PageEditor.qml:183
 #, kde-format
 msgid "New Title"
 msgstr "새 제목"

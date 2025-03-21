@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-03-21 00:43+0000\n"
 "PO-Revision-Date: 2024-07-22 22:31+0000\n"
 "Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -310,49 +310,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Fjarlægja bakgrunnsspássíur"
 
-#: src/page/EditablePage.qml:96
+#: src/page/EditablePage.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Breyta síðu"
 
-#: src/page/EditablePage.qml:106
+#: src/page/EditablePage.qml:118
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Vista breytingar"
 
-#: src/page/EditablePage.qml:116
+#: src/page/EditablePage.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Henda breytingum"
 
-#: src/page/EditablePage.qml:127
+#: src/page/EditablePage.qml:139
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Grunnstilla síðu..."
 
-#: src/page/EditablePage.qml:136
+#: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Bæta við röð"
 
-#: src/page/EditablePage.qml:145
+#: src/page/EditablePage.qml:157
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Bæta við titli"
 
-#: src/page/EditablePage.qml:175
+#: src/page/EditablePage.qml:187
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Grunnstilla síðuna \"%1\""
 
-#: src/page/EditablePage.qml:177
+#: src/page/EditablePage.qml:189
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -408,7 +408,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Vistaði stillingar sem forstillinguna %1."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:301
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -498,12 +498,12 @@ msgctxt "@action"
 msgid "Move"
 msgstr "Færa"
 
-#: src/page/PageContents.qml:99 src/page/PageEditor.qml:131
+#: src/page/PageContents.qml:102 src/page/PageEditor.qml:133
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "Það vantar nokkra skynjara á síðuna og hún birtist því ekki rétt."
 
-#: src/page/PageContents.qml:103 src/page/PageEditor.qml:135
+#: src/page/PageContents.qml:106 src/page/PageEditor.qml:137
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
@@ -587,7 +587,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "Þegar forrit er opnað"
 
-#: src/page/PageEditor.qml:181
+#: src/page/PageEditor.qml:183
 #, kde-format
 msgid "New Title"
 msgstr "Nýr titill"

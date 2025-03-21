@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-03-21 00:43+0000\n"
 "PO-Revision-Date: 2025-03-01 17:55+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -311,49 +311,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Forigi Fonajn Marĝojn"
 
-#: src/page/EditablePage.qml:96
+#: src/page/EditablePage.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Redakti Paĝon"
 
-#: src/page/EditablePage.qml:106
+#: src/page/EditablePage.qml:118
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Konservi Ŝanĝojn"
 
-#: src/page/EditablePage.qml:116
+#: src/page/EditablePage.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Forĵeti Ŝanĝojn"
 
-#: src/page/EditablePage.qml:127
+#: src/page/EditablePage.qml:139
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Agordi paĝon…"
 
-#: src/page/EditablePage.qml:136
+#: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Aldoni Vicon"
 
-#: src/page/EditablePage.qml:145
+#: src/page/EditablePage.qml:157
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Aldoni titolon"
 
-#: src/page/EditablePage.qml:175
+#: src/page/EditablePage.qml:187
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Agordi paĝon \"%1\""
 
-#: src/page/EditablePage.qml:177
+#: src/page/EditablePage.qml:189
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -407,7 +407,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Konservitaj agordoj kiel antaŭdifinita %1."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:301
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -495,12 +495,12 @@ msgctxt "@action"
 msgid "Move"
 msgstr "Movi"
 
-#: src/page/PageContents.qml:99 src/page/PageEditor.qml:131
+#: src/page/PageContents.qml:102 src/page/PageEditor.qml:133
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "Ĉi tiu paĝo mankas iuj sensiloj kaj ne aperos ĝuste."
 
-#: src/page/PageContents.qml:103 src/page/PageEditor.qml:135
+#: src/page/PageContents.qml:106 src/page/PageEditor.qml:137
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
@@ -584,7 +584,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "Dum lanĉo de aplikaĵo"
 
-#: src/page/PageEditor.qml:181
+#: src/page/PageEditor.qml:183
 #, kde-format
 msgid "New Title"
 msgstr "Nova Titolo"

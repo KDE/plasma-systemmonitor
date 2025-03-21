@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-03-21 00:43+0000\n"
 "PO-Revision-Date: 2025-02-28 07:06+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -309,49 +309,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Retirar as marxes do fondo"
 
-#: src/page/EditablePage.qml:96
+#: src/page/EditablePage.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Editar a páxina"
 
-#: src/page/EditablePage.qml:106
+#: src/page/EditablePage.qml:118
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Gardar os cambios"
 
-#: src/page/EditablePage.qml:116
+#: src/page/EditablePage.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Descartar os cambios"
 
-#: src/page/EditablePage.qml:127
+#: src/page/EditablePage.qml:139
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Configurar a páxina…"
 
-#: src/page/EditablePage.qml:136
+#: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Engadir unha fila"
 
-#: src/page/EditablePage.qml:145
+#: src/page/EditablePage.qml:157
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Engadir un título"
 
-#: src/page/EditablePage.qml:175
+#: src/page/EditablePage.qml:187
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Configurar a páxina «%1»"
 
-#: src/page/EditablePage.qml:177
+#: src/page/EditablePage.qml:189
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -405,7 +405,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Gardar a configuración como a predefinición %1."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:301
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -493,12 +493,12 @@ msgctxt "@action"
 msgid "Move"
 msgstr "Mover"
 
-#: src/page/PageContents.qml:99 src/page/PageEditor.qml:131
+#: src/page/PageContents.qml:102 src/page/PageEditor.qml:133
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "Á páxina fáltanlle sensores e non se amosará correctamente."
 
-#: src/page/PageContents.qml:103 src/page/PageEditor.qml:135
+#: src/page/PageContents.qml:106 src/page/PageEditor.qml:137
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
@@ -582,7 +582,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "Ao iniciar a aplicación"
 
-#: src/page/PageEditor.qml:181
+#: src/page/PageEditor.qml:183
 #, kde-format
 msgid "New Title"
 msgstr "Novo título"

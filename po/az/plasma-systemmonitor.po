@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-26 00:43+0000\n"
+"POT-Creation-Date: 2025-03-21 00:43+0000\n"
 "PO-Revision-Date: 2024-06-07 12:12+0400\n"
 "Last-Translator: Kheyyam Godjayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -310,49 +310,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Arxa fonu haşiyələrini silmək"
 
-#: src/page/EditablePage.qml:96
+#: src/page/EditablePage.qml:108
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Səhifəyə düzəliş"
 
-#: src/page/EditablePage.qml:106
+#: src/page/EditablePage.qml:118
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Dəyişiklikləri saxlamaq"
 
-#: src/page/EditablePage.qml:116
+#: src/page/EditablePage.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Dəyişiklikləri ləğv etmək"
 
-#: src/page/EditablePage.qml:127
+#: src/page/EditablePage.qml:139
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Səhifəni tənzimləmək..."
 
-#: src/page/EditablePage.qml:136
+#: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Sıra əlavə etmək"
 
-#: src/page/EditablePage.qml:145
+#: src/page/EditablePage.qml:157
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Başlıq əlavə etmək"
 
-#: src/page/EditablePage.qml:175
+#: src/page/EditablePage.qml:187
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "\"%1\" səhifəsini tənzimləmək"
 
-#: src/page/EditablePage.qml:177
+#: src/page/EditablePage.qml:189
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -408,7 +408,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Ayarları %1 hazır ayar kimi saxlamaq."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:298
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:301
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -498,12 +498,12 @@ msgctxt "@action"
 msgid "Move"
 msgstr "Köçürmək"
 
-#: src/page/PageContents.qml:99 src/page/PageEditor.qml:131
+#: src/page/PageContents.qml:102 src/page/PageEditor.qml:133
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "Bu səhifədə bəzi sensorlar çatışmır və o düzgün göstərilməyəcəkdir"
 
-#: src/page/PageContents.qml:103 src/page/PageEditor.qml:135
+#: src/page/PageContents.qml:106 src/page/PageEditor.qml:137
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
@@ -587,7 +587,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "Tətbiq başladığı zaman"
 
-#: src/page/PageEditor.qml:181
+#: src/page/PageEditor.qml:183
 #, kde-format
 msgid "New Title"
 msgstr "Yeni Başlıq"
