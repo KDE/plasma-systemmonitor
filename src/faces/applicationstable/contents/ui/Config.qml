@@ -14,8 +14,14 @@ import org.kde.kirigami as Kirigami
 Kirigami.FormLayout {
     id: root
 
+    property alias cfg_showToolBar: showToolBarCheckbox.checked
     property alias cfg_showDetails: showDetailsCheckbox.checked
     property alias cfg_askWhenKilling: confirmCheckbox.checked
+
+    CheckBox {
+        id: showToolBarCheckbox
+        text: i18nc("@option:check", "Show toolbar")
+    }
 
     CheckBox {
         id: showDetailsCheckbox

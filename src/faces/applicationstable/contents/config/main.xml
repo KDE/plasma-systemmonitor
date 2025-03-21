@@ -10,6 +10,9 @@ SPDX-License-Identifier: LGPL-2.0-or-later
   <kcfgfile name=""/>
 
     <group name="General">
+        <entry name="showToolBar" type="Bool">
+            <default>false</default>
+        </entry>
         <entry name="showDetails" type="Bool">
             <default>false</default>
         </entry>

@@ -57,6 +57,7 @@ Faces.SensorFace {
             id: showDetailsAction
             icon.name: "documentinfo"
             text: i18nc("@action", "Show Details Sidebar")
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             checkable: true
             checked: root.config.showDetails
             onToggled: root.config.showDetails = checked
@@ -72,13 +73,58 @@ Faces.SensorFace {
     contentItem: Item {
         Layout.minimumHeight: table.Layout.minimumHeight
 
+        ToolBar {
+            id: toolbar
+
+            anchors {
+                left: parent.left
+                right: splitter.right
+                top: parent.top
+            }
+            height: visible ? undefined : 0
+            visible: root.controller.showTitle || root.config.showToolBar
+
+            Kirigami.Theme.inherit: false
+            Kirigami.Theme.colorSet: Kirigami.Theme.Button
+
+            RowLayout {
+                anchors.fill: parent
+
+                Kirigami.Heading {
+                    Layout.leftMargin: Kirigami.Units.largeSpacing
+                    level: 2
+                    text: root.controller.title
+                    visible: root.controller.showTitle
+                }
+
+                Kirigami.ActionToolBar {
+                    Layout.fillWidth: true
+                    actions: root.actions
+                    alignment: Qt.AlignRight
+                    visible: root.config.showToolBar
+                }
+            }
+
+            background: Rectangle {
+                color: Kirigami.Theme.backgroundColor
+
+                Kirigami.Separator {
+                    anchors {
+                        left: parent.left
+                        right: parent.right
+                        bottom: parent.bottom
+                    }
+                }
+            }
+        }
+
         ApplicationsTableView {
             id: table
 
             anchors {
                 left: parent.left
                 right: splitter.right
-                top: parent.top
+                top: toolbar.bottom
                 bottom: parent.bottom
             }
 
