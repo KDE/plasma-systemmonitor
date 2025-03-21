@@ -37,6 +37,7 @@ Column {
         let minimumHeight = 0;
         let balancedCount = 0;
         let maximumCount = 0;
+        let halfCount = 0;
 
         for (let i = 0; i < repeater.count; ++i) {
             let child = repeater.itemAt(i)
@@ -53,13 +54,16 @@ Column {
                     minimumHeight = Math.max(child.minimumHeight, minimumHeight)
                     balancedCount += 1
                     break;
+                case "half":
+                    halfCount += 1
+                    break
                 case "maximum":
                     maximumCount += 1
                     break;
             }
         }
 
-        let layoutHeight = availableHeight - reservedHeight - root.spacing * (repeater.count - 1)
+        let layoutHeight = (halfCount > 0 ? availableHeight / 2 : availableHeight) - reservedHeight - root.spacing * (repeater.count - 1)
 
         let balancedHeight = balancedCount > 0 ? layoutHeight / balancedCount : 0
         let maximumHeight = maximumCount > 0 ? (layoutHeight - minimumHeight * balancedCount) / maximumCount : 0
@@ -84,6 +88,9 @@ Column {
                     } else {
                         child.height = Math.max(minimumHeight, balancedHeight)
                     }
+                    break
+                case "half":
+                    child.height = availableHeight / 2 - root.spacing
                     break
                 case "maximum":
                     // The last "balanced" here is to make sure if the user

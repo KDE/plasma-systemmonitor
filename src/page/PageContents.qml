@@ -55,6 +55,7 @@ ColumnLayout {
         let minimumSpace = 0;
         let balancedCount = 0;
         let maximumCount = 0;
+        let halfCount = 0;
 
         for (let i in children) {
             let child = children[i]
@@ -69,6 +70,9 @@ ColumnLayout {
                 case "balanced":
                     minimumSpace = Math.max(child.minimumContentHeight, minimumSpace)
                     balancedCount += 1
+                    break;
+                case "half":
+                    halfCount += 1
                     break;
                 case "maximum":
                     maximumCount += 1
@@ -89,7 +93,8 @@ ColumnLayout {
 
         // Note that "availableHeight" here comes from the parent loader and
         // represents the available size of the content area of the page.
-        let balancedHeight = (availableHeight - reservedSpace - root.spacing * (children.length - 1)) / balancedCount
+        let layoutHeight = (halfCount > 0 ? availableHeight / 2 : availableHeight) - missingMessage.height - pageOutdatedMessage.height
+        let balancedHeight = (layoutHeight - reservedSpace - root.spacing * (children.length - 1)) / balancedCount
         return Math.max(balancedHeight, minimumSpace)
     }
 
@@ -171,6 +176,11 @@ ColumnLayout {
                     return root.balancedRowHeight
                 }
 
+                if (heightMode == "half") {
+                    // availableHeight from parent loader
+                    return availableHeight / 2
+                }
+
                 return -1
             }
             Layout.maximumHeight: {
@@ -180,6 +190,11 @@ ColumnLayout {
 
                 if (heightMode == "balanced") {
                     return root.balancedRowHeight
+                }
+
+                if (heightMode == "half") {
+                    // availableHeight from parent loader
+                    return availableHeight / 2
                 }
 
                 return -1
