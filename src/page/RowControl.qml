@@ -168,7 +168,7 @@ Container {
     ActionGroup { id: heightGroup }
 
     function addColumn(index) {
-        control.rowData.insertChild(index, {"name": "column-" + index, showBackground: true})
+        control.rowData.insertChild(index, {"name": "column-" + index, showBackground: true, noMargins: false})
     }
 
     Component.onCompleted: {
