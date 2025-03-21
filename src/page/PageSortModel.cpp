@@ -129,6 +129,13 @@ QModelIndex PageSortModel::mapToSource(const QModelIndex &proxyIndex) const
     return sourceModel()->index(m_rowMapping.at(proxyIndex.row()), proxyIndex.column());
 }
 
+bool PageSortModel::canFetchMore([[maybe_unused]] const QModelIndex &parent) const
+{
+    // Does nothing but is reimplemented to avoid Qt calling mapToSource with an
+    // invalid index.
+    return false;
+}
+
 void PageSortModel::move(int fromRow, int toRow)
 {
     beginMoveRows(QModelIndex(), fromRow, fromRow, QModelIndex(), fromRow < toRow ? toRow + 1 : toRow);

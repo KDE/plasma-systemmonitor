@@ -37,6 +37,7 @@ public:
     QModelIndex mapToSource(const QModelIndex &proxyIndex) const override;
     int rowCount(const QModelIndex &parent) const override;
     int columnCount(const QModelIndex &parent) const override;
+    bool canFetchMore(const QModelIndex &parent) const override;
 
     Q_INVOKABLE void move(int fromRow, int toRow);
 
