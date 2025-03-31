@@ -9,8 +9,6 @@ SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted
                           http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
     <kcfgfile name="systemmonitorrc"/>
     <group name="General">
-        <entry name="lastPage" type="String">
-        </entry>
         <entry name="sidebarCollapsed" type="Bool">
             <default>false</default>
         </entry>
@@ -18,6 +16,9 @@ SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted
             <default>overview.page,applications.page,history.page,processes.page</default>
         </entry>
         <entry name="hiddenPages" type="StringList">
+        </entry>
+        <entry name="ignoredPages" type="StringList">
+            <default>old-overview.page,old-history.page</default>
         </entry>
         <entry name="startPage" type="String">
             <default>overview.page</default>
