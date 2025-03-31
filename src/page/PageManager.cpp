@@ -55,9 +55,9 @@ QString PageManagerPrivate::determineFileName(const QString &initialFileName)
     return fileName;
 }
 
-PageManager::PageManager(std::unique_ptr<PageManagerPrivate> &&d)
+PageManager::PageManager(std::unique_ptr<PageManagerPrivate> &&_d)
     : QObject(nullptr)
-    , d(std::move(d))
+    , d(std::move(_d))
 {
     // KConfigSkeleton does not save automatically, to avoid having to add save()
     // calls everywhere, ensure that we automatically save the config.
