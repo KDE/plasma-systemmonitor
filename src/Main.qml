@@ -46,6 +46,9 @@ Kirigami.ApplicationWindow {
 
         handleVisible: false
         modal: false
+        collapsed: Page.Configuration.sidebarCollapsed
+        onCollapsedChanged: Page.Configuration.sidebarCollapsed = collapsed
+
         width: collapsed ? globalToolBar.Layout.minimumWidth + Kirigami.Units.smallSpacing : Math.max(globalToolBar.implicitWidth + globalToolBar.Layout.minimumWidth + Kirigami.Units.smallSpacing * 3, Kirigami.Units.gridUnit * 10)
         Behavior on width { NumberAnimation {id: collapseAnimation; duration: Kirigami.Units.longDuration; easing.type: Easing.InOutQuad } }
         showHeaderWhenCollapsed: true
@@ -108,7 +111,11 @@ Kirigami.ApplicationWindow {
                         displayHint: Kirigami.DisplayHint.AlwaysHide
                         onEntryEvent: {
                             if (event === NewStuff.Engine.StatusChangedEvent) {
-                                pagesModel.ghnsEntryStatusChanged(entry)
+                                const result = Page.PageManager.ghnsEntryStatusChanged(entry)
+                                if (result) {
+                                    const pageAction = Array.from(globalDrawer.actions).find(action => action.controller.fileName === result.fileName)
+                                    pageAction.trigger()
+                                }
                             }
                         }
                     },
@@ -173,10 +180,10 @@ Kirigami.ApplicationWindow {
                 text: model.title
                 icon.name: model.icon
                 pagePool: pagePoolObject
-                pageData: model.data
+                controller: model.data
                 visible: !model.hidden
                 onTriggered: {
-                    config.lastVisitedPage = model.fileName
+                    Page.Configuration.lastVisitedPage = model.fileName
 
                     if (app.pageStack.layers.depth > 0) {
                         app.pageStack.layers.clear()
@@ -188,9 +195,9 @@ Kirigami.ApplicationWindow {
                         trigger()
                     } else if (CommandLineArguments.pageName && model.title === CommandLineArguments.pageName) {
                         trigger()
-                    } else if (config.startPage === model.fileName) {
+                    } else if (Page.Configuration.startPage === model.fileName) {
                         trigger()
-                    } else if (config.startPage == "" && config.lastVisitedPage === model.fileName) {
+                    } else if (Page.Configuration.startPage == "" && Page.Configuration.lastVisitedPage === model.fileName) {
                         trigger()
                     }
                 }
@@ -233,13 +240,13 @@ Kirigami.ApplicationWindow {
 
             onAccepted: {
                 var fileName = name.toLowerCase().replace(" ", "_");
-                var newPage = pagesModel.addPage(fileName, {title: name, icon: iconName, margin: margin})
-                var row = newPage.insertChild(0, {name: "row-0", isTitle: false, title: "", heightMode: "balanced"})
-                var column = row.insertChild(0, {name: "column-0", showBackground: true})
+                var newPage = Page.PageManager.addPage(fileName, {title: name, icon: iconName, margin: margin})
+                var row = newPage.data.insertChild(0, {name: "row-0", isTitle: false, title: "", heightMode: "balanced"})
+                var column = row.insertChild(0, {name: "column-0", showBackground: true, noMargins: false})
                 column.insertChild(0, {name: "section-0", isSeparator: false})
                 newPage.savePage()
 
-                const pageAction = Array.from(globalDrawer.actions).find(action => action.pageData.fileName === newPage.fileName)
+                const pageAction = Array.from(globalDrawer.actions).find(action => action.controller.fileName === newPage.fileName)
                 pageAction.trigger()
                 app.pageStack.currentItem.edit = true
             }
@@ -252,17 +259,17 @@ Kirigami.ApplicationWindow {
         sourceComponent: Page.PageSortDialog {
             title: i18nc("@window:title", "Edit Pages")
             model: pagesModel
-            startPage: config.startPage
+            startPage: Page.Configuration.startPage
             onAccepted: {
-                config.startPage = startPage
-                const currentPage = pageStack.currentItem.pageData.fileName
+                Page.Configuration.startPage = startPage
+                const currentPage = pageStack.currentItem.controller.fileName
                 const indices = pagesModel.match(pagesModel.index(0, 0), Page.PagesModel.FileNameRole, currentPage, 1,  Qt.MatchExactly)
                 if (indices.length === 0 || pagesModel.data(indices[0], Page.PagesModel.HiddenRole)) {
-                    if (config.lastVisitedPage === currentPage) {
-                        config.lastVisitedPage = "overview.page"
+                    if (Page.Configuration.lastVisitedPage === currentPage) {
+                        Page.Configuration.lastVisitedPage = "overview.page"
                     }
-                    const startPage = config.startPage || config.lastVisitedPage
-                    Array.prototype.find.call(globalDrawer.actions, action => action.pageData.fileName === startPage).trigger()
+                    const startPage = Page.Configuration.startPage || Page.Configuration.lastVisitedPage
+                    Array.prototype.find.call(globalDrawer.actions, action => action.controller.fileName === startPage).trigger()
                 }
             }
         }
@@ -276,7 +283,7 @@ Kirigami.ApplicationWindow {
             title: i18nc("@title:window %1 is the name of the page that is being exported", "Export %1", app.pageStack.currentItem.title)
             defaultSuffix: "page"
             nameFilters: [i18nc("Name filter in file dialog", "System Monitor page (*.page)")]
-            onAccepted: app.pageStack.currentItem.pageData.saveAs(selectedFile)
+            onAccepted: app.pageStack.currentItem.controller.save(selectedFile)
         }
     }
     Page.DialogLoader {
@@ -287,11 +294,11 @@ Kirigami.ApplicationWindow {
             defaultSuffix: "page"
             nameFilters: [i18nc("Name filter in file dialog", "System Monitor page (*.page)")]
             onAccepted: {
-                const newPage = pagesModel.importPage(selectedFile)
+                const newPage = Page.PageManager.importPage(selectedFile)
                 if (!newPage) {
                     return;
                 }
-                const pageAction = Array.from(globalDrawer.actions).find(action => action.pageData.fileName === newPage.fileName)
+                const pageAction = Array.from(globalDrawer.actions).find(action => action.controller.fileName === newPage.fileName)
                 pageAction.trigger()
             }
         }
@@ -299,15 +306,6 @@ Kirigami.ApplicationWindow {
 
     KConfig.WindowStateSaver {
         configGroupName: "MainWindow"
-    }
-
-    Configuration {
-        id: config
-        property alias sidebarCollapsed: globalDrawer.collapsed
-        property alias pageOrder: pagesModel.pageOrder
-        property alias hiddenPages: pagesModel.hiddenPages
-        property string startPage
-        property string lastVisitedPage
     }
 
     Component {
@@ -324,4 +322,6 @@ Kirigami.ApplicationWindow {
     }
 
     pageStack.columnView.columnWidth: Kirigami.Units.gridUnit * 22
+
+    onClosing: Page.PageManager.saveAll()
 }
