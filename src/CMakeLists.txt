@@ -12,8 +12,6 @@ target_sources(plasma-systemmonitor PRIVATE
     main.cpp
     ToolsModel.cpp
     ToolsModel.h
-    Configuration.cpp
-    Configuration.h
     CommandLineArguments.cpp
     CommandLineArguments.h
 )
@@ -23,7 +21,6 @@ ecm_target_qml_sources(plasma-systemmonitor SOURCES
     GlobalMenu.qml
 )
 
-kconfig_target_kcfg_file(plasma-systemmonitor FILE systemmonitor.kcfg CLASS_NAME SystemMonitorConfiguration MUTATORS GENERATE_PROPERTIES GENERATE_MOC)
 
 target_compile_definitions(plasma-systemmonitor PRIVATE PROJECT_VERSION="${PROJECT_VERSION}")
 target_link_libraries(plasma-systemmonitor PRIVATE
@@ -49,7 +46,6 @@ if(TARGET KF6::I18nQml)
 endif()
 
 install(TARGETS plasma-systemmonitor DESTINATION ${KDE_INSTALL_BINDIR})
-install(FILES systemmonitor.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 install(FILES plasma-systemmonitor.knsrc DESTINATION ${KDE_INSTALL_KNSRCDIR})
 
 install(FILES

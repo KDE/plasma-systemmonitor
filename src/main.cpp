@@ -21,7 +21,6 @@
 #include <KWindowSystem>
 
 #include "CommandLineArguments.h"
-#include "Configuration.h"
 #include "ToolsModel.h"
 
 #include <KLocalizedQmlContext>
@@ -40,13 +39,8 @@ SessionManager::SessionManager(QObject *parent)
     : QObject(parent)
 {
     connect(qApp, &QGuiApplication::saveStateRequest, this, [this](QSessionManager &manager) {
-        QString lastPageId = Configuration::globalConfig()->lastPage();
-        if (lastPageId.isEmpty()) {
-            return;
-        }
         QStringList args;
         args << qApp->applicationName();
-        args << QStringLiteral("--page-id") << lastPageId;
         args << QStringLiteral("-session") << manager.sessionId();
         manager.setRestartCommand(args);
     });

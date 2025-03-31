@@ -44,6 +44,8 @@ ecm_target_qml_sources(PlasmaSystemMonitorPage SOURCES
     ConditionalLoader.qml
 )
 
+kconfig_target_kcfg_file(PlasmaSystemMonitorPage FILE systemmonitor.kcfg CLASS_NAME Configuration MUTATORS GENERATE_PROPERTIES GENERATE_MOC SINGLETON QML_REGISTRATION)
+
 target_link_libraries(PlasmaSystemMonitorPage PRIVATE Qt::DBus Qt::Quick KF6::ConfigCore KF6::I18n KF6::NewStuffCore KSysGuard::Sensors KSysGuard::SensorFaces)
 
 install(TARGETS PlasmaSystemMonitorPage ${KDE_INSTALL_DEFAULT_ARGS})
