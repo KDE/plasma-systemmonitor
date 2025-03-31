@@ -17,6 +17,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 include(ECMInstallIcons)
+include(ECMAddTests)
 include(ECMFindQmlModule)
 include(ECMQmlModule)
 include(FeatureSummary)
@@ -66,6 +67,10 @@ if("${CMAKE_BUILD_TYPE}" STREQUAL "Debug")
 endif()
 
 add_subdirectory(src)
+
+if(BUILD_TESTING)
+    add_subdirectory(autotests)
+endif()
 
 install(PROGRAMS org.kde.plasma-systemmonitor.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
 install(PROGRAMS org.kde.plasma-systemmonitor.desktop  DESTINATION  ${KDE_INSTALL_DATADIR}/kglobalaccel)
