@@ -34,6 +34,8 @@ public:
     void save(KSharedConfig::Ptr config);
     void reset();
 
+    bool forceSaveOnDestroy() const;
+
 private:
     QPointer<PageDataObject> m_dataObject = nullptr;
     QPointer<KSysGuard::SensorFaceController> m_faceController = nullptr;
