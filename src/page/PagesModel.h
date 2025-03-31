@@ -14,7 +14,7 @@
 
 #include <memory>
 
-class PageDataObject;
+class PageController;
 
 class PagesModel : public QAbstractListModel, public QQmlParserStatus
 {
@@ -46,7 +46,7 @@ public:
     void componentComplete() override;
 
 private:
-    void onPageAdded(PageDataObject *page);
+    void onPageAdded(PageController *page);
 
-    QList<PageDataObject *> m_pages;
+    QList<PageController *> m_pages;
 };
