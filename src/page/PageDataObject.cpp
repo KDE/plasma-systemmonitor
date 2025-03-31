@@ -56,9 +56,10 @@ PageDataObject *objectAt(QQmlListProperty<PageDataObject> *list, qsizetype index
     return static_cast<PageDataObject *>(list->object)->children().at(index);
 }
 
-PageDataObject::PageDataObject(const KSharedConfig::Ptr &config, QObject *parent)
+PageDataObject::PageDataObject(const KSharedConfig::Ptr &config, const QString &fileName, QObject *parent)
     : QQmlPropertyMap(this, parent)
     , m_config(config)
+    , m_fileName(fileName)
 {
     m_childrenProperty = QQmlListProperty<PageDataObject>(this, nullptr, &objectCount, &objectAt);
     connect(this, &PageDataObject::valueChanged, this, &PageDataObject::markDirty);
@@ -84,7 +85,7 @@ PageDataObject *PageDataObject::insertChild(int index, const QVariantMap &proper
         index = m_children.size();
     }
 
-    auto child = new PageDataObject(m_config, this);
+    auto child = new PageDataObject(m_config, m_fileName, this);
     for (auto itr = properties.begin(); itr != properties.end(); ++itr) {
         QString key = itr.key();
         if (key == QLatin1String("Title")) {
@@ -168,31 +169,6 @@ KSharedConfig::Ptr PageDataObject::config() const
     return m_config;
 }
 
-bool PageDataObject::resetPage()
-{
-    reset();
-
-    m_config->markAsClean();
-    m_config->reparseConfiguration();
-    return load(*m_config, QStringLiteral("page"));
-}
-
-bool PageDataObject::savePage()
-{
-    auto result = save(*m_config, QStringLiteral("page"));
-    if (result) {
-        return m_config->sync();
-    }
-    return false;
-}
-
-void PageDataObject::saveAs(const QUrl &destination)
-{
-    auto copiedPage = m_config->copyTo(destination.toLocalFile());
-    // KConfig passes the ownership of the returned config to us, the destructor of it will write it to the disk
-    delete copiedPage;
-}
-
 bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
 {
     auto group = config.group(groupName);
@@ -235,7 +211,7 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
     auto groups = group.groupList();
     groups.sort();
     for (const auto &groupName : std::as_const(groups)) {
-        auto object = new PageDataObject{m_config, this};
+        auto object = new PageDataObject{m_config, m_fileName, this};
         if (object->load(group, groupName)) {
             m_children.append(object);
             connect(object, &PageDataObject::dirtyChanged, this, [this, object]() {
@@ -254,14 +230,8 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
     return true;
 }
 
-bool PageDataObject::save(KConfigBase &config, const QString &groupName, const QStringList &ignoreProperties)
+bool PageDataObject::save(KSharedConfig::Ptr config, KConfigGroup &group, const QStringList &ignoreProperties)
 {
-    if (!m_dirty && config.hasGroup(groupName)) {
-        return false;
-    }
-
-    auto group = config.group(groupName);
-
     const auto names = keys();
     for (const auto &name : names) {
         if (ignoreProperties.contains(name)) {
@@ -279,11 +249,16 @@ bool PageDataObject::save(KConfigBase &config, const QString &groupName, const Q
     for (auto child : std::as_const(m_children)) {
         auto name = child->value(QStringLiteral("name")).toString();
         groupNames.removeOne(name);
-        child->save(group, name);
+        auto childGroup = group.group(name);
+        child->save(config, childGroup, ignoreProperties);
     }
 
     for (const auto &name : std::as_const(groupNames)) {
         group.deleteGroup(name);
+    }
+
+    if (m_faceLoader) {
+        m_faceLoader->save(config);
     }
 
     markClean();
@@ -370,7 +345,7 @@ bool PageDataObject::isGroupEmpty(const KConfigGroup &group)
 
 QString PageDataObject::fileName() const
 {
-    return m_config->name();
+    return m_fileName;
 }
 
 #include "moc_PageDataObject.cpp"

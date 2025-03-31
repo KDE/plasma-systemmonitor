@@ -18,6 +18,8 @@ target_sources(PlasmaSystemMonitorPage PRIVATE
     PageSortModel.h
     WidgetExporter.cpp
     WidgetExporter.h
+    PageController.cpp
+    PageController.h
 )
 
 ecm_target_qml_sources(PlasmaSystemMonitorPage SOURCES

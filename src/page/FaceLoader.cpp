@@ -6,6 +6,8 @@
 
 #include "FaceLoader.h"
 
+#include "PageController.h"
+
 using namespace Qt::StringLiterals;
 using namespace KSysGuard;
 
@@ -96,6 +98,16 @@ void FaceLoader::setDataObject(PageDataObject *newDataObject)
 SensorFaceController *FaceLoader::controller() const
 {
     return m_faceController;
+}
+
+void FaceLoader::save(KSharedConfig::Ptr config)
+{
+    if (!m_faceController) {
+        return;
+    }
+
+    auto toGroup = config->group(m_dataObject->value(u"face"_s).toString());
+    PageController::copyGroupContents(m_faceController->configGroup(), toGroup);
 }
 
 void FaceLoader::reset()
