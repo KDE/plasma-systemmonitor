@@ -19,7 +19,7 @@ class PageManager : public QObject
     QML_SINGLETON
 
 public:
-    PageManager(std::unique_ptr<PageManagerPrivate> &&d);
+    PageManager(std::unique_ptr<PageManagerPrivate> &&_d);
     ~PageManager();
 
     Q_PROPERTY(QList<PageController *> pages READ pages NOTIFY pagesChanged)
