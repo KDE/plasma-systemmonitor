@@ -3,10 +3,12 @@
 
 [Face-94920553440704][Appearance]
 chartFace=org.kde.ksysguard.applicationstable
+showTitle=false
 
 [page]
 icon=homerun
 margin=0
+version=1
 Title=Applications
 Title[ar]=التّطبيقات
 Title[ast]=Aplicaciones
