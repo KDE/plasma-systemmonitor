@@ -54,6 +54,7 @@ install(FILES
     pages/overview.page
     pages/processes.page
     pages/old-history.page
+    pages/old-overview.page
     DESTINATION ${KDE_INSTALL_DATADIR}/plasma-systemmonitor
 )
 
