@@ -7,6 +7,10 @@
 
 #include "PageSortModel.h"
 
+#include "PageManager.h"
+
+#include "systemmonitor.h"
+
 PageSortModel::PageSortModel(QObject *parent)
     : QAbstractProxyModel(parent)
 {
@@ -21,6 +25,7 @@ QHash<int, QByteArray> PageSortModel::roleNames() const
     sourceNames.insert(ShouldRemoveFilesRole, "shouldRemoveFiles");
     return sourceNames;
 }
+
 QVariant PageSortModel::data(const QModelIndex &index, int role) const
 {
     if (!checkIndex(index, CheckIndexOption::IndexIsValid | CheckIndexOption::ParentIsInvalid)) {
@@ -133,23 +138,25 @@ void PageSortModel::move(int fromRow, int toRow)
 
 void PageSortModel::applyChangesToSourceModel() const
 {
-    auto *pagesModel = static_cast<PagesModel *>(sourceModel());
     QStringList newOrder, hiddenPages, toRemove;
     for (int i = 0; i < m_rowMapping.size(); ++i) {
-        const QModelIndex sourceIndex = pagesModel->index(m_rowMapping[i]);
-        const QString name = sourceIndex.data(PagesModel::FileNameRole).toString();
+        const QString name = data(index(i, 0, QModelIndex{}), PagesModel::FileNameRole).toString();
         newOrder.append(name);
+
         if (m_hiddenProxy[m_rowMapping[i]]) {
             hiddenPages.append(name);
         }
+
         if (m_removeFiles[m_rowMapping[i]]) {
             toRemove.append(name);
         }
     }
-    pagesModel->setPageOrder(newOrder);
-    pagesModel->setHiddenPages(hiddenPages);
+
+    Configuration::self()->setPageOrder(newOrder);
+    Configuration::self()->setHiddenPages(hiddenPages);
+
     for (const auto &name : toRemove) {
-        pagesModel->removeLocalPageFiles(name);
+        PageManager::instance()->removeLocalPageFiles(name);
     }
 }
 
