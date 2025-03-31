@@ -16,7 +16,8 @@ Column {
     id: root
 
     property Page parentPage
-    property PageDataObject pageData
+    property PageController controller
+    readonly property PageDataObject pageData: controller.data
     property Item activeItem
     property var actionsFace
 

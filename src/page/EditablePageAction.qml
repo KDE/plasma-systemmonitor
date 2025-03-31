@@ -15,16 +15,16 @@ import org.kde.ksysguard.page
 Kirigami.PagePoolAction {
     id: action
 
-    property PageDataObject pageData
+    property PageController controller
 
-    page: Qt.resolvedUrl("EditablePage.qml") + "?page=" + pageData.fileName
+    page: Qt.resolvedUrl("EditablePage.qml") + "?page=" + controller.fileName
 
     initialProperties: {
-        "pageData": action.pageData
+        "controller": action.controller
     }
 
     Component.onCompleted: {
-        if (pageData.loadType == "onstart") {
+        if (controller.data.loadType == "onstart") {
             pagePool.loadPageWithProperties(page, initialProperties)
         }
     }

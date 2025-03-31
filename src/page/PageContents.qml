@@ -16,7 +16,8 @@ import org.kde.ksysguard.page
 ColumnLayout {
     id: root
 
-    property PageDataObject pageData
+    property PageController controller
+    readonly property PageDataObject pageData: controller.data
     property var actionsFace
     property var missingSensors: []
 

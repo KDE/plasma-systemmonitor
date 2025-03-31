@@ -127,7 +127,7 @@ Kirigami.Dialog {
                         State {
                             name: "noChanges"
                             extend: "localChanges"
-                            when: listItemContainer.filesWriteable == Page.PagesModel.NotWriteable
+                            when: listItemContainer.filesWriteable == Page.PageController.NotWriteable
                             PropertyChanges {
                                 target: removeButton;
                                 enabled: false;
@@ -135,7 +135,7 @@ Kirigami.Dialog {
                         },
                         State {
                             name: "removeLocalChanges"
-                            when:  listItemContainer.filesWriteable == Page.PagesModel.LocalChanges && listItemContainer.shouldRemoveFiles
+                            when:  listItemContainer.filesWriteable == Page.PageController.LocalChanges && listItemContainer.shouldRemoveFiles
                             PropertyChanges {
                                 target: removeButton
                                 icon.name: "edit-redo"
@@ -148,7 +148,7 @@ Kirigami.Dialog {
                         },
                         State {
                             name: "localChanges"
-                            when: listItemContainer.filesWriteable == Page.PagesModel.LocalChanges
+                            when: listItemContainer.filesWriteable == Page.PageController.LocalChanges
                             PropertyChanges {
                                 target: removeButton
                                 icon.name: "edit-reset"
@@ -157,7 +157,7 @@ Kirigami.Dialog {
                         },
                         State {
                             name: "remove"
-                            when: listItemContainer.filesWriteable == Page.PagesModel.AllWriteable && listItemContainer.shouldRemoveFiles
+                            when: listItemContainer.filesWriteable == Page.PageController.Writeable && listItemContainer.shouldRemoveFiles
                             PropertyChanges {
                                 target: removeButton
                                 icon.name: "edit-undo"
@@ -170,7 +170,7 @@ Kirigami.Dialog {
                         },
                         State {
                             name: "removeable"
-                            when: listItemContainer.filesWriteable == Page.PagesModel.AllWriteable
+                            when: listItemContainer.filesWriteable == Page.PageController.Writeable
                             PropertyChanges {
                                 target: removeButton
                                 icon.name: "edit-delete"
@@ -181,7 +181,7 @@ Kirigami.Dialog {
                 }
 
                 background: Rectangle {
-                    color: listItemContainer.filesWriteable == Page.PagesModel.AllWriteable && listItemContainer.shouldRemoveFiles ? Kirigami.Theme.negativeBackgroundColor : Kirigami.Theme.backgroundColor
+                    color: listItemContainer.filesWriteable == Page.PageController.Writeable && listItemContainer.shouldRemoveFiles ? Kirigami.Theme.negativeBackgroundColor : Kirigami.Theme.backgroundColor
                 }
             }
         }
@@ -202,19 +202,21 @@ Kirigami.Dialog {
 
             function createModel() {
                 var result = [{fileName: "", title: i18n("Last Visited Page"), icon: "clock"}];
+
                 for (var i = 0; i < sortModel.rowCount(); ++i) {
                     const index = sortModel.index(i, 0)
                     if (sortModel.data(index, Page.PagesModel.HiddenRole)) {
                         continue
                     }
                     if (sortModel.data(index, Page.PageSortModel.ShouldRemoveFilesRole)
-                        && sortModel.data(index, Page.PagesModel.FilesWriteableRole) == Page.PagesModel.AllWriteable) {
+                        && sortModel.data(index, Page.PageController.WriteableRole) == Page.PageController.Writeable) {
                         continue
                     }
                     result.push({fileName: sortModel.data(index, Page.PagesModel.FileNameRole),
                                 title: sortModel.data(index, Page.PagesModel.TitleRole),
                                 icon: sortModel.data(index, Page.PagesModel.IconRole)})
                 }
+
                 return result
             }
 
