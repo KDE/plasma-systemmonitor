@@ -15,8 +15,14 @@ import org.kde.ksysguard.page
 Kirigami.ScrollablePage {
     id: page
 
-    property PageDataObject pageData
+    property PageController controller
+    readonly property PageDataObject pageData: controller.data
     property bool edit: false
+    onEditChanged: {
+        if (edit) {
+            controller.edit()
+        }
+    }
 
     title: pageData.title
 
@@ -120,7 +126,7 @@ Kirigami.ScrollablePage {
         visible: page.edit
         onTriggered: {
             page.edit = false
-            page.pageData.savePage()
+            page.controller.save()
         }
     }
     Kirigami.Action {
@@ -130,7 +136,7 @@ Kirigami.ScrollablePage {
         visible: page.edit
         onTriggered: {
             page.edit = false
-            page.pageData.resetPage()
+            page.controller.reset()
         }
     }
     Kirigami.Action {
@@ -168,7 +174,7 @@ Kirigami.ScrollablePage {
 
         PageEditor {
             parentPage: page
-            pageData: page.pageData
+            controller: page.controller
         }
     }
 
@@ -176,7 +182,7 @@ Kirigami.ScrollablePage {
         id: pageContents
 
         PageContents {
-            pageData: page.pageData
+            controller: page.controller
         }
     }
 
