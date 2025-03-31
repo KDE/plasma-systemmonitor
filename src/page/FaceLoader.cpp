@@ -78,10 +78,12 @@ void FaceLoader::setDataObject(PageDataObject *newDataObject)
 
         connect(m_faceController, &SensorFaceController::faceIdChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::titleChanged, m_dataObject, &PageDataObject::markDirty);
+        connect(m_faceController, &SensorFaceController::showTitleChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::totalSensorsChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::highPrioritySensorIdsChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::lowPrioritySensorIdsChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::sensorColorsChanged, m_dataObject, &PageDataObject::markDirty);
+        connect(m_faceController, &SensorFaceController::sensorLabelsChanged, m_dataObject, &PageDataObject::markDirty);
         connect(m_faceController, &SensorFaceController::updateRateLimitChanged, m_dataObject, &PageDataObject::markDirty);
 
         Q_EMIT controllerChanged();
