@@ -114,4 +114,13 @@ void FaceLoader::reset()
     m_faceController = nullptr;
 }
 
+bool FaceLoader::forceSaveOnDestroy() const
+{
+    if (!m_faceController) {
+        return false;
+    }
+
+    return m_faceController->forceSaveOnDestroy();
+}
+
 #include "moc_FaceLoader.cpp"
