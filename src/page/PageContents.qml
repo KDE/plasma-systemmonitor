@@ -101,12 +101,42 @@ ColumnLayout {
         visible: root.missingSensors.length > 0
         type: Kirigami.MessageType.Error
         text: i18n("This page is missing some sensors and will not display correctly.");
+        position: root.pageData.margin == 0 ? Kirigami.InlineMessage.Header : Kirigami.InlineMessage.Inline
 
         actions: Kirigami.Action {
             icon.name: "document-edit"
             text: i18nc("@action:button", "Fix…")
             onTriggered: root.showMissingSensors()
         }
+    }
+
+    Kirigami.InlineMessage {
+        id: pageOutdatedMessage
+
+        Layout.fillWidth: true
+
+        visible: root.controller.outdated || root.controller.replacedOutdated
+        text: root.controller.replacedOutdated ?
+                i18n("A new version of this page was installed, but you made changes to this page. The changes have been copied to %1 (Old Version).".arg(root.pageData.title)) :
+                i18n("A new version of this page was installed, but you made changes to this page. Would you like to keep your changes or discard your changes and use the new version of the page?")
+        position: root.pageData.margin == 0 ? Kirigami.InlineMessage.Header : Kirigami.InlineMessage.Inline
+
+        showCloseButton: root.controller.replacedOutdated
+
+        actions: [
+            Kirigami.Action {
+                icon.name: "document-save"
+                text: i18nc("@action:button", "Keep Changes")
+                visible: root.controller.outdated
+                onTriggered: root.controller.upgrade(PageController.KeepChanges)
+            },
+            Kirigami.Action {
+                icon.name: "delete-symbolic"
+                text: i18nc("@action:button", "Discard Changes")
+                visible: root.controller.outdated
+                onTriggered: root.controller.upgrade(PageController.DiscardChanges)
+            }
+        ]
     }
 
     Repeater {
@@ -294,6 +324,7 @@ ColumnLayout {
             }
         }
     }
+
     Menu {
         id: contextMenu
         property QtObject loader
