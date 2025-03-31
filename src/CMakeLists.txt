@@ -55,6 +55,7 @@ install(FILES
     pages/processes.page
     pages/old-overview.page
     DESTINATION ${KDE_INSTALL_DATADIR}/plasma-systemmonitor
+    PERMISSIONS OWNER_READ GROUP_READ WORLD_READ
 )
 
 ecm_finalize_qml_module(plasma-systemmonitor)
