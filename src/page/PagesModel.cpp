@@ -14,8 +14,10 @@
 #include <KConfigGroup>
 #include <KNSCore/Entry>
 
-#include "PageDataObject.h"
+#include "PageController.h"
 #include "PageManager.h"
+
+#include "systemmonitor.h"
 
 PagesModel::PagesModel(QObject *parent)
     : QAbstractListModel(parent)
@@ -26,6 +28,7 @@ PagesModel::PagesModel(QObject *parent)
         auto i = m_pages.indexOf(page);
         beginRemoveRows(QModelIndex{}, i, i);
         m_pages.remove(i);
+        page->data()->disconnect(this);
         page->disconnect(this);
         endRemoveRows();
     });
@@ -33,10 +36,10 @@ PagesModel::PagesModel(QObject *parent)
         auto i = m_pages.indexOf(page);
         Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole, DataRole, FilesWriteableRole});
     });
-    connect(pm, &PageManager::pageOrderChanged, this, [this]() {
+    connect(Configuration::self(), &Configuration::pageOrderChanged, this, [this]() {
         sort();
     });
-    connect(pm, &PageManager::hiddenPagesChanged, this, [this]() {
+    connect(Configuration::self(), &Configuration::hiddenPagesChanged, this, [this]() {
         Q_EMIT dataChanged(index(0, 0), index(m_pages.count() - 1, 0), {HiddenRole});
     });
 }
@@ -66,20 +69,20 @@ QVariant PagesModel::data(const QModelIndex &index, int role) const
         return QVariant{};
     }
 
-    auto data = m_pages.at(index.row());
+    auto page = m_pages.at(index.row());
     switch (role) {
     case TitleRole:
-        return data->value(QStringLiteral("title"));
+        return page->data()->value(QStringLiteral("title"));
     case DataRole:
-        return QVariant::fromValue(data);
+        return QVariant::fromValue(page);
     case IconRole:
-        return data->value(QStringLiteral("icon"));
+        return page->data()->value(QStringLiteral("icon"));
     case FileNameRole:
-        return data->fileName();
+        return page->fileName();
     case HiddenRole:
-        return PageManager::instance()->isHidden(data->fileName());
+        return page->isHidden();
     case FilesWriteableRole:
-        return QVariant::fromValue(PageManager::instance()->writeableState(data->fileName()));
+        return QVariant::fromValue(page->writeableState());
     default:
         return QVariant{};
     }
@@ -106,33 +109,33 @@ void PagesModel::sort(int column, Qt::SortOrder order)
     Q_UNUSED(column)
     Q_UNUSED(order)
 
-    auto pageOrder = PageManager::instance()->pageOrder();
+    auto pageOrder = Configuration::self()->pageOrder();
     if (pageOrder.isEmpty()) {
         return;
     }
 
     Q_EMIT layoutAboutToBeChanged({QPersistentModelIndex()}, QAbstractItemModel::VerticalSortHint);
-    auto last = std::stable_partition(m_pages.begin(), m_pages.end(), [&pageOrder](PageDataObject *page) {
+    auto last = std::stable_partition(m_pages.begin(), m_pages.end(), [&pageOrder](PageController *page) {
         return pageOrder.contains(page->fileName());
     });
-    std::sort(m_pages.begin(), last, [&pageOrder](PageDataObject *left, PageDataObject *right) {
+    std::sort(m_pages.begin(), last, [&pageOrder](PageController *left, PageController *right) {
         return pageOrder.indexOf(left->fileName()) < pageOrder.indexOf(right->fileName());
     });
     changePersistentIndex(QModelIndex(), QModelIndex());
     Q_EMIT layoutChanged();
 }
 
-void PagesModel::onPageAdded(PageDataObject *page)
+void PagesModel::onPageAdded(PageController *page)
 {
-    connect(page, &PageDataObject::saved, this, [this, page]() {
-        auto i = m_pages.indexOf(page);
-        Q_EMIT dataChanged(index(i), index(i), {FilesWriteableRole});
-    });
-    connect(page, &PageDataObject::valueChanged, this, [this, page]() {
+    connect(page, &PageController::loaded, this, [this, page] {
         auto i = m_pages.indexOf(page);
         Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole});
     });
-    connect(page, &PageDataObject::loaded, this, [this, page] {
+    connect(page, &PageController::saved, this, [this, page]() {
+        auto i = m_pages.indexOf(page);
+        Q_EMIT dataChanged(index(i), index(i), {FilesWriteableRole});
+    });
+    connect(page->data(), &PageDataObject::valueChanged, this, [this, page]() {
         auto i = m_pages.indexOf(page);
         Q_EMIT dataChanged(index(i), index(i), {TitleRole, IconRole});
     });
