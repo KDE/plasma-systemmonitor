@@ -31,6 +31,7 @@ public:
     KSysGuard::SensorFaceController *controller() const;
     Q_SIGNAL void controllerChanged();
 
+    void save(KSharedConfig::Ptr config);
     void reset();
 
     bool forceSaveOnDestroy() const;

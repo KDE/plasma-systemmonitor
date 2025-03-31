@@ -24,20 +24,16 @@ class PageDataObject : public QQmlPropertyMap
     QML_UNCREATABLE("Used for data storage")
 
 public:
-    explicit PageDataObject(const KSharedConfig::Ptr &config, QObject *parent = nullptr);
+    explicit PageDataObject(const KSharedConfig::Ptr &config, const QString &fileName, QObject *parent = nullptr);
 
     QQmlListProperty<PageDataObject> childrenProperty() const;
     QList<PageDataObject *> children() const;
 
     KSharedConfig::Ptr config() const;
 
-    Q_INVOKABLE bool resetPage();
-    Q_INVOKABLE bool savePage();
-    Q_INVOKABLE void saveAs(const QUrl &destination);
-
     bool load(const KConfigBase &config, const QString &groupName);
     Q_SIGNAL void loaded();
-    bool save(KConfigBase &config, const QString &groupName, const QStringList &ignoreProperties = {QStringLiteral("children")});
+    bool save(KSharedConfig::Ptr config, KConfigGroup &group, const QStringList &ignoreProperties = {QStringLiteral("children")});
     Q_SIGNAL void saved();
 
     void reset();
@@ -71,6 +67,7 @@ private:
     QQmlListProperty<PageDataObject> m_childrenProperty;
     QList<PageDataObject *> m_children;
     KSharedConfig::Ptr m_config;
+    QString m_fileName;
     bool m_dirty = false;
     FaceLoader *m_faceLoader = nullptr;
 };
