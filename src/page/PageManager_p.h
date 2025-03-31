@@ -27,5 +27,6 @@ public:
     // preserve the local changes.
     inline static QList<ReplaceInfo> s_replacePages = {
         {QStringLiteral("history.page"), QStringLiteral("old-history.page"), 0},
+        {QStringLiteral("overview.page"), QStringLiteral("old-overview.page"), 0},
     };
 };
