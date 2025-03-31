@@ -25,5 +25,7 @@ public:
     // A mapping of pages and page versions to new names. If there are local changes
     // that match one of these, the local changes will be copied to the new name to
     // preserve the local changes.
-    inline static QList<ReplaceInfo> s_replacePages = {};
+    inline static QList<ReplaceInfo> s_replacePages = {
+        {QStringLiteral("history.page"), QStringLiteral("old-history.page"), 0},
+    };
 };
