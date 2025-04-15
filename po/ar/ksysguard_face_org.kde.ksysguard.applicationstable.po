@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-09 00:40+0000\n"
+"POT-Creation-Date: 2025-04-15 00:43+0000\n"
 "PO-Revision-Date: 2024-09-26 11:53+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -66,6 +66,12 @@ msgctxt "Warning message shown on runtime error"
 msgid "Applications view is unsupported on your system"
 msgstr "عرض التطبيقات غير مدعوم في نظامك"
 
+#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:184
+#, kde-format
+msgctxt "@label"
+msgid "Background Services"
+msgstr ""
+
 #: src/faces/applicationstable/contents/ui/Config.qml:22
 #, kde-format
 msgctxt "@option:check"
@@ -78,91 +84,91 @@ msgctxt "@option:check"
 msgid "Confirm when quitting applications"
 msgstr "أكد عند إنهاء التطبيقات"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:31
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:40
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "ابحث"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:42
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:51
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "أنهِ التطبيق"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:50
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:59
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "أظهر الشريط الجانبي للتّفاصيل"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:58
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:67
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "اضبط الأعمدة…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:189
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:198
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "اضبط الأولوية…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:192
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:201
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "أرسل إشارة"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:196
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:206
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "علّق (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "تابِع (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:204
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:214
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "افصل (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:208
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "قاطِع (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:222
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "أنهِ (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:226
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "اقتل (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:230
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "مستخدم 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:224
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:234
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "مستخدم 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:231
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:242
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -174,13 +180,13 @@ msgstr[3] "أنهِ %1 تطبيقات"
 msgstr[4] "أنهِ %1 تطبيقا"
 msgstr[5] "أنهِ %1 تطبيق"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:241
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:252
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "أخفِ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:256
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:267
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -192,7 +198,7 @@ msgstr[3] "أنهِ %1 تطبيقات بالقوة"
 msgstr[4] "أنهِ %1 تطبيقا بالقوة"
 msgstr[5] "أنهِ %1 تطبيق بالقوة"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:257
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:268
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -204,7 +210,7 @@ msgstr[3] "أنهِ %1 تطبيقات"
 msgstr[4] "أنهِ %1 تطبيقا"
 msgstr[5] "أنهِ %1 تطبيق"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -216,7 +222,7 @@ msgstr[3] "أنهِ التطبيقات بالقوة"
 msgstr[4] "أنهِ التطبيقات بالقوة"
 msgstr[5] "أنهِ التطبيقات بالقوة"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:260
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:271
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -228,7 +234,7 @@ msgstr[3] "أنهِ التطبيقات"
 msgstr[4] "أنهِ التطبيقات"
 msgstr[5] "أنهِ التطبيقات"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:263
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -252,7 +258,7 @@ msgstr[5] ""
 "هل أنت متأكد أنك تريد إنهاء هذه %1 تطبيق بالقوة  (SIGKILL)؟قد يفقد أي عمل "
 "غير محفوظ."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:277
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
@@ -263,7 +269,7 @@ msgstr[3] "هل تريد إنهاء هذه %1 تطبيقات؟ قد يفقد أ�
 msgstr[4] "هل تريد إنهاء هذه %1 تطبيقا؟ قد يفقد أي عمل غير محفوظ."
 msgstr[5] "هل تريد إنهاء هذه %1 تطبيق؟ قد يفقد أي عمل غير محفوظ."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:281
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:292
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
