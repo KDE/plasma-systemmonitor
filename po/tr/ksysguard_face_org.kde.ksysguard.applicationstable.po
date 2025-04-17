@@ -70,7 +70,7 @@ msgstr "Uygulamalar görünümü sisteminizde desteklenmiyor"
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
-msgstr ""
+msgstr "Arka plan hizmetleri"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:22
 #, kde-format
@@ -241,7 +241,3 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 Süreç"
 msgstr[1] "%1 Süreç"
-
-#~ msgctxt "@action:button"
-#~ msgid "Quit"
-#~ msgstr "Çık"

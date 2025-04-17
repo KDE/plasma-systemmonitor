@@ -70,7 +70,7 @@ msgstr "您的系统不支持应用程序视图"
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
-msgstr ""
+msgstr "后台服务"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:22
 #, kde-format
