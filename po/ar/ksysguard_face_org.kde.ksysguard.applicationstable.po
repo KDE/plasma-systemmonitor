@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
+# SPDX-FileCopyrightText: 2021, 2023, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
-# SPDX-FileCopyrightText: 2021, 2023, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:43+0000\n"
-"PO-Revision-Date: 2024-09-26 11:53+0400\n"
+"PO-Revision-Date: 2025-04-17 09:39+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -70,7 +70,7 @@ msgstr "عرض التطبيقات غير مدعوم في نظامك"
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
-msgstr ""
+msgstr "الخدمات الخلفيّة"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:22
 #, kde-format
