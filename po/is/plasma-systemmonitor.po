@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2024 Gummi <gudmundure@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Gummi <gudmundure@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-21 00:43+0000\n"
-"PO-Revision-Date: 2024-07-22 22:31+0000\n"
+"PO-Revision-Date: 2025-04-18 13:35+0000\n"
 "Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
@@ -112,10 +112,9 @@ msgid "An application for monitoring system resources"
 msgstr "Forrit til að fylgjast með virkni stýrikerfisins"
 
 #: src/main.cpp:71
-#, fuzzy, kde-format
-#| msgid "© 2020 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© 20-20 Plasma þróunarteymið"
+msgstr "© 2025 Plasma þróunarteymið"
 
 #: src/main.cpp:77
 #, kde-format
@@ -389,9 +388,7 @@ msgid "Load Preset…"
 msgstr "Hlaða inn forstillingu..."
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
 msgstr "Sækja nýjar forstillingar..."
@@ -415,12 +412,10 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Bæta við grafi sem skjáborðsgræju"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr "Sækja ný stílsnið..."
+msgstr "Sækja nýjar útlitsstillingar..."
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format

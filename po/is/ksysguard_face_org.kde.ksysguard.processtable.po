@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2024 Gummi <gudmundure@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Gummi <gudmundure@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-09-09 00:40+0000\n"
-"PO-Revision-Date: 2024-07-22 22:24+0000\n"
+"PO-Revision-Date: 2025-04-18 13:34+0000\n"
 "Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
@@ -18,9 +18,7 @@ msgstr ""
 "X-Generator: Lokalize 23.08.5\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:24
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
 msgstr "Staðfesta lokun á vinnslu."
@@ -32,33 +30,25 @@ msgid "By default show:"
 msgstr "Sýna sjálfgefið:"
 
 #: src/faces/processtable/contents/ui/Config.qml:38
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "Eigin vinnslur"
 
 #: src/faces/processtable/contents/ui/Config.qml:39
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "Vinnslur notenda"
 
 #: src/faces/processtable/contents/ui/Config.qml:40
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "Kerfisvinnslur"
 
 #: src/faces/processtable/contents/ui/Config.qml:41
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "Allar vinnslur"
@@ -204,15 +194,12 @@ msgid "Configure Columns…"
 msgstr "Grunnstilla dálka..."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:256
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Ljúka vinnslu"
-msgstr[1] "Ljúka %1 vinnslum"
+msgstr[0] "Þvinga lokun vinnslu"
+msgstr[1] "Þvinga lokun á %1 vinnslum"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
@@ -223,15 +210,12 @@ msgstr[0] "Ljúka vinnslu"
 msgstr[1] "Ljúka %1 vinnslum"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Ljúka vinnslu"
-msgstr[1] "Ljúka vinnslum"
+msgstr[0] "Þvinga lokun vinnslu"
+msgstr[1] "Þvinga lokun á vinnslum"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:260
 #, kde-format
@@ -242,42 +226,25 @@ msgstr[0] "Ljúka vinnslu"
 msgstr[1] "Ljúka vinnslum"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Ertu viss um að þú viljir ljúka þessari vinnslu?\n"
-"Óvistaðar breytingar gætu glatast."
+"Þvinga lokun á þessari vinnslu (SIGKILL)? Óvistaðar breytingar gætu glatast."
 msgstr[1] ""
-"Ertu viss um að þú viljir ljúka þessum %1 vinnslum?\n"
-"Óvistaðar breytingar gætu glatast."
+"Þvinga lokun á þessum %1 vinnslum (SIGKILL)? Óvistaðar breytingar gætu "
+"glatast."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:266
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"Ertu viss um að þú viljir ljúka þessari vinnslu?\n"
-"Óvistaðar breytingar gætu glatast."
-msgstr[1] ""
-"Ertu viss um að þú viljir ljúka þessum %1 vinnslum?\n"
-"Óvistaðar breytingar gætu glatast."
+msgstr[0] "Loka þessari vinnslu? Óvistaðar breytingar gætu glatast."
+msgstr[1] "Loka þessum %1 vinnslum? Óvistaðar breytingar gætu glatast."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:278
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
-msgstr "Auðkenni vinnslu %1, eigandi er %2"
+msgstr "Vinnsluauðkenni %1, eigandi %2"

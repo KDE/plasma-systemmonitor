@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2024 Gummi <gudmundure@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Gummi <gudmundure@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:43+0000\n"
-"PO-Revision-Date: 2024-07-08 14:53+0000\n"
+"PO-Revision-Date: 2025-04-18 13:32+0000\n"
 "Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
@@ -69,7 +69,7 @@ msgstr "Ekki er stuðningur við forritayfirlitið í tölvunni"
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
-msgstr ""
+msgstr "Bakgrunnsþjónustur"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:22
 #, kde-format
@@ -182,15 +182,12 @@ msgid "Hide"
 msgstr "Fela"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:267
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Loka forriti"
-msgstr[1] "Loka %1 forritum"
+msgstr[0] "Þvinga lokun forrits"
+msgstr[1] "Þvinga lokun %1 forrita"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:268
 #, kde-format
@@ -201,15 +198,12 @@ msgstr[0] "Loka forriti"
 msgstr[1] "Loka %1 forritum"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Loka forriti"
-msgstr[1] "Loka forritum"
+msgstr[0] "Þvinga lokun forrits"
+msgstr[1] "Þvinga lokun forrita"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:271
 #, kde-format
@@ -220,39 +214,21 @@ msgstr[0] "Loka forriti"
 msgstr[1] "Loka forritum"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Ertu viss um að þú viljir loka þessu forriti?\n"
-"Óvistaðar breytingar gætu glatast."
+"Þvinga lokun þessa forrits (SIGKILL)? Óvistaðar breytingar gætu glatast."
 msgstr[1] ""
-"Ertu viss um að þú viljir loka þessum %1 forritum?\n"
-"Óvistaðar breytingar gætu glatast."
+"Þvinga lokun þessara %1 forrita (SIGKILL)? Óvistaðar breytingar gætu glatast."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:277
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"Ertu viss um að þú viljir loka þessu forriti?\n"
-"Óvistaðar breytingar gætu glatast."
-msgstr[1] ""
-"Ertu viss um að þú viljir loka þessum %1 forritum?\n"
-"Óvistaðar breytingar gætu glatast."
+msgstr[0] "Loka þessu forriti? Óvistaðar breytingar gætu glatast."
+msgstr[1] "Loka þessum %1 forritum? Óvistaðar breytingar gætu glatast."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:292
 #, kde-format
