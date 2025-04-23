@@ -1,16 +1,16 @@
 # Translation for ksysguard_face_org.kde.ksysguard.applicationstable.po to Euskara/Basque (eu).
-# Copyright (C) 2020-2024 This file is copyright:
+# Copyright (C) 2020-2025 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# SPDX-FileCopyrightText: 2024 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2024, 2025 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2020, 2021, 2022, 2023, 2024.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2020, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-15 00:43+0000\n"
-"PO-Revision-Date: 2024-09-09 20:41+0200\n"
+"PO-Revision-Date: 2025-04-22 10:51+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -72,7 +72,7 @@ msgstr "Zure sistemak ez du onartzen Aplikazioen ikuspegia"
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
-msgstr ""
+msgstr "Atzeko planoko zerbitzuak"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:22
 #, kde-format
