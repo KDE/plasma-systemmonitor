@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-21 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2024-12-15 19:31+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
@@ -103,181 +103,181 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "सिस्टम मॉनिटर के बारे में"
 
-#: src/main.cpp:67
+#: src/main.cpp:61
 #, kde-format
 msgid "System Monitor"
 msgstr "सिस्टम मॉनिटर"
 
-#: src/main.cpp:69
+#: src/main.cpp:63
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "सिस्टम संसाधनों की निगरानी के लिए एक अनुप्रयोग"
 
-#: src/main.cpp:71
+#: src/main.cpp:65
 #, fuzzy, kde-format
 #| msgid "© 2020 Plasma Development Team"
 msgid "© 2025 Plasma Development Team"
 msgstr "© 2020 प्लाज्मा विकास टीम"
 
-#: src/main.cpp:77
+#: src/main.cpp:71
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "अर्जेन हीमस्ट्रा"
 
-#: src/main.cpp:77 src/main.cpp:80 src/main.cpp:82 src/main.cpp:83
+#: src/main.cpp:71 src/main.cpp:74 src/main.cpp:76 src/main.cpp:77
 #, kde-format
 msgid "Development"
 msgstr "विकास"
 
-#: src/main.cpp:78
+#: src/main.cpp:72
 #, kde-format
 msgid "Uri Herrera"
 msgstr "उरी हेरेरा"
 
-#: src/main.cpp:78
+#: src/main.cpp:72
 #, kde-format
 msgid "Design"
 msgstr "डिज़ाइन"
 
-#: src/main.cpp:79
+#: src/main.cpp:73
 #, kde-format
 msgid "Nate Graham"
 msgstr "नैट ग्राहम"
 
-#: src/main.cpp:79 src/main.cpp:81
+#: src/main.cpp:73 src/main.cpp:75
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "डिजाइन और गुणवत्ता आश्वासन"
 
-#: src/main.cpp:80
+#: src/main.cpp:74
 #, kde-format
 msgid "David Redondo"
 msgstr "डेविड रेडोंडो"
 
-#: src/main.cpp:81
+#: src/main.cpp:75
 #, kde-format
 msgid "Noah Davis"
 msgstr "नूह डेविस"
 
-#: src/main.cpp:82
+#: src/main.cpp:76
 #, kde-format
 msgid "Marco Martin"
 msgstr "मार्को मार्टिन"
 
-#: src/main.cpp:83
+#: src/main.cpp:77
 #, kde-format
 msgid "David Edmundson"
 msgstr "डेविड एडमंडसन"
 
-#: src/main.cpp:85
+#: src/main.cpp:79
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "तुम्हारे नाम"
 
-#: src/main.cpp:85
+#: src/main.cpp:79
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "आपके ईमेल"
 
-#: src/Main.qml:73
+#: src/Main.qml:76
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "औजार"
 
-#: src/Main.qml:78
+#: src/Main.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "नया पृष्ठ जोड़ें…"
 
-#: src/Main.qml:85
+#: src/Main.qml:88
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "पृष्ठ संपादित करें या हटाएं…"
 
-#: src/Main.qml:91
+#: src/Main.qml:94
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "वर्तमान पृष्ठ निर्यात करें…"
 
-#: src/Main.qml:99
+#: src/Main.qml:102
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "पेज आयात करें…"
 
-#: src/Main.qml:105
+#: src/Main.qml:108
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "नये पेज प्राप्त करें…"
 
-#: src/Main.qml:118
+#: src/Main.qml:125
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "साइडबार विस्तृत करें"
 
-#: src/Main.qml:118
+#: src/Main.qml:125
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "साइडबार संक्षिप्त करें"
 
-#: src/Main.qml:128
+#: src/Main.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "रिपोर्ट बग…"
 
-#: src/Main.qml:134
+#: src/Main.qml:141
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "सिस्टम मॉनिटर के बारे में"
 
-#: src/Main.qml:141
+#: src/Main.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "केडीई के बारे में"
 
-#: src/Main.qml:232
+#: src/Main.qml:239
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "नया पेज जोड़ें"
 
-#: src/Main.qml:253
+#: src/Main.qml:260
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "पृष्ठ संपादित करें"
 
-#: src/Main.qml:276
+#: src/Main.qml:283
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "निर्यात करें%1"
 
-#: src/Main.qml:278 src/Main.qml:288
+#: src/Main.qml:285 src/Main.qml:295
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "सिस्टम मॉनिटर पृष्ठ (*.page)"
 
-#: src/Main.qml:286
+#: src/Main.qml:293
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "आयात पृष्ठ"
 
-#: src/Main.qml:321
+#: src/Main.qml:319
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
@@ -311,49 +311,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "पृष्ठभूमि मार्जिन हटाएँ"
 
-#: src/page/EditablePage.qml:108
+#: src/page/EditablePage.qml:114
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "संपादित पेज"
 
-#: src/page/EditablePage.qml:118
+#: src/page/EditablePage.qml:124
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "परिवर्तनों को सुरक्षित करें"
 
-#: src/page/EditablePage.qml:128
+#: src/page/EditablePage.qml:134
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "परिवर्तनों को निरस्त करें"
 
-#: src/page/EditablePage.qml:139
+#: src/page/EditablePage.qml:145
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "पेज कॉन्फ़िगर करें…"
 
-#: src/page/EditablePage.qml:148
+#: src/page/EditablePage.qml:154
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "लाइन जोड़ो"
 
-#: src/page/EditablePage.qml:157
+#: src/page/EditablePage.qml:163
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "शीर्षक जोडें"
 
-#: src/page/EditablePage.qml:187
+#: src/page/EditablePage.qml:193
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "पृष्ठ \"%1\" कॉन्फ़िगर करें"
 
-#: src/page/EditablePage.qml:189
+#: src/page/EditablePage.qml:195
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -407,7 +407,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "सेटिंग्स को प्रीसेट %1 के रूप में सहेजा गया."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:301
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:333
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -495,16 +495,47 @@ msgctxt "@action"
 msgid "Move"
 msgstr "कदम"
 
-#: src/page/PageContents.qml:102 src/page/PageEditor.qml:133
+#: src/page/PageContents.qml:103 src/page/PageEditor.qml:134
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "इस पृष्ठ में कुछ सेंसर गायब हैं और यह सही ढंग से प्रदर्शित नहीं होगा।"
 
-#: src/page/PageContents.qml:106 src/page/PageEditor.qml:137
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:138
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "हल करना…"
+
+#: src/page/PageContents.qml:120
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"The changes have been copied to %1 (Old Version)."
+msgstr ""
+
+#: src/page/PageContents.qml:121
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"Would you like to keep your changes or discard your changes and use the new "
+"version of the page?"
+msgstr ""
+
+#: src/page/PageContents.qml:129
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Save Changes"
+msgctxt "@action:button"
+msgid "Keep Changes"
+msgstr "परिवर्तनों को सुरक्षित करें"
+
+#: src/page/PageContents.qml:135
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Discard Changes"
+msgctxt "@action:button"
+msgid "Discard Changes"
+msgstr "परिवर्तनों को निरस्त करें"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -584,7 +615,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "एप्लिकेशन स्टार्टअप के दौरान"
 
-#: src/page/PageEditor.qml:183
+#: src/page/PageEditor.qml:184
 #, kde-format
 msgid "New Title"
 msgstr "नया शीर्षक"
@@ -648,49 +679,49 @@ msgstr "के साथ शुरू:"
 msgid "Last Visited Page"
 msgstr "अंतिम बार देखा गया पृष्ठ"
 
-#: src/page/RowControl.qml:128
+#: src/page/RowControl.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
 msgstr "कॉलम जोड़ें"
 
-#: src/page/RowControl.qml:137
+#: src/page/RowControl.qml:136
 #, kde-format
 msgctxt "@action"
 msgid "Height"
 msgstr "ऊंचाई"
 
-#: src/page/RowControl.qml:141
+#: src/page/RowControl.qml:140
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Balanced"
 msgstr "संतुलित"
 
-#: src/page/RowControl.qml:142
+#: src/page/RowControl.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
 msgstr "विभिन्न पंक्तियों में समान ऊंचाई का उपयोग करने का प्रयास करें।"
 
-#: src/page/RowControl.qml:150
+#: src/page/RowControl.qml:149
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Minimum"
 msgstr "न्यूनतम"
 
-#: src/page/RowControl.qml:151
+#: src/page/RowControl.qml:150
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
 msgstr "सामग्री को सही ढंग से प्रदर्शित करने के लिए आवश्यक न्यूनतम ऊंचाई का उपयोग करें।"
 
-#: src/page/RowControl.qml:159
+#: src/page/RowControl.qml:158
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Maximum"
 msgstr "अधिकतम"
 
-#: src/page/RowControl.qml:160
+#: src/page/RowControl.qml:159
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."

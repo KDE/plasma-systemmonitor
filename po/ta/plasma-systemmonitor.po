@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-21 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2025-03-09 17:25+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -101,180 +101,180 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "கணினி நோட்டம் பற்றி"
 
-#: src/main.cpp:67
+#: src/main.cpp:61
 #, kde-format
 msgid "System Monitor"
 msgstr "கணினி நோட்டம்"
 
-#: src/main.cpp:69
+#: src/main.cpp:63
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "கணினியின் வசதிகளின் பயன்பாட்டை கண்காணிக்க உதவும் செயலி"
 
-#: src/main.cpp:71
+#: src/main.cpp:65
 #, kde-format
 msgid "© 2025 Plasma Development Team"
 msgstr "© 2025 பிளாஸ்மா நிரலாக்க குழு"
 
-#: src/main.cpp:77
+#: src/main.cpp:71
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "ஆர்ஜென் ஹைம்ஸ்டிரா"
 
-#: src/main.cpp:77 src/main.cpp:80 src/main.cpp:82 src/main.cpp:83
+#: src/main.cpp:71 src/main.cpp:74 src/main.cpp:76 src/main.cpp:77
 #, kde-format
 msgid "Development"
 msgstr "உருவாக்கம்"
 
-#: src/main.cpp:78
+#: src/main.cpp:72
 #, kde-format
 msgid "Uri Herrera"
 msgstr "ஊரி ஹெறெரா"
 
-#: src/main.cpp:78
+#: src/main.cpp:72
 #, kde-format
 msgid "Design"
 msgstr "வடிவமைப்பு"
 
-#: src/main.cpp:79
+#: src/main.cpp:73
 #, kde-format
 msgid "Nate Graham"
 msgstr "நேட் கிரஹாம்"
 
-#: src/main.cpp:79 src/main.cpp:81
+#: src/main.cpp:73 src/main.cpp:75
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "வடிவமைப்பும் தரத்தை உறுதி செய்வதும்"
 
-#: src/main.cpp:80
+#: src/main.cpp:74
 #, kde-format
 msgid "David Redondo"
 msgstr "டேவிட் ரிடொண்டோ"
 
-#: src/main.cpp:81
+#: src/main.cpp:75
 #, kde-format
 msgid "Noah Davis"
 msgstr "நோவா டேவிசு"
 
-#: src/main.cpp:82
+#: src/main.cpp:76
 #, kde-format
 msgid "Marco Martin"
 msgstr "மார்க்கோ மார்ட்டின்"
 
-#: src/main.cpp:83
+#: src/main.cpp:77
 #, kde-format
 msgid "David Edmundson"
 msgstr "டேவிட் எட்மண்டுஸன்"
 
-#: src/main.cpp:85
+#: src/main.cpp:79
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "கோ. கிஷோர்"
 
-#: src/main.cpp:85
+#: src/main.cpp:79
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Kde-l10n-ta@kde.org"
 
-#: src/Main.qml:73
+#: src/Main.qml:76
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "கருவிகள்"
 
-#: src/Main.qml:78
+#: src/Main.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "புதிய பக்கத்தை சேர்…"
 
-#: src/Main.qml:85
+#: src/Main.qml:88
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "பக்கங்களை திருத்து அல்லது நீக்கு…"
 
-#: src/Main.qml:91
+#: src/Main.qml:94
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "தற்போதைய பக்கத்தை ஏற்றுமதி செய்…"
 
-#: src/Main.qml:99
+#: src/Main.qml:102
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "பக்கத்தை இறக்குமதி செய்…"
 
-#: src/Main.qml:105
+#: src/Main.qml:108
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "புதிய பக்கங்களை பெறு…"
 
-#: src/Main.qml:118
+#: src/Main.qml:125
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "பக்கப்பட்டையை விரி"
 
-#: src/Main.qml:118
+#: src/Main.qml:125
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "பக்கப்பட்டையை சுருக்கு"
 
-#: src/Main.qml:128
+#: src/Main.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "பிழையை தெரிவி…"
 
-#: src/Main.qml:134
+#: src/Main.qml:141
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "கணினி நோட்டம் பற்றி"
 
-#: src/Main.qml:141
+#: src/Main.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "கே.டீ.யீ. பற்றி"
 
-#: src/Main.qml:232
+#: src/Main.qml:239
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "புதிய பக்கத்தை சேர்"
 
-#: src/Main.qml:253
+#: src/Main.qml:260
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "பக்கங்களை திருத்துதல்"
 
-#: src/Main.qml:276
+#: src/Main.qml:283
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "%1 தனை ஏற்றுமதி செய்"
 
-#: src/Main.qml:278 src/Main.qml:288
+#: src/Main.qml:285 src/Main.qml:295
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "கணினி நோட்டத்திற்கான பக்கம் (*.page)"
 
-#: src/Main.qml:286
+#: src/Main.qml:293
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "பக்கத்தை இறக்குமதி செய்தல்"
 
-#: src/Main.qml:321
+#: src/Main.qml:319
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
@@ -309,49 +309,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "பின்புலத்தின் விளிம்புகளை நீக்கு"
 
-#: src/page/EditablePage.qml:108
+#: src/page/EditablePage.qml:114
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "பக்கத்தை திருத்து"
 
-#: src/page/EditablePage.qml:118
+#: src/page/EditablePage.qml:124
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "மாற்றங்களை சேமி"
 
-#: src/page/EditablePage.qml:128
+#: src/page/EditablePage.qml:134
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "மாற்றங்களை கைவிடு"
 
-#: src/page/EditablePage.qml:139
+#: src/page/EditablePage.qml:145
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "பக்கத்தை அமை…"
 
-#: src/page/EditablePage.qml:148
+#: src/page/EditablePage.qml:154
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "வரிசையை சேர்"
 
-#: src/page/EditablePage.qml:157
+#: src/page/EditablePage.qml:163
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "தலைப்பை சேர்"
 
-#: src/page/EditablePage.qml:187
+#: src/page/EditablePage.qml:193
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "\"%1\" பக்கத்தை அமை"
 
-#: src/page/EditablePage.qml:189
+#: src/page/EditablePage.qml:195
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -405,7 +405,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "%1 என்ற முன்னமைக்கப்பாக அமைப்புகள் சேமிக்கப்பட்டன."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:301
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:333
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -493,16 +493,47 @@ msgctxt "@action"
 msgid "Move"
 msgstr "நகற்று"
 
-#: src/page/PageContents.qml:102 src/page/PageEditor.qml:133
+#: src/page/PageContents.qml:103 src/page/PageEditor.qml:134
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "இப்பக்கத்துக்கு தேவையான சில உணரிகள் இல்லாத‍தால், இது சரியாக செயல்படாது."
 
-#: src/page/PageContents.qml:106 src/page/PageEditor.qml:137
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:138
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "சரிசெய்…"
+
+#: src/page/PageContents.qml:120
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"The changes have been copied to %1 (Old Version)."
+msgstr ""
+
+#: src/page/PageContents.qml:121
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"Would you like to keep your changes or discard your changes and use the new "
+"version of the page?"
+msgstr ""
+
+#: src/page/PageContents.qml:129
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Save Changes"
+msgctxt "@action:button"
+msgid "Keep Changes"
+msgstr "மாற்றங்களை சேமி"
+
+#: src/page/PageContents.qml:135
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Discard Changes"
+msgctxt "@action:button"
+msgid "Discard Changes"
+msgstr "மாற்றங்களை கைவிடு"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -582,7 +613,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "செயலியை துவக்கும்போது"
 
-#: src/page/PageEditor.qml:183
+#: src/page/PageEditor.qml:184
 #, kde-format
 msgid "New Title"
 msgstr "புதிய தலைப்பு"
@@ -646,49 +677,49 @@ msgstr "தொடங்கும்போது இதை காட்டு:"
 msgid "Last Visited Page"
 msgstr "கடைசியாக பார்த்த பக்கம்"
 
-#: src/page/RowControl.qml:128
+#: src/page/RowControl.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
 msgstr "பத்தியை சேர்"
 
-#: src/page/RowControl.qml:137
+#: src/page/RowControl.qml:136
 #, kde-format
 msgctxt "@action"
 msgid "Height"
 msgstr "உயரம்"
 
-#: src/page/RowControl.qml:141
+#: src/page/RowControl.qml:140
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Balanced"
 msgstr "சம‍மானது"
 
-#: src/page/RowControl.qml:142
+#: src/page/RowControl.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
 msgstr "பல வரிசைகளுக்கு ஒரே உயரத்தை பயன்படுத்த முயற்சிக்கும்."
 
-#: src/page/RowControl.qml:150
+#: src/page/RowControl.qml:149
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Minimum"
 msgstr "குறைந்தபட்சம்"
 
-#: src/page/RowControl.qml:151
+#: src/page/RowControl.qml:150
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
 msgstr "உள்ளடக்கத்தை சரியாக காட்ட தேவையான குறைந்தபட்ச உயரத்தை பயன்படுத்தும்."
 
-#: src/page/RowControl.qml:159
+#: src/page/RowControl.qml:158
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Maximum"
 msgstr "அதிகபட்சம்"
 
-#: src/page/RowControl.qml:160
+#: src/page/RowControl.qml:159
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."

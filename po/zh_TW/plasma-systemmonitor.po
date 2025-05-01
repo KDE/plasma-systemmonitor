@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-21 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2025-03-05 19:37+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -103,180 +103,180 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "關於系統監控"
 
-#: src/main.cpp:67
+#: src/main.cpp:61
 #, kde-format
 msgid "System Monitor"
 msgstr "系統監控"
 
-#: src/main.cpp:69
+#: src/main.cpp:63
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "一個監控系統資源的應用程式"
 
-#: src/main.cpp:71
+#: src/main.cpp:65
 #, kde-format
 msgid "© 2025 Plasma Development Team"
 msgstr "© 2025 Plasma 開發團隊"
 
-#: src/main.cpp:77
+#: src/main.cpp:71
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "Arjen Hiemstra"
 
-#: src/main.cpp:77 src/main.cpp:80 src/main.cpp:82 src/main.cpp:83
+#: src/main.cpp:71 src/main.cpp:74 src/main.cpp:76 src/main.cpp:77
 #, kde-format
 msgid "Development"
 msgstr "開發"
 
-#: src/main.cpp:78
+#: src/main.cpp:72
 #, kde-format
 msgid "Uri Herrera"
 msgstr "Uri Herrera"
 
-#: src/main.cpp:78
+#: src/main.cpp:72
 #, kde-format
 msgid "Design"
 msgstr "設計"
 
-#: src/main.cpp:79
+#: src/main.cpp:73
 #, kde-format
 msgid "Nate Graham"
 msgstr "Nate Graham"
 
-#: src/main.cpp:79 src/main.cpp:81
+#: src/main.cpp:73 src/main.cpp:75
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "設計與品質保證"
 
-#: src/main.cpp:80
+#: src/main.cpp:74
 #, kde-format
 msgid "David Redondo"
 msgstr "David Redondo"
 
-#: src/main.cpp:81
+#: src/main.cpp:75
 #, kde-format
 msgid "Noah Davis"
 msgstr "Noah Davis"
 
-#: src/main.cpp:82
+#: src/main.cpp:76
 #, kde-format
 msgid "Marco Martin"
 msgstr "Marco Martin"
 
-#: src/main.cpp:83
+#: src/main.cpp:77
 #, kde-format
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: src/main.cpp:85
+#: src/main.cpp:79
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Kisaragi Hiu"
 
-#: src/main.cpp:85
+#: src/main.cpp:79
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mail@kisaragi-hiu.com"
 
-#: src/Main.qml:73
+#: src/Main.qml:76
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "工具"
 
-#: src/Main.qml:78
+#: src/Main.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "新增頁面…"
 
-#: src/Main.qml:85
+#: src/Main.qml:88
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "編輯或移除頁面…"
 
-#: src/Main.qml:91
+#: src/Main.qml:94
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "匯出目前頁面…"
 
-#: src/Main.qml:99
+#: src/Main.qml:102
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "匯入頁面…"
 
-#: src/Main.qml:105
+#: src/Main.qml:108
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "取得新頁面…"
 
-#: src/Main.qml:118
+#: src/Main.qml:125
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "展開側邊欄"
 
-#: src/Main.qml:118
+#: src/Main.qml:125
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "收起側邊欄"
 
-#: src/Main.qml:128
+#: src/Main.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "回報臭蟲…"
 
-#: src/Main.qml:134
+#: src/Main.qml:141
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "關於系統監控"
 
-#: src/Main.qml:141
+#: src/Main.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "關於 KDE"
 
-#: src/Main.qml:232
+#: src/Main.qml:239
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "新增頁面"
 
-#: src/Main.qml:253
+#: src/Main.qml:260
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "編輯頁面"
 
-#: src/Main.qml:276
+#: src/Main.qml:283
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "匯出 %1"
 
-#: src/Main.qml:278 src/Main.qml:288
+#: src/Main.qml:285 src/Main.qml:295
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "系統監控頁面 (*.page)"
 
-#: src/Main.qml:286
+#: src/Main.qml:293
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "匯入頁面"
 
-#: src/Main.qml:321
+#: src/Main.qml:319
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
@@ -310,49 +310,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "移除背景邊界"
 
-#: src/page/EditablePage.qml:108
+#: src/page/EditablePage.qml:114
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "編輯頁面"
 
-#: src/page/EditablePage.qml:118
+#: src/page/EditablePage.qml:124
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "儲存變更"
 
-#: src/page/EditablePage.qml:128
+#: src/page/EditablePage.qml:134
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "捨棄變更"
 
-#: src/page/EditablePage.qml:139
+#: src/page/EditablePage.qml:145
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "設定頁面…"
 
-#: src/page/EditablePage.qml:148
+#: src/page/EditablePage.qml:154
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "新增列"
 
-#: src/page/EditablePage.qml:157
+#: src/page/EditablePage.qml:163
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "新增標題"
 
-#: src/page/EditablePage.qml:187
+#: src/page/EditablePage.qml:193
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "設定頁面「%1」"
 
-#: src/page/EditablePage.qml:189
+#: src/page/EditablePage.qml:195
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -406,7 +406,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "已將設定存為 %1 預設檔。"
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:301
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:333
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -494,16 +494,47 @@ msgctxt "@action"
 msgid "Move"
 msgstr "移動"
 
-#: src/page/PageContents.qml:102 src/page/PageEditor.qml:133
+#: src/page/PageContents.qml:103 src/page/PageEditor.qml:134
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "本頁面遺失一些偵測器，因此顯示上會有錯誤。"
 
-#: src/page/PageContents.qml:106 src/page/PageEditor.qml:137
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:138
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "修正…"
+
+#: src/page/PageContents.qml:120
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"The changes have been copied to %1 (Old Version)."
+msgstr ""
+
+#: src/page/PageContents.qml:121
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"Would you like to keep your changes or discard your changes and use the new "
+"version of the page?"
+msgstr ""
+
+#: src/page/PageContents.qml:129
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Save Changes"
+msgctxt "@action:button"
+msgid "Keep Changes"
+msgstr "儲存變更"
+
+#: src/page/PageContents.qml:135
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Discard Changes"
+msgctxt "@action:button"
+msgid "Discard Changes"
+msgstr "捨棄變更"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -583,7 +614,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "應用程式啟動時"
 
-#: src/page/PageEditor.qml:183
+#: src/page/PageEditor.qml:184
 #, kde-format
 msgid "New Title"
 msgstr "新標題"
@@ -647,49 +678,49 @@ msgstr "起始頁面："
 msgid "Last Visited Page"
 msgstr "上次檢視的頁面"
 
-#: src/page/RowControl.qml:128
+#: src/page/RowControl.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
 msgstr "新增欄位"
 
-#: src/page/RowControl.qml:137
+#: src/page/RowControl.qml:136
 #, kde-format
 msgctxt "@action"
 msgid "Height"
 msgstr "高度"
 
-#: src/page/RowControl.qml:141
+#: src/page/RowControl.qml:140
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Balanced"
 msgstr "平衡"
 
-#: src/page/RowControl.qml:142
+#: src/page/RowControl.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
 msgstr "試著讓每一列高度相同。"
 
-#: src/page/RowControl.qml:150
+#: src/page/RowControl.qml:149
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Minimum"
 msgstr "最小化"
 
-#: src/page/RowControl.qml:151
+#: src/page/RowControl.qml:150
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
 msgstr "在維持內容正常顯示的前提下儘量使用最小的高度。"
 
-#: src/page/RowControl.qml:159
+#: src/page/RowControl.qml:158
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Maximum"
 msgstr "最大化"
 
-#: src/page/RowControl.qml:160
+#: src/page/RowControl.qml:159
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."

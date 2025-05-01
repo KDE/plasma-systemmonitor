@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-21 00:43+0000\n"
+"POT-Creation-Date: 2025-05-01 00:43+0000\n"
 "PO-Revision-Date: 2024-12-28 11:48+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -103,181 +103,181 @@ msgctxt "@menu-action"
 msgid "About System Monitor"
 msgstr "О приложении Системный монитор"
 
-#: src/main.cpp:67
+#: src/main.cpp:61
 #, kde-format
 msgid "System Monitor"
 msgstr "Системный монитор"
 
-#: src/main.cpp:69
+#: src/main.cpp:63
 #, kde-format
 msgid "An application for monitoring system resources"
 msgstr "Приложение для отслеживания использования ресурсов системы"
 
-#: src/main.cpp:71
+#: src/main.cpp:65
 #, fuzzy, kde-format
 #| msgid "© 2024 Plasma Development Team"
 msgid "© 2025 Plasma Development Team"
 msgstr "© Команда разработчиков Plasma, 2024"
 
-#: src/main.cpp:77
+#: src/main.cpp:71
 #, kde-format
 msgid "Arjen Hiemstra"
 msgstr "Arjen Hiemstra"
 
-#: src/main.cpp:77 src/main.cpp:80 src/main.cpp:82 src/main.cpp:83
+#: src/main.cpp:71 src/main.cpp:74 src/main.cpp:76 src/main.cpp:77
 #, kde-format
 msgid "Development"
 msgstr "Разработка"
 
-#: src/main.cpp:78
+#: src/main.cpp:72
 #, kde-format
 msgid "Uri Herrera"
 msgstr "Uri Herrera"
 
-#: src/main.cpp:78
+#: src/main.cpp:72
 #, kde-format
 msgid "Design"
 msgstr "Дизайн"
 
-#: src/main.cpp:79
+#: src/main.cpp:73
 #, kde-format
 msgid "Nate Graham"
 msgstr "Nate Graham"
 
-#: src/main.cpp:79 src/main.cpp:81
+#: src/main.cpp:73 src/main.cpp:75
 #, kde-format
 msgid "Design and Quality Assurance"
 msgstr "Дизайн и контроль качества"
 
-#: src/main.cpp:80
+#: src/main.cpp:74
 #, kde-format
 msgid "David Redondo"
 msgstr "David Redondo"
 
-#: src/main.cpp:81
+#: src/main.cpp:75
 #, kde-format
 msgid "Noah Davis"
 msgstr "Noah Davis"
 
-#: src/main.cpp:82
+#: src/main.cpp:76
 #, kde-format
 msgid "Marco Martin"
 msgstr "Marco Martin"
 
-#: src/main.cpp:83
+#: src/main.cpp:77
 #, kde-format
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: src/main.cpp:85
+#: src/main.cpp:79
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Александр Яворский,Дмитрий Серов"
 
-#: src/main.cpp:85
+#: src/main.cpp:79
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kekcuha@gmail.com,dmitri.s93@gmail.com"
 
-#: src/Main.qml:73
+#: src/Main.qml:76
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Инструменты"
 
-#: src/Main.qml:78
+#: src/Main.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Создать страницу…"
 
-#: src/Main.qml:85
+#: src/Main.qml:88
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Редактировать или удалить страницы..."
 
-#: src/Main.qml:91
+#: src/Main.qml:94
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Экспортировать текущую страницу..."
 
-#: src/Main.qml:99
+#: src/Main.qml:102
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Импортировать страницу…"
 
-#: src/Main.qml:105
+#: src/Main.qml:108
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Загрузить новые страницы..."
 
-#: src/Main.qml:118
+#: src/Main.qml:125
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "Развернуть боковую панель"
 
-#: src/Main.qml:118
+#: src/Main.qml:125
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "Свернуть боковую панель"
 
-#: src/Main.qml:128
+#: src/Main.qml:135
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Сообщить об ошибке..."
 
-#: src/Main.qml:134
+#: src/Main.qml:141
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "О приложении Системный монитор"
 
-#: src/Main.qml:141
+#: src/Main.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "О KDE"
 
-#: src/Main.qml:232
+#: src/Main.qml:239
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Добавление страницы"
 
-#: src/Main.qml:253
+#: src/Main.qml:260
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "Редактирование страниц"
 
-#: src/Main.qml:276
+#: src/Main.qml:283
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Экспорт %1"
 
-#: src/Main.qml:278 src/Main.qml:288
+#: src/Main.qml:285 src/Main.qml:295
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "Страница системного монитора (*page)"
 
-#: src/Main.qml:286
+#: src/Main.qml:293
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "Импорт страницы"
 
-#: src/Main.qml:321
+#: src/Main.qml:319
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
@@ -311,49 +311,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Удалить границы фона"
 
-#: src/page/EditablePage.qml:108
+#: src/page/EditablePage.qml:114
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Редактировать страницу"
 
-#: src/page/EditablePage.qml:118
+#: src/page/EditablePage.qml:124
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: src/page/EditablePage.qml:128
+#: src/page/EditablePage.qml:134
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Отменить изменения"
 
-#: src/page/EditablePage.qml:139
+#: src/page/EditablePage.qml:145
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Настроить страницу..."
 
-#: src/page/EditablePage.qml:148
+#: src/page/EditablePage.qml:154
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Добавить строку"
 
-#: src/page/EditablePage.qml:157
+#: src/page/EditablePage.qml:163
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Добавить заголовок"
 
-#: src/page/EditablePage.qml:187
+#: src/page/EditablePage.qml:193
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Настройка страницы «%1»"
 
-#: src/page/EditablePage.qml:189
+#: src/page/EditablePage.qml:195
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -407,7 +407,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Настройки сохранены как профиль %1."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:301
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:333
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -496,18 +496,49 @@ msgctxt "@action"
 msgid "Move"
 msgstr "Переместить"
 
-#: src/page/PageContents.qml:102 src/page/PageEditor.qml:133
+#: src/page/PageContents.qml:103 src/page/PageEditor.qml:134
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr ""
 "Эта страница будет отображаться неверно, так как отсутствуют некоторые из "
 "используемых страницей датчиков."
 
-#: src/page/PageContents.qml:106 src/page/PageEditor.qml:137
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:138
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "Исправить…"
+
+#: src/page/PageContents.qml:120
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"The changes have been copied to %1 (Old Version)."
+msgstr ""
+
+#: src/page/PageContents.qml:121
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"Would you like to keep your changes or discard your changes and use the new "
+"version of the page?"
+msgstr ""
+
+#: src/page/PageContents.qml:129
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Save Changes"
+msgctxt "@action:button"
+msgid "Keep Changes"
+msgstr "Сохранить изменения"
+
+#: src/page/PageContents.qml:135
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Discard Changes"
+msgctxt "@action:button"
+msgid "Discard Changes"
+msgstr "Отменить изменения"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -587,7 +618,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "При запуске приложения"
 
-#: src/page/PageEditor.qml:183
+#: src/page/PageEditor.qml:184
 #, kde-format
 msgid "New Title"
 msgstr "Новый заголовок"
@@ -651,49 +682,49 @@ msgstr "Начальная страница:"
 msgid "Last Visited Page"
 msgstr "Последние страницы"
 
-#: src/page/RowControl.qml:128
+#: src/page/RowControl.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
 msgstr "Добавить столбец"
 
-#: src/page/RowControl.qml:137
+#: src/page/RowControl.qml:136
 #, kde-format
 msgctxt "@action"
 msgid "Height"
 msgstr "Высота"
 
-#: src/page/RowControl.qml:141
+#: src/page/RowControl.qml:140
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Balanced"
 msgstr "Сбалансировано"
 
-#: src/page/RowControl.qml:142
+#: src/page/RowControl.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
 msgstr "Использовать единую высоту строки."
 
-#: src/page/RowControl.qml:150
+#: src/page/RowControl.qml:149
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Minimum"
 msgstr "Минимум"
 
-#: src/page/RowControl.qml:151
+#: src/page/RowControl.qml:150
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
 msgstr "Использовать минимально необходимую высоту строки."
 
-#: src/page/RowControl.qml:159
+#: src/page/RowControl.qml:158
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Maximum"
 msgstr "Максимум"
 
-#: src/page/RowControl.qml:160
+#: src/page/RowControl.qml:159
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
