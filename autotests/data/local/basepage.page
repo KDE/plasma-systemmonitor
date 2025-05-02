@@ -6,3 +6,11 @@ highPrioritySensorIds=["gpu/all/usage"]
 
 [page]
 Title=Base Page
+Title[ca]=Pàgina base
+Title[es]=Página base
+Title[ka]=საბაზისო გვერდი
+Title[nl]=Basispagina
+Title[sl]=Osnovna stran
+Title[uk]=Основна сторінка
+Title[x-test]=xxBase Pagexx
+Title[zh_TW]=基本頁面

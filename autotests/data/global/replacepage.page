@@ -10,6 +10,14 @@ highPrioritySensorIds=["cpu/all/usage"]
 
 [page]
 Title=Replace Page
+Title[ca]=Pàgina de substitució
+Title[es]=Sustituir página
+Title[ka]=გვერდის ჩანაცვლება
+Title[nl]=Pagina vervangen
+Title[sl]=Zamenjaj stran
+Title[uk]=Замінити сторінку
+Title[x-test]=xxReplace Pagexx
+Title[zh_TW]=取代頁面
 actionsFace=
 icon=ksysguardd
 loadType=onstart

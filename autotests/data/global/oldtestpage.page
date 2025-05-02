@@ -10,6 +10,14 @@ highPrioritySensorIds=["cpu/all/usage"]
 
 [page]
 Title=Old Test Page
+Title[ca]=Pàgina de prova antiga
+Title[es]=Página de prueba anterior
+Title[ka]=ძველი სატესტო გვერდ	ი
+Title[nl]=Oude testpagina
+Title[sl]=Stara testna stran
+Title[uk]=Стара тестова сторінка
+Title[x-test]=xxOld Test Pagexx
+Title[zh_TW]=舊的測試頁面
 actionsFace=
 icon=ksysguardd
 loadType=onstart

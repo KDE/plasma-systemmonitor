@@ -10,6 +10,14 @@ highPrioritySensorIds=["cpu/all/usage"]
 
 [page]
 Title=New Base Page
+Title[ca]=Pàgina base nova
+Title[es]=Nueva página base
+Title[ka]=ახალი საბაზისო გვერდი
+Title[nl]=Nieuwe basispagina
+Title[sl]=Nova osnovna stran
+Title[uk]=Нова основна сторінка
+Title[x-test]=xxNew Base Pagexx
+Title[zh_TW]=新的基本頁面
 actionsFace=
 icon=ksysguardd
 loadType=onstart

@@ -191,6 +191,14 @@ heightMode=minimum
 isTitle=true
 name=row-3
 Title=GPU
+Title[ca]=GPU
+Title[es]=GPU
+Title[ka]=GPU
+Title[nl]=GPU
+Title[sl]=GPE
+Title[uk]=ГП
+Title[x-test]=xxGPUxx
+Title[zh_TW]=GPU
 
 [page][row-4]
 Title=
