@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-01 00:43+0000\n"
-"PO-Revision-Date: 2025-03-05 19:37+0900\n"
+"PO-Revision-Date: 2025-05-01 17:34+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 25.07.70\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -511,6 +511,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"已安裝了這個頁面的新版本，但您曾經變更過這個頁面。您先前變更的版本已複製到"
+"「%1（舊版）」。"
 
 #: src/page/PageContents.qml:121
 #, kde-format
@@ -519,19 +521,17 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"已安裝了這個頁面的新版本，但您曾經變更過這個頁面。您要保留您的變更，還是要捨"
+"棄變更並使用頁面的新版本？"
 
 #: src/page/PageContents.qml:129
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "儲存變更"
+msgstr "保留變更"
 
 #: src/page/PageContents.qml:135
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "捨棄變更"

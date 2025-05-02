@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-01 00:43+0000\n"
-"PO-Revision-Date: 2025-02-26 17:06+0100\n"
+"PO-Revision-Date: 2025-05-01 18:58+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -511,6 +511,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Een nieuwe versie van deze pagina is geïnstalleerd, maar u hebt wijzigingen "
+"op deze pagina gemaakt. De wijzigingen zijn gekopieerd naar %1 (oude versie)."
 
 #: src/page/PageContents.qml:121
 #, kde-format
@@ -519,22 +521,21 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Een nieuwe versie van deze pagina is geïnstalleerd, maar u hebt wijzigingen "
+"op deze pagina gemaakt. Wilt u uw wijzigingen behouden of uw wijzigingen "
+"verwerpen en de nieuwe versie van de pagina gebruiken?"
 
 #: src/page/PageContents.qml:129
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Wijzigingen opslaan"
+msgstr "Wijzigingen behouden"
 
 #: src/page/PageContents.qml:135
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
-msgstr "Wijzigingen negeren"
+msgstr "Wijzigingen verwerpen"
 
 #: src/page/PageDialog.qml:21
 #, kde-format

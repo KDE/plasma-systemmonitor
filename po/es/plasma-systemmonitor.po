@@ -1,4 +1,4 @@
-# Translation of plasma-systemmonitor to Spanish
+# Spanish translations for plasma-systemmonitor.po package.
 # Copyright (C) 2020-2025 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-01 00:43+0000\n"
-"PO-Revision-Date: 2025-02-27 00:25+0100\n"
+"PO-Revision-Date: 2025-05-02 02:05+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -514,6 +514,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Se ha instalado una nueva versión de esta página, pero ha hecho cambios en "
+"ella. Los cambios se han copiado en %1 (versión antigua)."
 
 #: src/page/PageContents.qml:121
 #, kde-format
@@ -522,19 +524,18 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Se ha instalado una nueva versión de esta página, pero ha hecho cambios en "
+"ella. ¿Desea mantener los cambios o descartarlos y usar la nueva versión de "
+"la página?"
 
 #: src/page/PageContents.qml:129
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Guardar cambios"
+msgstr "Mantener cambios"
 
 #: src/page/PageContents.qml:135
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "Descartar cambios"
@@ -783,10 +784,3 @@ msgstr "Matar una ventana…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Lanzar %1"
-
-#~ msgid "Placeholder"
-#~ msgstr "Texto para sustituir"
-
-#~ msgctxt "@action:button"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"

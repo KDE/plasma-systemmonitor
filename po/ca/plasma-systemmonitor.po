@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-01 00:43+0000\n"
-"PO-Revision-Date: 2025-02-26 09:33+0100\n"
+"PO-Revision-Date: 2025-05-01 10:42+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -513,6 +513,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"S'ha instal·lat una versió nova d'aquesta pàgina, però heu fet canvis en "
+"aquesta pàgina. Els canvis s'han copiat a %1 (versió antiga)."
 
 #: src/page/PageContents.qml:121
 #, kde-format
@@ -521,19 +523,18 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"S'ha instal·lat una versió nova d'aquesta pàgina, però heu fet canvis en "
+"aquesta pàgina. Voleu mantenir els canvis o descartar els canvis i utilitzar "
+"la versió nova de la pàgina?"
 
 #: src/page/PageContents.qml:129
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Desa els canvis"
+msgstr "Mantén els canvis"
 
 #: src/page/PageContents.qml:135
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "Descarta els canvis"
