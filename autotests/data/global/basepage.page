@@ -11,6 +11,7 @@ highPrioritySensorIds=["cpu/all/usage"]
 [page]
 Title=New Base Page
 Title[ca]=Pàgina base nova
+Title[ca@valencia]=Pàgina base nova
 Title[es]=Nueva página base
 Title[ka]=ახალი საბაზისო გვერდი
 Title[nl]=Nieuwe basispagina

@@ -33,6 +33,7 @@ margin=2
 loadType=onstart
 Title=History (Old Version)
 Title[ca]=Historial (Versió antiga)
+Title[ca@valencia]=Historial (versió antiga)
 Title[es]=Historial (versión antigua)
 Title[ka]=ისტორია (ძველი ვერსია)
 Title[nl]=Geschiedenis (oude versie)

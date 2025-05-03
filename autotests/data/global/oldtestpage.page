@@ -11,6 +11,7 @@ highPrioritySensorIds=["cpu/all/usage"]
 [page]
 Title=Old Test Page
 Title[ca]=Pàgina de prova antiga
+Title[ca@valencia]=Pàgina de prova antiga
 Title[es]=Página de prueba anterior
 Title[ka]=ძველი სატესტო გვერდ	ი
 Title[nl]=Oude testpagina

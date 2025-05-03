@@ -11,6 +11,7 @@ highPrioritySensorIds=["cpu/all/usage"]
 [page]
 Title=Local Page
 Title[ca]=Pàgina local
+Title[ca@valencia]=Pàgina local
 Title[es]=Página local
 Title[ka]=ლოკალური გვერდი
 Title[nl]=Lokale pagina

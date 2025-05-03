@@ -11,6 +11,7 @@ highPrioritySensorIds=["cpu/all/usage"]
 [page]
 Title=Old Base Page
 Title[ca]=Pàgina base antiga
+Title[ca@valencia]=Pàgina base antiga
 Title[es]=Página base anterior
 Title[ka]=ძველი საბაზისო გვერდი
 Title[nl]=Oude basispagina

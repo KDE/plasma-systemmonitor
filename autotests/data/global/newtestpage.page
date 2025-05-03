@@ -11,6 +11,7 @@ highPrioritySensorIds=["cpu/all/usage"]
 [page]
 Title=New Test Page
 Title[ca]=Pàgina de prova nova
+Title[ca@valencia]=Pàgina de prova nova
 Title[es]=Nueva página de prueba
 Title[ka]=ახალი სატესტო გვერდი
 Title[nl]=Nieuwe testpagina
