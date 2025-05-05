@@ -32,6 +32,7 @@ icon=office-chart-line
 margin=2
 loadType=onstart
 Title=History (Old Version)
+Title[ar]=التاريخ (الإصدار القديم)
 Title[ca]=Historial (Versió antiga)
 Title[ca@valencia]=Historial (versió antiga)
 Title[es]=Historial (versión antigua)

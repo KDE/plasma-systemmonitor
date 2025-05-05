@@ -10,6 +10,7 @@ highPrioritySensorIds=["cpu/all/usage"]
 
 [page]
 Title=Local Page
+Title[ar]=الصفحة المحلية
 Title[ca]=Pàgina local
 Title[ca@valencia]=Pàgina local
 Title[es]=Página local

@@ -10,6 +10,7 @@ highPrioritySensorIds=["cpu/all/usage"]
 
 [page]
 Title=Local Replaced Page
+Title[ar]=الصفحة المستبدلة المحلية
 Title[ca]=Pàgina substituïda local
 Title[ca@valencia]=Pàgina substituïda local
 Title[es]=Página local sustituida

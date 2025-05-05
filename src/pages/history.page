@@ -191,6 +191,7 @@ heightMode=minimum
 isTitle=true
 name=row-3
 Title=GPU
+Title[ar]=معالج الرسوميات
 Title[ca]=GPU
 Title[ca@valencia]=GPU
 Title[es]=GPU

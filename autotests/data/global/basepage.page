@@ -10,6 +10,7 @@ highPrioritySensorIds=["cpu/all/usage"]
 
 [page]
 Title=New Base Page
+Title[ar]=صفحة أساس جديدة
 Title[ca]=Pàgina base nova
 Title[ca@valencia]=Pàgina base nova
 Title[es]=Nueva página base

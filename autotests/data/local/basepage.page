@@ -6,6 +6,7 @@ highPrioritySensorIds=["gpu/all/usage"]
 
 [page]
 Title=Base Page
+Title[ar]=الصفحة الأساس
 Title[ca]=Pàgina base
 Title[ca@valencia]=Pàgina base
 Title[es]=Página base
