@@ -5,21 +5,22 @@
 # Frederik Schwarzer <schwarzer@kde.org>, 2021, 2022, 2023.
 # Jannick Kuhr <opensource@kuhr.org>, 2023.
 # SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
+# SPDX-FileCopyrightText: 2025 Flori G <Renner03@protonmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-08 02:47+0000\n"
-"PO-Revision-Date: 2024-04-24 00:14+0200\n"
-"Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
+"PO-Revision-Date: 2025-02-22 03:03+0100\n"
+"Last-Translator: Flori G <Renner03@protonmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -97,7 +98,7 @@ msgstr "Hilfe"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr "Probleme oder Wünsche berichten ..."
+msgstr "Problem melden …"
 
 #: src/GlobalMenu.qml:91
 #, kde-format
@@ -228,7 +229,7 @@ msgstr "Seitenleiste einklappen"
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr "Probleme oder Wünsche berichten ..."
+msgstr "Problem melden …"
 
 #: src/main.qml:116
 #, kde-format
