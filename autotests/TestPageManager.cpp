@@ -19,6 +19,7 @@ class PageManagerTest : public QObject
     Q_OBJECT
 
     std::filesystem::path m_appDataWriteLocation;
+    std::filesystem::path m_appDataReadLocation;
 
     // Helper function to create and load a new page manager instance.
     // This avoids us needing to use the singleton instance, so we don't store
@@ -47,13 +48,16 @@ private Q_SLOTS:
         QCoreApplication::setApplicationName(u"plasma-systemmonitor"_s);
 
         auto path = QFINDTESTDATA("TestPageManager_data/plasma-systemmonitor/newtestpage.page");
+        auto systemDir = path.left(path.indexOf("plasma-systemmonitor/newtestpage.page"));
         QStringList dataDirs = {
-            path.left(path.indexOf("plasma-systemmonitor/newtestpage.page")),
+            systemDir,
             // To test that we handle non-existent paths correctly.
             u"/some/nonexistent/path/"_s,
         };
         qputenv("XDG_DATA_DIRS", dataDirs.join(':').toUtf8());
         QStandardPaths::setTestModeEnabled(true);
+
+        m_appDataReadLocation = fs::path(systemDir.toStdString()) / "plasma-systemmonitor";
 
         m_appDataWriteLocation = fs::path(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation).toStdString());
         fs::create_directories(m_appDataWriteLocation);
@@ -247,6 +251,28 @@ private Q_SLOTS:
         KConfig config(QString::fromStdString(newTestPage->path()), KConfig::SimpleConfig);
         QVERIFY(config.hasGroup(u"page"_s));
         QCOMPARE(config.group("page").readEntry("Title", QString{}), u"Edited Title");
+    }
+
+    void testReset()
+    {
+        auto pm = makePageManager();
+
+        auto newTestPage = pm->page(u"newtestpage.page"_s);
+        QVERIFY(newTestPage);
+
+        newTestPage->edit();
+        newTestPage->data()->setProperty("title", u"Edited Title"_s);
+        newTestPage->save();
+
+        QCOMPARE(newTestPage->path(), m_appDataWriteLocation / "newtestpage.page");
+        QCOMPARE(newTestPage->writeableState(), PageController::WriteableState::LocalChanges);
+
+        pm->removeLocalPageFiles(newTestPage->fileName());
+
+        QCOMPARE(newTestPage->path(), m_appDataReadLocation / "newtestpage.page");
+        QCOMPARE(newTestPage->writeableState(), PageController::WriteableState::NotWriteable);
+
+        QCOMPARE(newTestPage->data()->property("title").toString(), u"New Test Page"_s);
     }
 };
 
