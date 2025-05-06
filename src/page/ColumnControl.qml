@@ -137,7 +137,7 @@ Container {
             text: i18nc("@action", "Remove Background Margins")
             enabled: control.columnData.showBackground
             checkable: true
-            checked: control.columnData.noMargins
+            checked: control.columnData.noMargins ?? false
             onTriggered: control.columnData.noMargins = !control.columnData.noMargins
         }
     ]
