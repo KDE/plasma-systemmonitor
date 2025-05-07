@@ -285,6 +285,7 @@ void PageManager::removeLocalPageFiles(const QString &fileName)
         Q_EMIT pageRemoved(controller);
         Q_EMIT pagesChanged();
     } else {
+        controller->m_path = fs::path(QStandardPaths::locate(QStandardPaths::AppDataLocation, fileName).toStdString());
         controller->reset();
         controller->setWriteableState(PageController::WriteableState::NotWriteable);
         Q_EMIT pageReset(controller);
