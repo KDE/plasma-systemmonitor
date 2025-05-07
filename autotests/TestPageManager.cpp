@@ -113,6 +113,9 @@ private Q_SLOTS:
         QVERIFY(basePage);
         QCOMPARE(basePage->isOutdated(), true);
         QCOMPARE(basePage->writeableState(), PageController::WriteableState::LocalChanges);
+
+        // Ensure we're not inadvertently sharing data between pages.
+        QCOMPARE(basePage->config()->groupList().contains("Face-79169072682643"), false);
     }
 
     void testReplaceOutdated()

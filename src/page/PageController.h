@@ -9,6 +9,7 @@
 #include <filesystem>
 
 #include <KSharedConfig>
+#include <QTemporaryFile>
 
 #include "PageDataObject.h"
 
@@ -158,4 +159,5 @@ private:
     bool m_replacedOutdated = false;
     WriteableState m_writeableState = WriteableState::Unknown;
     KSharedConfig::Ptr m_config;
+    std::unique_ptr<QTemporaryFile> m_temporaryConfigFile;
 };

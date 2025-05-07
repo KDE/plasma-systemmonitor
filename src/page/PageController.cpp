@@ -108,9 +108,22 @@ bool PageController::load()
         config = KSharedConfig::openConfig(fileName(), KConfig::CascadeConfig, QStandardPaths::AppDataLocation);
     }
 
-    // Store data in an in-memory only version of the page, so things don't try
-    // to write to non-writeable files.
     m_config = KSharedConfig::openConfig(QString{}, KConfig::SimpleConfig);
+    // To prevent KConfig from trying to write to read-only files we need a
+    // KConfig object that points to a writable location. Ideally we'd use a
+    // purely in-memory config object for this, but KSharedConfig does not handle
+    // those well, effectively sharing all data between different instances of
+    // in-memory files. While that can be fixed by not using KSharedConfig here,
+    // SensorFaceController uses KConfigLoader which indirectly uses
+    // KSharedConfig, despite what its API suggests. To workaround all this mess,
+    // just create a temporary file that gets deleted whenever a different file
+    // is loaded or we close the application.
+    m_temporaryConfigFile = std::make_unique<QTemporaryFile>();
+    if (!m_temporaryConfigFile->open()) {
+        return false;
+    }
+    m_config = KSharedConfig::openConfig(m_temporaryConfigFile->fileName(), KConfig::SimpleConfig);
+
     const auto groups = config->groupList();
     for (auto groupName : groups) {
         auto group = m_config->group(groupName);
