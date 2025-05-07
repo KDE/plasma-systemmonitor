@@ -189,11 +189,7 @@ void PageController::edit()
 void PageController::reset()
 {
     m_data->reset();
-
-    m_data->config()->markAsClean();
-    m_data->config()->reparseConfiguration();
-
-    m_data->load(*m_data->config(), u"page"_s);
+    load();
 }
 
 void PageController::copyGroupContents(const KConfigGroup &from, KConfigGroup &to)
