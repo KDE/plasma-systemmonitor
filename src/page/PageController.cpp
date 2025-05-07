@@ -71,6 +71,11 @@ PageController::WriteableState PageController::writeableState() const
     return m_writeableState;
 }
 
+KSharedConfig::Ptr PageController::config() const
+{
+    return m_config;
+}
+
 bool PageController::isModified()
 {
     if (m_writeableState == WriteableState::NotWriteable) {
@@ -105,17 +110,18 @@ bool PageController::load()
 
     // Store data in an in-memory only version of the page, so things don't try
     // to write to non-writeable files.
-    auto memoryConfig = KSharedConfig::openConfig(QString{}, KConfig::SimpleConfig);
+    m_config = KSharedConfig::openConfig(QString{}, KConfig::SimpleConfig);
     const auto groups = config->groupList();
     for (auto groupName : groups) {
-        auto group = memoryConfig->group(groupName);
+        auto group = m_config->group(groupName);
         copyGroupContents(config->group(groupName), group);
     }
 
-    m_version = memoryConfig->group(u"page"_s).readEntry("version", 0);
+    m_version = m_config->group(u"page"_s).readEntry("version", 0);
 
-    m_data = new PageDataObject(memoryConfig, fileName(), this);
-    return m_data->load(*config, u"page"_s);
+    m_data = new PageDataObject(this, fileName(), this);
+    auto result = m_data->load(*m_config, u"page"_s);
+    return result;
 }
 
 bool PageController::save(const fs::path &path)
@@ -127,7 +133,7 @@ bool PageController::save(const fs::path &path)
 
     KSharedConfig::Ptr config = KSharedConfig::openConfig(QString::fromStdString(p), KConfig::SimpleConfig);
     auto group = config->group(u"page"_s);
-    if (!m_data->save(config, group)) {
+    if (!m_data->save(*config, group)) {
         qWarning() << "Could not save page" << fileName();
         return false;
     }

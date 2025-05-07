@@ -7,6 +7,7 @@
 #include "WidgetExporter.h"
 
 #include "FaceLoader.h"
+#include "PageController.h"
 #include "PageDataObject.h"
 
 #include <KConfigGroup>
@@ -37,7 +38,9 @@ void WidgetExporter::exportAsWidget(FaceLoader *loader) const
 {
     const PageDataObject *data = loader->dataObject();
     const QString group = data->value(QStringLiteral("face")).toString();
-    const KConfigGroup configGroup = data->config()->group(group);
+
+    const auto config = data->controller()->config();
+    const KConfigGroup configGroup = config->group(group);
 
     QString script = QStringLiteral(R"(d = desktopForScreen(0)
         w = d.addWidget('org.kde.plasma.systemmonitor'))");

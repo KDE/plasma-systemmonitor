@@ -8,6 +8,8 @@
 
 #include <filesystem>
 
+#include <KSharedConfig>
+
 #include "PageDataObject.h"
 
 /*!
@@ -90,6 +92,11 @@ public:
     Q_SIGNAL void writeableStateChanged();
 
     /*!
+     * The config object associated with this page.
+     */
+    KSharedConfig::Ptr config() const;
+
+    /*!
      * Has the page data been modified in any way.
      */
     bool isModified();
@@ -154,4 +161,5 @@ private:
     bool m_outdated = false;
     bool m_replacedOutdated = false;
     WriteableState m_writeableState = WriteableState::Unknown;
+    KSharedConfig::Ptr m_config;
 };

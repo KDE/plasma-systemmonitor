@@ -70,7 +70,7 @@ void FaceLoader::setDataObject(PageDataObject *newDataObject)
         }
 
         if (!m_faceController) {
-            auto configGroup = m_dataObject->config()->group(faceConfig);
+            auto configGroup = m_dataObject->controller()->config()->group(faceConfig);
             m_faceController = new SensorFaceController(configGroup, qmlEngine(this), qmlEngine(this));
             m_faceController->setShouldSync(false);
             s_faceCache.insert(cacheName, m_faceController);
@@ -102,13 +102,13 @@ SensorFaceController *FaceLoader::controller() const
     return m_faceController;
 }
 
-void FaceLoader::save(KSharedConfig::Ptr config)
+void FaceLoader::save(const KConfigBase &config)
 {
     if (!m_faceController) {
         return;
     }
 
-    auto toGroup = config->group(m_dataObject->value(u"face"_s).toString());
+    auto toGroup = config.group(m_dataObject->value(u"face"_s).toString());
     PageController::copyGroupContents(m_faceController->configGroup(), toGroup);
 }
 
