@@ -1,11 +1,11 @@
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 # SPDX-FileCopyrightText: 2025 Arjen Hiemstra <ahiemstra@heimr.nl>
 
-[Face-99321327401776][Appearance]
+[Face-24547874613296][Appearance]
 chartFace=org.kde.ksysguard.linechart
 title=Test
 
-[Face-99321327401776][Sensors]
+[Face-24547874613296][Sensors]
 highPrioritySensorIds=["cpu/all/usage"]
 
 [page]
@@ -42,6 +42,6 @@ noMargins=
 showBackground=true
 
 [page][row-0][column-0][section-0]
-face=Face-99321327401776
+face=Face-24547874613296
 isSeparator=false
 name=section-0
