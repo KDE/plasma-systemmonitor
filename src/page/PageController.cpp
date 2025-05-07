@@ -119,6 +119,10 @@ bool PageController::load()
 
     m_version = m_config->group(u"page"_s).readEntry("version", 0);
 
+    if (m_data) {
+        m_data->deleteLater();
+    }
+
     m_data = new PageDataObject(this, fileName(), this);
     auto result = m_data->load(*m_config, u"page"_s);
     return result;
