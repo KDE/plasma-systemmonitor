@@ -125,6 +125,9 @@ bool PageController::load()
 
     m_data = new PageDataObject(this, fileName(), this);
     auto result = m_data->load(*m_config, u"page"_s);
+
+    Q_EMIT loaded();
+
     return result;
 }
 

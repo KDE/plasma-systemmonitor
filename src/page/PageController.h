@@ -52,7 +52,7 @@ public:
     /*!
      * The data object for this page.
      */
-    Q_PROPERTY(PageDataObject *data READ data CONSTANT)
+    Q_PROPERTY(PageDataObject *data READ data NOTIFY loaded)
     PageDataObject *data() const;
 
     /*!
