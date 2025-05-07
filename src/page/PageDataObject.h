@@ -10,9 +10,10 @@
 #include <QQmlPropertyMap>
 #include <qqmlregistration.h>
 
-#include <KSharedConfig>
+#include <KConfigGroup>
 
 class FaceLoader;
+class PageController;
 
 class PageDataObject : public QQmlPropertyMap
 {
@@ -24,16 +25,16 @@ class PageDataObject : public QQmlPropertyMap
     QML_UNCREATABLE("Used for data storage")
 
 public:
-    explicit PageDataObject(const KSharedConfig::Ptr &config, const QString &fileName, QObject *parent = nullptr);
+    explicit PageDataObject(PageController *controller, const QString &fileName, QObject *parent = nullptr);
 
     QQmlListProperty<PageDataObject> childrenProperty() const;
     QList<PageDataObject *> children() const;
 
-    KSharedConfig::Ptr config() const;
+    PageController *controller() const;
 
     bool load(const KConfigBase &config, const QString &groupName);
     Q_SIGNAL void loaded();
-    bool save(KSharedConfig::Ptr config, KConfigGroup &group, const QStringList &ignoreProperties = {QStringLiteral("children")});
+    bool save(const KConfigBase &config, KConfigGroup &group, const QStringList &ignoreProperties = {QStringLiteral("children")});
     Q_SIGNAL void saved();
 
     void reset();
@@ -64,9 +65,9 @@ private:
     bool isGroupEmpty(const KConfigGroup &group);
     void updateNames();
 
+    PageController *m_controller;
     QQmlListProperty<PageDataObject> m_childrenProperty;
     QList<PageDataObject *> m_children;
-    KSharedConfig::Ptr m_config;
     QString m_fileName;
     bool m_dirty = false;
     FaceLoader *m_faceLoader = nullptr;

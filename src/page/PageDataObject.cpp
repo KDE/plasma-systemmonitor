@@ -56,9 +56,9 @@ PageDataObject *objectAt(QQmlListProperty<PageDataObject> *list, qsizetype index
     return static_cast<PageDataObject *>(list->object)->children().at(index);
 }
 
-PageDataObject::PageDataObject(const KSharedConfig::Ptr &config, const QString &fileName, QObject *parent)
+PageDataObject::PageDataObject(PageController *controller, const QString &fileName, QObject *parent)
     : QQmlPropertyMap(this, parent)
-    , m_config(config)
+    , m_controller(controller)
     , m_fileName(fileName)
 {
     m_childrenProperty = QQmlListProperty<PageDataObject>(this, nullptr, &objectCount, &objectAt);
@@ -85,7 +85,7 @@ PageDataObject *PageDataObject::insertChild(int index, const QVariantMap &proper
         index = m_children.size();
     }
 
-    auto child = new PageDataObject(m_config, m_fileName, this);
+    auto child = new PageDataObject(m_controller, m_fileName, this);
     for (auto itr = properties.begin(); itr != properties.end(); ++itr) {
         QString key = itr.key();
         if (key == QLatin1String("Title")) {
@@ -164,9 +164,9 @@ int PageDataObject::childCount() const
     return m_children.size();
 }
 
-KSharedConfig::Ptr PageDataObject::config() const
+PageController *PageDataObject::controller() const
 {
-    return m_config;
+    return m_controller;
 }
 
 bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
@@ -202,6 +202,7 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
                 if (key == QLatin1String("Title")) {
                     key = QStringLiteral("title");
                 }
+
                 insert(key, value);
                 break;
             }
@@ -211,7 +212,7 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
     auto groups = group.groupList();
     groups.sort();
     for (const auto &groupName : std::as_const(groups)) {
-        auto object = new PageDataObject{m_config, m_fileName, this};
+        auto object = new PageDataObject{m_controller, m_fileName, this};
         if (object->load(group, groupName)) {
             m_children.append(object);
             connect(object, &PageDataObject::dirtyChanged, this, [this, object]() {
@@ -230,7 +231,7 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
     return true;
 }
 
-bool PageDataObject::save(KSharedConfig::Ptr config, KConfigGroup &group, const QStringList &ignoreProperties)
+bool PageDataObject::save(const KConfigBase &config, KConfigGroup &group, const QStringList &ignoreProperties)
 {
     const auto names = keys();
     for (const auto &name : names) {
