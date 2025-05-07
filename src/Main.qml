@@ -44,6 +44,11 @@ Kirigami.ApplicationWindow {
     globalDrawer: Kirigami.GlobalDrawer {
         id: globalDrawer
 
+        leftPadding: 0
+        rightPadding: 0
+        topPadding: 0
+        bottomPadding: 0
+
         handleVisible: false
         modal: false
         collapsed: Page.Configuration.sidebarCollapsed
