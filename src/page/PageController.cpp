@@ -128,6 +128,11 @@ bool PageController::save(const fs::path &path)
 {
     auto p = path;
     if (p.empty()) {
+        if (m_path.parent_path() != PageManager::writeablePagePath()) {
+            m_path = PageManager::writeablePagePath() / m_path.filename();
+            setWriteableState(WriteableState::LocalChanges);
+        }
+
         p = m_path;
     }
 
@@ -182,14 +187,6 @@ bool PageController::upgrade(PageChanges changes)
 
     m_data->reset();
     return m_data->load(*config, u"page"_s);
-}
-
-void PageController::edit()
-{
-    if (m_writeableState == WriteableState::NotWriteable) {
-        m_path = PageManager::writeablePagePath() / m_path.filename();
-        m_writeableState = WriteableState::LocalChanges;
-    }
 }
 
 void PageController::reset()

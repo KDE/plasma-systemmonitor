@@ -18,11 +18,6 @@ Kirigami.ScrollablePage {
     property PageController controller
     readonly property PageDataObject pageData: controller.data
     property bool edit: false
-    onEditChanged: {
-        if (edit) {
-            controller.edit()
-        }
-    }
 
     title: pageData.title
 
