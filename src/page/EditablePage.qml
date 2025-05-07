@@ -18,6 +18,13 @@ Kirigami.ScrollablePage {
     property PageController controller
     readonly property PageDataObject pageData: controller.data
     property bool edit: false
+    onEditChanged: {
+        if (edit) {
+            contentLoader.setSource(Qt.resolvedUrl("PageEditor.qml"), {"parentPage": page, "controller": page.controller})
+        } else {
+            contentLoader.setSource(Qt.resolvedUrl("PageContents.qml"), {"controller": page.controller})
+        }
+    }
 
     title: pageData.title
 
@@ -55,6 +62,18 @@ Kirigami.ScrollablePage {
                 }
             }
         }
+    }
+
+    Connections {
+        target: page.controller
+
+        function onLoaded() {
+            contentLoader.setSource(Qt.resolvedUrl("PageContents.qml"), {"controller": page.controller})
+        }
+    }
+
+    Component.onCompleted: {
+        contentLoader.setSource(Qt.resolvedUrl("PageContents.qml"), {"controller": page.controller})
     }
 
     readonly property real heightForContent: (parent?.height ?? 0) - topPadding - bottomPadding - (globalToolBarItem?.height ?? 0)
@@ -120,8 +139,8 @@ Kirigami.ScrollablePage {
         icon.name: "document-save"
         visible: page.edit
         onTriggered: {
-            page.edit = false
             page.controller.save()
+            page.edit = false
         }
     }
     Kirigami.Action {
@@ -130,8 +149,8 @@ Kirigami.ScrollablePage {
         icon.name: "edit-delete-remove"
         visible: page.edit
         onTriggered: {
-            page.edit = false
             page.controller.reset()
+            page.edit = false
         }
     }
     Kirigami.Action {
@@ -163,23 +182,6 @@ Kirigami.ScrollablePage {
     }
 
     readonly property var defaultActions: [editAction, saveAction, discardAction, addRowAction, addTitleAction, configureAction]
-
-    Component {
-        id: pageEditor
-
-        PageEditor {
-            parentPage: page
-            controller: page.controller
-        }
-    }
-
-    Component {
-        id: pageContents
-
-        PageContents {
-            controller: page.controller
-        }
-    }
 
     data: [
         DialogLoader {
@@ -251,7 +253,6 @@ Kirigami.ScrollablePage {
 
         property real availableHeight: page.heightForContent
 
-        sourceComponent: page.edit ? pageEditor : pageContents
         asynchronous: true
 
         onStatusChanged: {
