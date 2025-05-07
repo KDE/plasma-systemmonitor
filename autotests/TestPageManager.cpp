@@ -241,7 +241,6 @@ private Q_SLOTS:
         auto newTestPage = pm->page(u"newtestpage.page"_s);
         QVERIFY(newTestPage);
 
-        newTestPage->edit();
         newTestPage->data()->setProperty("title", "Edited Title");
         newTestPage->save();
 
@@ -260,7 +259,6 @@ private Q_SLOTS:
         auto newTestPage = pm->page(u"newtestpage.page"_s);
         QVERIFY(newTestPage);
 
-        newTestPage->edit();
         newTestPage->data()->setProperty("title", u"Edited Title"_s);
         newTestPage->save();
 

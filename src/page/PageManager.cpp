@@ -334,7 +334,6 @@ void PageManager::saveAll()
 {
     for (auto page : std::as_const(d->pages)) {
         if (page->isModified() || page->forceSaveOnDestroy()) {
-            page->edit();
             page->save();
         }
     }

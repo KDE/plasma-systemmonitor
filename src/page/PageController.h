@@ -126,10 +126,6 @@ public:
      */
     Q_INVOKABLE bool upgrade(PageChanges changes);
     /*!
-     * Begin editing the page by switching to a local, writable path.
-     */
-    Q_INVOKABLE void edit();
-    /*!
      * Reset the page to the state stored in its data file.
      */
     Q_INVOKABLE void reset();
