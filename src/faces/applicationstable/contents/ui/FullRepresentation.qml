@@ -83,12 +83,14 @@ Faces.SensorFace {
             }
 
             onContextMenuRequested: (index, position) => {
-                contextMenu.popup(null, position.x, position.y)
+                const pos = mapFromItem(null, position)
+                contextMenu.popup(table, pos)
             }
 
             onHeaderContextMenuRequested: (column, columnId, position) => {
                 headerContextMenu.columnId = columnId;
-                headerContextMenu.popup(null, position)
+                const pos = mapFromItem(null, position)
+                headerContextMenu.popup(table, pos)
             }
 
             enabledColumns: columnDialog.visibleColumns
