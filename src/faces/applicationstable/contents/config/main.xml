@@ -23,7 +23,7 @@ SPDX-License-Identifier: LGPL-2.0-or-later
             <default>0.31,0.10,0.11,0.12,0.12,0.12,0.12</default>
         </entry>
         <entry name="sortColumn" type="String">
-            <default>vmPSS</default>
+            <default>memory</default>
         </entry>
         <entry name="sortDirection" type="Int">
             <default>1</default>
