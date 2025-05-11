@@ -525,9 +525,7 @@ msgid "Keep Changes"
 msgstr "Uložit změny"
 
 #: src/page/PageContents.qml:135
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "Zahodit změny"
