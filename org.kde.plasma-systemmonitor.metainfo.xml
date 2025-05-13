@@ -64,6 +64,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="fr">Surveiller l'utilisation des applications et des ressources du système</summary>
   <summary xml:lang="gl">Vixíe o uso de recursos de aplicacións e do sistema.</summary>
   <summary xml:lang="he">מעקב אחר ניצולת משאבי יישומים ומערכת</summary>
+  <summary xml:lang="ia">Controla app e uso de ressource de systema</summary>
   <summary xml:lang="it">Monitora l'utilizzo delle risorse di sistema e delle applicazioni</summary>
   <summary xml:lang="ka">აპების და სისტემური რესურსების გამოყენების მონიტორინგი</summary>
   <summary xml:lang="lv">Pārraugiet programmas un sistēmas resursu lietojumu</summary>
@@ -72,6 +73,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="tr">Uygulama ve sistem özkaynağı kullanımını izleyin</summary>
   <summary xml:lang="uk">Спостереження за використанням ресурсів програмами та системою</summary>
   <summary xml:lang="x-test">xxMonitor app and system resource usagexx</summary>
+  <summary xml:lang="zh-CN">监视应用程序和系统资源使用情况</summary>
   <summary xml:lang="zh-TW">監控應用程式與系統的資源使用量</summary>
   <description>
     <p>Plasma System Monitor provides an interface for monitoring system sensors, process information and other system resources.</p>
