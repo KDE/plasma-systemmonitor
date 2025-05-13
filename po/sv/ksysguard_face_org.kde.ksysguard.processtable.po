@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-09 00:40+0000\n"
+"POT-Creation-Date: 2025-05-13 00:43+0000\n"
 "PO-Revision-Date: 2024-09-09 18:39+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -113,67 +113,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Anpassa kolumner…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:179
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:181
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Skicka signal"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:183
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:185
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Stoppa aktivitet (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:187
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:189
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Återuppta aktivitet (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:191
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:193
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Lägg på (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:195
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:197
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Avbryt aktivitet (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:199
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:201
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Avsluta aktivitet (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:203
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:205
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Döda aktivitet (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:207
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:209
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Användarsignal 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:211
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:213
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Användarsignal 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:217
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:219
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "Kopiera nuvarande kolumn"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:226
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:228
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -181,19 +181,19 @@ msgid_plural "End %1 Processes"
 msgstr[0] "Avsluta process"
 msgstr[1] "Avsluta %1 processer"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:239
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:241
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Dölj"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:244
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Anpassa kolumner…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:256
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:258
 #, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
@@ -201,7 +201,7 @@ msgid_plural "Forcibly End %1 Processes"
 msgstr[0] "Tvinga process att avslutas"
 msgstr[1] "Tvinga %1 processer att avslutas"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:257
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -209,7 +209,7 @@ msgid_plural "End %1 Processes"
 msgstr[0] "Avsluta process"
 msgstr[1] "Avsluta %1 processer"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
@@ -217,7 +217,7 @@ msgid_plural "Forcibly End Processes"
 msgstr[0] "Tvinga process att avslutas"
 msgstr[1] "Tvinga processer att avslutas"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:260
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:262
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -225,7 +225,7 @@ msgid_plural "End Processes"
 msgstr[0] "Avsluta process"
 msgstr[1] "Avsluta processer"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:265
 #, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
@@ -236,14 +236,14 @@ msgstr[1] ""
 "Tvinga de här %1 processerna att avslutas (SIGKILL)? Osparat arbete kan gå "
 "förlorat."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:266
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:268
 #, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
 msgstr[0] "Avsluta processen? Osparat arbete kan gå förlorat."
 msgstr[1] "Avsluta de här %1 processerna? Osparat arbete kan gå förlorat."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:278
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:280
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"

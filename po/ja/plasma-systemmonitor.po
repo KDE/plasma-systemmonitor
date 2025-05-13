@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-01 00:43+0000\n"
+"POT-Creation-Date: 2025-05-13 00:43+0000\n"
 "PO-Revision-Date: 2024-03-05 01:34+0900\n"
 "Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -310,49 +310,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "背景の余白を削除"
 
-#: src/page/EditablePage.qml:114
+#: src/page/EditablePage.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "ページを編集"
 
-#: src/page/EditablePage.qml:124
+#: src/page/EditablePage.qml:138
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "変更を保存"
 
-#: src/page/EditablePage.qml:134
+#: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "変更を破棄"
 
-#: src/page/EditablePage.qml:145
+#: src/page/EditablePage.qml:159
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "ページを設定…"
 
-#: src/page/EditablePage.qml:154
+#: src/page/EditablePage.qml:168
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "行を追加"
 
-#: src/page/EditablePage.qml:163
+#: src/page/EditablePage.qml:177
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "タイトルを追加"
 
-#: src/page/EditablePage.qml:193
+#: src/page/EditablePage.qml:190
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "ページ \"%1\" を設定"
 
-#: src/page/EditablePage.qml:195
+#: src/page/EditablePage.qml:192
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-15 00:43+0000\n"
+"POT-Creation-Date: 2025-05-13 00:43+0000\n"
 "PO-Revision-Date: 2024-12-25 19:35+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -108,67 +108,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "स्तम्भान् विन्यस्यताम्…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:198
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "प्राथमिकता निर्धारयन्तु…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:201
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "संकेतं प्रेषयन्तु"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:206
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:208
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "निलम्बयतु (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "निरन्तरं कुर्वन्तु (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:214
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "प्रतिलम्बयतु (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "व्यत्यययतु (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:222
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:224
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "समाप्तं कुर्वन्तु (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:226
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:228
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "नाशयेत् (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:230
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:232
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "उपयोक्ता १ (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:234
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:236
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "उपयोक्ता २ (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:242
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -176,13 +176,13 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "अनुप्रयोगं त्यजतु"
 msgstr[1] "%1 अनुप्रयोगाः त्यजन्तु"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:252
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:254
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "गोपयतु"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:267
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:269
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -190,7 +190,7 @@ msgid_plural "Force Quit %1 Applications"
 msgstr[0] "बलेन अनुप्रयोगं त्यजतु"
 msgstr[1] "बलेन %1 अनुप्रयोगाः त्यजन्तु"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:268
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -198,7 +198,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "अनुप्रयोगं त्यजतु"
 msgstr[1] "%1 अनुप्रयोगाः त्यजन्तु"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:272
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -206,7 +206,7 @@ msgid_plural "Force Quit Applications"
 msgstr[0] "बलेन अनुप्रयोगं त्यजतु"
 msgstr[1] "बलेन अनुप्रयोगाः त्यजन्तु"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:271
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:273
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -214,7 +214,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "अनुप्रयोगं त्यजतु"
 msgstr[1] "अनुप्रयोगाः त्यजन्तु"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:276
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -223,14 +223,14 @@ msgstr[0] "बलेन अनुप्रयोगं त्यक्तवा�
 msgstr[1] ""
 "बलात् त्यक्त्वा (SIGKILL) एतानि %1 अनुप्रयोगाः असरक्षितं कार्यं नष्टं भवितुम् अर्हति ।"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:277
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:279
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] "एतत् अनुप्रयोगं त्यजन्तु? अरक्षितं कार्यं नष्टं भवेत्।"
 msgstr[1] "एतानि %1 अनुप्रयोगाः त्यजन्तु? अरक्षितं कार्यं नष्टं भवेत्।"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:292
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

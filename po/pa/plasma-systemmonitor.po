@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-01 00:43+0000\n"
+"POT-Creation-Date: 2025-05-13 00:43+0000\n"
 "PO-Revision-Date: 2025-02-28 09:44-0600\n"
 "Last-Translator: A S Alam <aman@punlinux.org>\n"
 "Language-Team: pa\n"
@@ -306,49 +306,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "ਬੈਕਗਰਾਊਂਡ ਹਾਸ਼ੀਏ ਹਟਾਓ"
 
-#: src/page/EditablePage.qml:114
+#: src/page/EditablePage.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "ਸਫ਼ੇ ਨੂੰ ਸੋਧੋ"
 
-#: src/page/EditablePage.qml:124
+#: src/page/EditablePage.qml:138
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "ਤਬਦੀਲੀਆਂ ਸੰਭਾਲੋ"
 
-#: src/page/EditablePage.qml:134
+#: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "ਤਬਦੀਲੀਆਂ ਅਣਡਿੱਠੀਆਂ ਕਰੋ"
 
-#: src/page/EditablePage.qml:145
+#: src/page/EditablePage.qml:159
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "…ਸਫ਼ੇ ਦੀ ਸੰਰਚਨਾ"
 
-#: src/page/EditablePage.qml:154
+#: src/page/EditablePage.qml:168
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "ਕਤਾਰ ਜੋੜੋ"
 
-#: src/page/EditablePage.qml:163
+#: src/page/EditablePage.qml:177
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "ਨਾਂ ਜੋੜੋ"
 
-#: src/page/EditablePage.qml:193
+#: src/page/EditablePage.qml:190
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "\"%1\" ਸਫ਼ੇ ਦੀ ਸੰਰਚਨਾ"
 
-#: src/page/EditablePage.qml:195
+#: src/page/EditablePage.qml:192
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"

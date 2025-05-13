@@ -2,12 +2,13 @@
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
 # SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 giovanni <g.sora@tiscali.it>
+# giovanni <g.sora@tiscali.it>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-01 00:43+0000\n"
-"PO-Revision-Date: 2025-02-26 10:09+0100\n"
+"POT-Creation-Date: 2025-05-13 00:43+0000\n"
+"PO-Revision-Date: 2025-05-12 15:47+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 21.12.1\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -309,49 +310,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Remove margines de fundo"
 
-#: src/page/EditablePage.qml:114
+#: src/page/EditablePage.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Modifica pagina"
 
-#: src/page/EditablePage.qml:124
+#: src/page/EditablePage.qml:138
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Salveguarda modificationes"
 
-#: src/page/EditablePage.qml:134
+#: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Abandona modificationes"
 
-#: src/page/EditablePage.qml:145
+#: src/page/EditablePage.qml:159
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Configura pagina…"
 
-#: src/page/EditablePage.qml:154
+#: src/page/EditablePage.qml:168
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Adde linea"
 
-#: src/page/EditablePage.qml:163
+#: src/page/EditablePage.qml:177
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Adde titulo"
 
-#: src/page/EditablePage.qml:193
+#: src/page/EditablePage.qml:190
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Configura pagina \"%1\""
 
-#: src/page/EditablePage.qml:195
+#: src/page/EditablePage.qml:192
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -511,6 +512,9 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Un nove version de iste pagina esseva installate, ma tu faceva "
+"modificationes a iste pagina. Le modificationes ha essite copiate a %1 "
+"(Vetere Version)"
 
 #: src/page/PageContents.qml:121
 #, kde-format
@@ -519,19 +523,18 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Un nove version de iste pagina esseva installate, ma tu faceva "
+"modificationes a iste pagina. Tu volerea mantener tu modificationes o "
+"abandonar tu modificationes e usar lenove version de iste pagina?"
 
 #: src/page/PageContents.qml:129
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Salveguarda modificationes"
+msgstr "Mantene modificationes"
 
 #: src/page/PageContents.qml:135
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "Abandona modificationes"

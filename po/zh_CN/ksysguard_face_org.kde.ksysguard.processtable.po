@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-09 00:40+0000\n"
+"POT-Creation-Date: 2025-05-13 00:43+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -114,127 +114,127 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "配置列…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:179
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:181
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "发送信号"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:183
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:185
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "待机 (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:187
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:189
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "继续 (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:191
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:193
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "挂起 (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:195
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:197
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "中断 (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:199
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:201
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "结束 (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:203
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:205
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "强制终止 (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:207
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:209
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "用户 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:211
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:213
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "用户 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:217
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:219
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "复制当前列"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:226
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:228
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
 msgid_plural "End %1 Processes"
 msgstr[0] "结束 %1 个进程"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:239
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:241
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "隐藏"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:244
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "配置列…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:256
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:258
 #, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
 msgstr[0] "强制结束 %1 个进程"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:257
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
 msgid_plural "End %1 Processes"
 msgstr[0] "结束 %1 个进程"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
 msgstr[0] "强制结束进程"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:260
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:262
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
 msgstr[0] "结束进程"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:265
 #, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] "强制结束 (SIGKILL) 这 %1 个进程吗？未保存的工作可能会丢失。"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:266
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:268
 #, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
 msgstr[0] "结束这 %1 个进程吗？未保存的工作可能会丢失。"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:278
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:280
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"

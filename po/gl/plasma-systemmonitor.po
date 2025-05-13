@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-01 00:43+0000\n"
+"POT-Creation-Date: 2025-05-13 00:43+0000\n"
 "PO-Revision-Date: 2025-02-28 07:06+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -309,49 +309,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Retirar as marxes do fondo"
 
-#: src/page/EditablePage.qml:114
+#: src/page/EditablePage.qml:128
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Editar a páxina"
 
-#: src/page/EditablePage.qml:124
+#: src/page/EditablePage.qml:138
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Gardar os cambios"
 
-#: src/page/EditablePage.qml:134
+#: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Descartar os cambios"
 
-#: src/page/EditablePage.qml:145
+#: src/page/EditablePage.qml:159
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Configurar a páxina…"
 
-#: src/page/EditablePage.qml:154
+#: src/page/EditablePage.qml:168
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Engadir unha fila"
 
-#: src/page/EditablePage.qml:163
+#: src/page/EditablePage.qml:177
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Engadir un título"
 
-#: src/page/EditablePage.qml:193
+#: src/page/EditablePage.qml:190
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Configurar a páxina «%1»"
 
-#: src/page/EditablePage.qml:195
+#: src/page/EditablePage.qml:192
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
