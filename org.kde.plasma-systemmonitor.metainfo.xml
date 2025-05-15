@@ -58,6 +58,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="zh-TW">Plasma 系統監控</name>
   <summary>Monitor app and system resource usage</summary>
   <summary xml:lang="ar">تطبيق مراقبة ومتابعة استخدام موارد النظام</summary>
+  <summary xml:lang="bg">Проследяване на използването на приложения и системни ресурси</summary>
   <summary xml:lang="ca">Controla les aplicacions i l'ús dels recursos del sistema</summary>
   <summary xml:lang="ca-valencia">Controla les aplicacions i l'ús dels recursos del sistema</summary>
   <summary xml:lang="es">Aplicación de monitorización y uso de recursos del sistema</summary>
