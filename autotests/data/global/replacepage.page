@@ -11,6 +11,7 @@ highPrioritySensorIds=["cpu/all/usage"]
 [page]
 Title=Replace Page
 Title[ar]=استبدل الصفحة
+Title[bg]=Замяна на страницата
 Title[ca]=Pàgina de substitució
 Title[ca@valencia]=Pàgina de substitució
 Title[es]=Sustituir página

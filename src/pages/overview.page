@@ -124,6 +124,24 @@ showLegend=false
 [Face-106123406501568][Appearance]
 chartFace=org.kde.ksysguard.piechart
 Title=GPU
+Title[ar]=معالج الرسوميات
+Title[bg]=Графична карта
+Title[ca]=GPU
+Title[ca@valencia]=GPU
+Title[es]=GPU
+Title[fr]=Processeur graphique (GPU)
+Title[he]=מעבד גרפי
+Title[ia]=GPU
+Title[it]=GPU
+Title[ka]=GPU
+Title[lv]=GPU
+Title[nl]=GPU
+Title[sl]=GPE
+Title[tr]=GPU
+Title[uk]=ГП
+Title[x-test]=xxGPUxx
+Title[zh_CN]=GPU
+Title[zh_TW]=GPU
 
 [Face-106123406501568][Sensors]
 highPrioritySensorIds=["gpu/all/usage"]
