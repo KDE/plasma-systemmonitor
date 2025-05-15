@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:43+0000\n"
+"POT-Creation-Date: 2025-05-15 00:44+0000\n"
 "PO-Revision-Date: 2025-02-28 09:44-0600\n"
 "Last-Translator: A S Alam <aman@punlinux.org>\n"
 "Language-Team: pa\n"
@@ -404,7 +404,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr ""
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:333
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:348
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -494,25 +494,25 @@ msgctxt "@action"
 msgid "Move"
 msgstr "ਭੇਜੋ"
 
-#: src/page/PageContents.qml:103 src/page/PageEditor.qml:134
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr ""
 
-#: src/page/PageContents.qml:108 src/page/PageEditor.qml:138
+#: src/page/PageContents.qml:113 src/page/PageEditor.qml:145
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "…ਠੀਕ ਕਰੋ"
 
-#: src/page/PageContents.qml:120
+#: src/page/PageContents.qml:125
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
 
-#: src/page/PageContents.qml:121
+#: src/page/PageContents.qml:126
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
@@ -520,7 +520,7 @@ msgid ""
 "version of the page?"
 msgstr ""
 
-#: src/page/PageContents.qml:129
+#: src/page/PageContents.qml:134
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Save Changes"
@@ -528,7 +528,7 @@ msgctxt "@action:button"
 msgid "Keep Changes"
 msgstr "ਤਬਦੀਲੀਆਂ ਸੰਭਾਲੋ"
 
-#: src/page/PageContents.qml:135
+#: src/page/PageContents.qml:140
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Discard Changes"
@@ -614,7 +614,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ ਸ਼ੁਰੂ ਹੋਣ ਦੇ ਦੌਰਾਨ"
 
-#: src/page/PageEditor.qml:184
+#: src/page/PageEditor.qml:191
 #, kde-format
 msgid "New Title"
 msgstr "ਨਵਾਂ ਨਾਂ"
@@ -724,6 +724,18 @@ msgstr "ਵੱਧ ਤੋਂ ਵੱਧ"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
+msgstr ""
+
+#: src/page/RowControl.qml:167
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Half Page Height"
+msgstr ""
+
+#: src/page/RowControl.qml:168
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Use half the height of the page."
 msgstr ""
 
 #: src/table/ColumnConfigurationDialog.qml:27

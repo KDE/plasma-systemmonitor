@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:43+0000\n"
+"POT-Creation-Date: 2025-05-15 00:44+0000\n"
 "PO-Revision-Date: 2025-05-04 18:45+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -72,13 +72,21 @@ msgctxt "@label"
 msgid "Background Services"
 msgstr "Fona pakalpojumi"
 
-#: src/faces/applicationstable/contents/ui/Config.qml:22
+#: src/faces/applicationstable/contents/ui/Config.qml:23
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Show Details Sidebar"
+msgctxt "@option:check"
+msgid "Show toolbar"
+msgstr "Rādīt informācijas paneli"
+
+#: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
 msgctxt "@option:check"
 msgid "Show details panel"
 msgstr "Rādīt informācijas paneli"
 
-#: src/faces/applicationstable/contents/ui/Config.qml:27
+#: src/faces/applicationstable/contents/ui/Config.qml:33
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm when quitting applications"
@@ -102,73 +110,73 @@ msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "Rādīt informācijas paneli"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:67
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:68
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Konfigurēt kolonnas…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Noteikt prioritāti…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Sūtīt signālu"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:208
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:254
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Aizturēt (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Turpināt (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:262
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Nolikt (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Pārtraukt (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:224
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Izbeigt (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:228
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Nobeigt (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:232
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "1. lietotājs (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:236
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "2. lietotājs (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:244
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -177,13 +185,13 @@ msgstr[0] "Aizvērt %1 programmu"
 msgstr[1] "Aizvērt %1 programmas"
 msgstr[2] "Aizvērt %1 programmu"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:254
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:300
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Paslēpt"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:269
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:315
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -192,7 +200,7 @@ msgstr[0] "Piespiedu aizvērt %1 programmu"
 msgstr[1] "Piespiedu aizvērt %1 programmas"
 msgstr[2] "Piespiedu aizvērt %1 programmu"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:316
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -201,7 +209,7 @@ msgstr[0] "Aizvērt %1 programmu"
 msgstr[1] "Aizvērt %1 programmas"
 msgstr[2] "Aizvērt %1 programmu"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:272
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:318
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -210,7 +218,7 @@ msgstr[0] "Piespiedu aizvērt programmu"
 msgstr[1] "Piespiedu aizvērt programmas"
 msgstr[2] "Piespiedu aizvērt programmas"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:273
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:319
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -219,7 +227,7 @@ msgstr[0] "Aizvērt programmu"
 msgstr[1] "Aizvērt programmas"
 msgstr[2] "Aizvērt programmas"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:276
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:322
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -234,7 +242,7 @@ msgstr[2] ""
 "Vai piespiedu aizvērt (SIGKILL) šīs %1 programmas? Nesaglabātais darbs būs "
 "zudis."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:279
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:325
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
@@ -242,7 +250,7 @@ msgstr[0] "Vai aizvērt šo %1 programmu? Nesaglabātais darbs būs zudis."
 msgstr[1] "Vai aizvērt šīs %1 programmas? Nesaglabātais darbs būs zudis."
 msgstr[2] "Vai aizvērt šīs %1 programmas? Nesaglabātais darbs būs zudis."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:340
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

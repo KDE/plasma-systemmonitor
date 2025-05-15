@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:43+0000\n"
+"POT-Creation-Date: 2025-05-15 00:44+0000\n"
 "PO-Revision-Date: 2024-09-22 12:52+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -17,37 +17,43 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 24.07.70\n"
 
-#: src/faces/processtable/contents/ui/Config.qml:24
+#: src/faces/processtable/contents/ui/Config.qml:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Show toolbar"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/Config.qml:30
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
 msgstr "Потвърждаване на прекратяването на процесите."
 
-#: src/faces/processtable/contents/ui/Config.qml:29
+#: src/faces/processtable/contents/ui/Config.qml:35
 #, kde-format
 msgctxt "@label:listbox"
 msgid "By default show:"
 msgstr "Показване по подразбиране:"
 
-#: src/faces/processtable/contents/ui/Config.qml:38
+#: src/faces/processtable/contents/ui/Config.qml:44
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "Собствени процеси"
 
-#: src/faces/processtable/contents/ui/Config.qml:39
+#: src/faces/processtable/contents/ui/Config.qml:45
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "Потребителски процеси"
 
-#: src/faces/processtable/contents/ui/Config.qml:40
+#: src/faces/processtable/contents/ui/Config.qml:46
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "Системни процеси"
 
-#: src/faces/processtable/contents/ui/Config.qml:41
+#: src/faces/processtable/contents/ui/Config.qml:47
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
@@ -113,67 +119,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Конфигуриране на колони…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:181
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:243
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Изпращане на сигнал"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:185
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Спиране (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:189
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:251
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Продължаване (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:193
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Задържане (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:197
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Прекъсване (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:201
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Прекратяване (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:205
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:267
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Принудително прекратяване (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:209
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:271
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Потребител 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:213
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:275
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Потребител 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:219
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:281
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "Копиране на текущата колона"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:228
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:290
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -181,19 +187,19 @@ msgid_plural "End %1 Processes"
 msgstr[0] "Край на процеса"
 msgstr[1] "Край на %1 процеса"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:241
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:303
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Скриване"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:308
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Конфигуриране на колони…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:258
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:320
 #, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
@@ -201,7 +207,7 @@ msgid_plural "Forcibly End %1 Processes"
 msgstr[0] "Принудително прекратяване на процес"
 msgstr[1] "Принудително прекратяване на %1 процеси"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:321
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -209,7 +215,7 @@ msgid_plural "End %1 Processes"
 msgstr[0] "Край на процеса"
 msgstr[1] "Край на %1процеса"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:261
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:323
 #, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
@@ -217,7 +223,7 @@ msgid_plural "Forcibly End Processes"
 msgstr[0] "Принудително прекратяване на процес"
 msgstr[1] "Принудително прекратяване на процеси"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:262
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:324
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -225,7 +231,7 @@ msgid_plural "End Processes"
 msgstr[0] "Спиране на процес"
 msgstr[1] "Спиране на процесите"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:265
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:327
 #, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
@@ -237,7 +243,7 @@ msgstr[1] ""
 "Принудително прекратяване (SIGKILL) на тези %1 процеси? Незапазената работа "
 "може да бъде загубена."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:268
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:330
 #, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
@@ -246,7 +252,7 @@ msgstr[0] ""
 msgstr[1] ""
 "Прекратяване на тези %1 процеси? Незапазената работа може да бъде загубена."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:280
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:342
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"

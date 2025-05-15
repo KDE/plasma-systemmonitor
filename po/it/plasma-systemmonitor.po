@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:43+0000\n"
+"POT-Creation-Date: 2025-05-15 00:44+0000\n"
 "PO-Revision-Date: 2025-05-01 17:50+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -405,7 +405,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Salva impostazioni come preimpostazione %1."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:333
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:348
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -493,20 +493,20 @@ msgctxt "@action"
 msgid "Move"
 msgstr "Sposta"
 
-#: src/page/PageContents.qml:103 src/page/PageEditor.qml:134
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr ""
 "In questa pagina mancano alcuni sensori e non sarà visualizzata "
 "correttamente."
 
-#: src/page/PageContents.qml:108 src/page/PageEditor.qml:138
+#: src/page/PageContents.qml:113 src/page/PageEditor.qml:145
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "Correggi…"
 
-#: src/page/PageContents.qml:120
+#: src/page/PageContents.qml:125
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
@@ -515,7 +515,7 @@ msgstr ""
 "È stata installata una nuova versione di questa pagina, ma hai apportato "
 "delle modifiche. Le modifiche sono state copiate in %1 (vecchia versione)."
 
-#: src/page/PageContents.qml:121
+#: src/page/PageContents.qml:126
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
@@ -526,13 +526,13 @@ msgstr ""
 "delle modifiche. Desideri mantenere le modifiche o scartarle e utilizzare la "
 "nuova versione della pagina?"
 
-#: src/page/PageContents.qml:129
+#: src/page/PageContents.qml:134
 #, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
 msgstr "Mantieni le modifiche"
 
-#: src/page/PageContents.qml:135
+#: src/page/PageContents.qml:140
 #, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
@@ -616,7 +616,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "Durante l'avvio dell'applicazione"
 
-#: src/page/PageEditor.qml:184
+#: src/page/PageEditor.qml:191
 #, kde-format
 msgid "New Title"
 msgstr "Nuovo titolo"
@@ -728,6 +728,18 @@ msgstr "Massima"
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
 msgstr "Cerca di usare più altezza possibile."
+
+#: src/page/RowControl.qml:167
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Half Page Height"
+msgstr ""
+
+#: src/page/RowControl.qml:168
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Use half the height of the page."
+msgstr ""
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format

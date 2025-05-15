@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:43+0000\n"
+"POT-Creation-Date: 2025-05-15 00:44+0000\n"
 "PO-Revision-Date: 2025-03-09 17:25+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -405,7 +405,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "%1 என்ற முன்னமைக்கப்பாக அமைப்புகள் சேமிக்கப்பட்டன."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:333
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:348
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -493,25 +493,25 @@ msgctxt "@action"
 msgid "Move"
 msgstr "நகற்று"
 
-#: src/page/PageContents.qml:103 src/page/PageEditor.qml:134
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "இப்பக்கத்துக்கு தேவையான சில உணரிகள் இல்லாத‍தால், இது சரியாக செயல்படாது."
 
-#: src/page/PageContents.qml:108 src/page/PageEditor.qml:138
+#: src/page/PageContents.qml:113 src/page/PageEditor.qml:145
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "சரிசெய்…"
 
-#: src/page/PageContents.qml:120
+#: src/page/PageContents.qml:125
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
 
-#: src/page/PageContents.qml:121
+#: src/page/PageContents.qml:126
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
@@ -519,7 +519,7 @@ msgid ""
 "version of the page?"
 msgstr ""
 
-#: src/page/PageContents.qml:129
+#: src/page/PageContents.qml:134
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Save Changes"
@@ -527,7 +527,7 @@ msgctxt "@action:button"
 msgid "Keep Changes"
 msgstr "மாற்றங்களை சேமி"
 
-#: src/page/PageContents.qml:135
+#: src/page/PageContents.qml:140
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Discard Changes"
@@ -613,7 +613,7 @@ msgctxt "@item:inlistbox"
 msgid "During application startup"
 msgstr "செயலியை துவக்கும்போது"
 
-#: src/page/PageEditor.qml:184
+#: src/page/PageEditor.qml:191
 #, kde-format
 msgid "New Title"
 msgstr "புதிய தலைப்பு"
@@ -724,6 +724,18 @@ msgstr "அதிகபட்சம்"
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
 msgstr "சாத்தியமான அதிகபட்ச உயரத்தை பயன்படுத்தும்."
+
+#: src/page/RowControl.qml:167
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Half Page Height"
+msgstr ""
+
+#: src/page/RowControl.qml:168
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Use half the height of the page."
+msgstr ""
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format

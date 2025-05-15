@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:43+0000\n"
+"POT-Creation-Date: 2025-05-15 00:44+0000\n"
 "PO-Revision-Date: 2024-12-15 17:35+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -17,37 +17,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: src/faces/processtable/contents/ui/Config.qml:24
+#: src/faces/processtable/contents/ui/Config.qml:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Show toolbar"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/Config.qml:30
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
 msgstr "समाप्त होने वाली प्रक्रियाओं की पुष्टि करें"
 
-#: src/faces/processtable/contents/ui/Config.qml:29
+#: src/faces/processtable/contents/ui/Config.qml:35
 #, kde-format
 msgctxt "@label:listbox"
 msgid "By default show:"
 msgstr "डिफ़ॉल्ट रूप से दिखाएँ:"
 
-#: src/faces/processtable/contents/ui/Config.qml:38
+#: src/faces/processtable/contents/ui/Config.qml:44
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "स्वयं की प्रक्रियाएं"
 
-#: src/faces/processtable/contents/ui/Config.qml:39
+#: src/faces/processtable/contents/ui/Config.qml:45
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "उपयोगकर्ता प्रक्रियाएँ"
 
-#: src/faces/processtable/contents/ui/Config.qml:40
+#: src/faces/processtable/contents/ui/Config.qml:46
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "सिस्टम प्रक्रियाएँ"
 
-#: src/faces/processtable/contents/ui/Config.qml:41
+#: src/faces/processtable/contents/ui/Config.qml:47
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
@@ -113,67 +119,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "कॉलम कॉन्फ़िगर करें…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:181
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:243
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "सिग्नल भेजें"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:185
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "निलंबित करें (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:189
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:251
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "जारी रखें (जारी रखें)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:193
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "हैंगअप (एचयूपी)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:197
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "इंटरप्ट (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:201
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "समाप्त करें (अवधि)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:205
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:267
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "मार डालो (मार डालो)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:209
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:271
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "उपयोगकर्ता 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:213
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:275
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "उपयोगकर्ता 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:219
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:281
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "वर्तमान कॉलम कॉपी करें"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:228
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:290
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -181,19 +187,19 @@ msgid_plural "End %1 Processes"
 msgstr[0] "%1 प्रक्रियाएँ समाप्त करें"
 msgstr[1] "%1 प्रक्रियाएँ समाप्त करें"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:241
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:303
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "छिपाना"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:246
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:308
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "कॉलम कॉन्फ़िगर करें…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:258
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:320
 #, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
@@ -201,7 +207,7 @@ msgid_plural "Forcibly End %1 Processes"
 msgstr[0] "%1 प्रक्रियाओं को बलपूर्वक समाप्त करें"
 msgstr[1] "%1 प्रक्रियाओं को बलपूर्वक समाप्त करें"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:321
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -209,7 +215,7 @@ msgid_plural "End %1 Processes"
 msgstr[0] "%1 प्रक्रियाएँ समाप्त करें"
 msgstr[1] "%1 प्रक्रियाएँ समाप्त करें"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:261
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:323
 #, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
@@ -217,7 +223,7 @@ msgid_plural "Forcibly End Processes"
 msgstr[0] "प्रक्रियाओं को बलपूर्वक समाप्त करना"
 msgstr[1] "प्रक्रियाओं को बलपूर्वक समाप्त करना"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:262
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:324
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -225,7 +231,7 @@ msgid_plural "End Processes"
 msgstr[0] "प्रक्रियाएं समाप्त करें"
 msgstr[1] "प्रक्रियाएं समाप्त करें"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:265
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:327
 #, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
@@ -235,14 +241,14 @@ msgstr[0] ""
 msgstr[1] ""
 "इन %1 प्रक्रियाओं को बलपूर्वक समाप्त (SIGKILL) करें? बिना सहेजे गए कार्य खो सकते हैं।"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:268
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:330
 #, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
 msgstr[0] "इन %1 प्रक्रियाओं को समाप्त करें? बिना सहेजे गए कार्य खो सकते हैं।"
 msgstr[1] "इन %1 प्रक्रियाओं को समाप्त करें? बिना सहेजे गए कार्य खो सकते हैं।"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:280
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:342
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
