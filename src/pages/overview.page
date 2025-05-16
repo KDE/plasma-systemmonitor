@@ -213,6 +213,15 @@ showLegend=false
 [Face-106123488899456][Appearance]
 chartFace=org.kde.ksysguard.horizontalbars
 Title=Disks
+Title[ar]=الأقراص
+Title[ca]=Discs
+Title[es]=Discos
+Title[ka]=დისკები
+Title[nl]=Schijven
+Title[sl]=Diski
+Title[tr]=Diskler
+Title[uk]=Диски
+Title[x-test]=xxDisksxx
 
 [Face-106123488899456][Sensors]
 highPrioritySensorIds=["disk/(?!all).*/used"]
@@ -277,6 +286,15 @@ showToolBar=true
 [Face-99554503711904][Appearance]
 chartFace=org.kde.ksysguard.piechart
 Title=Swap
+Title[ar]=المبادلة
+Title[ca]=Memòria d'intercanvi
+Title[es]=Intercambio
+Title[ka]=სვაპი
+Title[nl]=Omwisselen
+Title[sl]=Swap
+Title[tr]=Takas
+Title[uk]=Резервна пам'ять
+Title[x-test]=xxSwapxx
 
 [Face-99554503711904][Sensors]
 highPrioritySensorIds=["memory/swap/used"]
