@@ -1,15 +1,15 @@
-# Translation of ksysguard_face_org.kde.ksysguard.processtable to Spanish
-# Copyright (C) 2020-2024 This file is copyright:
+# Spanish translations for ksysguard_face_org.kde.ksysguard.processtable.po package.
+# Copyright (C) 2020-2025 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-#
 # Automatically generated, 2020.
-# SPDX-FileCopyrightText: 2020, 2021, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
+#
+# SPDX-FileCopyrightText: 2020, 2021, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
-"Project-Id-Version: ksysguard_face_org\n"
+"Project-Id-Version: ksysguard_face_org.kde.ksysguard.processtable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2024-09-10 01:40+0200\n"
+"PO-Revision-Date: 2025-05-15 18:08+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 25.04.1\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr ""
+msgstr "Mostrar la barra de herramientas"
 
 #: src/faces/processtable/contents/ui/Config.qml:30
 #, kde-format
@@ -119,7 +119,7 @@ msgstr "Todos los procesos"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
-msgstr "Configurar columnas..."
+msgstr "Configurar columnas…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:243
 #, kde-format
@@ -199,7 +199,7 @@ msgstr "Ocultar"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
-msgstr "Configurar columnas..."
+msgstr "Configurar columnas…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:320
 #, kde-format
@@ -258,11 +258,3 @@ msgstr[1] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "ID del proceso %1, propiedad de %2"
-
-#~ msgctxt "@action"
-#~ msgid "Configure columns…"
-#~ msgstr "Configurar columnas..."
-
-#~ msgctxt "@action:button"
-#~ msgid "End"
-#~ msgstr "Terminar"
