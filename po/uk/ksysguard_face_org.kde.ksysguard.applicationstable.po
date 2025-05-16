@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2025-04-15 09:34+0300\n"
+"PO-Revision-Date: 2025-05-15 17:50+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -75,12 +75,10 @@ msgid "Background Services"
 msgstr "Фонові служби"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "Показати бічну панель подробиць"
+msgstr "Показувати панель інструментів"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format

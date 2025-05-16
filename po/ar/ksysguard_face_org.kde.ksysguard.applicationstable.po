@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2025-04-17 09:39+0400\n"
+"PO-Revision-Date: 2025-05-15 18:13+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -73,12 +73,10 @@ msgid "Background Services"
 msgstr "الخدمات الخلفيّة"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "أظهر الشريط الجانبي للتّفاصيل"
+msgstr "اعرض شريط الأدوات"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format

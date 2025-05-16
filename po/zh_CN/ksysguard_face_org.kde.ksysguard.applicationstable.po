@@ -73,12 +73,10 @@ msgid "Background Services"
 msgstr "后台服务"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "显示详情侧栏"
+msgstr ""
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
