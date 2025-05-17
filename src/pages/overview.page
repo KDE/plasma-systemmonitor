@@ -222,6 +222,8 @@ Title[sl]=Diski
 Title[tr]=Diskler
 Title[uk]=Диски
 Title[x-test]=xxDisksxx
+Title[zh_CN]=磁盘
+Title[zh_TW]=硬碟
 
 [Face-106123488899456][Sensors]
 highPrioritySensorIds=["disk/(?!all).*/used"]
@@ -295,6 +297,8 @@ Title[sl]=Swap
 Title[tr]=Takas
 Title[uk]=Резервна пам'ять
 Title[x-test]=xxSwapxx
+Title[zh_CN]=交换空间
+Title[zh_TW]=Swap
 
 [Face-99554503711904][Sensors]
 highPrioritySensorIds=["memory/swap/used"]
