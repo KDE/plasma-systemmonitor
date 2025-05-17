@@ -76,7 +76,7 @@ msgstr "后台服务"
 #, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr ""
+msgstr "显示工具栏"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format

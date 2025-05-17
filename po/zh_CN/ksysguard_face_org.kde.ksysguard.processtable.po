@@ -22,7 +22,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr ""
+msgstr "显示工具栏"
 
 #: src/faces/processtable/contents/ui/Config.qml:30
 #, kde-format

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2025-04-19 14:56+0900\n"
+"PO-Revision-Date: 2025-05-16 15:54+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.07.70\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -74,12 +74,12 @@ msgid "Background Services"
 msgstr "背景服務"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
+#, kde-format
 #| msgctxt "@action"
 #| msgid "Show Details Sidebar"
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "顯示詳細資訊側邊欄"
+msgstr "顯示工具列"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
@@ -223,8 +223,7 @@ msgstr[0] "關閉應用程式"
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
-msgstr[0] ""
-"您確定要強制關閉 (SIGKILL) 這 %1 個應用程式嗎？任何未儲存的變更都可能會丟失。"
+msgstr[0] "您確定要強制關閉 (SIGKILL) 這 %1 個應用程式嗎？任何未儲存的變更都可能會丟失。"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:325
 #, kde-format

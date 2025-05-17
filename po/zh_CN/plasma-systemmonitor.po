@@ -728,13 +728,13 @@ msgstr "尝试使用尽可能大的高度。"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "半页高度"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "使用页面高度的一半。"
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
