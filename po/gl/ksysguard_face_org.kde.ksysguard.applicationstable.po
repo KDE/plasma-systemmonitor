@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2025-05-03 07:00+0200\n"
+"PO-Revision-Date: 2025-05-16 11:22+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -72,12 +72,10 @@ msgid "Background Services"
 msgstr "Servizos en segundo plano"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "Amosar a barra lateral de detalles"
+msgstr "Amosar a barra de ferramentas."
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
