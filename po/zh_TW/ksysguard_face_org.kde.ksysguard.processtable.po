@@ -233,7 +233,8 @@ msgstr[0] "結束行程"
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
-msgstr[0] "您確定要強制終止 (SIGKILL) 這 %1 個行程嗎？任何未儲存的變更都可能會丟失。"
+msgstr[0] ""
+"您確定要強制終止 (SIGKILL) 這 %1 個行程嗎？任何未儲存的變更都可能會丟失。"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:330
 #, kde-format
