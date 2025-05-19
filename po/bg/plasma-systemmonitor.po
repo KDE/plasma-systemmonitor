@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2025-05-09 21:12+0200\n"
+"PO-Revision-Date: 2025-05-18 12:03+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -732,13 +732,13 @@ msgstr "Използване на възможно най-голямата ви�
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "Височина на половин страница"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "Използване на половината от височината на страницата."
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
