@@ -270,7 +270,11 @@ void PageManager::removeLocalPageFiles(const QString &fileName)
         QFile::remove(path);
     }
 
-    if (controller->writeableState() == PageController::WriteableState::Writeable) {
+    bool isOldPage = std::ranges::any_of(PageManagerPrivate::s_replacePages, [controller](const auto &entry) {
+        return entry.toName == controller->fileName();
+    });
+
+    if (controller->writeableState() == PageController::WriteableState::Writeable || isOldPage) {
         d->pages.erase(it);
 
         auto pageOrder = Configuration::self()->pageOrder();
