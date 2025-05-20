@@ -27,6 +27,11 @@ TreeViewDelegate
     topPadding: Kirigami.Units.smallSpacing
     bottomPadding: Kirigami.Units.smallSpacing
 
+    leftInset: 0
+    bottomInset: 0
+    rightInset: 0
+    topInset: 0
+
     background: Rectangle {
         color: (row % 2 == 0 || selected) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
 
