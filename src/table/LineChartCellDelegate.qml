@@ -22,6 +22,7 @@ BaseCellDelegate {
     property int _column: model.column
 
     contentItem: Item {
+        // This is deliberate; the linechart is supposed to fill the control like a background
         anchors.fill: parent
         Charts.LineChart {
             id: chart
