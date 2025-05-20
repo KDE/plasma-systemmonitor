@@ -38,7 +38,7 @@ BaseCellDelegate {
             Layout.preferredHeight: Layout.preferredWidth
             Layout.alignment: Qt.AlignVCenter
             source: delegate.iconName
-            fallback: ""
+            fallback: delegate.isTreeNode ? "utilities-terminal-symbolic" : ""
             animated: false
         }
         Label {
