@@ -72,12 +72,10 @@ msgid "Background Services"
 msgstr ""
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "Zobrazit postranní lištu podrobností"
+msgstr "Zobrazit panel nástrojů"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
