@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2025-04-15 19:36+0200\n"
+"PO-Revision-Date: 2025-05-15 10:24+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -75,12 +75,10 @@ msgid "Background Services"
 msgstr "Serveis en segon pla"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "Mostra la barra lateral dels detalls"
+msgstr "Mostra la barra d'eines"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
