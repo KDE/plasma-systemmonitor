@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2025-02-28 07:06+0100\n"
+"PO-Revision-Date: 2025-05-23 10:30+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 25.04.1\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -510,6 +510,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Instalouse unha nova versión da páxina, pero vostede fixo cambios nesta "
+"versión. Os seus cambios á versión anterior copiáronse en %1."
 
 #: src/page/PageContents.qml:126
 #, kde-format
@@ -518,19 +520,18 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Instalouse unha nova versión da páxina, pero vostede fixo cambios nesta "
+"versión. Quere manter os seus cambios ou descartalos e usar a nova versión "
+"da páxina?"
 
 #: src/page/PageContents.qml:134
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Gardar os cambios"
+msgstr "Manter os cambios"
 
 #: src/page/PageContents.qml:140
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "Descartar os cambios"
@@ -729,13 +730,13 @@ msgstr "Usar tanta altura como sexa posíbel."
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "Metade da altura da pantalla"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "Usar a metade da altura da pantalla."
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
