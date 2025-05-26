@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2025-03-15 08:41+0200\n"
+"PO-Revision-Date: 2025-05-25 10:19+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -510,6 +510,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Sivusta asennettiin uusi versio, mutta tätä sivua on muutettu. Muutokset "
+"kopioidaan sivuun %1 (vanha versio)."
 
 #: src/page/PageContents.qml:126
 #, kde-format
@@ -518,19 +520,17 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Sivusta asennettiin uusi versio, mutta tätä sivua on muutettu. Haluatko "
+"säilyttää muutokset vai hylätä ne ja käyttää sivun uutta versiota?"
 
 #: src/page/PageContents.qml:134
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Tallenna muutokset"
+msgstr "Säilytä muutokset"
 
 #: src/page/PageContents.qml:140
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "Hylkää muutokset"
@@ -730,13 +730,13 @@ msgstr "Yritä käyttää mahdollisimman suurta korkeutta."
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "Puolisivukorkeus"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "Käytä puolta sivukorkeudesta."
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
