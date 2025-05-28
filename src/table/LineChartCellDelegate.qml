@@ -46,7 +46,7 @@ BaseCellDelegate {
             fillOpacity: 1
             lineWidth: 0
 
-            colorSource: Charts.SingleValueSource { value: delegate.background.selected ? Kirigami.Theme.highlightedTextColor :  Kirigami.Theme.highlightColor }
+            colorSource: Charts.SingleValueSource { value: delegate.selected ? Kirigami.Theme.highlightedTextColor :  Kirigami.Theme.highlightColor }
         }
 
         Label {
