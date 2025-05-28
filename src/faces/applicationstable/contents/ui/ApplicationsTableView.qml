@@ -119,12 +119,10 @@ Table.BaseTableView {
 
         component: Charts.HistoryProxySource {
             id: history
-            source: Charts.ModelSource {
-                model: history.Table.ComponentCacheProxyModel.model
-                column: history.Table.ComponentCacheProxyModel.column
-                roleName: "Value"
+            property var value
+            source: Charts.SingleValueSource {
+                value: history.value
             }
-            item: Table.ComponentCacheProxyModel.row
             maximumHistory: 10
             interval: 2000
             fillMode: Charts.HistoryProxySource.FillFromEnd
@@ -229,16 +227,32 @@ Table.BaseTableView {
         DelegateChoice {
             roleValue: "line"
             Table.LineChartCellDelegate {
+                id: lineDelegate
+
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
                 maximum: sortColumnFilter.data(sortColumnFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+
+                Binding {
+                    target: lineDelegate.model.cachedComponent ?? null
+                    property: "value"
+                    value: lineDelegate.model.Value
+                }
             }
         }
         DelegateChoice {
             roleValue: "lineScaled"
             Table.LineChartCellDelegate {
+                id: lineScaledDelegate
+
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
                 maximum: sortColumnFilter.data(sortColumnFilter.index(model.row, model.column), Process.ProcessDataModel.Maximum)
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
+
+                Binding {
+                    target: lineScaledDelegate.model.cachedComponent ?? null
+                    property: "value"
+                    value: lineScaledDelegate.model.Value
+                }
             }
 
         }
