@@ -220,7 +220,6 @@ Table.BaseTableView {
                     var index = sortColumnFilter.mapToSource(sortColumnFilter.index(model.row, 0));
                     index = appModel.index(index.row, appModel.iconColumn)
                     return appModel.data(index)
-                    return ""
                 }
             }
         }
