@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2021, 2023, 2024 giovanni <g.sora@tiscali.it>
+# SPDX-FileCopyrightText: 2021, 2023, 2024, 2025 giovanni <g.sora@tiscali.it>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2024-09-09 12:20+0200\n"
+"PO-Revision-Date: 2025-05-27 15:50+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -21,7 +21,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr ""
+msgstr "Monstra le barra de instrumento"
 
 #: src/faces/processtable/contents/ui/Config.qml:30
 #, kde-format

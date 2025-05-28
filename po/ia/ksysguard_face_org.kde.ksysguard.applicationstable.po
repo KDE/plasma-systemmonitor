@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-15 00:44+0000\n"
-"PO-Revision-Date: 2025-04-15 15:44+0200\n"
+"PO-Revision-Date: 2025-05-27 15:50+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -72,12 +72,10 @@ msgid "Background Services"
 msgstr "Servicios de fundo (in background)"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "Monstra barra lateral de detalios"
+msgstr "Monstra le barra de instrumento"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
