@@ -80,7 +80,7 @@ Table.BaseTableView {
             }
             maximumHistory: 10
             interval: 2000
-            fillMode: Charts.HistoryProxySource.FillFromEnd
+            fillMode: Charts.HistoryProxySource.FillFromStart
         }
     }
 
