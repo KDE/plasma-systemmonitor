@@ -33,7 +33,7 @@ TreeViewDelegate
     topInset: 0
 
     background: Rectangle {
-        color: (row % 2 == 0 || selected) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
+        color: (root.row % 2 == 0 || root.selected) ? Kirigami.Theme.backgroundColor : Kirigami.Theme.alternateBackgroundColor
 
         Rectangle {
             anchors.fill: parent
