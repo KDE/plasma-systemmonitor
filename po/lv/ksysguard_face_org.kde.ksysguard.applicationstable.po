@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-15 00:44+0000\n"
+"POT-Creation-Date: 2025-06-03 02:41+0000\n"
 "PO-Revision-Date: 2025-05-04 18:45+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -66,7 +66,7 @@ msgctxt "Warning message shown on runtime error"
 msgid "Applications view is unsupported on your system"
 msgstr "Programmu skats jūsu sistēmā nav atbalstīts"
 
-#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:184
+#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:182
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"

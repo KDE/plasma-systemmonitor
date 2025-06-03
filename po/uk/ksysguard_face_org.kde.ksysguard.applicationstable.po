@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-15 00:44+0000\n"
+"POT-Creation-Date: 2025-06-03 02:41+0000\n"
 "PO-Revision-Date: 2025-05-15 17:50+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -68,7 +68,7 @@ msgctxt "Warning message shown on runtime error"
 msgid "Applications view is unsupported on your system"
 msgstr "Підтримки перегляду програм у вашій системі не передбачено"
 
-#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:184
+#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:182
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-15 00:44+0000\n"
+"POT-Creation-Date: 2025-06-03 02:41+0000\n"
 "PO-Revision-Date: 2024-05-25 23:55\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -70,7 +70,7 @@ msgctxt "Warning message shown on runtime error"
 msgid "Applications view is unsupported on your system"
 msgstr "Выгляд праграм не падтрымліваецца ў вашай сістэме"
 
-#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:184
+#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:182
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
