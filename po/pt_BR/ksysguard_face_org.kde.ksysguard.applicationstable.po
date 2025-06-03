@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-15 00:44+0000\n"
+"POT-Creation-Date: 2025-06-03 00:44+0000\n"
 "PO-Revision-Date: 2025-05-25 00:20-0300\n"
 "Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -61,7 +61,7 @@ msgctxt "@info:placeholder"
 msgid "Select an application to see its details"
 msgstr "Selecione um aplicativo para ver seus detalhes"
 
-#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:28
+#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:30
 #, kde-format
 msgctxt "Warning message shown on runtime error"
 msgid "Applications view is unsupported on your system"
