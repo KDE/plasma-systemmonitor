@@ -109,7 +109,7 @@ void FaceLoader::save(const KConfigBase &config)
     }
 
     auto toGroup = config.group(m_dataObject->value(u"face"_s).toString());
-    PageController::copyGroupContents(m_faceController->configGroup(), toGroup);
+    PageController::copyGroupContents(m_faceController->configGroup(), toGroup, PageController::EmptyEntries::Include);
 }
 
 void FaceLoader::reset()
