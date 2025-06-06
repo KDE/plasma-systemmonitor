@@ -26,6 +26,8 @@ Kirigami.Dialog {
 
     title: i18ndc("plasma-systemmonitor", "@window:title", "Configure Columns")
 
+    // Make sure the user can still see the columns above the dialog
+    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height + (Kirigami.Units.gridUnit * 2) - Kirigami.Units.smallSpacing : 0
     preferredWidth: parent ? parent.width * 0.75 : 0
     preferredHeight: parent ? parent.height * 0.75 : 0
 
