@@ -139,12 +139,17 @@ public:
      */
     Q_SIGNAL void saved();
 
+    enum class EmptyEntries {
+        Include,
+        Exclude,
+    };
+
     /*!
      * A helper function to copy the contents of one KConfigGroup to another.
      *
      * This copies contents recursively from one group to another.
      */
-    static void copyGroupContents(const KConfigGroup &from, KConfigGroup &to);
+    static void copyGroupContents(const KConfigGroup &from, KConfigGroup &to, EmptyEntries emptyEntries);
 
 private:
     friend class PageManager;

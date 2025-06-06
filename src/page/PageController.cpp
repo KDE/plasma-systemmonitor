@@ -127,7 +127,7 @@ bool PageController::load()
     const auto groups = config->groupList();
     for (auto groupName : groups) {
         auto group = m_config->group(groupName);
-        copyGroupContents(config->group(groupName), group);
+        copyGroupContents(config->group(groupName), group, EmptyEntries::Exclude);
     }
 
     m_version = m_config->group(u"page"_s).readEntry("version", 0);
@@ -215,13 +215,17 @@ void PageController::reset()
     load();
 }
 
-void PageController::copyGroupContents(const KConfigGroup &from, KConfigGroup &to)
+void PageController::copyGroupContents(const KConfigGroup &from, KConfigGroup &to, EmptyEntries emptyEntries)
 {
     // Note that this is different from KConfigGroup::copyTo as that doesn't do
     // recursive copy.
 
     const auto entries = from.entryMap();
     for (auto [key, value] : entries.asKeyValueRange()) {
+        if (emptyEntries == EmptyEntries::Exclude && value.isEmpty()) {
+            continue;
+        }
+
         to.writeEntry(key, value);
     }
 
@@ -229,7 +233,7 @@ void PageController::copyGroupContents(const KConfigGroup &from, KConfigGroup &t
     for (auto groupName : groups) {
         auto fromGroup = from.group(groupName);
         auto toGroup = to.group(groupName);
-        copyGroupContents(fromGroup, toGroup);
+        copyGroupContents(fromGroup, toGroup, emptyEntries);
     }
 }
 
