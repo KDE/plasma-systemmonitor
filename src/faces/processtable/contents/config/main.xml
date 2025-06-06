@@ -40,7 +40,7 @@ SPDX-License-Identifier: LGPL-2.0-or-later
             that, we serialize it from and to JSON. So the below default should
             be valid JSON.
             -->
-            <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","name":"text","netInbound":"text","netOutbound":"text","usage":"lineScaled","memory":"text"}</default>
+            <default>{"ioCharactersActuallyReadRate":"text","ioCharactersActuallyWrittenRate":"text","name":"text","netInbound":"text","netOutbound":"text","usage":"line","memory":"text"}</default>
         </entry>
         <entry name="askWhenKilling" type="Bool">
             <default>true</default>
