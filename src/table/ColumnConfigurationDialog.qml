@@ -78,7 +78,9 @@ Kirigami.Dialog {
 
         clip: true
 
-        model: Table.ColumnDisplayModel {
+        model: visible ? displayModel : null
+
+        Table.ColumnDisplayModel {
             id: displayModel
 
             sourceModel: Table.ColumnSortModel {
