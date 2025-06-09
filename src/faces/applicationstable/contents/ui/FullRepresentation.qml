@@ -27,7 +27,7 @@ Faces.SensorFace {
 
     readonly property bool quitEnabled: {
         for (let info of table.selectedApplications) {
-            if (info.menuId == "session.slice" || info.menuId == "background.slice") {
+            if (info.menuId == "session.slice" || info.menuId == "background.slice" || info.menuId == "services") {
                 return false
             }
         }
