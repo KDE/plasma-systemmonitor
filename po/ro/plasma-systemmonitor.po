@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-07 00:44+0000\n"
+"POT-Creation-Date: 2025-06-09 00:44+0000\n"
 "PO-Revision-Date: 2022-08-14 16:53+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -750,31 +750,31 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Configurează coloane"
 
-#: src/table/ColumnConfigurationDialog.qml:145
+#: src/table/ColumnConfigurationDialog.qml:147
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Ascuns"
 
-#: src/table/ColumnConfigurationDialog.qml:146
+#: src/table/ColumnConfigurationDialog.qml:148
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Numai text"
 
-#: src/table/ColumnConfigurationDialog.qml:152
+#: src/table/ColumnConfigurationDialog.qml:154
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Diagramă liniară"
 
-#: src/table/ColumnConfigurationDialog.qml:156
+#: src/table/ColumnConfigurationDialog.qml:158
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Numai text (scalat la 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:157
+#: src/table/ColumnConfigurationDialog.qml:159
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
