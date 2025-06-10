@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-07 02:34+0000\n"
+"POT-Creation-Date: 2025-06-10 02:39+0000\n"
 "PO-Revision-Date: 2025-04-18 13:35+0000\n"
 "Last-Translator: Gummi <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -743,31 +743,31 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Grunnstilla dálka"
 
-#: src/table/ColumnConfigurationDialog.qml:145
+#: src/table/ColumnConfigurationDialog.qml:147
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Faldir"
 
-#: src/table/ColumnConfigurationDialog.qml:146
+#: src/table/ColumnConfigurationDialog.qml:148
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Einungis texti"
 
-#: src/table/ColumnConfigurationDialog.qml:152
+#: src/table/ColumnConfigurationDialog.qml:154
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Línurit"
 
-#: src/table/ColumnConfigurationDialog.qml:156
+#: src/table/ColumnConfigurationDialog.qml:158
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Einungis texti (stækkaður í 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:157
+#: src/table/ColumnConfigurationDialog.qml:159
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
