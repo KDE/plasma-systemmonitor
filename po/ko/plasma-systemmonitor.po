@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-09 00:44+0000\n"
-"PO-Revision-Date: 2025-04-07 00:26+0200\n"
+"PO-Revision-Date: 2025-06-10 22:21+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -27,25 +27,25 @@ msgstr "파일"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr "새 쪽 추가…"
+msgstr "새 페이지 추가…"
 
 #: src/GlobalMenu.qml:25
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "쪽 가져오기…"
+msgstr "페이지 가져오기…"
 
 #: src/GlobalMenu.qml:31
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
-msgstr "현재 쪽 내보내기…"
+msgstr "현재 페이지 내보내기…"
 
 #: src/GlobalMenu.qml:38
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr "새 쪽 가져오기…"
+msgstr "새 페이지 가져오기…"
 
 #: src/GlobalMenu.qml:55
 #, kde-format
@@ -81,7 +81,7 @@ msgstr "설정"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove pages…"
-msgstr "쪽 편집 및 삭제…"
+msgstr "페이지 편집 및 삭제…"
 
 #: src/GlobalMenu.qml:83
 #, kde-format
@@ -188,31 +188,31 @@ msgstr "도구"
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
-msgstr "새 쪽 추가..."
+msgstr "새 페이지 추가..."
 
 #: src/Main.qml:88
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
-msgstr "쪽 편집 및 삭제..."
+msgstr "페이지 편집 및 삭제..."
 
 #: src/Main.qml:94
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
-msgstr "현재 쪽 내보내기..."
+msgstr "현재 페이지 내보내기..."
 
 #: src/Main.qml:102
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "쪽 가져오기..."
+msgstr "페이지 가져오기..."
 
 #: src/Main.qml:108
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
-msgstr "새 쪽 가져오기..."
+msgstr "새 페이지 가져오기..."
 
 #: src/Main.qml:125
 #, kde-format
@@ -248,13 +248,13 @@ msgstr "KDE 정보"
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
-msgstr "새 쪽 추가"
+msgstr "새 페이지 추가"
 
 #: src/Main.qml:260
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
-msgstr "쪽 편집"
+msgstr "페이지 편집"
 
 #: src/Main.qml:283
 #, kde-format
@@ -266,13 +266,13 @@ msgstr "%1 내보내기"
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
-msgstr "시스템 모니터 쪽 (*.page)"
+msgstr "시스템 모니터 페이지 (*.page)"
 
 #: src/Main.qml:293
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
-msgstr "쪽 가져오기"
+msgstr "페이지 가져오기"
 
 #: src/Main.qml:319
 #, kde-format
@@ -312,7 +312,7 @@ msgstr "배경 여백 삭제"
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
-msgstr "쪽 편집"
+msgstr "페이지 편집"
 
 #: src/page/EditablePage.qml:138
 #, kde-format
@@ -330,7 +330,7 @@ msgstr "변경 사항 취소"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "쪽 설정..."
+msgstr "페이지 설정..."
 
 #: src/page/EditablePage.qml:168
 #, kde-format
@@ -348,7 +348,7 @@ msgstr "제목 추가"
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
-msgstr "쪽 \"%1\" 설정"
+msgstr "페이지 \"%1\" 설정"
 
 #: src/page/EditablePage.qml:192
 #, kde-format
@@ -509,6 +509,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"이 페이지의 새로운 버전이 설치되었으나, 현재 페이지에 변경 사항이 있습니다. "
+"해당 변경 사항이 %1(이전 버전)에 복사되었습니다."
 
 #: src/page/PageContents.qml:126
 #, kde-format
@@ -517,19 +519,18 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"이 페이지의 새로운 버전이 설치되었으나, 현재 페이지에 변경 사항이 있습니다. "
+"변경 사항을 유지하시겠습니까, 아니면 변경 사항을 취소하고 페이지의 새 버전을 "
+"사용하시겠습니까?"
 
 #: src/page/PageContents.qml:134
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "변경 사항 저장"
+msgstr "변경 사항 유지"
 
 #: src/page/PageContents.qml:140
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "변경 사항 취소"
@@ -544,7 +545,7 @@ msgstr "추가"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "New Page"
-msgstr "새 쪽"
+msgstr "새 페이지"
 
 #: src/page/PageDialog.qml:85
 #, kde-format
@@ -568,7 +569,7 @@ msgstr "아이콘:"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page Margins:"
-msgstr "쪽 여백:"
+msgstr "페이지 여백:"
 
 #: src/page/PageDialog.qml:118
 #, kde-format
@@ -598,7 +599,7 @@ msgstr "다음의 동작 사용:"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
-msgstr "이 쪽 불러오기:"
+msgstr "이 페이지 불러오기:"
 
 #: src/page/PageDialog.qml:160
 #, kde-format
@@ -627,43 +628,43 @@ msgstr "페이지 표시"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr "쪽 수기기"
+msgstr "페이지 숨기기"
 
 #: src/page/PageSortDialog.qml:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
-msgstr "쪽 초기화하지 않기"
+msgstr "페이지 초기화하지 않기"
 
 #: src/page/PageSortDialog.qml:146
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
-msgstr "쪽 크기를 기본값으로 초기화합니다"
+msgstr "페이지 크기를 기본값으로 초기화합니다"
 
 #: src/page/PageSortDialog.qml:155
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr "쪽 크기를 기본값으로 초기화"
+msgstr "페이지 크기를 기본값으로 초기화"
 
 #: src/page/PageSortDialog.qml:164
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
-msgstr "이 쪽을 삭제하지 않음"
+msgstr "이 페이지를 삭제하지 않음"
 
 #: src/page/PageSortDialog.qml:168
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
-msgstr "쪽을 삭제합니다"
+msgstr "페이지를 삭제할 것입니다"
 
 #: src/page/PageSortDialog.qml:177
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
-msgstr "이 쪽 삭제"
+msgstr "이 페이지 삭제"
 
 #: src/page/PageSortDialog.qml:195
 #, kde-format
@@ -674,7 +675,7 @@ msgstr "다음으로 시작:"
 #: src/page/PageSortDialog.qml:204
 #, kde-format
 msgid "Last Visited Page"
-msgstr "마지막으로 방문한 쪽"
+msgstr "마지막으로 방문한 페이지"
 
 #: src/page/RowControl.qml:127
 #, kde-format
@@ -728,13 +729,13 @@ msgstr "최대한의 높이를 사용합니다."
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "페이지 높이의 절반"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "페이지 높이의 절반을 사용합니다."
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format

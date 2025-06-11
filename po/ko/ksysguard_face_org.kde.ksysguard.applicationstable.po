@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-03 00:44+0000\n"
-"PO-Revision-Date: 2025-04-22 01:29+0200\n"
+"PO-Revision-Date: 2025-06-10 22:17+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -72,12 +72,10 @@ msgid "Background Services"
 msgstr "배경 서비스"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "자세한 정보 사이드바 표시"
+msgstr "도구 모음 표시"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
