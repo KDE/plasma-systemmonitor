@@ -1,23 +1,23 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2024 Olesya Gerasimenko <translation-team@basealt.ru>
+# SPDX-FileCopyrightText: 2024, 2025 Olesya Gerasimenko <translation-team@basealt.ru>
 # Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-09 00:44+0000\n"
-"PO-Revision-Date: 2024-12-28 11:48+0300\n"
-"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
-"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"PO-Revision-Date: 2025-06-24 15:30+0300\n"
+"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.08.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -114,10 +114,9 @@ msgid "An application for monitoring system resources"
 msgstr "Приложение для отслеживания использования ресурсов системы"
 
 #: src/main.cpp:65
-#, fuzzy, kde-format
-#| msgid "© 2024 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© Команда разработчиков Plasma, 2024"
+msgstr "© Команда разработчиков Plasma, 2025"
 
 #: src/main.cpp:71
 #, kde-format
@@ -515,6 +514,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Установлена новая версия этой страницы, но вы внесли изменения. Они "
+"скопированы в %1 (старая версия)."
 
 #: src/page/PageContents.qml:126
 #, kde-format
@@ -523,19 +524,18 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Установлена новая версия этой страницы, но вы внесли изменения. Сохранить "
+"внесённые изменения или отменить их и использовать новую версию этой "
+"страницы?"
 
 #: src/page/PageContents.qml:134
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
 msgstr "Сохранить изменения"
 
 #: src/page/PageContents.qml:140
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "Отменить изменения"
@@ -734,13 +734,13 @@ msgstr "Использовать максимальную высоту стро�
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "Половина высоты страницы"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "Использовать половину высоты страницы."
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
