@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
 # Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021, 2023.
-# SPDX-FileCopyrightText: 2022, 2024 Olesya Gerasimenko <translation-team@basealt.ru>
+# SPDX-FileCopyrightText: 2022, 2024, 2025 Olesya Gerasimenko <translation-team@basealt.ru>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-03 02:41+0000\n"
-"PO-Revision-Date: 2024-09-25 17:30+0300\n"
+"PO-Revision-Date: 2025-06-24 15:20+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
@@ -71,15 +71,13 @@ msgstr "Ваша система не поддерживает просмотр �
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
-msgstr ""
+msgstr "Фоновые службы"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "Показать панель сведений"
+msgstr "Показывать панель инструментов"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
