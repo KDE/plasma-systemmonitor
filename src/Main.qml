@@ -48,8 +48,20 @@ Kirigami.ApplicationWindow {
         modal: false
         collapsed: Page.Configuration.sidebarCollapsed
         onCollapsedChanged: Page.Configuration.sidebarCollapsed = collapsed
+        interactiveResizeEnabled: true
+        preferredSize: {
+            if (Page.Configuration.sidebarWidth > 0) {
+                return Page.Configuration.sidebarWidth
+            } else {
+                return Math.max(globalToolBar.implicitWidth + globalToolBar.Layout.minimumWidth + Kirigami.Units.smallSpacing * 3, Kirigami.Units.gridUnit * 10)
+            }
+        }
+        onInteractiveResizingChanged: {
+            if (!interactiveResizing) {
+                Page.Configuration.sidebarWidth = preferredSize
+            }
+        }
 
-        width: collapsed ? globalToolBar.Layout.minimumWidth + Kirigami.Units.smallSpacing : Math.max(globalToolBar.implicitWidth + globalToolBar.Layout.minimumWidth + Kirigami.Units.smallSpacing * 3, Kirigami.Units.gridUnit * 10)
         Behavior on width { NumberAnimation {id: collapseAnimation; duration: Kirigami.Units.longDuration; easing.type: Easing.InOutQuad } }
         showHeaderWhenCollapsed: true
 
