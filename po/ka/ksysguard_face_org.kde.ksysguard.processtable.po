@@ -34,7 +34,7 @@ msgstr "დაადასტურეთ  პროცესების და
 #, kde-format
 msgctxt "@label:listbox"
 msgid "By default show:"
-msgstr "ნაგულისხმებად ნაჩვენებია:"
+msgstr "ნაგულისხმევად ნაჩვენებია:"
 
 #: src/faces/processtable/contents/ui/Config.qml:44
 #, kde-format
