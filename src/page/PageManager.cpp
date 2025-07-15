@@ -68,6 +68,7 @@ PageManager::PageManager(std::unique_ptr<PageManagerPrivate> &&_d)
              &Configuration::lastVisitedPageChanged,
              &Configuration::pageOrderChanged,
              &Configuration::sidebarCollapsedChanged,
+             &Configuration::sidebarWidthChanged,
              &Configuration::startPageChanged,
          }) {
         connect(Configuration::self(), signal, Configuration::self(), &Configuration::save, Qt::QueuedConnection);
