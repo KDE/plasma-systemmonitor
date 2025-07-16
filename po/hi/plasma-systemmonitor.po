@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-09 00:44+0000\n"
+"POT-Creation-Date: 2025-07-16 00:44+0000\n"
 "PO-Revision-Date: 2024-12-15 19:31+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
@@ -181,103 +181,103 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "आपके ईमेल"
 
-#: src/Main.qml:76
+#: src/Main.qml:88
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "औजार"
 
-#: src/Main.qml:81
+#: src/Main.qml:93
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "नया पृष्ठ जोड़ें…"
 
-#: src/Main.qml:88
+#: src/Main.qml:100
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "पृष्ठ संपादित करें या हटाएं…"
 
-#: src/Main.qml:94
+#: src/Main.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "वर्तमान पृष्ठ निर्यात करें…"
 
-#: src/Main.qml:102
+#: src/Main.qml:114
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "पेज आयात करें…"
 
-#: src/Main.qml:108
+#: src/Main.qml:120
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "नये पेज प्राप्त करें…"
 
-#: src/Main.qml:125
+#: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "साइडबार विस्तृत करें"
 
-#: src/Main.qml:125
+#: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr "साइडबार संक्षिप्त करें"
 
-#: src/Main.qml:135
+#: src/Main.qml:147
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "रिपोर्ट बग…"
 
-#: src/Main.qml:141
+#: src/Main.qml:153
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "सिस्टम मॉनिटर के बारे में"
 
-#: src/Main.qml:148
+#: src/Main.qml:160
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "केडीई के बारे में"
 
-#: src/Main.qml:239
+#: src/Main.qml:251
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "नया पेज जोड़ें"
 
-#: src/Main.qml:260
+#: src/Main.qml:272
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "पृष्ठ संपादित करें"
 
-#: src/Main.qml:283
+#: src/Main.qml:295
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "निर्यात करें%1"
 
-#: src/Main.qml:285 src/Main.qml:295
+#: src/Main.qml:297 src/Main.qml:307
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "सिस्टम मॉनिटर पृष्ठ (*.page)"
 
-#: src/Main.qml:293
+#: src/Main.qml:305
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "आयात पृष्ठ"
 
-#: src/Main.qml:319
+#: src/Main.qml:331
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-09 00:44+0000\n"
+"POT-Creation-Date: 2025-07-16 00:44+0000\n"
 "PO-Revision-Date: 2025-05-15 18:13+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Lokalize 23.08.5\n"
 
 #: src/GlobalMenu.qml:16
@@ -179,103 +179,103 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "zayed.alsaidi@gmail.com"
 
-#: src/Main.qml:76
+#: src/Main.qml:88
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "الأدوات"
 
-#: src/Main.qml:81
+#: src/Main.qml:93
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "أضف صفحة جديدة..."
 
-#: src/Main.qml:88
+#: src/Main.qml:100
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "حرر أو أزل صفحات..."
 
-#: src/Main.qml:94
+#: src/Main.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "صدر الصفحة الحالية"
 
-#: src/Main.qml:102
+#: src/Main.qml:114
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "استورِد صفحة…"
 
-#: src/Main.qml:108
+#: src/Main.qml:120
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "احصل على صفحات جديدة..."
 
-#: src/Main.qml:125
+#: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr "وسع الشريط الجانبي"
 
-#: src/Main.qml:125
+#: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr " اطوِ الشريط الجانبي"
 
-#: src/Main.qml:135
+#: src/Main.qml:147
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "أبلغ عن علّة…"
 
-#: src/Main.qml:141
+#: src/Main.qml:153
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr "عن مراقب النظام"
 
-#: src/Main.qml:148
+#: src/Main.qml:160
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "عن كِيدِي"
 
-#: src/Main.qml:239
+#: src/Main.qml:251
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "أضف صفحة جديدة"
 
-#: src/Main.qml:260
+#: src/Main.qml:272
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr "حرر الصّفحات"
 
-#: src/Main.qml:283
+#: src/Main.qml:295
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "صدّر %1"
 
-#: src/Main.qml:285 src/Main.qml:295
+#: src/Main.qml:297 src/Main.qml:307
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr "صفحة مراقب النظام (*.page)"
 
-#: src/Main.qml:293
+#: src/Main.qml:305
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "استورِد صفحة"
 
-#: src/Main.qml:319
+#: src/Main.qml:331
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "

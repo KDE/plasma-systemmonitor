@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-09 00:44+0000\n"
+"POT-Creation-Date: 2025-07-16 00:44+0000\n"
 "PO-Revision-Date: 2024-09-17 15:17+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -178,103 +178,103 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "vit@pelcak.org"
 
-#: src/Main.qml:76
+#: src/Main.qml:88
 #, kde-format
 msgctxt "@action"
 msgid "Tools"
 msgstr "Nástroje"
 
-#: src/Main.qml:81
+#: src/Main.qml:93
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
 msgstr "Přidat novou stránku…"
 
-#: src/Main.qml:88
+#: src/Main.qml:100
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Instalovat nebo odstranit stránky..."
 
-#: src/Main.qml:94
+#: src/Main.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
 msgstr "Exportovat aktuální stránku..."
 
-#: src/Main.qml:102
+#: src/Main.qml:114
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
 msgstr "Importovat stránku…"
 
-#: src/Main.qml:108
+#: src/Main.qml:120
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
 msgstr "Získat nové stránky..."
 
-#: src/Main.qml:125
+#: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
 msgstr ""
 
-#: src/Main.qml:125
+#: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
 msgstr ""
 
-#: src/Main.qml:135
+#: src/Main.qml:147
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
 msgstr "Nahlásit chybu…"
 
-#: src/Main.qml:141
+#: src/Main.qml:153
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
 msgstr ""
 
-#: src/Main.qml:148
+#: src/Main.qml:160
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
 msgstr "O KDE"
 
-#: src/Main.qml:239
+#: src/Main.qml:251
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
 msgstr "Přidat novou stránku"
 
-#: src/Main.qml:260
+#: src/Main.qml:272
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
 msgstr ""
 
-#: src/Main.qml:283
+#: src/Main.qml:295
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
 msgstr "Exportovat %1"
 
-#: src/Main.qml:285 src/Main.qml:295
+#: src/Main.qml:297 src/Main.qml:307
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
 msgstr ""
 
-#: src/Main.qml:293
+#: src/Main.qml:305
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
 msgstr "Importovat stránku"
 
-#: src/Main.qml:319
+#: src/Main.qml:331
 #, kde-format
 msgid ""
 "System Monitor has fallen back to software rendering because hardware "
