@@ -6,21 +6,22 @@
 # Jannick Kuhr <opensource@kuhr.org>, 2023.
 # SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 # SPDX-FileCopyrightText: 2025 Flori G <Renner03@protonmail.com>
+# SPDX-FileCopyrightText: 2025 Philipp Kiemle <l10n@prly.mozmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-06-08 02:47+0000\n"
-"PO-Revision-Date: 2025-02-22 03:03+0100\n"
-"Last-Translator: Flori G <Renner03@protonmail.com>\n"
+"PO-Revision-Date: 2025-08-03 22:40+0200\n"
+"Last-Translator: Philipp Kiemle <l10n@prly.mozmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 25.04.3\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -32,25 +33,25 @@ msgstr "Datei"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr "Neue Seite hinzufügen ..."
+msgstr "Neue Seite hinzufügen …"
 
 #: src/GlobalMenu.qml:24
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "Seite importieren ..."
+msgstr "Seite importieren …"
 
 #: src/GlobalMenu.qml:30
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
-msgstr "Aktuelle Seite exportieren ..."
+msgstr "Aktuelle Seite exportieren …"
 
 #: src/GlobalMenu.qml:37
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr "Neue Seiten holen ..."
+msgstr "Neue Seiten holen …"
 
 #: src/GlobalMenu.qml:54
 #, kde-format
@@ -86,7 +87,7 @@ msgstr "Einstellungen"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove pages…"
-msgstr "Seiten bearbeiten oder entfernen ..."
+msgstr "Seiten bearbeiten oder entfernen …"
 
 #: src/GlobalMenu.qml:82
 #, kde-format
@@ -98,7 +99,7 @@ msgstr "Hilfe"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr "Problem melden …"
+msgstr "Problem melden …"
 
 #: src/GlobalMenu.qml:91
 #, kde-format
@@ -119,7 +120,7 @@ msgstr "Eine Anwendung zum Überwachen der Systemressourcen"
 #: src/main.cpp:114
 #, kde-format
 msgid "© 2020 Plasma Development Team"
-msgstr "Copyright © 2020 Plasma Development Team"
+msgstr "© 2020 Plasma-Entwicklungsteam"
 
 #: src/main.cpp:120
 #, kde-format
@@ -193,25 +194,25 @@ msgstr "Extras"
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
-msgstr "Seiten bearbeiten oder entfernen ..."
+msgstr "Seiten bearbeiten oder entfernen …"
 
 #: src/main.qml:79
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
-msgstr "Aktuelle Seite exportieren ..."
+msgstr "Aktuelle Seite exportieren …"
 
 #: src/main.qml:86
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "Seite importieren ..."
+msgstr "Seite importieren …"
 
 #: src/main.qml:91
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
-msgstr "Neue Seiten holen ..."
+msgstr "Neue Seiten holen …"
 
 #: src/main.qml:103
 #, kde-format
@@ -229,7 +230,7 @@ msgstr "Seitenleiste einklappen"
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr "Problem melden …"
+msgstr "Problem melden …"
 
 #: src/main.qml:116
 #, kde-format
@@ -241,7 +242,7 @@ msgstr "Über Systemmonitor"
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
-msgstr "Neue Seite hinzufügen ..."
+msgstr "Neue Seite hinzufügen …"
 
 #: src/main.qml:210
 #, kde-format
@@ -330,7 +331,7 @@ msgstr "Änderungen verwerfen"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "Seite einrichten ..."
+msgstr "Seite einrichten …"
 
 #: src/page/EditablePage.qml:163
 #, kde-format
@@ -384,13 +385,13 @@ msgstr "Schließen"
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr "Voreinstellung laden ..."
+msgstr "Voreinstellung laden …"
 
 #: src/page/FaceConfigurationPage.qml:43
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
-msgstr "Neue Voreinstellungen holen ..."
+msgstr "Neue Voreinstellungen holen …"
 
 #: src/page/FaceConfigurationPage.qml:49
 #, kde-format
@@ -414,7 +415,7 @@ msgstr "Diagramm als Arbeitsflächen-Miniprogramm speichern"
 #, kde-format
 msgctxt "@action"
 msgid "Get new display styles…"
-msgstr "Neue Anzeigestile holen ..."
+msgstr "Neue Anzeigestile holen …"
 
 #: src/page/FaceConfigurationPage.qml:86
 #, kde-format
@@ -509,7 +510,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
-msgstr "Beheben …"
+msgstr "Beheben …"
 
 #: src/page/PageDialog.qml:20
 #, kde-format
@@ -747,7 +748,7 @@ msgstr "Diese Nachfrage nicht mehr anzeigen"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Kill a Window…"
-msgstr "Ein Fenster schließen ..."
+msgstr "Beenden eines Fensters erzwingen …"
 
 #: src/ToolsModel.cpp:115
 #, kde-format
