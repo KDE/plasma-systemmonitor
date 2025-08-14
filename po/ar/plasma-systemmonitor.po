@@ -276,7 +276,7 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
-"عاد مراقب النظام إلى عرض البرمجي نظرًا لعدم توفر تسريع الأجهزة ، وقد تظهر خِلل "
+"عاد مراقب النظام إلى عرض البرمجي نظرًا لعدم توفر تسريع الأجهزة، وقد تظهر خِلل "
 "المرئية. يرجى التحقق من برامج تشغيل الرسومات الخاصة بك."
 
 #: src/page/ColumnControl.qml:117
