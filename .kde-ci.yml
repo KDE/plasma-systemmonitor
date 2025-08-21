@@ -26,3 +26,4 @@ RuntimeDependencies:
     'frameworks/kiconthemes': '@latest-kf6' # IconDialog
 Options:
  require-passing-tests-on: ['Linux', 'FreeBSD']
+ run-qmllint: True
