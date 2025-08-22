@@ -24,6 +24,8 @@ Kirigami.Dialog {
 
     preferredWidth: Kirigami.Units.gridUnit * 25
 
+    parent: root.Window.window?.overlay
+
     focus: true
 
     // We already have a cancel button in the footer
