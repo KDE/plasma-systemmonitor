@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-10 02:39+0000\n"
+"POT-Creation-Date: 2025-08-24 02:36+0000\n"
 "PO-Revision-Date: 2025-05-16 15:54+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -774,7 +774,7 @@ msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "折線圖（縮放至 100%）"
 
-#: src/table/KillDialog.qml:81
+#: src/table/KillDialog.qml:83
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"

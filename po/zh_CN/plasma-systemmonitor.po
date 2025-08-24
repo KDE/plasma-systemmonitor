@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-10 02:39+0000\n"
+"POT-Creation-Date: 2025-08-24 02:36+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -772,7 +772,7 @@ msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "折线图 (缩放到100%)"
 
-#: src/table/KillDialog.qml:81
+#: src/table/KillDialog.qml:83
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
