@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-16 00:44+0000\n"
+"POT-Creation-Date: 2025-08-24 00:44+0000\n"
 "PO-Revision-Date: 2024-06-05 07:05\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -787,7 +787,7 @@ msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Лінейная дыяграма (павялічана да 100%)"
 
-#: src/table/KillDialog.qml:81
+#: src/table/KillDialog.qml:83
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"

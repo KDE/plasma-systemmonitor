@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-16 00:44+0000\n"
+"POT-Creation-Date: 2025-08-24 00:44+0000\n"
 "PO-Revision-Date: 2025-05-18 21:12+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -773,7 +773,7 @@ msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "கோடு வரைபடம் (100%-க்கு அளவுமாற்று)"
 
-#: src/table/KillDialog.qml:81
+#: src/table/KillDialog.qml:83
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"

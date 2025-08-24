@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-07-16 00:44+0000\n"
+"POT-Creation-Date: 2025-08-24 00:44+0000\n"
 "PO-Revision-Date: 2024-03-05 01:34+0900\n"
 "Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -779,7 +779,7 @@ msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "折れ線グラフ (100%に縮尺)"
 
-#: src/table/KillDialog.qml:81
+#: src/table/KillDialog.qml:83
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
