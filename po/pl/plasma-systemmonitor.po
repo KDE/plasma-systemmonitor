@@ -1,21 +1,22 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 #
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-24 00:44+0000\n"
-"PO-Revision-Date: 2024-12-21 11:42+0100\n"
+"PO-Revision-Date: 2025-08-30 08:18+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
-"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language-Team: pl\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -112,10 +113,9 @@ msgid "An application for monitoring system resources"
 msgstr "Aplikacja do monitorowania zasobów systemu"
 
 #: src/main.cpp:65
-#, fuzzy, kde-format
-#| msgid "© 2024 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© 2024 Zespół programistów Plazmy"
+msgstr "© 2025 Zespół programistów Plazmy"
 
 #: src/main.cpp:71
 #, kde-format
@@ -513,6 +513,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Wgrano nową wersję tej strony, lecz wprowadziłeś już na niej swoje zmiany. "
+"Zmiany te zostały skopiowane do %1 (stara wersja)."
 
 #: src/page/PageContents.qml:126
 #, kde-format
@@ -521,19 +523,17 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Wgrano nową wersję tej strony, lecz wprowadziłeś już na niej swoje zmiany. "
+"Zachować, czy porzucić te zmiany i użyć nowej wersji strony?"
 
 #: src/page/PageContents.qml:134
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Zapisz zmiany"
+msgstr "Zachowaj zmiany"
 
 #: src/page/PageContents.qml:140
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "Porzuć zmiany"
@@ -733,13 +733,13 @@ msgstr "Spróbuj użyć tyle wysokości ile to możliwe."
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "Wysokość na połowę strony"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "Użyj wysokości na połowę strony"
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
@@ -787,7 +787,7 @@ msgstr "Nie pytaj ponownie"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Kill a Window…"
-msgstr "Zniszcz okno..."
+msgstr "Zniszcz okno…"
 
 #: src/ToolsModel.cpp:115
 #, kde-format
