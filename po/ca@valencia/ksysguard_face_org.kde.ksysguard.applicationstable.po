@@ -60,7 +60,7 @@ msgstr "Processos: %1"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select an application to see its details"
-msgstr "Seleccioneu una aplicació per a veure'n els detalls"
+msgstr "Trieu una aplicació per a veure'n els detalls"
 
 #: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:28
 #, kde-format
