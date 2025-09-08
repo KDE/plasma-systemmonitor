@@ -56,7 +56,6 @@ Title[sl]=Zgodovina (Stara različica)
 Title[sv]=Historik (gammal version)
 Title[tr]=Geçmiş (Eski Sürüm)
 Title[uk]=Журнал (стара версія)
-Title[x-test]=xxHistory (Old Version)xx
 Title[zh_CN]=历史记录 (旧版)
 Title[zh_TW]=歷史（舊版）
 
@@ -111,7 +110,6 @@ Title[sv]=Processor
 Title[ta]=சீபியூ
 Title[tr]=CPU
 Title[uk]=Процесор
-Title[x-test]=xxCPUxx
 Title[zh_CN]=CPU
 Title[zh_TW]=CPU
 
@@ -163,7 +161,6 @@ Title[sl]=false
 Title[sv]=falskt
 Title[tr]=yanlış
 Title[uk]=false
-Title[x-test]=xxfalsexx
 Title[zh_CN]=否
 Title[zh_TW]=false
 
@@ -228,7 +225,6 @@ Title[sv]=Minne
 Title[ta]=நினைவகம்
 Title[tr]=Bellek
 Title[uk]=Пам'ять
-Title[x-test]=xxMemoryxx
 Title[zh_CN]=内存
 Title[zh_TW]=記憶體
 
@@ -280,7 +276,6 @@ Title[sl]=false
 Title[sv]=falskt
 Title[tr]=yanlış
 Title[uk]=false
-Title[x-test]=xxfalsexx
 Title[zh_CN]=否
 Title[zh_TW]=false
 
@@ -345,7 +340,6 @@ Title[sv]=Nätverk
 Title[ta]=பிணையம்
 Title[tr]=Ağ
 Title[uk]=Мережа
-Title[x-test]=xxNetworkxx
 Title[zh_CN]=网络
 Title[zh_TW]=網路
 
@@ -397,7 +391,6 @@ Title[sl]=false
 Title[sv]=falskt
 Title[tr]=yanlış
 Title[uk]=false
-Title[x-test]=xxfalsexx
 Title[zh_CN]=否
 Title[zh_TW]=false
 
