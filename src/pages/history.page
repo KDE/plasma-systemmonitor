@@ -95,7 +95,6 @@ Title[sv]=Historik
 Title[ta]=வரலாறு
 Title[tr]=Geçmiş
 Title[uk]=Журнал
-Title[x-test]=xxHistoryxx
 Title[zh_CN]=历史记录
 Title[zh_TW]=歷史紀錄
 
@@ -150,7 +149,6 @@ Title[sv]=Processor
 Title[ta]=சீபியூ
 Title[tr]=CPU
 Title[uk]=Процесор
-Title[x-test]=xxCPUxx
 Title[zh_CN]=CPU
 Title[zh_TW]=CPU
 
@@ -216,7 +214,6 @@ Title[sl]=GPE
 Title[sv]=Grafikprocessor
 Title[tr]=GPU
 Title[uk]=ГП
-Title[x-test]=xxGPUxx
 Title[zh_CN]=GPU
 Title[zh_TW]=GPU
 
@@ -287,7 +284,6 @@ Title[sv]=Minne
 Title[ta]=நினைவகம்
 Title[tr]=Bellek
 Title[uk]=Пам'ять
-Title[x-test]=xxMemoryxx
 Title[zh_CN]=内存
 Title[zh_TW]=記憶體
 
@@ -358,7 +354,6 @@ Title[sv]=Nätverk
 Title[ta]=பிணையம்
 Title[tr]=Ağ
 Title[uk]=Мережа
-Title[x-test]=xxNetworkxx
 Title[zh_CN]=网络
 Title[zh_TW]=網路
 

@@ -50,7 +50,6 @@ Title[sv]=Nätverk
 Title[ta]=பிணையங்கள்
 Title[tr]=Ağlar
 Title[uk]=Мережі
-Title[x-test]=xxNetworksxx
 Title[zh_CN]=网络
 Title[zh_TW]=網路
 
@@ -110,7 +109,6 @@ Title[sv]=Processor
 Title[ta]=சீபியூ
 Title[tr]=CPU
 Title[uk]=Процесор
-Title[x-test]=xxCPUxx
 Title[zh_CN]=CPU
 Title[zh_TW]=CPU
 
@@ -149,7 +147,6 @@ Title[sl]=GPE
 Title[sv]=Grafikprocessor
 Title[tr]=GPU
 Title[uk]=ГП
-Title[x-test]=xxGPUxx
 Title[zh_CN]=GPU
 Title[zh_TW]=GPU
 
@@ -209,7 +206,6 @@ Title[sv]=Minne
 Title[ta]=நினைவகம்
 Title[tr]=Bellek
 Title[uk]=Пам'ять
-Title[x-test]=xxMemoryxx
 Title[zh_CN]=内存
 Title[zh_TW]=記憶體
 
@@ -247,7 +243,6 @@ Title[sl]=Diski
 Title[sv]=Diskar
 Title[tr]=Diskler
 Title[uk]=Диски
-Title[x-test]=xxDisksxx
 Title[zh_CN]=磁盘
 Title[zh_TW]=硬碟
 
@@ -304,7 +299,6 @@ Title[sv]=Program
 Title[ta]=செயலிகள்
 Title[tr]=Uygulamalar
 Title[uk]=Програми
-Title[x-test]=xxApplicationsxx
 Title[zh_CN]=应用程序
 Title[zh_TW]=應用程式
 
@@ -338,7 +332,6 @@ Title[sl]=Swap
 Title[sv]=Växling
 Title[tr]=Takas
 Title[uk]=Резервна пам'ять
-Title[x-test]=xxSwapxx
 Title[zh_CN]=交换空间
 Title[zh_TW]=Swap
 
@@ -402,7 +395,6 @@ Title[sv]=Översikt
 Title[ta]=மேற்பார்வை
 Title[tr]=Genel Görünüm
 Title[uk]=Огляд
-Title[x-test]=xxOverviewxx
 Title[zh_CN]=系统概览
 Title[zh_TW]=總覽
 
