@@ -43,7 +43,6 @@ Title[sv]=Minne
 Title[ta]=நினைவகம்
 Title[tr]=Bellek
 Title[uk]=Пам'ять
-Title[x-test]=xxMemoryxx
 Title[zh_CN]=内存
 Title[zh_TW]=記憶體
 
@@ -96,7 +95,6 @@ Title[sv]=Nätverk
 Title[ta]=பிணையங்கள்
 Title[tr]=Ağlar
 Title[uk]=Мережі
-Title[x-test]=xxNetworksxx
 Title[zh_CN]=网络
 Title[zh_TW]=網路
 
@@ -152,7 +150,6 @@ Title[sv]=Disk
 Title[ta]=வட்டு
 Title[tr]=Disk
 Title[uk]=Диск
-Title[x-test]=xxDiskxx
 Title[zh_CN]=存储
 Title[zh_TW]=硬碟
 
@@ -205,7 +202,6 @@ Title[sv]=Processor
 Title[ta]=சீபியூ
 Title[tr]=CPU
 Title[uk]=Процесор
-Title[x-test]=xxCPUxx
 Title[zh_CN]=CPU
 Title[zh_TW]=CPU
 
@@ -261,7 +257,6 @@ Title[sv]=System
 Title[ta]=கணினி
 Title[tr]=Sistem
 Title[uk]=Система
-Title[x-test]=xxSystemxx
 Title[zh_CN]=系统
 Title[zh_TW]=系統
 
@@ -308,7 +303,6 @@ Title[sv]=Nätverkshastigheter
 Title[ta]=பிணைய விகிதங்கள்
 Title[tr]=Ağ Hız Verisi
 Title[uk]=Швидкості у мережі
-Title[x-test]=xxNetwork Ratesxx
 Title[zh_CN]=网络传输率
 Title[zh_TW]=網路使用量
 
@@ -368,7 +362,6 @@ Title[sv]=Översikt
 Title[ta]=மேற்பார்வை
 Title[tr]=Genel Görünüm
 Title[uk]=Огляд
-Title[x-test]=xxOverviewxx
 Title[zh_CN]=系统概览
 Title[zh_TW]=總覽
 
@@ -452,7 +445,6 @@ Title[sv]=Nätverk och system
 Title[ta]=பிணையமும் கணினியும்
 Title[tr]=Ağ ve Sistem
 Title[uk]=Мережа і система
-Title[x-test]=xxNetwork & Systemxx
 Title[zh_CN]=网络和系统
 Title[zh_TW]=網路與系統
 
@@ -536,7 +528,6 @@ Title[sv]=Program
 Title[ta]=செயலிகள்
 Title[tr]=Uygulamalar
 Title[uk]=Програми
-Title[x-test]=xxApplicationsxx
 Title[zh_CN]=应用程序
 Title[zh_TW]=應用程式
 
