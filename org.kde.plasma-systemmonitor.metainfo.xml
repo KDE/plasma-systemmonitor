@@ -47,7 +47,6 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="ta">பிளாஸ்மா கணினி கண்காணிப்பி</name>
   <name xml:lang="tr">Plasma Sistem Monitörü</name>
   <name xml:lang="uk">Системний монітор Плазми</name>
-  <name xml:lang="x-test">xxPlasma System Monitorxx</name>
   <name xml:lang="zh-CN">Plasma 系统监视器</name>
   <name xml:lang="zh-TW">Plasma 系統監控</name>
   <summary>An application for monitoring system resources</summary>
@@ -86,7 +85,6 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ta">கணினியை கண்காணிக்க உதவும் செயலி</summary>
   <summary xml:lang="tr">Sistem özkaynaklarını izlemek için bir uygulama</summary>
   <summary xml:lang="uk">Програма для стеження за використанням ресурсів системи</summary>
-  <summary xml:lang="x-test">xxAn application for monitoring system resourcesxx</summary>
   <summary xml:lang="zh-CN">系统资源监控程序</summary>
   <summary xml:lang="zh-TW">一個監控系統資源的應用程式</summary>
   <description>
@@ -129,7 +127,6 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="ta">கணினி உணரிகள், பணி விவரங்கள், மற்றும் கணினியின் வசதிகளை கண்காணிக்க உதவும் இடைமுகப்பை பிளாஸ்மா கணினிக் கண்காணிப்பி வழங்கும்.</p>
     <p xml:lang="tr">Plasma Sistem Monitörü; sistem sensörlerini, süreç bilgisini ve diğer sistem özkaynaklarını izlemek için bir arayüz sağlar.</p>
     <p xml:lang="uk">«Системний монітор Плазми» є інтерфейсом для спостереження за даними датчиків системи, відомостями щодо процесів та інших ресурсів системи.</p>
-    <p xml:lang="x-test">xxPlasma System Monitor provides an interface for monitoring system sensors, process information and other system resources.xx</p>
     <p xml:lang="zh-CN">Plasma 系统监视器提供了用于监控系统传感器、进程信息和其他系统资源的界面。</p>
     <p xml:lang="zh-TW">Plasma 系統監控提供一個監控系統偵測器、行程資訊與其他系統資源的介面。</p>
   </description>
