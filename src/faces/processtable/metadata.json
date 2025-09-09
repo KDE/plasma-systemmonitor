@@ -44,7 +44,6 @@
                 "Name[sv]": "Arjen Hiemstra",
                 "Name[tr]": "Arjen Hiemstra",
                 "Name[uk]": "Arjen Hiemstra",
-                "Name[x-test]": "xxArjen Hiemstraxx",
                 "Name[zh_CN]": "Arjen Hiemstra",
                 "Name[zh_TW]": "Arjen Hiemstra"
             }
@@ -99,7 +98,6 @@
         "Name[ta]": "பணி அட்டவணை",
         "Name[tr]": "Süreç Tablosu",
         "Name[uk]": "Таблиця процесів",
-        "Name[x-test]": "xxProcess Tablexx",
         "Name[zh_CN]": "进程列表",
         "Name[zh_TW]": "行程表格",
         "Version": "1.0",
