@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-08-24 00:44+0000\n"
-"PO-Revision-Date: 2025-02-28 09:44-0600\n"
-"Last-Translator: A S Alam <aman@punlinux.org>\n"
-"Language-Team: pa\n"
+"PO-Revision-Date: 2025-09-15 10:08-0500\n"
+"Last-Translator: A S Alam <aalam@punlinux.org>\n"
+"Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.2\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -385,12 +385,10 @@ msgid "Load Preset…"
 msgstr "…ਪਹਿਲਾਂ-ਸੈ਼ਟ ਕੀਤੇ ਲੋਡ ਕਰੋ"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "…ਨਵੇਂ ਪਹਿਲਾਂ-ਸੈ਼ਟ ਕੀਤੇ ਲਵੋ"
+msgstr "…ਨਵੇਂ ਪਹਿਲਾਂ-ਸੈ਼ਟ ਲਵੋ"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
@@ -411,12 +409,10 @@ msgid "Add Chart as Desktop Widget"
 msgstr "ਚਾਰਟ ਨੂੰ ਡੈਸਕਟਾਪ ਵਿਜੈੱਟ ਵਜੋਂ ਜੋੜੋ"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr "ਨਵੇਂ ਦਿੱਖ ਸਟਾਈਲ ਲਵੋ…"
+msgstr "…ਨਵੇਂ ਦਿੱਖ ਸਟਾਈਲ ਲਵੋ"
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format
@@ -521,20 +517,16 @@ msgid ""
 msgstr ""
 
 #: src/page/PageContents.qml:134
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "ਤਬਦੀਲੀਆਂ ਸੰਭਾਲੋ"
+msgstr "ਤਬਦੀਲੀਆਂ ਨੂੰ ਰੱਖੋ"
 
 #: src/page/PageContents.qml:140
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
-msgstr "ਤਬਦੀਲੀਆਂ ਅਣਡਿੱਠੀਆਂ ਕਰੋ"
+msgstr "ਤਬਦੀਲੀਆਂ ਨੂੰ ਅਣਡਿੱਠ ਕਰੋ"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
