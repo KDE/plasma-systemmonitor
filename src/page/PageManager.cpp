@@ -62,7 +62,7 @@ PageManager::PageManager(std::unique_ptr<PageManagerPrivate> &&_d)
     // KConfigSkeleton does not save automatically, to avoid having to add save()
     // calls everywhere, ensure that we automatically save the config.
     // Unfortunately, configChanged() is also not emitted until after save, so
-    // we need to connect all the notify singals instead.
+    // we need to connect all the notify signals instead.
     for (auto signal : {
              &Configuration::hiddenPagesChanged,
              &Configuration::lastVisitedPageChanged,

@@ -169,7 +169,7 @@ Kirigami.Dialog {
                             }
                         },
                         State {
-                            name: "removeable"
+                            name: "removable"
                             when: listItemContainer.filesWriteable == Page.PageController.Writeable
                             PropertyChanges {
                                 target: removeButton
