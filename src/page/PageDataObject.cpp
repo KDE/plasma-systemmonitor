@@ -13,7 +13,6 @@
 #include <QUrl>
 
 #include <KConfig>
-#include <KConfigGroup>
 
 #include "FaceLoader.h"
 

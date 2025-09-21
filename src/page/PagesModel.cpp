@@ -12,7 +12,6 @@
 
 #include <KConfig>
 #include <KConfigGroup>
-#include <KNSCore/Entry>
 
 #include "PageController.h"
 #include "PageManager.h"
