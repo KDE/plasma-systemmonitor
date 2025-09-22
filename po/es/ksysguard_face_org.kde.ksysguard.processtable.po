@@ -1,15 +1,15 @@
 # Spanish translations for ksysguard_face_org.kde.ksysguard.processtable.po package.
-# Copyright (C) 2020 This file is copyright:
+# Copyright (C) 2020-2025 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-#
 # Automatically generated, 2020.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2020, 2021, 2023.
+#
+# SPDX-FileCopyrightText: 2020, 2021, 2023, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
-"Project-Id-Version: ksysguard_face_org\n"
+"Project-Id-Version: ksysguard_face_org.kde.ksysguard.processtable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2023-01-13 01:07+0100\n"
+"PO-Revision-Date: 2025-09-22 01:37+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -113,7 +113,7 @@ msgstr "Todos los procesos"
 #, kde-format
 msgctxt "@action"
 msgid "Configure columns…"
-msgstr "Configurar columnas..."
+msgstr "Configurar columnas…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:173
 #, kde-format
@@ -181,7 +181,7 @@ msgstr[1] "Terminar %1 procesos"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
-msgstr "Configurar columnas..."
+msgstr "Configurar columnas…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:234
 #, kde-format
@@ -219,7 +219,3 @@ msgstr[1] ""
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "ID del proceso %1, propiedad de %2"
-
-#~ msgctxt "@action:button"
-#~ msgid "End"
-#~ msgstr "Terminar"
