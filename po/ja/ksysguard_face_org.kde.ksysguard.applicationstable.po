@@ -1,12 +1,13 @@
 # SPDX-FileCopyrightText: 2024 Ryuichi Yamada <ryuichi_ya220@outlook.jp>
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2021.
+# SPDX-FileCopyrightText: 2025 Yuma Kakei <yumasansansan@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-03 00:44+0000\n"
-"PO-Revision-Date: 2024-03-06 21:17+0900\n"
-"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
+"PO-Revision-Date: 2025-09-21 16:19+0900\n"
+"Last-Translator: Yuma Kakei <yumasansansan@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -69,15 +70,13 @@ msgstr "お使いのシステムではアプリケーション表示はサポー
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
-msgstr ""
+msgstr "バックグラウンドサービス"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "詳細情報サイドバーを表示"
+msgstr "ツールバーを表示"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
@@ -110,9 +109,7 @@ msgid "Show Details Sidebar"
 msgstr "詳細情報サイドバーを表示"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:68
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Configure columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "カラムの設定…"
@@ -188,17 +185,14 @@ msgstr[0] "%1 個のアプリケーションを終了"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "隠す"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:315
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "%1 個のアプリケーションを終了"
+msgstr[0] "%1 個のアプリケーションを強制終了"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:316
 #, kde-format
@@ -208,14 +202,11 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "%1 個のアプリケーションを終了"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:318
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "アプリケーションを終了"
+msgstr[0] "アプリケーションを強制終了"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:319
 #, kde-format
@@ -225,32 +216,20 @@ msgid_plural "Quit Applications"
 msgstr[0] "アプリケーションを終了"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:322
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"本当にこれら %1 個のアプリケーションを終了しますか？\n"
+"これら %1 個のアプリケーションを強制終了 (SIGKILL) しますか？\n"
 "保存されていない作業は失われる可能性があります。"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:325
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] ""
-"本当にこれら %1 個のアプリケーションを終了しますか？\n"
+"これら %1 個のアプリケーションを終了しますか？\n"
 "保存されていない作業は失われる可能性があります。"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:340
