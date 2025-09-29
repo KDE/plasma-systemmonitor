@@ -239,6 +239,7 @@ ColumnLayout {
                             layer.effect: Kirigami.ShadowedTexture {
                                 radius: Kirigami.Units.smallSpacing
                                 color: Kirigami.Theme.backgroundColor
+                                smooth: false
                             }
 
                             Repeater {
