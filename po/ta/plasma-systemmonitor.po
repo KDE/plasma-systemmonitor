@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-24 00:44+0000\n"
+"POT-Creation-Date: 2025-09-30 00:45+0000\n"
 "PO-Revision-Date: 2025-05-18 21:12+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -405,7 +405,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "%1 என்ற முன்னமைக்கப்பாக அமைப்புகள் சேமிக்கப்பட்டன."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:348
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:350
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
