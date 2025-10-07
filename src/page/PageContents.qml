@@ -168,7 +168,7 @@ ColumnLayout {
             Layout.fillHeight: heightMode != "minimum"
             Layout.preferredHeight: 0
             Layout.minimumHeight: {
-                if (heightMode == "minimum") {
+                if (heightMode == "minimum" || heightMode == "maximum") {
                     return minimumContentHeight
                 }
 
