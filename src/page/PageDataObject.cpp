@@ -8,6 +8,7 @@
 
 #include <array>
 
+#include <QCollator>
 #include <QDebug>
 #include <QRegularExpression>
 #include <QUrl>
@@ -209,7 +210,10 @@ bool PageDataObject::load(const KConfigBase &config, const QString &groupName)
     }
 
     auto groups = group.groupList();
-    groups.sort();
+    QCollator c;
+    c.setNumericMode(true);
+    std::stable_sort(groups.begin(), groups.end(), c);
+
     for (const auto &groupName : std::as_const(groups)) {
         auto object = new PageDataObject{m_controller, m_fileName, this};
         if (object->load(group, groupName)) {
