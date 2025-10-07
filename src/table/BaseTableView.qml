@@ -87,6 +87,27 @@ FocusScope {
             selectionModel: ItemSelectionModel {
                 id: selectionModel
                 model: tableView.model
+
+                // Below we sync currentIndex to selection if the current index
+                // changes but the selection does not. Unfortunately there is a
+                // corner case, when the current row is clicked again the
+                // selection is removed but current is not. The result is that
+                // the current row cannot be re-selected as it is still current.
+                // So when that happens, also clear the current index so we can
+                // properly re-select.
+                //
+                // Note that this needs to be done with `callLater()` because
+                // the selection change is not atomic and we need to know for
+                // sure that we cleared the selection rather than move it.
+                onSelectionChanged: (selected, deselected) => {
+                    Qt.callLater(maybeClearCurrent)
+                }
+
+                function maybeClearCurrent() {
+                    if (!hasSelection) {
+                        clearCurrentIndex()
+                    }
+                }
             }
             property int hoveredRow: -1
             property int sortColumn: root.sortColumn
