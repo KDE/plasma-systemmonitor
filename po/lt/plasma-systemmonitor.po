@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-09-30 02:49+0000\n"
-"PO-Revision-Date: 2025-01-10 00:39+0200\n"
+"PO-Revision-Date: 2025-10-15 21:12+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -114,10 +114,9 @@ msgid "An application for monitoring system resources"
 msgstr "Sistemos išteklių stebėjimo programa"
 
 #: src/main.cpp:65
-#, fuzzy, kde-format
-#| msgid "© 2024 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© 2024 Plasma plėtojimo komanda"
+msgstr "© 2025 Plasma plėtojimo komanda"
 
 #: src/main.cpp:71
 #, kde-format
@@ -515,6 +514,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Buvo įdiegta nauja šio puslapio versija, bet jūs atlikote šiame puslapyje "
+"pakeitimus. Pakeitimai nukopijuoti į %1 (Sena versija)."
 
 #: src/page/PageContents.qml:126
 #, kde-format
@@ -523,19 +524,18 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Buvo įdiegta nauja šio puslapio versija, bet jūs atlikote šiame puslapyje "
+"pakeitimus. Ar norėtumėte palikti pakeitimus, ar juos atmesti ir naudoti "
+"naują puslapio versiją?"
 
 #: src/page/PageContents.qml:134
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Įrašyti pakeitimus"
+msgstr "Palikti pakeitimus"
 
 #: src/page/PageContents.qml:140
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
 msgstr "Atmesti pakeitimus"
@@ -734,13 +734,13 @@ msgstr "Bandyti naudoti kaip įmanoma didesnį aukštį."
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "Pusės puslapio aukštis"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "Naudoti pusę puslapio aukščio."
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
