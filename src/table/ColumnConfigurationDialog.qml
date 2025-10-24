@@ -99,6 +99,11 @@ Dialog {
                 id: sortModel
             }
 
+            section.property: "enabled"
+            section.delegate: Kirigami.ListSectionHeader {
+                required property string section
+                width: ListView.view.width
+                text: section === "enabled" ? i18nc("@item:inlistbox", "Enabled Columns") : i18nc("@item:inlistbox", "Disabled Columns")
             }
 
             delegate: Loader {
