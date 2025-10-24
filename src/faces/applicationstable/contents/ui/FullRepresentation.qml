@@ -139,7 +139,7 @@ Faces.SensorFace {
                 headerContextMenu.popup(table, pos)
             }
 
-            enabledColumns: columnDialog.visibleColumns
+            enabledColumns: columnDialog.sortedColumns
             columnDisplay: columnDialog.columnDisplay
 
             columnWidths: root.config.columnWidths
@@ -388,7 +388,7 @@ Faces.SensorFace {
 
         sortedColumns: root.config.sortedColumns
 
-        fixedColumns: ["appName"]
+        nameAttribute: "appName"
 
         onAccepted: {
             root.config.sortedColumns = sortedColumns

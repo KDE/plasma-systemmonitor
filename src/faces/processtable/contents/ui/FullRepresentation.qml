@@ -210,7 +210,7 @@ Faces.SensorFace {
                 headerContextMenu.popup(table, pos)
             }
 
-            enabledColumns: columnDialog.visibleColumns
+            enabledColumns: columnDialog.sortedColumns
             columnDisplay: columnDialog.columnDisplay
 
             Keys.onPressed: event => {
@@ -377,8 +377,6 @@ Faces.SensorFace {
         sourceModel: table.processModel.attributesModel
 
         sortedColumns: root.config.sortedColumns
-
-        fixedColumns: ["name"]
 
         onAccepted: {
             root.config.sortedColumns = sortedColumns

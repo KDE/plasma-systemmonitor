@@ -17,12 +17,12 @@ import org.kde.ksysguard.table as Table
 Dialog {
     id: columnDialog
 
+    property string nameAttribute: "name"
+
     property alias model: columnView.model
     property alias sourceModel: sortModel.sourceModel
-    property var visibleColumns: ["name"]
     property var sortedColumns: []
-    property var fixedColumns: []
-    property var columnDisplay: {"name": "text"}
+    property var columnDisplay: {}
 
     title: i18ndc("plasma-systemmonitor", "@window:title", "Configure Columns")
 
@@ -50,20 +50,17 @@ Dialog {
     }
 
     function prepare() {
-        sortModel.sortedColumns = sortedColumns.filter(id => fixedColumns.indexOf(id) == -1)
-        let tempDisplay = columnDisplay
-        fixedColumns.forEach(column => delete tempDisplay[column])
-        displayModel.columnDisplay = tempDisplay
+        sortModel.sortedColumns = sortedColumns
+        sortModel.columnDisplay = columnDisplay
     }
 
     function apply() {
-        sortedColumns = fixedColumns.concat(sortModel.sortedColumns)
-        visibleColumns = fixedColumns.concat(displayModel.visibleColumnIds)
-        columnDisplay = displayModel.columnDisplay
+        sortedColumns = sortModel.sortedColumns
+        columnDisplay = sortModel.columnDisplay
     }
 
     function hideColumn(columnId) {
-        displayModel.setDisplayById(columnId, "hidden");
+        sortModel.setDisplayById(columnId, "hidden");
         accept()
     }
 
@@ -76,14 +73,11 @@ Dialog {
         ListView {
             id: columnView
 
-            model: visible ? displayModel : null
+            model: visible ? sortModel : null
 
-            Table.ColumnDisplayModel {
-                id: displayModel
-
-                sourceModel: Table.ColumnSortModel {
-                    id: sortModel
-                }
+            Table.ColumnSortFilterDisplayModel {
+                id: sortModel
+                nameAttribute: columnDialog.nameAttribute
             }
 
             delegate: Loader {
@@ -124,8 +118,12 @@ Dialog {
                             listItem: delegate
                             listView: columnView
                             onMoveRequested: (oldIndex, newIndex) => {
-                                sortModel.move(oldIndex, newIndex);
+                                if (newIndex > 0) {
+                                    sortModel.move(oldIndex, newIndex);
+                                }
                             }
+                            visible: modelData?.enabled === "enabled" ?? false
+                            enabled: modelData?.id !== columnDialog.nameAttribute
                         }
 
                         Kirigami.TitleSubtitle {
@@ -140,7 +138,7 @@ Dialog {
                             textRole: "text"
                             Layout.rowSpan: 2
                             Layout.rightMargin: Kirigami.Units.smallSpacing
-                            enabled: modelData?.id !== "name" ?? true
+                            enabled: modelData?.id !== columnDialog.nameAttribute ?? true
                             model: {
                                 var result = [
                                     {text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Hidden"), value: "hidden"},
@@ -166,7 +164,7 @@ Dialog {
                                     return -1;
                                 }
 
-                                if (modelData.id === "name") {
+                                if (modelData.id === columnDialog.nameAttribute) {
                                     return 1;
                                 }
 
@@ -179,7 +177,7 @@ Dialog {
                             }
 
                             onActivated: index => {
-                                displayModel.setDisplay(delegate.index, model[index].value);
+                                sortModel.setDisplay(delegate.index, model[index].value);
                             }
                         }
                     }
@@ -188,6 +186,15 @@ Dialog {
                         id: hoverHandler
                     }
                 }
+            }
+
+            Kirigami.PlaceholderMessage {
+                anchors.centerIn: parent
+                width: parent.width * 0.75
+
+                visible: !columnView.count
+
+                text: i18ndc("plasma-systemmonitor", "@info", "No columns matched the search")
             }
         }
     }
