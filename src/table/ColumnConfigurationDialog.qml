@@ -26,14 +26,13 @@ Dialog {
 
     title: i18ndc("plasma-systemmonitor", "@window:title", "Configure Columns")
 
-    // Make sure the user can still see the columns above the dialog
-    y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height + (Kirigami.Units.gridUnit * 2) - Kirigami.Units.smallSpacing : 0
-
     focus: true
 
-    // We already have a cancel button in the footer
-
     standardButtons: Dialog.Ok | Dialog.Cancel
+
+    popupType: Popup.Window
+    modal: false
+    padding: 0
 
     function setColumnDisplay(display) {
         columnDisplay = display
@@ -62,6 +61,24 @@ Dialog {
     function hideColumn(columnId) {
         sortModel.setDisplayById(columnId, "hidden");
         accept()
+    }
+
+    header: ToolBar {
+        Kirigami.SearchField {
+            id: searchField
+            width: parent.width
+            onAccepted: sortModel.filterString = text
+        }
+    }
+
+    footer: ToolBar {
+        DialogButtonBox {
+            width: parent.width
+            standardButtons: DialogButtonBox.Ok | DialogButtonBox.Cancel
+
+            onAccepted: columnDialog.accept()
+            onRejected: columnDialog.reject()
+        }
     }
 
     contentItem: ScrollView {
