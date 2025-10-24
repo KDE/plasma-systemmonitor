@@ -14,7 +14,7 @@ import org.kde.kirigami as Kirigami
 import org.kde.ksysguard.formatter as Formatter
 import org.kde.ksysguard.table as Table
 
-Kirigami.Dialog {
+Dialog {
     id: columnDialog
 
     property alias model: columnView.model
@@ -28,13 +28,10 @@ Kirigami.Dialog {
 
     // Make sure the user can still see the columns above the dialog
     y: ApplicationWindow.window ? ApplicationWindow.window.pageStack.globalToolBar.height + (Kirigami.Units.gridUnit * 2) - Kirigami.Units.smallSpacing : 0
-    preferredWidth: parent ? parent.width * 0.75 : 0
-    preferredHeight: parent ? parent.height * 0.75 : 0
 
     focus: true
 
     // We already have a cancel button in the footer
-    showCloseButton: false
 
     standardButtons: Dialog.Ok | Dialog.Cancel
 
@@ -70,119 +67,126 @@ Kirigami.Dialog {
         accept()
     }
 
-    ListView {
-        id: columnView
+    contentItem: ScrollView {
+        id: scrollView
 
-        Kirigami.Theme.colorSet: Kirigami.Theme.View
-        Kirigami.Theme.inherit: false
+        implicitWidth: Kirigami.Units.gridUnit * 40
+        implicitHeight: Kirigami.Units.gridUnit * 40
 
-        clip: true
+        ListView {
+            id: columnView
 
-        model: visible ? displayModel : null
+            model: visible ? displayModel : null
 
-        Table.ColumnDisplayModel {
-            id: displayModel
+            Table.ColumnDisplayModel {
+                id: displayModel
 
-            sourceModel: Table.ColumnSortModel {
-                id: sortModel
+                sourceModel: Table.ColumnSortModel {
+                    id: sortModel
+                }
             }
-        }
 
-        delegate: Loader {
-            width: columnView.width
-            height: Kirigami.Units.gridUnit * 3
-            property var modelData: model
-            sourceComponent: delegateComponent
-        }
+            delegate: Loader {
+                width: columnView.width
+                height: Kirigami.Units.gridUnit * 3
+                property var modelData: model
+                sourceComponent: delegateComponent
+            }
 
-        Component {
-            id: delegateComponent
-            Kirigami.SubtitleDelegate {
-                id: delegate
-                rightPadding: Kirigami.Units.smallSpacing
-                property int index: modelData ? modelData.row : -1
-                activeFocusOnTab: false
+            Component {
+                id: delegateComponent
+                Kirigami.SubtitleDelegate {
+                    id: delegate
+                    rightPadding: Kirigami.Units.smallSpacing
+                    property int index: modelData ? modelData.row : -1
+                    activeFocusOnTab: false
 
-                highlighted: parent === columnView
+                    highlighted: parent === columnView
 
-                // We don't want visual interactivity for the background except on drag.
-                hoverEnabled: false
-                down: false
+                    // We don't want visual interactivity for the background except on drag.
+                    hoverEnabled: false
+                    down: false
 
-                text: modelData?.name ?? ""
-                subtitle: modelData?.description ?? ""
+                    text: modelData?.name ?? ""
+                    subtitle: modelData?.description ?? ""
 
-                Kirigami.Theme.useAlternateBackgroundColor: true
+                    Kirigami.Theme.useAlternateBackgroundColor: true
 
-                ToolTip.visible: hoverHandler.hovered && contentItem.truncated
+                    ToolTip.visible: hoverHandler.hovered && contentItem.truncated
 
-                contentItem: RowLayout {
-                    spacing: Kirigami.Units.smallSpacing
+                    contentItem: RowLayout {
+                        spacing: Kirigami.Units.smallSpacing
 
-                    property bool truncated: titleSubtitle.truncated
+                        property bool truncated: titleSubtitle.truncated
 
-                    Kirigami.ListItemDragHandle {
-                        id: handle
-                        listItem: delegate
-                        listView: columnView
-                        onMoveRequested: (oldIndex, newIndex) => {
-                            sortModel.move(oldIndex, newIndex);
-                        }
-                    }
-
-                    Kirigami.TitleSubtitle {
-                        id: titleSubtitle
-                        Layout.fillWidth: true
-                        title: delegate.text
-                        subtitle: delegate.subtitle
-                    }
-
-                    ComboBox {
-                        id: showCombo
-                        textRole: "text"
-                        Layout.rowSpan: 2
-                        Layout.rightMargin: Kirigami.Units.smallSpacing
-                        model: {
-                            var result = [
-                                {text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Hidden"), value: "hidden"},
-                                {text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Text Only"), value: "text"},
-                            ]
-
-                            if (modelData && modelData.unit) {
-                                if (modelData.unit != Formatter.Units.UnitInvalid
-                                    && modelData.unit != Formatter.Units.UnitNone) {
-                                    result.push({text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Line Chart"), value: "line"})
-                                }
-                                if (modelData.unit == Formatter.Units.UnitPercent
-                                    && modelData.maximum != 100) {
-                                    result.push({text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Text Only (Scaled to 100%)"), value: "textScaled"})
-                                    result.push({text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Line Chart (Scaled to 100%)"), value: "lineScaled"})
-                                }
+                        Kirigami.ListItemDragHandle {
+                            id: handle
+                            listItem: delegate
+                            listView: columnView
+                            onMoveRequested: (oldIndex, newIndex) => {
+                                sortModel.move(oldIndex, newIndex);
                             }
-                            return result
                         }
 
-                        currentIndex: {
-                            if (!modelData) {
+                        Kirigami.TitleSubtitle {
+                            id: titleSubtitle
+                            Layout.fillWidth: true
+                            title: delegate.text
+                            subtitle: delegate.subtitle
+                        }
+
+                        ComboBox {
+                            id: showCombo
+                            textRole: "text"
+                            Layout.rowSpan: 2
+                            Layout.rightMargin: Kirigami.Units.smallSpacing
+                            enabled: modelData?.id !== "name" ?? true
+                            model: {
+                                var result = [
+                                    {text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Hidden"), value: "hidden"},
+                                    {text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Text Only"), value: "text"},
+                                ]
+
+                                if (modelData && modelData.unit) {
+                                    if (modelData.unit != Formatter.Units.UnitInvalid
+                                        && modelData.unit != Formatter.Units.UnitNone) {
+                                        result.push({text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Line Chart"), value: "line"})
+                                    }
+                                    if (modelData.unit == Formatter.Units.UnitPercent
+                                        && modelData.maximum != 100) {
+                                        result.push({text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Text Only (Scaled to 100%)"), value: "textScaled"})
+                                        result.push({text: i18ndc("plasma-systemmonitor", "@item:inlistbox", "Line Chart (Scaled to 100%)"), value: "lineScaled"})
+                                    }
+                                }
+                                return result
+                            }
+
+                            currentIndex: {
+                                if (!modelData) {
+                                    return -1;
+                                }
+
+                                if (modelData.id === "name") {
+                                    return 1;
+                                }
+
+                                for (var i = 0; i < model.length; ++i) {
+                                    if (model[i].value == modelData.displayStyle) {
+                                        return i;
+                                    }
+                                }
                                 return -1;
                             }
 
-                            for (var i = 0; i < model.length; ++i) {
-                                if (model[i].value == modelData.displayStyle) {
-                                    return i;
-                                }
+                            onActivated: index => {
+                                displayModel.setDisplay(delegate.index, model[index].value);
                             }
-                            return -1;
-                        }
-
-                        onActivated: {
-                            displayModel.setDisplay(delegate.index, model[index].value);
                         }
                     }
-                }
 
-                HoverHandler {
-                    id: hoverHandler
+                    HoverHandler {
+                        id: hoverHandler
+                    }
                 }
             }
         }
