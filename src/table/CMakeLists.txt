@@ -7,6 +7,8 @@ target_sources(PlasmaSystemMonitorTable PRIVATE
     ColumnDisplayModel.h
     ColumnSortModel.cpp
     ColumnSortModel.h
+    ColumnSortFilterDisplayModel.cpp
+    ColumnSortFilterDisplayModel.h
     ComponentCacheProxyModel.cpp
     ComponentCacheProxyModel.h
     ProcessSortFilterModel.cpp
