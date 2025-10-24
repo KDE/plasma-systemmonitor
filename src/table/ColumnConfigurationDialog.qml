@@ -53,17 +53,17 @@ Dialog {
         sortModel.sortedColumns = sortedColumns.filter(id => fixedColumns.indexOf(id) == -1)
         let tempDisplay = columnDisplay
         fixedColumns.forEach(column => delete tempDisplay[column])
-        displayModel.columnDisplay = tempDisplay
+        sortModel.columnDisplay = tempDisplay
     }
 
     function apply() {
         sortedColumns = fixedColumns.concat(sortModel.sortedColumns)
-        visibleColumns = fixedColumns.concat(displayModel.visibleColumnIds)
-        columnDisplay = displayModel.columnDisplay
+        visibleColumns = fixedColumns.concat(sortModel.visibleColumnIds)
+        columnDisplay = sortModel.columnDisplay
     }
 
     function hideColumn(columnId) {
-        displayModel.setDisplayById(columnId, "hidden");
+        sortModel.setDisplayById(columnId, "hidden");
         accept()
     }
 
@@ -76,14 +76,12 @@ Dialog {
         ListView {
             id: columnView
 
-            model: visible ? displayModel : null
+            model: visible ? sortModel : null
 
-            Table.ColumnDisplayModel {
-                id: displayModel
+            Table.ColumnSortFilterDisplayModel {
+                id: sortModel
+            }
 
-                sourceModel: Table.ColumnSortModel {
-                    id: sortModel
-                }
             }
 
             delegate: Loader {
@@ -124,8 +122,12 @@ Dialog {
                             listItem: delegate
                             listView: columnView
                             onMoveRequested: (oldIndex, newIndex) => {
-                                sortModel.move(oldIndex, newIndex);
+                                if (newIndex > 0) {
+                                    sortModel.move(oldIndex, newIndex);
+                                }
                             }
+                            visible: modelData?.enabled === "enabled" ?? false
+                            enabled: modelData?.id !== "name"
                         }
 
                         Kirigami.TitleSubtitle {
@@ -179,7 +181,7 @@ Dialog {
                             }
 
                             onActivated: index => {
-                                displayModel.setDisplay(delegate.index, model[index].value);
+                                sortModel.setDisplay(delegate.index, model[index].value);
                             }
                         }
                     }
