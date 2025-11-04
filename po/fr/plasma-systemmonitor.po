@@ -280,7 +280,7 @@ msgid ""
 msgstr ""
 "La surveillance du système est revenue à un rendu par logiciel car "
 "l'accélération matérielle n'est pas disponible. Des anomalies visuelles "
-"pourraient apparaître. Veuillez vérifier vos pilotes de périphériques "
+"pourraient apparaitre. Veuillez vérifier vos pilotes de périphériques "
 "graphiques."
 
 #: src/page/ColumnControl.qml:117
