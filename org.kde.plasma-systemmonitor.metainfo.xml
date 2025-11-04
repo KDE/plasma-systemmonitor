@@ -154,10 +154,10 @@ SPDX-License-Identifier: CC0-1.0
   </provides>
   <project_group>KDE</project_group>
   <releases>
+    <release version="6.5.2" date="2025-11-04"/>
     <release version="6.5.1" date="2025-10-28"/>
     <release version="6.5.0" date="2025-10-21"/>
     <release version="6.3.90" date="2025-05-15"/>
-    <release version="6.2.0" date="2024-10-08"/>
   </releases>
   <custom>
     <value key="KDE::supporters">Marton Daniel;Lukasz Baldyga;Marcel Janik Kimpel;Tim Rørstrøm;Mikołaj "Nimfer" Wojciech Górski;Berend</value>
