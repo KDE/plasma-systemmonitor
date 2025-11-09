@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-09-30 02:49+0000\n"
-"PO-Revision-Date: 2025-05-25 00:22-0300\n"
+"PO-Revision-Date: 2025-11-08 21:17-0300\n"
 "Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.04.1\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -29,25 +29,25 @@ msgstr "Arquivo"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr "Adicionar nova página..."
+msgstr "Adicionar nova página…"
 
 #: src/GlobalMenu.qml:25
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "Importar página..."
+msgstr "Importar página…"
 
 #: src/GlobalMenu.qml:31
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
-msgstr "Exportar página atual..."
+msgstr "Exportar página atual…"
 
 #: src/GlobalMenu.qml:38
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr "Baixar novas páginas..."
+msgstr "Baixar novas páginas…"
 
 #: src/GlobalMenu.qml:55
 #, kde-format
@@ -83,7 +83,7 @@ msgstr "Configurações"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove pages…"
-msgstr "Editar ou remover páginas..."
+msgstr "Editar ou remover páginas…"
 
 #: src/GlobalMenu.qml:83
 #, kde-format
@@ -95,7 +95,7 @@ msgstr "Ajuda"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr "Relatar erro..."
+msgstr "Relatar erro…"
 
 #: src/GlobalMenu.qml:92
 #, kde-format
@@ -190,31 +190,31 @@ msgstr "Ferramentas"
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
-msgstr "Adicionar nova página..."
+msgstr "Adicionar nova página…"
 
 #: src/Main.qml:100
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove pages…"
-msgstr "Editar ou remover páginas..."
+msgstr "Editar ou remover páginas…"
 
 #: src/Main.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
-msgstr "Exportar página atual..."
+msgstr "Exportar página atual…"
 
 #: src/Main.qml:114
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "Importar página..."
+msgstr "Importar página…"
 
 #: src/Main.qml:120
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
-msgstr "Baixar novas páginas..."
+msgstr "Baixar novas páginas…"
 
 #: src/Main.qml:137
 #, kde-format
@@ -232,7 +232,7 @@ msgstr "Recolher barra lateral"
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr "Relatar erro..."
+msgstr "Relatar erro…"
 
 #: src/Main.qml:153
 #, kde-format
@@ -333,7 +333,7 @@ msgstr "Descartar alterações"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "Configura página..."
+msgstr "Configura página…"
 
 #: src/page/EditablePage.qml:168
 #, kde-format
@@ -387,13 +387,13 @@ msgstr "Fechar"
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr "Carregar predefinição..."
+msgstr "Carregar predefinição…"
 
 #: src/page/FaceConfigurationPage.qml:45
 #, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "Baixar novas predefinições..."
+msgstr "Baixar novas predefinições…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
@@ -417,7 +417,7 @@ msgstr "Adicionar gráfico ao widget da área de trabalho"
 #, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr "Baixar novos estilos de exibição..."
+msgstr "Baixar novos estilos de exibição…"
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format
@@ -789,7 +789,7 @@ msgstr "Não perguntar novamente"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Kill a Window…"
-msgstr "Matar uma janela..."
+msgstr "Matar uma janela…"
 
 #: src/ToolsModel.cpp:115
 #, kde-format
