@@ -89,7 +89,7 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &
         return true;
     }
 
-    const QString name = source->data(source->index(sourceRow, 0, sourceParent), filterRole()).toString();
+    const QString name = source->data(source->index(sourceRow, m_nameColumn, sourceParent), filterRole()).toString();
 
     const QString filter = filterString();
     const QList<QStringView> splitFilterStrings = QStringView(filter).split(QLatin1Char(','), Qt::SkipEmptyParts);
@@ -189,7 +189,7 @@ void ProcessSortFilterModel::findColumns()
 {
     m_uidColumn = -1;
     m_pidColumn = -1;
-    int nameColumn = -1;
+    m_nameColumn = -1;
 
     auto source = sourceModel();
 
@@ -200,7 +200,7 @@ void ProcessSortFilterModel::findColumns()
         } else if (attribute == QStringLiteral("pid")) {
             m_pidColumn = column;
         } else if (attribute == QStringLiteral("name")) {
-            nameColumn = column;
+            m_nameColumn = column;
         }
     }
     setFilterKeyColumn(nameColumn);
