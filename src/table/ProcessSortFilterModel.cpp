@@ -6,6 +6,8 @@
 
 #include "ProcessSortFilterModel.h"
 
+#include <ranges>
+
 #include <QDebug>
 
 #include <processcore/process_data_model.h>
@@ -85,17 +87,14 @@ bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &
         return false;
     }
 
-    if (filterString().isEmpty()) {
+    if (m_splitFilterStrings.empty()) {
         return true;
     }
 
     const QString name = source->data(source->index(sourceRow, m_nameColumn, sourceParent), filterRole()).toString();
 
-    const QString filter = filterString();
-    const QList<QStringView> splitFilterStrings = QStringView(filter).split(QLatin1Char(','), Qt::SkipEmptyParts);
-
-    for (const QStringView &string : splitFilterStrings) {
-        if (name.contains(string.trimmed(), Qt::CaseInsensitive)) {
+    for (const QStringView &string : m_splitFilterStrings) {
+        if (name.contains(string, Qt::CaseInsensitive)) {
             return true;
         }
     }
@@ -127,6 +126,13 @@ void ProcessSortFilterModel::setFilterString(const QString &newFilterString)
     }
     beginFilterChange();
     m_filterString = newFilterString;
+    constexpr auto isNotEmpty = [](QStringView string) {
+        return !string.isEmpty();
+    };
+    auto range =
+        m_filterString.tokenize(u',', Qt::SkipEmptyParts) | std::views::transform(&QStringView::trimmed) | std::views::filter(isNotEmpty) | std::views::common;
+    // TODO: use std::ranges::to with C++23
+    m_splitFilterStrings = std::vector<QStringView>(range.begin(), range.end());
     endFilterChange(QSortFilterProxyModel::Direction::Rows);
     Q_EMIT filterStringChanged();
 }

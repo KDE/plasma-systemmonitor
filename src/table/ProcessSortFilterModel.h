@@ -6,7 +6,10 @@
 
 #pragma once
 
+#include <vector>
+
 #include <QSortFilterProxyModel>
+#include <QStringView>
 #include <qqmlregistration.h>
 
 #include <KUser>
@@ -62,6 +65,7 @@ private:
     void findColumns();
 
     QString m_filterString;
+    std::vector<QStringView> m_splitFilterStrings;
     ViewMode m_viewMode = ViewOwn;
     QStringList m_hiddenAttributes;
     QVariantList m_filterPids;
