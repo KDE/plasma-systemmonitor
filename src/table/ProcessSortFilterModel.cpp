@@ -125,8 +125,9 @@ void ProcessSortFilterModel::setFilterString(const QString &newFilterString)
     if (newFilterString == m_filterString) {
         return;
     }
+    beginFilterChange();
     m_filterString = newFilterString;
-    invalidateFilter();
+    endFilterChange(QSortFilterProxyModel::Direction::Rows);
     Q_EMIT filterStringChanged();
 }
 
@@ -140,9 +141,9 @@ void ProcessSortFilterModel::setViewMode(ViewMode newViewMode)
     if (newViewMode == m_viewMode) {
         return;
     }
-
+    beginFilterChange();
     m_viewMode = newViewMode;
-    invalidateFilter();
+    endFilterChange(QSortFilterProxyModel::Direction::Rows);
     Q_EMIT viewModeChanged();
 }
 
@@ -156,9 +157,9 @@ void ProcessSortFilterModel::setHiddenAttributes(const QStringList &newHiddenAtt
     if (newHiddenAttributes == m_hiddenAttributes) {
         return;
     }
-
+    beginFilterChange();
     m_hiddenAttributes = newHiddenAttributes;
-    invalidateFilter();
+    endFilterChange(QSortFilterProxyModel::Direction::Both);
     Q_EMIT hiddenAttributesChanged();
 }
 
@@ -172,9 +173,9 @@ void ProcessSortFilterModel::setFilterPids(const QVariantList &newFilterPids)
     if (newFilterPids == m_filterPids) {
         return;
     }
-
+    beginFilterChange();
     m_filterPids = newFilterPids;
-    invalidateFilter();
+    endFilterChange(QSortFilterProxyModel::Direction::Rows);
     Q_EMIT filterPidsChanged();
 }
 
@@ -186,6 +187,8 @@ void ProcessSortFilterModel::sort(int column, Qt::SortOrder order)
 
 void ProcessSortFilterModel::findColumns()
 {
+    beginFilterChange();
+
     m_uidColumn = -1;
     m_pidColumn = -1;
     m_nameColumn = -1;
@@ -203,7 +206,7 @@ void ProcessSortFilterModel::findColumns()
         }
     }
 
-    invalidateFilter();
+    endFilterChange(QSortFilterProxyModel::Direction::Both);
 }
 
 #include "moc_ProcessSortFilterModel.cpp"
