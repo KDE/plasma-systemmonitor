@@ -50,7 +50,7 @@ void ProcessSortFilterModel::setSourceModel(QAbstractItemModel *newSourceModel)
 bool ProcessSortFilterModel::filterAcceptsRow(int sourceRow, const QModelIndex &sourceParent) const
 {
     // not handled a reset yet, we'll invalidate at the end of modelReset anyway
-    if (m_uidColumn == -1 && m_pidColumn == -1 && filterKeyColumn() == -1) {
+    if (m_uidColumn == -1 && m_pidColumn == -1 && m_nameColumn == -1) {
         return false;
     }
 
@@ -125,9 +125,8 @@ void ProcessSortFilterModel::setFilterString(const QString &newFilterString)
     if (newFilterString == m_filterString) {
         return;
     }
-
     m_filterString = newFilterString;
-    setFilterWildcard(m_filterString);
+    invalidateFilter();
     Q_EMIT filterStringChanged();
 }
 
@@ -203,7 +202,8 @@ void ProcessSortFilterModel::findColumns()
             m_nameColumn = column;
         }
     }
-    setFilterKeyColumn(nameColumn);
+
+    invalidateFilter();
 }
 
 #include "moc_ProcessSortFilterModel.cpp"
