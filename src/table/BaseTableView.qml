@@ -181,7 +181,7 @@ FocusScope {
                         tableView.selectionModel.setCurrentIndex(index, ItemSelectionModel.ClearAndSelect | ItemSelectionModel.Rows)
                     }
 
-                    root.contextMenuRequested(tableView.index(cell.y, cell.x), eventPoint.globalPressPosition)
+                    root.contextMenuRequested(tableView.index(cell.y, cell.x), eventPoint.scenePosition)
                 }
             }
 
