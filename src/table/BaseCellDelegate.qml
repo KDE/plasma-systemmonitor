@@ -48,6 +48,8 @@ TreeViewDelegate
     onHoveredChanged: {
         if (hovered) {
             treeView.hoveredRow = row
+        } else if (treeView.hoveredRow == row) {
+            treeView.hoveredRow = -1
         }
     }
 
