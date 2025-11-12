@@ -91,9 +91,12 @@ HorizontalHeaderView {
         gesturePolicy: TapHandler.ReleaseWithinBounds
 
         onTapped: (eventPoint, button) => {
-            let cell = header.cellAtPosition(eventPoint.position)
-            let columnId = header.modelIndex(cell).data(headerModel.KItemModels.KRoleNames.role(idRole));
-            header.contextMenuRequested(cell.x, columnId, eventPoint.scenePosition)
+            const column = header.cellAtPosition(eventPoint.position).x
+            // Not calling header.modelIndex() because it's broken with HorizontalHeaderView and QAbstractListModel: https://bugreports.qt.io/browse/QTBUG-141868
+            // We need to flip pass column as row to the model since the model is a single-column list and HorizontalHeaderView presents is as single row
+            const modelIndex = headerModel.index(column, 0)
+            const columnId = modelIndex.data(headerModel.KItemModels.KRoleNames.role(idRole));
+            header.contextMenuRequested(column, columnId, eventPoint.scenePosition)
         }
     }
 }
