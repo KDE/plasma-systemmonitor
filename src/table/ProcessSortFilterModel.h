@@ -73,5 +73,6 @@ private:
     int m_uidColumn = -1;
     int m_pidColumn = -1;
     int m_nameColumn = -1;
+    int m_commandColumn = -1;
     KUser m_currentUser;
 };
