@@ -409,7 +409,7 @@ msgstr "保存设置为预设 %1。"
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
-msgstr "添加此图表为桌面挂件"
+msgstr "添加此图表为桌面小部件"
 
 #: src/page/FaceConfigurationPage.qml:77
 #, kde-format
