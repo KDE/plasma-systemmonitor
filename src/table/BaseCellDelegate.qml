@@ -17,6 +17,7 @@ TreeViewDelegate
     id: root
 
     readonly property bool rowHovered: treeView.hoveredRow == row
+    Kirigami.Theme.inherit: false
     Kirigami.Theme.colorSet: selected ? Kirigami.Theme.Selection : Kirigami.Theme.View
     text: model.display
 
