@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.processtable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:54+0000\n"
-"PO-Revision-Date: 2025-06-17 11:49+0200\n"
+"PO-Revision-Date: 2025-11-28 11:54+0100\n"
 "Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.04.2\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
@@ -26,9 +26,7 @@ msgid "Show toolbar"
 msgstr "Werkzeugleiste anzeigen"
 
 #: src/faces/processtable/contents/ui/Config.qml:30
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
 msgstr "Beenden von Prozessen bestätigen"
@@ -204,15 +202,12 @@ msgid "Configure Columns…"
 msgstr "Spalten einrichten …"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:320
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Prozess beenden"
-msgstr[1] "%1 Prozesse beenden"
+msgstr[0] "Beenden des Prozesses erzwingen"
+msgstr[1] "Beenden von %1 Prozessen erzwingen"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:321
 #, kde-format
@@ -223,15 +218,12 @@ msgstr[0] "Prozess beenden"
 msgstr[1] "%1 Prozesse beenden"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:323
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Prozess beenden"
-msgstr[1] "Prozess beenden"
+msgstr[0] "Beenden des Prozesses erzwingen"
+msgstr[1] "Beenden der Prozesse erzwingen"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:324
 #, kde-format
@@ -242,39 +234,25 @@ msgstr[0] "Prozess beenden"
 msgstr[1] "Prozess beenden"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:327
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Möchten Sie diesen Prozess wirklich beenden?\n"
-"Jegliche ungespeicherte Arbeit könnte dabei verloren gehen."
+"Beenden dieses Prozesses erzwingen (SIGKILL)? Ungespeicherte Arbeit könnte "
+"dabei verloren gehen."
 msgstr[1] ""
-"Möchten Sie diese %1 Prozesse wirklich beenden?\n"
-"Jegliche ungespeicherte Arbeit könnte dabei verloren gehen.."
+"Beenden dieser %1 Prozesse erzwingen (SIGKILL)? Ungespeicherte Arbeit könnte "
+"dabei verloren gehen."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:330
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Möchten Sie diesen Prozess wirklich beenden?\n"
-"Jegliche ungespeicherte Arbeit könnte dabei verloren gehen."
+"Diesen Prozess beenden? Ungespeicherte Arbeit könnte dabei verloren gehen."
 msgstr[1] ""
-"Möchten Sie diese %1 Prozesse wirklich beenden?\n"
-"Jegliche ungespeicherte Arbeit könnte dabei verloren gehen.."
+"Diese %1 Prozesse beenden? Ungespeicherte Arbeit könnte dabei verloren gehen."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:342
 #, kde-format
