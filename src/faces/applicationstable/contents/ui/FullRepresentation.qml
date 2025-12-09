@@ -150,6 +150,10 @@ Faces.SensorFace {
             onSortOrderChanged: root.config.sortDirection = sortOrder
 
             Keys.onPressed: event => {
+                if (!root.quitEnabled) {
+                    return
+                }
+
                 if (event.matches(StandardKey.Delete)) {
                     processHelper.sendSignalToSelection(Process.ProcessController.TerminateSignal);
                     event.accepted = true;
