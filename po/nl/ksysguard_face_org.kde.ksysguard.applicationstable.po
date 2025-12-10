@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 14:42+0000\n"
+"POT-Creation-Date: 2025-12-10 02:48+0000\n"
 "PO-Revision-Date: 2025-05-15 16:42+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -113,67 +113,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Kolommen configureren…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:250
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Prioriteit instellen…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:253
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Signaal sturen"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:254
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Onderbreken (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:262
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Doorgaan (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:262
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Ophangen (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Interrupt (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Beëindigen (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Geforceerd beëindigen (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Gebruiker 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Gebruiker 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -181,13 +181,13 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Toepassing afsluiten"
 msgstr[1] "%1 toepassingen afsluiten"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:300
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:304
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Verbergen"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:315
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:319
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -195,7 +195,7 @@ msgid_plural "Force Quit %1 Applications"
 msgstr[0] "Toepassing gedwongen afsluiten"
 msgstr[1] "%1 toepassingen gedwongen afsluiten"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:316
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:320
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -203,7 +203,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Toepassing afsluiten"
 msgstr[1] "%1 toepassingen afsluiten"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:318
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:322
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -211,7 +211,7 @@ msgid_plural "Force Quit Applications"
 msgstr[0] "Toepassing gedwongen afsluiten"
 msgstr[1] "Toepassingen gedwongen afsluiten"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:319
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:323
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -219,7 +219,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "Toepassing afsluiten"
 msgstr[1] "Toepassingen afsluiten"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:322
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:326
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -231,14 +231,14 @@ msgstr[1] ""
 "Deze %1 toepassingen (SIGKILL) gedwongen afsluiten? Alle niet opgeslagen "
 "werk gaat verloren."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:325
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:329
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] "Deze toepassing afsluiten? Niet opgeslagen werk gaat verloren."
 msgstr[1] "Deze %1 toepassingen afsluiten? Niet opgeslagen werk gaat verloren."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:340
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:344
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
