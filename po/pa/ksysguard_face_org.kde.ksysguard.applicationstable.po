@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2025-12-10 00:46+0000\n"
 "PO-Revision-Date: 2025-09-15 10:10-0500\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -113,67 +113,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "…ਕਾਲਮਾਂ ਦੀ ਸੰਰਚਨਾ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:246
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:250
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "…ਤਰਜੀਹ ਸੈੱਟ ਕਰੋ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:253
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "ਸਿਗਨਲ ਭੇਜੋ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:254
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "ਸਸਪੈਂਡ (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:262
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "ਜਾਰੀ ਰੱਖੋ (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:262
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "ਹੈਂਗਅੱਪ (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "ਰੁਕਾਵਟ (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "ਟਰਮੀਨੇਟ (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "ਖਤਮ ਕਰੋ (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "ਵਰਤੋਂਕਾਰ 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "ਵਰਤੋਂਕਾਰ 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -181,13 +181,13 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 msgstr[1] "%1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:300
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:304
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "ਓਹਲੇ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:315
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:319
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -195,7 +195,7 @@ msgid_plural "Force Quit %1 Applications"
 msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਮਜ਼ਬੂਰ"
 msgstr[1] "%1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ  ਬਾਹਰ ਜਾਣ ਲਈ ਮਜ਼ਬੂਰ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:316
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:320
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -203,7 +203,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 msgstr[1] "%1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:318
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:322
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -211,7 +211,7 @@ msgid_plural "Force Quit Applications"
 msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਮਜ਼ਬੂਰ"
 msgstr[1] "ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਣ ਲਈ ਮਜ਼ਬੂਰ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:319
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:323
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -219,7 +219,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "ਐਪਲੀਕੇਸ਼ਨ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 msgstr[1] "ਐਪਲੀਕੇਸ਼ਨਾਂ ਚੋਂ ਬਾਹਰ ਜਾਓ"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:322
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:326
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -230,14 +230,14 @@ msgstr[1] ""
 "ਇਹਨਾਂ %1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਵਿੱਚੋਂ ਧੱਕੇ ਨਾਲ ਬਾਹਰ (SIGKILL) ਜਾਣਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ "
 "ਸਕਦਾ ਹੈ।"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:325
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:329
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] "ਇਸ ਐਪਲੀਕੇਸ਼ਨ ਵਿੱਚੋਂ ਬਾਹਰ ਜਾਣਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਸਕਦਾ ਹੈ।"
 msgstr[1] "ਇਹਨਾਂ %1 ਐਪਲੀਕੇਸ਼ਨਾਂ ਵਿੱਚੋਂ ਬਾਹਰ ਜਾਣਾ ਹੈ? ਕੋਈ ਵੀ ਨਾ-ਸੰਭਾਲਿਆ ਕੰਮ ਗੁਆਚ ਸਕਦਾ ਹੈ।"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:340
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:344
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
