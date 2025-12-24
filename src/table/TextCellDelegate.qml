@@ -14,12 +14,14 @@ BaseCellDelegate {
 
     leftPadding: Kirigami.Units.smallSpacing
 
+    property int horizontalAlignment: Text.AlignHCenter
+
     contentItem: Label {
         id: label
         text: delegate.text
         maximumLineCount: 1
         elide: Text.ElideRight
-        horizontalAlignment: Text.AlignHCenter
+        horizontalAlignment: delegate.horizontalAlignment
         verticalAlignment: Text.AlignVCenter
     }
 }
