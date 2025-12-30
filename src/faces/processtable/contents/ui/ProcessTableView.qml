@@ -203,13 +203,6 @@ Table.BaseTableView {
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
             }
         }
-        DelegateChoice {
-            Table.TextCellDelegate {
-                horizontalAlignment: {
-                    var attribute = view.model.headerData(model.column, Qt.Horizontal, Process.ProcessDataModel.Attribute)
-                    return view.horizontalAlignment(attribute)
-                }
-            }
-        }
+        DelegateChoice { Table.ProcessCellDelegate {} }
     }
 }

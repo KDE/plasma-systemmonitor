@@ -47,13 +47,6 @@ FocusScope {
 
     Layout.minimumHeight: heading.height + root.rowHeight * 3
 
-    function horizontalAlignment(attribute) {
-        if (attribute === "command") {
-            return Text.AlignLeft
-        }
-        return Text.AlignHCenter
-    }
-
     clip: true
 
     Kirigami.Theme.inherit: false

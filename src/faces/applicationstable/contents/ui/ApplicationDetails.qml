@@ -254,14 +254,7 @@ Page {
                             text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
                         }
                     }
-                    DelegateChoice {
-                        Table.TextCellDelegate {
-                            horizontalAlignment: {
-                                var attribute = processTable.model.headerData(model.column, Qt.Horizontal, Process.ProcessDataModel.Attribute)
-                                return processTable.horizontalAlignment(attribute)
-                            }
-                        }
-                    }
+                    DelegateChoice { Table.ProcessCellDelegate { } }
                 }
             }
 
