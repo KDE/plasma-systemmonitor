@@ -8,7 +8,6 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
-
 import org.kde.kirigami as Kirigami
 import org.kde.ksysguard.faces as Faces
 import org.kde.ksysguard.page
@@ -235,13 +234,6 @@ ColumnLayout {
 
                             spacing: Kirigami.Units.largeSpacing
 
-                            layer.enabled: (GraphicsInfo.api !== GraphicsInfo.Software && model.data.showBackground && model.data.noMargins) ?? false
-                            layer.effect: Kirigami.ShadowedTexture {
-                                radius: Kirigami.Units.smallSpacing
-                                color: Kirigami.Theme.backgroundColor
-                                smooth: false
-                            }
-
                             Repeater {
                                 model: PageDataModel { data: model.data }
 
@@ -270,6 +262,21 @@ ColumnLayout {
                             Layout.minimumHeight: contents.Layout.minimumHeight
 
                             ColumnContents { id: contents }
+
+                            // When noMargins is set, there's a chance the corners of the face will
+                            // peek out of the background shape, leading to broken corner rendering.
+                            // While the correct way to resolve that would be to cut away the corners
+                            // using some form of opacity mask, that leads to rendering glitches in the
+                            // face due to sizing issues. So instead, just render the background's
+                            // border over the face, as that is enough to hide most of the issue.
+                            Rectangle {
+                                anchors.fill: parent
+                                visible: model?.data?.noMargins ?? false
+                                border.width: parent.background?.border?.width ?? 0
+                                border.color: parent.background?.border?.color ?? "black"
+                                radius: Kirigami.Units.cornerRadius
+                                color: "transparent"
+                            }
                         }
 
                         sourceFalse: ColumnContents { }
