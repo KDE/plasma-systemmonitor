@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2026-01-04 00:46+0000\n"
 "PO-Revision-Date: 2025-05-18 21:12+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -405,7 +405,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "%1 என்ற முன்னமைக்கப்பாக அமைப்புகள் சேமிக்கப்பட்டன."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:350
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:357
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -493,18 +493,18 @@ msgctxt "@action"
 msgid "Move"
 msgstr "நகற்று"
 
-#: src/page/PageContents.qml:108 src/page/PageEditor.qml:141
+#: src/page/PageContents.qml:107 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "இப்பக்கத்துக்கு தேவையான சில உணரிகள் இல்லாத‍தால், இது சரியாக செயல்படாது."
 
-#: src/page/PageContents.qml:113 src/page/PageEditor.qml:145
+#: src/page/PageContents.qml:112 src/page/PageEditor.qml:145
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "சரிசெய்…"
 
-#: src/page/PageContents.qml:125
+#: src/page/PageContents.qml:124
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
@@ -513,7 +513,7 @@ msgstr ""
 "இப்பக்கதின் புதிய பதிப்பு நிறுவப்பட்டுள்ளது, ஆனால் இப்பக்கத்தை மாற்றியமைத்துள்ளீர். மாற்றங்கள் "
 "%1 என்பதற்கு நகலெடுக்கப்பட்டுள்ளன (பழைய பதிப்பு)."
 
-#: src/page/PageContents.qml:126
+#: src/page/PageContents.qml:125
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
@@ -523,13 +523,13 @@ msgstr ""
 "இப்பக்கதின் புதிய பதிப்பு நிறுவப்பட்டுள்ளது, ஆனால் இப்பக்கத்தை மாற்றியமைத்துள்ளீர். மாற்றங்களை "
 "வைத்திருக்க வேண்டுமா, அல்லது மாற்றங்களை கைவிட்டு புதிய பதிப்பைப் பயன்படுத்த வேண்டுமா?"
 
-#: src/page/PageContents.qml:134
+#: src/page/PageContents.qml:133
 #, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
 msgstr "மாற்றங்களை வைத்திரு"
 
-#: src/page/PageContents.qml:140
+#: src/page/PageContents.qml:139
 #, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"

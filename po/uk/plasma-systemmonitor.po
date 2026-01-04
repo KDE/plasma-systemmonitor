@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2026-01-04 00:46+0000\n"
 "PO-Revision-Date: 2025-05-15 18:24+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -409,7 +409,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Параметри збережено до набору %1."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:350
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:357
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -497,20 +497,20 @@ msgctxt "@action"
 msgid "Move"
 msgstr "Пересунути"
 
-#: src/page/PageContents.qml:108 src/page/PageEditor.qml:141
+#: src/page/PageContents.qml:107 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr ""
 "На цій сторінці не вистачає даних певних датчиків, отже дані буде показано "
 "неправильно."
 
-#: src/page/PageContents.qml:113 src/page/PageEditor.qml:145
+#: src/page/PageContents.qml:112 src/page/PageEditor.qml:145
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "Виправити…"
 
-#: src/page/PageContents.qml:125
+#: src/page/PageContents.qml:124
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
@@ -519,7 +519,7 @@ msgstr ""
 "Було встановлено нову версію цієї сторінки, але вами було внесено до неї "
 "зміни. Зміни було скопійовано до %1 (стара версія)."
 
-#: src/page/PageContents.qml:126
+#: src/page/PageContents.qml:125
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
@@ -530,13 +530,13 @@ msgstr ""
 "зміни. Хочете зберегти зміни чи відкинути їх і скористатися новою версією "
 "сторінки?"
 
-#: src/page/PageContents.qml:134
+#: src/page/PageContents.qml:133
 #, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
 msgstr "Зберегти зміни"
 
-#: src/page/PageContents.qml:140
+#: src/page/PageContents.qml:139
 #, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2026-01-04 00:46+0000\n"
 "PO-Revision-Date: 2024-12-25 19:37+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -406,7 +406,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "पूर्वनिर्धारित %1 रूपेण समायोजननि रक्षितानि ।."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:350
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:357
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -494,25 +494,25 @@ msgctxt "@action"
 msgid "Move"
 msgstr "स्थानान्तरयन्तु"
 
-#: src/page/PageContents.qml:108 src/page/PageEditor.qml:141
+#: src/page/PageContents.qml:107 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "अस्मिन् पृष्ठे केचन संवेदकाः गम्यन्ते, सम्यक् न प्रदर्शयिष्यति ।."
 
-#: src/page/PageContents.qml:113 src/page/PageEditor.qml:145
+#: src/page/PageContents.qml:112 src/page/PageEditor.qml:145
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "समाधानं कुरुत…"
 
-#: src/page/PageContents.qml:125
+#: src/page/PageContents.qml:124
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
 
-#: src/page/PageContents.qml:126
+#: src/page/PageContents.qml:125
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
@@ -520,7 +520,7 @@ msgid ""
 "version of the page?"
 msgstr ""
 
-#: src/page/PageContents.qml:134
+#: src/page/PageContents.qml:133
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Save Changes"
@@ -528,7 +528,7 @@ msgctxt "@action:button"
 msgid "Keep Changes"
 msgstr "परिवर्तनं रक्षन्तु"
 
-#: src/page/PageContents.qml:140
+#: src/page/PageContents.qml:139
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Discard Changes"
