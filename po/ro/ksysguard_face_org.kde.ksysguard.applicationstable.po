@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# Sergiu Bivol <sergiu@cip.md>, 2020, 2021, 2022, 2024.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024, 2025 Sergiu Bivol <sergiu@cip.md>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-10 02:48+0000\n"
-"PO-Revision-Date: 2024-02-24 14:36+0000\n"
+"PO-Revision-Date: 2025-12-12 10:58+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
 #, kde-format
@@ -70,15 +70,13 @@ msgstr "Vizualizarea aplicațiilor nu e susținută pe sistemul dumneavoastră"
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
-msgstr ""
+msgstr "Servicii de fundal"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Show Details Sidebar"
+#, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "Arată bara laterală cu detalii"
+msgstr "Arată bara de unelte"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:28
 #, kde-format
@@ -111,9 +109,7 @@ msgid "Show Details Sidebar"
 msgstr "Arată bara laterală cu detalii"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:68
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Configure columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Configurează coloane…"
@@ -191,19 +187,16 @@ msgstr[2] "Închide %1 de aplicații"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Ascunde"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:319
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Quit Application"
-#| msgid_plural "Quit %1 Applications"
+#, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Închide aplicația"
-msgstr[1] "Închide %1 aplicații"
-msgstr[2] "Închide %1 de aplicații"
+msgstr[0] "Închide forțat aplicația"
+msgstr[1] "Închide forțat %1 aplicații"
+msgstr[2] "Închide forțat %1 de aplicații"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:320
 #, kde-format
@@ -215,16 +208,13 @@ msgstr[1] "Închide %1 aplicații"
 msgstr[2] "Închide %1 de aplicații"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:322
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Quit Application"
-#| msgid_plural "Quit Applications"
+#, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Închide aplicația"
-msgstr[1] "Închide aplicațiile"
-msgstr[2] "Închide aplicațiile"
+msgstr[0] "Închide forțat aplicația"
+msgstr[1] "Închide forțat aplicațiile"
+msgstr[2] "Închide forțat aplicațiile"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:323
 #, kde-format
@@ -236,45 +226,26 @@ msgstr[1] "Închide aplicațiile"
 msgstr[2] "Închide aplicațiile"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:326
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
-"Sigur doriți să terminați această aplicație?\n"
-"Lucrul nesalvat poate fi pierdut."
+"Închideți forțat (SIGKILL) aplicația? Lucrul nesalvat poate fi pierdut."
 msgstr[1] ""
-"Sigur doriți să terminați aceste %1 aplicații?\n"
-"Lucrul nesalvat poate fi pierdut."
+"Închideți forțat (SIGKILL) aceste %1 aplicații? Lucrul nesalvat poate fi "
+"pierdut."
 msgstr[2] ""
-"Sigur doriți să terminați aceste %1 de aplicații?\n"
-"Lucrul nesalvat poate fi pierdut."
+"Închideți forțat (SIGKILL) aceste %1 de aplicații? Lucrul nesalvat poate fi "
+"pierdut."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:329
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to quit this application?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to quit these %1 applications?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
-"Sigur doriți să terminați această aplicație?\n"
-"Lucrul nesalvat poate fi pierdut."
-msgstr[1] ""
-"Sigur doriți să terminați aceste %1 aplicații?\n"
-"Lucrul nesalvat poate fi pierdut."
-msgstr[2] ""
-"Sigur doriți să terminați aceste %1 de aplicații?\n"
-"Lucrul nesalvat poate fi pierdut."
+msgstr[0] "Închideți această aplicație? Lucrul nesalvat poate fi pierdut."
+msgstr[1] "Închideți aceste %1 aplicații? Lucrul nesalvat poate fi pierdut."
+msgstr[2] "Închideți aceste %1 de aplicații? Lucrul nesalvat poate fi pierdut."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:344
 #, kde-format

@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# Sergiu Bivol <sergiu@cip.md>, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2025 Sergiu Bivol <sergiu@cip.md>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:42+0000\n"
-"PO-Revision-Date: 2022-08-14 16:53+0100\n"
+"PO-Revision-Date: 2025-12-12 11:01+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -113,10 +113,9 @@ msgid "An application for monitoring system resources"
 msgstr "Aplicație pentru monitorizarea resurselor sistemului"
 
 #: src/main.cpp:65
-#, fuzzy, kde-format
-#| msgid "© 2020 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© 2020 Echipa de dezvoltatori Plasma"
+msgstr "© 2025 Echipa de dezvoltatori Plasma"
 
 #: src/main.cpp:71
 #, kde-format
@@ -244,7 +243,7 @@ msgstr "Despre Monitor de sistem"
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
-msgstr ""
+msgstr "Despre KDE"
 
 #: src/Main.qml:251
 #, kde-format
@@ -390,9 +389,7 @@ msgid "Load Preset…"
 msgstr "Încarcă preconfigurare…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
 msgstr "Obține preconfigurări noi…"
@@ -416,9 +413,7 @@ msgid "Add Chart as Desktop Widget"
 msgstr "Adaugă graficul ca control pe birou"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "Obține stiluri de afișare noi…"
@@ -516,6 +511,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"A fost instalată o nouă versiune a acestei pagini, dar ați adus modificări "
+"paginii. Modificările au fost copiate în %1 (versiune veche)."
 
 #: src/page/PageContents.qml:126
 #, kde-format
@@ -524,22 +521,21 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"A fost instalată o nouă versiune a acestei pagini, dar ați adus modificări "
+"paginii. Doriți să vă păstrați modificările sau să le aruncați și să "
+"folosiți noua versiune a paginii?"
 
 #: src/page/PageContents.qml:134
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Salvează modificările"
+msgstr "Păstrează modificările"
 
 #: src/page/PageContents.qml:140
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
-msgstr "Elimină modificările"
+msgstr "Aruncă modificările"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -736,13 +732,13 @@ msgstr "Încearcă folosirea înălțimii maxime posibile."
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "Jumătate din înălțimea paginii"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "Folosește jumătate din înălțimea paginii."
 
 #: src/table/ColumnConfigurationDialog.qml:27
 #, kde-format
