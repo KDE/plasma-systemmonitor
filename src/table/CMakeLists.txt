@@ -5,8 +5,6 @@ ecm_add_qml_module(PlasmaSystemMonitorTable URI "org.kde.ksysguard.table" GENERA
 target_sources(PlasmaSystemMonitorTable PRIVATE
     ColumnDisplayModel.cpp
     ColumnDisplayModel.h
-    ColumnSortModel.cpp
-    ColumnSortModel.h
     ColumnSortFilterDisplayModel.cpp
     ColumnSortFilterDisplayModel.h
     ComponentCacheProxyModel.cpp
