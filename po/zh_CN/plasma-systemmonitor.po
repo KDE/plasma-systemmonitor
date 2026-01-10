@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-04 00:46+0000\n"
+"POT-Creation-Date: 2026-01-10 00:45+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -736,41 +736,63 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "使用页面高度的一半。"
 
-#: src/table/ColumnConfigurationDialog.qml:27
+#: src/table/ColumnConfigurationDialog.qml:29
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "配置列"
 
-#: src/table/ColumnConfigurationDialog.qml:147
+#: src/table/ColumnConfigurationDialog.qml:106
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Add Column"
+msgctxt "@item:inlistbox"
+msgid "Enabled Columns"
+msgstr "新增一列"
+
+#: src/table/ColumnConfigurationDialog.qml:106
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Add Column"
+msgctxt "@item:inlistbox"
+msgid "Disabled Columns"
+msgstr "新增一列"
+
+#: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "隐藏"
 
-#: src/table/ColumnConfigurationDialog.qml:148
+#: src/table/ColumnConfigurationDialog.qml:241
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "仅文字"
 
-#: src/table/ColumnConfigurationDialog.qml:154
+#: src/table/ColumnConfigurationDialog.qml:245
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "折线图"
 
-#: src/table/ColumnConfigurationDialog.qml:158
+#: src/table/ColumnConfigurationDialog.qml:249
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "仅文本 (缩放到100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:159
+#: src/table/ColumnConfigurationDialog.qml:250
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "折线图 (缩放到100%)"
+
+#: src/table/ColumnConfigurationDialog.qml:287
+#, kde-format
+msgctxt "@info"
+msgid "No columns matched the search"
+msgstr ""
 
 #: src/table/KillDialog.qml:83
 #, kde-format

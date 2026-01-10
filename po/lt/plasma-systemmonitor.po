@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-04 00:46+0000\n"
+"POT-Creation-Date: 2026-01-10 00:45+0000\n"
 "PO-Revision-Date: 2025-10-15 21:11+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: none\n"
@@ -742,41 +742,63 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "Naudoti pusę puslapio aukščio."
 
-#: src/table/ColumnConfigurationDialog.qml:27
+#: src/table/ColumnConfigurationDialog.qml:29
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Konfigūruoti stulpelius"
 
-#: src/table/ColumnConfigurationDialog.qml:147
+#: src/table/ColumnConfigurationDialog.qml:106
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Add Column"
+msgctxt "@item:inlistbox"
+msgid "Enabled Columns"
+msgstr "Pridėti stulpelį"
+
+#: src/table/ColumnConfigurationDialog.qml:106
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Add Column"
+msgctxt "@item:inlistbox"
+msgid "Disabled Columns"
+msgstr "Pridėti stulpelį"
+
+#: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Paslėptas"
 
-#: src/table/ColumnConfigurationDialog.qml:148
+#: src/table/ColumnConfigurationDialog.qml:241
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Tik tekstas"
 
-#: src/table/ColumnConfigurationDialog.qml:154
+#: src/table/ColumnConfigurationDialog.qml:245
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Linijinė diagrama"
 
-#: src/table/ColumnConfigurationDialog.qml:158
+#: src/table/ColumnConfigurationDialog.qml:249
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Tik tekstas (100% mastelis)"
 
-#: src/table/ColumnConfigurationDialog.qml:159
+#: src/table/ColumnConfigurationDialog.qml:250
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Linijinė diagrama (100% mastelis)"
+
+#: src/table/ColumnConfigurationDialog.qml:287
+#, kde-format
+msgctxt "@info"
+msgid "No columns matched the search"
+msgstr ""
 
 #: src/table/KillDialog.qml:83
 #, kde-format

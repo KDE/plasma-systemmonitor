@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-04 00:46+0000\n"
+"POT-Creation-Date: 2026-01-10 00:45+0000\n"
 "PO-Revision-Date: 2024-06-05 07:05\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -751,41 +751,63 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr ""
 
-#: src/table/ColumnConfigurationDialog.qml:27
+#: src/table/ColumnConfigurationDialog.qml:29
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Наладжванне слупкоў"
 
-#: src/table/ColumnConfigurationDialog.qml:147
+#: src/table/ColumnConfigurationDialog.qml:106
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Add Column"
+msgctxt "@item:inlistbox"
+msgid "Enabled Columns"
+msgstr "Дадаць слупок"
+
+#: src/table/ColumnConfigurationDialog.qml:106
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Add Column"
+msgctxt "@item:inlistbox"
+msgid "Disabled Columns"
+msgstr "Дадаць слупок"
+
+#: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Схавана"
 
-#: src/table/ColumnConfigurationDialog.qml:148
+#: src/table/ColumnConfigurationDialog.qml:241
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Толькі тэкст"
 
-#: src/table/ColumnConfigurationDialog.qml:154
+#: src/table/ColumnConfigurationDialog.qml:245
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Лінейная дыяграма"
 
-#: src/table/ColumnConfigurationDialog.qml:158
+#: src/table/ColumnConfigurationDialog.qml:249
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Толькі тэкст (павялічана да 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:159
+#: src/table/ColumnConfigurationDialog.qml:250
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Лінейная дыяграма (павялічана да 100%)"
+
+#: src/table/ColumnConfigurationDialog.qml:287
+#, kde-format
+msgctxt "@info"
+msgid "No columns matched the search"
+msgstr ""
 
 #: src/table/KillDialog.qml:83
 #, kde-format

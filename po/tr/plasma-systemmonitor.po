@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-04 00:46+0000\n"
+"POT-Creation-Date: 2026-01-10 00:45+0000\n"
 "PO-Revision-Date: 2025-05-15 13:49+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -738,41 +738,63 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "Sayfanın yüksekliğinin yarısını kullanın."
 
-#: src/table/ColumnConfigurationDialog.qml:27
+#: src/table/ColumnConfigurationDialog.qml:29
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Sütunları Yapılandır"
 
-#: src/table/ColumnConfigurationDialog.qml:147
+#: src/table/ColumnConfigurationDialog.qml:106
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Add Column"
+msgctxt "@item:inlistbox"
+msgid "Enabled Columns"
+msgstr "Sütun Ekle"
+
+#: src/table/ColumnConfigurationDialog.qml:106
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Add Column"
+msgctxt "@item:inlistbox"
+msgid "Disabled Columns"
+msgstr "Sütun Ekle"
+
+#: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Gizli"
 
-#: src/table/ColumnConfigurationDialog.qml:148
+#: src/table/ColumnConfigurationDialog.qml:241
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Yalnızca Metin"
 
-#: src/table/ColumnConfigurationDialog.qml:154
+#: src/table/ColumnConfigurationDialog.qml:245
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Satır Grafiği"
 
-#: src/table/ColumnConfigurationDialog.qml:158
+#: src/table/ColumnConfigurationDialog.qml:249
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Yalnızca Metin (%​100 Ölçekli)"
 
-#: src/table/ColumnConfigurationDialog.qml:159
+#: src/table/ColumnConfigurationDialog.qml:250
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Satır Grafiği (%​100 Ölçekli)"
+
+#: src/table/ColumnConfigurationDialog.qml:287
+#, kde-format
+msgctxt "@info"
+msgid "No columns matched the search"
+msgstr ""
 
 #: src/table/KillDialog.qml:83
 #, kde-format
