@@ -142,6 +142,7 @@ Table.BaseTableView {
 
         property int nameColumn: enabledAttributes.indexOf("appName")
         property int iconColumn: enabledAttributes.indexOf("iconName")
+        property int commandColumn: enabledAttributes.indexOf("command")
 
         property var requiredAttributes: [
             "iconName",
@@ -263,6 +264,12 @@ Table.BaseTableView {
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
             }
         }
-        DelegateChoice { Table.ProcessCellDelegate { } }
+        DelegateChoice {
+            column: appModel.commandColumn
+            Table.TextCellDelegate {
+                horizontalAlignment: Text.AlignLeft
+            }
+        }
+        DelegateChoice { Table.TextCellDelegate { } }
     }
 }

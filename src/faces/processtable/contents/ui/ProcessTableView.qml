@@ -111,6 +111,7 @@ Table.BaseTableView {
         property int pidColumn
         property int uidColumn
         property int usernameColumn
+        property int commandColumn
 
         property var requiredSensors: [
             "name",
@@ -142,6 +143,7 @@ Table.BaseTableView {
             processModel.pidColumn = result.indexOf("pid")
             processModel.uidColumn = result.indexOf("uid")
             processModel.usernameColumn = result.indexOf("username")
+            processModel.commandColumn = result.indexOf("command")
             processModel.hiddenSensors = hidden
             processModel.enabledAttributes = result
         }
@@ -203,6 +205,12 @@ Table.BaseTableView {
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
             }
         }
-        DelegateChoice { Table.ProcessCellDelegate {} }
+        DelegateChoice {
+            column: view.processModel.commandColumn
+            Table.TextCellDelegate {
+                horizontalAlignment: Text.AlignLeft
+            }
+        }
+        DelegateChoice { Table.TextCellDelegate{} }
     }
 }

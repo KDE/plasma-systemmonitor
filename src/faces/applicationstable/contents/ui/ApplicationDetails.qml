@@ -232,6 +232,8 @@ Page {
 
                     enabled: root.visible && root.firstApplication != null
 
+                    property int commandColumn: enabledAttributes.indexOf("command")
+
                     enabledAttributes: [
                         "name",
                         "usage",
@@ -254,7 +256,13 @@ Page {
                             text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
                         }
                     }
-                    DelegateChoice { Table.ProcessCellDelegate { } }
+                    DelegateChoice {
+                        column: processModel.commandColumn
+                        Table.TextCellDelegate {
+                            horizontalAlignment: Text.AlignLeft
+                        }
+                    }
+                    DelegateChoice { Table.TextCellDelegate { } }
                 }
             }
 
