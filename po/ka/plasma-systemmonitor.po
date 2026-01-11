@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-10 00:45+0000\n"
-"PO-Revision-Date: 2025-05-15 04:21+0200\n"
+"PO-Revision-Date: 2026-01-10 02:30+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -683,7 +683,7 @@ msgstr "ბოლოს ნანახი გვერდი"
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
-msgstr "წვეტის დამატება"
+msgstr "სვეტის დამატება"
 
 #: src/page/RowControl.qml:136
 #, kde-format
@@ -747,20 +747,16 @@ msgid "Configure Columns"
 msgstr "სვეტების მორგება"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "წვეტის დამატება"
+msgstr "ჩართული სვეტები"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "წვეტის დამატება"
+msgstr "გამორთული სვეტები"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -796,7 +792,7 @@ msgstr "მხოლოდ ხაზოვანი გრაფიკი (გ�
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "ძებნას არცერთი სვეტი დაემთხვა"
 
 #: src/table/KillDialog.qml:83
 #, kde-format

@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-10 00:45+0000\n"
-"PO-Revision-Date: 2025-05-15 13:49+0300\n"
+"PO-Revision-Date: 2026-01-10 21:39+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.04.1\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -745,20 +745,16 @@ msgid "Configure Columns"
 msgstr "Sütunları Yapılandır"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "Sütun Ekle"
+msgstr "Etkinleştirilmiş sütunlar"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "Sütun Ekle"
+msgstr "Devre dışı bırakılmış sütunlar"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -770,31 +766,31 @@ msgstr "Gizli"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
-msgstr "Yalnızca Metin"
+msgstr "Yalnızca metin"
 
 #: src/table/ColumnConfigurationDialog.qml:245
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
-msgstr "Satır Grafiği"
+msgstr "Satır grafiği"
 
 #: src/table/ColumnConfigurationDialog.qml:249
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
-msgstr "Yalnızca Metin (%​100 Ölçekli)"
+msgstr "Yalnızca metin (%​100 ölçekli)"
 
 #: src/table/ColumnConfigurationDialog.qml:250
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
-msgstr "Satır Grafiği (%​100 Ölçekli)"
+msgstr "Satır grafiği (%​100 ölçekli)"
 
 #: src/table/ColumnConfigurationDialog.qml:287
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "Aramayla eşleşen sütun yok"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
