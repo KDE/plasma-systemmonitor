@@ -220,6 +220,9 @@ Faces.SensorFace {
                 } else if ((event.modifiers & Qt.ShiftModifier) && (event.key == Qt.Key_Delete)) {
                     processHelper.sendSignalToSelection(Process.ProcessController.KillSignal);
                     event.accepted = true;
+                } else if (event.key == Qt.Key_F8) {
+                    processHelper.reniceSelection();
+                    event.accepted = true;
                 }
             }
         }
@@ -238,7 +241,12 @@ Faces.SensorFace {
 
         property var index
 
-//         MenuItem { text: i18n("Set priority...") }
+        MenuItem {
+            text: i18nc("@action:inmenu", "Set priority…")
+            icon.name: "process-working-symbolic"
+            onTriggered: processHelper.reniceSelection()
+        }
+
         Menu {
             title: i18nc("@action:inmenu", "Send Signal")
             icon.name: "send_signal-symbolic"
@@ -350,8 +358,22 @@ Faces.SensorFace {
         }
     }
 
+    Table.ReniceDialog {
+        id: reniceDialog
+
+        onAccepted: {
+            const niceValue = 20 - cpuPriority
+            let pids = table.selectedProcesses.map(i => i.pid)
+            processHelper.setPriority(pids, niceValue)
+            processHelper.setCpuScheduler(pids, cpuMode, niceValue)
+            processHelper.setIoScheduler(pids, ioMode, ioPriority)
+        }
+    }
+
     Process.ProcessController {
         id: processHelper
+
+        window: root.Window.window
 
         property var killSignals: [
             Process.ProcessController.TerminateSignal,
@@ -366,6 +388,17 @@ Faces.SensorFace {
                 var pids = table.selectedProcesses.map(i => i.pid)
                 sendSignal(pids, sig);
             }
+        }
+
+        function reniceSelection() {
+            let pids = table.selectedProcesses.map(i => i.pid)
+
+            reniceDialog.cpuPriority = 20 - (processHelper.priority(pids) ?? 20)
+            reniceDialog.cpuMode = processHelper.cpuScheduler(pids) ?? 0
+            reniceDialog.ioPriority = processHelper.ioPriority(pids) ?? 0
+            reniceDialog.ioMode = processHelper.ioScheduler(pids) ?? 0
+
+            reniceDialog.open()
         }
     }
 

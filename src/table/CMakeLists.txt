@@ -24,6 +24,7 @@ ecm_target_qml_sources(PlasmaSystemMonitorTable SOURCES
     LineChartCellDelegate.qml
     TableViewHeader.qml
     UserCellDelegate.qml
+    ReniceDialog.qml
     KillDialog.qml
 )
 
