@@ -1,0 +1,785 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-systemmonitor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-systemmonitor\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 14:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/GlobalMenu.qml:16
+#, kde-format
+msgctxt "@menu"
+msgid "File"
+msgstr ""
+
+#: src/GlobalMenu.qml:19
+#, kde-format
+msgctxt "@menu-action"
+msgid "Add New Page…"
+msgstr ""
+
+#: src/GlobalMenu.qml:25
+#, kde-format
+msgctxt "@menu-action"
+msgid "Import Page…"
+msgstr ""
+
+#: src/GlobalMenu.qml:31
+#, kde-format
+msgctxt "@menu-action"
+msgid "Export Current Page…"
+msgstr ""
+
+#: src/GlobalMenu.qml:38
+#, kde-format
+msgctxt "@menu-action"
+msgid "Get New Pages…"
+msgstr ""
+
+#: src/GlobalMenu.qml:55
+#, kde-format
+msgctxt "@menu-action"
+msgid "Quit"
+msgstr ""
+
+#: src/GlobalMenu.qml:63
+#, kde-format
+msgctxt "@menu"
+msgid "View"
+msgstr ""
+
+#: src/GlobalMenu.qml:66
+#, kde-format
+msgctxt "@menu-action"
+msgid "Expand Sidebar"
+msgstr ""
+
+#: src/GlobalMenu.qml:66
+#, kde-format
+msgctxt "@menu-action"
+msgid "Collapse Sidebar"
+msgstr ""
+
+#: src/GlobalMenu.qml:73
+#, kde-format
+msgctxt "@menu"
+msgid "Settings"
+msgstr ""
+
+#: src/GlobalMenu.qml:76
+#, kde-format
+msgctxt "@menu-action"
+msgid "Edit or Remove pages…"
+msgstr ""
+
+#: src/GlobalMenu.qml:83
+#, kde-format
+msgctxt "@menu"
+msgid "Help"
+msgstr ""
+
+#: src/GlobalMenu.qml:86
+#, kde-format
+msgctxt "@menu-action"
+msgid "Report Bug…"
+msgstr ""
+
+#: src/GlobalMenu.qml:92
+#, kde-format
+msgctxt "@menu-action"
+msgid "About System Monitor"
+msgstr ""
+
+#: src/main.cpp:61
+#, kde-format
+msgid "System Monitor"
+msgstr ""
+
+#: src/main.cpp:63
+#, kde-format
+msgid "An application for monitoring system resources"
+msgstr ""
+
+#: src/main.cpp:65
+#, kde-format
+msgid "© 2025 Plasma Development Team"
+msgstr ""
+
+#: src/main.cpp:71
+#, kde-format
+msgid "Arjen Hiemstra"
+msgstr ""
+
+#: src/main.cpp:71 src/main.cpp:74 src/main.cpp:76 src/main.cpp:77
+#, kde-format
+msgid "Development"
+msgstr ""
+
+#: src/main.cpp:72
+#, kde-format
+msgid "Uri Herrera"
+msgstr ""
+
+#: src/main.cpp:72
+#, kde-format
+msgid "Design"
+msgstr ""
+
+#: src/main.cpp:73
+#, kde-format
+msgid "Nate Graham"
+msgstr ""
+
+#: src/main.cpp:73 src/main.cpp:75
+#, kde-format
+msgid "Design and Quality Assurance"
+msgstr ""
+
+#: src/main.cpp:74
+#, kde-format
+msgid "David Redondo"
+msgstr ""
+
+#: src/main.cpp:75
+#, kde-format
+msgid "Noah Davis"
+msgstr ""
+
+#: src/main.cpp:76
+#, kde-format
+msgid "Marco Martin"
+msgstr ""
+
+#: src/main.cpp:77
+#, kde-format
+msgid "David Edmundson"
+msgstr ""
+
+#: src/main.cpp:79
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#: src/main.cpp:79
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: src/Main.qml:88
+#, kde-format
+msgctxt "@action"
+msgid "Tools"
+msgstr ""
+
+#: src/Main.qml:93
+#, kde-format
+msgctxt "@action"
+msgid "Add New Page…"
+msgstr ""
+
+#: src/Main.qml:100
+#, kde-format
+msgctxt "@action"
+msgid "Edit or Remove pages…"
+msgstr ""
+
+#: src/Main.qml:106
+#, kde-format
+msgctxt "@action"
+msgid "Export Current Page…"
+msgstr ""
+
+#: src/Main.qml:114
+#, kde-format
+msgctxt "@action"
+msgid "Import Page…"
+msgstr ""
+
+#: src/Main.qml:120
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Get New Pages…"
+msgstr ""
+
+#: src/Main.qml:137
+#, kde-format
+msgctxt "@action"
+msgid "Expand Sidebar"
+msgstr ""
+
+#: src/Main.qml:137
+#, kde-format
+msgctxt "@action"
+msgid "Collapse Sidebar"
+msgstr ""
+
+#: src/Main.qml:147
+#, kde-format
+msgctxt "@action"
+msgid "Report Bug…"
+msgstr ""
+
+#: src/Main.qml:153
+#, kde-format
+msgctxt "@action"
+msgid "About System Monitor"
+msgstr ""
+
+#: src/Main.qml:160
+#, kde-format
+msgctxt "@action"
+msgid "About KDE"
+msgstr ""
+
+#: src/Main.qml:251
+#, kde-format
+msgctxt "@window:title"
+msgid "Add New Page"
+msgstr ""
+
+#: src/Main.qml:272
+#, kde-format
+msgctxt "@window:title"
+msgid "Edit Pages"
+msgstr ""
+
+#: src/Main.qml:295
+#, kde-format
+msgctxt "@title:window %1 is the name of the page that is being exported"
+msgid "Export %1"
+msgstr ""
+
+#: src/Main.qml:297 src/Main.qml:307
+#, kde-format
+msgctxt "Name filter in file dialog"
+msgid "System Monitor page (*.page)"
+msgstr ""
+
+#: src/Main.qml:305
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Page"
+msgstr ""
+
+#: src/Main.qml:331
+#, kde-format
+msgid ""
+"System Monitor has fallen back to software rendering because hardware "
+"acceleration is not available, and visual glitches may appear. Please check "
+"your graphics drivers."
+msgstr ""
+
+#: src/page/ColumnControl.qml:117
+#, kde-format
+msgctxt "@action"
+msgid "Add Section"
+msgstr ""
+
+#: src/page/ColumnControl.qml:121
+#, kde-format
+msgctxt "@action"
+msgid "Add Separator"
+msgstr ""
+
+#: src/page/ColumnControl.qml:130
+#, kde-format
+msgctxt "@action"
+msgid "Show Background"
+msgstr ""
+
+#: src/page/ColumnControl.qml:137
+#, kde-format
+msgctxt "@action"
+msgid "Remove Background Margins"
+msgstr ""
+
+#: src/page/EditablePage.qml:128
+#, kde-format
+msgctxt "@action"
+msgid "Edit Page"
+msgstr ""
+
+#: src/page/EditablePage.qml:138
+#, kde-format
+msgctxt "@action"
+msgid "Save Changes"
+msgstr ""
+
+#: src/page/EditablePage.qml:148
+#, kde-format
+msgctxt "@action"
+msgid "Discard Changes"
+msgstr ""
+
+#: src/page/EditablePage.qml:159
+#, kde-format
+msgctxt "@action"
+msgid "Configure Page…"
+msgstr ""
+
+#: src/page/EditablePage.qml:168
+#, kde-format
+msgctxt "@action"
+msgid "Add Row"
+msgstr ""
+
+#: src/page/EditablePage.qml:177
+#, kde-format
+msgctxt "@action"
+msgid "Add Title"
+msgstr ""
+
+#: src/page/EditablePage.qml:190
+#, kde-format
+msgctxt "@title:window %1 is page title"
+msgid "Configure Page \"%1\""
+msgstr ""
+
+#: src/page/EditablePage.qml:192
+#, kde-format
+msgctxt "@action:button"
+msgid "Save"
+msgstr ""
+
+#: src/page/EditorToolBar.qml:36
+#, kde-format
+msgctxt "@action"
+msgid "Add"
+msgstr ""
+
+#: src/page/EditorToolBar.qml:56
+#, kde-format
+msgctxt "@action"
+msgid "Remove"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:25
+#, kde-format
+msgctxt "@title:window %1 is face name"
+msgid "Configure %1"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:32
+#, kde-format
+msgctxt "@action"
+msgid "Close"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:39
+#, kde-format
+msgctxt "@action"
+msgid "Load Preset…"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:45
+#, kde-format
+msgctxt "@action"
+msgid "Get New Presets…"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:56
+#, kde-format
+msgctxt "@action"
+msgid "Save Settings as Preset"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:60
+#, kde-format
+msgctxt "@info:status %1 is preset name"
+msgid "Saved settings as preset %1."
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:350
+#, kde-format
+msgctxt "@action"
+msgid "Add Chart as Desktop Widget"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:77
+#, kde-format
+msgctxt "@action"
+msgid "Get New Display Styles…"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:100
+#, kde-format
+msgctxt "@info:status %1 is preset name"
+msgid "Loaded preset %1."
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:117
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Title"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:123
+#, kde-format
+msgctxt "@option:check"
+msgid "Show Title"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:141
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Display Style"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:169
+#, kde-format
+msgctxt "@label"
+msgid "Minimum time between updates:"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:186
+#, kde-format
+msgid "No Limit"
+msgstr ""
+
+#. i18ndp doesn't handle floats :(
+#: src/page/FaceConfigurationPage.qml:190
+#, kde-format
+msgid "1 second"
+msgstr ""
+
+#: src/page/FaceConfigurationPage.qml:192
+#, kde-format
+msgid "%1 seconds"
+msgstr ""
+
+#: src/page/FacesModel.cpp:46
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Chart"
+msgstr ""
+
+#: src/page/LoadPresetDialog.qml:23
+#, kde-format
+msgctxt "@title:window"
+msgid "Load Preset"
+msgstr ""
+
+#: src/page/LoadPresetDialog.qml:38
+#, kde-format
+msgctxt "@action:button"
+msgid "Load"
+msgstr ""
+
+#: src/page/MissingSensorsDialog.qml:23
+#, kde-format
+msgctxt "@title"
+msgid "Replace Missing Sensors"
+msgstr ""
+
+#: src/page/MoveButton.qml:23
+#, kde-format
+msgctxt "@action"
+msgid "Move"
+msgstr ""
+
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:141
+#, kde-format
+msgid "This page is missing some sensors and will not display correctly."
+msgstr ""
+
+#: src/page/PageContents.qml:113 src/page/PageEditor.qml:145
+#, kde-format
+msgctxt "@action:button"
+msgid "Fix…"
+msgstr ""
+
+#: src/page/PageContents.qml:125
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"The changes have been copied to %1 (Old Version)."
+msgstr ""
+
+#: src/page/PageContents.qml:126
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"Would you like to keep your changes or discard your changes and use the new "
+"version of the page?"
+msgstr ""
+
+#: src/page/PageContents.qml:134
+#, kde-format
+msgctxt "@action:button"
+msgid "Keep Changes"
+msgstr ""
+
+#: src/page/PageContents.qml:140
+#, kde-format
+msgctxt "@action:button"
+msgid "Discard Changes"
+msgstr ""
+
+#: src/page/PageDialog.qml:21
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr ""
+
+#: src/page/PageDialog.qml:24
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "New Page"
+msgstr ""
+
+#: src/page/PageDialog.qml:85
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Name:"
+msgstr ""
+
+#: src/page/PageDialog.qml:96
+#, kde-format
+msgctxt "@info:status"
+msgid "Name cannot be empty."
+msgstr ""
+
+#: src/page/PageDialog.qml:100
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Icon:"
+msgstr ""
+
+#: src/page/PageDialog.qml:105
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Page Margins:"
+msgstr ""
+
+#: src/page/PageDialog.qml:118
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "None"
+msgstr ""
+
+#: src/page/PageDialog.qml:119
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Small"
+msgstr ""
+
+#: src/page/PageDialog.qml:120
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Large"
+msgstr ""
+
+#: src/page/PageDialog.qml:129
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Use Actions From:"
+msgstr ""
+
+#: src/page/PageDialog.qml:147
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Load this page:"
+msgstr ""
+
+#: src/page/PageDialog.qml:160
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "When needed"
+msgstr ""
+
+#: src/page/PageDialog.qml:161
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "During application startup"
+msgstr ""
+
+#: src/page/PageEditor.qml:191
+#, kde-format
+msgid "New Title"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:97
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show Page"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:98
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Hide Page"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:142
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Do not reset the page"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:146
+#, kde-format
+msgctxt "@item:intable"
+msgid "The page will be reset to its default state"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:155
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Reset the page to its default state"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:164
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Do not remove this page"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:168
+#, kde-format
+msgctxt "@item:intable"
+msgid "The page will be removed"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:177
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove this page"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:195
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Start with:"
+msgstr ""
+
+#: src/page/PageSortDialog.qml:204
+#, kde-format
+msgid "Last Visited Page"
+msgstr ""
+
+#: src/page/RowControl.qml:127
+#, kde-format
+msgctxt "@action"
+msgid "Add Column"
+msgstr ""
+
+#: src/page/RowControl.qml:136
+#, kde-format
+msgctxt "@action"
+msgid "Height"
+msgstr ""
+
+#: src/page/RowControl.qml:140
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Balanced"
+msgstr ""
+
+#: src/page/RowControl.qml:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Try and use the same height across different rows."
+msgstr ""
+
+#: src/page/RowControl.qml:149
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Minimum"
+msgstr ""
+
+#: src/page/RowControl.qml:150
+#, kde-format
+msgctxt "@info:tooltop"
+msgid "Use the minimum amount of height needed to display contents correctly."
+msgstr ""
+
+#: src/page/RowControl.qml:158
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Maximum"
+msgstr ""
+
+#: src/page/RowControl.qml:159
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Try to use as much height as possible."
+msgstr ""
+
+#: src/page/RowControl.qml:167
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Half Page Height"
+msgstr ""
+
+#: src/page/RowControl.qml:168
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Use half the height of the page."
+msgstr ""
+
+#: src/table/ColumnConfigurationDialog.qml:27
+#, kde-format
+msgctxt "@window:title"
+msgid "Configure Columns"
+msgstr ""
+
+#: src/table/ColumnConfigurationDialog.qml:147
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Hidden"
+msgstr ""
+
+#: src/table/ColumnConfigurationDialog.qml:148
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Text Only"
+msgstr ""
+
+#: src/table/ColumnConfigurationDialog.qml:154
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Line Chart"
+msgstr ""
+
+#: src/table/ColumnConfigurationDialog.qml:158
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Text Only (Scaled to 100%)"
+msgstr ""
+
+#: src/table/ColumnConfigurationDialog.qml:159
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Line Chart (Scaled to 100%)"
+msgstr ""
+
+#: src/table/KillDialog.qml:83
+#, kde-format
+msgctxt "@option:check"
+msgid "Do not ask again"
+msgstr ""
+
+#: src/ToolsModel.cpp:37
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Kill a Window…"
+msgstr ""
+
+#: src/ToolsModel.cpp:115
+#, kde-format
+msgctxt "@action:inmenu %1 is application name"
+msgid "Launch %1"
+msgstr ""
