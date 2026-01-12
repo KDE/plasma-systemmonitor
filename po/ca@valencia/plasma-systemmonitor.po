@@ -1,15 +1,15 @@
 # Translation of plasma-systemmonitor.po to Catalan (Valencian)
-# Copyright (C) 2020-2025 This_file_is_part_of_KDE
+# Copyright (C) 2020-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025, 2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-10 00:45+0000\n"
-"PO-Revision-Date: 2025-05-15 21:18+0200\n"
+"PO-Revision-Date: 2026-01-10 12:52+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -749,20 +749,16 @@ msgid "Configure Columns"
 msgstr "Configura les columnes"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "Afig una columna"
+msgstr "Columnes activades"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "Afig una columna"
+msgstr "Columnes desactivades"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -798,7 +794,7 @@ msgstr "Diagrama de línies (escalat al 100%)"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "Cap columna coincidix amb la busca"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
