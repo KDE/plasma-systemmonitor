@@ -3,13 +3,13 @@
 # Copyright (C) 2022 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-10 00:45+0000\n"
-"PO-Revision-Date: 2025-05-16 15:54+0900\n"
+"POT-Creation-Date: 2026-01-13 08:43+0000\n"
+"PO-Revision-Date: 2026-01-13 01:20+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.07.70\n"
+"X-Generator: Lokalize 26.03.70\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -745,20 +745,16 @@ msgid "Configure Columns"
 msgstr "設定欄位"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "新增欄位"
+msgstr "已啟用欄位"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "新增欄位"
+msgstr "已停用欄位"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -794,13 +790,159 @@ msgstr "折線圖（縮放至 100%）"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "沒有符合搜尋字詞的欄位"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
 msgstr "不要再詢問"
+
+#: src/table/ReniceDialog.qml:25
+#, kde-format
+msgctxt "@title:window"
+msgid "Set Priority"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:56
+#, kde-format
+msgctxt "@title:group"
+msgid "CPU Scheduler"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:82
+#, kde-format
+msgctxt "@option:radio for process scheduler mode"
+msgid "Normal"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:83
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid ""
+"The standard time-sharing scheduler for processes without special "
+"requirements."
+msgstr ""
+
+#: src/table/ReniceDialog.qml:88
+#, kde-format
+msgctxt "@option:radio for process scheduler mode"
+msgid "Batch"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:89
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid ""
+"Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
+"interactive processes."
+msgstr ""
+
+#: src/table/ReniceDialog.qml:94
+#, kde-format
+msgctxt "@option:radio for process scheduler mode"
+msgid "Round robin"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:95
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid "Process will run whenever runnable, with timeslicing."
+msgstr ""
+
+#: src/table/ReniceDialog.qml:100
+#, kde-format
+msgctxt "@option:radio for process scheduler mode"
+msgid "FIFO"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:101
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid "Process will run whenever runnable, with no timeslicing."
+msgstr ""
+
+#: src/table/ReniceDialog.qml:119
+#, kde-format
+msgctxt "@title:group"
+msgid "I/O Scheduler"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:145
+#, kde-format
+msgctxt "@option:radio for I/O scheduler mode"
+msgid "Normal"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:146
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid "Process' priority is based on the CPU priority."
+msgstr ""
+
+#: src/table/ReniceDialog.qml:151
+#, kde-format
+msgctxt "@option:radio for I/O scheduler mode"
+msgid "Idle"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:152
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid ""
+"Process can only use the hard disk when no other process has used it very "
+"recently."
+msgstr ""
+
+#: src/table/ReniceDialog.qml:157
+#, kde-format
+msgctxt "@option:radio for I/O scheduler mode"
+msgid "Best Effort"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:158
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid "Process is given higher priority to access the hard disk than normal."
+msgstr ""
+
+#: src/table/ReniceDialog.qml:163
+#, kde-format
+msgctxt "@option:radio for I/O scheduler mode"
+msgid "Real Time"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:164
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid ""
+"Process gets immediate access to the hard disk whenever needed, regardless "
+"of what else is going on."
+msgstr ""
+
+#: src/table/ReniceDialog.qml:210
+#, kde-format
+msgctxt "Lower process priority"
+msgid "Low priority"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:217
+#, kde-format
+msgctxt "Higher process priority"
+msgid "High priority"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:267
+#, kde-format
+msgctxt "Lower I/O priority"
+msgid "Low priority"
+msgstr ""
+
+#: src/table/ReniceDialog.qml:274
+#, kde-format
+msgctxt "Higher I/O priority"
+msgid "High priority"
+msgstr ""
 
 #: src/ToolsModel.cpp:37
 #, kde-format

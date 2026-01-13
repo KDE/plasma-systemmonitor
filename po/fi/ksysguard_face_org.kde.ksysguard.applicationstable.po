@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:45+0000\n"
+"POT-Creation-Date: 2026-01-13 08:43+0000\n"
 "PO-Revision-Date: 2025-05-25 10:15+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -113,67 +113,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Sarakeasetukset…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:250
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:254
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Aseta etusija…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:253
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Lähetä signaali"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Pysäytä (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:262
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Jatka (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Katkaise (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Keskeytä (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Lopeta (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Tapa (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Käyttäjä 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Käyttäjä 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:302
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -181,13 +181,13 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Lopeta sovellus"
 msgstr[1] "Lopeta %1 sovellusta"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:304
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:312
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Piilota"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:319
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:327
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -195,7 +195,7 @@ msgid_plural "Force Quit %1 Applications"
 msgstr[0] "Pakota sovelluksen lopettaminen"
 msgstr[1] "Pakota %1 sovelluksen lopettaminen"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:320
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:328
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -203,7 +203,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Lopeta sovellus"
 msgstr[1] "Lopeta %1 sovellusta"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:322
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:330
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -211,7 +211,7 @@ msgid_plural "Force Quit Applications"
 msgstr[0] "Pakota sovelluksen lopettaminen"
 msgstr[1] "Pakota sovellusten lopettaminen"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:323
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:331
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -219,7 +219,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "Lopeta sovellus"
 msgstr[1] "Lopeta sovellukset"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:326
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:334
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -231,14 +231,14 @@ msgstr[1] ""
 "Pakotetaanko (SIGKILL) näiden %1 sovelluksen lopettaminen? Tallentamattomat "
 "työt menetetään."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:329
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:337
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] "Lopetetaanko tämä sovellus? Tallentamattomat työt menetetään."
 msgstr[1] "Lopetetaanko nämä %1 sovellusta? Tallentamattomat työt menetetään."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:344
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:352
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

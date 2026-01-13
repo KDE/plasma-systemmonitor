@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-12 00:45+0000\n"
+"POT-Creation-Date: 2026-01-13 08:43+0000\n"
 "PO-Revision-Date: 2024-12-15 17:35+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -115,67 +115,67 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "कॉलम कॉन्फ़िगर करें…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:250
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:254
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "प्राथमिकता निर्धारित करें…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:253
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "सिग्नल भेजें"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "निलंबित करें (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:262
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "जारी रखें (जारी रखें)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "हैंगअप (एचयूपी)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "इंटरप्ट (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "समाप्त (अवधि)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "मार डालो (मार डालो)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "उपयोगकर्ता 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "उपयोगकर्ता 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:302
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -183,13 +183,13 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "%1 अनुप्रयोग छोड़ें"
 msgstr[1] "%1 अनुप्रयोग छोड़ें"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:304
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:312
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "छिपाना"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:319
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:327
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -197,7 +197,7 @@ msgid_plural "Force Quit %1 Applications"
 msgstr[0] "%1 अनुप्रयोग को बलपूर्वक छोड़ें"
 msgstr[1] "%1 अनुप्रयोग को बलपूर्वक छोड़ें"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:320
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:328
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -205,7 +205,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "%1 अनुप्रयोग छोड़ें"
 msgstr[1] "%1 अनुप्रयोग छोड़ें"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:322
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:330
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -213,7 +213,7 @@ msgid_plural "Force Quit Applications"
 msgstr[0] "बलपूर्वक अनुप्रयोग छोड़ें"
 msgstr[1] "बलपूर्वक अनुप्रयोग छोड़ें"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:323
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:331
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -221,7 +221,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "अनुप्रयोग छोड़ें"
 msgstr[1] "अनुप्रयोग छोड़ें"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:326
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:334
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -231,14 +231,14 @@ msgstr[0] ""
 msgstr[1] ""
 "इन %1 अनुप्रयोगों को बलपूर्वक छोड़ें (SIGKILL) बिना सहेजा गया कार्य नष्ट हो सकता है।"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:329
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:337
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
 msgstr[0] "इन %1 अनुप्रयोगों को छोड़ें? बिना सहेजे गए कार्य खो सकते हैं।"
 msgstr[1] "इन %1 अनुप्रयोगों को छोड़ें? बिना सहेजे गए कार्य खो सकते हैं।"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:344
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:352
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

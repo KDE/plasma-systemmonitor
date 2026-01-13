@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2026-01-13 08:43+0000\n"
 "PO-Revision-Date: 2024-10-20 16:08+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
@@ -119,67 +119,73 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "நெடுவரிசைகளை அமை…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:243
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:245
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Set priority…"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:251
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "சமிக்ஞை அனுப்பு"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:247
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "இடைநிறுத்து (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:251
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "தொடர் (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:255
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "இணைப்பை துண்டி (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:267
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "குறுக்கிடு (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:271
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "நிறுத்து (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:267
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:275
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "கட்டாயமாக நிறுத்து (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:271
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:279
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "தனிப்பயன் 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:275
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:283
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "தனிப்பயன் 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:281
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:289
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "தற்போதைய நெடுவரிசையை நகலெடு"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:290
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:298
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -187,19 +193,19 @@ msgid_plural "End %1 Processes"
 msgstr[0] "பணியை நிறுத்து"
 msgstr[1] "%1 பணிகளை நிறுத்து"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:303
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:311
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "மறை"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:308
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:316
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "நெடுவரிசைகளை அமை…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:320
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:328
 #, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
@@ -207,7 +213,7 @@ msgid_plural "Forcibly End %1 Processes"
 msgstr[0] "பணியை கட்டாயமாக நிறுத்துவது"
 msgstr[1] "%1 பணிகளை கட்டாயமாக நிறுத்துவது"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:321
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:329
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -215,7 +221,7 @@ msgid_plural "End %1 Processes"
 msgstr[0] "பணியை நிறுத்துவது"
 msgstr[1] "%1 பணிகளை நிறுத்துவது"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:323
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:331
 #, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
@@ -223,7 +229,7 @@ msgid_plural "Forcibly End Processes"
 msgstr[0] "பணியை கட்டாயமாக நிறுத்து"
 msgstr[1] "பணிகளை கட்டாயமாக நிறுத்து"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:324
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:332
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -231,7 +237,7 @@ msgid_plural "End Processes"
 msgstr[0] "பணியை நிறுத்து"
 msgstr[1] "பணிகளை நிறுத்து"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:327
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:335
 #, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
@@ -243,7 +249,7 @@ msgstr[1] ""
 "இந்த %1 பணிகளை கட்டாயமாக நிறுத்த வேண்டுமா (SIGKILL மூலம்)?\n"
 "சேமிக்கப்படாதவற்றை இழக்க நேரிடலாம்."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:330
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:338
 #, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
@@ -254,7 +260,7 @@ msgstr[1] ""
 "இந்த %1 பணிகளை கட்டாயமாக நிறுத்த வேண்டுமா?\n"
 "சேமிக்கப்படாதவற்றை இழக்க நேரிடலாம்."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:342
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:350
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
