@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-13 08:43+0000\n"
-"PO-Revision-Date: 2025-08-04 14:10+0400\n"
+"PO-Revision-Date: 2026-01-14 08:03+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -34,7 +34,7 @@ msgstr "أضف صفحة جديدة..."
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "استورِد صفحة…"
+msgstr "استورد صفحة…"
 
 #: src/GlobalMenu.qml:31
 #, kde-format
@@ -70,7 +70,7 @@ msgstr "وسع الشريط الجانبي"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Collapse Sidebar"
-msgstr " اطوِ الشريط الجانبي"
+msgstr "اطوِ الشريط الجانبي"
 
 #: src/GlobalMenu.qml:73
 #, kde-format
@@ -120,7 +120,7 @@ msgstr "© 2025 لفريق تطوير بلازما"
 #: src/main.cpp:71
 #, kde-format
 msgid "Arjen Hiemstra"
-msgstr "Arjen Hiemstra"
+msgstr "أرجين هيمسترا"
 
 #: src/main.cpp:71 src/main.cpp:74 src/main.cpp:76 src/main.cpp:77
 #, kde-format
@@ -130,7 +130,7 @@ msgstr "التطوير"
 #: src/main.cpp:72
 #, kde-format
 msgid "Uri Herrera"
-msgstr "Uri Herrera"
+msgstr "أوري هيريرا"
 
 #: src/main.cpp:72
 #, kde-format
@@ -140,7 +140,7 @@ msgstr "التصميم"
 #: src/main.cpp:73
 #, kde-format
 msgid "Nate Graham"
-msgstr "Nate Graham"
+msgstr "نيت جراهام"
 
 #: src/main.cpp:73 src/main.cpp:75
 #, kde-format
@@ -150,22 +150,22 @@ msgstr "التصميم وضمان الجودة"
 #: src/main.cpp:74
 #, kde-format
 msgid "David Redondo"
-msgstr "David Redondo"
+msgstr "ديفيد ريدوندو"
 
 #: src/main.cpp:75
 #, kde-format
 msgid "Noah Davis"
-msgstr "Noah Davis"
+msgstr "نواه ديفيس"
 
 #: src/main.cpp:76
 #, kde-format
 msgid "Marco Martin"
-msgstr "Marco Martin"
+msgstr "ماركو مارتن"
 
 #: src/main.cpp:77
 #, kde-format
 msgid "David Edmundson"
-msgstr "David Edmundson"
+msgstr "ديفيد إدموندسون"
 
 #: src/main.cpp:79
 #, kde-format
@@ -207,7 +207,7 @@ msgstr "صدر الصفحة الحالية"
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "استورِد صفحة…"
+msgstr "استورد صفحة…"
 
 #: src/Main.qml:120
 #, kde-format
@@ -225,7 +225,7 @@ msgstr "وسع الشريط الجانبي"
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
-msgstr " اطوِ الشريط الجانبي"
+msgstr "اطوِ الشريط الجانبي"
 
 #: src/Main.qml:147
 #, kde-format
@@ -255,7 +255,7 @@ msgstr "أضف صفحة جديدة"
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
-msgstr "حرر الصّفحات"
+msgstr "حرر الصفحات"
 
 #: src/Main.qml:295
 #, kde-format
@@ -273,7 +273,7 @@ msgstr "صفحة مراقب النظام (*.page)"
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
-msgstr "استورِد صفحة"
+msgstr "استورد صفحة"
 
 #: src/Main.qml:331
 #, kde-format
@@ -282,8 +282,8 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
-"عاد مراقب النظام إلى عرض البرمجي نظرًا لعدم توفر تسريع الأجهزة، وقد تظهر خِلل "
-"المرئية. يرجى التحقق من برامج تشغيل الرسومات الخاصة بك."
+"عاد مراقب النظام إلى العرض البرمجي لعدم توفر تسريع الأجهزة، وقد تظهر خلل "
+"مرئية. يرجى التحقق من برامج تشغيل الرسومات الخاصة بك."
 
 #: src/page/ColumnControl.qml:117
 #, kde-format
@@ -319,13 +319,13 @@ msgstr "حرر الصفحة"
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
-msgstr "احفظ التّغييرات"
+msgstr "احفظ التغييرات"
 
 #: src/page/EditablePage.qml:148
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
-msgstr "ارفض التّغييرات"
+msgstr "ارفض التغييرات"
 
 #: src/page/EditablePage.qml:159
 #, kde-format
@@ -421,7 +421,7 @@ msgstr "احصل على أنماط عرض جديدة..."
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
-msgstr "حملت الإعدادات المعدة مسبقا %1."
+msgstr "حمّلت الإعدادات المعدة مسبقا %1."
 
 #: src/page/FaceConfigurationPage.qml:117
 #, kde-format
@@ -450,7 +450,7 @@ msgstr "أقل وقت بين التحديثات:"
 #: src/page/FaceConfigurationPage.qml:186
 #, kde-format
 msgid "No Limit"
-msgstr "لا حدّ"
+msgstr "لا حد"
 
 #. i18ndp doesn't handle floats :(
 #: src/page/FaceConfigurationPage.qml:190
@@ -467,7 +467,7 @@ msgstr "%1 ثانية"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No Chart"
-msgstr "لا رسوم"
+msgstr "لا توجد رسوم"
 
 #: src/page/LoadPresetDialog.qml:23
 #, kde-format
@@ -496,7 +496,7 @@ msgstr "انقل"
 #: src/page/PageContents.qml:107 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
-msgstr "هذه الصفحة تفتقد بعض المتحسسات ولن تعرض بشكل صحيح."
+msgstr "تفتقد هذه الصفحة بعض المتحسسات ولن تعرض بشكل صحيح."
 
 #: src/page/PageContents.qml:112 src/page/PageEditor.qml:145
 #, kde-format
@@ -510,7 +510,7 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
-"ثُبتت إصدار جديد من هذه الصفحة، ولكنك أجريتَ تغييرات عليها. نُسخت التغييرات إلى "
+"ثبتت نسخة جديدة من هذه الصفحة، ولكنك أجريت تغييرات عليها. نسخت التغييرات إلى "
 "%1 (الإصدار القديم)."
 
 #: src/page/PageContents.qml:125
@@ -520,21 +520,21 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
-"نُثبت نسخة جديدة من هذه الصفحة، ولكنك أجريت تغييرات على هذه الصفحة. هل ترغب "
-"في الاحتفاظ بالتغييرات التي أجريتها أم تجاهل التغييرات التي أجريتها واستخدام "
-"الإصدار الجديد من الصفحة؟"
+"ثبتت نسخة جديدة من هذه الصفحة، ولكنك أجريت تغييرات عليها. هل ترغب في "
+"الاحتفاظ بالتغييرات التي أجريتها أم تجاهلها واستخدام الإصدار الجديد من "
+"الصفحة؟"
 
 #: src/page/PageContents.qml:133
 #, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "احفظ التّغييرات"
+msgstr "احفظ التغييرات"
 
 #: src/page/PageContents.qml:139
 #, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
-msgstr "ارفض التّغييرات"
+msgstr "ارفض التغييرات"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -594,7 +594,7 @@ msgstr "كبير"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
-msgstr "إجراءات المستخدم من:"
+msgstr "استخدم الإجراءات من:"
 
 #: src/page/PageDialog.qml:147
 #, kde-format
@@ -629,7 +629,7 @@ msgstr "أظهر الصفحة"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr "أخف الصفحة"
+msgstr "أخفِ الصفحة"
 
 #: src/page/PageSortDialog.qml:142
 #, kde-format
@@ -647,7 +647,7 @@ msgstr "ستصفر الصفحة إلى حالتها المبدئية"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr "صفّر صفحة إلى حالتها المبدئية"
+msgstr "صفّر الصفحة إلى حالتها المبدئية"
 
 #: src/page/PageSortDialog.qml:164
 #, kde-format
@@ -676,7 +676,7 @@ msgstr "ابدأ بـ:"
 #: src/page/PageSortDialog.qml:204
 #, kde-format
 msgid "Last Visited Page"
-msgstr "أخر صفحة مُزارة"
+msgstr "آخر صفحة زرتها"
 
 #: src/page/RowControl.qml:127
 #, kde-format
@@ -706,19 +706,19 @@ msgstr "حاول واستخدم نفس الارتفاع على مختلف الص
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Minimum"
-msgstr "الحد الادنى"
+msgstr "الحد الأدنى"
 
 #: src/page/RowControl.qml:150
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
-msgstr "استخدم أدنى ارتفاع بحيث لا تزال تعرض المحتويات بشكل جيد."
+msgstr "استخدم أدنى ارتفاع لعرض المحتويات بشكل جيد."
 
 #: src/page/RowControl.qml:158
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Maximum"
-msgstr "الحد الاعلى"
+msgstr "الحد الأعلى"
 
 #: src/page/RowControl.qml:159
 #, kde-format
@@ -745,20 +745,16 @@ msgid "Configure Columns"
 msgstr "اضبط الأعمدة"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "أضف عمودًا"
+msgstr "الأعمدة الممكنة"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "أضف عمودًا"
+msgstr "الأعمدة المعطلة"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -794,7 +790,7 @@ msgstr "رسم خطي (مكبر إلى 100٪)"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "لا توجد أعمدة تطابق البحث"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -806,19 +802,19 @@ msgstr "لا تسأل مجدّدًا"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "عيّن الأولوية"
 
 #: src/table/ReniceDialog.qml:56
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "مجدول المعالج"
 
 #: src/table/ReniceDialog.qml:82
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "عادي"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
@@ -826,13 +822,13 @@ msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
-msgstr ""
+msgstr "المجدول القياسي لمشاركة الوقت للعمليات التي ليس لها متطلبات خاصة."
 
 #: src/table/ReniceDialog.qml:88
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "دفعي"
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
@@ -841,54 +837,56 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"العملية غير مفضلة قليلاً في قرارات الجدولة، للعمليات غير التفاعلية والمكثفة "
+"للمعالج."
 
 #: src/table/ReniceDialog.qml:94
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "جولات روبن"
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
-msgstr ""
+msgstr "ستعمل العملية كلما كانت قابلة للتشغيل، مع تقسيم الوقت."
 
 #: src/table/ReniceDialog.qml:100
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "أولا بأول"
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
-msgstr ""
+msgstr "ستعمل العملية كلما كانت قابلة للتشغيل، دون تقسيم الوقت."
 
 #: src/table/ReniceDialog.qml:119
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "مجدول الإدخال والإخراج"
 
 #: src/table/ReniceDialog.qml:145
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "عادي"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "تعتمد أولوية العملية على أولوية وحدة المعالجة المركزية."
 
 #: src/table/ReniceDialog.qml:151
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "خامل"
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
@@ -897,24 +895,25 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"يمكن للعملية استخدام القرص الصلب فقط عندما لا تستخدمه أي عملية أخرى مؤخراً."
 
 #: src/table/ReniceDialog.qml:157
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "أفضل جهد"
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
-msgstr ""
+msgstr "تعطى العملية أولوية أعلى للوصول إلى القرص الصلب من المعتاد."
 
 #: src/table/ReniceDialog.qml:163
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "الوقت الحقيقي"
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
@@ -923,30 +922,32 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"تحصل العملية على وصول فوري إلى القرص الصلب كلما دعت الحاجة، بغض النظر عما "
+"يحدث."
 
 #: src/table/ReniceDialog.qml:210
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "أولوية منخفضة"
 
 #: src/table/ReniceDialog.qml:217
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "أولوية عالية"
 
 #: src/table/ReniceDialog.qml:267
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "أولوية منخفضة"
 
 #: src/table/ReniceDialog.qml:274
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "أولوية عالية"
 
 #: src/ToolsModel.cpp:37
 #, kde-format

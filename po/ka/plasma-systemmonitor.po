@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-13 08:43+0000\n"
-"PO-Revision-Date: 2026-01-10 02:30+0100\n"
+"PO-Revision-Date: 2026-01-14 05:24+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -804,19 +804,19 @@ msgstr "აღარ მკითხო"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "პრიორიტეტის დაყენება"
 
 #: src/table/ReniceDialog.qml:56
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "CPU დამგეგმავი"
 
 #: src/table/ReniceDialog.qml:82
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "ნორმალური"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
@@ -825,12 +825,14 @@ msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
 msgstr ""
+"სტანდარტული დროის გაზიარების დამგეგმავი პროცესებისთვის სპეციალური "
+"მოთხოვნების გარეშე."
 
 #: src/table/ReniceDialog.qml:88
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "ჯგუფური"
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
@@ -839,54 +841,56 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"პროცესის პრიორიტეტი ოდნავ დაბალი იქნება დაგეგმვის გადაწყვეტილებებში CPU-ის "
+"ინტენსიურად გამომყენებელი არაინტერაქტიური პროცესებისთვის."
 
 #: src/table/ReniceDialog.qml:94
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "რიგრიგობით"
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
-msgstr ""
+msgstr "პროცესი გაეშვება, როცა ის გაშვებადი იქნება, დროის ნაჭრებით."
 
 #: src/table/ReniceDialog.qml:100
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
-msgstr ""
+msgstr "პროცესი გაეშვება, როცა ის გაშვებადი იქნება, დროის ნაჭრების გარეშე."
 
 #: src/table/ReniceDialog.qml:119
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "I/O დამგეგმავი"
 
 #: src/table/ReniceDialog.qml:145
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "ნორმალური"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr ">CPU-ის პრიორიტეტზე ბაზირებული პროცესის პრიორიტეტი."
 
 #: src/table/ReniceDialog.qml:151
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "უმოქმედო"
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
@@ -895,24 +899,27 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"პროცესს დისკთან წვდომა მხოლოდ მაშინ შეეძლება, თუ დისკთან წვდომა ძალიან ცოტა "
+"ხნის წინ სხვა პროცესს არ დასჭირვებია."
 
 #: src/table/ReniceDialog.qml:157
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "საუკეთესო მცდელობა"
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
 msgstr ""
+"პროცესს დისკთან წვდომის ჩვეულებრივზე მაღალი პრიორიტეტი აქვს მინიჭებული."
 
 #: src/table/ReniceDialog.qml:163
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "რეალურ დროში"
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
@@ -921,30 +928,32 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"პროცესი, იმის მიუხედავად, კიდევ რა ხდება, მყარ დისკთან წვდომას დაუყოვნებლივ "
+"მიიღებს."
 
 #: src/table/ReniceDialog.qml:210
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "დაბალი პრიორიტეტი"
 
 #: src/table/ReniceDialog.qml:217
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "მაღალი პრიორიტეტი"
 
 #: src/table/ReniceDialog.qml:267
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "დაბალი პრიორიტეტი"
 
 #: src/table/ReniceDialog.qml:274
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "მაღალი პრიორიტეტი"
 
 #: src/ToolsModel.cpp:37
 #, kde-format

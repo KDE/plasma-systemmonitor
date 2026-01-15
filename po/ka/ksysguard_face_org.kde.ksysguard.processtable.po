@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-13 08:43+0000\n"
-"PO-Revision-Date: 2025-05-15 04:20+0200\n"
+"PO-Revision-Date: 2026-01-14 05:20+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
@@ -124,7 +124,7 @@ msgstr "სვეტების მორგება…"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
-msgstr ""
+msgstr "პრიორიტეტის დაყენება…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:251
 #, kde-format
