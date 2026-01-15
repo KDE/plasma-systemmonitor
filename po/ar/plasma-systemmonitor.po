@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:19+0000\n"
-"PO-Revision-Date: 2025-08-04 14:10+0400\n"
+"PO-Revision-Date: 2026-01-14 08:03+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -34,7 +34,7 @@ msgstr "أضف صفحة جديدة..."
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "استورِد صفحة…"
+msgstr "استورد صفحة…"
 
 #: src/GlobalMenu.qml:30
 #, kde-format
@@ -70,7 +70,7 @@ msgstr "وسع الشريط الجانبي"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Collapse Sidebar"
-msgstr " اطوِ الشريط الجانبي"
+msgstr "اطوِ الشريط الجانبي"
 
 #: src/GlobalMenu.qml:72
 #, kde-format
@@ -120,7 +120,7 @@ msgstr "© 2020 لفريق تطوير بلازما"
 #: src/main.cpp:120
 #, kde-format
 msgid "Arjen Hiemstra"
-msgstr "Arjen Hiemstra"
+msgstr "أرجين هيمسترا"
 
 #: src/main.cpp:120 src/main.cpp:123 src/main.cpp:125 src/main.cpp:126
 #, kde-format
@@ -130,7 +130,7 @@ msgstr "التطوير"
 #: src/main.cpp:121
 #, kde-format
 msgid "Uri Herrera"
-msgstr "Uri Herrera"
+msgstr "أوري هيريرا"
 
 #: src/main.cpp:121
 #, kde-format
@@ -140,7 +140,7 @@ msgstr "التصميم"
 #: src/main.cpp:122
 #, kde-format
 msgid "Nate Graham"
-msgstr "Nate Graham"
+msgstr "نيت جراهام"
 
 #: src/main.cpp:122 src/main.cpp:124
 #, kde-format
@@ -150,22 +150,22 @@ msgstr "التصميم وضمان الجودة"
 #: src/main.cpp:123
 #, kde-format
 msgid "David Redondo"
-msgstr "David Redondo"
+msgstr "ديفيد ريدوندو"
 
 #: src/main.cpp:124
 #, kde-format
 msgid "Noah Davis"
-msgstr "Noah Davis"
+msgstr "نواه ديفيس"
 
 #: src/main.cpp:125
 #, kde-format
 msgid "Marco Martin"
-msgstr "Marco Martin"
+msgstr "ماركو مارتن"
 
 #: src/main.cpp:126
 #, kde-format
 msgid "David Edmundson"
-msgstr "David Edmundson"
+msgstr "ديفيد إدموندسون"
 
 #: src/main.cpp:128
 #, kde-format
@@ -201,7 +201,7 @@ msgstr "صدر الصفحة الحالية"
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "استورِد صفحة…"
+msgstr "استورد صفحة…"
 
 #: src/main.qml:91
 #, kde-format
@@ -219,7 +219,7 @@ msgstr "وسع الشريط الجانبي"
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
-msgstr " اطوِ الشريط الجانبي"
+msgstr "اطوِ الشريط الجانبي"
 
 #: src/main.qml:111
 #, kde-format
@@ -249,7 +249,7 @@ msgstr "أضف صفحة جديدة"
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
-msgstr "حرر الصّفحات"
+msgstr "حرر الصفحات"
 
 #: src/main.qml:254
 #, kde-format
@@ -267,7 +267,7 @@ msgstr "صفحة مراقب النظام (*.page)"
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
-msgstr "استورِد صفحة"
+msgstr "استورد صفحة"
 
 #: src/main.qml:298
 #, kde-format
@@ -276,8 +276,8 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
-"عاد مراقب النظام إلى عرض البرمجي نظرًا لعدم توفر تسريع الأجهزة، وقد تظهر خِلل "
-"المرئية. يرجى التحقق من برامج تشغيل الرسومات الخاصة بك."
+"عاد مراقب النظام إلى العرض البرمجي لعدم توفر تسريع الأجهزة، وقد تظهر خلل "
+"مرئية. يرجى التحقق من برامج تشغيل الرسومات الخاصة بك."
 
 #: src/page/ColumnControl.qml:117
 #, kde-format
@@ -313,13 +313,13 @@ msgstr "حرر الصفحة"
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
-msgstr "احفظ التّغييرات"
+msgstr "احفظ التغييرات"
 
 #: src/page/EditablePage.qml:143
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
-msgstr "ارفض التّغييرات"
+msgstr "ارفض التغييرات"
 
 #: src/page/EditablePage.qml:154
 #, kde-format
@@ -415,7 +415,7 @@ msgstr "احصل على أنماط عرض جديدة..."
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
-msgstr "حملت الإعدادات المعدة مسبقا %1."
+msgstr "حمّلت الإعدادات المعدة مسبقا %1."
 
 #: src/page/FaceConfigurationPage.qml:103
 #, kde-format
@@ -444,7 +444,7 @@ msgstr "أقل وقت بين التحديثات:"
 #: src/page/FaceConfigurationPage.qml:172
 #, kde-format
 msgid "No Limit"
-msgstr "لا حدّ"
+msgstr "لا حد"
 
 #. i18ndp doesn't handle floats :(
 #: src/page/FaceConfigurationPage.qml:176
@@ -461,7 +461,7 @@ msgstr "%1 ثانية"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No Chart"
-msgstr "لا رسوم"
+msgstr "لا توجد رسوم"
 
 #: src/page/LoadPresetDialog.qml:22
 #, kde-format
@@ -480,7 +480,7 @@ msgstr "حمّل"
 #, kde-format
 msgctxt "@action:button"
 msgid "Cancel"
-msgstr "ألغ"
+msgstr "ألغِ"
 
 #: src/page/MissingSensorsDialog.qml:35
 #, kde-format
@@ -497,7 +497,7 @@ msgstr "انقل"
 #: src/page/PageContents.qml:100 src/page/PageEditor.qml:131
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
-msgstr "هذه الصفحة تفتقد بعض المتحسسات ولن تعرض بشكل صحيح."
+msgstr "تفتقد هذه الصفحة بعض المتحسسات ولن تعرض بشكل صحيح."
 
 #: src/page/PageContents.qml:104 src/page/PageEditor.qml:135
 #, kde-format
@@ -563,7 +563,7 @@ msgstr "كبير"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
-msgstr "إجراءات المستخدم من:"
+msgstr "استخدم الإجراءات من:"
 
 #: src/page/PageDialog.qml:145
 #, kde-format
@@ -598,7 +598,7 @@ msgstr "أظهر الصفحة"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr "أخف الصفحة"
+msgstr "أخفِ الصفحة"
 
 #: src/page/PageSortDialog.qml:149
 #, kde-format
@@ -616,7 +616,7 @@ msgstr "ستصفر الصفحة إلى حالتها المبدئية"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr "صفّر صفحة إلى حالتها المبدئية"
+msgstr "صفّر الصفحة إلى حالتها المبدئية"
 
 #: src/page/PageSortDialog.qml:171
 #, kde-format
@@ -645,7 +645,7 @@ msgstr "ابدأ بـ:"
 #: src/page/PageSortDialog.qml:216
 #, kde-format
 msgid "Last Visited Page"
-msgstr "أخر صفحة مُزارة"
+msgstr "آخر صفحة زرتها"
 
 #: src/page/RowControl.qml:128
 #, kde-format
@@ -675,19 +675,19 @@ msgstr "حاول واستخدم نفس الارتفاع على مختلف الص
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Minimum"
-msgstr "الحد الادنى"
+msgstr "الحد الأدنى"
 
 #: src/page/RowControl.qml:151
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
-msgstr "استخدم أدنى ارتفاع بحيث لا تزال تعرض المحتويات بشكل جيد."
+msgstr "استخدم أدنى ارتفاع لعرض المحتويات بشكل جيد."
 
 #: src/page/RowControl.qml:159
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Maximum"
-msgstr "الحد الاعلى"
+msgstr "الحد الأعلى"
 
 #: src/page/RowControl.qml:160
 #, kde-format
