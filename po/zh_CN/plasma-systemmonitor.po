@@ -14,9 +14,9 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/plasma-systemmonitor/plasma-"
+"X-Crowdin-File: /kf6-stable/messages/plasma-systemmonitor/plasma-"
 "systemmonitor.pot\n"
-"X-Crowdin-File-ID: 43645\n"
+"X-Crowdin-File-ID: 50568\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -746,13 +746,13 @@ msgstr "配置列"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr ""
+msgstr "启用的列"
 
 #: src/table/ColumnConfigurationDialog.qml:106
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr ""
+msgstr "禁用的列"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -788,7 +788,7 @@ msgstr "折线图 (缩放到100%)"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "没有匹配此搜索条件的列"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
