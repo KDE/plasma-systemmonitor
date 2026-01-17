@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-13 08:43+0000\n"
-"PO-Revision-Date: 2026-01-10 13:08+0200\n"
+"PO-Revision-Date: 2026-01-13 15:12+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -801,19 +801,19 @@ msgstr "לא לשאול שוב"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "הגדרת עדיפות"
 
 #: src/table/ReniceDialog.qml:56
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "מתזמן עדיפות"
 
 #: src/table/ReniceDialog.qml:82
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "רגילה"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
@@ -821,13 +821,13 @@ msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
-msgstr ""
+msgstr "מתזמן חלוקת הזמן הרגיל לתהליכים שאין להם דרישות מיוחדות."
 
 #: src/table/ReniceDialog.qml:88
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "מרוכז"
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
@@ -836,54 +836,56 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"התהליך מקבל עדיפות מעט פחותה בהחלטות התזמון, לתהליכים שצורכים הרבה משאבי "
+"עיבוד ואינם אינטראקטיביים."
 
 #: src/table/ReniceDialog.qml:94
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "לפי הסדר"
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
-msgstr ""
+msgstr "התהליך ירוץ כשניתן להריץ אותו, עם חלוקת זמן."
 
 #: src/table/ReniceDialog.qml:100
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
-msgstr ""
+msgstr "התהליך ירוץ כשניתן להריץ אותו, ללא חלוקת זמן."
 
 #: src/table/ReniceDialog.qml:119
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "מתזמן קלט/פלט"
 
 #: src/table/ReniceDialog.qml:145
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "רגילה"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "עדיפות התהליך מבוססת על עדיפות המעבד."
 
 #: src/table/ReniceDialog.qml:151
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "בהמתנה"
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
@@ -892,24 +894,25 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"תהליך יכול להשתמש בכונן הקשיח רק כאשר אף תהליך אחר לא השתמש בו ממש לאחרונה."
 
 #: src/table/ReniceDialog.qml:157
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "לפי יכולת"
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
-msgstr ""
+msgstr "התהליך מקבל עדיפות גבוהה יותר לגשת לכונן הקשיח מאשר העדיפות הרגילה."
 
 #: src/table/ReniceDialog.qml:163
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "זמן אמת"
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
@@ -918,30 +921,31 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"התהליך מקבל גישה מיידית לכונן הקשיח לפי הצורך, ללא תלות בדברים האחרים שקורים."
 
 #: src/table/ReniceDialog.qml:210
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "עדיפות נמוכה"
 
 #: src/table/ReniceDialog.qml:217
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "עדיפות גבוהה"
 
 #: src/table/ReniceDialog.qml:267
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "עדיפות נמוכה"
 
 #: src/table/ReniceDialog.qml:274
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "עדיפות גבוהה"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
