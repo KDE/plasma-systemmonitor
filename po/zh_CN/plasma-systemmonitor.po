@@ -800,19 +800,19 @@ msgstr "不再询问"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "设定优先级"
 
 #: src/table/ReniceDialog.qml:56
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "CPU 调度器"
 
 #: src/table/ReniceDialog.qml:82
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "普通"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
@@ -820,13 +820,13 @@ msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
-msgstr ""
+msgstr "标准的时间共享调度器，适合没有特殊需求的进程。"
 
 #: src/table/ReniceDialog.qml:88
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "批处理"
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
@@ -835,54 +835,55 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"进程优先级将在调度决策中被适度降低，适合不需要交互的 CPU 算力密集型进程。"
 
 #: src/table/ReniceDialog.qml:94
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "轮转"
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
-msgstr ""
+msgstr "进程将在分配的时间片可用时运行。"
 
 #: src/table/ReniceDialog.qml:100
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "先入先出"
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
-msgstr ""
+msgstr "进程将在被分配到 CPU 后运行到结束或被打断，不采用时间片调度。"
 
 #: src/table/ReniceDialog.qml:119
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "I/O 调度器"
 
 #: src/table/ReniceDialog.qml:145
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "普通"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "进程优先级基于 CPU 优先级进行调度。"
 
 #: src/table/ReniceDialog.qml:151
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "空闲"
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
@@ -890,25 +891,25 @@ msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
-msgstr ""
+msgstr "进程只能在最近没有其他进程访问硬盘时访问硬盘。"
 
 #: src/table/ReniceDialog.qml:157
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "尽量优先"
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
-msgstr ""
+msgstr "进程能够以比普通级别更高的优先级访问硬盘。"
 
 #: src/table/ReniceDialog.qml:163
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "实时"
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
@@ -916,31 +917,31 @@ msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
-msgstr ""
+msgstr "进程能够在任意条件下即时访问硬盘。"
 
 #: src/table/ReniceDialog.qml:210
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "低优先级"
 
 #: src/table/ReniceDialog.qml:217
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "高优先级"
 
 #: src/table/ReniceDialog.qml:267
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "低优先级"
 
 #: src/table/ReniceDialog.qml:274
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "高优先级"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
