@@ -124,7 +124,7 @@ msgstr "配置列…"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
-msgstr ""
+msgstr "设置优先级…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:251
 #, kde-format
