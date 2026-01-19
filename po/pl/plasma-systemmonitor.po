@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025, 2026 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:19+0000\n"
-"PO-Revision-Date: 2025-08-30 08:18+0200\n"
+"PO-Revision-Date: 2026-01-18 15:24+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: pl\n"
 "Language: pl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: src/GlobalMenu.qml:15
 #, kde-format
@@ -28,13 +28,13 @@ msgstr "Plik"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr "Dodaj nową stronę..."
+msgstr "Dodaj nową stronę…"
 
 #: src/GlobalMenu.qml:24
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "Zaimportuj stronę..."
+msgstr "Zaimportuj stronę…"
 
 #: src/GlobalMenu.qml:30
 #, kde-format
@@ -46,7 +46,7 @@ msgstr "Wyeksportuj bieżącą stronę..."
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr "Pobierz nowe strony..."
+msgstr "Pobierz nowe strony…"
 
 #: src/GlobalMenu.qml:54
 #, kde-format
@@ -94,7 +94,7 @@ msgstr "Pomoc"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr "Zgłoś błąd..."
+msgstr "Zgłoś błąd…"
 
 #: src/GlobalMenu.qml:91
 #, kde-format
@@ -201,13 +201,13 @@ msgstr "Wyeksportuj bieżącą stronę..."
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "Zaimportuj stronę..."
+msgstr "Zaimportuj stronę…"
 
 #: src/main.qml:91
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
-msgstr "Pobierz nowe strony..."
+msgstr "Pobierz nowe strony…"
 
 #: src/main.qml:103
 #, kde-format
@@ -225,7 +225,7 @@ msgstr "Zwiń pasek boczny"
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr "Zgłoś błąd..."
+msgstr "Zgłoś błąd…"
 
 #: src/main.qml:116
 #, kde-format
@@ -237,7 +237,7 @@ msgstr "O monitorze systemu"
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
-msgstr "Dodaj nową stronę..."
+msgstr "Dodaj nową stronę…"
 
 #: src/main.qml:210
 #, kde-format
@@ -326,7 +326,7 @@ msgstr "Porzuć zmiany"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "Ustawienia strony..."
+msgstr "Ustawienia strony…"
 
 #: src/page/EditablePage.qml:163
 #, kde-format
@@ -380,7 +380,7 @@ msgstr "Zamknij"
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr "Wczytaj nastawę..."
+msgstr "Wczytaj nastawę…"
 
 #: src/page/FaceConfigurationPage.qml:43
 #, kde-format
