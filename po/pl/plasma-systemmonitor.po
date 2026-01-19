@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025, 2026 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-13 08:43+0000\n"
-"PO-Revision-Date: 2025-08-30 08:18+0200\n"
+"PO-Revision-Date: 2026-01-18 15:24+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: pl\n"
 "Language: pl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -28,13 +28,13 @@ msgstr "Plik"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr "Dodaj nową stronę..."
+msgstr "Dodaj nową stronę…"
 
 #: src/GlobalMenu.qml:25
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "Zaimportuj stronę..."
+msgstr "Zaimportuj stronę…"
 
 #: src/GlobalMenu.qml:31
 #, kde-format
@@ -46,7 +46,7 @@ msgstr "Wyeksportuj bieżącą stronę..."
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr "Pobierz nowe strony..."
+msgstr "Pobierz nowe strony…"
 
 #: src/GlobalMenu.qml:55
 #, kde-format
@@ -94,7 +94,7 @@ msgstr "Pomoc"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr "Zgłoś błąd..."
+msgstr "Zgłoś błąd…"
 
 #: src/GlobalMenu.qml:92
 #, kde-format
@@ -189,7 +189,7 @@ msgstr "Narzędzia"
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
-msgstr "Dodaj nową stronę..."
+msgstr "Dodaj nową stronę…"
 
 #: src/Main.qml:100
 #, kde-format
@@ -207,13 +207,13 @@ msgstr "Wyeksportuj bieżącą stronę..."
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "Zaimportuj stronę..."
+msgstr "Zaimportuj stronę…"
 
 #: src/Main.qml:120
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
-msgstr "Pobierz nowe strony..."
+msgstr "Pobierz nowe strony…"
 
 #: src/Main.qml:137
 #, kde-format
@@ -231,7 +231,7 @@ msgstr "Zwiń pasek boczny"
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr "Zgłoś błąd..."
+msgstr "Zgłoś błąd…"
 
 #: src/Main.qml:153
 #, kde-format
@@ -332,7 +332,7 @@ msgstr "Porzuć zmiany"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "Ustawienia strony..."
+msgstr "Ustawienia strony…"
 
 #: src/page/EditablePage.qml:168
 #, kde-format
@@ -386,7 +386,7 @@ msgstr "Zamknij"
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr "Wczytaj nastawę..."
+msgstr "Wczytaj nastawę…"
 
 #: src/page/FaceConfigurationPage.qml:45
 #, kde-format
@@ -748,20 +748,16 @@ msgid "Configure Columns"
 msgstr "Ustawienia kolumn"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "Dodaj kolumnę"
+msgstr "Włączone kolumny"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "Dodaj kolumnę"
+msgstr "Wyłączone kolumny"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -797,7 +793,7 @@ msgstr "Wykres liniowy (przeskalowany do 100%)"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "W żadnej z kolumn nie znaleziono szukanego tekstu"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -809,19 +805,19 @@ msgstr "Nie pytaj ponownie"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "Ustaw priorytet"
 
 #: src/table/ReniceDialog.qml:56
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "Planista CPU"
 
 #: src/table/ReniceDialog.qml:82
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normalny"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
@@ -830,12 +826,14 @@ msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
 msgstr ""
+"Standardowy planista rozdzielający czas dla procesów bez szczególnych "
+"wymagań."
 
 #: src/table/ReniceDialog.qml:88
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "Wsadowy"
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
@@ -844,54 +842,61 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"Proces jest nieznacznie spychany na dalszy plan w planowaniu i nadaje się do "
+"procesów wymagających dużej pracy procesora oraz braku obsługi przez "
+"użytkownika."
 
 #: src/table/ReniceDialog.qml:94
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "Karuzelowo"
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
 msgstr ""
+"Proces będzie działał z porcjowaniem czasu, zawsze wtedy gdy będzie można go "
+"uruchomić."
 
 #: src/table/ReniceDialog.qml:100
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
 msgstr ""
+"Proces będzie działał bez porcjowaniem czasu, zawsze wtedy gdy będzie można "
+"go uruchomić."
 
 #: src/table/ReniceDialog.qml:119
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "Planista WE/WY"
 
 #: src/table/ReniceDialog.qml:145
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normalny"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "Priorytet procesu będzie oparty na priorytecie CPU."
 
 #: src/table/ReniceDialog.qml:151
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "Bezczynny"
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
@@ -900,24 +905,26 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"Proces będzie mógł użyć dysku twardego, gdy żaden inny proces nie używał go "
+"ostatnio."
 
 #: src/table/ReniceDialog.qml:157
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "Jak najlepiej"
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
-msgstr ""
+msgstr "Procesowi daje się wyższy niż zwyczajnie priorytet dostępu do dysku."
 
 #: src/table/ReniceDialog.qml:163
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "Czasu rzeczywistego"
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
@@ -926,30 +933,32 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"Proces uzyskuje natychmiastowy dostęp do dysku twardego, gdy tego "
+"potrzebuje, niezależnie od tego co się dzieje."
 
 #: src/table/ReniceDialog.qml:210
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Niski priorytet"
 
 #: src/table/ReniceDialog.qml:217
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "Wysoki priorytet"
 
 #: src/table/ReniceDialog.qml:267
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Niski priorytet"
 
 #: src/table/ReniceDialog.qml:274
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "Wysoki priorytet"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
