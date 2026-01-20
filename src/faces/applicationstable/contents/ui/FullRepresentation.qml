@@ -57,7 +57,6 @@ Faces.SensorFace {
             id: showDetailsAction
             icon.name: "documentinfo"
             text: i18nc("@action", "Show Details Sidebar")
-            displayHint: Kirigami.DisplayHint.AlwaysHide
             checkable: true
             checked: root.config.showDetails
             onToggled: root.config.showDetails = checked
@@ -66,6 +65,7 @@ Faces.SensorFace {
             id: configureColumnsAction
             icon.name: "configure"
             text: i18nc("@action", "Configure Columns…")
+            displayHint: Kirigami.DisplayHint.AlwaysHide
             onTriggered: columnDialog.open()
         }
     ]
