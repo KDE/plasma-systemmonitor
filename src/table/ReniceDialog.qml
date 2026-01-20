@@ -24,6 +24,7 @@ Dialog {
 
     title: i18nc("@title:window", "Set Priority")
     focus: true
+    modal: true
 
     standardButtons: Dialog.Ok | Dialog.Cancel
 
