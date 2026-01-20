@@ -84,6 +84,8 @@ Table.BaseTableView {
     model: KItemModels.KSortFilterProxyModel {
         id: sortColumnFilter
 
+        property int commandColumn
+
         sourceModel: cacheModel
         filterKeyColumn: appModel.nameColumn
         filterCaseSensitivity: Qt.CaseInsensitive
@@ -94,6 +96,9 @@ Table.BaseTableView {
             var sensorId = appModel.enabledAttributes[column]
             if (appModel.hiddenAttributes.indexOf(sensorId) != -1) {
                 return false
+            }
+            if (sensorId == "command") {
+                commandColumn = column
             }
             return true
         }
@@ -142,7 +147,6 @@ Table.BaseTableView {
 
         property int nameColumn: enabledAttributes.indexOf("appName")
         property int iconColumn: enabledAttributes.indexOf("iconName")
-        property int commandColumn: enabledAttributes.indexOf("command")
 
         property var requiredAttributes: [
             "iconName",
@@ -268,7 +272,7 @@ Table.BaseTableView {
             }
         }
         DelegateChoice {
-            column: appModel.commandColumn
+            column: appModel.enabledAttributes.includes("command") ? sortColumnFilter.commandColumn : 9999
             Table.TextCellDelegate {
                 horizontalAlignment: Text.AlignLeft
             }
