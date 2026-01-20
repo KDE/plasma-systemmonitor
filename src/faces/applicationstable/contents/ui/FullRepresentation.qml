@@ -250,6 +250,8 @@ Faces.SensorFace {
     Menu {
         id: contextMenu
 
+        modal: true
+
         MenuItem {
             text: i18nc("@action:inmenu", "Set priority…")
             icon.name: "process-working-symbolic"

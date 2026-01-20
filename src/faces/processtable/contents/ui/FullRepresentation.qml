@@ -239,6 +239,8 @@ Faces.SensorFace {
     Menu {
         id: contextMenu
 
+        modal: true
+
         property var index
 
         MenuItem {
