@@ -176,7 +176,10 @@ Table.BaseTableView {
             "gpg-agent.service": "services",
             "org.kde.xwaylandvideobridge": "services",
             "org.kde.kalendarac": "services",
-            "xdg-desktop-portal-gtk.service": "services"
+            "xdg-desktop-portal-gtk.service": "services",
+            "org.kde.kdeconnect": "services",
+            "org.kde.kwalletd6": "services",
+            "org.kde.kclockd": "services"
         }
 
         applicationOverrides: {
