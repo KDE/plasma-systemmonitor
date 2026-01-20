@@ -21,6 +21,7 @@ class ProcessSortFilterModel : public QSortFilterProxyModel
     Q_PROPERTY(ViewMode viewMode READ viewMode WRITE setViewMode NOTIFY viewModeChanged)
     Q_PROPERTY(QStringList hiddenAttributes READ hiddenAttributes WRITE setHiddenAttributes NOTIFY hiddenAttributesChanged)
     Q_PROPERTY(QVariantList filterPids READ filterPids WRITE setFilterPids NOTIFY filterPidsChanged)
+    Q_PROPERTY(QVariantMap columnMapping READ columnMapping NOTIFY columnMappingChanged)
 
     Q_PROPERTY(int sortColumn READ sortColumn NOTIFY sorted)
     Q_PROPERTY(int sortOrder READ sortOrder NOTIFY sorted)
@@ -58,6 +59,9 @@ public:
     void setFilterPids(const QVariantList &newFilterPids);
     Q_SIGNAL void filterPidsChanged();
 
+    QVariantMap columnMapping() const;
+    Q_SIGNAL void columnMappingChanged();
+
     Q_INVOKABLE void sort(int column, Qt::SortOrder order) override;
     Q_SIGNAL void sorted();
 
@@ -69,6 +73,7 @@ private:
     ViewMode m_viewMode = ViewOwn;
     QStringList m_hiddenAttributes;
     QVariantList m_filterPids;
+    QVariantMap m_columnMapping;
 
     int m_uidColumn = -1;
     int m_pidColumn = -1;

@@ -195,6 +195,11 @@ void ProcessSortFilterModel::sort(int column, Qt::SortOrder order)
     Q_EMIT sorted();
 }
 
+QVariantMap ProcessSortFilterModel::columnMapping() const
+{
+    return m_columnMapping;
+}
+
 void ProcessSortFilterModel::findColumns()
 {
     beginFilterChange();
@@ -206,8 +211,11 @@ void ProcessSortFilterModel::findColumns()
 
     auto source = sourceModel();
 
+    m_columnMapping.clear();
+
     for (auto column = 0; column < source->columnCount(); ++column) {
         auto attribute = source->headerData(column, Qt::Horizontal, ProcessDataModel::Attribute).toString();
+
         if (attribute == QStringLiteral("uid")) {
             m_uidColumn = column;
         } else if (attribute == QStringLiteral("pid")) {
@@ -220,6 +228,13 @@ void ProcessSortFilterModel::findColumns()
     }
 
     endFilterChange(QSortFilterProxyModel::Direction::Both);
+
+    // This is done after the above to ensure that we get proper sorted column indices.
+    for (auto column = 0; column < columnCount(); ++column) {
+        auto attribute = headerData(column, Qt::Horizontal, ProcessDataModel::Attribute).toString();
+        m_columnMapping.insert(attribute, column);
+    }
+    Q_EMIT columnMappingChanged();
 }
 
 #include "moc_ProcessSortFilterModel.cpp"
