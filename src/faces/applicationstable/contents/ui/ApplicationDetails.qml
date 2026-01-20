@@ -43,10 +43,11 @@ Page {
     header: ToolBar {
         implicitHeight: root.headerHeight
         Kirigami.Theme.inherit: false
-        Kirigami.Theme.colorSet: Kirigami.Theme.Window
+        Kirigami.Theme.colorSet: Kirigami.Theme.Button
 
         Label {
             anchors.left: parent.left
+            anchors.verticalCenter: parent.verticalCenter
             text: i18nc("@title:window", "Details")
         }
 

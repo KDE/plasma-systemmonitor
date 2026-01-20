@@ -182,7 +182,7 @@ Faces.SensorFace {
 
                 sourceComponent: Component {
                     ApplicationDetails {
-                        headerHeight: table.headerHeight
+                        headerHeight: toolbar.visible ? toolbar.height : table.headerHeight
                         onClose: root.config.showDetails = false
                         applications: table.selectedApplications
                     }
