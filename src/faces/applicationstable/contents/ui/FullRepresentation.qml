@@ -130,13 +130,13 @@ Faces.SensorFace {
 
             onContextMenuRequested: (index, position) => {
                 const pos = mapFromItem(null, position)
-                contextMenu.popup(table, pos)
+                contextMenu.popup(table, Math.round(pos.x), Math.round(pos.y))
             }
 
             onHeaderContextMenuRequested: (column, columnId, position) => {
                 headerContextMenu.columnId = columnId;
                 const pos = mapFromItem(null, position)
-                headerContextMenu.popup(table, pos)
+                headerContextMenu.popup(table, Math.round(pos.x), Math.round(pos.y))
             }
 
             enabledColumns: columnDialog.sortedColumns
