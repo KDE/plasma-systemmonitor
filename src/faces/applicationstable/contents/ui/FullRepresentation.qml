@@ -70,178 +70,122 @@ Faces.SensorFace {
         }
     ]
 
-    contentItem: Item {
+    contentItem: SplitView {
         Layout.minimumHeight: table.Layout.minimumHeight
 
-        ToolBar {
-            id: toolbar
+        ColumnLayout {
+            SplitView.fillWidth: true
+            spacing: 0
 
-            anchors {
-                left: parent.left
-                right: splitter.right
-                top: parent.top
-            }
-            height: visible ? undefined : 0
-            visible: root.controller.showTitle || root.config.showToolBar
+            ToolBar {
+                id: toolbar
 
-            Kirigami.Theme.inherit: false
-            Kirigami.Theme.colorSet: Kirigami.Theme.Button
+                Layout.fillWidth: true
 
-            RowLayout {
-                anchors.fill: parent
+                visible: root.controller.showTitle || root.config.showToolBar
 
-                Kirigami.Heading {
-                    Layout.leftMargin: Kirigami.Units.largeSpacing
-                    level: 2
-                    text: root.controller.title
-                    visible: root.controller.showTitle
+                Kirigami.Theme.inherit: false
+                Kirigami.Theme.colorSet: Kirigami.Theme.Button
+
+                RowLayout {
+                    anchors.fill: parent
+
+                    Kirigami.Heading {
+                        Layout.leftMargin: Kirigami.Units.largeSpacing
+                        level: 2
+                        text: root.controller.title
+                        visible: root.controller.showTitle
+                    }
+
+                    Kirigami.ActionToolBar {
+                        Layout.fillWidth: true
+                        actions: root.actions
+                        alignment: Qt.AlignRight
+                        visible: root.config.showToolBar
+                    }
                 }
 
-                Kirigami.ActionToolBar {
-                    Layout.fillWidth: true
-                    actions: root.actions
-                    alignment: Qt.AlignRight
-                    visible: root.config.showToolBar
+                background: Rectangle {
+                    color: Kirigami.Theme.backgroundColor
+
+                    Kirigami.Separator {
+                        anchors {
+                            left: parent.left
+                            right: parent.right
+                            bottom: parent.bottom
+                        }
+                    }
                 }
             }
 
-            background: Rectangle {
-                color: Kirigami.Theme.backgroundColor
+            ApplicationsTableView {
+                id: table
 
-                Kirigami.Separator {
-                    anchors {
-                        left: parent.left
-                        right: parent.right
-                        bottom: parent.bottom
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+
+                onContextMenuRequested: (index, position) => {
+                    const pos = mapFromItem(null, position)
+                    contextMenu.popup(table, Math.round(pos.x), Math.round(pos.y))
+                }
+
+                onHeaderContextMenuRequested: (column, columnId, position) => {
+                    headerContextMenu.columnId = columnId;
+                    const pos = mapFromItem(null, position)
+                    headerContextMenu.popup(table, Math.round(pos.x), Math.round(pos.y))
+                }
+
+                enabledColumns: columnDialog.sortedColumns
+                columnDisplay: columnDialog.columnDisplay
+
+                columnWidths: root.config.columnWidths
+                onColumnWidthsChanged: root.config.columnWidths = columnWidths
+                sortName: root.config.sortColumn
+                onSortNameChanged: root.config.sortColumn = sortName
+                sortOrder: root.config.sortDirection
+                onSortOrderChanged: root.config.sortDirection = sortOrder
+
+                Keys.onPressed: event => {
+                    if (!root.quitEnabled) {
+                        return
+                    }
+
+                    if (event.matches(StandardKey.Delete)) {
+                        processHelper.sendSignalToSelection(Process.Signal.TerminateSignal);
+                        event.accepted = true;
+                    } else if ((event.modifiers & Qt.ShiftModifier) && (event.key == Qt.Key_Delete)) {
+                        processHelper.sendSignalToSelection(Process.Signal.KillSignal);
+                        event.accepted = true;
+                    } else if (event.key == Qt.Key_F8) {
+                        processHelper.reniceSelection();
+                        event.accepted = true;
                     }
                 }
             }
         }
 
-        ApplicationsTableView {
-            id: table
+        Item {
+            SplitView.minimumWidth: Kirigami.Units.gridUnit * 8
+            SplitView.maximumWidth: root.width * 0.75
+            SplitView.onPreferredWidthChanged: root.config.detailsWidth = width
 
-            anchors {
-                left: parent.left
-                right: splitter.right
-                top: toolbar.bottom
-                bottom: parent.bottom
-            }
+            implicitWidth: root.config.detailsWidth
 
-            onContextMenuRequested: (index, position) => {
-                const pos = mapFromItem(null, position)
-                contextMenu.popup(table, Math.round(pos.x), Math.round(pos.y))
-            }
+            visible: root.config.showDetails
 
-            onHeaderContextMenuRequested: (column, columnId, position) => {
-                headerContextMenu.columnId = columnId;
-                const pos = mapFromItem(null, position)
-                headerContextMenu.popup(table, Math.round(pos.x), Math.round(pos.y))
-            }
+            Loader {
+                id: details
 
-            enabledColumns: columnDialog.sortedColumns
-            columnDisplay: columnDialog.columnDisplay
-
-            columnWidths: root.config.columnWidths
-            onColumnWidthsChanged: root.config.columnWidths = columnWidths
-            sortName: root.config.sortColumn
-            onSortNameChanged: root.config.sortColumn = sortName
-            sortOrder: root.config.sortDirection
-            onSortOrderChanged: root.config.sortDirection = sortOrder
-
-            Keys.onPressed: event => {
-                if (!root.quitEnabled) {
-                    return
-                }
-
-                if (event.matches(StandardKey.Delete)) {
-                    processHelper.sendSignalToSelection(Process.Signal.TerminateSignal);
-                    event.accepted = true;
-                } else if ((event.modifiers & Qt.ShiftModifier) && (event.key == Qt.Key_Delete)) {
-                    processHelper.sendSignalToSelection(Process.Signal.KillSignal);
-                    event.accepted = true;
-                } else if (event.key == Qt.Key_F8) {
-                    processHelper.reniceSelection();
-                    event.accepted = true;
-                }
-            }
-        }
-
-        Kirigami.Separator {
-            id: splitter
-            anchors {
-                top: parent.top
-                bottom: parent.bottom
-                right: details.left
-            }
-
-            z: 10
-            enabled: root.config.showDetails
-            visible: enabled
-
-            Kirigami.Separator {
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: parent.left
-                anchors.leftMargin: Kirigami.Units.smallSpacing
-                height: Kirigami.Units.gridUnit
-                width: 1
-            }
-
-            MouseArea {
                 anchors.fill: parent
-                anchors.margins: -Kirigami.Units.largeSpacing
-                cursorShape: enabled ? Qt.SplitHCursor : undefined
-                drag.target: this
 
-                property real startX
+                active: parent.visible
 
-                onPressed: mouse => {
-                    startX = mouse.x
-                }
-
-                onPositionChanged: mouse => {
-                    const change = LayoutMirroring.enabled ? startX - mouse.x : mouse.x - startX
-                    const newWidth = details.width - change
-                    if (newWidth > details.minimumWidth && newWidth < details.maximumWidth) {
-                        details.width += -change
+                sourceComponent: Component {
+                    ApplicationDetails {
+                        headerHeight: table.headerHeight
+                        onClose: root.config.showDetails = false
+                        applications: table.selectedApplications
                     }
-                }
-            }
-        }
-
-        Loader {
-            id: details
-
-            anchors.top: parent.top
-            anchors.bottom: parent.bottom
-            anchors.right: parent.right
-
-            property real minimumWidth: Kirigami.Units.gridUnit * 8
-            property real maximumWidth: root.width * 0.75
-
-            width: root.config.detailsWidth
-            onWidthChanged: root.config.detailsWidth = width
-
-            active: root.config.showDetails
-
-            state: root.config.showDetails ? "" : "closed"
-
-            states: State {
-                name: "closed"
-                PropertyChanges { target: details; anchors.rightMargin: -width ; visible: false; enabled: false }
-            }
-            transitions: Transition {
-                SequentialAnimation {
-                    NumberAnimation { properties: "x"; duration: Kirigami.Units.shortDuration }
-                    PropertyAction { property: "visible" }
-                }
-            }
-
-            sourceComponent: Component {
-                ApplicationDetails {
-                    headerHeight: table.headerHeight
-                    onClose: root.config.showDetails = false
-                    applications: table.selectedApplications
                 }
             }
         }
