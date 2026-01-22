@@ -6,13 +6,13 @@
 # SPDX-FileCopyrightText: 2023 Jannick Kuhr <opensource@kuhr.org>
 # SPDX-FileCopyrightText: 2024 Johannes Obermayr <johannesobermayr@gmx.de>
 # SPDX-FileCopyrightText: 2025 Flori G <Renner03@protonmail.com>
-# SPDX-FileCopyrightText: 2025 Philipp Kiemle <l10n.daphipz@fastmail.de>
+# SPDX-FileCopyrightText: 2025, 2026 Philipp Kiemle <l10n.daphipz@fastmail.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-13 08:43+0000\n"
-"PO-Revision-Date: 2025-11-24 11:06+0100\n"
+"PO-Revision-Date: 2026-01-18 13:16+0100\n"
 "Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -752,20 +752,16 @@ msgid "Configure Columns"
 msgstr "Spalten einrichten"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "Spalte hinzufügen"
+msgstr "Aktivierte Spalten"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "Spalte hinzufügen"
+msgstr "Deaktivierte Spalten"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -801,7 +797,7 @@ msgstr "Liniendiagramm (Skaliert auf 100%)"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "Keine Spalten passen zur Suche"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -813,19 +809,19 @@ msgstr "Diese Nachfrage nicht mehr anzeigen"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "Priorität festlegen"
 
 #: src/table/ReniceDialog.qml:56
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "CPU-Steuerung"
 
 #: src/table/ReniceDialog.qml:82
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
@@ -834,12 +830,13 @@ msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
 msgstr ""
+"Das Standard-Steuerungsverfahren für Prozesse ohne besondere Anforderungen."
 
 #: src/table/ReniceDialog.qml:88
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "Stapel"
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
@@ -848,54 +845,56 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"Der Prozess wird bei Steuerungsentscheidungen leicht benachteiligt – für CPU-"
+"intensive, nicht-interaktive Prozesse."
 
 #: src/table/ReniceDialog.qml:94
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "Rundlauf-Verfahren"
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
-msgstr ""
+msgstr "Der Prozess wird so bald wie möglich ausgeführt, mit Zeitfenstern."
 
 #: src/table/ReniceDialog.qml:100
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
-msgstr ""
+msgstr "Der Prozess wird so bald wie möglich ausgeführt, ohne Zeitfenster."
 
 #: src/table/ReniceDialog.qml:119
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "E/A-Planer"
 
 #: src/table/ReniceDialog.qml:145
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "Die Priorität des Prozesses basiert auf der CPU-Priorität."
 
 #: src/table/ReniceDialog.qml:151
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "Leerlauf"
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
@@ -904,24 +903,28 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"Der Prozess kann die Festplatte nur verwenden, wenn kein anderer Prozess sie "
+"vor kurzem verwendet hat."
 
 #: src/table/ReniceDialog.qml:157
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "Höchster Durchsatz"
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
 msgstr ""
+"Der Prozess erhält eine höhere Priorität für den Zugriff auf die Festplatte "
+"als normalerweise."
 
 #: src/table/ReniceDialog.qml:163
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "Echtzeit"
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
@@ -930,30 +933,32 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"Der Prozess erhält bei Bedarf sofortigen Zugriff auf die Festplatte, "
+"unabhängig davon, was sonst noch geschieht."
 
 #: src/table/ReniceDialog.qml:210
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Niedrige Priorität"
 
 #: src/table/ReniceDialog.qml:217
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "Hohe Priorität"
 
 #: src/table/ReniceDialog.qml:267
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Niedrige Priorität"
 
 #: src/table/ReniceDialog.qml:274
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "Hohe Priorität"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
