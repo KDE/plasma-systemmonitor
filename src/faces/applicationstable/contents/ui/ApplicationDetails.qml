@@ -30,7 +30,9 @@ Page {
 
     signal close()
 
+    Kirigami.Theme.inherit: false
     Kirigami.Theme.colorSet: Kirigami.Theme.View
+    clip: true
 
     background: Rectangle {
         Kirigami.Theme.inherit: false
@@ -59,22 +61,14 @@ Page {
     }
 
     ColumnLayout {
+        spacing: 0
+
         visible: root.firstApplication != null
 
-        anchors {
-            fill: parent
-            leftMargin: Kirigami.Units.largeSpacing
-            rightMargin: Kirigami.Units.largeSpacing
-            topMargin: Kirigami.Units.smallSpacing
-        }
-
-        Label {
-            text: i18nc("@title:group", "CPU")
-        }
+        anchors.fill: parent
 
         LineChartCard {
-            Layout.fillHeight: false
-            Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+            title: i18nc("@title:group", "CPU")
 
             yRange {
                 from: 0;
@@ -120,12 +114,11 @@ Page {
 
             Sensors.Sensor { id: cpuCountSensor; sensorId: "cpu/all/coreCount" }
         }
-        Label {
-            text: i18nc("@title:group", "Memory")
-        }
+
+        Kirigami.Separator { Layout.fillWidth: true }
+
         LineChartCard {
-            Layout.fillHeight: false
-            Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+            title: i18nc("@title:group", "Memory")
 
             yRange { from: 0; to: totalMemorySensor.value ? totalMemorySensor.value : 0; automatic: false }
             xRange { from: 0; to: 50 }
@@ -146,12 +139,11 @@ Page {
 
             Sensors.Sensor { id: totalMemorySensor; sensorId: "memory/physical/total" }
         }
-        Label {
-            text: i18nc("@title:group", "Network")
-        }
+
+        Kirigami.Separator { Layout.fillWidth: true }
+
         LineChartCard {
-            Layout.fillHeight: false
-            Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+            title: i18nc("@title:group", "Network")
 
             xRange { from: 0; to: 50 }
             unit: Formatter.Units.UnitByteRate
@@ -171,12 +163,11 @@ Page {
                 }
             ]
         }
-        Label {
-            text: i18nc("@title:group", "Disk")
-        }
+
+        Kirigami.Separator { Layout.fillWidth: true }
+
         LineChartCard {
-            Layout.fillHeight: false
-            Layout.preferredHeight: Kirigami.Units.gridUnit * 3
+            title: i18nc("@title:group", "Disk")
 
             xRange { from: 0; to: 50 }
             unit: Formatter.Units.UnitByteRate
@@ -197,15 +188,11 @@ Page {
             ]
         }
 
-        Label {
-            text: i18nc("@title:group", "Processes: %1", processTable.rows || " ")
-        }
-
         Rectangle {
             Layout.fillWidth: true
             Layout.fillHeight: true
-            Layout.leftMargin: -Kirigami.Units.largeSpacing;
-            Layout.rightMargin: -Kirigami.Units.largeSpacing;
+            // Layout.maximumHeight: root.height * 0.5
+            Layout.verticalStretchFactor: 3
 
             color: Kirigami.Theme.backgroundColor
             Kirigami.Theme.colorSet: Kirigami.Theme.View
