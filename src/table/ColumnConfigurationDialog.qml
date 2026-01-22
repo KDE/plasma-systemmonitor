@@ -103,7 +103,7 @@ Dialog {
             section.delegate: Kirigami.ListSectionHeader {
                 required property string section
                 width: ListView.view.width
-                text: section === "enabled" ? i18nc("@item:inlistbox", "Enabled Columns") : i18nc("@item:inlistbox", "Disabled Columns")
+                text: section === "enabled" ? i18ndc("plasma-systemmonitor", "@item:inlistbox", "Enabled Columns") : i18ndc("plasma-systemmonitor", "@item:inlistbox", "Disabled Columns")
             }
 
             move: Transition {

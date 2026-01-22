@@ -22,7 +22,7 @@ Dialog {
     property int cpuMode: 0
     property int ioMode: 0
 
-    title: i18nc("@title:window", "Set Priority")
+    title: i18ndc("plasma-systemmonitor", "@title:window", "Set Priority")
     focus: true
     modal: true
 
@@ -54,7 +54,7 @@ Dialog {
 
             Kirigami.Heading {
                 level: 2
-                text: i18nc("@title:group", "CPU Scheduler")
+                text: i18ndc("plasma-systemmonitor", "@title:group", "CPU Scheduler")
             }
 
             component CpuModeItem: RowLayout {
@@ -80,26 +80,26 @@ Dialog {
 
             CpuModeItem {
                 cpuMode: Process.Scheduler.Other
-                text: i18nc("@option:radio for process scheduler mode", "Normal")
-                toolTip: i18nc("@info:tooltip from ContextualHelpButton", "The standard time-sharing scheduler for processes without special requirements.")
+                text: i18ndc("plasma-systemmonitor", "@option:radio for process scheduler mode", "Normal")
+                toolTip: i18ndc("plasma-systemmonitor", "@info:tooltip from ContextualHelpButton", "The standard time-sharing scheduler for processes without special requirements.")
             }
 
             CpuModeItem {
                 cpuMode: Process.Scheduler.Batch
-                text: i18nc("@option:radio for process scheduler mode", "Batch")
-                toolTip: i18nc("@info:tooltip from ContextualHelpButton", "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-interactive processes.")
+                text: i18ndc("plasma-systemmonitor", "@option:radio for process scheduler mode", "Batch")
+                toolTip: i18ndc("plasma-systemmonitor", "@info:tooltip from ContextualHelpButton", "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-interactive processes.")
             }
 
             CpuModeItem {
                 cpuMode: Process.Scheduler.RoundRobin
-                text:  i18nc("@option:radio for process scheduler mode", "Round robin")
-                toolTip: i18nc("@info:tooltip from ContextualHelpButton", "Process will run whenever runnable, with timeslicing.")
+                text:  i18ndc("plasma-systemmonitor", "@option:radio for process scheduler mode", "Round robin")
+                toolTip: i18ndc("plasma-systemmonitor", "@info:tooltip from ContextualHelpButton", "Process will run whenever runnable, with timeslicing.")
             }
 
             CpuModeItem {
                 cpuMode: Process.Scheduler.Fifo
-                text: i18nc("@option:radio for process scheduler mode", "FIFO")
-                toolTip: i18nc("@info:tooltip from ContextualHelpButton", "Process will run whenever runnable, with no timeslicing.")
+                text: i18ndc("plasma-systemmonitor", "@option:radio for process scheduler mode", "FIFO")
+                toolTip: i18ndc("plasma-systemmonitor", "@info:tooltip from ContextualHelpButton", "Process will run whenever runnable, with no timeslicing.")
             }
         }
 
@@ -117,7 +117,7 @@ Dialog {
 
             Kirigami.Heading {
                 level: 2
-                text: i18nc("@title:group", "I/O Scheduler")
+                text: i18ndc("plasma-systemmonitor", "@title:group", "I/O Scheduler")
             }
 
             component IoModeItem: RowLayout {
@@ -143,26 +143,26 @@ Dialog {
 
             IoModeItem {
                 ioMode: Process.IoPriority.None
-                text: i18nc("@option:radio for I/O scheduler mode", "Normal")
-                toolTip: i18nc("@info:tooltip from ContextualHelpButton", "Process' priority is based on the CPU priority.")
+                text: i18ndc("plasma-systemmonitor", "@option:radio for I/O scheduler mode", "Normal")
+                toolTip: i18ndc("plasma-systemmonitor", "@info:tooltip from ContextualHelpButton", "Process' priority is based on the CPU priority.")
             }
 
             IoModeItem {
                 ioMode: Process.IoPriority.Idle
-                text: i18nc("@option:radio for I/O scheduler mode", "Idle")
-                toolTip: i18nc("@info:tooltip from ContextualHelpButton", "Process can only use the hard disk when no other process has used it very recently.")
+                text: i18ndc("plasma-systemmonitor", "@option:radio for I/O scheduler mode", "Idle")
+                toolTip: i18ndc("plasma-systemmonitor", "@info:tooltip from ContextualHelpButton", "Process can only use the hard disk when no other process has used it very recently.")
             }
 
             IoModeItem {
                 ioMode: Process.IoPriority.BestEffort
-                text: i18nc("@option:radio for I/O scheduler mode", "Best Effort")
-                toolTip: i18nc("@info:tooltip from ContextualHelpButton", "Process is given higher priority to access the hard disk than normal.")
+                text: i18ndc("plasma-systemmonitor", "@option:radio for I/O scheduler mode", "Best Effort")
+                toolTip: i18ndc("plasma-systemmonitor", "@info:tooltip from ContextualHelpButton", "Process is given higher priority to access the hard disk than normal.")
             }
 
             IoModeItem {
                 ioMode: Process.IoPriority.RealTime
-                text: i18nc("@option:radio for I/O scheduler mode", "Real Time")
-                toolTip: i18nc("@info:tooltip from ContextualHelpButton", "Process gets immediate access to the hard disk whenever needed, regardless of what else is going on.")
+                text: i18ndc("plasma-systemmonitor", "@option:radio for I/O scheduler mode", "Real Time")
+                toolTip: i18ndc("plasma-systemmonitor", "@info:tooltip from ContextualHelpButton", "Process gets immediate access to the hard disk whenever needed, regardless of what else is going on.")
             }
         }
 
@@ -208,14 +208,14 @@ Dialog {
                 spacing: Kirigami.Units.smallSpacing
 
                 Label {
-                    text: i18nc("Lower process priority", "Low priority")
+                    text: i18ndc("plasma-systemmonitor", "Lower process priority", "Low priority")
                     textFormat: Text.PlainText
                 }
                 Item {
                     Layout.fillWidth: true
                 }
                 Label {
-                    text: i18nc("Higher process priority", "High priority")
+                    text: i18ndc("plasma-systemmonitor", "Higher process priority", "High priority")
                     textFormat: Text.PlainText
                 }
                 Item {
@@ -265,14 +265,14 @@ Dialog {
                 spacing: Kirigami.Units.smallSpacing
 
                 Label {
-                    text: i18nc("Lower I/O priority", "Low priority")
+                    text: i18ndc("plasma-systemmonitor", "Lower I/O priority", "Low priority")
                     textFormat: Text.PlainText
                 }
                 Item {
                     Layout.fillWidth: true
                 }
                 Label {
-                    text: i18nc("Higher I/O priority", "High priority")
+                    text: i18ndc("plasma-systemmonitor", "Higher I/O priority", "High priority")
                     textFormat: Text.PlainText
                 }
                 Item {
