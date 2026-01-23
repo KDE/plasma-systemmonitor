@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-13 08:43+0000\n"
+"POT-Creation-Date: 2026-01-23 00:45+0000\n"
 "PO-Revision-Date: 2026-01-13 11:58+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -120,73 +120,73 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Konfiguriraj stolpce…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:245
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Nastavi prednost…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:251
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:253
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Pošlji signal"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:255
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Suspendiraj (STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Nadaljuj (CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:265
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Obesi (HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:267
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:269
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Prekini (INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:271
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:273
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Končaj (TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:275
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:277
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Ubij (KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:279
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:281
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Uporabnik 1 (USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:283
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:285
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Uporabnik 2 (USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:289
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:291
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "Kopiraj trenutni stolpec"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:298
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:300
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
@@ -196,19 +196,19 @@ msgstr[1] "Končaj %1 procesa"
 msgstr[2] "Končaj %1 procese"
 msgstr[3] "Končaj %1 procesov"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:311
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:313
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Skrij"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:316
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:318
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "Nastavi stolpce…"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:328
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:330
 #, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
@@ -218,7 +218,7 @@ msgstr[1] "Prisilno končaj %1 procesa"
 msgstr[2] "Prisilno končaj %1 procese"
 msgstr[3] "Prisilno končaj %1 procesov"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:329
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:331
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
@@ -228,7 +228,7 @@ msgstr[1] "Končaj %1 procesa"
 msgstr[2] "Končaj %1 procese"
 msgstr[3] "Končaj %1 procesov"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:331
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:333
 #, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
@@ -238,7 +238,7 @@ msgstr[1] "Prisilno končaj procesa"
 msgstr[2] "Prisilno končaj procese"
 msgstr[3] "Prisilno končaj procese"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:332
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:334
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
@@ -248,7 +248,7 @@ msgstr[1] "Končaj procesa"
 msgstr[2] "Končaj procese"
 msgstr[3] "Končaj procese"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:335
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:337
 #, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
@@ -265,7 +265,7 @@ msgstr[3] ""
 "Prisilno končaj (SIGKILL) te %1 procese? Neshranjeno delo bo morda "
 "izgubljeno."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:338
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:340
 #, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
@@ -278,7 +278,7 @@ msgstr[2] ""
 msgstr[3] ""
 "Končaj (SIGKILL) te %1 procese? Neshranjeno delo bo morda izgubljeno."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:350
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:352
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"

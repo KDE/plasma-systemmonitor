@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-13 08:43+0000\n"
+"POT-Creation-Date: 2026-01-23 00:45+0000\n"
 "PO-Revision-Date: 2026-01-13 18:06+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -804,19 +804,19 @@ msgctxt "@title:window"
 msgid "Set Priority"
 msgstr "Öncelik Ayarla"
 
-#: src/table/ReniceDialog.qml:56
+#: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
 msgstr "CPU Zamanlayıcısı"
 
-#: src/table/ReniceDialog.qml:82
+#: src/table/ReniceDialog.qml:83
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
 msgstr "Normal"
 
-#: src/table/ReniceDialog.qml:83
+#: src/table/ReniceDialog.qml:84
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -826,13 +826,13 @@ msgstr ""
 "Özel gereksinimleri olmayan süreçler için standart zaman paylaşımlı "
 "zamanlayıcı."
 
-#: src/table/ReniceDialog.qml:88
+#: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
 msgstr "Toplu"
 
-#: src/table/ReniceDialog.qml:89
+#: src/table/ReniceDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -842,13 +842,13 @@ msgstr ""
 "İşlemciyi yoğunca kullanan, etkileşimli olmayan süreçler için zamanlama "
 "kararlarında bu süreç hafifçe dezavantajlı konumdadır."
 
-#: src/table/ReniceDialog.qml:94
+#: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
 msgstr "Sırasıyla dönüş"
 
-#: src/table/ReniceDialog.qml:95
+#: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
@@ -856,13 +856,13 @@ msgstr ""
 "Süreç, zaman dilimleme yöntemiyle, çalıştırılabilir olduğu her an "
 "çalıştırılacaktır."
 
-#: src/table/ReniceDialog.qml:100
+#: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
 msgstr "İlk giren ilk çıkar"
 
-#: src/table/ReniceDialog.qml:101
+#: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
@@ -870,31 +870,31 @@ msgstr ""
 "Süreç, zaman dilimleme olmadan, çalıştırılabilir olduğu her an "
 "çalıştırılacaktır."
 
-#: src/table/ReniceDialog.qml:119
+#: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
 msgstr "G/Ç Zamanlayıcısı"
 
-#: src/table/ReniceDialog.qml:145
+#: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
 msgstr "Normal"
 
-#: src/table/ReniceDialog.qml:146
+#: src/table/ReniceDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
 msgstr "Sürecin önceliği, işlemci önceliğine bağlıdır."
 
-#: src/table/ReniceDialog.qml:151
+#: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
 msgstr "Boştayken"
 
-#: src/table/ReniceDialog.qml:152
+#: src/table/ReniceDialog.qml:153
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -904,13 +904,13 @@ msgstr ""
 "Bir süreç, sabit diski; ancak yakın zamanda başka hiçbir süreç tarafından "
 "kullanılmamışsa kullanabilir."
 
-#: src/table/ReniceDialog.qml:157
+#: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
 msgstr "Olabildiğince en iyi şekilde"
 
-#: src/table/ReniceDialog.qml:158
+#: src/table/ReniceDialog.qml:159
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
@@ -918,13 +918,13 @@ msgstr ""
 "Bu sürece, normal süreçlere göre sabit diske erişim için daha yüksek öncelik "
 "verilir."
 
-#: src/table/ReniceDialog.qml:163
+#: src/table/ReniceDialog.qml:164
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
 msgstr "Gerçek zamanlı"
 
-#: src/table/ReniceDialog.qml:164
+#: src/table/ReniceDialog.qml:165
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -934,25 +934,25 @@ msgstr ""
 "Süreç, başka ne yapılıyor olursa olsun, gereksinim duyulduğu anda sabit "
 "diske anında erişim sağlar."
 
-#: src/table/ReniceDialog.qml:210
+#: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
 msgstr "Düşük öncelik"
 
-#: src/table/ReniceDialog.qml:217
+#: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
 msgstr "Yüksek öncelik"
 
-#: src/table/ReniceDialog.qml:267
+#: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
 msgstr "Düşük öncelik"
 
-#: src/table/ReniceDialog.qml:274
+#: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
