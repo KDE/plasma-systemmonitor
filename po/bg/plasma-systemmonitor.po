@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-13 08:43+0000\n"
+"POT-Creation-Date: 2026-01-23 02:42+0000\n"
 "PO-Revision-Date: 2026-01-19 22:18+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -806,19 +806,19 @@ msgctxt "@title:window"
 msgid "Set Priority"
 msgstr "Задаване на приоритет"
 
-#: src/table/ReniceDialog.qml:56
+#: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
 msgstr "Планировчик на процесора"
 
-#: src/table/ReniceDialog.qml:82
+#: src/table/ReniceDialog.qml:83
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
 msgstr "Нормално"
 
-#: src/table/ReniceDialog.qml:83
+#: src/table/ReniceDialog.qml:84
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -828,13 +828,13 @@ msgstr ""
 "Стандартният планировчик за споделяне на време за процеси без специални "
 "изисквания."
 
-#: src/table/ReniceDialog.qml:88
+#: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
 msgstr "Партида"
 
-#: src/table/ReniceDialog.qml:89
+#: src/table/ReniceDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -844,57 +844,57 @@ msgstr ""
 "Процесът е леко неблагоприятен при решенията за планиране, за процесорно "
 "интензивни неинтерактивни процеси."
 
-#: src/table/ReniceDialog.qml:94
+#: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
 msgstr "Кръгова система"
 
-#: src/table/ReniceDialog.qml:95
+#: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
 msgstr ""
 "Процесът ще се изпълнява винаги, когато е възможно, с времеви интервали."
 
-#: src/table/ReniceDialog.qml:100
+#: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
 msgstr "ФИФО"
 
-#: src/table/ReniceDialog.qml:101
+#: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
 msgstr ""
 "Процесът ще се изпълнява винаги, когато е възможно, без времево ограничение."
 
-#: src/table/ReniceDialog.qml:119
+#: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
 msgstr "Планировчик на входно/изходни данни"
 
-#: src/table/ReniceDialog.qml:145
+#: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
 msgstr "Нормално"
 
-#: src/table/ReniceDialog.qml:146
+#: src/table/ReniceDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
 msgstr "Приоритетът на процеса се базира на приоритета на процесора."
 
-#: src/table/ReniceDialog.qml:151
+#: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
 msgstr "Бездействие"
 
-#: src/table/ReniceDialog.qml:152
+#: src/table/ReniceDialog.qml:153
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -904,26 +904,26 @@ msgstr ""
 "Процесът може да използва твърдия диск само когато никой друг процес не го е "
 "използвал съвсем скоро."
 
-#: src/table/ReniceDialog.qml:157
+#: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
 msgstr "Най-доброто усилие"
 
-#: src/table/ReniceDialog.qml:158
+#: src/table/ReniceDialog.qml:159
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
 msgstr ""
 "Процесът получава по-висок приоритет за достъп до твърдия диск от нормалното."
 
-#: src/table/ReniceDialog.qml:163
+#: src/table/ReniceDialog.qml:164
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
 msgstr "Реално време"
 
-#: src/table/ReniceDialog.qml:164
+#: src/table/ReniceDialog.qml:165
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -933,25 +933,25 @@ msgstr ""
 "Процесът получава незабавен достъп до твърдия диск, когато е необходимо, "
 "независимо от това какво друго се случва."
 
-#: src/table/ReniceDialog.qml:210
+#: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
 msgstr "Нисък приоритет"
 
-#: src/table/ReniceDialog.qml:217
+#: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
 msgstr "Висок приоритет"
 
-#: src/table/ReniceDialog.qml:267
+#: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
 msgstr "Нисък приоритет"
 
-#: src/table/ReniceDialog.qml:274
+#: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"

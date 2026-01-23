@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-13 08:43+0000\n"
+"POT-Creation-Date: 2026-01-23 02:42+0000\n"
 "PO-Revision-Date: 2025-06-24 15:20+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -19,7 +19,7 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 23.08.5\n"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:48
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:51
 #, kde-format
 msgctxt "@title:window"
 msgid "Details"
@@ -31,31 +31,25 @@ msgctxt "@title:group"
 msgid "CPU"
 msgstr "ЦП"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:124
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:122
 #, kde-format
 msgctxt "@title:group"
 msgid "Memory"
 msgstr "Память"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:150
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:147
 #, kde-format
 msgctxt "@title:group"
 msgid "Network"
 msgstr "Сеть"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:175
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:171
 #, kde-format
 msgctxt "@title:group"
 msgid "Disk"
 msgstr "Диск"
 
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:201
-#, kde-format
-msgctxt "@title:group"
-msgid "Processes: %1"
-msgstr "Процессы: %1"
-
-#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:276
+#: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:264
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select an application to see its details"
@@ -67,7 +61,7 @@ msgctxt "Warning message shown on runtime error"
 msgid "Applications view is unsupported on your system"
 msgstr "Ваша система не поддерживает просмотр приложений"
 
-#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:185
+#: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:192
 #, kde-format
 msgctxt "@label"
 msgid "Background Services"
@@ -109,73 +103,73 @@ msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "Показать панель сведений"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:68
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:67
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Настроить столбцы..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:254
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Установить приоритет..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Отправить сигнал"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:266
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Приостановить (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:270
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Возобновить (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Перечитать конфигурацию (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:278
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:224
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Прервать (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:282
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:228
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Завершить (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:232
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Уничтожить (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:236
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Пользовательский 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:240
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Пользовательский 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:302
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:248
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -185,13 +179,13 @@ msgstr[1] "Выйти из %1 приложений"
 msgstr[2] "Выйти из %1 приложений"
 msgstr[3] "Выйти из приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:312
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Скрыть"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:327
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:273
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -201,7 +195,7 @@ msgstr[1] "Выполнение принудительного выхода из
 msgstr[2] "Выполнение принудительного выхода из %1 приложений"
 msgstr[3] "Выполнение принудительного выхода из приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:328
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -211,7 +205,7 @@ msgstr[1] "Выход из %1 приложений"
 msgstr[2] "Выход из %1 приложений"
 msgstr[3] "Выход из приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:330
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:276
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -221,7 +215,7 @@ msgstr[1] "Выполнить принудительный выход из пр�
 msgstr[2] "Выполнить принудительный выход из приложений"
 msgstr[3] "Выполнить принудительный выход из приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:331
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:277
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -231,7 +225,7 @@ msgstr[1] "Выйти из приложений"
 msgstr[2] "Выйти из приложений"
 msgstr[3] "Выйти из приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:334
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:280
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -249,7 +243,7 @@ msgstr[3] ""
 "Выполнить принудительный выход (SIGKILL) из приложения? Несохранённые данные "
 "могут быть потеряны."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:337
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:283
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
@@ -262,7 +256,7 @@ msgstr[2] ""
 msgstr[3] ""
 "Выполнить выход из приложения? Несохранённые данные могут быть потеряны."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:352
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:298
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
@@ -271,6 +265,10 @@ msgstr[0] "%1 процесс"
 msgstr[1] "%1 процесса"
 msgstr[2] "%1 процессов"
 msgstr[3] "один процесс"
+
+#~ msgctxt "@title:group"
+#~ msgid "Processes: %1"
+#~ msgstr "Процессы: %1"
 
 #~ msgctxt "@action:button"
 #~ msgid "Quit"

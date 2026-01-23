@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-13 08:43+0000\n"
+"POT-Creation-Date: 2026-01-23 02:42+0000\n"
 "PO-Revision-Date: 2026-01-18 13:16+0100\n"
 "Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -811,19 +811,19 @@ msgctxt "@title:window"
 msgid "Set Priority"
 msgstr "Priorität festlegen"
 
-#: src/table/ReniceDialog.qml:56
+#: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
 msgstr "CPU-Steuerung"
 
-#: src/table/ReniceDialog.qml:82
+#: src/table/ReniceDialog.qml:83
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
 msgstr "Normal"
 
-#: src/table/ReniceDialog.qml:83
+#: src/table/ReniceDialog.qml:84
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -832,13 +832,13 @@ msgid ""
 msgstr ""
 "Das Standard-Steuerungsverfahren für Prozesse ohne besondere Anforderungen."
 
-#: src/table/ReniceDialog.qml:88
+#: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
 msgstr "Stapel"
 
-#: src/table/ReniceDialog.qml:89
+#: src/table/ReniceDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -848,55 +848,55 @@ msgstr ""
 "Der Prozess wird bei Steuerungsentscheidungen leicht benachteiligt – für CPU-"
 "intensive, nicht-interaktive Prozesse."
 
-#: src/table/ReniceDialog.qml:94
+#: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
 msgstr "Rundlauf-Verfahren"
 
-#: src/table/ReniceDialog.qml:95
+#: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
 msgstr "Der Prozess wird so bald wie möglich ausgeführt, mit Zeitfenstern."
 
-#: src/table/ReniceDialog.qml:100
+#: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
 msgstr "FIFO"
 
-#: src/table/ReniceDialog.qml:101
+#: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
 msgstr "Der Prozess wird so bald wie möglich ausgeführt, ohne Zeitfenster."
 
-#: src/table/ReniceDialog.qml:119
+#: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
 msgstr "E/A-Planer"
 
-#: src/table/ReniceDialog.qml:145
+#: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
 msgstr "Normal"
 
-#: src/table/ReniceDialog.qml:146
+#: src/table/ReniceDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
 msgstr "Die Priorität des Prozesses basiert auf der CPU-Priorität."
 
-#: src/table/ReniceDialog.qml:151
+#: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
 msgstr "Leerlauf"
 
-#: src/table/ReniceDialog.qml:152
+#: src/table/ReniceDialog.qml:153
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -906,13 +906,13 @@ msgstr ""
 "Der Prozess kann die Festplatte nur verwenden, wenn kein anderer Prozess sie "
 "vor kurzem verwendet hat."
 
-#: src/table/ReniceDialog.qml:157
+#: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
 msgstr "Höchster Durchsatz"
 
-#: src/table/ReniceDialog.qml:158
+#: src/table/ReniceDialog.qml:159
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
@@ -920,13 +920,13 @@ msgstr ""
 "Der Prozess erhält eine höhere Priorität für den Zugriff auf die Festplatte "
 "als normalerweise."
 
-#: src/table/ReniceDialog.qml:163
+#: src/table/ReniceDialog.qml:164
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
 msgstr "Echtzeit"
 
-#: src/table/ReniceDialog.qml:164
+#: src/table/ReniceDialog.qml:165
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -936,25 +936,25 @@ msgstr ""
 "Der Prozess erhält bei Bedarf sofortigen Zugriff auf die Festplatte, "
 "unabhängig davon, was sonst noch geschieht."
 
-#: src/table/ReniceDialog.qml:210
+#: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
 msgstr "Niedrige Priorität"
 
-#: src/table/ReniceDialog.qml:217
+#: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
 msgstr "Hohe Priorität"
 
-#: src/table/ReniceDialog.qml:267
+#: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
 msgstr "Niedrige Priorität"
 
-#: src/table/ReniceDialog.qml:274
+#: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"

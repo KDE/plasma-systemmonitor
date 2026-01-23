@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-13 08:43+0000\n"
+"POT-Creation-Date: 2026-01-23 02:42+0000\n"
 "PO-Revision-Date: 2026-01-15 00:56+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -804,19 +804,19 @@ msgctxt "@title:window"
 msgid "Set Priority"
 msgstr "設定優先權"
 
-#: src/table/ReniceDialog.qml:56
+#: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
 msgstr "CPU 排程器"
 
-#: src/table/ReniceDialog.qml:82
+#: src/table/ReniceDialog.qml:83
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
 msgstr "一般"
 
-#: src/table/ReniceDialog.qml:83
+#: src/table/ReniceDialog.qml:84
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -824,13 +824,13 @@ msgid ""
 "requirements."
 msgstr "供沒有特殊需求的行程用的標準時間共享排程器。"
 
-#: src/table/ReniceDialog.qml:88
+#: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
 msgstr "批次"
 
-#: src/table/ReniceDialog.qml:89
+#: src/table/ReniceDialog.qml:90
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -839,55 +839,55 @@ msgid ""
 msgstr ""
 "行程在決定排程時會稍微比較不優先，適合需要 CPU 性能但不是互動式的行程。"
 
-#: src/table/ReniceDialog.qml:94
+#: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
 msgstr "循環排程"
 
-#: src/table/ReniceDialog.qml:95
+#: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
 msgstr "行程只要能執行就會執行，並採分時機制。"
 
-#: src/table/ReniceDialog.qml:100
+#: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
 msgstr "先進先出(FIFO)"
 
-#: src/table/ReniceDialog.qml:101
+#: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
 msgstr "行程只要能執行就會執行，且不採分時機制。"
 
-#: src/table/ReniceDialog.qml:119
+#: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
 msgstr "I/O 排程器"
 
-#: src/table/ReniceDialog.qml:145
+#: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
 msgstr "一般"
 
-#: src/table/ReniceDialog.qml:146
+#: src/table/ReniceDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
 msgstr "讓行程優先權取決於 CPU 優先權。"
 
-#: src/table/ReniceDialog.qml:151
+#: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
 msgstr "閒置"
 
-#: src/table/ReniceDialog.qml:152
+#: src/table/ReniceDialog.qml:153
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -895,25 +895,25 @@ msgid ""
 "recently."
 msgstr "行程只有在短時間內沒有其他行程剛使用硬碟時才能使用硬碟。"
 
-#: src/table/ReniceDialog.qml:157
+#: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
 msgstr "最佳努力"
 
-#: src/table/ReniceDialog.qml:158
+#: src/table/ReniceDialog.qml:159
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
 msgstr "讓行程有比平常更高的優先權來存取硬碟。"
 
-#: src/table/ReniceDialog.qml:163
+#: src/table/ReniceDialog.qml:164
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
 msgstr "即時運作"
 
-#: src/table/ReniceDialog.qml:164
+#: src/table/ReniceDialog.qml:165
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
@@ -921,25 +921,25 @@ msgid ""
 "of what else is going on."
 msgstr "行程需要時馬上讓它存取硬碟，無論還有什麼事情在發生。"
 
-#: src/table/ReniceDialog.qml:210
+#: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
 msgstr "低優先權"
 
-#: src/table/ReniceDialog.qml:217
+#: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
 msgstr "高優先權"
 
-#: src/table/ReniceDialog.qml:267
+#: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
 msgstr "低優先權"
 
-#: src/table/ReniceDialog.qml:274
+#: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
