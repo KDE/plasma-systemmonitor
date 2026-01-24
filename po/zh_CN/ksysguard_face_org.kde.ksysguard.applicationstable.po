@@ -228,7 +228,3 @@ msgctxt "@item:intable"
 msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 个进程"
-
-#~ msgctxt "@title:group"
-#~ msgid "Processes: %1"
-#~ msgstr "进程： %1"
