@@ -94,14 +94,8 @@ void ColumnSortFilterDisplayModel::setSortedColumns(const QStringList &newSorted
     beginResetModel();
     m_sortedColumns = newSortedColumns;
 
-    auto nameIndex = m_sortedColumns.indexOf(m_nameAttribute);
-    if (nameIndex != 0) {
-        if (nameIndex > 0) {
-            m_sortedColumns.move(nameIndex, 0);
-        } else {
-            m_sortedColumns.prepend(m_nameAttribute);
-        }
-    }
+    m_sortedColumns.removeAll(m_nameAttribute);
+    m_sortedColumns.prepend(m_nameAttribute);
 
     cleanupSortedColumns();
 
