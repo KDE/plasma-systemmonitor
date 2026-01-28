@@ -291,13 +291,17 @@ void ColumnSortFilterDisplayModel::cleanupSortedColumns()
         return;
     }
 
+    auto range = std::ranges::remove_if(m_sortedColumns, [this](const QString &entry) {
+        if (entry == m_nameAttribute) {
+            return false;
+        }
+
+        return m_columnDisplay.value(entry, u"hidden"_s) == u"hidden"_s;
+    });
+    m_sortedColumns.erase(range.begin(), range.end());
+
     for (auto [key, value] : m_columnDisplay.asKeyValueRange()) {
-        if (value == u"hidden") {
-            auto itr = std::ranges::find(m_sortedColumns, value);
-            if (itr != m_sortedColumns.end()) {
-                m_sortedColumns.erase(itr);
-            }
-        } else if (!m_sortedColumns.contains(key)) {
+        if (value != u"hidden"_s && !m_sortedColumns.contains(key)) {
             m_sortedColumns.append(key);
         }
     }
