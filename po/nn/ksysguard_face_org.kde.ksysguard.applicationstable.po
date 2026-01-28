@@ -247,7 +247,3 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 prosess"
 msgstr[1] "%1 prosessar"
-
-#~ msgctxt "@title:group"
-#~ msgid "Processes: %1"
-#~ msgstr "Prosessar: %1"
