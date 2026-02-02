@@ -129,7 +129,6 @@ FocusScope {
 
             selectionBehavior: TableView.SelectRows
             selectionMode: TableView.ExtendedSelection
-            interactive: false
 
             onCurrentRowChanged: {
                 // Workaround for QTBUG-114999

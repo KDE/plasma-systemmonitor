@@ -46,12 +46,6 @@ Kirigami.ScrollablePage {
         value: contentLoader.status != Loader.Loading
     }
 
-    Binding {
-        target: flickable
-        property: "interactive"
-        value: false
-    }
-
     Connections {
         target: page.Kirigami.PageStack.pageStack
 
