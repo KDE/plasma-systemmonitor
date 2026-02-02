@@ -1,21 +1,21 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 Kishore G <kishore96@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025, 2026 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-23 00:45+0000\n"
-"PO-Revision-Date: 2025-05-18 21:12+0530\n"
+"PO-Revision-Date: 2026-02-01 18:53+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
-"Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+"Language-Team: Tamil <kde-l10n-ta@kde.org>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.04.1\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -744,20 +744,16 @@ msgid "Configure Columns"
 msgstr "பத்திகளை அமை"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "பத்தியை சேர்"
+msgstr "இயக்கியுள்ள நெடுவரிசைகள்"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "பத்தியை சேர்"
+msgstr "முடக்கியுள்ள நெடுவரிசைகள்"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -793,7 +789,7 @@ msgstr "கோடு வரைபடம் (100%-க்கு அளவுமா
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "தேடலுக்கு எந்த நெடுவரிசையும் பொருந்தவில்லை"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -805,7 +801,7 @@ msgstr "மறுபடியும் கேட்காதே"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "முக்கியத்துவத்தை அமைப்பது"
 
 #: src/table/ReniceDialog.qml:57
 #, kde-format
@@ -817,7 +813,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "சாதாரணம்"
 
 #: src/table/ReniceDialog.qml:84
 #, kde-format
@@ -875,7 +871,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "சாதாரணம்"
 
 #: src/table/ReniceDialog.qml:147
 #, kde-format
@@ -927,25 +923,25 @@ msgstr ""
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "குறைந்த முக்கியத்துவம்"
 
 #: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "அதிக முக்கியத்துவம்"
 
 #: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "குறைந்த முக்கியத்துவம்"
 
 #: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "அதிக முக்கியத்துவம்"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
