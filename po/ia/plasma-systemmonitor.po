@@ -1,14 +1,14 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 giovanni <g.sora@tiscali.it>
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025, 2026 giovanni <g.sora@tiscali.it>
 # giovanni <g.sora@tiscali.it>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-23 00:45+0000\n"
-"PO-Revision-Date: 2025-05-27 15:01+0200\n"
+"POT-Creation-Date: 2026-02-03 00:48+0000\n"
+"PO-Revision-Date: 2026-02-02 12:42+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -310,49 +310,49 @@ msgctxt "@action"
 msgid "Remove Background Margins"
 msgstr "Remove margines de fundo"
 
-#: src/page/EditablePage.qml:128
+#: src/page/EditablePage.qml:122
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
 msgstr "Modifica pagina"
 
-#: src/page/EditablePage.qml:138
+#: src/page/EditablePage.qml:132
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
 msgstr "Salveguarda modificationes"
 
-#: src/page/EditablePage.qml:148
+#: src/page/EditablePage.qml:142
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
 msgstr "Abandona modificationes"
 
-#: src/page/EditablePage.qml:159
+#: src/page/EditablePage.qml:153
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
 msgstr "Configura pagina…"
 
-#: src/page/EditablePage.qml:168
+#: src/page/EditablePage.qml:162
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
 msgstr "Adde linea"
 
-#: src/page/EditablePage.qml:177
+#: src/page/EditablePage.qml:171
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
 msgstr "Adde titulo"
 
-#: src/page/EditablePage.qml:190
+#: src/page/EditablePage.qml:184
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
 msgstr "Configura pagina \"%1\""
 
-#: src/page/EditablePage.qml:192
+#: src/page/EditablePage.qml:186
 #, kde-format
 msgctxt "@action:button"
 msgid "Save"
@@ -749,20 +749,16 @@ msgid "Configure Columns"
 msgstr "Configura columnas"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "Adde columna"
+msgstr "Columnas habilitate"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "Adde columna"
+msgstr "Columnaa Dishabilitate"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -807,10 +803,10 @@ msgid "Do not ask again"
 msgstr "Non demanda de nove"
 
 #: src/table/ReniceDialog.qml:25
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "Fixa prioritates …"
 
 #: src/table/ReniceDialog.qml:57
 #, kde-format
@@ -822,7 +818,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: src/table/ReniceDialog.qml:84
 #, kde-format
@@ -836,7 +832,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "Batch"
 
 #: src/table/ReniceDialog.qml:90
 #, kde-format
@@ -850,7 +846,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "Round Robin"
 
 #: src/table/ReniceDialog.qml:96
 #, kde-format
@@ -862,7 +858,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:102
 #, kde-format
@@ -880,7 +876,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: src/table/ReniceDialog.qml:147
 #, kde-format
@@ -892,7 +888,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "Inactive"
 
 #: src/table/ReniceDialog.qml:153
 #, kde-format
@@ -906,7 +902,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "Melior Possibile"
 
 #: src/table/ReniceDialog.qml:159
 #, kde-format
@@ -918,7 +914,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "Tempore Real"
 
 #: src/table/ReniceDialog.qml:165
 #, kde-format
@@ -932,25 +928,25 @@ msgstr ""
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Basse prioritate"
 
 #: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "Prioritate alte"
 
 #: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Basse prioritate"
 
 #: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "Prioritate alte"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
