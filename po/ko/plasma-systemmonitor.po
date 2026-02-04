@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Shinjo Park <kde@peremen.name>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025, 2026 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-03 00:48+0000\n"
-"PO-Revision-Date: 2025-06-10 22:21+0200\n"
+"PO-Revision-Date: 2026-02-03 22:26+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -557,7 +557,7 @@ msgstr "이름:"
 #, kde-format
 msgctxt "@info:status"
 msgid "Name cannot be empty."
-msgstr "이름을 비워둘 수 없습니다."
+msgstr "이름을 비워 둘 수 없습니다."
 
 #: src/page/PageDialog.qml:100
 #, kde-format
@@ -744,20 +744,16 @@ msgid "Configure Columns"
 msgstr "항목 설정"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "열 추가"
+msgstr "활성화된 열"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "열 추가"
+msgstr "비활성화된 열"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -793,7 +789,7 @@ msgstr "꺾은선형 차트(100%로 크기 조절)"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "검색어와 일치하는 열 없음"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -805,19 +801,19 @@ msgstr "다시 묻지 않기"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "우선 순위 설정"
 
 #: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "CPU 스케줄러"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "일반"
 
 #: src/table/ReniceDialog.qml:84
 #, kde-format
@@ -825,13 +821,13 @@ msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
-msgstr ""
+msgstr "특별한 요구가 없는 프로세스를 위한 일반적인 시간 공유 스케줄러입니다."
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "배치"
 
 #: src/table/ReniceDialog.qml:90
 #, kde-format
@@ -840,54 +836,57 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"스케줄링 결정에서 프로세스에 약간 낮은 우선 순위를 배당합니다. CPU를 많이 사"
+"용하는 배경에서 실행되는 프로세스에 적합합니다."
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "라운드 로빈"
 
 #: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
-msgstr ""
+msgstr "타임 슬라이싱을 사용하여 실행 가능할 때마다 프로세스를 실행합니다."
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
 msgstr ""
+"타임 슬라이싱을 사용하지 않고 실행 가능할 때마다 프로세스를 실행합니다."
 
 #: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "입출력 스케줄러"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "일반"
 
 #: src/table/ReniceDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "CPU 우선 순위에 기반한 프로세스 우선 순위를 사용합니다."
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "대기"
 
 #: src/table/ReniceDialog.qml:153
 #, kde-format
@@ -896,24 +895,26 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"다른 프로세스에서 최근에 하드 디스크를 사용하지 않았을 때에만 프로세스에서 하"
+"드 디스크를 사용할 수 있습니다."
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "최고 노력"
 
 #: src/table/ReniceDialog.qml:159
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
-msgstr ""
+msgstr "프로세스에 일반 순위 이상의 하드 디스크 접근 우선권을 배당합니다."
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "실시간"
 
 #: src/table/ReniceDialog.qml:165
 #, kde-format
@@ -922,30 +923,32 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"다른 작업 실행 여부와 상관 없이 프로세스에서 필요한 경우 하드 디스크 접근을 "
+"즉시 허가합니다."
 
 #: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "낮은 우선 순위"
 
 #: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "높은 우선 순위"
 
 #: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "낮은 우선 순위"
 
 #: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "높은 우선 순위"
 
 #: src/ToolsModel.cpp:37
 #, kde-format

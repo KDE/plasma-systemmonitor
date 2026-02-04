@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-03 00:48+0000\n"
-"PO-Revision-Date: 2026-02-02 12:42+0100\n"
+"PO-Revision-Date: 2026-02-03 17:23+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -794,7 +794,7 @@ msgstr "Diagramma a linea (Scalate a 100%)"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "Nulle columnas correspondeva al cerca"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -803,16 +803,16 @@ msgid "Do not ask again"
 msgstr "Non demanda de nove"
 
 #: src/table/ReniceDialog.qml:25
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr "Fixa prioritates …"
+msgstr "Fixa prioritate "
 
 #: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "Planificator (scheduler) de CPU"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
@@ -827,6 +827,8 @@ msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
 msgstr ""
+"Le planificator (scheduler) de compartir de tempore (time-sharing) standard "
+"per processos sin special exigentias."
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
@@ -841,6 +843,8 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"Processo es levemente disfavorite in decisiones de planification "
+"(scheduling), per processos non-interactive de CPU-intensive."
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
@@ -853,6 +857,8 @@ msgstr "Round Robin"
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
 msgstr ""
+"Processo executara quantocunque executabile con timeslicing (subdivision de "
+"tempore)."
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
@@ -865,12 +871,14 @@ msgstr "FIFO"
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
 msgstr ""
+"Processo executara quantocunque executabile con necun timeslicing "
+"(subdivision de tempore)."
 
 #: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "Planificator (Scheduler)  de I/O"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
@@ -882,7 +890,7 @@ msgstr "Normal"
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "Priotitate de processo es basate sur le prioritate de CPU."
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
@@ -897,6 +905,8 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"Processo pote solmente usare de disco fixate quando necun altere processo "
+"loha usate recentemente. "
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
@@ -909,6 +919,8 @@ msgstr "Melior Possibile"
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
 msgstr ""
+"Processo es date prioritate plus alte per acceder al disco fixate plus alte "
+"del normal"
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
@@ -923,6 +935,8 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"Processo obtene accesso immediate al disco fixate quandocunque necessari, "
+"sin regardo a lo que es accadente."
 
 #: src/table/ReniceDialog.qml:211
 #, kde-format
