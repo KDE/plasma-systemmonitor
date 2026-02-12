@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# Sergiu Bivol <sergiu@cip.md>, 2020, 2021, 2022, 2024.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024, 2026 Sergiu Bivol <sergiu@cip.md>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-23 00:45+0000\n"
-"PO-Revision-Date: 2024-02-24 14:37+0000\n"
+"PO-Revision-Date: 2026-02-11 13:29+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -16,21 +16,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr ""
+msgstr "Arată bara de unelte"
 
 #: src/faces/processtable/contents/ui/Config.qml:30
-#, fuzzy, kde-format
-#| msgctxt "@option:check"
-#| msgid "Confirm ending processes."
+#, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "Confirmați terminarea proceselor."
+msgstr "Confirmă terminarea proceselor"
 
 #: src/faces/processtable/contents/ui/Config.qml:35
 #, kde-format
@@ -39,33 +37,25 @@ msgid "By default show:"
 msgstr "Implicit arată:"
 
 #: src/faces/processtable/contents/ui/Config.qml:44
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "Own Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
 msgstr "Procese proprii"
 
 #: src/faces/processtable/contents/ui/Config.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "User Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
 msgstr "Procesele utilizatorilor"
 
 #: src/faces/processtable/contents/ui/Config.qml:46
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "System Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
 msgstr "Procesele de sistem"
 
 #: src/faces/processtable/contents/ui/Config.qml:47
-#, fuzzy, kde-format
-#| msgctxt "@item:inlistbox"
-#| msgid "All Processes"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
 msgstr "Toate procesele"
@@ -125,9 +115,7 @@ msgid "All Processes"
 msgstr "Toate procesele"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:127
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Configurează coloane…"
@@ -136,7 +124,7 @@ msgstr "Configurează coloane…"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
-msgstr ""
+msgstr "Stabilește prioritatea…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:253
 #, kde-format
@@ -193,12 +181,10 @@ msgid "User 2 (USR2)"
 msgstr "Utilizator 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:291
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Configure Columns…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "Configurează coloane…"
+msgstr "Copiază coloana actuală"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:300
 #, kde-format
@@ -213,7 +199,7 @@ msgstr[2] "Termină %1 de procese"
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr ""
+msgstr "Ascunde"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:318
 #, kde-format
@@ -222,16 +208,13 @@ msgid "Configure Columns…"
 msgstr "Configurează coloane…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:330
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "End Process"
-#| msgid_plural "End %1 Processes"
+#, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "Termină procesul"
-msgstr[1] "Termină %1 procese"
-msgstr[2] "Termină %1 de procese"
+msgstr[0] "Termină forțat procesul"
+msgstr[1] "Termină forțat %1 procese"
+msgstr[2] "Termină forțat %1 de procese"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:331
 #, kde-format
@@ -243,16 +226,13 @@ msgstr[1] "Termină %1 procese"
 msgstr[2] "Termină %1 de procese"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:333
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "End Process"
-#| msgid_plural "End Processes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "Termină procesul"
-msgstr[1] "Termină procesele"
-msgstr[2] "Termină procesele"
+msgstr[0] "Termină forțat procesul"
+msgstr[1] "Termină forțat procesele"
+msgstr[2] "Termină forțat procesele"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:334
 #, kde-format
@@ -264,45 +244,26 @@ msgstr[1] "Termină procesele"
 msgstr[2] "Termină procesele"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:337
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"Sigur doriți să terminați acest proces?\n"
-"Lucrul nesalvat poate fi pierdut."
+"Terminați forțat (SIGKILL) acest proces? Lucrul nesalvat poate fi pierdut."
 msgstr[1] ""
-"Sigur doriți să terminați aceste %1 procese?\n"
-"Lucrul nesalvat poate fi pierdut."
+"Terminați forțat (SIGKILL) aceste %1 procese? Lucrul nesalvat poate fi "
+"pierdut."
 msgstr[2] ""
-"Sigur doriți să terminați aceste %1 de procese?\n"
-"Lucrul nesalvat poate fi pierdut."
+"Terminați forțat (SIGKILL) aceste %1 de procese? Lucrul nesalvat poate fi "
+"pierdut."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:340
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to end this process?\n"
-#| "Any unsaved work may be lost."
-#| msgid_plural ""
-#| "Are you sure you want to end these %1 processes?\n"
-#| "Any unsaved work may be lost."
+#, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] ""
-"Sigur doriți să terminați acest proces?\n"
-"Lucrul nesalvat poate fi pierdut."
-msgstr[1] ""
-"Sigur doriți să terminați aceste %1 procese?\n"
-"Lucrul nesalvat poate fi pierdut."
-msgstr[2] ""
-"Sigur doriți să terminați aceste %1 de procese?\n"
-"Lucrul nesalvat poate fi pierdut."
+msgstr[0] "Terminați acest proces? Lucrul nesalvat poate fi pierdut."
+msgstr[1] "Terminați aceste %1 procese? Lucrul nesalvat poate fi pierdut."
+msgstr[2] "Terminați aceste %1 de procese? Lucrul nesalvat poate fi pierdut."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:352
 #, kde-format
