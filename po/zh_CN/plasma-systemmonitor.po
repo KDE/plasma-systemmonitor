@@ -764,7 +764,7 @@ msgstr "隐藏"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
-msgstr "仅文字"
+msgstr "仅文本"
 
 #: src/table/ColumnConfigurationDialog.qml:245
 #, kde-format
