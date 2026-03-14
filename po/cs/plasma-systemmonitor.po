@@ -1,21 +1,21 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Vit Pelcak <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2026 Vit Pelcak <vit@pelcak.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-03 00:48+0000\n"
-"PO-Revision-Date: 2024-09-17 15:17+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2026-03-13 13:54+0100\n"
+"Last-Translator:  Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -69,7 +69,7 @@ msgstr "Rozbalit postranní panel"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Collapse Sidebar"
-msgstr "Svinout postranní panel"
+msgstr "Sbalit postranní panel"
 
 #: src/GlobalMenu.qml:73
 #, kde-format
@@ -114,7 +114,7 @@ msgstr "Aplikace pro monitorování systémových prostředků"
 #: src/main.cpp:65
 #, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr ""
+msgstr "© 2025 Tým vývojářů Plasma"
 
 #: src/main.cpp:71
 #, kde-format
@@ -144,7 +144,7 @@ msgstr "Nate Graham"
 #: src/main.cpp:73 src/main.cpp:75
 #, kde-format
 msgid "Design and Quality Assurance"
-msgstr ""
+msgstr "Návrh a zajištění kvality"
 
 #: src/main.cpp:74
 #, kde-format
@@ -170,13 +170,13 @@ msgstr "David Edmundson"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Vít Pelčák"
+msgstr "Vít Pelčák,Libor Filípek"
 
 #: src/main.cpp:79
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "vit@pelcak.org"
+msgstr "vit@pelcak.org,libor.filipek@gmail.com"
 
 #: src/Main.qml:88
 #, kde-format
@@ -218,13 +218,13 @@ msgstr "Získat nové stránky..."
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
-msgstr ""
+msgstr "Rozbalit postranní panel"
 
 #: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
-msgstr ""
+msgstr "Sbalit postranní panel"
 
 #: src/Main.qml:147
 #, kde-format
@@ -236,7 +236,7 @@ msgstr "Nahlásit chybu…"
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
-msgstr ""
+msgstr "O Monitoru Systému"
 
 #: src/Main.qml:160
 #, kde-format
@@ -254,7 +254,7 @@ msgstr "Přidat novou stránku"
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
-msgstr ""
+msgstr "Upravit stránku"
 
 #: src/Main.qml:295
 #, kde-format
@@ -266,7 +266,7 @@ msgstr "Exportovat %1"
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
-msgstr ""
+msgstr "Stránka Systémového monitoru (*.page)"
 
 #: src/Main.qml:305
 #, kde-format
@@ -281,6 +281,9 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
+"Systémový monitor přešel zpět na softwarové vykreslování, protože hardwarová "
+"akcelerace není k dispozici a mohou se objevit vizuální chyby. Zkontrolujte "
+"prosím své grafické ovladače."
 
 #: src/page/ColumnControl.qml:117
 #, kde-format
@@ -346,7 +349,7 @@ msgstr "Přidat titul"
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
-msgstr ""
+msgstr "Nastavit stránku... \"%1\""
 
 #: src/page/EditablePage.qml:186
 #, kde-format
@@ -400,13 +403,13 @@ msgstr "Uložit nastavení jako přednastavení"
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
-msgstr ""
+msgstr "Uloženo jako přednastavení %1."
 
 #: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:357
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
-msgstr ""
+msgstr "Přidat graf jako widget na plochu"
 
 #: src/page/FaceConfigurationPage.qml:77
 #, kde-format
@@ -418,7 +421,7 @@ msgstr "Získat nové styly zobrazení…"
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
-msgstr ""
+msgstr "Načteno přednastavení %1."
 
 #: src/page/FaceConfigurationPage.qml:117
 #, kde-format
@@ -464,7 +467,7 @@ msgstr "%1 s"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No Chart"
-msgstr ""
+msgstr "Žádný graf"
 
 #: src/page/LoadPresetDialog.qml:23
 #, kde-format
@@ -493,13 +496,13 @@ msgstr "Přesunout"
 #: src/page/PageContents.qml:107 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
-msgstr ""
+msgstr "Na této stránce chybí některé senzory a nebude se správně zobrazovat."
 
 #: src/page/PageContents.qml:112 src/page/PageEditor.qml:145
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
-msgstr ""
+msgstr "Oprava..."
 
 #: src/page/PageContents.qml:124
 #, kde-format
@@ -507,6 +510,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Byla nainstalována nová verze této stránky, ale vy jste na ní provedli "
+"změny. Změny byly zkopírovány do %1 (stará verze)."
 
 #: src/page/PageContents.qml:125
 #, kde-format
@@ -515,12 +520,15 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Byla nainstalována nová verze této stránky, ale vy jste na ní provedli "
+"změny. Chcete své změny zachovat, nebo je zrušit a použít novou verzi "
+"stránky?"
 
 #: src/page/PageContents.qml:133
 #, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr ""
+msgstr "Zachovat změny"
 
 #: src/page/PageContents.qml:139
 #, kde-format
@@ -586,7 +594,7 @@ msgstr "Velké"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
-msgstr ""
+msgstr "Použít akce z:"
 
 #: src/page/PageDialog.qml:147
 #, kde-format
@@ -627,31 +635,31 @@ msgstr "Skrýt stránku"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
-msgstr ""
+msgstr "Neobnovovat stránku"
 
 #: src/page/PageSortDialog.qml:146
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
-msgstr ""
+msgstr "Stránka bude obnovena do výchozího stavu."
 
 #: src/page/PageSortDialog.qml:155
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr ""
+msgstr "Obnovit stránku do výchozího stavu"
 
 #: src/page/PageSortDialog.qml:164
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
-msgstr ""
+msgstr "Neodstraňovat tuto stránku"
 
 #: src/page/PageSortDialog.qml:168
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
-msgstr ""
+msgstr "Stránka bude odstraněna"
 
 #: src/page/PageSortDialog.qml:177
 #, kde-format
@@ -692,7 +700,7 @@ msgstr "Vyvážený"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
-msgstr ""
+msgstr "Zkusit a použít stejnou výšku pro různé řádky."
 
 #: src/page/RowControl.qml:149
 #, kde-format
@@ -704,7 +712,7 @@ msgstr "Minimum"
 #, kde-format
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
-msgstr ""
+msgstr "Použít minimální výšku potřebnou pro správné zobrazení obsahu."
 
 #: src/page/RowControl.qml:158
 #, kde-format
@@ -716,19 +724,19 @@ msgstr "Maximum"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
-msgstr ""
+msgstr "Použít co nejvyšší výšku."
 
 #: src/page/RowControl.qml:167
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "Polovina výšky stránky"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "Použít polovinu výšky stránky."
 
 #: src/table/ColumnConfigurationDialog.qml:29
 #, kde-format
@@ -737,20 +745,16 @@ msgid "Configure Columns"
 msgstr "Nastavit sloupce"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "Přidat  sloupec"
+msgstr "Povolené sloupce"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "Přidat  sloupec"
+msgstr "Nepovolené sloupce"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -774,19 +778,19 @@ msgstr "Čarový graf"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
-msgstr ""
+msgstr "Pouze text (zvětšeno na 100 %)"
 
 #: src/table/ColumnConfigurationDialog.qml:250
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
-msgstr ""
+msgstr "Lineární graf (v měřítku 100 %)"
 
 #: src/table/ColumnConfigurationDialog.qml:287
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "Žádné sloupce neodpovídají hledání"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -798,19 +802,19 @@ msgstr "Znovu se nedotazovat"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "Nastavit prioritu"
 
 #: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "Plánovač CPU"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normální"
 
 #: src/table/ReniceDialog.qml:84
 #, kde-format
@@ -819,12 +823,13 @@ msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
 msgstr ""
+"Standardní plánovač časového sdílení pro procesy bez zvláštních požadavků."
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "Dávkový"
 
 #: src/table/ReniceDialog.qml:90
 #, kde-format
@@ -833,54 +838,57 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"Proces je mírně znevýhodněn při rozhodování o plánování pro procesy náročné "
+"na CPU, které nejsou interaktivní."
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "Cyklická obsluha"
 
 #: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
 msgstr ""
+"Proces bude v časovém intervalu spuštěn vždy, kdy jej bude možné spustit."
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
-msgstr ""
+msgstr "Proces bude vždy spuštěn, když to bude možné."
 
 #: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "Plánovač I/O"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normální"
 
 #: src/table/ReniceDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "Priorita procesu je založena na prioritě CPU."
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "Nečinný"
 
 #: src/table/ReniceDialog.qml:153
 #, kde-format
@@ -889,24 +897,26 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"Proces může používat pevný disk pouze tehdy, pokud jej v poslední době "
+"nepoužíval žádný jiný proces."
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "Nejlepší úsilí"
 
 #: src/table/ReniceDialog.qml:159
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
-msgstr ""
+msgstr "Proces má vyšší prioritu pro přístup k pevnému disku než je obvyklé."
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "Reálný čas"
 
 #: src/table/ReniceDialog.qml:165
 #, kde-format
@@ -915,30 +925,32 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"Proces získá okamžitý přístup k pevnému disku, kdykoli je to potřeba, bez "
+"ohledu na to, co se právě děje."
 
 #: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Nízká priorita"
 
 #: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "Vysoká priorita"
 
 #: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Nízká priorita"
 
 #: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "Vysoká priorita"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
