@@ -1,21 +1,21 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# SPDX-FileCopyrightText: 2020, 2021, 2023, 2024 Vit Pelcak <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2020, 2021, 2023, 2024, 2026 Vit Pelcak <vit@pelcak.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-23 02:42+0000\n"
-"PO-Revision-Date: 2024-11-14 14:11+0100\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2026-03-13 13:52+0100\n"
+"Last-Translator:  Vít Pelčák <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
@@ -33,7 +33,7 @@ msgstr "Potvrdit ukončení procesu"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "By default show:"
-msgstr ""
+msgstr "Ve výchozím nastavení zobrazit:"
 
 #: src/faces/processtable/contents/ui/Config.qml:44
 #, kde-format
@@ -75,13 +75,13 @@ msgstr "Ukončit proces"
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
-msgstr ""
+msgstr "Zobrazit jako seznam"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:73
 #, kde-format
 msgctxt "@action"
 msgid "Display as Tree"
-msgstr ""
+msgstr "Zobrazit jako strom"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:85
 #, kde-format
@@ -268,4 +268,4 @@ msgstr[2] "Ukončit těchto %1 procesů? Neuložená práce může být ztracena
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
-msgstr ""
+msgstr "ID procesu %1, vlastník %2"
