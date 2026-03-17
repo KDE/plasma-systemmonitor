@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-23 00:45+0000\n"
-"PO-Revision-Date: 2026-03-12 08:25+0000\n"
+"PO-Revision-Date: 2026-03-16 16:49+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -22,7 +22,7 @@ msgstr ""
 #, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "Sýna tækjastiku"
+msgstr "Sýna verkfærastiku"
 
 #: src/faces/processtable/contents/ui/Config.qml:30
 #, kde-format
@@ -124,7 +124,7 @@ msgstr "Grunnstilla dálka..."
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
-msgstr ""
+msgstr "Stilla forgang…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:253
 #, kde-format
