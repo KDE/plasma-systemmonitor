@@ -187,3 +187,24 @@ X-DBUS-StartupType=Unique
 X-DBUS-ServiceName=org.kde.plasma-systemmonitor
 X-KDE-Shortcuts=Meta+Esc
 X-KDE-Migrate-Shortcut=kded5,Show System Activity
+Actions=overview;history;processes;applications;
+
+[Desktop Action overview]
+Name=Open Overview Page
+Icon=speedometer
+Exec=plasma-systemmonitor --page-id overview.page
+
+[Desktop Action history]
+Name=Open History Page
+Icon=office-chart-line
+Exec=plasma-systemmonitor --page-id history.page
+
+[Desktop Action processes]
+Name=Open Processes Page
+Icon=view-process-system
+Exec=plasma-systemmonitor --page-id processes.page
+
+[Desktop Action applications]
+Name=Open Applications Page
+Icon=homerun
+Exec=plasma-systemmonitor --page-id applications.page
