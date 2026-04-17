@@ -48,7 +48,7 @@
                 "Name[zh_TW]": "Arjen Hiemstra"
             }
         ],
-        "Icon": "homerun",
+        "Icon": "applications-all",
         "Id": "org.kde.ksysguard.applicationstable",
         "License": "LGPLv2+",
         "Name": "Applications Table",

@@ -206,5 +206,5 @@ Exec=plasma-systemmonitor --page-id processes.page
 
 [Desktop Action applications]
 Name=Open Applications Page
-Icon=homerun
+Icon=applications-all
 Exec=plasma-systemmonitor --page-id applications.page
