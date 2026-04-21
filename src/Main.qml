@@ -149,14 +149,14 @@ Kirigami.ApplicationWindow {
                         onTriggered: Qt.openUrlExternally(KCoreAddons.AboutData.bugAddress);
                     },
                     Kirigami.Action {
-                        icon.name: "help-about-symbolic";
+                        icon.name: "utilities-system-monitor";
                         text: i18nc("@action", "About System Monitor");
                         displayHint: Kirigami.DisplayHint.AlwaysHide
                         onTriggered: app.pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutPage"))
                         enabled: app.pageStack.layers.depth <= 1
                     },
                     Kirigami.Action {
-                        icon.name: "kde-symbolic";
+                        icon.name: "kde";
                         text: i18nc("@action", "About KDE");
                         displayHint: Kirigami.DisplayHint.AlwaysHide
                         onTriggered: app.pageStack.layers.push(Qt.createComponent("org.kde.kirigamiaddons.formcard", "AboutKDEPage"))
