@@ -159,13 +159,13 @@ msgstr "Zabiť (KILL)"
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
-msgstr "Uživateľ 1 (USR1)"
+msgstr "Užívateľ 1 (USR1)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:240
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
-msgstr "Uživateľ 2 (USR2)"
+msgstr "Užívateľ 2 (USR2)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:248
 #, kde-format
