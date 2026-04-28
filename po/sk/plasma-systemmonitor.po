@@ -925,8 +925,8 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
-"Process gets immediate access to the hard disk whenever needed, bez ohľadu "
-"na what else is going on."
+"Proces získa okamžitý prístup k pevnému disku vždy, keď je to potrebné, bez "
+"ohľadu na to, čo iné sa práve deje."
 
 #: src/table/ReniceDialog.qml:211
 #, kde-format
