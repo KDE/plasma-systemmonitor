@@ -349,7 +349,7 @@ Faces.SensorFace {
 
             contentItem: Kirigami.TitleSubtitle {
                 title: modelData.name
-                subtitle: i18nc("@item:intable %1 is process id, %2 is user name", "Process ID %1, owned by %2", modelData.pid, modelData.username)
+                subtitle: i18nc("@item:intable %1 is process id, %2 is user name", "Process ID %1, owned by %2", modelData.pid.toString(), modelData.username)
             }
         }
 
