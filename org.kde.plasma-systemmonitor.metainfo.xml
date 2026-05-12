@@ -158,9 +158,9 @@ SPDX-License-Identifier: CC0-1.0
   </provides>
   <project_group>KDE</project_group>
   <releases>
+    <release version="6.6.5" date="2026-05-12"/>
     <release version="6.6.4" date="2026-04-06"/>
     <release version="6.6.3" date="2026-03-17"/>
     <release version="6.6.2" date="2026-03-03"/>
-    <release version="6.6.1" date="2026-02-24"/>
   </releases>
 </component>
