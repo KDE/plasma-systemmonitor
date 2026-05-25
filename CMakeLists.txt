@@ -48,6 +48,10 @@ find_package(KF6Kirigami  ${KF6_MIN_VERSION})
 set_package_properties(KF6Kirigami PROPERTIES
     TYPE RUNTIME
 )
+find_package(KF6QuickCharts ${KF6_MIN_VERSION})
+set_package_properties(KF6QuickCharts PROPERTIES
+    TYPE RUNTIME
+)
 find_package(KF${QT_MAJOR_VERSION}KirigamiAddons 1.1.0 REQUIRED)
 set_package_properties(KF${QT_MAJOR_VERSION}KirigamiAddons PROPERTIES
     TYPE REQUIRED
