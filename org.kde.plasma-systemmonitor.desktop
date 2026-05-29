@@ -192,6 +192,7 @@ Actions=overview;history;processes;applications;
 [Desktop Action overview]
 Name=Open Overview Page
 Name[ar]=افتح صفحة النظرة العامة
+Name[bg]=Показване на общ преглед
 Name[ca]=Obre la pàgina de vista general
 Name[ca@valencia]=Obri la pàgina de vista general
 Name[cs]=Otevřít přehledovou mapu
@@ -221,6 +222,7 @@ Exec=plasma-systemmonitor --page-id overview.page
 [Desktop Action history]
 Name=Open History Page
 Name[ar]=افتح صفحة التاريخ
+Name[bg]=Показване на историята
 Name[ca]=Obre la pàgina d'historial
 Name[ca@valencia]=Obri la pàgina d'historial
 Name[cs]=Otevřít stránku historie
@@ -250,6 +252,7 @@ Exec=plasma-systemmonitor --page-id history.page
 [Desktop Action processes]
 Name=Open Processes Page
 Name[ar]=افتح صفحة العمليات
+Name[bg]=Показване на процесите
 Name[ca]=Obre la pàgina de processos
 Name[ca@valencia]=Obri la pàgina de processos
 Name[cs]=Otevřít stránku procesů
@@ -279,6 +282,7 @@ Exec=plasma-systemmonitor --page-id processes.page
 [Desktop Action applications]
 Name=Open Applications Page
 Name[ar]=افتح صفحة التطبيقات
+Name[bg]=Показване на приложенията
 Name[ca]=Obre la pàgina d'aplicacions
 Name[ca@valencia]=Obri la pàgina d'aplicacions
 Name[cs]=Otevřít stránku aplikací
