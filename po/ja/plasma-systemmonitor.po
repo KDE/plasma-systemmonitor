@@ -1,14 +1,15 @@
 # SPDX-FileCopyrightText: 2024 Ryuichi Yamada <ryuichi_ya220@outlook.jp>
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2021.
 # SPDX-FileCopyrightText: 2025 Yuma Kakei <yumasansansan@gmail.com>
+# SPDX-FileCopyrightText: 2026 Mint <5602mint@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-03 00:48+0000\n"
-"PO-Revision-Date: 2025-09-21 16:12+0900\n"
-"Last-Translator: Yuma Kakei <yumasansansan@gmail.com>\n"
-"Language-Team: Japanese <kde-jp@kde.org>\n"
+"PO-Revision-Date: 2026-05-24 15:06+0900\n"
+"Last-Translator: Mint <5602mint@gmail.com>\n"
+"Language-Team: Japanese <kde-i18n-doc@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -171,13 +172,13 @@ msgstr "David Edmundson"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Ryuichi Yamada,Yuma Kakei"
+msgstr "Ryuichi Yamada,Yuma Kakei,Mint"
 
 #: src/main.cpp:79
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "ryuichi_ya220@outlook.jp,yumasansansan@gmail.com"
+msgstr "ryuichi_ya220@outlook.jp,yumasansansan@gmail.com,5602mint@gmail.com"
 
 #: src/Main.qml:88
 #, kde-format
@@ -684,7 +685,7 @@ msgstr "最後に表示したページ"
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
-msgstr "列を追加"
+msgstr "カラムを追加"
 
 #: src/page/RowControl.qml:136
 #, kde-format
@@ -732,13 +733,13 @@ msgstr "利用可能な高さをできるだけ使用します。"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "ページ高さの半分"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "ページの高さの半分を使用します。"
 
 #: src/table/ColumnConfigurationDialog.qml:29
 #, kde-format
@@ -747,20 +748,16 @@ msgid "Configure Columns"
 msgstr "カラムの設定"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "列を追加"
+msgstr "表示中のカラム"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "列を追加"
+msgstr "非表示のカラム"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
@@ -796,7 +793,7 @@ msgstr "折れ線グラフ (100%に縮尺)"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "検索ワードに一致するカラムはありません"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -808,19 +805,19 @@ msgstr "次回から確認しない"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "優先度を設定"
 
 #: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "CPU スケジューラ"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "通常"
 
 #: src/table/ReniceDialog.qml:84
 #, kde-format
@@ -829,12 +826,13 @@ msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
 msgstr ""
+"特別な要件がないプロセス向けの標準的なタイムシェアリングスケジューラです。"
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "バッチ"
 
 #: src/table/ReniceDialog.qml:90
 #, kde-format
@@ -843,54 +841,56 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"CPU 負荷の高い非インタラクティブなプロセス向けに、スケジューリングの決定時に"
+"プロセスの優先度をわずかに下げます。"
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "ラウンドロビン"
 
 #: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
-msgstr ""
+msgstr "プロセスは実行可能なときに、タイムスライスありで実行されます。"
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
-msgstr ""
+msgstr "プロセスは実行可能なときに、タイムスライスなしで実行されます。"
 
 #: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "I/O スケジューラ"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "通常"
 
 #: src/table/ReniceDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "プロセスの優先度を CPU 優先度に基づき設定します。"
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "アイドル"
 
 #: src/table/ReniceDialog.qml:153
 #, kde-format
@@ -899,24 +899,28 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"直近でほかのプロセスがハードディスクを使用していない場合のみ、プロセスはハー"
+"ドディスクを使用できるようになります。"
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "ベストエフォート"
 
 #: src/table/ReniceDialog.qml:159
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
 msgstr ""
+"プロセスが通常よりも高い優先度でハードディスクにアクセスできるようになりま"
+"す。"
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "リアルタイム"
 
 #: src/table/ReniceDialog.qml:165
 #, kde-format
@@ -925,30 +929,32 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"実行中の処理にかかわらず、プロセスは必要なとき即時にハードディスクにアクセス"
+"できるようになります。"
 
 #: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "低優先度"
 
 #: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "高優先度"
 
 #: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "低優先度"
 
 #: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "高優先度"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
