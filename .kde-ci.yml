@@ -27,3 +27,4 @@ RuntimeDependencies:
 Options:
  require-passing-tests-on: ['@all']
  run-qmllint: True
+ enable-lsan: True
