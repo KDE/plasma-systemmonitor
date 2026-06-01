@@ -16,8 +16,9 @@ Kirigami.PagePoolAction {
     id: action
 
     property PageController controller
+    readonly property string fileName: controller.fileName
 
-    page: Qt.resolvedUrl("EditablePage.qml") + "?page=" + controller.fileName
+    page: Qt.resolvedUrl("EditablePage.qml") + "?page=" + action.fileName
 
     initialProperties: {
         "controller": action.controller

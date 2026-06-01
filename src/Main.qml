@@ -186,6 +186,7 @@ Kirigami.ApplicationWindow {
         }
 
         Instantiator {
+            id: pagesInstantiator
             model: Page.PagesModel { id: pagesModel }
 
             Page.EditablePageAction {
@@ -201,18 +202,6 @@ Kirigami.ApplicationWindow {
                         app.pageStack.layers.clear()
                     }
                 }
-
-                Component.onCompleted: {
-                    if (CommandLineArguments.pageId && model.fileName === CommandLineArguments.pageId) {
-                        trigger()
-                    } else if (CommandLineArguments.pageName && model.title === CommandLineArguments.pageName) {
-                        trigger()
-                    } else if (Page.Configuration.startPage === model.fileName) {
-                        trigger()
-                    } else if (Page.Configuration.startPage == "" && Page.Configuration.lastVisitedPage === model.fileName) {
-                        trigger()
-                    }
-                }
             }
 
             onObjectAdded: (index, object) => {
@@ -226,6 +215,32 @@ Kirigami.ApplicationWindow {
                 var actionIndex = actions.indexOf(object)
                 actions.splice(actionIndex, 1)
                 globalDrawer.actions = actions
+            }
+
+            Component.onCompleted: {
+                let commandLinePage = null;
+                let startPage = null;
+                for (let i = 0; i < pagesInstantiator.count; ++i) {
+                    const pageAction = pagesInstantiator.objectAt(i) as Page.EditablePageAction;
+
+                    if (CommandLineArguments.pageId && pageAction.fileName === CommandLineArguments.pageId) {
+                        commandLinePage = pageAction;
+                        break;
+                    } else if (CommandLineArguments.pageName && pageAction.text === CommandLineArguments.pageName) {
+                        commandLinePage = pageAction;
+                        break;
+                    } else if (Page.Configuration.startPage === pageAction.fileName) {
+                        startPage = pageAction;
+                    } else if (!Page.Configuration.startPage && Page.Configuration.lastVisitedPage === pageAction.fileName) {
+                        startPage = pageAction;
+                    }
+                }
+
+                if (commandLinePage) {
+                    commandLinePage.trigger();
+                } else if (startPage) {
+                    startPage.trigger();
+                }
             }
         }
 
