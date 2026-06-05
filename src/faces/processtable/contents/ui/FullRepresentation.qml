@@ -407,7 +407,6 @@ Faces.SensorFace {
     Table.ColumnConfigurationDialog {
         id: columnDialog
 
-        parent: root.Window.window?.overlay
 
         sourceModel: table.processModel.attributesModel
 
