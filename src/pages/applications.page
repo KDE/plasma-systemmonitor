@@ -6,7 +6,7 @@ chartFace=org.kde.ksysguard.applicationstable
 showTitle=false
 
 [page]
-icon=applications-all
+icon=applications-all-symbolic
 margin=0
 version=1
 Title=Applications

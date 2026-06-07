@@ -18,6 +18,6 @@ import org.kde.ksysguard.faces as Faces
 Faces.SensorFace {
     id: root
     contentItem: Kirigami.Icon {
-        source: "applications-all"
+        source: "applications-all-symbolic"
     }
 }
