@@ -73,7 +73,7 @@ Labs.MenuBar {
         title: i18nc("@menu", "Settings")
 
         Labs.MenuItem {
-            text: i18nc("@menu-action", "Edit or Remove pages…")
+            text: i18nc("@menu-action", "Edit or Remove Pages…")
             icon.name: "handle-sort"
             onTriggered: pageSortDialog.open()
         }
