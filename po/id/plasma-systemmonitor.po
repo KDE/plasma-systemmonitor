@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-03 01:08+0000\n"
+"POT-Creation-Date: 2026-06-08 00:47+0000\n"
 "PO-Revision-Date: 2022-09-27 17:14+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -78,9 +78,11 @@ msgid "Settings"
 msgstr "Pengaturan"
 
 #: src/GlobalMenu.qml:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@menu-action"
+#| msgid "Edit or Remove pages…"
 msgctxt "@menu-action"
-msgid "Edit or Remove pages…"
+msgid "Edit or Remove Pages…"
 msgstr "Edit atau Singkirkan halaman..."
 
 #: src/GlobalMenu.qml:83
@@ -192,9 +194,11 @@ msgid "Add New Page…"
 msgstr "Tambahkan Halaman Baru..."
 
 #: src/Main.qml:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Edit or Remove pages…"
 msgctxt "@action"
-msgid "Edit or Remove pages…"
+msgid "Edit or Remove Pages…"
 msgstr "Edit atau Singkirkan halaman..."
 
 #: src/Main.qml:106

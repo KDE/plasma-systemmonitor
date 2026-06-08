@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-03 01:08+0000\n"
+"POT-Creation-Date: 2026-06-08 00:47+0000\n"
 "PO-Revision-Date: 2023-03-30 18:12+0200\n"
 "Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
 "Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
@@ -78,9 +78,11 @@ msgid "Settings"
 msgstr "Nastavenia"
 
 #: src/GlobalMenu.qml:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@menu-action"
+#| msgid "Edit or Remove pages…"
 msgctxt "@menu-action"
-msgid "Edit or Remove pages…"
+msgid "Edit or Remove Pages…"
 msgstr "Upraviť alebo odstrániť stránky..."
 
 #: src/GlobalMenu.qml:83
@@ -191,9 +193,11 @@ msgid "Add New Page…"
 msgstr "Pridať novú stránku..."
 
 #: src/Main.qml:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Edit or Remove pages…"
 msgctxt "@action"
-msgid "Edit or Remove pages…"
+msgid "Edit or Remove Pages…"
 msgstr "Upraviť alebo odstrániť stránky..."
 
 #: src/Main.qml:106
