@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025, 2026 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2020-2026 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-08 00:47+0000\n"
-"PO-Revision-Date: 2026-01-14 15:32+0100\n"
+"PO-Revision-Date: 2026-06-08 13:03+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -78,9 +78,7 @@ msgid "Settings"
 msgstr "Instellingen"
 
 #: src/GlobalMenu.qml:76
-#, fuzzy, kde-format
-#| msgctxt "@menu-action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
 msgstr "Pagina's bewerken of verwijderen…"
@@ -193,9 +191,7 @@ msgid "Add New Page…"
 msgstr "Nieuwe pagina toevoegen…"
 
 #: src/Main.qml:100
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
 msgstr "Pagina's bewerken of verwijderen…"

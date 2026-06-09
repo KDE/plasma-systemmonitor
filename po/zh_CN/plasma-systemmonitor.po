@@ -79,12 +79,10 @@ msgid "Settings"
 msgstr "设置"
 
 #: src/GlobalMenu.qml:76
-#, fuzzy, kde-format
-#| msgctxt "@menu-action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
-msgstr "编辑或移除页面…"
+msgstr ""
 
 #: src/GlobalMenu.qml:83
 #, kde-format
@@ -194,12 +192,10 @@ msgid "Add New Page…"
 msgstr "新增页面…"
 
 #: src/Main.qml:100
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
-msgstr "编辑或移除页面…"
+msgstr ""
 
 #: src/Main.qml:106
 #, kde-format

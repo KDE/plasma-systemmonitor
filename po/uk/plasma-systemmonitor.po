@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-08 00:47+0000\n"
-"PO-Revision-Date: 2026-01-14 02:46+0200\n"
+"PO-Revision-Date: 2026-06-08 16:30+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -81,9 +81,7 @@ msgid "Settings"
 msgstr "Параметри"
 
 #: src/GlobalMenu.qml:76
-#, fuzzy, kde-format
-#| msgctxt "@menu-action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
 msgstr "Редагувати або вилучити сторінки…"
@@ -196,9 +194,7 @@ msgid "Add New Page…"
 msgstr "Додати нову сторінку…"
 
 #: src/Main.qml:100
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
 msgstr "Редагувати або вилучити сторінки…"
