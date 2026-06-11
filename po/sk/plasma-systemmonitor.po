@@ -78,9 +78,7 @@ msgid "Settings"
 msgstr "Nastavenia"
 
 #: src/GlobalMenu.qml:76
-#, fuzzy, kde-format
-#| msgctxt "@menu-action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
 msgstr "Upraviť alebo odstrániť stránky..."
@@ -193,9 +191,7 @@ msgid "Add New Page…"
 msgstr "Pridať novú stránku..."
 
 #: src/Main.qml:100
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
 msgstr "Upraviť alebo odstrániť stránky..."

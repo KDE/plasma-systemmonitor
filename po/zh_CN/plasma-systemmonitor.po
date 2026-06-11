@@ -82,7 +82,7 @@ msgstr "设置"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
-msgstr ""
+msgstr "编辑或移除页面…"
 
 #: src/GlobalMenu.qml:83
 #, kde-format
@@ -195,7 +195,7 @@ msgstr "新增页面…"
 #, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
-msgstr ""
+msgstr "编辑或移除页面…"
 
 #: src/Main.qml:106
 #, kde-format
