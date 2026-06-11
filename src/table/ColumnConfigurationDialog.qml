@@ -84,10 +84,12 @@ Window {
         Keys.onEscapePressed: columnDialog.reject()
 
         header: ToolBar {
+            focus: true
             Kirigami.SearchField {
                 id: searchField
                 width: parent.width
                 onTextEdited: sortModel.filterString = text
+                focus: true
             }
         }
 
