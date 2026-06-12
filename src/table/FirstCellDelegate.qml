@@ -40,6 +40,7 @@ BaseCellDelegate {
             source: delegate.iconName
             fallback: ""
             animated: false
+            visible: status == Kirigami.Icon.Ready || !delegate.isTreeNode
         }
         Label {
             id: label
