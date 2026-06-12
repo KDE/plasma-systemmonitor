@@ -31,6 +31,10 @@ QVariant ColumnSortFilterDisplayModel::data(const QModelIndex &index, int role) 
         return QVariant{};
     }
 
+    if (!index.isValid()) {
+        return QVariant{};
+    }
+
     resolveRoleNumbers();
     const auto id = source->data(mapToSource(index), m_idRoleNumber).toString();
 

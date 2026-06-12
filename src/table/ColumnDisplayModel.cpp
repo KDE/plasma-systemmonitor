@@ -28,6 +28,10 @@ QHash<int, QByteArray> ColumnDisplayModel::roleNames() const
 
 QVariant ColumnDisplayModel::data(const QModelIndex &index, int role) const
 {
+    if (!index.isValid()) {
+        return QVariant{};
+    }
+
     if (role == DisplayStyleRole && sourceModel()) {
         auto id = sourceModel()->data(mapToSource(index), idRoleNumber()).toString();
         return m_columnDisplay.value(id, QStringLiteral("hidden"));
