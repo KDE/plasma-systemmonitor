@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-08 00:47+0000\n"
-"PO-Revision-Date: 2026-01-13 13:17+0200\n"
+"PO-Revision-Date: 2026-06-12 22:06+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -80,9 +80,7 @@ msgid "Settings"
 msgstr "Nuostatos"
 
 #: src/GlobalMenu.qml:76
-#, fuzzy, kde-format
-#| msgctxt "@menu-action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
 msgstr "Taisyti ar šalinti puslapius…"
@@ -195,9 +193,7 @@ msgid "Add New Page…"
 msgstr "Pridėti naują puslapį…"
 
 #: src/Main.qml:100
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
 msgstr "Taisyti ar šalinti puslapius…"
