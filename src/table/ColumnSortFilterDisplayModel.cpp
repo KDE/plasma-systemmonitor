@@ -171,20 +171,13 @@ void ColumnSortFilterDisplayModel::setDisplayById(const QString &id, const QStri
     }
 
     if (changed) {
-        auto i = indexForId(id);
-        if (!i.isValid()) {
-            return;
-        }
+        beginResetModel();
 
-        if (m_columnDisplay.value(id) == u"hidden"_s) {
-            m_sortedColumns.removeOne(id);
-        } else {
-            m_sortedColumns.append(id);
-        }
+        cleanupSortedColumns();
 
-        Q_EMIT dataChanged(i, i, {DisplayStyleRole});
+        endResetModel();
+
         Q_EMIT columnDisplayChanged();
-        invalidate();
     }
 }
 
