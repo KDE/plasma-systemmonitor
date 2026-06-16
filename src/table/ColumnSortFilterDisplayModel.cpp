@@ -299,6 +299,8 @@ void ColumnSortFilterDisplayModel::cleanupSortedColumns()
             m_sortedColumns.append(key);
         }
     }
+
+    m_sortedColumns.removeDuplicates();
 }
 
 #include "moc_ColumnSortFilterDisplayModel.cpp"
