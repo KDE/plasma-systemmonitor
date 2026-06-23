@@ -226,14 +226,6 @@ Faces.SensorFace {
                 }
             }
         }
-
-        Kirigami.Separator {
-            anchors {
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-            }
-        }
     }
 
     Menu {
