@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-23 00:45+0000\n"
+"POT-Creation-Date: 2026-06-24 01:25+0000\n"
 "PO-Revision-Date: 2026-02-03 22:23+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -119,120 +119,120 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "열 설정..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:247
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:239
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "우선 순위 설정..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:253
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "시그널 보내기"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:257
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "일시 정지(STOP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:261
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:253
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "계속(CONT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:265
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:257
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "종료(HUP)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:269
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "인터럽트(INT)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:273
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:265
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
 msgstr "끝내기(TERM)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:277
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:269
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "죽이기(KILL)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:281
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:273
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "사용자 1(USR1)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:285
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:277
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
 msgstr "사용자 2(USR2)"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:291
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:283
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
 msgstr "현재 열 복사"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:300
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:292
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
 msgid_plural "End %1 Processes"
 msgstr[0] "프로세스 %1개 끝내기"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:313
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:305
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "숨기기"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:318
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:310
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
 msgstr "열 설정..."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:330
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:322
 #, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
 msgstr[0] "프로세스 %1개 강제 종료"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:331
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:323
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
 msgid_plural "End %1 Processes"
 msgstr[0] "프로세스 %1개 끝내기"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:333
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:325
 #, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
 msgstr[0] "프로세스 강제 종료"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:334
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:326
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
 msgstr[0] "프로세스 끝내기"
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:337
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:329
 #, kde-format
 msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
@@ -241,14 +241,14 @@ msgstr[0] ""
 "선택한 프로세스 %1개를 강제로 종료(SIGKILL)하시겠습니까? 저장하지 않은 작업"
 "은 손실됩니다."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:340
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:332
 #, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
 "선택한 프로세스 %1개를 끝내시겠습니까? 저장하지 않은 작업은 손실됩니다."
 
-#: src/faces/processtable/contents/ui/FullRepresentation.qml:352
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:344
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
