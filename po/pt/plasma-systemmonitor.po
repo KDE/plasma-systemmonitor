@@ -1,11 +1,13 @@
+# SPDX-FileCopyrightText: 2026 Paulo Bastos <paulo12setembro@hotmail.com>
+# SPDX-FileCopyrightText: 2026 César A. P. Cláudio <cesarapclaudio@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-08 00:47+0000\n"
-"PO-Revision-Date: 2022-06-15 19:33+0100\n"
-"Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
-"Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
+"PO-Revision-Date: 2026-06-25 00:37+0100\n"
+"Last-Translator: César A. P. Cláudio <cesarapclaudio@gmail.com>\n"
+"Language-Team: Portuguese <kde-i18n-doc@kde.org>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,6 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-POFile-SpellExtra: Arjen Noah Hiemstra Herrera Uri Edmundson Graham Nate\n"
 "X-POFile-SpellExtra: page\n"
+"X-Generator: Lokalize 26.04.2\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -24,19 +27,19 @@ msgstr "Ficheiro"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Add New Page…"
-msgstr "Adicionar uma Nova Página…"
+msgstr "Adicionar Nova Página…"
 
 #: src/GlobalMenu.qml:25
 #, kde-format
 msgctxt "@menu-action"
 msgid "Import Page…"
-msgstr "Importar uma Página…"
+msgstr "Importar Página…"
 
 #: src/GlobalMenu.qml:31
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
-msgstr "Exportar a Página Actual…"
+msgstr "Exportar Página Atual…"
 
 #: src/GlobalMenu.qml:38
 #, kde-format
@@ -60,27 +63,25 @@ msgstr "Ver"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Expand Sidebar"
-msgstr "Expandir a Barra Lateral"
+msgstr "Expandir Barra Lateral"
 
 #: src/GlobalMenu.qml:66
 #, kde-format
 msgctxt "@menu-action"
 msgid "Collapse Sidebar"
-msgstr "Recolher a Barra Lateral"
+msgstr "Recolher Barra Lateral"
 
 #: src/GlobalMenu.qml:73
 #, kde-format
 msgctxt "@menu"
 msgid "Settings"
-msgstr "Configuração"
+msgstr "Definições"
 
 #: src/GlobalMenu.qml:76
-#, fuzzy, kde-format
-#| msgctxt "@menu-action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
-msgstr "Editar ou Remover as Páginas…"
+msgstr "Editar ou Remover Páginas…"
 
 #: src/GlobalMenu.qml:83
 #, kde-format
@@ -92,18 +93,18 @@ msgstr "Ajuda"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr "Comunicar um Erro…"
+msgstr "Comunicar Erro…"
 
 #: src/GlobalMenu.qml:92
 #, kde-format
 msgctxt "@menu-action"
 msgid "About System Monitor"
-msgstr "Acerca do Monitor do Sistema"
+msgstr "Acerca do Monitor de Sistema"
 
 #: src/main.cpp:61
 #, kde-format
 msgid "System Monitor"
-msgstr "Monitor do Sistema"
+msgstr "Monitor de Sistema"
 
 #: src/main.cpp:63
 #, kde-format
@@ -111,10 +112,9 @@ msgid "An application for monitoring system resources"
 msgstr "Uma aplicação para monitorizar os recursos do sistema"
 
 #: src/main.cpp:65
-#, fuzzy, kde-format
-#| msgid "© 2020 Plasma Development Team"
+#, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr "© 2020 Equipa de Desenvolvimento do Plasma"
+msgstr "© 2025 Equipa de Desenvolvimento do Plasma"
 
 #: src/main.cpp:71
 #, kde-format
@@ -134,7 +134,7 @@ msgstr "Uri Herrera"
 #: src/main.cpp:72
 #, kde-format
 msgid "Design"
-msgstr "Desenho"
+msgstr "Design"
 
 #: src/main.cpp:73
 #, kde-format
@@ -144,7 +144,7 @@ msgstr "Nate Graham"
 #: src/main.cpp:73 src/main.cpp:75
 #, kde-format
 msgid "Design and Quality Assurance"
-msgstr "Desenho e Controlo de Qualidade"
+msgstr "Design e Controlo de Qualidade"
 
 #: src/main.cpp:74
 #, kde-format
@@ -170,13 +170,13 @@ msgstr "David Edmundson"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "José Nuno Pires"
+msgstr "José Nuno Pires, Paulo Bastos"
 
 #: src/main.cpp:79
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "zepires@gmail.com"
+msgstr "cesarapclaudio@gmail.com, paulo12setembro@hotmail.com"
 
 #: src/Main.qml:88
 #, kde-format
@@ -188,27 +188,25 @@ msgstr "Ferramentas"
 #, kde-format
 msgctxt "@action"
 msgid "Add New Page…"
-msgstr "Adicionar uma Nova Página…"
+msgstr "Adicionar Nova Página…"
 
 #: src/Main.qml:100
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
-msgstr "Editar ou Remover as Páginas…"
+msgstr "Editar ou Remover Páginas…"
 
 #: src/Main.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
-msgstr "Exportar a Página Actual…"
+msgstr "Exportar Página Atual…"
 
 #: src/Main.qml:114
 #, kde-format
 msgctxt "@action"
 msgid "Import Page…"
-msgstr "Importar uma Página…"
+msgstr "Importar Página…"
 
 #: src/Main.qml:120
 #, kde-format
@@ -220,61 +218,61 @@ msgstr "Obter Novas Páginas…"
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
-msgstr "Expandir a Barra Lateral"
+msgstr "Expandir Barra Lateral"
 
 #: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
-msgstr "Recolher a Barra Lateral"
+msgstr "Recolher Barra Lateral"
 
 #: src/Main.qml:147
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr "Comunicar um Erro…"
+msgstr "Comunicar Erro…"
 
 #: src/Main.qml:153
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
-msgstr "Acerca do Monitor do Sistema"
+msgstr "Acerca do Monitor de Sistema"
 
 #: src/Main.qml:160
 #, kde-format
 msgctxt "@action"
 msgid "About KDE"
-msgstr ""
+msgstr "Sobre o KDE"
 
 #: src/Main.qml:266
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
-msgstr "Adicionar uma Nova Página"
+msgstr "Adicionar Nova Página"
 
 #: src/Main.qml:287
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
-msgstr "Editar as Páginas"
+msgstr "Editar Páginas"
 
 #: src/Main.qml:310
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
-msgstr "Exportar o %1"
+msgstr "Exportar %1"
 
 #: src/Main.qml:312 src/Main.qml:322
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
-msgstr "Página do Monitor do Sistema (*.page)"
+msgstr "Página do Monitor de Sistema (*.page)"
 
 #: src/Main.qml:320
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
-msgstr "Importar uma Página"
+msgstr "Importar Página"
 
 #: src/Main.qml:346
 #, kde-format
@@ -283,7 +281,7 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
-"O Monitor do Sistema voltou ao uso do desenho por 'software', porque a "
+"O Monitor de Sistema voltou ao uso do renderização por 'software', porque a "
 "aceleração por 'hardware' não está disponível e poderão ocorrer alguns "
 "problemas visuais. Verifique por favor os seus controladores gráficos."
 
@@ -291,13 +289,13 @@ msgstr ""
 #, kde-format
 msgctxt "@action"
 msgid "Add Section"
-msgstr "Adicionar uma Secção"
+msgstr "Adicionar Secção"
 
 #: src/page/ColumnControl.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Add Separator"
-msgstr "Adicionar um Separador"
+msgstr "Adicionar Separação"
 
 #: src/page/ColumnControl.qml:130
 #, kde-format
@@ -309,49 +307,49 @@ msgstr "Mostrar o Fundo"
 #, kde-format
 msgctxt "@action"
 msgid "Remove Background Margins"
-msgstr "Remover as Margens do Fundo"
+msgstr "Remover Margens do Fundo"
 
 #: src/page/EditablePage.qml:122
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
-msgstr "Editar a Página"
+msgstr "Editar Página"
 
 #: src/page/EditablePage.qml:132
 #, kde-format
 msgctxt "@action"
 msgid "Save Changes"
-msgstr "Gravar as Alterações"
+msgstr "Gravar Alterações"
 
 #: src/page/EditablePage.qml:142
 #, kde-format
 msgctxt "@action"
 msgid "Discard Changes"
-msgstr "Esquecer as Alterações"
+msgstr "Descartar Alterações"
 
 #: src/page/EditablePage.qml:153
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "Configurar a Página…"
+msgstr "Configurar Página…"
 
 #: src/page/EditablePage.qml:162
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
-msgstr "Adicionar uma Linha"
+msgstr "Adicionar Linha"
 
 #: src/page/EditablePage.qml:171
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
-msgstr "Adicionar um Título"
+msgstr "Adicionar Título"
 
 #: src/page/EditablePage.qml:184
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
-msgstr "Configurar a Página \"%1\""
+msgstr "Configurar Página \"%1\""
 
 #: src/page/EditablePage.qml:186
 #, kde-format
@@ -375,7 +373,7 @@ msgstr "Remover"
 #, kde-format
 msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
-msgstr "Configurar o %1"
+msgstr "Configurar %1"
 
 #: src/page/FaceConfigurationPage.qml:32
 #, kde-format
@@ -387,41 +385,37 @@ msgstr "Fechar"
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr "Carregar uma Predefinição…"
+msgstr "Carregar Predefinição…"
 
 #: src/page/FaceConfigurationPage.qml:45
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new presets…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "Obter novas predefinições…"
+msgstr "Obter Novas Predefinições…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
-msgstr "Gravar a Configuração como Predefinição"
+msgstr "Gravar Configuração como Predefinição"
 
 #: src/page/FaceConfigurationPage.qml:60
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
-msgstr "A configuração foi gravada como a predefinição %1."
+msgstr "Configuração gravada como predefinição %1."
 
 #: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:357
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
-msgstr "Adicionar o Gráfico como Elemento do Ecrã"
+msgstr "Adicionar Gráfico como Widget de Ecrã"
 
 #: src/page/FaceConfigurationPage.qml:77
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Get new display styles…"
+#, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr "Obter novos estilos de apresentação…"
+msgstr "Obter Novos Estilos de Apresentação…"
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format
@@ -439,7 +433,7 @@ msgstr "Título"
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
-msgstr "Mostrar o Título"
+msgstr "Mostrar Título"
 
 #: src/page/FaceConfigurationPage.qml:141
 #, kde-format
@@ -451,7 +445,7 @@ msgstr "Estilo de Apresentação"
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
-msgstr "Tempo mínimo entre actualizações:"
+msgstr "Tempo mínimo entre atualizações:"
 
 #: src/page/FaceConfigurationPage.qml:186
 #, kde-format
@@ -479,7 +473,7 @@ msgstr "Sem Gráfico"
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
-msgstr "Carregar uma Predefinição"
+msgstr "Carregar Predefinição"
 
 #: src/page/LoadPresetDialog.qml:38
 #, kde-format
@@ -491,7 +485,7 @@ msgstr "Carregar"
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
-msgstr "Substituir os Sensores em Falta"
+msgstr "Substituir Sensores em Falta"
 
 #: src/page/MoveButton.qml:23
 #, kde-format
@@ -503,7 +497,7 @@ msgstr "Mover"
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr ""
-"Faltam alguns sensores nesta página, pelo que não aparecerá correctamente."
+"Esta página tem alguns sensores em falta e não será apresentada corretamente."
 
 #: src/page/PageContents.qml:112 src/page/PageEditor.qml:145
 #, kde-format
@@ -517,6 +511,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Foi instalada uma nova versão desta página, mas fez-lhe alterações. As "
+"alterações foram copiadas para %1 (Versão Antiga)."
 
 #: src/page/PageContents.qml:125
 #, kde-format
@@ -525,22 +521,21 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Foi instalada uma nova versão desta página, mas fez-lhe alterações. Gostaria "
+"de manter estas alterações ou descartá-las e utilizar a nova versão da "
+"página?"
 
 #: src/page/PageContents.qml:133
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Gravar as Alterações"
+msgstr "Manter Alterações"
 
 #: src/page/PageContents.qml:139
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Discard Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
-msgstr "Esquecer as Alterações"
+msgstr "Descartar Alterações"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -552,7 +547,7 @@ msgstr "Adicionar"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "New Page"
-msgstr "Nova página"
+msgstr "Nova Página"
 
 #: src/page/PageDialog.qml:85
 #, kde-format
@@ -600,7 +595,7 @@ msgstr "Grande"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
-msgstr "Usar as Acções de:"
+msgstr "Usar Ações de:"
 
 #: src/page/PageDialog.qml:147
 #, kde-format
@@ -629,31 +624,31 @@ msgstr "Novo Título"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
-msgstr "Mostrar a Página"
+msgstr "Mostrar Página"
 
 #: src/page/PageSortDialog.qml:98
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr "Esconder a Página"
+msgstr "Esconder Página"
 
 #: src/page/PageSortDialog.qml:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
-msgstr "Não repor a página"
+msgstr "Não repor página"
 
 #: src/page/PageSortDialog.qml:146
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
-msgstr "A página será reposta no seu estado predefinido"
+msgstr "A página será reposta ao seu estado predefinido"
 
 #: src/page/PageSortDialog.qml:155
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr "Repor a página com o seu estado predefinido"
+msgstr "Repor a página ao seu estado predefinido"
 
 #: src/page/PageSortDialog.qml:164
 #, kde-format
@@ -688,7 +683,7 @@ msgstr "Última Página Visitada"
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
-msgstr "Adicionar uma Coluna"
+msgstr "Adicionar Coluna"
 
 #: src/page/RowControl.qml:136
 #, kde-format
@@ -700,13 +695,13 @@ msgstr "Altura"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Balanced"
-msgstr "Balanceada"
+msgstr "Equilibrada"
 
 #: src/page/RowControl.qml:141
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
-msgstr "Tentar usar a mesma altura pelas diferentes linhas."
+msgstr "Tente usar a mesma altura em diferentes linhas."
 
 #: src/page/RowControl.qml:149
 #, kde-format
@@ -719,8 +714,7 @@ msgstr "Mínima"
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
 msgstr ""
-"Usar a quantidade mínima de altura necessária para mostrar os conteúdos "
-"correctamente."
+"Utilize a altura mínima necessária para apresentar o conteúdo corretamente."
 
 #: src/page/RowControl.qml:158
 #, kde-format
@@ -732,53 +726,49 @@ msgstr "Máxima"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
-msgstr "Tentar usar o máximo de altura possível."
+msgstr "Tente utilizar o máximo de altura possível."
 
 #: src/page/RowControl.qml:167
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "Metade da Altura da Página"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "Usar metade da altura da página."
 
 #: src/table/ColumnConfigurationDialog.qml:29
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
-msgstr "Configurar as Colunas"
+msgstr "Configurar Colunas"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "Adicionar uma Coluna"
+msgstr "Colunas Ativadas"
 
 #: src/table/ColumnConfigurationDialog.qml:106
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "Adicionar uma Coluna"
+msgstr "Colunas Desativadas"
 
 #: src/table/ColumnConfigurationDialog.qml:240
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
-msgstr "Escondida"
+msgstr "Oculta"
 
 #: src/table/ColumnConfigurationDialog.qml:241
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
-msgstr "Apenas o Texto"
+msgstr "Apenas Texto"
 
 #: src/table/ColumnConfigurationDialog.qml:245
 #, kde-format
@@ -790,43 +780,43 @@ msgstr "Gráfico de Linhas"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
-msgstr "Apenas o Texto (Escala a 100%)"
+msgstr "Apenas Texto (Dimensionado a 100%)"
 
 #: src/table/ColumnConfigurationDialog.qml:250
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
-msgstr "Gráfico de Linhas (Escala a 100%)"
+msgstr "Gráfico de Linhas (Dimensionado a 100%)"
 
 #: src/table/ColumnConfigurationDialog.qml:287
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "Nenhuma coluna correspondeu à pesquisa"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not ask again"
-msgstr "Não perguntar de novo"
+msgstr "Não perguntar novamente"
 
 #: src/table/ReniceDialog.qml:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "Definir Prioridade"
 
 #: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "Agendador de CPU"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: src/table/ReniceDialog.qml:84
 #, kde-format
@@ -835,12 +825,14 @@ msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
 msgstr ""
+"O agendador de tempo partilhado padrão para processos sem requisitos "
+"especiais."
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "Lote"
 
 #: src/table/ReniceDialog.qml:90
 #, kde-format
@@ -849,54 +841,56 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"O processo é ligeiramente desvalorizado nas decisões de agendamento, para "
+"processos não interativos que sejam intensivos no CPU."
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "Round robin"
 
 #: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
-msgstr ""
+msgstr "O processo será executado sempre que possível, com divisão de tempo."
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
-msgstr ""
+msgstr "O processo será executado sempre que possível, sem divisão de tempo."
 
 #: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "Agendador de I/O"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: src/table/ReniceDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "A prioridade do processo é baseada na prioridade do CPU."
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "Inativo"
 
 #: src/table/ReniceDialog.qml:153
 #, kde-format
@@ -905,24 +899,28 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"O processo só pode usar o disco rígido quando nenhum outro processo o tiver "
+"utilizado muito recentemente."
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "Melhor Esforço"
 
 #: src/table/ReniceDialog.qml:159
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
 msgstr ""
+"É dada ao processo uma prioridade mais alta do que o normal para aceder ao "
+"disco rígido."
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "Tempo Real"
 
 #: src/table/ReniceDialog.qml:165
 #, kde-format
@@ -931,42 +929,44 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"O processo obtém acesso imediato ao disco rígido sempre que necessário, "
+"independentemente do que mais esteja a acontecer."
 
 #: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Prioridade baixa"
 
 #: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "Prioridade alta"
 
 #: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Prioridade baixa"
 
 #: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "Prioridade alta"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Kill a Window…"
-msgstr "Matar uma Janela…"
+msgstr "Forçar Terminação de uma Janela…"
 
 #: src/ToolsModel.cpp:115
 #, kde-format
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
-msgstr "Lançar o %1"
+msgstr "Lançar %1"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"
