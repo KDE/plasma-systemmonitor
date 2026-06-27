@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:19+0000\n"
-"PO-Revision-Date: 2026-06-08 10:53+0200\n"
-"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2026-06-25 13:20+0200\n"
+"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
+"Language-Team: Czech <kde-i18n-cs@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -500,7 +500,7 @@ msgstr "Přesunout"
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr ""
-"Některé senzory této stránce chybí, proto se nebude zobrazovat správně."
+"Této stránce chybí některé senzory, proto se nebude zobrazovat správně."
 
 #: src/page/PageContents.qml:104 src/page/PageEditor.qml:135
 #, kde-format
