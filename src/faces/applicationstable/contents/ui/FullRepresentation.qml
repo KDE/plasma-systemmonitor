@@ -256,7 +256,7 @@ Faces.SensorFace {
         MenuItem {
             icon.name: "application-exit";
             enabled: root.quitEnabled
-            text: i18ncp("@action:inmenu", "Quit Application", "Quit %1 Applications", killDialog.items.length);
+            text: i18ncp("@action:inmenu", "Quit Application", "Quit %1 Applications", table.selectedApplications.length);
             onTriggered: processHelper.sendSignalToSelection(Process.Signal.TerminateSignal)
         }
     }
@@ -275,7 +275,12 @@ Faces.SensorFace {
         }
     }
 
-    Table.KillDialog {
+    // Built lazily on first quit/kill action; never needed when the page is just shown, so keeping
+    // it out of the initial face creation shaves a noticeable chunk off startup (see sendSignalToSelection).
+    Loader {
+        id: killDialogLoader
+        active: false
+        sourceComponent: Table.KillDialog {
         id: killDialog
 
         property int signalToSend
@@ -317,9 +322,14 @@ Faces.SensorFace {
                 processHelper.sendSignal(table.selectedApplications[i].pids, killDialog.signalToSend);
             }
         }
+        }
     }
 
-    Table.ReniceDialog {
+    // Likewise built lazily, on first renice action (see reniceSelection).
+    Loader {
+        id: reniceDialogLoader
+        active: false
+        sourceComponent: Table.ReniceDialog {
         id: reniceDialog
 
         onAccepted: {
@@ -329,6 +339,7 @@ Faces.SensorFace {
                 processHelper.setCpuScheduler(table.selectedApplications[i].pids, cpuMode, niceValue)
                 processHelper.setIoScheduler(table.selectedApplications[i].pids, ioMode, ioPriority)
             }
+        }
         }
     }
 
@@ -359,8 +370,9 @@ Faces.SensorFace {
             }
 
             if (root.config.askWhenKilling && killSignals.includes(sig)) {
-                killDialog.signalToSend = sig
-                killDialog.open()
+                killDialogLoader.active = true
+                killDialogLoader.item.signalToSend = sig
+                killDialogLoader.item.open()
                 return
             }
 
@@ -376,12 +388,14 @@ Faces.SensorFace {
 
             let pids = table.selectedApplications.reduce((acc, val) => acc.concat(val.pids), [])
 
-            reniceDialog.cpuPriority = 20 - (processHelper.priority(pids) ?? 20)
-            reniceDialog.cpuMode = processHelper.cpuScheduler(pids) ?? 0
-            reniceDialog.ioPriority = processHelper.ioPriority(pids) ?? 0
-            reniceDialog.ioMode = processHelper.ioScheduler(pids) ?? 0
+            reniceDialogLoader.active = true
+            const dialog = reniceDialogLoader.item
+            dialog.cpuPriority = 20 - (processHelper.priority(pids) ?? 20)
+            dialog.cpuMode = processHelper.cpuScheduler(pids) ?? 0
+            dialog.ioPriority = processHelper.ioPriority(pids) ?? 0
+            dialog.ioMode = processHelper.ioScheduler(pids) ?? 0
 
-            reniceDialog.open()
+            dialog.open()
         }
 
         function openSetAffinityDialog() {
