@@ -289,7 +289,7 @@ Faces.SensorFace {
         MenuSeparator { }
         MenuItem {
             icon.name: "process-stop";
-            text: i18ncp("@action:inmenu", "End Process", "End %1 Processes", killDialog.items.length);
+            text: i18ncp("@action:inmenu", "End Process", "End %1 Processes", table.selectedProcesses.length);
             onTriggered: {
                 processHelper.sendSignalToSelection(Process.Signal.TerminateSignal)
             }
@@ -313,7 +313,12 @@ Faces.SensorFace {
         }
     }
 
-    Table.KillDialog {
+    // Built lazily on first end/kill action; never needed when the page is just shown, so keeping
+    // it out of the initial face creation shaves a noticeable chunk off startup (see sendSignalToSelection).
+    Loader {
+        id: killDialogLoader
+        active: false
+        sourceComponent: Table.KillDialog {
         id: killDialog
 
         property int signalToSend
@@ -350,9 +355,14 @@ Faces.SensorFace {
             var pids = items.map(i => i.pid)
             processHelper.sendSignal(pids, signalToSend)
         }
+        }
     }
 
-    Table.ReniceDialog {
+    // Likewise built lazily, on first renice action (see reniceSelection).
+    Loader {
+        id: reniceDialogLoader
+        active: false
+        sourceComponent: Table.ReniceDialog {
         id: reniceDialog
 
         onAccepted: {
@@ -361,6 +371,7 @@ Faces.SensorFace {
             processHelper.setPriority(pids, niceValue)
             processHelper.setCpuScheduler(pids, cpuMode, niceValue)
             processHelper.setIoScheduler(pids, ioMode, ioPriority)
+        }
         }
     }
 
@@ -376,8 +387,9 @@ Faces.SensorFace {
 
         function sendSignalToSelection(sig) {
             if (root.config.askWhenKilling && killSignals.includes(sig)) {
-                killDialog.signalToSend = sig
-                killDialog.open()
+                killDialogLoader.active = true
+                killDialogLoader.item.signalToSend = sig
+                killDialogLoader.item.open()
             } else {
                 var pids = table.selectedProcesses.map(i => i.pid)
                 sendSignal(pids, sig);
@@ -387,12 +399,14 @@ Faces.SensorFace {
         function reniceSelection() {
             let pids = table.selectedProcesses.map(i => i.pid)
 
-            reniceDialog.cpuPriority = 20 - (processHelper.priority(pids) ?? 20)
-            reniceDialog.cpuMode = processHelper.cpuScheduler(pids) ?? 0
-            reniceDialog.ioPriority = processHelper.ioPriority(pids) ?? 0
-            reniceDialog.ioMode = processHelper.ioScheduler(pids) ?? 0
+            reniceDialogLoader.active = true
+            const dialog = reniceDialogLoader.item
+            dialog.cpuPriority = 20 - (processHelper.priority(pids) ?? 20)
+            dialog.cpuMode = processHelper.cpuScheduler(pids) ?? 0
+            dialog.ioPriority = processHelper.ioPriority(pids) ?? 0
+            dialog.ioMode = processHelper.ioScheduler(pids) ?? 0
 
-            reniceDialog.open()
+            dialog.open()
         }
     }
 
