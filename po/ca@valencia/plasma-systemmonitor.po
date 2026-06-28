@@ -393,13 +393,13 @@ msgstr "Carrega els valors predefinits…"
 #, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr "Obtín valors predefinits nous…"
+msgstr "Obtín ajustaments predefinits nous…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
-msgstr "Guarda la configuració com a valors predefinits"
+msgstr "Guarda la configuració com a ajustaments predefinits"
 
 #: src/page/FaceConfigurationPage.qml:60
 #, kde-format
