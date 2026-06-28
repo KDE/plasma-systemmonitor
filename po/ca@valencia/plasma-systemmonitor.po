@@ -387,7 +387,7 @@ msgstr "Carrega els valors predefinits…"
 #, kde-format
 msgctxt "@action"
 msgid "Get new presets…"
-msgstr "Obtín valors predefinits nous…"
+msgstr "Obtín ajustaments predefinits nous…"
 
 #: src/page/FaceConfigurationPage.qml:49
 #, kde-format
