@@ -368,9 +368,9 @@ Faces.SensorFace {
         onAccepted: {
             const niceValue = 20 - cpuPriority
             let pids = table.selectedProcesses.map(i => i.pid)
-            processHelper.setPriority(pids, niceValue)
-            processHelper.setCpuScheduler(pids, cpuMode, niceValue)
-            processHelper.setIoScheduler(pids, ioMode, ioPriority)
+            // Apply all three scheduling changes in one privileged call so the user is only asked
+            // to authenticate once, instead of once per change.
+            processHelper.applyScheduling(pids, niceValue, cpuMode, niceValue, ioMode, ioPriority)
         }
         }
     }
