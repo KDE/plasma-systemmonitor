@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-04 02:58+0000\n"
-"PO-Revision-Date: 2026-07-02 21:01+0200\n"
+"PO-Revision-Date: 2026-07-03 19:19+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
 "Language: nn\n"
@@ -512,6 +512,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"Ein ny versjon av denne sida er blitt installert, men du har gjort endringar "
+"i sida. Endringane er kopierte over til %1 (gammal versjon)."
 
 #: src/page/PageContents.qml:125
 #, kde-format
@@ -520,20 +522,21 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"Ein ny versjon av denne sida er blitt installert, men du har gjort endringar "
+"i sida. Vil du ta vare på endringane eller forkasta dei og heller bruka den "
+"nye versjonen av sida?"
 
 #: src/page/PageContents.qml:133
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Save Changes"
+#, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr "Lagra endringar"
+msgstr "Behald endringane"
 
 #: src/page/PageContents.qml:139
 #, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
-msgstr "Forkast endringar"
+msgstr "Forkast endringane"
 
 #: src/page/PageDialog.qml:21
 #, kde-format
@@ -807,7 +810,7 @@ msgstr "Vel prioritet"
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr "CPU-fordelar"
+msgstr "CPU-fordeling"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
@@ -821,13 +824,13 @@ msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
-msgstr "Den vanlege tidsfordelaren, brukt for prosessar utan særskilde krav."
+msgstr "Den vanlege tidsfordelaren. Bruk for prosessar utan særskilde krav."
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "Etterfølgjande"
 
 #: src/table/ReniceDialog.qml:90
 #, kde-format
@@ -836,18 +839,22 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"Prosessen vert forsiktig nedprioritert ved tids­fordeling. Bruk for CPU-"
+"intensive ikkje-interaktive prosessar."
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "På rundgang"
 
 #: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
 msgstr ""
+"Prosessen vert køyrd når han kan køyrast. Kvar prosess får tildelt eit like "
+"langt tidsintervall."
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
@@ -860,12 +867,14 @@ msgstr "FIFO"
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
 msgstr ""
+"Prosessen vert køyrd når han kan køyrast. Ingen prosess får tildelt noko "
+"tidsintervall."
 
 #: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr "I/U-fordelar"
+msgstr "I/U-fordeling"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
@@ -877,13 +886,13 @@ msgstr "Vanleg"
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr "Prosessprioriteten er basert på CPU-prioritet."
+msgstr "Prosessprioriteten vert basert på CPU-prioriteten."
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr "Inaktiv"
+msgstr "Passiv"
 
 #: src/table/ReniceDialog.qml:153
 #, kde-format
@@ -892,7 +901,7 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
-"Prosessen kan berre bruka harddisken når ikkje nokon andre prosessar har "
+"Prosessen kan berre bruka hard­disken når ikkje nokon andre prosessar har "
 "brukt disken nyleg."
 
 #: src/table/ReniceDialog.qml:158
@@ -906,7 +915,7 @@ msgstr "Best mogleg"
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
 msgstr ""
-"Prosessen vert gjeven høgare prioritet for tilgang til harddisken enn det "
+"Prosessen vert gjeven høgare prioritet for tilgang til hard­disken enn det "
 "som er vanleg."
 
 #: src/table/ReniceDialog.qml:164
@@ -922,32 +931,32 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
-"Prosessen får umiddelbar tilgang til harddisken ved behov, uavhengig av kva "
+"Prosessen får umiddelbar tilgang til hard­disken ved behov, uavhengig av kva "
 "anna som føregår samtidig."
 
 #: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr "Lågt prioritert"
+msgstr "Låg prioritet"
 
 #: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr "Høgt prioritert"
+msgstr "Høg prioritet"
 
 #: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr "Lågt prioritert"
+msgstr "Låg prioritet"
 
 #: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr "Høgt prioritert"
+msgstr "Høg prioritet"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
