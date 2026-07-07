@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-08 00:47+0000\n"
+"POT-Creation-Date: 2026-07-07 00:45+0000\n"
 "PO-Revision-Date: 2026-06-25 13:20+0200\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-cs@kde.org>\n"
@@ -741,55 +741,55 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "Použít polovinu výšky stránky."
 
-#: src/table/ColumnConfigurationDialog.qml:29
+#: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Nastavit sloupce"
 
-#: src/table/ColumnConfigurationDialog.qml:106
+#: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
 msgstr "Povolené sloupce"
 
-#: src/table/ColumnConfigurationDialog.qml:106
+#: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
 msgstr "Nepovolené sloupce"
 
-#: src/table/ColumnConfigurationDialog.qml:240
+#: src/table/ColumnConfigurationDialog.qml:260
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Skryté"
 
-#: src/table/ColumnConfigurationDialog.qml:241
+#: src/table/ColumnConfigurationDialog.qml:261
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Pouze text"
 
-#: src/table/ColumnConfigurationDialog.qml:245
+#: src/table/ColumnConfigurationDialog.qml:265
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Čarový graf"
 
-#: src/table/ColumnConfigurationDialog.qml:249
+#: src/table/ColumnConfigurationDialog.qml:269
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Pouze text (zvětšeno na 100 %)"
 
-#: src/table/ColumnConfigurationDialog.qml:250
+#: src/table/ColumnConfigurationDialog.qml:270
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Lineární graf (v měřítku 100 %)"
 
-#: src/table/ColumnConfigurationDialog.qml:287
+#: src/table/ColumnConfigurationDialog.qml:307
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"

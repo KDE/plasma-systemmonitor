@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-08 00:47+0000\n"
+"POT-Creation-Date: 2026-07-07 00:45+0000\n"
 "PO-Revision-Date: 2026-06-08 08:24+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -743,55 +743,55 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "Fa servir la meitat de l'alçada de la pàgina."
 
-#: src/table/ColumnConfigurationDialog.qml:29
+#: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Configura les columnes"
 
-#: src/table/ColumnConfigurationDialog.qml:106
+#: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
 msgstr "Columnes activades"
 
-#: src/table/ColumnConfigurationDialog.qml:106
+#: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
 msgstr "Columnes desactivades"
 
-#: src/table/ColumnConfigurationDialog.qml:240
+#: src/table/ColumnConfigurationDialog.qml:260
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Oculta"
 
-#: src/table/ColumnConfigurationDialog.qml:241
+#: src/table/ColumnConfigurationDialog.qml:261
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Només el text"
 
-#: src/table/ColumnConfigurationDialog.qml:245
+#: src/table/ColumnConfigurationDialog.qml:265
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Diagrama de línies"
 
-#: src/table/ColumnConfigurationDialog.qml:249
+#: src/table/ColumnConfigurationDialog.qml:269
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Només el text (escalat al 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:250
+#: src/table/ColumnConfigurationDialog.qml:270
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Diagrama de línies (escalat al 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:287
+#: src/table/ColumnConfigurationDialog.qml:307
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"

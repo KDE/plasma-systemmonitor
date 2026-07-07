@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-08 00:47+0000\n"
+"POT-Creation-Date: 2026-07-07 00:45+0000\n"
 "PO-Revision-Date: 2026-06-09 14:59+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
@@ -742,55 +742,55 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "Utilisez la hauteur d'une demi-page"
 
-#: src/table/ColumnConfigurationDialog.qml:29
+#: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Configurer les colonnes"
 
-#: src/table/ColumnConfigurationDialog.qml:106
+#: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
 msgstr "Colonnes activées"
 
-#: src/table/ColumnConfigurationDialog.qml:106
+#: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
 msgstr "Colonnes désactivées"
 
-#: src/table/ColumnConfigurationDialog.qml:240
+#: src/table/ColumnConfigurationDialog.qml:260
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Masqué"
 
-#: src/table/ColumnConfigurationDialog.qml:241
+#: src/table/ColumnConfigurationDialog.qml:261
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Texte uniquement"
 
-#: src/table/ColumnConfigurationDialog.qml:245
+#: src/table/ColumnConfigurationDialog.qml:265
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Graphique en lignes"
 
-#: src/table/ColumnConfigurationDialog.qml:249
+#: src/table/ColumnConfigurationDialog.qml:269
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Texte uniquement (dimensionné à 100 %)"
 
-#: src/table/ColumnConfigurationDialog.qml:250
+#: src/table/ColumnConfigurationDialog.qml:270
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Graphique en lignes (dimensionné à 100 %)"
 
-#: src/table/ColumnConfigurationDialog.qml:287
+#: src/table/ColumnConfigurationDialog.qml:307
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"

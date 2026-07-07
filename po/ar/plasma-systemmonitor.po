@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-08 00:47+0000\n"
+"POT-Creation-Date: 2026-07-07 00:45+0000\n"
 "PO-Revision-Date: 2026-06-08 20:33+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -738,55 +738,55 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "استعمل نصف ارتفاع الصفحة."
 
-#: src/table/ColumnConfigurationDialog.qml:29
+#: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "اضبط الأعمدة"
 
-#: src/table/ColumnConfigurationDialog.qml:106
+#: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
 msgstr "الأعمدة الممكنة"
 
-#: src/table/ColumnConfigurationDialog.qml:106
+#: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
 msgstr "الأعمدة المعطلة"
 
-#: src/table/ColumnConfigurationDialog.qml:240
+#: src/table/ColumnConfigurationDialog.qml:260
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "مخفي"
 
-#: src/table/ColumnConfigurationDialog.qml:241
+#: src/table/ColumnConfigurationDialog.qml:261
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "النص فقط"
 
-#: src/table/ColumnConfigurationDialog.qml:245
+#: src/table/ColumnConfigurationDialog.qml:265
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "رسم خطي"
 
-#: src/table/ColumnConfigurationDialog.qml:249
+#: src/table/ColumnConfigurationDialog.qml:269
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "نص فقط (مكبر إلى 100٪)"
 
-#: src/table/ColumnConfigurationDialog.qml:250
+#: src/table/ColumnConfigurationDialog.qml:270
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "رسم خطي (مكبر إلى 100٪)"
 
-#: src/table/ColumnConfigurationDialog.qml:287
+#: src/table/ColumnConfigurationDialog.qml:307
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
