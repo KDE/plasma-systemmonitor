@@ -159,6 +159,9 @@ Faces.SensorFace {
                     } else if (event.key == Qt.Key_F8) {
                         processHelper.reniceSelection();
                         event.accepted = true;
+                    } else if (Qt.platform.os === "linux" && event.key == Qt.Key_F9) {
+                        processHelper.openSetAffinityDialog();
+                        event.accepted = true;
                     }
                 }
             }
@@ -200,6 +203,14 @@ Faces.SensorFace {
             text: i18nc("@action:inmenu", "Set priority…")
             icon.name: "process-working-symbolic"
             onTriggered: processHelper.reniceSelection()
+            enabled: root.quitEnabled
+        }
+
+        MenuItem {
+            text: i18nc("@action:inmenu", "Set affinity…")
+            icon.name: "cpu-symbolic"
+            visible: Qt.platform.os === "linux" // only implemented for linux
+            onTriggered: processHelper.openSetAffinityDialog()
             enabled: root.quitEnabled
         }
 
@@ -321,6 +332,17 @@ Faces.SensorFace {
         }
     }
 
+    Table.AffinityDialog {
+        id: affinityDialog
+
+        onAccepted: {
+            for (let i = 0; i < table.selectedApplications.length; i++) {
+                let pids = Array.from(table.selectedApplications[i].pids)
+                processHelper.setAffinity(pids, affinity)
+            }
+        }
+    }
+
     Process.ProcessController {
         id: processHelper
 
@@ -360,6 +382,17 @@ Faces.SensorFace {
             reniceDialog.ioMode = processHelper.ioScheduler(pids) ?? 0
 
             reniceDialog.open()
+        }
+
+        function openSetAffinityDialog() {
+            if (table.selectedApplications.length === 0) {
+                return
+            }
+
+            let pids = table.selectedApplications.reduce((acc, val) => acc.concat(val.pids), [])
+
+            affinityDialog.affinity = processHelper.affinity(pids) ?? []
+            affinityDialog.open()
         }
     }
 
