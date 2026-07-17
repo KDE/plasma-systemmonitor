@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-23 00:45+0000\n"
+"POT-Creation-Date: 2026-07-17 00:46+0000\n"
 "PO-Revision-Date: 2025-05-18 12:04+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -107,67 +107,75 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Конфигуриране на колони…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:200
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Задаване на приоритет…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:207
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Set priority…"
+msgctxt "@action:inmenu"
+msgid "Set affinity…"
+msgstr "Задаване на приоритет…"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Изпращане на сигнал"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:223
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Спиране (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:216
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Продължаване (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:231
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Задържане (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:224
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:235
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Прекъсване (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:228
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:239
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Прекратяване (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:232
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:243
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Принудително прекратяване (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:236
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Потребител 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:240
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:251
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Потребител 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:248
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -175,13 +183,13 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Изход от приложението"
 msgstr[1] "Изход от %1приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:258
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:269
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Скриване"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:273
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:284
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -189,7 +197,7 @@ msgid_plural "Force Quit %1 Applications"
 msgstr[0] "Принудителен изход от едно приложение"
 msgstr[1] "Принудителен изход от %1 приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:274
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:285
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -197,7 +205,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Изход от приложението"
 msgstr[1] "Изход от %1 приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:276
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -205,7 +213,7 @@ msgid_plural "Force Quit Applications"
 msgstr[0] "Принудителен изход от приложение"
 msgstr[1] "Принудителен изход от приложения"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:277
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:288
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -213,7 +221,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "Изход от приложението"
 msgstr[1] "Изход от приложенията"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:280
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:291
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -225,7 +233,7 @@ msgstr[1] ""
 "Принудително излизане (SIGKILL) от %1 приложения? Незапазената работа може "
 "да бъде загубена."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:283
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
@@ -234,7 +242,7 @@ msgstr[0] ""
 msgstr[1] ""
 "Излизане от тези %1 приложения? Незапазената работа може да бъде загубена."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:298
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:309
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

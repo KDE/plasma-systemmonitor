@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-07 00:45+0000\n"
+"POT-Creation-Date: 2026-07-17 00:46+0000\n"
 "PO-Revision-Date: 2026-01-18 13:16+0100\n"
 "Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -748,6 +748,44 @@ msgstr "Halbe Seitenhöhe"
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "Die Hälfte der Seitenhöhe verwenden."
+
+#: src/table/AffinityDialog.qml:23
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Set Priority"
+msgctxt "@title:window"
+msgid "Set Affinity"
+msgstr "Priorität festlegen"
+
+#: src/table/AffinityDialog.qml:54
+#, kde-format
+msgctxt "@label"
+msgid "Allow to run on:"
+msgstr ""
+
+#: src/table/AffinityDialog.qml:73
+#, kde-format
+msgctxt "@option:check CPU core number"
+msgid "CPU %1"
+msgstr ""
+
+#: src/table/AffinityDialog.qml:109
+#, kde-format
+msgctxt "@action:button"
+msgid "Select All"
+msgstr ""
+
+#: src/table/AffinityDialog.qml:121
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear All"
+msgstr ""
+
+#: src/table/AffinityDialog.qml:129
+#, kde-format
+msgctxt "@action:button"
+msgid "Invert"
+msgstr ""
 
 #: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
