@@ -127,12 +127,10 @@ msgid "Set priority…"
 msgstr "设置优先级…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:248
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set priority…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr "设置优先级…"
+msgstr ""
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format

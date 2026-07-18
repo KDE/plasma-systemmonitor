@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2026-02-03 17:11+0100\n"
+"PO-Revision-Date: 2026-07-17 16:19+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
@@ -126,12 +126,10 @@ msgid "Set priority…"
 msgstr "Fixa prioritate …"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:248
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set priority…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr "Fixa prioritate …"
+msgstr "Fixa affinitate …"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format

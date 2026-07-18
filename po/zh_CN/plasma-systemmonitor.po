@@ -737,12 +737,10 @@ msgid "Use half the height of the page."
 msgstr "使用页面高度的一半。"
 
 #: src/table/AffinityDialog.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Set Priority"
+#, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr "设定优先级"
+msgstr ""
 
 #: src/table/AffinityDialog.qml:54
 #, kde-format
