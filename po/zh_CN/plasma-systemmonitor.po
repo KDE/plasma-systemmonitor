@@ -740,37 +740,37 @@ msgstr "使用页面高度的一半。"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr ""
+msgstr "设置关联性"
 
 #: src/table/AffinityDialog.qml:54
 #, kde-format
 msgctxt "@label"
 msgid "Allow to run on:"
-msgstr ""
+msgstr "允许运行在："
 
 #: src/table/AffinityDialog.qml:73
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
-msgstr ""
+msgstr "CPU %1"
 
 #: src/table/AffinityDialog.qml:109
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "选择全部"
 
 #: src/table/AffinityDialog.qml:121
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
-msgstr ""
+msgstr "清除全部"
 
 #: src/table/AffinityDialog.qml:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
-msgstr ""
+msgstr "反向选择"
 
 #: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format

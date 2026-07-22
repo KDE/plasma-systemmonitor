@@ -118,7 +118,7 @@ msgstr "设置优先级…"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr ""
+msgstr "设置关联性…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
 #, kde-format
