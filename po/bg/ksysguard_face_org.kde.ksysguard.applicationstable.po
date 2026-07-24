@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2023, 2024, 2025 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2023-2026 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2025-05-18 12:04+0200\n"
+"PO-Revision-Date: 2026-07-23 20:19+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.07.70\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:51
 #, kde-format
@@ -114,12 +114,10 @@ msgid "Set priority…"
 msgstr "Задаване на приоритет…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set priority…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr "Задаване на приоритет…"
+msgstr "Задаване на афинитет…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
 #, kde-format
