@@ -51,5 +51,6 @@ kconfig_target_kcfg_file(PlasmaSystemMonitorPage FILE systemmonitor.kcfg CLASS_N
 target_link_libraries(PlasmaSystemMonitorPage PRIVATE Qt::DBus Qt::Quick KF6::ConfigCore KF6::I18n KF6::NewStuffCore KSysGuard::Sensors KSysGuard::SensorFaces)
 
 install(TARGETS PlasmaSystemMonitorPage ${KDE_INSTALL_DEFAULT_ARGS})
+install(FILES systemmonitor.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 
 ecm_finalize_qml_module(PlasmaSystemMonitorPage)
