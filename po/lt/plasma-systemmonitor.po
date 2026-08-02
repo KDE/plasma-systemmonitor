@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2026-06-12 22:06+0300\n"
+"PO-Revision-Date: 2026-08-01 16:14+0300\n"
 "Last-Translator: Moo <<>>\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -743,42 +743,40 @@ msgid "Use half the height of the page."
 msgstr "Naudoti pusę puslapio aukščio."
 
 #: src/table/AffinityDialog.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Set Priority"
+#, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr "Nustatyti prioritetą"
+msgstr "Nustatyti priskyrimą"
 
 #: src/table/AffinityDialog.qml:54
 #, kde-format
 msgctxt "@label"
 msgid "Allow to run on:"
-msgstr ""
+msgstr "Leisti būti vykdomam šiuose procesoriuose:"
 
 #: src/table/AffinityDialog.qml:73
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
-msgstr ""
+msgstr "Procesorius %1"
 
 #: src/table/AffinityDialog.qml:109
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "Žymėti visus"
 
 #: src/table/AffinityDialog.qml:121
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
-msgstr ""
+msgstr "Nuimti žymėjimą nuo visų"
 
 #: src/table/AffinityDialog.qml:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
-msgstr ""
+msgstr "Invertuoti"
 
 #: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format

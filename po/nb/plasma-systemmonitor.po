@@ -1,6 +1,7 @@
 # Translation of plasma-systemmonitor to Norwegian Bokmål
 #
 # Jacob Dybvald Ludvigsen <jacob.ludvigsen@protonmail.com>, 2021.
+# Martin Hansen <mh306602@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
