@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-04 02:58+0000\n"
-"PO-Revision-Date: 2026-07-03 07:39+0200\n"
+"PO-Revision-Date: 2026-08-03 00:04+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.04.2\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -263,7 +263,7 @@ msgstr "Editatu orriak"
 #, kde-format
 msgctxt "@title:window %1 is the name of the page that is being exported"
 msgid "Export %1"
-msgstr "Esportatu %1"
+msgstr "%1 esportatu"
 
 #: src/Main.qml:312 src/Main.qml:322
 #, kde-format
@@ -352,7 +352,7 @@ msgstr "Gehitu titulua"
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
-msgstr "Konfiguratu «%1» orria"
+msgstr "«%1» orria konfiguratu"
 
 #: src/page/EditablePage.qml:186
 #, kde-format
@@ -376,7 +376,7 @@ msgstr "Kendu"
 #, kde-format
 msgctxt "@title:window %1 is face name"
 msgid "Configure %1"
-msgstr "Konfiguratu %1"
+msgstr "%1 konfiguratu"
 
 #: src/page/FaceConfigurationPage.qml:32
 #, kde-format
@@ -971,7 +971,7 @@ msgstr "Akabatu leiho bat..."
 #, kde-format
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
-msgstr "Abiarazi %1"
+msgstr "%1 abiarazi"
 
 #~ msgid "Placeholder"
 #~ msgstr "Leku-marka"
