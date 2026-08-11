@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2026-06-08 20:33+0400\n"
+"PO-Revision-Date: 2026-08-10 13:23+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -739,42 +739,40 @@ msgid "Use half the height of the page."
 msgstr "استعمل نصف ارتفاع الصفحة."
 
 #: src/table/AffinityDialog.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Set Priority"
+#, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr "عيّن الأولوية"
+msgstr "عيّن الأنوية"
 
 #: src/table/AffinityDialog.qml:54
 #, kde-format
 msgctxt "@label"
 msgid "Allow to run on:"
-msgstr ""
+msgstr "اسمح بالعمل على:"
 
 #: src/table/AffinityDialog.qml:73
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
-msgstr ""
+msgstr "المعالج %1"
 
 #: src/table/AffinityDialog.qml:109
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "حدّد الكلّ"
 
 #: src/table/AffinityDialog.qml:121
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
-msgstr ""
+msgstr "امحُ الكلّ"
 
 #: src/table/AffinityDialog.qml:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
-msgstr ""
+msgstr "اعكس"
 
 #: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
