@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-04 02:58+0000\n"
-"PO-Revision-Date: 2026-01-14 08:03+0400\n"
+"PO-Revision-Date: 2026-08-10 13:23+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -837,7 +837,7 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
-"العملية غير مفضلة قليلاً في قرارات الجدولة، للعمليات غير التفاعلية والمكثفة "
+"العملية غير مفضلة قليلًا في قرارات الجدولة، للعمليات غير التفاعلية والمكثفة "
 "للمعالج."
 
 #: src/table/ReniceDialog.qml:95
@@ -895,7 +895,7 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
-"يمكن للعملية استخدام القرص الصلب فقط عندما لا تستخدمه أي عملية أخرى مؤخراً."
+"يمكن للعملية استخدام القرص الصلب فقط عندما لا تستخدمه أي عملية أخرى مؤخرًا."
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
