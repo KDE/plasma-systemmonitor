@@ -873,7 +873,7 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
-"العملية غير مفضلة قليلاً في قرارات الجدولة، للعمليات غير التفاعلية والمكثفة "
+"العملية غير مفضلة قليلًا في قرارات الجدولة، للعمليات غير التفاعلية والمكثفة "
 "للمعالج."
 
 #: src/table/ReniceDialog.qml:95
@@ -931,7 +931,7 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
-"يمكن للعملية استخدام القرص الصلب فقط عندما لا تستخدمه أي عملية أخرى مؤخراً."
+"يمكن للعملية استخدام القرص الصلب فقط عندما لا تستخدمه أي عملية أخرى مؤخرًا."
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
