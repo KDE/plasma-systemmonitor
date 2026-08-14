@@ -46,7 +46,12 @@ Table.BaseTableView {
             }
             rows[i.row] = true
 
-            var index = sortColumnFilter.mapToSource(i)
+            // BaseTableView.model is initialized to sortColumnFilter (see below) but then BaseTableView
+            // might or might not wrap it in a different proxy model, e.g. for layout mirroring.
+            // selection refers to the latter model, so the indexes may need additional mapping.
+            var index = selection.model == sortColumnFilter ? i : selection.model.mapToSource(i)
+            index = sortColumnFilter.mapToSource(index)
+
             var item = applicationInformation.createObject()
             item.index = index
             result.push(item)

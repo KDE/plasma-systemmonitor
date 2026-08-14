@@ -44,7 +44,11 @@ Table.BaseTableView {
 
             rows[i.row] = true
 
-            var index = rowFilter.mapToSource(i)
+            // BaseTableView.model is initialized to rowFilter (see below) but then BaseTableView
+            // might or might not wrap it in a different proxy model, e.g. for layout mirroring.
+            // selection refers to the latter model, so the indexes may need additional mapping.
+            var index = selection.model == rowFilter ? i : selection.model.mapToSource(i)
+            index = rowFilter.mapToSource(index)
 
             var item = {}
 
@@ -156,6 +160,7 @@ Table.BaseTableView {
                 treeDecorationVisible: !view.flatList
                 iconName: {
                     var index = treeView.index(model.row, 0);
+                    index = treeView.model == rowFilter ? index : treeView.model.mapToSource(index);
                     index = rowFilter.mapToSource(index)
                     index = cacheModel.mapToSource(index);
                     index = displayModel.mapToSource(index);
@@ -170,7 +175,7 @@ Table.BaseTableView {
                 id: lineDelegate
 
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
-                maximum: rowFilter.data(treeView.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                maximum: treeView.model.data(treeView.index(model.row, model.column), Process.ProcessDataModel.Maximum)
 
                 Binding {
                     target: lineDelegate.model.cachedComponent ?? null
@@ -186,7 +191,7 @@ Table.BaseTableView {
                 id: lineScaledDelegate
 
                 valueSources: model.cachedComponent != undefined ? model.cachedComponent : []
-                maximum: rowFilter.data(treeView.index(model.row, model.column), Process.ProcessDataModel.Maximum)
+                maximum: treeView.model.data(treeView.index(model.row, model.column), Process.ProcessDataModel.Maximum)
                 text: Formatter.Formatter.formatValue(parseInt(model.Value) / model.Maximum * 100, model.Unit)
 
                 Binding {
