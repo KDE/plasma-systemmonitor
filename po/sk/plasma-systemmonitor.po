@@ -739,42 +739,40 @@ msgid "Use half the height of the page."
 msgstr "Use half the height of the page."
 
 #: src/table/AffinityDialog.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Set Priority"
+#, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr "Nastaviť Priority"
+msgstr "Nastaviť afinitu"
 
 #: src/table/AffinityDialog.qml:54
 #, kde-format
 msgctxt "@label"
 msgid "Allow to run on:"
-msgstr ""
+msgstr "Povoliť beh na:"
 
 #: src/table/AffinityDialog.qml:73
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
-msgstr ""
+msgstr "CPU %1"
 
 #: src/table/AffinityDialog.qml:109
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "Vybrať všetko"
 
 #: src/table/AffinityDialog.qml:121
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
-msgstr ""
+msgstr "Vybrať všetko"
 
 #: src/table/AffinityDialog.qml:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
-msgstr ""
+msgstr "Invertovať"
 
 #: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
