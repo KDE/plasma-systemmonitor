@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
 #
-# SPDX-FileCopyrightText: 2024, 2025 Toms Trasuns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024-2026 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2025-05-29 16:52+0300\n"
+"PO-Revision-Date: 2026-08-15 23:28+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 25.04.1\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:51
 #, kde-format
@@ -115,12 +115,10 @@ msgid "Set priority…"
 msgstr "Noteikt prioritāti…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set priority…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr "Noteikt prioritāti…"
+msgstr "Noteikt afinitāti…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
 #, kde-format
