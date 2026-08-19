@@ -44,12 +44,7 @@ Table.BaseTableView {
 
             rows[i.row] = true
 
-            // BaseTableView.model is initialized to rowFilter (see below) but then BaseTableView
-            // might or might not wrap it in a different proxy model, e.g. for layout mirroring.
-            // selection refers to the latter model, so the indexes may need additional mapping.
-            var index = selection.model == rowFilter ? i : selection.model.mapToSource(i)
-            index = rowFilter.mapToSource(index)
-
+            var index = treeViewToProcessModelMapper.mapLeftToRight(i)
             var item = {}
 
             item.name = processModel.data(processModel.index(index.row, processModel.nameColumn, index.parent), Process.ProcessDataModel.ValueRole)
@@ -65,6 +60,12 @@ Table.BaseTableView {
     idRole: "Attribute"
 
     onSort: (column, order) => rowFilter.sort(column, order)
+
+    KItemModels.KModelIndexProxyMapper {
+        id: treeViewToProcessModelMapper
+        leftModel: selection.model // usually rowFilter, but perhaps another proxy around it
+        rightModel: processModel
+    }
 
     model: Table.ProcessSortFilterModel {
         id: rowFilter
@@ -159,11 +160,7 @@ Table.BaseTableView {
                 id: delegate
                 treeDecorationVisible: !view.flatList
                 iconName: {
-                    var index = treeView.index(model.row, 0);
-                    index = treeView.model == rowFilter ? index : treeView.model.mapToSource(index);
-                    index = rowFilter.mapToSource(index)
-                    index = cacheModel.mapToSource(index);
-                    index = displayModel.mapToSource(index);
+                    var index = treeViewToProcessModelMapper.mapLeftToRight(treeView.index(model.row, 0));
                     index = processModel.index(index.row, processModel.nameColumn, index.parent);
                     return processModel.data(index).split(" ")[0].toLowerCase();
                 }

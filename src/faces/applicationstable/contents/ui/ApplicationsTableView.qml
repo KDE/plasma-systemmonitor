@@ -46,12 +46,7 @@ Table.BaseTableView {
             }
             rows[i.row] = true
 
-            // BaseTableView.model is initialized to sortColumnFilter (see below) but then BaseTableView
-            // might or might not wrap it in a different proxy model, e.g. for layout mirroring.
-            // selection refers to the latter model, so the indexes may need additional mapping.
-            var index = selection.model == sortColumnFilter ? i : selection.model.mapToSource(i)
-            index = sortColumnFilter.mapToSource(index)
-
+            var index = treeViewToAppModelMapper.mapLeftToRight(i)
             var item = applicationInformation.createObject()
             item.index = index
             result.push(item)
@@ -84,6 +79,12 @@ Table.BaseTableView {
     onSort: (column, order) => {
         sortColumnFilter.sortColumn = column
         sortColumnFilter.sortOrder = order
+    }
+
+    KItemModels.KModelIndexProxyMapper {
+        id: treeViewToAppModelMapper
+        leftModel: selection.model // usually sortColumnFilter, but perhaps another proxy around it
+        rightModel: appModel
     }
 
     model: KItemModels.KSortFilterProxyModel {
@@ -232,7 +233,7 @@ Table.BaseTableView {
             column: view.LayoutMirroring.enabled ? view.model.columnCount() - 1 : 0
             Table.FirstCellDelegate {
                 iconName: {
-                    var index = sortColumnFilter.mapToSource(sortColumnFilter.index(model.row, 0));
+                    var index = treeViewToAppModelMapper.mapLeftToRight(treeView.index(model.row, 0));
                     index = appModel.index(index.row, appModel.iconColumn)
                     return appModel.data(index)
                 }
