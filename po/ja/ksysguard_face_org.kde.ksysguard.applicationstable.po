@@ -1,13 +1,14 @@
-# SPDX-FileCopyrightText: 2024 Ryuichi Yamada <ryuichi_ya220@outlook.jp>
 # Tomohiro Hyakutake <tomhioo@outlook.jp>, 2021.
+# SPDX-FileCopyrightText: 2024 Ryuichi Yamada <ryuichi_ya220@outlook.jp>
 # SPDX-FileCopyrightText: 2025 Yuma Kakei <yumasansansan@gmail.com>
+# SPDX-FileCopyrightText: 2026 Mint <5602mint@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2025-09-21 16:19+0900\n"
-"Last-Translator: Yuma Kakei <yumasansansan@gmail.com>\n"
+"PO-Revision-Date: 2026-07-25 22:24+0900\n"
+"Last-Translator: Mint <5602mint@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 26.04.3\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:51
 #, kde-format
@@ -115,12 +116,10 @@ msgid "Set priority…"
 msgstr "優先度を設定…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set priority…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr "優先度を設定…"
+msgstr "コアの割り当てを設定…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
 #, kde-format
@@ -240,7 +239,3 @@ msgctxt "@item:intable"
 msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 個のプロセス"
-
-#~ msgctxt "@title:group"
-#~ msgid "Processes: %1"
-#~ msgstr "プロセス数: %1"
