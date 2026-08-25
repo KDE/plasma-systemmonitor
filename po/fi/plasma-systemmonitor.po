@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025, 2026 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2025-05-25 10:19+0300\n"
+"PO-Revision-Date: 2026-02-25 18:54+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -785,20 +785,16 @@ msgid "Configure Columns"
 msgstr "Sarakkeiden asetukset"
 
 #: src/table/ColumnConfigurationDialog.qml:126
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr "Lisää sarake"
+msgstr "Käyttöön otetut sarakkeet"
 
 #: src/table/ColumnConfigurationDialog.qml:126
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Add Column"
+#, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr "Lisää sarake"
+msgstr "Käytöstä poistetut sarakkeet"
 
 #: src/table/ColumnConfigurationDialog.qml:260
 #, kde-format
@@ -834,7 +830,7 @@ msgstr "Viivakaavio (skaalattu 100 %)"
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "Ei hakua vastaavia sarakkeita"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -846,19 +842,19 @@ msgstr "Älä kysy enää"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "Aseta etusija"
 
 #: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "Suoritinajastin"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Tavallinen"
 
 #: src/table/ReniceDialog.qml:84
 #, kde-format
@@ -866,13 +862,13 @@ msgctxt "@info:tooltip from ContextualHelpButton"
 msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
-msgstr ""
+msgstr "Tavanomainen ajanjakoajastin erityisvaatimuksettomille prosesseille."
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Batch"
-msgstr ""
+msgstr "Eräajo"
 
 #: src/table/ReniceDialog.qml:90
 #, kde-format
@@ -881,54 +877,58 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"Prosessia heikosti hyljeksitään ajastuspäätöksissä suoritinintensiivisten "
+"vuorovaikutteisten prosessien hyväksi."
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "Round robin"
 
 #: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
 msgstr ""
+"Prosessi suoritetaan milloin vain se on suoritettavissa, aikaviipaleina."
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "FIFO"
 
 #: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
 msgstr ""
+"Prosessi suoritetaan milloin vain se on suoritettavissa, aikaviipaleitta."
 
 #: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "I/O-ajastin"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Normal"
-msgstr ""
+msgstr "Tavallinen"
 
 #: src/table/ReniceDialog.qml:147
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "Prosessien etusija perustuu suoritinetusijaan."
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Idle"
-msgstr ""
+msgstr "Joutilas"
 
 #: src/table/ReniceDialog.qml:153
 #, kde-format
@@ -937,24 +937,26 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"Prosessi käyttää kiintolevyä vain, ellei toinen prosessi ole äskettäin sitä "
+"käyttänyt."
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Best Effort"
-msgstr ""
+msgstr "Paras yritys"
 
 #: src/table/ReniceDialog.qml:159
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
-msgstr ""
+msgstr "Prosessi saa suuremman etusijan kiintolevyn käyttöön kuin tavallista."
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
 msgctxt "@option:radio for I/O scheduler mode"
 msgid "Real Time"
-msgstr ""
+msgstr "Tosiaikainen"
 
 #: src/table/ReniceDialog.qml:165
 #, kde-format
@@ -963,30 +965,32 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"Prosessi saa välittömän pääsyn kiintolevylle milloin sitä vaatii, "
+"riippumatta siitä, mitä muuta tapahtuu."
 
 #: src/table/ReniceDialog.qml:211
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Vähäinen etusija"
 
 #: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr ""
+msgstr "Suuri etusija"
 
 #: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr ""
+msgstr "Vähäinen etusija"
 
 #: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr ""
+msgstr "Suuri etusija"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
