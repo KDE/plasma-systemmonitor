@@ -40,7 +40,7 @@ msgstr "默认显示："
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
-msgstr "自有进程"
+msgstr "我的进程"
 
 #: src/faces/processtable/contents/ui/Config.qml:45
 #, kde-format
@@ -94,7 +94,7 @@ msgstr "显示： %1"
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
-msgstr "自有进程"
+msgstr "我的进程"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:97
 #, kde-format
