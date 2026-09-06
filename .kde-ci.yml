@@ -19,7 +19,7 @@ Dependencies:
     'frameworks/kservice': 'Frameworks/6.24'
     'frameworks/kwindowsystem': 'Frameworks/6.24'
     'plasma/libksysguard': '@same'
-    'libraries/kirigami-addons': 'v1.11.0'
+    'libraries/kirigami-addons': 'stable/1.11'
 RuntimeDependencies:
  - 'on': ['@all']
    'require':
