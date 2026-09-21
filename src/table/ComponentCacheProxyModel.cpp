@@ -57,8 +57,8 @@ void ComponentCacheProxyModel::setSourceModel(QAbstractItemModel *newSourceModel
     QIdentityProxyModel::setSourceModel(newSourceModel);
 
     if (newSourceModel) {
-        connect(newSourceModel, &QAbstractItemModel::rowsRemoved, this, &ComponentCacheProxyModel::onRowsRemoved);
-        connect(newSourceModel, &QAbstractItemModel::columnsRemoved, this, &ComponentCacheProxyModel::onColumnsRemoved);
+        connect(newSourceModel, &QAbstractItemModel::rowsAboutToBeRemoved, this, &ComponentCacheProxyModel::onRowsAboutToBeRemoved);
+        connect(newSourceModel, &QAbstractItemModel::columnsAboutToBeRemoved, this, &ComponentCacheProxyModel::onColumnsAboutToBeRemoved);
         connect(newSourceModel, &QAbstractItemModel::modelReset, this, &ComponentCacheProxyModel::clear);
     }
 }
@@ -85,20 +85,20 @@ void ComponentCacheProxyModel::clear()
     m_instances.clear();
 }
 
-void ComponentCacheProxyModel::onRowsRemoved(const QModelIndex &parent, int start, int end)
+void ComponentCacheProxyModel::onRowsAboutToBeRemoved(const QModelIndex &parent, int start, int end)
 {
-    for (int row = start; row < end; ++row) {
+    for (int row = start; row <= end; ++row) {
         for (int column = 0; column < columnCount(); ++column) {
-            m_instances.remove(index(row, column, parent));
+            delete m_instances.take(index(row, column, mapFromSource((parent))));
         }
     }
 }
 
-void ComponentCacheProxyModel::onColumnsRemoved(const QModelIndex &parent, int start, int end)
+void ComponentCacheProxyModel::onColumnsAboutToBeRemoved(const QModelIndex &parent, int start, int end)
 {
-    for (int column = start; column < end; ++column) {
+    for (int column = start; column <= end; ++column) {
         for (int row = 0; row < rowCount(); ++row) {
-            m_instances.remove(index(row, column, parent));
+            delete m_instances.take(index(row, column, mapFromSource(parent)));
         }
     }
 }
@@ -124,7 +124,6 @@ void ComponentCacheProxyModel::createPendingInstance()
         attached->m_row = index.row();
         attached->m_column = index.column();
         m_component->completeCreate();
-
         m_instances.insert(index, instance);
         Q_EMIT dataChanged(index, index, {CachedComponentRole});
     }
