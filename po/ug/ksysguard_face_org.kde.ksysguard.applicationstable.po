@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-25 00:47+0000\n"
-"PO-Revision-Date: 2026-06-01 18:13-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -28,7 +28,7 @@ msgstr "تەپسىلاتى"
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU"
-msgstr "CPU"
+msgstr ""
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:122
 #, kde-format
@@ -106,19 +106,21 @@ msgstr ""
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
-msgstr ""
+msgstr "رەت سەپلە…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
-msgstr ""
+msgstr "ئالدىنلىق تەڭشە…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action:inmenu"
+#| msgid "Set priority…"
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr ""
+msgstr "ئالدىنلىق تەڭشە…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
 #, kde-format
@@ -130,49 +132,49 @@ msgstr "سىگنال ئەۋەت"
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
-msgstr ""
+msgstr "توڭلات(STOP)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
-msgstr ""
+msgstr "داۋاملاشتۇر (CONT)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:231
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
-msgstr ""
+msgstr "ئېسىپ قوي (HUP)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:235
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
-msgstr ""
+msgstr "ئۈز (INT)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:239
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
-msgstr ""
+msgstr "ئاخىرلاشتۇر(TERM)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:243
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
-msgstr ""
+msgstr "ئۆلتۈر(KILL)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
-msgstr ""
+msgstr "1-ئىشلەتكۈچى‎‏ (USR1)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:251
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
-msgstr ""
+msgstr "2-ئىشلەتكۈچى‎‏ (USR2)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
 #, kde-format

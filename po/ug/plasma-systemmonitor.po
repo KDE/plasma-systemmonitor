@@ -1,22 +1,22 @@
 # Uyghur translation for plasma-systemmonitor.
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# Abduqadir Abliz <sahranbay@gmail.com>, 2026., YEAR.
+# Abduqadir Abliz <sahranbay@gmail.com>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2026-06-01 18:13-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.9\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -40,13 +40,13 @@ msgstr "بەت ئەكىر…"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Export Current Page…"
-msgstr ""
+msgstr "نۆۋەتتىكى بەتنى چىقار…"
 
 #: src/GlobalMenu.qml:38
 #, kde-format
 msgctxt "@menu-action"
 msgid "Get New Pages…"
-msgstr ""
+msgstr "يېڭى بەتكە ئېرىش…"
 
 #: src/GlobalMenu.qml:55
 #, kde-format
@@ -64,13 +64,13 @@ msgstr "كۆرۈنۈش"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Expand Sidebar"
-msgstr ""
+msgstr "يان بالداقنى ياي"
 
 #: src/GlobalMenu.qml:66
 #, kde-format
 msgctxt "@menu-action"
 msgid "Collapse Sidebar"
-msgstr ""
+msgstr "يان بالداقنى يىغ"
 
 #: src/GlobalMenu.qml:73
 #, kde-format
@@ -79,10 +79,12 @@ msgid "Settings"
 msgstr "تەڭشەك"
 
 #: src/GlobalMenu.qml:76
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@menu-action"
+#| msgid "Edit or Remove pages…"
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
-msgstr ""
+msgstr "بەت تەھرىر ياكى چىقىرىۋەت…"
 
 #: src/GlobalMenu.qml:83
 #, kde-format
@@ -94,13 +96,13 @@ msgstr "ياردەم"
 #, kde-format
 msgctxt "@menu-action"
 msgid "Report Bug…"
-msgstr ""
+msgstr "كەمتۈك مەلۇم قىل…"
 
 #: src/GlobalMenu.qml:92
 #, kde-format
 msgctxt "@menu-action"
 msgid "About System Monitor"
-msgstr ""
+msgstr "سىستېما كۆزەتكۈچ ھەققىدە"
 
 #: src/main.cpp:61
 #, kde-format
@@ -110,17 +112,17 @@ msgstr "سىستېما كۆزەتكۈچ"
 #: src/main.cpp:63
 #, kde-format
 msgid "An application for monitoring system resources"
-msgstr ""
+msgstr "سىستېما مەنبەسىنى كۆزىتىدىغان پىروگرامما"
 
 #: src/main.cpp:65
 #, kde-format
 msgid "© 2025 Plasma Development Team"
-msgstr ""
+msgstr "© 2025 Plasma ئىجادىيەت قوشۇنى"
 
 #: src/main.cpp:71
 #, kde-format
 msgid "Arjen Hiemstra"
-msgstr "Arjen Hiemstra"
+msgstr ""
 
 #: src/main.cpp:71 src/main.cpp:74 src/main.cpp:76 src/main.cpp:77
 #, kde-format
@@ -135,17 +137,17 @@ msgstr ""
 #: src/main.cpp:72
 #, kde-format
 msgid "Design"
-msgstr ""
+msgstr "لايىھە"
 
 #: src/main.cpp:73
 #, kde-format
 msgid "Nate Graham"
-msgstr "Nate Graham"
+msgstr ""
 
 #: src/main.cpp:73 src/main.cpp:75
 #, kde-format
 msgid "Design and Quality Assurance"
-msgstr ""
+msgstr "لايىھە ۋە سۈپەت كاپالىتى"
 
 #: src/main.cpp:74
 #, kde-format
@@ -160,12 +162,12 @@ msgstr ""
 #: src/main.cpp:76
 #, kde-format
 msgid "Marco Martin"
-msgstr "Marco Martin"
+msgstr ""
 
 #: src/main.cpp:77
 #, kde-format
 msgid "David Edmundson"
-msgstr "David Edmundson"
+msgstr ""
 
 #: src/main.cpp:79
 #, kde-format
@@ -192,16 +194,18 @@ msgid "Add New Page…"
 msgstr "يېڭى بەت قوش…"
 
 #: src/Main.qml:100
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Edit or Remove pages…"
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
-msgstr ""
+msgstr "بەت تەھرىر ياكى چىقىرىۋەت…"
 
 #: src/Main.qml:106
 #, kde-format
 msgctxt "@action"
 msgid "Export Current Page…"
-msgstr ""
+msgstr "نۆۋەتتىكى بەتنى چىقار…"
 
 #: src/Main.qml:114
 #, kde-format
@@ -213,31 +217,31 @@ msgstr "بەت ئەكىر…"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Get New Pages…"
-msgstr ""
+msgstr "يېڭى بەتكە ئېرىش…"
 
 #: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Expand Sidebar"
-msgstr ""
+msgstr "يان بالداقنى ياي"
 
 #: src/Main.qml:137
 #, kde-format
 msgctxt "@action"
 msgid "Collapse Sidebar"
-msgstr ""
+msgstr "يان بالداقنى يىغ"
 
 #: src/Main.qml:147
 #, kde-format
 msgctxt "@action"
 msgid "Report Bug…"
-msgstr ""
+msgstr "كەمتۈك مەلۇم قىل…"
 
 #: src/Main.qml:153
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
-msgstr ""
+msgstr "سىستېما كۆزەتكۈچ ھەققىدە"
 
 #: src/Main.qml:160
 #, kde-format
@@ -249,13 +253,13 @@ msgstr "KDE ھەققىدە"
 #, kde-format
 msgctxt "@window:title"
 msgid "Add New Page"
-msgstr ""
+msgstr "يېڭى بەت قوش"
 
 #: src/Main.qml:287
 #, kde-format
 msgctxt "@window:title"
 msgid "Edit Pages"
-msgstr ""
+msgstr "بەت تەھرىر"
 
 #: src/Main.qml:310
 #, kde-format
@@ -267,13 +271,13 @@ msgstr "%1 نى چىقار"
 #, kde-format
 msgctxt "Name filter in file dialog"
 msgid "System Monitor page (*.page)"
-msgstr ""
+msgstr "سىستېما كۆزەتكۈچ بېتى (*.page)"
 
 #: src/Main.qml:320
 #, kde-format
 msgctxt "@title:window"
 msgid "Import Page"
-msgstr ""
+msgstr "بەت ئەكىر"
 
 #: src/Main.qml:346
 #, kde-format
@@ -287,13 +291,13 @@ msgstr ""
 #, kde-format
 msgctxt "@action"
 msgid "Add Section"
-msgstr ""
+msgstr "بۆلەك قوش"
 
 #: src/page/ColumnControl.qml:121
 #, kde-format
 msgctxt "@action"
 msgid "Add Separator"
-msgstr ""
+msgstr "ئايرىغۇچ قوش"
 
 #: src/page/ColumnControl.qml:130
 #, kde-format
@@ -305,13 +309,13 @@ msgstr "تەگلىك كۆرسەت"
 #, kde-format
 msgctxt "@action"
 msgid "Remove Background Margins"
-msgstr ""
+msgstr "تەگلىك گىرۋىكىنى چىقىرىۋەت"
 
 #: src/page/EditablePage.qml:122
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
-msgstr ""
+msgstr "بەت تەھرىر"
 
 #: src/page/EditablePage.qml:132
 #, kde-format
@@ -329,25 +333,25 @@ msgstr "ئۆزگەرتىشنى تاشلىۋەت"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr ""
+msgstr "بەت سەپلە…"
 
 #: src/page/EditablePage.qml:162
 #, kde-format
 msgctxt "@action"
 msgid "Add Row"
-msgstr ""
+msgstr "قۇر قوش"
 
 #: src/page/EditablePage.qml:171
 #, kde-format
 msgctxt "@action"
 msgid "Add Title"
-msgstr ""
+msgstr "ماۋزۇ قوش"
 
 #: src/page/EditablePage.qml:184
 #, kde-format
 msgctxt "@title:window %1 is page title"
 msgid "Configure Page \"%1\""
-msgstr ""
+msgstr "«%1» بەتنى سەپلە"
 
 #: src/page/EditablePage.qml:186
 #, kde-format
@@ -383,43 +387,43 @@ msgstr "ياپ"
 #, kde-format
 msgctxt "@action"
 msgid "Load Preset…"
-msgstr ""
+msgstr "ئالدىن تەڭشەكنى يۈكلە…"
 
 #: src/page/FaceConfigurationPage.qml:45
 #, kde-format
 msgctxt "@action"
 msgid "Get New Presets…"
-msgstr ""
+msgstr "يېڭى ئالدىن تەڭشەككە ئېرىش…"
 
 #: src/page/FaceConfigurationPage.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Save Settings as Preset"
-msgstr ""
+msgstr "تەڭشەكنى ئالدىن تەڭشەك سۈپىتىدە ساقلا"
 
 #: src/page/FaceConfigurationPage.qml:60
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
-msgstr ""
+msgstr "تەڭشەكنى %1 ئالدىن تەڭشەك سۈپىتىدە ساقلايدۇ."
 
 #: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:357
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
-msgstr ""
+msgstr "دىياگراممىنى  ئۈستەلئۈستى ئەپچە سۈپىتىدە قوش"
 
 #: src/page/FaceConfigurationPage.qml:77
 #, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
-msgstr ""
+msgstr "يېڭى كۆرسىتىش ئۇسلۇبىغا ئېرىش…"
 
 #: src/page/FaceConfigurationPage.qml:100
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
-msgstr ""
+msgstr "%1 ئالدىن تەڭشەك يۈكلەندى."
 
 #: src/page/FaceConfigurationPage.qml:117
 #, kde-format
@@ -431,19 +435,19 @@ msgstr "ماۋزۇ"
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
-msgstr ""
+msgstr "ماۋزۇ كۆرسەت"
 
 #: src/page/FaceConfigurationPage.qml:141
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
-msgstr ""
+msgstr "كۆرسىتىش ئۇسلۇبى"
 
 #: src/page/FaceConfigurationPage.qml:169
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
-msgstr ""
+msgstr "يېڭىلانما ئارىسىدىكى ئەڭ قىسقا ۋاقىت:"
 
 #: src/page/FaceConfigurationPage.qml:186
 #, kde-format
@@ -465,13 +469,13 @@ msgstr "%1 سېكۇنت"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "No Chart"
-msgstr ""
+msgstr "دىياگرامما يوق"
 
 #: src/page/LoadPresetDialog.qml:23
 #, kde-format
 msgctxt "@title:window"
 msgid "Load Preset"
-msgstr ""
+msgstr "ئالدىن تەڭشەكنى يۈكلە"
 
 #: src/page/LoadPresetDialog.qml:38
 #, kde-format
@@ -483,7 +487,7 @@ msgstr "يۈكلە"
 #, kde-format
 msgctxt "@title"
 msgid "Replace Missing Sensors"
-msgstr ""
+msgstr "كەم سەزگۈچنى ئالماشتۇر"
 
 #: src/page/MoveButton.qml:23
 #, kde-format
@@ -494,13 +498,13 @@ msgstr "يۆتكە"
 #: src/page/PageContents.qml:107 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
-msgstr ""
+msgstr "بۇ بەتتە بەزى سەزگۈچ كەم، توغرا كۆرسەتمەسلىكى مۇمكىن."
 
 #: src/page/PageContents.qml:112 src/page/PageEditor.qml:145
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
-msgstr ""
+msgstr "تۈزەت…"
 
 #: src/page/PageContents.qml:124
 #, kde-format
@@ -521,7 +525,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
-msgstr ""
+msgstr "ئۆزگەرتىشنى ساقلاپ قال"
 
 #: src/page/PageContents.qml:139
 #, kde-format
@@ -551,7 +555,7 @@ msgstr "ئاتى:"
 #, kde-format
 msgctxt "@info:status"
 msgid "Name cannot be empty."
-msgstr ""
+msgstr "ئات بوش قالمايدۇ."
 
 #: src/page/PageDialog.qml:100
 #, kde-format
@@ -563,7 +567,7 @@ msgstr "سىنبەلگە:"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page Margins:"
-msgstr ""
+msgstr "بەت گىرۋىكى:"
 
 #: src/page/PageDialog.qml:118
 #, kde-format
@@ -587,13 +591,13 @@ msgstr "چوڭ"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Use Actions From:"
-msgstr ""
+msgstr "ئىشلىتىدىغان مەشغۇلات مەنبەسى:"
 
 #: src/page/PageDialog.qml:147
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Load this page:"
-msgstr ""
+msgstr "بۇ بەتنى يۈكلە:"
 
 #: src/page/PageDialog.qml:160
 #, kde-format
@@ -605,77 +609,77 @@ msgstr "ئېھتىياجلىق بولغاندا"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"
-msgstr ""
+msgstr "پىروگرامما قوزغىلىۋاتقاندا"
 
 #: src/page/PageEditor.qml:191
 #, kde-format
 msgid "New Title"
-msgstr ""
+msgstr "يېڭى ماۋزۇ"
 
 #: src/page/PageSortDialog.qml:97
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
-msgstr ""
+msgstr "بەت كۆرسەت"
 
 #: src/page/PageSortDialog.qml:98
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr ""
+msgstr "بەت يوشۇر"
 
 #: src/page/PageSortDialog.qml:142
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not reset the page"
-msgstr ""
+msgstr "بەتنى ئەسلىگە قايتۇرما"
 
 #: src/page/PageSortDialog.qml:146
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
-msgstr ""
+msgstr "بەت ئۆزىنىڭ كۆڭۈلدىكى ھالىتىگە ئەسلىگە قايتۇرۇلىدۇ"
 
 #: src/page/PageSortDialog.qml:155
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr ""
+msgstr "بەتنى ئۆزىنىڭ كۆڭۈلدىكى ھالىتىگە ئەسلىگە قايتۇرىدۇ"
 
 #: src/page/PageSortDialog.qml:164
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Do not remove this page"
-msgstr ""
+msgstr "بۇ بەتنى چىقىرىۋەتمە"
 
 #: src/page/PageSortDialog.qml:168
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be removed"
-msgstr ""
+msgstr "بەت چىقىرىۋېتىلىدۇ"
 
 #: src/page/PageSortDialog.qml:177
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Remove this page"
-msgstr ""
+msgstr "بۇ بەتنى چىقىرىۋەت"
 
 #: src/page/PageSortDialog.qml:195
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Start with:"
-msgstr ""
+msgstr "باشلىنىشى:"
 
 #: src/page/PageSortDialog.qml:204
 #, kde-format
 msgid "Last Visited Page"
-msgstr ""
+msgstr "ئاخىرقى زىيارەت قىلىنغان بەت"
 
 #: src/page/RowControl.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Add Column"
-msgstr ""
+msgstr "رەت قوش"
 
 #: src/page/RowControl.qml:136
 #, kde-format
@@ -693,7 +697,7 @@ msgstr "تەڭپۇڭ"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try and use the same height across different rows."
-msgstr ""
+msgstr "پەرقلىق قۇردا ئوخشاش ئېگىزلىك ئىشلىتىشنى سىنايدۇ."
 
 #: src/page/RowControl.qml:149
 #, kde-format
@@ -706,6 +710,7 @@ msgstr "ئەڭ كىچىك"
 msgctxt "@info:tooltop"
 msgid "Use the minimum amount of height needed to display contents correctly."
 msgstr ""
+"مەزمۇننى ئادەتتىكىدەك كۆرسىتىشكە كېرەكلىك ئەڭ پاكار ئېگىزلىكنى ئىشلىتىدۇ."
 
 #: src/page/RowControl.qml:158
 #, kde-format
@@ -717,25 +722,27 @@ msgstr "ئەڭ چوڭ"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Try to use as much height as possible."
-msgstr ""
+msgstr "ئامالنىڭ بارىچە ئەڭ يۇقىرى ئېگىزلىكنى ئىشلىتىشنى سىنايدۇ."
 
 #: src/page/RowControl.qml:167
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Half Page Height"
-msgstr ""
+msgstr "يېرىم بەت ئېگىزلىك"
 
 #: src/page/RowControl.qml:168
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
-msgstr ""
+msgstr "بەتنىڭ يېرىم ئېگىزلىكىنى ئىشلىتىدۇ."
 
 #: src/table/AffinityDialog.qml:23
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Set Priority"
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr ""
+msgstr "ئالدىنلىق تەڭشىكى"
 
 #: src/table/AffinityDialog.qml:54
 #, kde-format
@@ -771,19 +778,19 @@ msgstr ""
 #, kde-format
 msgctxt "@window:title"
 msgid "Configure Columns"
-msgstr ""
+msgstr "رەت سەپلە"
 
 #: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
-msgstr ""
+msgstr "قوزغىتىلغان رەت"
 
 #: src/table/ColumnConfigurationDialog.qml:126
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
-msgstr ""
+msgstr "چەكلەنگەن رەت"
 
 #: src/table/ColumnConfigurationDialog.qml:260
 #, kde-format
@@ -801,25 +808,25 @@ msgstr "تېكىستلا"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
-msgstr ""
+msgstr "سىزىقلىق دىياگرامما"
 
 #: src/table/ColumnConfigurationDialog.qml:269
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
-msgstr ""
+msgstr "تېكىستلا (نىسبىتى 100%)"
 
 #: src/table/ColumnConfigurationDialog.qml:270
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
-msgstr ""
+msgstr "سىزىقلىق دىياگرامما  (نىسبىتى 100%)"
 
 #: src/table/ColumnConfigurationDialog.qml:307
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
-msgstr ""
+msgstr "ئىزدەشكە ھېچقانداق رەت ماس كەلمىدى"
 
 #: src/table/KillDialog.qml:83
 #, kde-format
@@ -831,13 +838,13 @@ msgstr "قايتا سورىما"
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Priority"
-msgstr ""
+msgstr "ئالدىنلىق تەڭشىكى"
 
 #: src/table/ReniceDialog.qml:57
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU Scheduler"
-msgstr ""
+msgstr "CPU كۈنتەرتىپلىگۈچ"
 
 #: src/table/ReniceDialog.qml:83
 #, kde-format
@@ -852,6 +859,7 @@ msgid ""
 "The standard time-sharing scheduler for processes without special "
 "requirements."
 msgstr ""
+"ئالاھىدە تەلەپ بولمىغان جەرياننىڭ ئۆلچەملىك ۋاقىت ھەمبەھىر كۈنتەرتىپلىگۈچىسى."
 
 #: src/table/ReniceDialog.qml:89
 #, kde-format
@@ -866,36 +874,40 @@ msgid ""
 "Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
 "interactive processes."
 msgstr ""
+"CPU كۆپ ئىشلىتىلىدىغان تەسىرلىشىشچان جەريانغا نىسبەتەن، كۈنتەرتىپ قارارىدا "
+"شۇ جەرياننىڭ ئالدىنلىقى تۆۋەنرەك."
 
 #: src/table/ReniceDialog.qml:95
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "Round robin"
-msgstr ""
+msgstr "نۆۋەتلىشىپ سوراش"
 
 #: src/table/ReniceDialog.qml:96
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with timeslicing."
 msgstr ""
+"جەريان شەرتكە ئۇيغۇن بولغاندا ۋاقىت بۆلىكىنى نۆۋەتلەشتۈرۈپ ئىجرا قىلىنىدۇ."
 
 #: src/table/ReniceDialog.qml:101
 #, kde-format
 msgctxt "@option:radio for process scheduler mode"
 msgid "FIFO"
-msgstr ""
+msgstr "ئاۋۋال كىرگىنى ئاۋۋال چىقىدۇ(FIFO)"
 
 #: src/table/ReniceDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process will run whenever runnable, with no timeslicing."
 msgstr ""
+"جەريان شەرتكە ئۇيغۇن بولغاندا ۋاقىت بۆلىكىنى نۆۋەتلەشتۈرمەي ئىجرا قىلىنىدۇ."
 
 #: src/table/ReniceDialog.qml:120
 #, kde-format
 msgctxt "@title:group"
 msgid "I/O Scheduler"
-msgstr ""
+msgstr "كىرگۈزۈش/چىقىرىش كۈنتەرتىپلىگۈچ"
 
 #: src/table/ReniceDialog.qml:146
 #, kde-format
@@ -907,7 +919,7 @@ msgstr "ئادەتتىكى"
 #, kde-format
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process' priority is based on the CPU priority."
-msgstr ""
+msgstr "جەريان ئالدىنلىقى CPU ئالدىنلىقى ئاساسىدا بولىدۇ."
 
 #: src/table/ReniceDialog.qml:152
 #, kde-format
@@ -922,6 +934,8 @@ msgid ""
 "Process can only use the hard disk when no other process has used it very "
 "recently."
 msgstr ""
+"يېقىندىن بۇيان باشقا جەريان قاتتىق دىسكىنى ئىشلەتمىگەن بولسا ئاندىن جەريان "
+"قاتتىق دىسكىنى ئىشلىتەلەيدۇ."
 
 #: src/table/ReniceDialog.qml:158
 #, kde-format
@@ -934,6 +948,8 @@ msgstr "كۈچنىڭ بارىچە"
 msgctxt "@info:tooltip from ContextualHelpButton"
 msgid "Process is given higher priority to access the hard disk than normal."
 msgstr ""
+"قاتتىق دىسكىنى زىيارەت قىلىشتا جەريانغا ئادەتتىكى ئەھۋالدىن يۇقىرى بولغان "
+"ئالدىنلىق بېرىلدى."
 
 #: src/table/ReniceDialog.qml:164
 #, kde-format
@@ -948,6 +964,8 @@ msgid ""
 "Process gets immediate access to the hard disk whenever needed, regardless "
 "of what else is going on."
 msgstr ""
+"نېمە ئىش يۈز بېرىشىدىن قەتئىينەزەر، جەريان ئېھتىياجلىق بولغاندا قاتتىق "
+"دىسكىنى دەرھال زىيارەت قىلىش ئىجازىتىگە ئېرىشتى."
 
 #: src/table/ReniceDialog.qml:211
 #, kde-format
@@ -977,7 +995,7 @@ msgstr "يۇقىرى مەرتىۋە"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Kill a Window…"
-msgstr ""
+msgstr "كۆزنەكنى ئۆلتۈر…"
 
 #: src/ToolsModel.cpp:115
 #, kde-format
