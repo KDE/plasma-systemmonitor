@@ -75,8 +75,8 @@ public:
     }
 
 private:
-    void onRowsRemoved(const QModelIndex &parent, int start, int end);
-    void onColumnsRemoved(const QModelIndex &parent, int start, int end);
+    void onRowsAboutToBeRemoved(const QModelIndex &parent, int start, int end);
+    void onColumnsAboutToBeRemoved(const QModelIndex &parent, int start, int end);
     void createPendingInstance();
 
     QQmlComponent *m_component = nullptr;
