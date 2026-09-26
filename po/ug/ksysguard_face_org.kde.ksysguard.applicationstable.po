@@ -1,14 +1,14 @@
 # Uyghur translation for ksysguard_face_org.
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-systemmonitor package.
-# Abduqadir Abliz <sahranbay@gmail.com>, 2026., YEAR.
+# Abduqadir Abliz <sahranbay@gmail.com>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-25 00:47+0000\n"
-"PO-Revision-Date: 2026-09-23 06:56+0900\n"
+"PO-Revision-Date: 2026-09-24 20:20-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -28,7 +28,7 @@ msgstr "تەپسىلاتى"
 #, kde-format
 msgctxt "@title:group"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:122
 #, kde-format
@@ -52,13 +52,13 @@ msgstr "دىسكا"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Select an application to see its details"
-msgstr ""
+msgstr "تەپسىلاتىنى كۆرۈشتە پىروگرامما تاللىنىدۇ"
 
 #: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:30
 #, kde-format
 msgctxt "Warning message shown on runtime error"
 msgid "Applications view is unsupported on your system"
-msgstr ""
+msgstr "سىستېما پىروگرامما كۆرۈنۈشىنى قوللىمايدۇ"
 
 #: src/faces/applicationstable/contents/ui/ApplicationsTableView.qml:197
 #, kde-format
@@ -76,13 +76,13 @@ msgstr "قورال بالداق كۆرسەت"
 #, kde-format
 msgctxt "@option:check"
 msgid "Show details panel"
-msgstr ""
+msgstr "تەپسىلات كۆزنەكچىنى كۆرسەت"
 
 #: src/faces/applicationstable/contents/ui/Config.qml:33
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm when quitting applications"
-msgstr ""
+msgstr "پىروگراممىدىن چېكىنگەندە جەزملەيدۇ"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:40
 #, kde-format
@@ -94,13 +94,13 @@ msgstr "ئىزدە"
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
-msgstr ""
+msgstr "پىروگراممىدىن چېكىن"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:59
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
-msgstr ""
+msgstr "تەپسىلىي يان بالداقنى كۆرسەت"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:67
 #, kde-format
@@ -115,18 +115,16 @@ msgid "Set priority…"
 msgstr "ئالدىنلىق تەڭشە…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set priority…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr "ئالدىنلىق تەڭشە…"
+msgstr "يېقىنلىق تەڭشىكى…"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
-msgstr "سىگنال ئەۋەت"
+msgstr "سىگنال يوللا"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:223
 #, kde-format
@@ -181,7 +179,7 @@ msgstr "2-ئىشلەتكۈچى‎‏ (USR2)"
 msgctxt "@action:inmenu"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] ""
+msgstr[0] "%1 پىروگراممىدىن چېكىن"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:269
 #, kde-format
@@ -194,28 +192,28 @@ msgstr "يوشۇر"
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] ""
+msgstr[0] "%1 پىروگراممىدىن مەجبۇرىي چېكىن"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:285
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] ""
+msgstr[0] "%1 پىروگراممىدىن چېكىن"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] ""
+msgstr[0] "پىروگراممىدىن مەجبۇرىي چېكىن"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:288
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
-msgstr[0] ""
+msgstr[0] "پىروگراممىدىن چېكىن"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:291
 #, kde-format
@@ -223,16 +221,18 @@ msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
 "Force quit (SIGKILL) these %1 applications Unsaved work may be lost."
 msgstr[0] ""
+"بۇ %1 پىروگراممىدىن مەجبۇرىي چېكىن(SIGKILL) ەمدۇ؟ ساقلانمىغان خىزمەت "
+"يوقىلىشى مۇمكىن."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
-msgstr[0] ""
+msgstr[0] "بۇ %1 پىروگراممىدىن چېكىنەمدۇ؟ ساقلانمىغان خىزمەت يوقىلىشى مۇمكىن."
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:309
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
 msgid_plural "%1 Processes"
-msgstr[0] ""
+msgstr[0] "%1 جەريان"

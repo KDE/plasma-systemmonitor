@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2026-09-23 06:56+0900\n"
+"PO-Revision-Date: 2026-09-24 20:20-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -79,9 +79,7 @@ msgid "Settings"
 msgstr "تەڭشەك"
 
 #: src/GlobalMenu.qml:76
-#, fuzzy, kde-format
-#| msgctxt "@menu-action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
 msgstr "بەت تەھرىر ياكى چىقىرىۋەت…"
@@ -122,7 +120,7 @@ msgstr "© 2025 Plasma ئىجادىيەت قوشۇنى"
 #: src/main.cpp:71
 #, kde-format
 msgid "Arjen Hiemstra"
-msgstr ""
+msgstr "Arjen Hiemstra"
 
 #: src/main.cpp:71 src/main.cpp:74 src/main.cpp:76 src/main.cpp:77
 #, kde-format
@@ -132,7 +130,7 @@ msgstr "ئىجادىيەت"
 #: src/main.cpp:72
 #, kde-format
 msgid "Uri Herrera"
-msgstr ""
+msgstr "Uri Herrera"
 
 #: src/main.cpp:72
 #, kde-format
@@ -142,7 +140,7 @@ msgstr "لايىھە"
 #: src/main.cpp:73
 #, kde-format
 msgid "Nate Graham"
-msgstr ""
+msgstr "Nate Graham"
 
 #: src/main.cpp:73 src/main.cpp:75
 #, kde-format
@@ -152,22 +150,22 @@ msgstr "لايىھە ۋە سۈپەت كاپالىتى"
 #: src/main.cpp:74
 #, kde-format
 msgid "David Redondo"
-msgstr ""
+msgstr "David Redondo"
 
 #: src/main.cpp:75
 #, kde-format
 msgid "Noah Davis"
-msgstr ""
+msgstr "Noah Davis"
 
 #: src/main.cpp:76
 #, kde-format
 msgid "Marco Martin"
-msgstr ""
+msgstr "Marco Martin"
 
 #: src/main.cpp:77
 #, kde-format
 msgid "David Edmundson"
-msgstr ""
+msgstr "David Edmundson"
 
 #: src/main.cpp:79
 #, kde-format
@@ -194,9 +192,7 @@ msgid "Add New Page…"
 msgstr "يېڭى بەت قوش…"
 
 #: src/Main.qml:100
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
 msgstr "بەت تەھرىر ياكى چىقىرىۋەت…"
@@ -286,6 +282,9 @@ msgid ""
 "acceleration is not available, and visual glitches may appear. Please check "
 "your graphics drivers."
 msgstr ""
+"سىستېما كۆزەتكۈچ يۇمشاق دېتال ھاسىللاشقا قايتتى چۈنكى قاتتىق دېتالنى "
+"تېزلىتىشنى ئىشلەتكىلى بولمىدى، بۇ كۆرۈنۈش سەۋەنلىكى كۆرۈلۈشى مۇمكىن. گىرافىك "
+"قوزغاتقۇنى تەكشۈرۈڭ."
 
 #: src/page/ColumnControl.qml:117
 #, kde-format
@@ -512,6 +511,8 @@ msgid ""
 "A new version of this page was installed, but you made changes to this page. "
 "The changes have been copied to %1 (Old Version)."
 msgstr ""
+"بۇ بەتنىڭ يېڭى نەشرى ئورنىتىلدى ئەمما بۇ بەتنى ئۆزگەرتتىڭىز. بۇ ئۆزگىرىش %1 "
+"(كونا نەشرى) غا كۆچۈرۈلدى."
 
 #: src/page/PageContents.qml:125
 #, kde-format
@@ -520,6 +521,8 @@ msgid ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
+"بۇ بەتنىڭ يېڭى نەشرى ئورنىتىلدى ئەمما بۇ بەتنى ئۆزگەرتتىڭىز. ئۆزگەرتىشىڭىزنى "
+"ساقلاپ قالامسىز ياكى ئۆزگىرىشنى تاشلىۋېتىپ، بەتنىڭ يېڭى نەشرىنى ئىشلىتەمسىز؟"
 
 #: src/page/PageContents.qml:133
 #, kde-format
@@ -644,7 +647,7 @@ msgstr "بەت ئۆزىنىڭ كۆڭۈلدىكى ھالىتىگە ئەسلىگە
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr "بەتنى ئۆزىنىڭ كۆڭۈلدىكى ھالىتىگە ئەسلىگە قايتۇرىدۇ"
+msgstr "بەتنى ئۆزىنىڭ كۆڭۈلدىكى ھالىتىگە ئەسلىگە قايتۇر"
 
 #: src/page/PageSortDialog.qml:164
 #, kde-format
@@ -737,42 +740,40 @@ msgid "Use half the height of the page."
 msgstr "بەتنىڭ يېرىم ئېگىزلىكىنى ئىشلىتىدۇ."
 
 #: src/table/AffinityDialog.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Set Priority"
+#, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr "ئالدىنلىق تەڭشىكى"
+msgstr "يېقىنلىق تەڭشىكى"
 
 #: src/table/AffinityDialog.qml:54
 #, kde-format
 msgctxt "@label"
 msgid "Allow to run on:"
-msgstr ""
+msgstr "ئىجرا قىلىنىشىغا يول قويىدۇ:"
 
 #: src/table/AffinityDialog.qml:73
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
-msgstr ""
+msgstr "CPU %1"
 
 #: src/table/AffinityDialog.qml:109
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "ھەممىنى تاللا"
 
 #: src/table/AffinityDialog.qml:121
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
-msgstr ""
+msgstr "ھەممىنى تازىلا"
 
 #: src/table/AffinityDialog.qml:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
-msgstr ""
+msgstr "ئەكسى رەڭگە ئالماشتۇر"
 
 #: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
@@ -971,25 +972,25 @@ msgstr ""
 #, kde-format
 msgctxt "Lower process priority"
 msgid "Low priority"
-msgstr "تۆۋەن مەرتىۋە"
+msgstr "تۆۋەن ئالدىنلىق"
 
 #: src/table/ReniceDialog.qml:218
 #, kde-format
 msgctxt "Higher process priority"
 msgid "High priority"
-msgstr "يۇقىرى مەرتىۋە"
+msgstr "يۇقىرى ئالدىنلىق"
 
 #: src/table/ReniceDialog.qml:268
 #, kde-format
 msgctxt "Lower I/O priority"
 msgid "Low priority"
-msgstr "تۆۋەن مەرتىۋە"
+msgstr "تۆۋەن ئالدىنلىق"
 
 #: src/table/ReniceDialog.qml:275
 #, kde-format
 msgctxt "Higher I/O priority"
 msgid "High priority"
-msgstr "يۇقىرى مەرتىۋە"
+msgstr "يۇقىرى ئالدىنلىق"
 
 #: src/ToolsModel.cpp:37
 #, kde-format
