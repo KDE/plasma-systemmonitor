@@ -92,9 +92,10 @@ ColumnLayout {
 
         // Note that "availableHeight" here comes from the parent loader and
         // represents the available size of the content area of the page.
+        // round it down as Layout.minimumHeight rounds up fractional values
         let layoutHeight = (halfCount > 0 ? availableHeight / 2 : availableHeight) - missingMessage.height - pageOutdatedMessage.height
         let balancedHeight = (layoutHeight - reservedSpace - root.spacing * (children.length - 1)) / balancedCount
-        return Math.max(balancedHeight, minimumSpace)
+        return Math.floor(Math.max(balancedHeight, minimumSpace))
     }
 
     Kirigami.InlineMessage {
