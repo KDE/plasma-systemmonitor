@@ -169,7 +169,7 @@ Faces.SensorFace {
 
         Item {
             SplitView.minimumWidth: Kirigami.Units.gridUnit * 8
-            SplitView.maximumWidth: root.width * 0.75
+            SplitView.maximumWidth: Math.max(SplitView.minimumWidth, root.width * 0.75)
             SplitView.onPreferredWidthChanged: root.config.detailsWidth = width
 
             implicitWidth: root.config.detailsWidth
