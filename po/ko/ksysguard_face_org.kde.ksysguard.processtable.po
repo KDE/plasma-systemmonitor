@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2026-02-03 22:23+0100\n"
+"PO-Revision-Date: 2026-09-28 23:39+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
@@ -126,12 +126,10 @@ msgid "Set priority…"
 msgstr "우선 순위 설정..."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:248
-#, fuzzy, kde-format
-#| msgctxt "@action:inmenu"
-#| msgid "Set priority…"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr "우선 순위 설정..."
+msgstr "선호도 설정…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format

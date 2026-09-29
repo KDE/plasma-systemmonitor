@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2026-02-03 22:26+0100\n"
+"PO-Revision-Date: 2026-09-28 23:39+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: src/GlobalMenu.qml:16
 #, kde-format
@@ -78,9 +78,7 @@ msgid "Settings"
 msgstr "설정"
 
 #: src/GlobalMenu.qml:76
-#, fuzzy, kde-format
-#| msgctxt "@menu-action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
 msgstr "페이지 편집 및 삭제…"
@@ -193,9 +191,7 @@ msgid "Add New Page…"
 msgstr "새 페이지 추가..."
 
 #: src/Main.qml:100
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
 msgstr "페이지 편집 및 삭제..."
@@ -742,42 +738,40 @@ msgid "Use half the height of the page."
 msgstr "페이지 높이의 절반을 사용합니다."
 
 #: src/table/AffinityDialog.qml:23
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Set Priority"
+#, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr "우선 순위 설정"
+msgstr "선호도 설정"
 
 #: src/table/AffinityDialog.qml:54
 #, kde-format
 msgctxt "@label"
 msgid "Allow to run on:"
-msgstr ""
+msgstr "다음에서 실행 허용:"
 
 #: src/table/AffinityDialog.qml:73
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
-msgstr ""
+msgstr "CPU %1"
 
 #: src/table/AffinityDialog.qml:109
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "모두 선택"
 
 #: src/table/AffinityDialog.qml:121
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
-msgstr ""
+msgstr "모두 지우기"
 
 #: src/table/AffinityDialog.qml:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
-msgstr ""
+msgstr "반전"
 
 #: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
