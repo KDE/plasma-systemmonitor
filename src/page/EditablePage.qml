@@ -70,7 +70,7 @@ Kirigami.ScrollablePage {
         contentLoader.setSource(Qt.resolvedUrl("PageContents.qml"), {"controller": page.controller})
     }
 
-    readonly property real heightForContent: (parent?.height ?? 0) - topPadding - bottomPadding - (globalToolBarItem?.height ?? 0)
+    readonly property real heightForContent: Math.floor((parent?.height ?? 0) - topPadding - bottomPadding - (globalToolBarItem?.height ?? 0))
 
     readonly property var actionsFace: contentLoader.item && contentLoader.item.actionsFace ? contentLoader.item.actionsFace : null
     onActionsFaceChanged: Qt.callLater(updateActions)
