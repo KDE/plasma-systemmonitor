@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:46+0000\n"
+"POT-Creation-Date: 2026-10-01 00:47+0000\n"
 "PO-Revision-Date: 2023-03-30 18:12+0200\n"
 "Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
 "Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
@@ -405,7 +405,7 @@ msgctxt "@info:status %1 is preset name"
 msgid "Saved settings as preset %1."
 msgstr "Uložené nastavenia ako predvoľbu %1."
 
-#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:357
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:358
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
@@ -493,30 +493,30 @@ msgctxt "@action"
 msgid "Move"
 msgstr "Presunúť"
 
-#: src/page/PageContents.qml:107 src/page/PageEditor.qml:141
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:141
 #, kde-format
 msgid "This page is missing some sensors and will not display correctly."
 msgstr "Na tejto stránke chýbajú niektoré senzory a nezobrazí sa korektne."
 
-#: src/page/PageContents.qml:112 src/page/PageEditor.qml:145
+#: src/page/PageContents.qml:113 src/page/PageEditor.qml:145
 #, kde-format
 msgctxt "@action:button"
 msgid "Fix…"
 msgstr "Opraviť..."
 
-#: src/page/PageContents.qml:124
-#, kde-format
-msgid ""
-"A new version of this page was installed, but you made changes to this page. "
-"The changes have been copied to %1 (Old Version)."
-msgstr ""
-"A new version of this page was installed, but you made changes to this page. "
-"The changes have been copied to %1 (Old Version)."
-
 #: src/page/PageContents.qml:125
 #, kde-format
 msgid ""
 "A new version of this page was installed, but you made changes to this page. "
+"The changes have been copied to %1 (Old Version)."
+msgstr ""
+"A new version of this page was installed, but you made changes to this page. "
+"The changes have been copied to %1 (Old Version)."
+
+#: src/page/PageContents.qml:126
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 msgstr ""
@@ -524,13 +524,13 @@ msgstr ""
 "Would you like to keep your changes or discard your changes and use the new "
 "version of the page?"
 
-#: src/page/PageContents.qml:133
+#: src/page/PageContents.qml:134
 #, kde-format
 msgctxt "@action:button"
 msgid "Keep Changes"
 msgstr "Uložiť zmeny"
 
-#: src/page/PageContents.qml:139
+#: src/page/PageContents.qml:140
 #, kde-format
 msgctxt "@action:button"
 msgid "Discard Changes"
