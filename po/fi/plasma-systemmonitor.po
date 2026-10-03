@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-01 00:47+0000\n"
-"PO-Revision-Date: 2026-02-25 18:54+0200\n"
+"PO-Revision-Date: 2026-09-12 19:24+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -78,9 +78,7 @@ msgid "Settings"
 msgstr "Asetukset"
 
 #: src/GlobalMenu.qml:76
-#, fuzzy, kde-format
-#| msgctxt "@menu-action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@menu-action"
 msgid "Edit or Remove Pages…"
 msgstr "Muokkaa tai poista sivuja…"
@@ -193,9 +191,7 @@ msgid "Add New Page…"
 msgstr "Lisää uusi sivu…"
 
 #: src/Main.qml:100
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Edit or Remove pages…"
+#, kde-format
 msgctxt "@action"
 msgid "Edit or Remove Pages…"
 msgstr "Muokkaa tai poista sivuja…"
@@ -746,37 +742,37 @@ msgstr "Käytä puolta sivukorkeudesta."
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr ""
+msgstr "Aseta läheisyys"
 
 #: src/table/AffinityDialog.qml:54
 #, kde-format
 msgctxt "@label"
 msgid "Allow to run on:"
-msgstr ""
+msgstr "Salli suoritus:"
 
 #: src/table/AffinityDialog.qml:73
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
-msgstr ""
+msgstr "Suoritin %1"
 
 #: src/table/AffinityDialog.qml:109
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "Valitse kaikki"
 
 #: src/table/AffinityDialog.qml:121
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
-msgstr ""
+msgstr "Tyhjennä kaikki"
 
 #: src/table/AffinityDialog.qml:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
-msgstr ""
+msgstr "Käännä"
 
 #: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
