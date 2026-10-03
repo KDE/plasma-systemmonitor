@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2026-02-25 18:50+0200\n"
+"PO-Revision-Date: 2026-08-30 22:44+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -129,7 +129,7 @@ msgstr "Aseta etusija…"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr ""
+msgstr "Aseta läheisyys…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format
