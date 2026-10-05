@@ -1,243 +1,257 @@
-# Uyghur translation for ksysguard_face_org.
-# Copyright (C) YEAR This file is copyright:
-# This file is distributed under the same license as the plasma-systemmonitor package.
-# Abduqadir Abliz <sahranbay@gmail.com>, 2026.
-#
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-17 00:46+0000\n"
-"PO-Revision-Date: 2026-10-03 19:37-0400\n"
-"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
-"Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
-"Language: ug\n"
+"PO-Revision-Date: 2026-10-04 17:03+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@latin\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.9\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
 msgctxt "@option:check"
 msgid "Show toolbar"
-msgstr "قورال بالداق كۆرسەت"
+msgstr "Prikaži traku alatki"
 
 #: src/faces/processtable/contents/ui/Config.qml:30
 #, kde-format
 msgctxt "@option:check"
 msgid "Confirm ending processes"
-msgstr "تەھرىرلەش جەريانىنى جەزملەيدۇ"
+msgstr "Potvrdi ukidanje procesa"
 
 #: src/faces/processtable/contents/ui/Config.qml:35
 #, kde-format
 msgctxt "@label:listbox"
 msgid "By default show:"
-msgstr "كۆڭۈلدىكى ئەھۋالدا كۆرسەت:"
+msgstr "Podrazumevani prikaz:"
 
 #: src/faces/processtable/contents/ui/Config.qml:44
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Own processes"
-msgstr "ئۆز جەريانى"
+msgstr "moji procesi"
 
 #: src/faces/processtable/contents/ui/Config.qml:45
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "User processes"
-msgstr "ئىشلەتكۈچى جەريانى"
+msgstr "korisnički procesi"
 
 #: src/faces/processtable/contents/ui/Config.qml:46
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "System processes"
-msgstr "سىستېما جەريانى"
+msgstr "sistemski procesi"
 
 #: src/faces/processtable/contents/ui/Config.qml:47
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "All processes"
-msgstr "ھەممە جەريان"
+msgstr "svi procesi"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:32
 #, kde-format
 msgctxt "@action"
 msgid "Search"
-msgstr "ئىزدە"
+msgstr "Traži"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:44
 #, kde-format
 msgctxt "@action"
 msgid "End Process"
-msgstr "جەرياننى ئاخىرلاشتۇر"
+msgstr "Ukini proces"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:56
 #, kde-format
 msgctxt "@action"
 msgid "Display as List"
-msgstr "تىزىمدەك كۆرسەت"
+msgstr "Prikaži kao spisak"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:73
 #, kde-format
 msgctxt "@action"
 msgid "Display as Tree"
-msgstr "شاختەك كۆرسەت"
+msgstr "Prikaži kao stablo"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:85
 #, kde-format
 msgctxt "@action %1 is view type"
 msgid "Show: %1"
-msgstr "كۆرسەت: %1"
+msgstr "Prikaži: %1"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:88
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "Own Processes"
-msgstr "ئۆز جەريانى"
+msgstr "moji procesi"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:97
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "User Processes"
-msgstr "ئىشلەتكۈچى جەريانى"
+msgstr "korisnički procesi"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:106
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "System Processes"
-msgstr "سىستېما جەريانى"
+msgstr "sistemski procesi"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:115
 #, kde-format
 msgctxt "@item:inmenu"
 msgid "All Processes"
-msgstr "ھەممە جەريان"
+msgstr "svi procesi"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:127
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
-msgstr "رەت سەپلە…"
+msgstr "Podesi kolone…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:242
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
-msgstr "ئالدىنلىق تەڭشە…"
+msgstr "Postavi prioritet…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:248
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
-msgstr "يېقىنلىق تەڭشىكى…"
+msgstr "Postavi afinitet…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:255
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
-msgstr "سىگنال يوللا"
+msgstr "Pošalji signal"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:259
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
-msgstr "توڭلات(STOP)"
+msgstr "Suspenduj (STOP)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:263
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
-msgstr "داۋاملاشتۇر (CONT)"
+msgstr "Nastavi (CONT)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:267
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
-msgstr "ئېسىپ قوي (HUP)"
+msgstr "Spusti (HUP)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:271
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
-msgstr "ئۈز (INT)"
+msgstr "Prekini (INT)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:275
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "Terminate (TERM)"
-msgstr "ئاخىرلاشتۇر(TERM)"
+msgstr "Obustavi (TERM)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:279
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
-msgstr "ئۆلتۈر(KILL)"
+msgstr "Ukini (KILL)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:283
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
-msgstr "1-ئىشلەتكۈچى‎‏ (USR1)"
+msgstr "Korisnički 1 (USR1)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:287
 #, kde-format
 msgctxt "@action:inmenu  Send Signal"
 msgid "User 2 (USR2)"
-msgstr "2-ئىشلەتكۈچى‎‏ (USR2)"
+msgstr "Korisnički 2 (USR2)"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:293
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy Current Column"
-msgstr "نۆۋەتتىكى رەتنى كۆچۈر"
+msgstr "Kopiraj tekuću kolonu"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:302
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "End Process"
 msgid_plural "End %1 Processes"
-msgstr[0] "%1 جەرياننى ئاخىرلاشتۇر"
+msgstr[0] "Ukini %1 proces"
+msgstr[1] "Ukini %1 procesa"
+msgstr[2] "Ukini %1 procesa"
+msgstr[3] "Ukini proces"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:315
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
-msgstr "يوشۇر"
+msgstr "Sakrij"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:320
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Configure Columns…"
-msgstr "رەت سەپلە…"
+msgstr "Podesi kolone…"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:332
 #, kde-format
 msgctxt "@title:window"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End %1 Processes"
-msgstr[0] "%1 جەرياننى مەجبۇرىي ئاخىرلاشتۇر"
+msgstr[0] "Nasilno ukidanje %1 procesa"
+msgstr[1] "Nasilno ukidanje %1 procesa"
+msgstr[2] "Nasilno ukidanje %1 procesa"
+msgstr[3] "Nasilno ukidanje procesa"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:333
 #, kde-format
 msgctxt "@title:window"
 msgid "End Process"
 msgid_plural "End %1 Processes"
-msgstr[0] "%1 جەرياننى ئاخىرلاشتۇر"
+msgstr[0] "Ukidanje %1 procesa"
+msgstr[1] "Ukidanje %1 procesa"
+msgstr[2] "Ukidanje %1 procesa"
+msgstr[3] "Ukidanje procesa"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:335
 #, kde-format
 msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
-msgstr[0] "جەرياننى مەجبۇرىي ئاخىرلاشتۇر"
+msgstr[0] "Nasilno ukini procese"
+msgstr[1] "Nasilno ukini procese"
+msgstr[2] "Nasilno ukini procese"
+msgstr[3] "Nasilno ukini proces"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:336
 #, kde-format
 msgctxt "@action:button"
 msgid "End Process"
 msgid_plural "End Processes"
-msgstr[0] "جەرياننى ئاخىرلاشتۇر"
+msgstr[0] "Ukini procese"
+msgstr[1] "Ukini procese"
+msgstr[2] "Ukini procese"
+msgstr[3] "Ukini proces"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:339
 #, kde-format
@@ -245,17 +259,29 @@ msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
 msgid_plural ""
 "Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
 msgstr[0] ""
-"بۇ %1 پىروگراممىنى مەجبۇرىي ئاخىرلاشتۇر (SIGKILL) امدۇ؟ ساقلانمىغان خىزمەت "
-"يوقىلىشى مۇمكىن."
+"Nasilno ukinuti (SIGKILL) ovaj %1 proces? Nesačuvani podaci mogu biti "
+"izgubljeni."
+msgstr[1] ""
+"Nasilno ukinuti (SIGKILL) ova %1 procesa? Nesačuvani podaci mogu biti "
+"izgubljeni."
+msgstr[2] ""
+"Nasilno ukinuti (SIGKILL) ovih %1 procesa? Nesačuvani podaci mogu biti "
+"izgubljeni."
+msgstr[3] ""
+"Nasilno ukinuti (SIGKILL) ovaj proces? Nesačuvani podaci mogu biti "
+"izgubljeni."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:342
 #, kde-format
 msgid "End this process? Unsaved work may be lost."
 msgid_plural "End these %1 processes? Unsaved work may be lost."
-msgstr[0] "%1 جەرياننى ئاخىرلاشتۇرامدۇ؟ ساقلانمىغان خىزمەت يوقىلىشى مۇمكىن."
+msgstr[0] "Ukinuti ovaj %1 proces? Nesačuvani podaci mogu biti izgubljeni."
+msgstr[1] "Ukinuti ova %1 procesa? Nesačuvani podaci mogu biti izgubljeni."
+msgstr[2] "Ukinuti ovih %1 procesa? Nesačuvani podaci mogu biti izgubljeni."
+msgstr[3] "Ukinuti ovaj proces? Nesačuvani podaci mogu biti izgubljeni."
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:354
 #, kde-format
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
-msgstr "جەريان كىملىكى %1، ئىگىدارى %2"
+msgstr "ID procesa %1, vlasnik %2"
