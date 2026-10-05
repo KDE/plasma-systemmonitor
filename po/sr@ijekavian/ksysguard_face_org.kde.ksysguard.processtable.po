@@ -1,0 +1,286 @@
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-systemmonitor\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-07-17 00:46+0000\n"
+"PO-Revision-Date: 2026-10-04 17:03+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@ijekavian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#: src/faces/processtable/contents/ui/Config.qml:25
+#, kde-format
+msgctxt "@option:check"
+msgid "Show toolbar"
+msgstr "Прикажи траку алатки"
+
+#: src/faces/processtable/contents/ui/Config.qml:30
+#, kde-format
+msgctxt "@option:check"
+msgid "Confirm ending processes"
+msgstr "Потврди укидање процеса"
+
+#: src/faces/processtable/contents/ui/Config.qml:35
+#, kde-format
+msgctxt "@label:listbox"
+msgid "By default show:"
+msgstr "Подразумијевани приказ:"
+
+#: src/faces/processtable/contents/ui/Config.qml:44
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Own processes"
+msgstr "моји процеси"
+
+#: src/faces/processtable/contents/ui/Config.qml:45
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "User processes"
+msgstr "кориснички процеси"
+
+#: src/faces/processtable/contents/ui/Config.qml:46
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "System processes"
+msgstr "системски процеси"
+
+#: src/faces/processtable/contents/ui/Config.qml:47
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "All processes"
+msgstr "сви процеси"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:32
+#, kde-format
+msgctxt "@action"
+msgid "Search"
+msgstr "Тражи"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:44
+#, kde-format
+msgctxt "@action"
+msgid "End Process"
+msgstr "Укини процес"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:56
+#, kde-format
+msgctxt "@action"
+msgid "Display as List"
+msgstr "Прикажи као списак"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:73
+#, kde-format
+msgctxt "@action"
+msgid "Display as Tree"
+msgstr "Прикажи као стабло"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:85
+#, kde-format
+msgctxt "@action %1 is view type"
+msgid "Show: %1"
+msgstr "Прикажи: %1"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:88
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "Own Processes"
+msgstr "моји процеси"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:97
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "User Processes"
+msgstr "кориснички процеси"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:106
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "System Processes"
+msgstr "системски процеси"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:115
+#, kde-format
+msgctxt "@item:inmenu"
+msgid "All Processes"
+msgstr "сви процеси"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:127
+#, kde-format
+msgctxt "@action"
+msgid "Configure Columns…"
+msgstr "Подеси колоне…"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:242
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Set priority…"
+msgstr "Постави приоритет…"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:248
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Set affinity…"
+msgstr "Постави афинитет…"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:255
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Send Signal"
+msgstr "Пошаљи сигнал"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:259
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Suspend (STOP)"
+msgstr "Суспендуј (СТОП)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:263
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Continue (CONT)"
+msgstr "Настави (КОНТ)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:267
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Hangup (HUP)"
+msgstr "Спусти (ХУП)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:271
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Interrupt (INT)"
+msgstr "Прекини (ИНТ)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:275
+#, kde-format
+msgctxt "@action:inmenu  Send Signal"
+msgid "Terminate (TERM)"
+msgstr "Обустави (ТЕРМ)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:279
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "Kill (KILL)"
+msgstr "Укини (КИЛ)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:283
+#, kde-format
+msgctxt "@action:inmenu Send Signal"
+msgid "User 1 (USR1)"
+msgstr "Кориснички 1 (УСР1)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:287
+#, kde-format
+msgctxt "@action:inmenu  Send Signal"
+msgid "User 2 (USR2)"
+msgstr "Кориснички 2 (УСР2)"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:293
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy Current Column"
+msgstr "Копирај текућу колону"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:302
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "Укини %1 процес"
+msgstr[1] "Укини %1 процеса"
+msgstr[2] "Укини %1 процеса"
+msgstr[3] "Укини процес"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:315
+#, kde-format
+msgctxt "@action:inmenu hide column"
+msgid "Hide"
+msgstr "Сакриј"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:320
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Configure Columns…"
+msgstr "Подеси колоне…"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:332
+#, kde-format
+msgctxt "@title:window"
+msgid "Forcibly End Process"
+msgid_plural "Forcibly End %1 Processes"
+msgstr[0] "Насилно укидање %1 процеса"
+msgstr[1] "Насилно укидање %1 процеса"
+msgstr[2] "Насилно укидање %1 процеса"
+msgstr[3] "Насилно укидање процеса"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:333
+#, kde-format
+msgctxt "@title:window"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "Укидање %1 процеса"
+msgstr[1] "Укидање %1 процеса"
+msgstr[2] "Укидање %1 процеса"
+msgstr[3] "Укидање процеса"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:335
+#, kde-format
+msgctxt "@action:button"
+msgid "Forcibly End Process"
+msgid_plural "Forcibly End Processes"
+msgstr[0] "Насилно укини процесе"
+msgstr[1] "Насилно укини процесе"
+msgstr[2] "Насилно укини процесе"
+msgstr[3] "Насилно укини процес"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:336
+#, kde-format
+msgctxt "@action:button"
+msgid "End Process"
+msgid_plural "End Processes"
+msgstr[0] "Укини процесе"
+msgstr[1] "Укини процесе"
+msgstr[2] "Укини процесе"
+msgstr[3] "Укини процес"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:339
+#, kde-format
+msgid "Forcibly end (SIGKILL) this process? Unsaved work may be lost."
+msgid_plural ""
+"Forcibly end (SIGKILL) these %1 processes? Unsaved work may be lost."
+msgstr[0] ""
+"Насилно укинути (СИГКИЛ) овај %1 процес? Несачувани подаци могу бити "
+"изгубљени."
+msgstr[1] ""
+"Насилно укинути (СИГКИЛ) ова %1 процеса? Несачувани подаци могу бити "
+"изгубљени."
+msgstr[2] ""
+"Насилно укинути (СИГКИЛ) ових %1 процеса? Несачувани подаци могу бити "
+"изгубљени."
+msgstr[3] ""
+"Насилно укинути (СИГКИЛ) овај процес? Несачувани подаци могу бити изгубљени."
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:342
+#, kde-format
+msgid "End this process? Unsaved work may be lost."
+msgid_plural "End these %1 processes? Unsaved work may be lost."
+msgstr[0] "Укинути овај %1 процес? Несачувани подаци могу бити изгубљени."
+msgstr[1] "Укинути ова %1 процеса? Несачувани подаци могу бити изгубљени."
+msgstr[2] "Укинути ових %1 процеса? Несачувани подаци могу бити изгубљени."
+msgstr[3] "Укинути овај процес? Несачувани подаци могу бити изгубљени."
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:354
+#, kde-format
+msgctxt "@item:intable %1 is process id, %2 is user name"
+msgid "Process ID %1, owned by %2"
+msgstr "ИД процеса %1, власник %2"
