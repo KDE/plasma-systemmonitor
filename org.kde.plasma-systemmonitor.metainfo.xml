@@ -49,6 +49,10 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="sa">प्लाज्मा सङ्गणकतन्त्रस्य निरीक्षकः</name>
   <name xml:lang="sk">Plasma Monitorovanie systému</name>
   <name xml:lang="sl">Plasma System Monitor</name>
+  <name xml:lang="sr">Плазма надзорник система</name>
+  <name xml:lang="sr-Latn">Plasma nadzornik sistema</name>
+  <name xml:lang="sr-ijekavian">Плазма надзорник система</name>
+  <name xml:lang="sr-ijekavianlatin">Plasma nadzornik sistema</name>
   <name xml:lang="sv">Plasma systemövervakare</name>
   <name xml:lang="ta">பிளாஸ்மா கணினி கண்காணிப்பி</name>
   <name xml:lang="tr">Plasma Sistem Monitörü</name>
@@ -88,6 +92,10 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ru">Приложение для наблюдения за использованием ресурсов системы</summary>
   <summary xml:lang="sk">Monitor app and system resource usage</summary>
   <summary xml:lang="sl">Nadzoruj aplikacijo in rabo sistemskih virov</summary>
+  <summary xml:lang="sr">Надгледање искоришћења ресурса програма и система</summary>
+  <summary xml:lang="sr-Latn">Nadgledanje iskorišćenja resursa programa i sistema</summary>
+  <summary xml:lang="sr-ijekavian">Надгледање искоришћења ресурса програма и система</summary>
+  <summary xml:lang="sr-ijekavianlatin">Nadgledanje iskorišćenja resursa programa i sistema</summary>
   <summary xml:lang="sv">Övervaka program och systemresursanvändning</summary>
   <summary xml:lang="tr">Uygulama ve sistem özkaynağı kullanımını izleyin</summary>
   <summary xml:lang="uk">Спостереження за використанням ресурсів програмами та системою</summary>
@@ -136,6 +144,10 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="sa">प्लाज्मा सङ्गणकतन्त्रस्य निरीक्षकः सङ्गणकतन्त्रसंवेदकस्य, प्रक्रियासूचनायाः अन्येषां सङ्गणकतन्त्रसंसाधनानाम् च निरीक्षणार्थं एकं अन्तरफलकं प्रदाति ।.</p>
     <p xml:lang="sk">Plasma Monitorovanie systému poskytuje rozhranie na monitorovanie systémových senzorov, informácie o procesoch a ďalších systémových prostriedkoch.</p>
     <p xml:lang="sl">Plasma System Monitor nudi vmesnik za nadzor sistemskih senzorjev, obdeluje informacije in druge sistemske vire.</p>
+    <p xml:lang="sr">Плазма надзорник система пружа сучеље за надгледање системских сензора, података о процесима и других системских ресурса.</p>
+    <p xml:lang="sr-Latn">Plasma nadzornik sistema pruža sučelje za nadgledanje sistemskih senzora, podataka o procesima i drugih sistemskih resursa.</p>
+    <p xml:lang="sr-ijekavian">Плазма надзорник система пружа сучеље за надгледање системских сензора, података о процесима и других системских ресурса.</p>
+    <p xml:lang="sr-ijekavianlatin">Plasma nadzornik sistema pruža sučelje za nadgledanje sistemskih senzora, podataka o procesima i drugih sistemskih resursa.</p>
     <p xml:lang="sv">Plasma systemövervakare tillhandahåller ett gränssnitt för att övervaka systemsensorer, processinformation och andra systemresurser.</p>
     <p xml:lang="ta">கணினி உணரிகள், பணி விவரங்கள், மற்றும் கணினியின் வசதிகளை கண்காணிக்க உதவும் இடைமுகப்பை பிளாஸ்மா கணினிக் கண்காணிப்பி வழங்கும்.</p>
     <p xml:lang="tr">Plasma Sistem Monitörü; sistem algılayıcılarını, süreç bilgisini ve diğer sistem özkaynaklarını izlemek için bir arayüz sağlar.</p>
