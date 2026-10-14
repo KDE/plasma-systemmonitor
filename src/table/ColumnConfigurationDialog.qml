@@ -88,8 +88,8 @@ Window {
             Kirigami.SearchField {
                 id: searchField
                 width: parent.width
-                onTextEdited: sortModel.filterString = text
                 focus: true
+                onAccepted: sortModel.filterString = text
             }
         }
 
