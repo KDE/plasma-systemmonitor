@@ -53,6 +53,8 @@ Window {
     flags: Qt.Dialog
     modality: Qt.NonModal
 
+    color: Kirigami.Theme.backgroundColor
+
     function setColumnDisplay(display) {
         columnDisplay = display
         prepare()
