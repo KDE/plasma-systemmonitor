@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-01 00:47+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2024-06-07 12:12+0400\n"
 "Last-Translator: Kheyyam Godjayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -790,7 +790,7 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Sütunları tənzimləmək"
 
-#: src/table/ColumnConfigurationDialog.qml:126
+#: src/table/ColumnConfigurationDialog.qml:128
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Add Column"
@@ -798,7 +798,7 @@ msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
 msgstr "Sütun əlavə edin"
 
-#: src/table/ColumnConfigurationDialog.qml:126
+#: src/table/ColumnConfigurationDialog.qml:128
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Add Column"
@@ -806,37 +806,37 @@ msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
 msgstr "Sütun əlavə edin"
 
-#: src/table/ColumnConfigurationDialog.qml:260
+#: src/table/ColumnConfigurationDialog.qml:262
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Gizli"
 
-#: src/table/ColumnConfigurationDialog.qml:261
+#: src/table/ColumnConfigurationDialog.qml:263
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Yalnız Mətn"
 
-#: src/table/ColumnConfigurationDialog.qml:265
+#: src/table/ColumnConfigurationDialog.qml:267
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Qrafik xətti"
 
-#: src/table/ColumnConfigurationDialog.qml:269
+#: src/table/ColumnConfigurationDialog.qml:271
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Yalnız Mətn (100%-ə miqyaslandı))"
 
-#: src/table/ColumnConfigurationDialog.qml:270
+#: src/table/ColumnConfigurationDialog.qml:272
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Qrafik xətti (100%-ə miqyaslanıb)"
 
-#: src/table/ColumnConfigurationDialog.qml:307
+#: src/table/ColumnConfigurationDialog.qml:309
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"

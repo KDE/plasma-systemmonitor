@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-01 00:47+0000\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
 "PO-Revision-Date: 2026-10-04 17:03+0200\n"
 "Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -780,49 +780,49 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Podešavanje kolona"
 
-#: src/table/ColumnConfigurationDialog.qml:126
+#: src/table/ColumnConfigurationDialog.qml:128
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
 msgstr "Uključene kolone"
 
-#: src/table/ColumnConfigurationDialog.qml:126
+#: src/table/ColumnConfigurationDialog.qml:128
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
 msgstr "Isključene kolone"
 
-#: src/table/ColumnConfigurationDialog.qml:260
+#: src/table/ColumnConfigurationDialog.qml:262
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "skrivena"
 
-#: src/table/ColumnConfigurationDialog.qml:261
+#: src/table/ColumnConfigurationDialog.qml:263
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "samo tekst"
 
-#: src/table/ColumnConfigurationDialog.qml:265
+#: src/table/ColumnConfigurationDialog.qml:267
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "linijski grafik"
 
-#: src/table/ColumnConfigurationDialog.qml:269
+#: src/table/ColumnConfigurationDialog.qml:271
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "samo tekst (svedeno na 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:270
+#: src/table/ColumnConfigurationDialog.qml:272
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "linijski grafik (svedeno na 100%)"
 
-#: src/table/ColumnConfigurationDialog.qml:307
+#: src/table/ColumnConfigurationDialog.qml:309
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
