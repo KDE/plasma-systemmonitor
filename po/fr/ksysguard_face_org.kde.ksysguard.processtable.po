@@ -67,7 +67,7 @@ msgstr "Rechercher"
 #, kde-format
 msgctxt "@action"
 msgid "End Process"
-msgstr "Terminer un processus"
+msgstr "Terminer le processus"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:56
 #, kde-format
@@ -231,7 +231,7 @@ msgctxt "@action:button"
 msgid "Forcibly End Process"
 msgid_plural "Forcibly End Processes"
 msgstr[0] "Forcer la fermeture d'un processus"
-msgstr[1] "Terminer des processus"
+msgstr[1] "Forcer la fermeture des processus"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:336
 #, kde-format

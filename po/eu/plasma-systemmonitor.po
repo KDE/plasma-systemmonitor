@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:46+0000\n"
+"POT-Creation-Date: 2026-10-20 03:15+0000\n"
 "PO-Revision-Date: 2026-08-03 00:04+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -783,49 +783,49 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Konfiguratu zutabeak"
 
-#: src/table/ColumnConfigurationDialog.qml:126
+#: src/table/ColumnConfigurationDialog.qml:128
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
 msgstr "Gaitutako zutabeak"
 
-#: src/table/ColumnConfigurationDialog.qml:126
+#: src/table/ColumnConfigurationDialog.qml:128
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
 msgstr "Ezgaitutako zutabeak"
 
-#: src/table/ColumnConfigurationDialog.qml:260
+#: src/table/ColumnConfigurationDialog.qml:262
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Ezkutuan"
 
-#: src/table/ColumnConfigurationDialog.qml:261
+#: src/table/ColumnConfigurationDialog.qml:263
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Testua soilik"
 
-#: src/table/ColumnConfigurationDialog.qml:265
+#: src/table/ColumnConfigurationDialog.qml:267
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Lerro-diagrama"
 
-#: src/table/ColumnConfigurationDialog.qml:269
+#: src/table/ColumnConfigurationDialog.qml:271
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Testua soilik (% 100era eskalatua)"
 
-#: src/table/ColumnConfigurationDialog.qml:270
+#: src/table/ColumnConfigurationDialog.qml:272
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Lerro-diagrama (% 100era eskalatua)"
 
-#: src/table/ColumnConfigurationDialog.qml:307
+#: src/table/ColumnConfigurationDialog.qml:309
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"

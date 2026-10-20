@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:46+0000\n"
+"POT-Creation-Date: 2026-10-20 03:15+0000\n"
 "PO-Revision-Date: 2026-07-18 10:40+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
@@ -97,7 +97,7 @@ msgstr "Signaler un bogue…"
 #, kde-format
 msgctxt "@menu-action"
 msgid "About System Monitor"
-msgstr "A propos de la surveillance du système"
+msgstr "À propos de la surveillance du système"
 
 #: src/main.cpp:61
 #, kde-format
@@ -142,7 +142,7 @@ msgstr "Nate Graham"
 #: src/main.cpp:73 src/main.cpp:75
 #, kde-format
 msgid "Design and Quality Assurance"
-msgstr "Conception et assurance Qualité"
+msgstr "Conception et assurance qualité"
 
 #: src/main.cpp:74
 #, kde-format
@@ -234,7 +234,7 @@ msgstr "Signaler un bogue…"
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
-msgstr "A propos de la surveillance du système"
+msgstr "À propos de la surveillance du système"
 
 #: src/Main.qml:160
 #, kde-format
@@ -312,7 +312,7 @@ msgstr "Supprimer les marges d'arrière-plan"
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
-msgstr "Modifier une page"
+msgstr "Modifier la page"
 
 #: src/page/EditablePage.qml:132
 #, kde-format
@@ -330,7 +330,7 @@ msgstr "Abandonner les modifications"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "Configurer une page..."
+msgstr "Configurer la page..."
 
 #: src/page/EditablePage.qml:162
 #, kde-format
@@ -408,7 +408,7 @@ msgstr "Paramètres enregistrés comme préréglages %1."
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
-msgstr "Ajouter un graphique comme composant graphique de bureau"
+msgstr "Ajouter ce graphique comme composant graphique de bureau"
 
 #: src/page/FaceConfigurationPage.qml:77
 #, kde-format
@@ -432,19 +432,19 @@ msgstr "Titre"
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
-msgstr "Afficher un titre"
+msgstr "Afficher le titre"
 
 #: src/page/FaceConfigurationPage.qml:141
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
-msgstr "Afficher un style"
+msgstr "Style d'affichage"
 
 #: src/page/FaceConfigurationPage.qml:169
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
-msgstr "Temps minimal entre mises à jour :"
+msgstr "Temps minimal entre les mises à jour :"
 
 #: src/page/FaceConfigurationPage.qml:186
 #, kde-format
@@ -578,19 +578,19 @@ msgstr "Marges de page :"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "None"
-msgstr "Aucun"
+msgstr "Aucune"
 
 #: src/page/PageDialog.qml:119
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Small"
-msgstr "Petit"
+msgstr "Petites"
 
 #: src/page/PageDialog.qml:120
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Large"
-msgstr "Grand"
+msgstr "Grandes"
 
 #: src/page/PageDialog.qml:129
 #, kde-format
@@ -608,13 +608,13 @@ msgstr "Charger cette page :"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
-msgstr "Lors nécessaire"
+msgstr "Lorsque nécessaire"
 
 #: src/page/PageDialog.qml:161
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"
-msgstr "Durant le démarrage des applications"
+msgstr "Au démarrage de l'application"
 
 #: src/page/PageEditor.qml:191
 #, kde-format
@@ -625,13 +625,13 @@ msgstr "Nouveau titre"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
-msgstr "Afficher une page"
+msgstr "Afficher la page"
 
 #: src/page/PageSortDialog.qml:98
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr "Masquer une page"
+msgstr "Masquer la page"
 
 #: src/page/PageSortDialog.qml:142
 #, kde-format
@@ -784,49 +784,49 @@ msgctxt "@window:title"
 msgid "Configure Columns"
 msgstr "Configurer les colonnes"
 
-#: src/table/ColumnConfigurationDialog.qml:126
+#: src/table/ColumnConfigurationDialog.qml:128
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Enabled Columns"
 msgstr "Colonnes activées"
 
-#: src/table/ColumnConfigurationDialog.qml:126
+#: src/table/ColumnConfigurationDialog.qml:128
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Disabled Columns"
 msgstr "Colonnes désactivées"
 
-#: src/table/ColumnConfigurationDialog.qml:260
+#: src/table/ColumnConfigurationDialog.qml:262
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Hidden"
 msgstr "Masqué"
 
-#: src/table/ColumnConfigurationDialog.qml:261
+#: src/table/ColumnConfigurationDialog.qml:263
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only"
 msgstr "Texte uniquement"
 
-#: src/table/ColumnConfigurationDialog.qml:265
+#: src/table/ColumnConfigurationDialog.qml:267
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart"
 msgstr "Graphique en lignes"
 
-#: src/table/ColumnConfigurationDialog.qml:269
+#: src/table/ColumnConfigurationDialog.qml:271
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
 msgstr "Texte uniquement (dimensionné à 100 %)"
 
-#: src/table/ColumnConfigurationDialog.qml:270
+#: src/table/ColumnConfigurationDialog.qml:272
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
 msgstr "Graphique en lignes (dimensionné à 100 %)"
 
-#: src/table/ColumnConfigurationDialog.qml:307
+#: src/table/ColumnConfigurationDialog.qml:309
 #, kde-format
 msgctxt "@info"
 msgid "No columns matched the search"
