@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 16:19+0000\n"
-"PO-Revision-Date: 2026-01-25 20:23+0100\n"
-"Last-Translator: Alexandre Bento <alexandre.bento@nightrain.fr>\n"
+"PO-Revision-Date: 2026-07-18 10:40+0200\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -76,7 +76,9 @@ msgid "Settings"
 msgstr "Configuration"
 
 #: src/GlobalMenu.qml:75
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@menu-action"
+#| msgid "Edit or Remove pages…"
 msgctxt "@menu-action"
 msgid "Edit or Remove pages…"
 msgstr "Modifier ou supprimer des pages..."
@@ -97,7 +99,7 @@ msgstr "Signaler un bogue…"
 #, kde-format
 msgctxt "@menu-action"
 msgid "About System Monitor"
-msgstr "A propos de la surveillance du système"
+msgstr "À propos de la surveillance du système"
 
 #: src/main.cpp:110
 #, kde-format
@@ -110,7 +112,8 @@ msgid "An application for monitoring system resources"
 msgstr "Une application pour surveiller les ressources du système"
 
 #: src/main.cpp:114
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "© 2020 Plasma Development Team"
 msgid "© 2020 Plasma Development Team"
 msgstr "© 2020 L'équipe de développement de Plasma"
 
@@ -142,7 +145,7 @@ msgstr "Nate Graham"
 #: src/main.cpp:122 src/main.cpp:124
 #, kde-format
 msgid "Design and Quality Assurance"
-msgstr "Conception et assurance Qualité"
+msgstr "Conception et assurance qualité"
 
 #: src/main.cpp:123
 #, kde-format
@@ -183,7 +186,9 @@ msgid "Tools"
 msgstr "Outils"
 
 #: src/main.qml:74
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Edit or Remove pages…"
 msgctxt "@action"
 msgid "Edit or Remove pages…"
 msgstr "Modifier ou supprimer des pages..."
@@ -228,7 +233,7 @@ msgstr "Signaler un bogue…"
 #, kde-format
 msgctxt "@action"
 msgid "About System Monitor"
-msgstr "A propos de la surveillance du système"
+msgstr "À propos de la surveillance du système"
 
 #: src/main.qml:141
 #, kde-format
@@ -306,7 +311,7 @@ msgstr "Supprimer les marges d'arrière-plan"
 #, kde-format
 msgctxt "@action"
 msgid "Edit Page"
-msgstr "Modifier une page"
+msgstr "Modifier la page"
 
 #: src/page/EditablePage.qml:133
 #, kde-format
@@ -324,7 +329,7 @@ msgstr "Abandonner les modifications"
 #, kde-format
 msgctxt "@action"
 msgid "Configure Page…"
-msgstr "Configurer une page..."
+msgstr "Configurer la page..."
 
 #: src/page/EditablePage.qml:163
 #, kde-format
@@ -381,7 +386,9 @@ msgid "Load Preset…"
 msgstr "Charger un préréglage..."
 
 #: src/page/FaceConfigurationPage.qml:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Get new presets…"
 msgctxt "@action"
 msgid "Get new presets…"
 msgstr "Obtenir de nouveaux préréglages..."
@@ -402,10 +409,12 @@ msgstr "Paramètres enregistrés comme préréglages %1."
 #, kde-format
 msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
-msgstr "Ajouter un graphique comme composant graphique de bureau"
+msgstr "Ajouter ce graphique comme composant graphique de bureau"
 
 #: src/page/FaceConfigurationPage.qml:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Get new display styles…"
 msgctxt "@action"
 msgid "Get new display styles…"
 msgstr "Obtenir des nouveaux styles d'affichage..."
@@ -426,19 +435,19 @@ msgstr "Titre"
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
-msgstr "Afficher un titre"
+msgstr "Afficher le titre"
 
 #: src/page/FaceConfigurationPage.qml:127
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
-msgstr "Afficher un style"
+msgstr "Style d'affichage"
 
 #: src/page/FaceConfigurationPage.qml:155
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
-msgstr "Temps minimal entre mises à jour :"
+msgstr "Temps minimal entre les mises à jour :"
 
 #: src/page/FaceConfigurationPage.qml:172
 #, kde-format
@@ -546,19 +555,19 @@ msgstr "Marges de page :"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "None"
-msgstr "Aucun"
+msgstr "Aucune"
 
 #: src/page/PageDialog.qml:119
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Small"
-msgstr "Petit"
+msgstr "Petites"
 
 #: src/page/PageDialog.qml:120
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Large"
-msgstr "Grand"
+msgstr "Grandes"
 
 #: src/page/PageDialog.qml:127
 #, kde-format
@@ -576,13 +585,13 @@ msgstr "Charger cette page :"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "When needed"
-msgstr "Lors nécessaire"
+msgstr "Lorsque nécessaire"
 
 #: src/page/PageDialog.qml:159
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "During application startup"
-msgstr "Durant le démarrage des applications"
+msgstr "Au démarrage de l'application"
 
 #: src/page/PageEditor.qml:181
 #, kde-format
@@ -593,13 +602,13 @@ msgstr "Nouveau titre"
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Show Page"
-msgstr "Afficher une page"
+msgstr "Afficher la page"
 
 #: src/page/PageSortDialog.qml:102
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Hide Page"
-msgstr "Masquer une page"
+msgstr "Masquer la page"
 
 #: src/page/PageSortDialog.qml:149
 #, kde-format
