@@ -26,6 +26,8 @@ Faces.SensorFace {
     Layout.minimumWidth: Kirigami.Units.gridUnit * 5
     readonly property var config: controller.faceConfiguration
 
+    onVisibleChanged: columnDialog.close()
+
     actions: [
         Kirigami.Action {
             icon.name: "search"
