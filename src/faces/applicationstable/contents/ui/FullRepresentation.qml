@@ -25,6 +25,8 @@ Faces.SensorFace {
 
     readonly property var config: controller.faceConfiguration
 
+    onVisibleChanged: columnDialog.close()
+
     readonly property bool quitEnabled: {
         for (let info of table.selectedApplications) {
             if (info.menuId == "session.slice" || info.menuId == "background.slice" || info.menuId == "services") {
