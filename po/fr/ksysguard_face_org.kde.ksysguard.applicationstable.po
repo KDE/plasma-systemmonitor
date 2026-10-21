@@ -92,7 +92,7 @@ msgstr "Rechercher"
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
-msgstr "Fermer une application"
+msgstr "Quitter l'application"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:59
 #, kde-format
@@ -177,8 +177,8 @@ msgstr "Utilisateur 2 (USR2)"
 msgctxt "@action:inmenu"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] "Fermer une application"
-msgstr[1] "Fermer %1 applications"
+msgstr[0] "Quitter l'application"
+msgstr[1] "Quitter les %1 applications"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:269
 #, kde-format
@@ -191,32 +191,32 @@ msgstr "Masquer"
 msgctxt "@title:window"
 msgid "Force Quit Application"
 msgid_plural "Force Quit %1 Applications"
-msgstr[0] "Forcer la fermeture d'une application"
-msgstr[1] "Fermer %1 applications"
+msgstr[0] "Forcer la fermeture de l'application"
+msgstr[1] "Fermer les %1 applications"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:285
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
 msgid_plural "Quit %1 Applications"
-msgstr[0] "Fermer une application"
-msgstr[1] "Fermer %1 applications"
+msgstr[0] "Quitter l'application"
+msgstr[1] "Quitter les %1 applications"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
 msgid_plural "Force Quit Applications"
-msgstr[0] "Forcer la fermeture d'une application"
-msgstr[1] "Fermer des applications"
+msgstr[0] "Forcer la fermeture de l'application"
+msgstr[1] "Fermer les applications"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:288
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
 msgid_plural "Quit Applications"
-msgstr[0] "Fermer une application"
-msgstr[1] "Fermer des applications"
+msgstr[0] "Quitter l'application"
+msgstr[1] "Quitter les applications"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:291
 #, kde-format
