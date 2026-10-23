@@ -92,6 +92,7 @@ Table.BaseTableView {
         property int commandColumn
 
         sourceModel: cacheModel
+        dynamicSortFilter: !view.sortFrozen
         filterKeyColumn: appModel.nameColumn
         filterCaseSensitivity: Qt.CaseInsensitive
         filterColumnCallback: function(column, parent) {

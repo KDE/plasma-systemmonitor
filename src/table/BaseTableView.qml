@@ -35,6 +35,11 @@ FocusScope {
     property real defaultColumnWidth: 0.1
     property real minimumColumnWidth: Kirigami.Units.gridUnit * 4
 
+    // Rows keep their position while Ctrl or Shift is held, so one can pick moving items.
+    readonly property bool sortFrozen: selectionModifierKeyHeld && activeFocus
+    property bool selectionModifierKeyHeld: false
+    onActiveFocusChanged: if (!activeFocus) selectionModifierKeyHeld = false
+
     readonly property alias headerHeight: heading.height
 
     readonly property alias selection: tableView.selectionModel
@@ -122,6 +127,17 @@ FocusScope {
             }
 
             activeFocusOnTab: true
+
+            Keys.onPressed: event => {
+                if (event.key == Qt.Key_Control || event.key == Qt.Key_Shift) {
+                    root.selectionModifierKeyHeld = true
+                }
+            }
+            Keys.onReleased: event => {
+                if (event.key == Qt.Key_Control || event.key == Qt.Key_Shift) {
+                    root.selectionModifierKeyHeld = false
+                }
+            }
 
             clip: true
             pixelAligned: true

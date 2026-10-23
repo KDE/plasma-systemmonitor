@@ -69,6 +69,7 @@ Table.BaseTableView {
     model: Table.ProcessSortFilterModel {
         id: rowFilter
         sourceModel: cacheModel
+        dynamicSortFilter: !view.sortFrozen
         hiddenAttributes: processModel.hiddenSensors
     }
 
