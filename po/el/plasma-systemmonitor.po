@@ -1,0 +1,1012 @@
+# Copyright (C) 2026 This file is copyright:
+# This file is distributed under the same license as the plasma-systemmonitor package.
+#
+# SPDX-FileCopyrightText: 2026 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2026 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2026 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2026 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2026 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2026 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2026 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2026 SPDX-FileCopyrightText :
+# SPDX-FileCopyrightText: 2026 Petros Vidalis <pvidalis@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-systemmonitor\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-10-20 00:54+0000\n"
+"PO-Revision-Date: 2026-10-23 13:57+0300\n"
+"Last-Translator: Petros Vidalis <pvidalis@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.12.3\n"
+
+#: src/GlobalMenu.qml:16
+#, kde-format
+msgctxt "@menu"
+msgid "File"
+msgstr "Αρχείο"
+
+#: src/GlobalMenu.qml:19
+#, kde-format
+msgctxt "@menu-action"
+msgid "Add New Page…"
+msgstr "Προσθήκη νέας σελίδας…"
+
+#: src/GlobalMenu.qml:25
+#, kde-format
+msgctxt "@menu-action"
+msgid "Import Page…"
+msgstr "Εισαγωγή σελίδας…"
+
+#: src/GlobalMenu.qml:31
+#, kde-format
+msgctxt "@menu-action"
+msgid "Export Current Page…"
+msgstr "Εξαγωγή Τρέχουσας σελίδας…"
+
+#: src/GlobalMenu.qml:38
+#, kde-format
+msgctxt "@menu-action"
+msgid "Get New Pages…"
+msgstr "Απόκτηση νέων σελίδων..."
+
+#: src/GlobalMenu.qml:55
+#, kde-format
+msgctxt "@menu-action"
+msgid "Quit"
+msgstr "Έξοδος"
+
+#: src/GlobalMenu.qml:63
+#, kde-format
+msgctxt "@menu"
+msgid "View"
+msgstr "Προβολή"
+
+#: src/GlobalMenu.qml:66
+#, kde-format
+msgctxt "@menu-action"
+msgid "Expand Sidebar"
+msgstr "Επέκταση πλευρικής στήλης"
+
+#: src/GlobalMenu.qml:66
+#, kde-format
+msgctxt "@menu-action"
+msgid "Collapse Sidebar"
+msgstr "Σύμπτυξη πλευρικής στήλης"
+
+#: src/GlobalMenu.qml:73
+#, kde-format
+msgctxt "@menu"
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: src/GlobalMenu.qml:76
+#, kde-format
+msgctxt "@menu-action"
+msgid "Edit or Remove Pages…"
+msgstr "Επεξεργασία ή αφαίρεση σελίδων…"
+
+#: src/GlobalMenu.qml:83
+#, kde-format
+msgctxt "@menu"
+msgid "Help"
+msgstr "Βοήθεια"
+
+#: src/GlobalMenu.qml:86
+#, kde-format
+msgctxt "@menu-action"
+msgid "Report Bug…"
+msgstr "Αναφορά Σφάλματος…"
+
+#: src/GlobalMenu.qml:92
+#, kde-format
+msgctxt "@menu-action"
+msgid "About System Monitor"
+msgstr "Σχετικά με τον Επόπτη Συστήματος"
+
+#: src/main.cpp:61
+#, kde-format
+msgid "System Monitor"
+msgstr "Επόπτης Συστήματος"
+
+#: src/main.cpp:63
+#, kde-format
+msgid "An application for monitoring system resources"
+msgstr "Μία εφαρμογή για την επιτήρηση των πόρων συστήματος"
+
+#: src/main.cpp:65
+#, kde-format
+msgid "© 2025 Plasma Development Team"
+msgstr "© 2025 Ομάδα Ανάπτυξης Plasma"
+
+#: src/main.cpp:71
+#, kde-format
+msgid "Arjen Hiemstra"
+msgstr "Arjen Hiemstra"
+
+#: src/main.cpp:71 src/main.cpp:74 src/main.cpp:76 src/main.cpp:77
+#, kde-format
+msgid "Development"
+msgstr "Ανάπτυξη"
+
+#: src/main.cpp:72
+#, kde-format
+msgid "Uri Herrera"
+msgstr "Uri Herrera"
+
+#: src/main.cpp:72
+#, kde-format
+msgid "Design"
+msgstr "Σχεδιασμός"
+
+#: src/main.cpp:73
+#, kde-format
+msgid "Nate Graham"
+msgstr "Nate Graham"
+
+#: src/main.cpp:73 src/main.cpp:75
+#, kde-format
+msgid "Design and Quality Assurance"
+msgstr "Σχεδιασμός και Εξασφάλιση Ποιότητας"
+
+#: src/main.cpp:74
+#, kde-format
+msgid "David Redondo"
+msgstr "David Redondo"
+
+#: src/main.cpp:75
+#, kde-format
+msgid "Noah Davis"
+msgstr "Noah Davis"
+
+#: src/main.cpp:76
+#, kde-format
+msgid "Marco Martin"
+msgstr "Marco Martin"
+
+#: src/main.cpp:77
+#, kde-format
+msgid "David Edmundson"
+msgstr "David Edmundson"
+
+#: src/main.cpp:79
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Λευτέρης Τ."
+
+#: src/main.cpp:79
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tripoleft@protonmail.com"
+
+#: src/Main.qml:88
+#, kde-format
+msgctxt "@action"
+msgid "Tools"
+msgstr "Εργαλεία"
+
+#: src/Main.qml:93
+#, kde-format
+msgctxt "@action"
+msgid "Add New Page…"
+msgstr "Προσθήκη νέας σελίδας…"
+
+#: src/Main.qml:100
+#, kde-format
+msgctxt "@action"
+msgid "Edit or Remove Pages…"
+msgstr "Επεξεργασία ή αφαίρεση σελίδων…"
+
+#: src/Main.qml:106
+#, kde-format
+msgctxt "@action"
+msgid "Export Current Page…"
+msgstr "Εξαγωγή τρέχουσας σελίδας…"
+
+#: src/Main.qml:114
+#, kde-format
+msgctxt "@action"
+msgid "Import Page…"
+msgstr "Εισαγωγή σελίδας…"
+
+#: src/Main.qml:120
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Get New Pages…"
+msgstr "Απόκτηση νέων σελίδων..."
+
+#: src/Main.qml:137
+#, kde-format
+msgctxt "@action"
+msgid "Expand Sidebar"
+msgstr "Επέκταση πλευρικής στήλης"
+
+#: src/Main.qml:137
+#, kde-format
+msgctxt "@action"
+msgid "Collapse Sidebar"
+msgstr "Σύμπτυξη πλευρικής στήλης"
+
+#: src/Main.qml:147
+#, kde-format
+msgctxt "@action"
+msgid "Report Bug…"
+msgstr "Αναφορά Σφάλματος…"
+
+#: src/Main.qml:153
+#, kde-format
+msgctxt "@action"
+msgid "About System Monitor"
+msgstr "Σχετικά με τον Επόπτη Συστήματος"
+
+#: src/Main.qml:160
+#, kde-format
+msgctxt "@action"
+msgid "About KDE"
+msgstr "Σχετικά με το KDE"
+
+#: src/Main.qml:266
+#, kde-format
+msgctxt "@window:title"
+msgid "Add New Page"
+msgstr "Προσθήκη νέας σελίδας"
+
+#: src/Main.qml:287
+#, kde-format
+msgctxt "@window:title"
+msgid "Edit Pages"
+msgstr "Επεξεργασία σελίδων"
+
+#: src/Main.qml:310
+#, kde-format
+msgctxt "@title:window %1 is the name of the page that is being exported"
+msgid "Export %1"
+msgstr "Εξαγωγή %1"
+
+#: src/Main.qml:312 src/Main.qml:322
+#, kde-format
+msgctxt "Name filter in file dialog"
+msgid "System Monitor page (*.page)"
+msgstr "Σελίδα Επόπτη Συστήματος (*.page)"
+
+#: src/Main.qml:320
+#, kde-format
+msgctxt "@title:window"
+msgid "Import Page"
+msgstr "Εισαγωγή σελίδας"
+
+#: src/Main.qml:346
+#, kde-format
+msgid ""
+"System Monitor has fallen back to software rendering because hardware "
+"acceleration is not available, and visual glitches may appear. Please check "
+"your graphics drivers."
+msgstr ""
+"Ο Επόπτης Συστήματος κατέφυγε στην απεικόνιση μέσω λογισμικού γιατί η "
+"επιτάχυνση υλικού δεν είναι διαθέσιμη και μπορεί να εμφανιστούν οπτικά "
+"μικροσφάλματα. Παρακαλούμε ελέγξτε τους οδηγούς γραφικών σας."
+
+#: src/page/ColumnControl.qml:117
+#, kde-format
+msgctxt "@action"
+msgid "Add Section"
+msgstr "Προσθήκη ενότητας"
+
+#: src/page/ColumnControl.qml:121
+#, kde-format
+msgctxt "@action"
+msgid "Add Separator"
+msgstr "Προσθήκη διαχωριστικού"
+
+#: src/page/ColumnControl.qml:130
+#, kde-format
+msgctxt "@action"
+msgid "Show Background"
+msgstr "Εμφάνιση Φόντου"
+
+#: src/page/ColumnControl.qml:137
+#, kde-format
+msgctxt "@action"
+msgid "Remove Background Margins"
+msgstr "Αφαίρεση περιθωριών φόντου"
+
+#: src/page/EditablePage.qml:122
+#, kde-format
+msgctxt "@action"
+msgid "Edit Page"
+msgstr "Επεξεργασία σελίδας"
+
+#: src/page/EditablePage.qml:132
+#, kde-format
+msgctxt "@action"
+msgid "Save Changes"
+msgstr "Αποθήκευση αλλαγών"
+
+#: src/page/EditablePage.qml:142
+#, kde-format
+msgctxt "@action"
+msgid "Discard Changes"
+msgstr "Απόρριψη αλλαγών"
+
+#: src/page/EditablePage.qml:153
+#, kde-format
+msgctxt "@action"
+msgid "Configure Page…"
+msgstr "Διαμόρφωση σελίδας…"
+
+#: src/page/EditablePage.qml:162
+#, kde-format
+msgctxt "@action"
+msgid "Add Row"
+msgstr "Προσθήκη γραμμής"
+
+#: src/page/EditablePage.qml:171
+#, kde-format
+msgctxt "@action"
+msgid "Add Title"
+msgstr "Προσθήκη τίτλου"
+
+#: src/page/EditablePage.qml:184
+#, kde-format
+msgctxt "@title:window %1 is page title"
+msgid "Configure Page \"%1\""
+msgstr "Διαμόρφωση σελίδας \"%1\""
+
+#: src/page/EditablePage.qml:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: src/page/EditorToolBar.qml:36
+#, kde-format
+msgctxt "@action"
+msgid "Add"
+msgstr "Προσθήκη"
+
+#: src/page/EditorToolBar.qml:56
+#, kde-format
+msgctxt "@action"
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#: src/page/FaceConfigurationPage.qml:25
+#, kde-format
+msgctxt "@title:window %1 is face name"
+msgid "Configure %1"
+msgstr "Διαμόρφωση %1"
+
+#: src/page/FaceConfigurationPage.qml:32
+#, kde-format
+msgctxt "@action"
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: src/page/FaceConfigurationPage.qml:39
+#, kde-format
+msgctxt "@action"
+msgid "Load Preset…"
+msgstr "Φόρτωση προρύθμισης"
+
+#: src/page/FaceConfigurationPage.qml:45
+#, kde-format
+msgctxt "@action"
+msgid "Get New Presets…"
+msgstr "Απόκτηση νέων προρυθμίσεων…"
+
+#: src/page/FaceConfigurationPage.qml:56
+#, kde-format
+msgctxt "@action"
+msgid "Save Settings as Preset"
+msgstr "Αποθήκευση ρυθμίσεων ως Προρύθμιση"
+
+#: src/page/FaceConfigurationPage.qml:60
+#, kde-format
+msgctxt "@info:status %1 is preset name"
+msgid "Saved settings as preset %1."
+msgstr "Αποθηκεύτηκαν οι ρυθμίσεις %1 ως προρύθμιση."
+
+#: src/page/FaceConfigurationPage.qml:66 src/page/PageContents.qml:358
+#, kde-format
+msgctxt "@action"
+msgid "Add Chart as Desktop Widget"
+msgstr "Προσθήκη διαγράμματος ως γραφικό στοιχείο επιφάνειας εργασίας"
+
+#: src/page/FaceConfigurationPage.qml:77
+#, kde-format
+msgctxt "@action"
+msgid "Get New Display Styles…"
+msgstr "Απόκτηση νέων στυλ εμφάνισης…"
+
+#: src/page/FaceConfigurationPage.qml:100
+#, kde-format
+msgctxt "@info:status %1 is preset name"
+msgid "Loaded preset %1."
+msgstr "Φορτώθηκε προρύθμιση %1."
+
+#: src/page/FaceConfigurationPage.qml:117
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Title"
+msgstr "Τίτλος"
+
+#: src/page/FaceConfigurationPage.qml:123
+#, kde-format
+msgctxt "@option:check"
+msgid "Show Title"
+msgstr "Εμφάνιση τίτλου"
+
+#: src/page/FaceConfigurationPage.qml:141
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Display Style"
+msgstr "Στυλ εμφάνισης"
+
+#: src/page/FaceConfigurationPage.qml:169
+#, kde-format
+msgctxt "@label"
+msgid "Minimum time between updates:"
+msgstr "Ελάχιστος χρόνων μεταξύ ενημερώσεων:"
+
+#: src/page/FaceConfigurationPage.qml:186
+#, kde-format
+msgid "No Limit"
+msgstr "Χωρίς όριο"
+
+#. i18ndp doesn't handle floats :(
+#: src/page/FaceConfigurationPage.qml:190
+#, kde-format
+msgid "1 second"
+msgstr "1 δευτερόλεπτο"
+
+#: src/page/FaceConfigurationPage.qml:192
+#, kde-format
+msgid "%1 seconds"
+msgstr "%1 δευτερόλεπτα"
+
+#: src/page/FacesModel.cpp:46
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "No Chart"
+msgstr "Χωρίς διάγραμμα"
+
+#: src/page/LoadPresetDialog.qml:23
+#, kde-format
+msgctxt "@title:window"
+msgid "Load Preset"
+msgstr "Φόρτωση προρύθμισης"
+
+#: src/page/LoadPresetDialog.qml:38
+#, kde-format
+msgctxt "@action:button"
+msgid "Load"
+msgstr "Φόρτωση"
+
+#: src/page/MissingSensorsDialog.qml:23
+#, kde-format
+msgctxt "@title"
+msgid "Replace Missing Sensors"
+msgstr "Αντικατάσταση αισθητήρων που λείπουν"
+
+#: src/page/MoveButton.qml:23
+#, kde-format
+msgctxt "@action"
+msgid "Move"
+msgstr "Μετακίνηση"
+
+#: src/page/PageContents.qml:108 src/page/PageEditor.qml:141
+#, kde-format
+msgid "This page is missing some sensors and will not display correctly."
+msgstr ""
+"Απ' αυτή τη σελίδα λείπουν μερικοί αισθητήρες και δεν θα εμφανίζονται σωστά."
+
+#: src/page/PageContents.qml:113 src/page/PageEditor.qml:145
+#, kde-format
+msgctxt "@action:button"
+msgid "Fix…"
+msgstr "Επιδιόρθωση..."
+
+#: src/page/PageContents.qml:125
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"The changes have been copied to %1 (Old Version)."
+msgstr ""
+"Μία νέα έκδοση της σελίδας εγκαταστάθηκε, αλλά κάνατε αλλαγές σ' αυτή τη "
+"σελίδα. Οι αλλαγές έχουν αντιγραφεί σε %1 (Παλιά έκδοση)"
+
+#: src/page/PageContents.qml:126
+#, kde-format
+msgid ""
+"A new version of this page was installed, but you made changes to this page. "
+"Would you like to keep your changes or discard your changes and use the new "
+"version of the page?"
+msgstr ""
+"Μία νέα έκδοση της σελίδας εγκαταστάθηκε, αλλά κάνατε αλλαγές σ' αυτή τη "
+"σελίδα. Θέλετε να τις διατηρήσετε ή να τις απορρίψετε και να χρησιμοποιήσετε "
+"τη νέα έκδοση της σελίδας;"
+
+#: src/page/PageContents.qml:134
+#, kde-format
+msgctxt "@action:button"
+msgid "Keep Changes"
+msgstr "Διατήρηση αλλαγών"
+
+#: src/page/PageContents.qml:140
+#, kde-format
+msgctxt "@action:button"
+msgid "Discard Changes"
+msgstr "Απόρριψη αλλαγών"
+
+#: src/page/PageDialog.qml:21
+#, kde-format
+msgctxt "@action:button"
+msgid "Add"
+msgstr "Προσθήκη"
+
+#: src/page/PageDialog.qml:24
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "New Page"
+msgstr "Νέα σελίδα"
+
+#: src/page/PageDialog.qml:85
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Name:"
+msgstr "Όνομα:"
+
+#: src/page/PageDialog.qml:96
+#, kde-format
+msgctxt "@info:status"
+msgid "Name cannot be empty."
+msgstr "Το όνομα δεν μπορεί να είναι κενό"
+
+#: src/page/PageDialog.qml:100
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Icon:"
+msgstr "Εικονίδιο:"
+
+#: src/page/PageDialog.qml:105
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Page Margins:"
+msgstr "Περιθώρια σελίδας:"
+
+#: src/page/PageDialog.qml:118
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "None"
+msgstr "Κανένα"
+
+#: src/page/PageDialog.qml:119
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Small"
+msgstr "Μικρό"
+
+#: src/page/PageDialog.qml:120
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Large"
+msgstr "Μεγάλο"
+
+#: src/page/PageDialog.qml:129
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Use Actions From:"
+msgstr "Χρήση ενεργειών από:"
+
+#: src/page/PageDialog.qml:147
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Load this page:"
+msgstr "Φόρτωση αυτής της σελίδας:"
+
+#: src/page/PageDialog.qml:160
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "When needed"
+msgstr "Όταν απαιτείται"
+
+#: src/page/PageDialog.qml:161
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "During application startup"
+msgstr "Κατά την εκκίνηση της εφαρμογής"
+
+#: src/page/PageEditor.qml:191
+#, kde-format
+msgid "New Title"
+msgstr "Νέος τίτλος"
+
+#: src/page/PageSortDialog.qml:97
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Show Page"
+msgstr "Εμφάνιση σελίδας"
+
+#: src/page/PageSortDialog.qml:98
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Hide Page"
+msgstr "Απόκρυψη σελίδας"
+
+#: src/page/PageSortDialog.qml:142
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Do not reset the page"
+msgstr "Μη γίνει επαναφορά της σελίδας"
+
+#: src/page/PageSortDialog.qml:146
+#, kde-format
+msgctxt "@item:intable"
+msgid "The page will be reset to its default state"
+msgstr "Η σελίδα θα επανέλθει στην προεπιλεγμένη της κατάσταση"
+
+#: src/page/PageSortDialog.qml:155
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Reset the page to its default state"
+msgstr "Επαναφορά σελίδας στην προεπιλεγμένη της κατάσταση"
+
+#: src/page/PageSortDialog.qml:164
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Do not remove this page"
+msgstr "Να μην αφαιρεθεί αυτή η σελίδα"
+
+#: src/page/PageSortDialog.qml:168
+#, kde-format
+msgctxt "@item:intable"
+msgid "The page will be removed"
+msgstr "Η σελίδα θα αφαιρεθεί"
+
+#: src/page/PageSortDialog.qml:177
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove this page"
+msgstr "Αφαίρεση αυτής της σελίδας"
+
+#: src/page/PageSortDialog.qml:195
+#, kde-format
+msgctxt "@label:listbox"
+msgid "Start with:"
+msgstr "Αρχή με:"
+
+#: src/page/PageSortDialog.qml:204
+#, kde-format
+msgid "Last Visited Page"
+msgstr "Σελίδα όπου έγινε επίσκεψη τελευταία"
+
+#: src/page/RowControl.qml:127
+#, kde-format
+msgctxt "@action"
+msgid "Add Column"
+msgstr "Προσθήκη στήλης"
+
+#: src/page/RowControl.qml:136
+#, kde-format
+msgctxt "@action"
+msgid "Height"
+msgstr "Ύψος"
+
+#: src/page/RowControl.qml:140
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Balanced"
+msgstr "Ισορροπημένη"
+
+#: src/page/RowControl.qml:141
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Try and use the same height across different rows."
+msgstr "Δοκιμάστε να χρησιμοποιήσετε ίδιο ύψος μεταξύ διαφορετικών γραμμών."
+
+#: src/page/RowControl.qml:149
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Minimum"
+msgstr "Ελάχιστο"
+
+#: src/page/RowControl.qml:150
+#, kde-format
+msgctxt "@info:tooltop"
+msgid "Use the minimum amount of height needed to display contents correctly."
+msgstr "Χρήση ελάχιστου απαιτούμενου ύψους για σωστή εμφάνιση περιεχομένου"
+
+#: src/page/RowControl.qml:158
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Maximum"
+msgstr "Μέγιστο"
+
+#: src/page/RowControl.qml:159
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Try to use as much height as possible."
+msgstr "Δοκιμάστε να χρησιμοποιήσετε όσο περισσότερο ύψος γίνεται."
+
+#: src/page/RowControl.qml:167
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Half Page Height"
+msgstr "Ύψος μισής σελίδας"
+
+#: src/page/RowControl.qml:168
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Use half the height of the page."
+msgstr "Χρήση του μισού ύψους της σελίδας."
+
+#: src/table/AffinityDialog.qml:23
+#, kde-format
+msgctxt "@title:window"
+msgid "Set Affinity"
+msgstr "Ορισμός σχετικότητας"
+
+#: src/table/AffinityDialog.qml:54
+#, kde-format
+msgctxt "@label"
+msgid "Allow to run on:"
+msgstr "Να επιτραπεί η εκτέλεση σε:"
+
+#: src/table/AffinityDialog.qml:73
+#, kde-format
+msgctxt "@option:check CPU core number"
+msgid "CPU %1"
+msgstr "CPU %1"
+
+#: src/table/AffinityDialog.qml:109
+#, kde-format
+msgctxt "@action:button"
+msgid "Select All"
+msgstr "Επιλογή όλων"
+
+#: src/table/AffinityDialog.qml:121
+#, kde-format
+msgctxt "@action:button"
+msgid "Clear All"
+msgstr "Καθαρισμός όλων"
+
+#: src/table/AffinityDialog.qml:129
+#, kde-format
+msgctxt "@action:button"
+msgid "Invert"
+msgstr "Αντιστροφή"
+
+#: src/table/ColumnConfigurationDialog.qml:48
+#, kde-format
+msgctxt "@window:title"
+msgid "Configure Columns"
+msgstr "Διαμόρφωση στηλών"
+
+#: src/table/ColumnConfigurationDialog.qml:128
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Enabled Columns"
+msgstr "Ενεργές στήλες"
+
+#: src/table/ColumnConfigurationDialog.qml:128
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Disabled Columns"
+msgstr "Ανενεργές στήλες"
+
+#: src/table/ColumnConfigurationDialog.qml:262
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Hidden"
+msgstr "Κρυφές"
+
+#: src/table/ColumnConfigurationDialog.qml:263
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Text Only"
+msgstr "Μόνο κείμενο"
+
+#: src/table/ColumnConfigurationDialog.qml:267
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Line Chart"
+msgstr "Γραμμικό διάγραμμα"
+
+#: src/table/ColumnConfigurationDialog.qml:271
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Text Only (Scaled to 100%)"
+msgstr "Μόνο κείμενο (κλίμακα στο 100%)"
+
+#: src/table/ColumnConfigurationDialog.qml:272
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Line Chart (Scaled to 100%)"
+msgstr "Γραμμικό διάγραμμα (κλίμακα στο 100%)"
+
+#: src/table/ColumnConfigurationDialog.qml:309
+#, kde-format
+msgctxt "@info"
+msgid "No columns matched the search"
+msgstr "Καμία στήλη δεν ταίριαξε με την αναζήτηση"
+
+#: src/table/KillDialog.qml:83
+#, kde-format
+msgctxt "@option:check"
+msgid "Do not ask again"
+msgstr "Να μην ξαναγίνει η ερώτηση"
+
+#: src/table/ReniceDialog.qml:25
+#, kde-format
+msgctxt "@title:window"
+msgid "Set Priority"
+msgstr "Ορισμός προτεραιότητας"
+
+#: src/table/ReniceDialog.qml:57
+#, kde-format
+msgctxt "@title:group"
+msgid "CPU Scheduler"
+msgstr "Χρονοπρογραμματιστής CPU"
+
+#: src/table/ReniceDialog.qml:83
+#, kde-format
+msgctxt "@option:radio for process scheduler mode"
+msgid "Normal"
+msgstr "Κανονικό"
+
+#: src/table/ReniceDialog.qml:84
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid ""
+"The standard time-sharing scheduler for processes without special "
+"requirements."
+msgstr ""
+"Ο τυπικός χρονοπρογραμματισμός για διεργασίες χωρίς ιδιαίτερες απαιτήσεις."
+
+#: src/table/ReniceDialog.qml:89
+#, kde-format
+msgctxt "@option:radio for process scheduler mode"
+msgid "Batch"
+msgstr "Μαζική"
+
+#: src/table/ReniceDialog.qml:90
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid ""
+"Process is mildly disfavored in scheduling decisions, for CPU-intensive non-"
+"interactive processes."
+msgstr ""
+"Η διεργασία ευνοείται λίγο λιγότερο στις αποφάσεις χρονοπρογραμματισμού, για "
+"απαιτητικές για τη CPU αλλά όχι διαδραστικές διεργασίες."
+
+#: src/table/ReniceDialog.qml:95
+#, kde-format
+msgctxt "@option:radio for process scheduler mode"
+msgid "Round robin"
+msgstr "Εκ περιτροπής"
+
+#: src/table/ReniceDialog.qml:96
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid "Process will run whenever runnable, with timeslicing."
+msgstr ""
+"Οι διεργασίες θα τρέχουν όταν μπορούν να τρέξουν, με διαμοιρασμό χρόνου."
+
+#: src/table/ReniceDialog.qml:101
+#, kde-format
+msgctxt "@option:radio for process scheduler mode"
+msgid "FIFO"
+msgstr "FIFO"
+
+#: src/table/ReniceDialog.qml:102
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid "Process will run whenever runnable, with no timeslicing."
+msgstr "Οι διεργασίες θα τρέχουν όταν μπορούν, χωρίς μοίρασμα χρόνου."
+
+#: src/table/ReniceDialog.qml:120
+#, kde-format
+msgctxt "@title:group"
+msgid "I/O Scheduler"
+msgstr "Χρονοπρογραμματιστής Ε/Ε"
+
+#: src/table/ReniceDialog.qml:146
+#, kde-format
+msgctxt "@option:radio for I/O scheduler mode"
+msgid "Normal"
+msgstr "Κανονικός"
+
+#: src/table/ReniceDialog.qml:147
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid "Process' priority is based on the CPU priority."
+msgstr "Η προτεραιότητα της διεργασίας βασίζεται στην προτεραιότητα της CPU."
+
+#: src/table/ReniceDialog.qml:152
+#, kde-format
+msgctxt "@option:radio for I/O scheduler mode"
+msgid "Idle"
+msgstr "Αδρανής"
+
+#: src/table/ReniceDialog.qml:153
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid ""
+"Process can only use the hard disk when no other process has used it very "
+"recently."
+msgstr ""
+"Η διεργασία μπορεί να χρησιμοποιεί τον σκληρό δίσκο όταν καμία άλλη "
+"διεργασία δεν τον έχει χρησιμοποιήσει πρόσφατα."
+
+#: src/table/ReniceDialog.qml:158
+#, kde-format
+msgctxt "@option:radio for I/O scheduler mode"
+msgid "Best Effort"
+msgstr "Βέλτιστου έργου"
+
+#: src/table/ReniceDialog.qml:159
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid "Process is given higher priority to access the hard disk than normal."
+msgstr ""
+"Η διεργασία παίρνει μεγαλύτερη προτεραιότητα από το σύνηθες για πρόσβαση στο "
+"σκληρό δίσκο."
+
+#: src/table/ReniceDialog.qml:164
+#, kde-format
+msgctxt "@option:radio for I/O scheduler mode"
+msgid "Real Time"
+msgstr "Πραγματικού χρόνου"
+
+#: src/table/ReniceDialog.qml:165
+#, kde-format
+msgctxt "@info:tooltip from ContextualHelpButton"
+msgid ""
+"Process gets immediate access to the hard disk whenever needed, regardless "
+"of what else is going on."
+msgstr ""
+"Η διεργασία έχει άμεση πρόσβαση στον σκληρό δίσκο όταν απαιτείται, "
+"ανεξάρτητα από το τι άλλο συμβαίνει."
+
+#: src/table/ReniceDialog.qml:211
+#, kde-format
+msgctxt "Lower process priority"
+msgid "Low priority"
+msgstr "Χαμηλή προτεραιότητα"
+
+#: src/table/ReniceDialog.qml:218
+#, kde-format
+msgctxt "Higher process priority"
+msgid "High priority"
+msgstr "Υψηλή προτεραιότητα"
+
+#: src/table/ReniceDialog.qml:268
+#, kde-format
+msgctxt "Lower I/O priority"
+msgid "Low priority"
+msgstr "Χαμηλή προτεραιότητα"
+
+#: src/table/ReniceDialog.qml:275
+#, kde-format
+msgctxt "Higher I/O priority"
+msgid "High priority"
+msgstr "Υψηλή προτεραιότητα"
+
+#: src/ToolsModel.cpp:37
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Kill a Window…"
+msgstr ""
+
+#: src/ToolsModel.cpp:115
+#, kde-format
+msgctxt "@action:inmenu %1 is application name"
+msgid "Launch %1"
+msgstr "Εκκίνηση %1"
