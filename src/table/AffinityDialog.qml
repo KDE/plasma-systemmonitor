@@ -19,6 +19,8 @@ Dialog {
     id: dialog
 
     property var affinity: []
+    readonly property int cpuCount: cpuCountSensor.value
+    property string labelText
 
     title: i18ndc("plasma-systemmonitor", "@title:window", "Set Affinity")
     focus: true
@@ -35,106 +37,122 @@ Dialog {
         }
     }
 
-    contentItem: RowLayout {
+    contentItem: ColumnLayout {
         spacing: Kirigami.Units.largeSpacing
 
-        Kirigami.Icon {
-            Layout.preferredWidth: affinitySection.height
-            Layout.preferredHeight: affinitySection.height
-            Layout.alignment: Qt.AlignTop
-            source: "cpu"
+        Label {
+            text: dialog.labelText
+            textFormat: Text.PlainText
+            wrapMode: Text.Wrap
+            maximumLineCount: 3
+            elide: Text.ElideRight
+            Layout.fillWidth: true
+            // so long process/application names don't stretch the dialog
+            Layout.preferredWidth: 0
+
+            ToolTip.visible: truncated && labelHoverHandler.hovered
+            ToolTip.text: dialog.labelText
+
+            HoverHandler {
+                id: labelHoverHandler
+            }
         }
 
-        ColumnLayout {
-            id: affinitySection
-            Layout.fillWidth: true
-            spacing: Kirigami.Units.smallSpacing
+        RowLayout {
+            spacing: Kirigami.Units.largeSpacing
 
-            Label {
-                text: i18ndc("plasma-systemmonitor", "@label", "Allow to run on:")
-                textFormat: Text.PlainText
-                wrapMode: Text.WordWrap
-                Layout.fillWidth: true
+            Kirigami.Icon {
+                // match the height of CPU grid and buttons, don't get too small with few CPUs
+                Layout.preferredWidth: Math.max(affinitySection.height, Kirigami.Units.gridUnit * 6)
+                Layout.preferredHeight: Layout.preferredWidth
+                Layout.alignment: Qt.AlignTop
+                source: "cpu"
             }
 
-            GridLayout {
-                id: cpuGrid
-                columns: Math.ceil(Math.sqrt(cpuCountSensor.value))
-                rowSpacing: Kirigami.Units.smallSpacing
-                columnSpacing: Kirigami.Units.largeSpacing
-
-                Repeater {
-                    model: cpuCountSensor.value
-
-                    CheckBox {
-                        id: cpuCheckbox
-                        required property int index
-
-                        text: i18ndc("plasma-systemmonitor", "@option:check CPU core number", "CPU %1", index + 1)
-
-                        Connections {
-                            target: dialog
-                            function onAffinityChanged() {
-                                cpuCheckbox.checked = dialog.affinity ? dialog.affinity.indexOf(cpuCheckbox.index) !== -1 : false
-                            }
-                        }
-
-                        Component.onCompleted: {
-                            checked = dialog.affinity ? dialog.affinity.indexOf(index) !== -1 : false
-                        }
-
-                        onClicked: {
-                            let newAffinity = dialog.affinity ? dialog.affinity.slice() : []
-                            const currentIndex = newAffinity.indexOf(index)
-
-                            if (checked && currentIndex === -1) {
-                                newAffinity.push(index)
-                                newAffinity.sort((a, b) => a - b)
-                            } else if (!checked && currentIndex !== -1) {
-                                newAffinity.splice(currentIndex, 1)
-                            }
-
-                            dialog.affinity = newAffinity
-                        }
-                    }
-                }
-            }
-
-            RowLayout {
+            ColumnLayout {
+                id: affinitySection
                 Layout.fillWidth: true
                 spacing: Kirigami.Units.smallSpacing
 
-                Button {
-                    Layout.fillWidth: true
-                    text: i18ndc("plasma-systemmonitor", "@action:button", "Select All")
-                    onClicked: {
-                        let allCpus = []
-                        for (let i = 0; i < cpuCountSensor.value; i++) {
-                            allCpus.push(i)
-                        }
-                        dialog.affinity = allCpus
-                    }
-                }
+                GridLayout {
+                    id: cpuGrid
+                    columns: Math.ceil(Math.sqrt(dialog.cpuCount))
+                    rowSpacing: Kirigami.Units.smallSpacing
+                    columnSpacing: Kirigami.Units.largeSpacing
 
-                Button {
-                    Layout.fillWidth: true
-                    text: i18ndc("plasma-systemmonitor", "@action:button", "Clear All")
-                    onClicked: {
-                        dialog.affinity = []
-                    }
-                }
+                    Repeater {
+                        model: dialog.cpuCount
 
-                Button {
-                    Layout.fillWidth: true
-                    text: i18ndc("plasma-systemmonitor", "@action:button", "Invert")
-                    onClicked: {
-                        let inverted = []
-                        for (let i = 0; i < cpuCountSensor.value; i++) {
-                            if (!dialog.affinity.includes(i)) {
-                                inverted.push(i)
+                        CheckBox {
+                            id: cpuCheckbox
+                            required property int index
+
+                            text: i18ndc("plasma-systemmonitor", "@option:check CPU core number", "CPU %1", index + 1)
+
+                            Connections {
+                                target: dialog
+                                function onAffinityChanged() {
+                                    cpuCheckbox.checked = dialog.affinity ? dialog.affinity.indexOf(cpuCheckbox.index) !== -1 : false
+                                }
+                            }
+
+                            Component.onCompleted: {
+                                checked = dialog.affinity ? dialog.affinity.indexOf(index) !== -1 : false
+                            }
+
+                            onClicked: {
+                                let newAffinity = dialog.affinity ? dialog.affinity.slice() : []
+                                const currentIndex = newAffinity.indexOf(index)
+
+                                if (checked && currentIndex === -1) {
+                                    newAffinity.push(index)
+                                    newAffinity.sort((a, b) => a - b)
+                                } else if (!checked && currentIndex !== -1) {
+                                    newAffinity.splice(currentIndex, 1)
+                                }
+
+                                dialog.affinity = newAffinity
                             }
                         }
-                        dialog.affinity = inverted
+                    }
+                }
+
+                RowLayout {
+                    Layout.fillWidth: true
+                    spacing: Kirigami.Units.smallSpacing
+
+                    Button {
+                        Layout.fillWidth: true
+                        text: i18ndc("plasma-systemmonitor", "@action:button", "Select All")
+                        onClicked: {
+                            let allCpus = []
+                            for (let i = 0; i < dialog.cpuCount; i++) {
+                                allCpus.push(i)
+                            }
+                            dialog.affinity = allCpus
+                        }
+                    }
+
+                    Button {
+                        Layout.fillWidth: true
+                        text: i18ndc("plasma-systemmonitor", "@action:button", "Clear All")
+                        onClicked: {
+                            dialog.affinity = []
+                        }
+                    }
+
+                    Button {
+                        Layout.fillWidth: true
+                        text: i18ndc("plasma-systemmonitor", "@action:button", "Invert")
+                        onClicked: {
+                            let inverted = []
+                            for (let i = 0; i < dialog.cpuCount; i++) {
+                                if (!dialog.affinity.includes(i)) {
+                                    inverted.push(i)
+                                }
+                            }
+                            dialog.affinity = inverted
+                        }
                     }
                 }
             }

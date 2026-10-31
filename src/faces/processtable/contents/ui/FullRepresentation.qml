@@ -416,7 +416,11 @@ Faces.SensorFace {
 
         function openSetAffinityDialog() {
             let pids = table.selectedProcesses.map(i => i.pid)
-
+            const selectedCount = table.selectedProcesses.length
+            const process = table.selectedProcesses[0]
+            affinityDialog.labelText = selectedCount === 1
+                ? i18ndc("plasma-systemmonitor", "@label %1 is the process name, %2 is the process id", "Allow “%1” (Process ID %2) to run on:", process.name, process.pid)
+                : i18ndcp("plasma-systemmonitor", "@label", "Allow %1 process to run on:", "Allow %1 processes to run on:", selectedCount)
             affinityDialog.affinity = processHelper.affinity(pids)
             affinityDialog.open()
         }

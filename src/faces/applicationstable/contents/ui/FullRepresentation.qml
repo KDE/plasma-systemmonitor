@@ -385,12 +385,15 @@ Faces.SensorFace {
         }
 
         function openSetAffinityDialog() {
-            if (table.selectedApplications.length === 0) {
+            const selectedCount = table.selectedApplications.length
+            if (selectedCount === 0) {
                 return
             }
 
             let pids = table.selectedApplications.reduce((acc, val) => acc.concat(val.pids), [])
-
+            affinityDialog.labelText = selectedCount === 1
+                ? i18ndc("plasma-systemmonitor", "@label %1 is the application name", "Allow “%1” to run on:", table.selectedApplications[0].name)
+                : i18ndcp("plasma-systemmonitor", "@label", "Allow %1 application to run on:", "Allow %1 applications to run on:", selectedCount)
             affinityDialog.affinity = processHelper.affinity(pids) ?? []
             affinityDialog.open()
         }
