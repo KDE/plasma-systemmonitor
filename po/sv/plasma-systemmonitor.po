@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 00:54+0000\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
 "PO-Revision-Date: 2026-07-17 08:51+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -738,37 +738,31 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "Använd halva sidans höjd.."
 
-#: src/table/AffinityDialog.qml:23
+#: src/table/AffinityDialog.qml:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
 msgstr "Ställ in affinitet"
 
-#: src/table/AffinityDialog.qml:54
-#, kde-format
-msgctxt "@label"
-msgid "Allow to run on:"
-msgstr "Tillåt att köra på:"
-
-#: src/table/AffinityDialog.qml:73
+#: src/table/AffinityDialog.qml:90
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
 msgstr "Processor %1"
 
-#: src/table/AffinityDialog.qml:109
+#: src/table/AffinityDialog.qml:126
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Välj alla"
 
-#: src/table/AffinityDialog.qml:121
+#: src/table/AffinityDialog.qml:138
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
 msgstr "Rensa alla"
 
-#: src/table/AffinityDialog.qml:129
+#: src/table/AffinityDialog.qml:146
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
@@ -998,6 +992,10 @@ msgstr "Terminera ett fönster…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Starta %1"
+
+#~ msgctxt "@label"
+#~ msgid "Allow to run on:"
+#~ msgstr "Tillåt att köra på:"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

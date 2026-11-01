@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard_face_org.kde.ksysguard.applicationstable\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-24 00:52+0000\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
 "PO-Revision-Date: 2026-07-17 11:33+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -248,3 +248,17 @@ msgid "%1 Process"
 msgid_plural "%1 Processes"
 msgstr[0] "%1 proceso"
 msgstr[1] "%1 procesos"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:395
+#, kde-format
+msgctxt "@label %1 is the application name"
+msgid "Allow “%1” to run on:"
+msgstr ""
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:396
+#, kde-format
+msgctxt "@label"
+msgid "Allow %1 application to run on:"
+msgid_plural "Allow %1 applications to run on:"
+msgstr[0] ""
+msgstr[1] ""

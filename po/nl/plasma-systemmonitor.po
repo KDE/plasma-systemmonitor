@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 00:54+0000\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
 "PO-Revision-Date: 2026-07-17 13:55+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -739,37 +739,31 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "De halve hoogte van de pagina gebruiken."
 
-#: src/table/AffinityDialog.qml:23
+#: src/table/AffinityDialog.qml:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
 msgstr "Affiniteit instellen"
 
-#: src/table/AffinityDialog.qml:54
-#, kde-format
-msgctxt "@label"
-msgid "Allow to run on:"
-msgstr "Toestaan te worden uitgevoerd op:"
-
-#: src/table/AffinityDialog.qml:73
+#: src/table/AffinityDialog.qml:90
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
 msgstr "CPU %1"
 
-#: src/table/AffinityDialog.qml:109
+#: src/table/AffinityDialog.qml:126
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Alles selecteren"
 
-#: src/table/AffinityDialog.qml:121
+#: src/table/AffinityDialog.qml:138
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
 msgstr "Alles wissen"
 
-#: src/table/AffinityDialog.qml:129
+#: src/table/AffinityDialog.qml:146
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
@@ -1002,6 +996,10 @@ msgstr "Een venster geforceerd sluiten…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "%1 opstarten"
+
+#~ msgctxt "@label"
+#~ msgid "Allow to run on:"
+#~ msgstr "Toestaan te worden uitgevoerd op:"
 
 #~ msgid "Placeholder"
 #~ msgstr "Plaatshouder"

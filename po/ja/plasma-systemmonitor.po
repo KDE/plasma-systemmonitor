@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 00:54+0000\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
 "PO-Revision-Date: 2026-07-25 22:24+0900\n"
 "Last-Translator: Mint <5602mint@gmail.com>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -741,37 +741,31 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "ページの高さの半分を使用します。"
 
-#: src/table/AffinityDialog.qml:23
+#: src/table/AffinityDialog.qml:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
 msgstr "コアの割り当てを設定"
 
-#: src/table/AffinityDialog.qml:54
-#, kde-format
-msgctxt "@label"
-msgid "Allow to run on:"
-msgstr "実行を許可するコア:"
-
-#: src/table/AffinityDialog.qml:73
+#: src/table/AffinityDialog.qml:90
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
 msgstr "CPU %1"
 
-#: src/table/AffinityDialog.qml:109
+#: src/table/AffinityDialog.qml:126
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "すべて選択"
 
-#: src/table/AffinityDialog.qml:121
+#: src/table/AffinityDialog.qml:138
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
 msgstr "すべて選択解除"
 
-#: src/table/AffinityDialog.qml:129
+#: src/table/AffinityDialog.qml:146
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
@@ -1003,3 +997,7 @@ msgstr "ウィンドウを強制終了…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "%1 を起動"
+
+#~ msgctxt "@label"
+#~ msgid "Allow to run on:"
+#~ msgstr "実行を許可するコア:"

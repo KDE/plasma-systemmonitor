@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 00:54+0000\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
 "PO-Revision-Date: 2026-07-18 10:40+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
@@ -742,37 +742,31 @@ msgctxt "@info:tooltip"
 msgid "Use half the height of the page."
 msgstr "Utilisez la hauteur d'une demi-page"
 
-#: src/table/AffinityDialog.qml:23
+#: src/table/AffinityDialog.qml:25
 #, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
 msgstr "Définir une relation..."
 
-#: src/table/AffinityDialog.qml:54
-#, kde-format
-msgctxt "@label"
-msgid "Allow to run on:"
-msgstr "Autoriser l'exécution sur :"
-
-#: src/table/AffinityDialog.qml:73
+#: src/table/AffinityDialog.qml:90
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
 msgstr "Processeur %1"
 
-#: src/table/AffinityDialog.qml:109
+#: src/table/AffinityDialog.qml:126
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
 msgstr "Tout sélectionner"
 
-#: src/table/AffinityDialog.qml:121
+#: src/table/AffinityDialog.qml:138
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
 msgstr "Tout effacer"
 
-#: src/table/AffinityDialog.qml:129
+#: src/table/AffinityDialog.qml:146
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
@@ -1005,6 +999,10 @@ msgstr "Tuer une fenêtre..."
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Lancer %1"
+
+#~ msgctxt "@label"
+#~ msgid "Allow to run on:"
+#~ msgstr "Autoriser l'exécution sur :"
 
 #~ msgctxt "@action:button"
 #~ msgid "Cancel"

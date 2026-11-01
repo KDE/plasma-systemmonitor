@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:46+0000\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
 "PO-Revision-Date: 2026-06-25 00:12+0100\n"
 "Last-Translator: César A. P. Cláudio <cesarapclaudio@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-doc@kde.org>\n"
@@ -267,6 +267,20 @@ msgstr[1] "Terminar estes %1 processos? O trabalho não gravado será perdido."
 msgctxt "@item:intable %1 is process id, %2 is user name"
 msgid "Process ID %1, owned by %2"
 msgstr "ID do processo %1 com o proprietário %2"
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:422
+#, kde-format
+msgctxt "@label %1 is the process name, %2 is the process id"
+msgid "Allow “%1” (Process ID %2) to run on:"
+msgstr ""
+
+#: src/faces/processtable/contents/ui/FullRepresentation.qml:423
+#, kde-format
+msgctxt "@label"
+msgid "Allow %1 process to run on:"
+msgid_plural "Allow %1 processes to run on:"
+msgstr[0] ""
+msgstr[1] ""
 
 #~ msgctxt "@action"
 #~ msgid "Configure columns…"

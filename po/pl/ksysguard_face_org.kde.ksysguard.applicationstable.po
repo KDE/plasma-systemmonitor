@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-24 00:52+0000\n"
+"POT-Creation-Date: 2026-11-01 00:57+0000\n"
 "PO-Revision-Date: 2026-08-08 12:06+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: pl\n"
@@ -257,6 +257,21 @@ msgid_plural "%1 Processes"
 msgstr[0] "%1 proces"
 msgstr[1] "%1 procesy"
 msgstr[2] "%1 procesów"
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:395
+#, kde-format
+msgctxt "@label %1 is the application name"
+msgid "Allow “%1” to run on:"
+msgstr ""
+
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:396
+#, kde-format
+msgctxt "@label"
+msgid "Allow %1 application to run on:"
+msgid_plural "Allow %1 applications to run on:"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #~ msgctxt "@title:group"
 #~ msgid "Processes: %1"
