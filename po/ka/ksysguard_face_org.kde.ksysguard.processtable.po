@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-01 00:57+0000\n"
-"PO-Revision-Date: 2026-07-17 05:10+0200\n"
+"PO-Revision-Date: 2026-11-01 04:51+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
@@ -271,15 +271,15 @@ msgstr "პროცესის ID %1, მფლობელი %2"
 #, kde-format
 msgctxt "@label %1 is the process name, %2 is the process id"
 msgid "Allow “%1” (Process ID %2) to run on:"
-msgstr ""
+msgstr "\"%1\"-ის (პროცესის ID %2) გაშვების დაშვება პროცესორზე:"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:423
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 process to run on:"
 msgid_plural "Allow %1 processes to run on:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 პროცესის გაშვების დაშვება პროცესორზე:"
+msgstr[1] "%1 პროცესის გაშვების დაშვება პროცესორზე:"
 
 #~ msgctxt "@action"
 #~ msgid "Configure columns…"

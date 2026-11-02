@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-01 00:57+0000\n"
-"PO-Revision-Date: 2026-07-17 09:34+0200\n"
+"PO-Revision-Date: 2026-11-01 06:53+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:51
 #, kde-format
@@ -271,17 +271,17 @@ msgstr[3] "%1 opravila"
 #, kde-format
 msgctxt "@label %1 is the application name"
 msgid "Allow “%1” to run on:"
-msgstr ""
+msgstr "Dovoli, da se \"%1\" izvaja na:"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:396
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 application to run on:"
 msgid_plural "Allow %1 applications to run on:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Dovoli, da se %1 aplikacij izvaja na:"
+msgstr[1] "Dovoli, da se %1 aplikacija izvaja na:"
+msgstr[2] "Dovoli, da se %1 aplikaciji izvajata na:"
+msgstr[3] "Dovoli, da se %1 aplikacije izvajajo na:"
 
 #~ msgctxt "@title:group"
 #~ msgid "Processes: %1"

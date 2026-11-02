@@ -1000,7 +1000,3 @@ msgstr "Tvangsavslutt vindauge …"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Start %1"
-
-#~ msgctxt "@label"
-#~ msgid "Allow to run on:"
-#~ msgstr "Tillat å køyra på:"
