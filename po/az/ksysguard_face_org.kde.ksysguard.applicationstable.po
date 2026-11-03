@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-25 00:47+0000\n"
+"POT-Creation-Date: 2026-11-03 03:01+0000\n"
 "PO-Revision-Date: 2024-06-25 14:18+0400\n"
 "Last-Translator: Kheyyam Godjayev <xxmn77gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -86,37 +86,37 @@ msgctxt "@option:check"
 msgid "Confirm when quitting applications"
 msgstr "Tətbiqlərdən çıxışı təsdiq etmək"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:40
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "Axtarış"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:51
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:53
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "Tətbiqdən Çıxmaq"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:59
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:61
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "Təfərrüatlar Yan Panelini Göstərmək"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:67
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Sütunları tənzimləmək..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:205
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Üstünlük təyin etmək..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "Set priority…"
@@ -124,61 +124,61 @@ msgctxt "@action:inmenu"
 msgid "Set affinity…"
 msgstr "Üstünlük təyin etmək..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Siqnal Göndərmək"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:223
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:225
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Dayandırmaq (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:229
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Davam etmək (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:231
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:233
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Əngəlləmək (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:235
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:237
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Yarımçıq Saxlayın (İNT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:239
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:241
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Xitam Vermək (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:243
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Məhv Etmək (KİLL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "İstifadəçi 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:251
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:253
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "İstifadəçi 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -186,13 +186,13 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Tətbiqdən Çıxmaq"
 msgstr[1] "%1 tətbiqdən çıxmaq"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:269
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:271
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "Gizlətmək"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:284
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Quit Application"
@@ -203,7 +203,7 @@ msgid_plural "Force Quit %1 Applications"
 msgstr[0] "Tətbiqdən çıxmaq"
 msgstr[1] "%1 tətbiqdən çıxmaq"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:285
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -211,7 +211,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Tətbiqdən çıxmaq"
 msgstr[1] "%1 tətbiqdən çıxmaq"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:289
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Quit Application"
@@ -222,7 +222,7 @@ msgid_plural "Force Quit Applications"
 msgstr[0] "Tətbiqdən çıxmaq"
 msgstr[1] "Tətbiqlərdən çıxmaq"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:288
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -230,7 +230,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "Tətbiqdən çıxmaq"
 msgstr[1] "Tətbiqlərdən çıxmaq"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:291
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:293
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to quit this application?\n"
@@ -248,7 +248,7 @@ msgstr[1] ""
 "%1 tətbiqdən çıxmaq istədiyinizə əminsiniz?\n"
 "Saxlanılmayan məlumatlar itirilə bilər."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:296
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to quit this application?\n"
@@ -265,7 +265,7 @@ msgstr[1] ""
 "%1 tətbiqdən çıxmaq istədiyinizə əminsiniz?\n"
 "Saxlanılmayan məlumatlar itirilə bilər."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:309
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:311
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"

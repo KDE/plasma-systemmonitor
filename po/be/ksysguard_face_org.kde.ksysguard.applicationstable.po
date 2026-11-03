@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-25 00:47+0000\n"
+"POT-Creation-Date: 2026-11-03 03:01+0000\n"
 "PO-Revision-Date: 2024-05-25 23:55\n"
 "Last-Translator: Zmicier <zmicerturok@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -90,37 +90,37 @@ msgctxt "@option:check"
 msgid "Confirm when quitting applications"
 msgstr "Пытацца пацвярджэння пры выхадзе з праграм"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:40
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "Пошук"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:51
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:53
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "Выйсці з праграмы"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:59
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:61
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "Паказваць бакавую панэль падрабязнасцяў"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:67
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Наладжванне слупкоў…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:205
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Вызначыць прыярытэт…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "Set priority…"
@@ -128,61 +128,61 @@ msgctxt "@action:inmenu"
 msgid "Set affinity…"
 msgstr "Вызначыць прыярытэт…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Адправіць сігнал"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:223
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:225
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Прыпыніць (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:229
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Працягнуць (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:231
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:233
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Разарваць (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:235
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:237
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Перапыніць (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:239
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:241
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Знішчыць (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:243
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Забіць (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Карыстальнік 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:251
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:253
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Карыстальнік 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -192,13 +192,13 @@ msgstr[1] "Выйсці з %1 праграм"
 msgstr[2] "Выйсці з %1 праграм"
 msgstr[3] "Выйсці з %1 праграм"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:269
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:271
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr ""
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:284
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Quit Application"
@@ -211,7 +211,7 @@ msgstr[1] "Выйсці з %1 праграм"
 msgstr[2] "Выйсці з %1 праграм"
 msgstr[3] "Выйсці з %1 праграм"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:285
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -221,7 +221,7 @@ msgstr[1] "Выйсці з %1 праграм"
 msgstr[2] "Выйсці з %1 праграм"
 msgstr[3] "Выйсці з %1 праграм"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:289
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Quit Application"
@@ -234,7 +234,7 @@ msgstr[1] "Выйсці з праграм"
 msgstr[2] "Выйсці з праграм"
 msgstr[3] "Выйсці з праграм"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:288
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -244,7 +244,7 @@ msgstr[1] "Выйсці з праграм"
 msgstr[2] "Выйсці з праграм"
 msgstr[3] "Выйсці з праграм"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:291
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:293
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to quit this application?\n"
@@ -268,7 +268,7 @@ msgstr[3] ""
 "Сапраўды хочаце выйсці з %1 праграм?\n"
 "Незахаваныя змены могуць страціцца."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:296
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to quit this application?\n"
@@ -291,7 +291,7 @@ msgstr[3] ""
 "Сапраўды хочаце выйсці з %1 праграм?\n"
 "Незахаваныя змены могуць страціцца."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:309
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:311
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
