@@ -79,7 +79,6 @@ endif()
 install(PROGRAMS org.kde.plasma-systemmonitor.desktop  DESTINATION  ${KDE_INSTALL_APPDIR})
 install(PROGRAMS org.kde.plasma-systemmonitor.desktop  DESTINATION  ${KDE_INSTALL_DATADIR}/kglobalaccel)
 install(FILES org.kde.plasma-systemmonitor.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
-install(FILES kcm_external_plasma-systemmonitor.desktop DESTINATION ${KDE_INSTALL_DATADIR}/plasma/kinfocenter/externalmodules)
 
 install(FILES kconf_update/plasma-systemmonitor.upd DESTINATION ${KDE_INSTALL_KCONFUPDATEDIR})
 install(PROGRAMS kconf_update/plasma-systemmonitor-replace-vmpss.py DESTINATION ${KDE_INSTALL_KCONFUPDATEDIR})
