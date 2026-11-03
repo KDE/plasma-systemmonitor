@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"POT-Creation-Date: 2026-11-03 00:57+0000\n"
 "PO-Revision-Date: 2022-03-16 08:14+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -85,25 +85,25 @@ msgctxt "@option:check"
 msgid "Confirm when quitting applications"
 msgstr "Konfirmasikan ketika memberhentikan aplikasi"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:40
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "Cari"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:51
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:53
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "Berhentikan Aplikasi"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:59
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:61
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "Tampilkan Bilah-Sisi Detail"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:67
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:69
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Configure columns…"
@@ -111,13 +111,13 @@ msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "Konfigurasi kolom..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:205
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "Atur prioritas..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "Set priority…"
@@ -125,61 +125,61 @@ msgctxt "@action:inmenu"
 msgid "Set affinity…"
 msgstr "Atur prioritas..."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "Kirim Sinyal"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:223
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:225
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "Suspensi (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:229
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "Teruskan (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:231
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:233
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "Putus (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:235
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:237
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "Interupsi (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:239
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:241
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "Akhiri (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:243
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "Bunuh (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "Pengguna 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:251
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:253
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "Pengguna 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -187,13 +187,13 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Berhentikan Aplikasi"
 msgstr[1] "Berhentikan %1 Aplikasi"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:269
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:271
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr ""
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:284
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Quit Application"
@@ -204,7 +204,7 @@ msgid_plural "Force Quit %1 Applications"
 msgstr[0] "Berhentikan Aplikasi"
 msgstr[1] "Berhentikan %1 Aplikasi"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:285
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -212,7 +212,7 @@ msgid_plural "Quit %1 Applications"
 msgstr[0] "Berhentikan Aplikasi"
 msgstr[1] "Berhentikan %1 Aplikasi"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:289
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Quit Application"
@@ -222,7 +222,7 @@ msgid_plural "Force Quit Applications"
 msgstr[0] "Berhentikan Aplikasi"
 msgstr[1] "Berhentikan Aplikasi"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:288
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Quit Application"
@@ -232,7 +232,7 @@ msgid_plural "Quit Applications"
 msgstr[0] "Berhentikan Aplikasi"
 msgstr[1] "Berhentikan Aplikasi"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:291
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:293
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to quit this application?\n"
@@ -250,7 +250,7 @@ msgstr[1] ""
 "Apakah kamu yakin ingin memberhentikan %1 aplikasi tersebut ?\n"
 "Apapun pekerjaan yang tidak disimpan mungkin hilang."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:296
 #, fuzzy, kde-format
 #| msgid ""
 #| "Are you sure you want to quit this application?\n"
@@ -267,7 +267,7 @@ msgstr[1] ""
 "Apakah kamu yakin ingin memberhentikan %1 aplikasi tersebut ?\n"
 "Apapun pekerjaan yang tidak disimpan mungkin hilang."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:309
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:311
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
@@ -275,13 +275,13 @@ msgid_plural "%1 Processes"
 msgstr[0] "%1 Proses"
 msgstr[1] "%1 Pemrosesan"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:395
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:397
 #, kde-format
 msgctxt "@label %1 is the application name"
 msgid "Allow “%1” to run on:"
 msgstr ""
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:396
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:398
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 application to run on:"

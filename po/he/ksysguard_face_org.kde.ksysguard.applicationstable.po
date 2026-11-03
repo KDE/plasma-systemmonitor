@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-11-01 00:57+0000\n"
+"POT-Creation-Date: 2026-11-03 00:57+0000\n"
 "PO-Revision-Date: 2026-07-17 12:20+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -84,97 +84,97 @@ msgctxt "@option:check"
 msgid "Confirm when quitting applications"
 msgstr "לאשר סגירה של יישומים"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:40
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:42
 #, kde-format
 msgctxt "@action"
 msgid "Search"
 msgstr "חיפוש"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:51
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:53
 #, kde-format
 msgctxt "@action"
 msgid "Quit Application"
 msgstr "יציאה מיישום"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:59
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:61
 #, kde-format
 msgctxt "@action"
 msgid "Show Details Sidebar"
 msgstr "הצגת סרגל צד לפרטים"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:67
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:69
 #, kde-format
 msgctxt "@action"
 msgid "Configure Columns…"
 msgstr "הגדרת עמודות…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:203
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:205
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set priority…"
 msgstr "הגדרת עדיפות…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:210
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:212
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Set affinity…"
 msgstr "הגדרת קרבה…"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:218
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:220
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Send Signal"
 msgstr "שליחת אות"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:223
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:225
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Suspend (STOP)"
 msgstr "השהיה (STOP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:227
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:229
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Continue (CONT)"
 msgstr "המשך (CONT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:231
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:233
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
 msgstr "ניתוק (HUP)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:235
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:237
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
 msgstr "הפרעה (INT)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:239
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:241
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
 msgstr "חיסול (TERM)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:243
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
 msgstr "הריגה (KILL)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:247
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 1 (USR1)"
 msgstr "משתמש 1 (USR1)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:251
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:253
 #, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "User 2 (USR2)"
 msgstr "משתמש 2 (USR2)"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:259
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:261
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Quit Application"
@@ -184,13 +184,13 @@ msgstr[1] "יציאה מ־%1 יישומים"
 msgstr[2] "יציאה מ־%1 יישומים"
 msgstr[3] "יציאה מ־%1 יישומים"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:269
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:271
 #, kde-format
 msgctxt "@action:inmenu hide column"
 msgid "Hide"
 msgstr "הסתרה"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:284
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:286
 #, kde-format
 msgctxt "@title:window"
 msgid "Force Quit Application"
@@ -200,7 +200,7 @@ msgstr[1] "אילוץ יציאה משני יישומים"
 msgstr[2] "אילוץ יציאה מ־%1 יישומים"
 msgstr[3] "אילוץ יציאה מ־%1 יישומים"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:285
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
 #, kde-format
 msgctxt "@title:window"
 msgid "Quit Application"
@@ -210,7 +210,7 @@ msgstr[1] "יציאה מ־%1 יישומים"
 msgstr[2] "יציאה מ־%1 יישומים"
 msgstr[3] "יציאה מ־%1 יישומים"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:287
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:289
 #, kde-format
 msgctxt "@action:button"
 msgid "Force Quit Application"
@@ -220,7 +220,7 @@ msgstr[1] "אילוץ יציאה מיישומים"
 msgstr[2] "אילוץ יציאה מיישומים"
 msgstr[3] "אילוץ יציאה מיישומים"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:288
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:290
 #, kde-format
 msgctxt "@action:button"
 msgid "Quit Application"
@@ -230,7 +230,7 @@ msgstr[1] "יציאה מיישומים"
 msgstr[2] "יציאה מיישומים"
 msgstr[3] "יציאה מיישומים"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:291
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:293
 #, kde-format
 msgid "Force quit (SIGKILL) the application? Unsaved work may be lost."
 msgid_plural ""
@@ -240,7 +240,7 @@ msgstr[1] "לאלץ יציאה (SIGKILL) משני יישומים? עבודה ש�
 msgstr[2] "לאלץ יציאה (SIGKILL) מ־%1 יישומים? עבודה שלא נשמרה תאבד."
 msgstr[3] "לאלץ יציאה (SIGKILL) מ־%1 יישומים? עבודה שלא נשמרה תאבד."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:294
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:296
 #, kde-format
 msgid "Quit this application? Unsaved work may be lost."
 msgid_plural "Quit these %1 applications? Unsaved work may be lost."
@@ -249,7 +249,7 @@ msgstr[1] "לצאת משני היישומים האלה? שינויים שלא ש
 msgstr[2] "לצאת מ־%1 היישומים האלה? שינויים שלא שמרת יאבדו."
 msgstr[3] "לצאת מ־%1 היישומים האלה? שינויים שלא שמרת יאבדו."
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:309
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:311
 #, kde-format
 msgctxt "@item:intable"
 msgid "%1 Process"
@@ -259,13 +259,13 @@ msgstr[1] "%1 תהליכים"
 msgstr[2] "%1 תהליכים"
 msgstr[3] "%1 תהליכים"
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:395
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:397
 #, kde-format
 msgctxt "@label %1 is the application name"
 msgid "Allow “%1” to run on:"
 msgstr ""
 
-#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:396
+#: src/faces/applicationstable/contents/ui/FullRepresentation.qml:398
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 application to run on:"
