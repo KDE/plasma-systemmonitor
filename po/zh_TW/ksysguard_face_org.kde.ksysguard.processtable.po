@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-03 00:57+0000\n"
-"PO-Revision-Date: 2026-07-22 01:09+0900\n"
+"PO-Revision-Date: 2026-11-03 20:36+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -264,14 +264,14 @@ msgstr "行程 ID %1，由 %2 所擁有"
 #, kde-format
 msgctxt "@label %1 is the process name, %2 is the process id"
 msgid "Allow “%1” (Process ID %2) to run on:"
-msgstr ""
+msgstr "允許「%1」（行程 ID %2）在哪裡執行："
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:425
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 process to run on:"
 msgid_plural "Allow %1 processes to run on:"
-msgstr[0] ""
+msgstr[0] "允許這 %1 個行程在哪裡執行："
 
 #~ msgctxt "@action"
 #~ msgid "Configure columns…"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-03 00:57+0000\n"
-"PO-Revision-Date: 2026-07-22 01:09+0900\n"
+"PO-Revision-Date: 2026-11-03 20:36+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -241,14 +241,14 @@ msgstr[0] "%1 個行程"
 #, kde-format
 msgctxt "@label %1 is the application name"
 msgid "Allow “%1” to run on:"
-msgstr ""
+msgstr "允許「%1」在哪裡執行："
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:398
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 application to run on:"
 msgid_plural "Allow %1 applications to run on:"
-msgstr[0] ""
+msgstr[0] "允許這 %1 個應用程式在哪裡執行："
 
 #~ msgctxt "@title:group"
 #~ msgid "Processes: %1"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-03 00:57+0000\n"
-"PO-Revision-Date: 2026-07-17 12:20+0300\n"
+"PO-Revision-Date: 2026-11-03 20:33+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 26.04.1\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
@@ -284,17 +284,17 @@ msgstr "מזהה תהליך %1, בבעלות %2"
 #, kde-format
 msgctxt "@label %1 is the process name, %2 is the process id"
 msgid "Allow “%1” (Process ID %2) to run on:"
-msgstr ""
+msgstr "לאפשר ל־„%1” (מזהה תהליך %2) לרוץ על:"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:425
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 process to run on:"
 msgid_plural "Allow %1 processes to run on:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "לאפשר לתהליך לרוץ על:"
+msgstr[1] "לאפשר לשני תהליכים לרוץ על:"
+msgstr[2] "לאפשר ל־%1 תהליכים לרוץ על:"
+msgstr[3] "לאפשר ל־%1 תהליכים לרוץ על:"
 
 #~ msgctxt "@action"
 #~ msgid "Configure columns…"
