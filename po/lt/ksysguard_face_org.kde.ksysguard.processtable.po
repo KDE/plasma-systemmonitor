@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-03 00:57+0000\n"
-"PO-Revision-Date: 2026-08-01 14:49+0300\n"
+"PO-Revision-Date: 2026-11-04 16:37+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
 #: src/faces/processtable/contents/ui/Config.qml:25
 #, kde-format
@@ -296,17 +296,17 @@ msgstr "Proceso ID %1, priklauso naudotojui %2"
 #, kde-format
 msgctxt "@label %1 is the process name, %2 is the process id"
 msgid "Allow “%1” (Process ID %2) to run on:"
-msgstr ""
+msgstr "Leisti „%1“ (Proceso ID %2) būti vykdomam šiuose procesoriuose:"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:425
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 process to run on:"
 msgid_plural "Allow %1 processes to run on:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Leisti %1 procesui būti vykdomam šiuose procesoriuose:"
+msgstr[1] "Leisti %1 procesams būti vykdomiems šiuose procesoriuose:"
+msgstr[2] "Leisti %1 procesų būti vykdomiems šiuose procesoriuose:"
+msgstr[3] "Leisti %1 procesui būti vykdomam šiuose procesoriuose:"
 
 #~ msgctxt "@action"
 #~ msgid "Configure columns…"
