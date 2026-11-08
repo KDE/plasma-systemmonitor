@@ -998,7 +998,3 @@ msgstr "Принудително затваряне на прозорец…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "Стартиране %1"
-
-#~ msgctxt "@label"
-#~ msgid "Allow to run on:"
-#~ msgstr "Позволено е да се изпълнява на:"
