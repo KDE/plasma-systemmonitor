@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-03 00:57+0000\n"
-"PO-Revision-Date: 2026-07-20 16:06+0200\n"
+"PO-Revision-Date: 2026-11-04 18:42+0100\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.04.3\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #: src/faces/applicationstable/contents/ui/ApplicationDetails.qml:51
 #, kde-format
@@ -253,15 +253,15 @@ msgstr[1] "%1 processi"
 #, kde-format
 msgctxt "@label %1 is the application name"
 msgid "Allow “%1” to run on:"
-msgstr ""
+msgstr "Permetti l'esecuzione di «%1» su:"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:398
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 application to run on:"
 msgid_plural "Allow %1 applications to run on:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Permetti a %1 applicazione di essere eseguita su:"
+msgstr[1] "Permetti a %1 applicazioni di essere eseguite su:"
 
 #~ msgctxt "@title:group"
 #~ msgid "Processes: %1"
