@@ -97,7 +97,7 @@ Kirigami.Dialog {
                         ToolTip.text: listItemContainer.hidden ? i18nc("@info:tooltip", "Show Page")
                                                                : i18nc("@info:tooltip", "Hide Page")
                         ToolTip.delay: Kirigami.Units.toolTipDelay
-                        ToolTip.visible: hovered
+                        ToolTip.visible: hovered || visualFocus
                     }
 
                     KD.IconTitleSubtitle {
@@ -120,7 +120,7 @@ Kirigami.Dialog {
                         id: removeButton
                         onClicked: pageList.model.setData(pageList.model.index(listItemContainer.index, 0), !listItemContainer.shouldRemoveFiles, Page.PageSortModel.ShouldRemoveFilesRole)
                         ToolTip.delay: Kirigami.Units.toolTipDelay
-                        ToolTip.visible: hovered
+                        ToolTip.visible: hovered || visualFocus
                     }
 
                     states: [
