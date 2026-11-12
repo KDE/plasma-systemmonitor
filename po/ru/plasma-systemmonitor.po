@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-20 03:15+0000\n"
-"PO-Revision-Date: 2026-10-04 09:32+0200\n"
-"Last-Translator: Alexander Yavorskiy <kekcuha@gmail.com>\n"
+"PO-Revision-Date: 2026-11-11 20:46+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -818,13 +818,13 @@ msgstr "Линейная диаграмма"
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Text Only (Scaled to 100%)"
-msgstr "Только текст (масштабируется до 100%)"
+msgstr "Только текст (масштабируется до 100 %)"
 
 #: src/table/ColumnConfigurationDialog.qml:272
 #, kde-format
 msgctxt "@item:inlistbox"
 msgid "Line Chart (Scaled to 100%)"
-msgstr "Линейный график (масштабируется до 100%)"
+msgstr "Линейный график (масштабируется до 100 %)"
 
 #: src/table/ColumnConfigurationDialog.qml:309
 #, kde-format
