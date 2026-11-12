@@ -71,9 +71,13 @@ Kirigami.ScrollablePage {
             }
         },
 
-        Kirigami.Action { separator: true },
+        Kirigami.Action {
+            separator: true
+            visible: knsAction.visible
+        },
 
         NewStuff.Action {
+            id: knsAction
             text: i18nc("@action", "Get New Display Styles…")
             configFile: "systemmonitor-faces.knsrc"
             pageStack: applicationWindow().pageStack.layers
