@@ -994,10 +994,10 @@ msgid "High priority"
 msgstr "Υψηλή προτεραιότητα"
 
 #: src/ToolsModel.cpp:37
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Kill a Window…"
-msgstr ""
+msgstr "Τερματισμός παραθύρου…"
 
 #: src/ToolsModel.cpp:115
 #, kde-format

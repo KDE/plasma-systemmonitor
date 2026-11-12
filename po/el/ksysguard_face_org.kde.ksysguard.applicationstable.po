@@ -143,28 +143,28 @@ msgid "Continue (CONT)"
 msgstr "Συνέχεια (CONT)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:233
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Hangup (HUP)"
-msgstr ""
+msgstr "Αποσύνδεση (HUP)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:237
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Interrupt (INT)"
-msgstr ""
+msgstr "Διακοπή (INT)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:241
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Terminate (TERM)"
-msgstr ""
+msgstr "Τερματισμός (TERM)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:245
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "@action:inmenu Send Signal"
 msgid "Kill (KILL)"
-msgstr ""
+msgstr "Θανάτωση (KILL)"
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:249
 #, kde-format
