@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 03:15+0000\n"
+"POT-Creation-Date: 2026-11-13 03:41+0000\n"
 "PO-Revision-Date: 2026-07-17 19:47+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -411,54 +411,54 @@ msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "Masaüstü Araç Takımı Olarak Grafik Ekle"
 
-#: src/page/FaceConfigurationPage.qml:77
+#: src/page/FaceConfigurationPage.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "Yeni Görüntüleme Biçemleri Al…"
 
-#: src/page/FaceConfigurationPage.qml:100
+#: src/page/FaceConfigurationPage.qml:104
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "%1 önayarı yüklendi."
 
-#: src/page/FaceConfigurationPage.qml:117
+#: src/page/FaceConfigurationPage.qml:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "Başlık"
 
-#: src/page/FaceConfigurationPage.qml:123
+#: src/page/FaceConfigurationPage.qml:127
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "Başlığı Göster"
 
-#: src/page/FaceConfigurationPage.qml:141
+#: src/page/FaceConfigurationPage.qml:145
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "Görüntüleme Biçemi"
 
-#: src/page/FaceConfigurationPage.qml:169
+#: src/page/FaceConfigurationPage.qml:173
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "Güncellemeler arasındaki en az süre:"
 
-#: src/page/FaceConfigurationPage.qml:186
+#: src/page/FaceConfigurationPage.qml:190
 #, kde-format
 msgid "No Limit"
 msgstr "Sınırsız"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:190
+#: src/page/FaceConfigurationPage.qml:194
 #, kde-format
 msgid "1 second"
 msgstr "1 saniye"
 
-#: src/page/FaceConfigurationPage.qml:192
+#: src/page/FaceConfigurationPage.qml:196
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 saniye"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 03:15+0000\n"
+"POT-Creation-Date: 2026-11-13 03:41+0000\n"
 "PO-Revision-Date: 2026-02-01 18:53+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-l10n-ta@kde.org>\n"
@@ -415,54 +415,54 @@ msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "வரைபடத்தை பணிமேடை பிளாஸ்மாய்டாக சேர்"
 
-#: src/page/FaceConfigurationPage.qml:77
+#: src/page/FaceConfigurationPage.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "புதிய காட்சிமுறைகளை பெறு…"
 
-#: src/page/FaceConfigurationPage.qml:100
+#: src/page/FaceConfigurationPage.qml:104
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "%1 என்ற முன்னமைப்பு ஏற்றப்பட்டது."
 
-#: src/page/FaceConfigurationPage.qml:117
+#: src/page/FaceConfigurationPage.qml:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "தலைப்பு"
 
-#: src/page/FaceConfigurationPage.qml:123
+#: src/page/FaceConfigurationPage.qml:127
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "தலைப்பை காட்டு"
 
-#: src/page/FaceConfigurationPage.qml:141
+#: src/page/FaceConfigurationPage.qml:145
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "காட்சி முறை"
 
-#: src/page/FaceConfigurationPage.qml:169
+#: src/page/FaceConfigurationPage.qml:173
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "புதிப்பிப்புகளுக்கிடையே குறைந்தபட்ச நேரம்:"
 
-#: src/page/FaceConfigurationPage.qml:186
+#: src/page/FaceConfigurationPage.qml:190
 #, kde-format
 msgid "No Limit"
 msgstr "வரம்பில்லை"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:190
+#: src/page/FaceConfigurationPage.qml:194
 #, kde-format
 msgid "1 second"
 msgstr "1 நொடி"
 
-#: src/page/FaceConfigurationPage.qml:192
+#: src/page/FaceConfigurationPage.qml:196
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 நொடிகள்"

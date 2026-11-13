@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 03:15+0000\n"
+"POT-Creation-Date: 2026-11-13 03:41+0000\n"
 "PO-Revision-Date: 2026-08-03 00:04+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -414,54 +414,54 @@ msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "Gehitu diagrama mahaigaineko trepeta gisa"
 
-#: src/page/FaceConfigurationPage.qml:77
+#: src/page/FaceConfigurationPage.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "Lortu azaltzeko estilo berriak..."
 
-#: src/page/FaceConfigurationPage.qml:100
+#: src/page/FaceConfigurationPage.qml:104
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "%1 aurrehautaketa zamatu da."
 
-#: src/page/FaceConfigurationPage.qml:117
+#: src/page/FaceConfigurationPage.qml:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "Titulua"
 
-#: src/page/FaceConfigurationPage.qml:123
+#: src/page/FaceConfigurationPage.qml:127
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "Erakutsi titulua"
 
-#: src/page/FaceConfigurationPage.qml:141
+#: src/page/FaceConfigurationPage.qml:145
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "Azaltzeko estiloa"
 
-#: src/page/FaceConfigurationPage.qml:169
+#: src/page/FaceConfigurationPage.qml:173
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "Eguneratzeen arteko gutxieneko denbora:"
 
-#: src/page/FaceConfigurationPage.qml:186
+#: src/page/FaceConfigurationPage.qml:190
 #, kde-format
 msgid "No Limit"
 msgstr "Mugarik ez"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:190
+#: src/page/FaceConfigurationPage.qml:194
 #, kde-format
 msgid "1 second"
 msgstr "segundo 1"
 
-#: src/page/FaceConfigurationPage.qml:192
+#: src/page/FaceConfigurationPage.qml:196
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 segundo"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-20 03:15+0000\n"
+"POT-Creation-Date: 2026-11-13 03:41+0000\n"
 "PO-Revision-Date: 2026-07-17 07:31-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -414,54 +414,54 @@ msgctxt "@action"
 msgid "Add Chart as Desktop Widget"
 msgstr "Adicionar gráfico ao widget da área de trabalho"
 
-#: src/page/FaceConfigurationPage.qml:77
+#: src/page/FaceConfigurationPage.qml:81
 #, kde-format
 msgctxt "@action"
 msgid "Get New Display Styles…"
 msgstr "Baixar novos estilos de exibição…"
 
-#: src/page/FaceConfigurationPage.qml:100
+#: src/page/FaceConfigurationPage.qml:104
 #, kde-format
 msgctxt "@info:status %1 is preset name"
 msgid "Loaded preset %1."
 msgstr "Carregar predefinição %1."
 
-#: src/page/FaceConfigurationPage.qml:117
+#: src/page/FaceConfigurationPage.qml:121
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Title"
 msgstr "Título"
 
-#: src/page/FaceConfigurationPage.qml:123
+#: src/page/FaceConfigurationPage.qml:127
 #, kde-format
 msgctxt "@option:check"
 msgid "Show Title"
 msgstr "Mostrar título"
 
-#: src/page/FaceConfigurationPage.qml:141
+#: src/page/FaceConfigurationPage.qml:145
 #, kde-format
 msgctxt "@label:textbox"
 msgid "Display Style"
 msgstr "Estilo de exibição"
 
-#: src/page/FaceConfigurationPage.qml:169
+#: src/page/FaceConfigurationPage.qml:173
 #, kde-format
 msgctxt "@label"
 msgid "Minimum time between updates:"
 msgstr "Tempo mínimo entre as atualizações:"
 
-#: src/page/FaceConfigurationPage.qml:186
+#: src/page/FaceConfigurationPage.qml:190
 #, kde-format
 msgid "No Limit"
 msgstr "Sem limite"
 
 #. i18ndp doesn't handle floats :(
-#: src/page/FaceConfigurationPage.qml:190
+#: src/page/FaceConfigurationPage.qml:194
 #, kde-format
 msgid "1 second"
 msgstr "1 segundo"
 
-#: src/page/FaceConfigurationPage.qml:192
+#: src/page/FaceConfigurationPage.qml:196
 #, kde-format
 msgid "%1 seconds"
 msgstr "%1 segundos"
