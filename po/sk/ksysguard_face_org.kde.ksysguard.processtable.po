@@ -287,16 +287,16 @@ msgstr "ID procesu %1, vlastnené %2"
 #, kde-format
 msgctxt "@label %1 is the process name, %2 is the process id"
 msgid "Allow “%1” (Process ID %2) to run on:"
-msgstr ""
+msgstr "Povoliť „%1“ (ID procesu %2) beh na:"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:425
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 process to run on:"
 msgid_plural "Allow %1 processes to run on:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Povoliť %1 procesu beh na:"
+msgstr[1] "Povoliť %1 procesom beh na:"
+msgstr[2] "Povoliť %1 procesom beh na:"
 
 #~ msgctxt "@action"
 #~ msgid "Configure columns…"
