@@ -576,7 +576,7 @@ msgstr "Піктограма:"
 #, kde-format
 msgctxt "@label:listbox"
 msgid "Page Margins:"
-msgstr "Поля сторінки:"
+msgstr "Розмір полів сторінки:"
 
 #: src/page/PageDialog.qml:118
 #, kde-format
