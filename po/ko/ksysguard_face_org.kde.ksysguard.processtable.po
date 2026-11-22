@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-03 00:57+0000\n"
-"PO-Revision-Date: 2026-09-28 23:39+0200\n"
+"PO-Revision-Date: 2026-11-21 22:18+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -264,14 +264,14 @@ msgstr "프로세스 ID %1, 소유자: %2"
 #, kde-format
 msgctxt "@label %1 is the process name, %2 is the process id"
 msgid "Allow “%1” (Process ID %2) to run on:"
-msgstr ""
+msgstr "다음에서 \"%1\"(프로세스 ID %2) 실행 허용:"
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:425
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 process to run on:"
 msgid_plural "Allow %1 processes to run on:"
-msgstr[0] ""
+msgstr[0] "다음에서 프로세스 %1개 실행 허용:"
 
 #~ msgctxt "@action"
 #~ msgid "Configure columns…"
