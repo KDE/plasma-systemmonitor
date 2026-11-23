@@ -239,11 +239,11 @@ msgstr[0] "%1 个进程"
 #, kde-format
 msgctxt "@label %1 is the application name"
 msgid "Allow “%1” to run on:"
-msgstr ""
+msgstr "允许“%1”运行于："
 
 #: src/faces/applicationstable/contents/ui/FullRepresentation.qml:398
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 application to run on:"
 msgid_plural "Allow %1 applications to run on:"
-msgstr[0] ""
+msgstr[0] "允许 %1 个应用程序运行于："

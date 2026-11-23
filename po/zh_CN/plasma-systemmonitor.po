@@ -984,7 +984,3 @@ msgstr "强制中止窗口…"
 msgctxt "@action:inmenu %1 is application name"
 msgid "Launch %1"
 msgstr "启动 %1"
-
-#~ msgctxt "@label"
-#~ msgid "Allow to run on:"
-#~ msgstr "允许运行在："

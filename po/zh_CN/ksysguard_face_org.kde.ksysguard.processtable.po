@@ -262,11 +262,11 @@ msgstr "进程 ID %1 ，所有者为 %2"
 #, kde-format
 msgctxt "@label %1 is the process name, %2 is the process id"
 msgid "Allow “%1” (Process ID %2) to run on:"
-msgstr ""
+msgstr "允许“%1”(进程 ID %2) 运行于："
 
 #: src/faces/processtable/contents/ui/FullRepresentation.qml:425
 #, kde-format
 msgctxt "@label"
 msgid "Allow %1 process to run on:"
 msgid_plural "Allow %1 processes to run on:"
-msgstr[0] ""
+msgstr[0] "允许 %1 个进程运行于："
