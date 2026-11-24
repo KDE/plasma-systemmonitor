@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-13 01:01+0000\n"
-"PO-Revision-Date: 2026-11-10 21:36+0300\n"
+"PO-Revision-Date: 2026-11-23 18:16+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -641,13 +641,13 @@ msgstr "Sayfayı sıfırlama"
 #, kde-format
 msgctxt "@item:intable"
 msgid "The page will be reset to its default state"
-msgstr "Sayfa, öntanımlı durumuna sıfırlanacak"
+msgstr "Sayfa, varsayılan durumuna sıfırlanacak"
 
 #: src/page/PageSortDialog.qml:155
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Reset the page to its default state"
-msgstr "Sayfayı öntanımlı durumuna sıfırla"
+msgstr "Sayfayı varsayılan durumuna sıfırla"
 
 #: src/page/PageSortDialog.qml:164
 #, kde-format
