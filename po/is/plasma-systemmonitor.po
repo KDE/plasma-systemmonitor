@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-systemmonitor\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-13 01:01+0000\n"
-"PO-Revision-Date: 2026-06-24 10:59+0000\n"
+"PO-Revision-Date: 2026-11-26 14:37+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -739,36 +739,34 @@ msgid "Use half the height of the page."
 msgstr "Nota hálfa hæð síðunnar."
 
 #: src/table/AffinityDialog.qml:25
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Set Priority"
+#, kde-format
 msgctxt "@title:window"
 msgid "Set Affinity"
-msgstr "Stilla forgang"
+msgstr "Stilla samkvæmni"
 
 #: src/table/AffinityDialog.qml:90
 #, kde-format
 msgctxt "@option:check CPU core number"
 msgid "CPU %1"
-msgstr ""
+msgstr "CPU %1"
 
 #: src/table/AffinityDialog.qml:126
 #, kde-format
 msgctxt "@action:button"
 msgid "Select All"
-msgstr ""
+msgstr "Velja allt"
 
 #: src/table/AffinityDialog.qml:138
 #, kde-format
 msgctxt "@action:button"
 msgid "Clear All"
-msgstr ""
+msgstr "Hreinsa allt"
 
 #: src/table/AffinityDialog.qml:146
 #, kde-format
 msgctxt "@action:button"
 msgid "Invert"
-msgstr ""
+msgstr "Snúa við"
 
 #: src/table/ColumnConfigurationDialog.qml:48
 #, kde-format
